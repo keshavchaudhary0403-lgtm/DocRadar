@@ -372,6 +372,16 @@ select.inp{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.
 .opts{display:flex;flex-wrap:wrap;gap:6px}
 .opt{height:38px;padding:0 14px;border-radius:11px;border:1px solid var(--line-2);background:var(--solid);font-size:13.5px;font-weight:550;color:var(--muted);transition:all .2s var(--ease)}
 .opt:hover{color:var(--text)}
+.opt.city{display:inline-flex;align-items:center;gap:4px;padding:0 6px 0 12px;color:var(--text);background:var(--accent-soft);border-color:transparent}
+.opt.city button{display:grid;place-items:center;width:24px;height:24px;border-radius:7px;border:0;background:none;color:var(--muted);cursor:pointer}
+.opt.city button:hover{background:var(--line);color:var(--text)}
+.opt.city .ic{width:14px;height:14px}
+.city-list{margin-bottom:8px}
+.city-add{display:flex;gap:8px;max-width:420px}
+.city-add .inp{flex:1;min-width:0}
+.city-add .btn{flex:none}
+.area-note{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:13px;color:var(--muted)}
+.area-note .ic{width:15px;height:15px;color:var(--accent)}
 .opt[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
 .opt:active{transform:scale(.95)}
 .pf-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:16px;font-size:12.5px;color:var(--faint)}
@@ -547,6 +557,7 @@ const CAT = {
 };
 const REGIONS = [["all","Anywhere"],["meerut","Meerut"],["up","Uttar Pradesh"],["delhi-ncr","Delhi NCR"],["all-india","Other states"]];
 const VIEWS = [["radar","Radar","radar"],["timeline","Timeline","timeline"],["saved","Saved","star"],["sites","Sites","globe"],["profile","Profile","user"]];
+const CITY_SUGG = ["Meerut","Ghaziabad","Noida","Greater Noida","Delhi","Hapur","Baghpat","Bulandshahr","Muzaffarnagar","Shamli","Saharanpur","Bijnor","Moradabad","Aligarh","Agra","Lucknow","Kanpur","Gurugram","Faridabad","Dehradun","Haridwar","Chandigarh","Jaipur"];
 const COUNCILS = ["Uttar Pradesh Medical Council","National Medical Commission (IMR)","Delhi Medical Council","Haryana Medical Council","Uttarakhand Medical Council","Rajasthan Medical Council","Madhya Pradesh Medical Council","Punjab Medical Council","Bihar Medical Council","Other state council"];
 const REG = [["none","Not yet"],["provisional","Provisional"],["applied","Permanent: applied"],["permanent","Permanent: received"]];
 const TIPS = {
@@ -775,9 +786,23 @@ function mini(j, dateText){
     <div class="t"><b>${esc(j.title)}</b><span>${esc(j.org)}</span></div><span class="d">${dateText}</span></div>`;
 }
 
+/* "My locations" = preferred regions + cities from Profile. Exams are national, so they always pass. */
+const myCities = () => P().cities || [];
+const hasMyLocs = () => (P().regions || []).length > 0 || myCities().length > 0;
+const cityRe = c => new RegExp(`(^|[^a-z])${c.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}([^a-z]|$)`);
+function inMyLocs(j){
+  if (j.category === "exam") return true;
+  if ((P().regions || []).includes(j.region)) return true;
+  const hay = [j.location, j.org, j.title].join(" ").toLowerCase();
+  return myCities().some(c => cityRe(c).test(hay));
+}
+const inArea = j => state.region !== "mine" || inMyLocs(j);
+const areaOpen = () => JOBS.filter(isOpen).filter(inArea);
+const areaNote = () => state.region === "mine" ? `<div class="area-note">${ic("pin")}Showing My locations only. <button class="link" data-region="all">Show Anywhere</button></div>` : "";
+
 function matches(j){
   if (state.cat !== "all" && j.category !== state.cat) return false;
-  if (state.region === "mine" ? !(P().regions || []).includes(j.region) : state.region !== "all" && j.region !== state.region) return false;
+  if (!inArea(j)) return false;
   if (state.eligible && !canApply(j)) return false;
   if (state.quick === "soon" && !isSoon(j)) return false;
   if (state.quick === "new" && !isNew(j)) return false;
@@ -799,7 +824,7 @@ function countUp(el, n){
 
 /* ---------- Views ---------- */
 function viewRadar(){
-  const open = JOBS.filter(isOpen);
+  const open = areaOpen();
   const counts = { all: open.length };
   open.forEach(j => counts[j.category] = (counts[j.category] || 0) + 1);
   const tiles = [
@@ -838,23 +863,23 @@ function viewRadar(){
 function resultsHTML(){
   if (!loaded) return `<div class="grid" style="margin-top:20px">${'<div class="sk"></div>'.repeat(4)}</div>`;
   const list = JOBS.filter(isOpen).filter(matches).sort(byDeadline);
-  const closed = JOBS.filter(j => !isOpen(j)).sort((a, b) => b.lastDate.localeCompare(a.lastDate));
+  const closed = JOBS.filter(j => !isOpen(j)).filter(inArea).sort((a, b) => b.lastDate.localeCompare(a.lastDate));
   const title = state.quick === "soon" ? "Closing this week" : state.quick === "new" ? "Fresh in the last 48 hours" : state.cat !== "all" ? CAT[state.cat].label : "All openings";
-  return `<div class="sec"><h2>${title}</h2><span>${list.length} result${list.length === 1 ? "" : "s"} · sorted by deadline</span></div>
+  return `<div class="sec"><h2>${title}</h2><span>${list.length} result${list.length === 1 ? "" : "s"}${state.region === "mine" ? " in My locations" : ""} · sorted by deadline</span></div>
     ${list.length ? `<div class="grid">${list.map(card).join("")}</div>`
-      : `<div class="empty">${ic("radar")}<b>Nothing on the radar here yet</b>Try a different filter. New openings land every morning.</div>`}
+      : `<div class="empty">${ic("radar")}<b>Nothing on the radar here yet</b>${state.region === "mine" ? `No openings in your locations right now. <button class="link" data-region="all">Show Anywhere</button> or <button class="link" data-goto-pf="regions">add more cities</button>.` : "Try a different filter. New openings land every morning."}</div>`}
     ${closed.length ? `<details class="closed"><summary>${ic("archive")}Recently closed · ${closed.length}${ic("chev")}</summary>
       ${closed.map(j => mini(j, "closed " + fmt(j.lastDate, {day:"numeric", month:"short"}))).join("")}</details>` : ""}`;
 }
 
 function viewTimeline(){
   const ev = [];
-  JOBS.filter(isOpen).forEach(j => {
+  areaOpen().forEach(j => {
     if (j.lastDate) ev.push({ date: j.lastDate, kind: j.mode === "Walk-in" && j.eventDate === j.lastDate ? "Walk-in interview" : "Last date to apply", j });
     if (j.eventDate && j.eventDate !== j.lastDate && days(j.eventDate) >= 0) ev.push({ date: j.eventDate, kind: j.category === "exam" ? "Exam day" : "Interview", j });
   });
   ev.sort((a, b) => a.date.localeCompare(b.date));
-  const tba = JOBS.filter(j => j.lastDate == null);
+  const tba = JOBS.filter(j => j.lastDate == null).filter(inArea);
   let month = "", i = 0;
   const items = ev.map(e => {
     const m = fmt(e.date, {month:"long", year:"numeric"});
@@ -864,7 +889,7 @@ function viewTimeline(){
       <div class="tl-date ${d === 0 ? "today" : ""}"><b>${fmt(e.date, {day:"numeric"})}</b><span>${fmt(e.date, {weekday:"short"})}</span></div>
       <div class="tl-body"><div class="k">${e.kind}${d === 0 ? " · today" : d <= 7 ? ` · in ${d} day${d === 1 ? "" : "s"}` : ""}</div><b>${esc(e.j.title)}</b><span>${esc(e.j.org)}</span></div></div>`;
   }).join("");
-  return `<section class="page-head"><h1>Timeline</h1><p>Every deadline, walk-in and exam date in one place. Open any item to add it to the calendar.</p></section>
+  return `<section class="page-head"><h1>Timeline</h1><p>Every deadline, walk-in and exam date in one place. Open any item to add it to the calendar.</p>${areaNote()}</section>
     ${loaded && !ev.length ? `<div class="empty" style="margin-top:20px">${ic("timeline")}<b>No upcoming dates</b>Check back tomorrow.</div>` : `<div class="tl">${items}</div>`}
     ${tba.length ? `<div class="month">Date not announced yet</div><div class="closed" style="margin-top:0">${tba.map(j => mini(j, "TBA")).join("")}</div>` : ""}`;
 }
@@ -919,8 +944,13 @@ function viewProfile(){
       <div class="field" id="pf-gender"><span>Gender</span>${opt("gender", [["male","Male"],["female","Female"],["other","Other"]])}<small>Some posts (e.g. Female Medical Officer) and AFMS seats are split by gender.</small></div>
       <div class="field" id="pf-pwbd"><span>Person with disability (PwBD)?${tip("pwbd")}</span>${opt("pwbd", [["no","No"],["yes","Yes"]])}</div>
     </section>
-    <section class="pf-card" style="--i:3"><h3>${ic("pin")}Where you want to work</h3><p>Adds a "My locations" filter to Radar.</p>
-      <div class="field" id="pf-regions"><span>Preferred locations</span>${opt("regions", REGIONS.filter(r => r[0] !== "all"), true)}</div>
+    <section class="pf-card" style="--i:3"><h3>${ic("pin")}Where you want to work</h3><p>Turn on "My locations" on Radar to see only openings in these places. Timeline and Closing soon follow it too. Exams always show.</p>
+      <div class="field" id="pf-regions"><span>Preferred regions</span>${opt("regions", REGIONS.filter(r => r[0] !== "all"), true)}</div>
+      <div class="field" id="pf-cities"><span>Cities</span>
+        ${myCities().length ? `<div class="opts city-list">${myCities().map(c => `<span class="opt city">${esc(c)}<button type="button" data-city-del="${esc(c)}" aria-label="Remove ${esc(c)}">${ic("x")}</button></span>`).join("")}</div>` : ""}
+        <div class="city-add"><input class="inp" id="city-in" type="text" list="city-sugg" placeholder="Add a city, e.g. Ghaziabad" maxlength="40" autocomplete="off"><button type="button" class="btn" data-city-add>Add</button></div>
+        <datalist id="city-sugg">${CITY_SUGG.filter(c => !myCities().some(x => x.toLowerCase() === c.toLowerCase())).map(c => `<option value="${c}">`).join("")}</datalist>
+        <small>Add any city or town. An opening counts if its location, hospital or title mentions the city.</small></div>
     </section>
   </div>
   <div class="pf-foot"><span>${ic("lock")}Stored only in this browser on this device</span><button type="button" class="btn danger" id="pf-reset">Reset profile</button></div>`;
@@ -968,10 +998,10 @@ function showDobMenu(){
 }
 
 function railHTML(){
-  const soon = JOBS.filter(isOpen).filter(j => j.lastDate).sort(byDeadline).slice(0, 6);
+  const soon = areaOpen().filter(j => j.lastDate && j.category !== "exam").sort(byDeadline).slice(0, 6);
   const exams = JOBS.filter(j => j.category === "exam" && isOpen(j));
   return `
-    <h4>Closing soon</h4>
+    <h4>Closing soon${state.region === "mine" ? " · My locations" : ""}</h4>
     <div class="box">${soon.length ? soon.map(j => { const d = days(j.lastDate); return mini(j, d === 0 ? "today" : d + "d left"); }).join("") : `<div class="mini"><div class="t"><span>Nothing closing soon</span></div></div>`}</div>
     <h4>Exams to watch</h4>
     <div class="box">${exams.length ? exams.map(j => mini(j, j.lastDate ? fmt(j.lastDate, {day:"numeric", month:"short"}) : "TBA")).join("") : `<div class="mini"><div class="t"><span>None right now</span></div></div>`}</div>
@@ -982,8 +1012,8 @@ function rail(){ $("#rail").innerHTML = railHTML(); }
 /* ---------- Render ---------- */
 function nav(){
   const savedCount = JOBS.filter(j => state.saved[j.id]).length;
-  const soon = JOBS.filter(isSoon).length;
-  const counts = { radar: JOBS.filter(isOpen).length, saved: savedCount, timeline: soon, sites: SOURCES.length, profile: Math.round(completeness() * 100) + "%" };
+  const soon = areaOpen().filter(isSoon).length;
+  const counts = { radar: areaOpen().length, saved: savedCount, timeline: soon, sites: SOURCES.length, profile: Math.round(completeness() * 100) + "%" };
   const p = P(), ie = p.internshipEnd ? days(p.internshipEnd) : null;
   $("#sideprof").innerHTML = `<button class="sideprof" data-view="profile"><b>${p.name ? "Dr. " + esc(p.name) : "Your profile"}</b>
     <span>${ie !== null ? (ie > 0 ? `Internship ends in ${ie} days` : "Internship complete") : "Add internship & registration details"}</span>
@@ -1172,6 +1202,11 @@ document.addEventListener("click", e => {
     if (t.dataset.armed) { state.profile = { name: DEFAULT_NAME }; dobDraft = null; dobOpen = null; saveProfile(); state.region = "all"; toast("Profile cleared", "x"); return render(); }
     t.dataset.armed = 1; t.textContent = "Tap again to clear"; setTimeout(() => { if (t.isConnected) { delete t.dataset.armed; t.textContent = "Reset profile"; } }, 3000); return;
   }
+  if (t.closest("[data-city-add]")) return addCity();
+  if ((el = t.closest("[data-city-del]"))) {
+    P().cities = myCities().filter(c => c !== el.dataset.cityDel); if (!P().cities.length) delete P().cities;
+    saveProfile(); return render();
+  }
   if ((el = t.closest("[data-dob-pick]"))) return setDob(el.dataset.dobPick, el.dataset.v);
   if ((el = t.closest("[data-dob-open]"))) { dobOpen = dobOpen === el.dataset.dobOpen ? null : el.dataset.dobOpen; return showDobMenu(); }
   if (dobOpen && !t.closest(".dob")) { dobOpen = null; render(); }
@@ -1189,7 +1224,7 @@ document.addEventListener("click", e => {
   }
   if ((el = t.closest("[data-cat]"))) { state.cat = el.dataset.cat; return transition(() => render()); }
   if ((el = t.closest("[data-region]"))) {
-    if (el.dataset.region === "mine" && !(P().regions || []).length) { toast("Pick your preferred locations first", "pin"); return gotoProfileField("regions"); }
+    if (el.dataset.region === "mine" && !hasMyLocs()) { toast("Add your preferred locations or cities first", "pin"); return gotoProfileField("regions"); }
     state.region = el.dataset.region; return transition(() => render()); }
   if ((el = t.closest("[data-quick]"))) {
     const k = el.dataset.quick;
@@ -1210,7 +1245,7 @@ document.addEventListener("click", e => {
 let pfToast;
 function saveProfile(){
   store.set("dr-profile", state.profile);
-  if (state.region === "mine" && !(state.profile.regions || []).length) state.region = "all";
+  if (state.region === "mine" && !hasMyLocs()) state.region = "all";
   clearTimeout(pfToast); pfToast = setTimeout(() => toast("Profile saved"), 400);
 }
 document.addEventListener("input", e => {
@@ -1227,7 +1262,16 @@ document.addEventListener("change", e => {
     transition(() => render());
   }
 });
+function addCity(){
+  const inp = $("#city-in"); if (!inp) return;
+  const v = inp.value.trim().replace(/\s+/g, " ").replace(/\b\w/g, ch => ch.toUpperCase());
+  if (!v) return inp.focus();
+  if (myCities().some(c => c.toLowerCase() === v.toLowerCase())) { toast(`${v} is already added`, "pin"); inp.value = ""; return inp.focus(); }
+  P().cities = [...myCities(), v]; saveProfile(); render();
+  $("#city-in")?.focus({ preventScroll: true });
+}
 document.addEventListener("keydown", e => {
+  if (e.key === "Enter" && e.target.id === "city-in") { e.preventDefault(); return addCity(); }
   if (e.key === "Escape" && dobOpen) { dobOpen = null; return render(); }
   if (e.key === "Escape" && $("#pop").classList.contains("show")) return closePop();
   if (e.key === "Escape" && $("#sheet").classList.contains("open")) return closeSheet();
