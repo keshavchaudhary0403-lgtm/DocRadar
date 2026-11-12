@@ -780,8 +780,7 @@ function viewRadar(){
   ];
   return `
   <section class="hero">
-    <div class="hero-row"><button class="live ${freshness().level}" data-runlog><span class="dot"></span>${esc(freshness().long)}${ic("chev")}</button>
-    ${newSinceVisit().length ? `<button class="newpill" data-quick="new">${ic("sparkle")}${newSinceVisit().length} new since your last visit</button>` : ""}</div>
+    ${newSinceVisit().length ? `<div class="hero-row"><button class="newpill" data-quick="new">${ic("sparkle")}${newSinceVisit().length} new since your last visit</button></div>` : ""}
     ${P().name ? `<span class="greet">Hi Dr. ${esc(firstName())} 👋${P().internshipEnd && days(P().internshipEnd) > 0 ? ` · internship ends in ${days(P().internshipEnd)} days` : ""}</span>` : ""}
     <h1>Every opening. <em>Every morning.</em></h1>
     <p>Junior Resident walk-ins, Medical Officer posts, defence and PG exams, scanned daily for Meerut, Uttar Pradesh and Delhi NCR.</p>
