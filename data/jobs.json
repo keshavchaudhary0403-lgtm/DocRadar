@@ -14,18 +14,22 @@
       "lastDate": "2026-11-17",
       "eventDate": "2026-11-17",
       "eligibility": "after-internship",
-      "eligibilityNote": "Needs completed internship and Delhi Medical Council registration. Report 10:00 AM; entry closes 11:30 AM.",
+      "eligibilityNote": "Needs completed internship (not more than 2 years before the interview) and Delhi Medical Council registration. Age limit 30 (OBC 33, SC/ST 35) on the interview date. Report 10:00 AM; entry closes 11:30 AM.",
       "officialUrl": "https://health.delhi.gov.in",
       "sourceUrl": "https://www.freejobalert.com/articles/mvh-junior-resident-recruitment-2026-3076935",
       "addedOn": "2026-11-12",
-      "verified": false,
+      "verified": true,
       "requirements": {
         "internshipBy": "eventDate",
         "registration": "permanent",
         "councils": [
           "Delhi Medical Council"
-        ]
-      }
+        ],
+        "maxAge": 30,
+        "ageOn": "2026-11-17",
+        "ageRelax": true
+      },
+      "noticePdf": "https://health.delhi.gov.in/sites/default/files/Health/circulars-orders/wmvh_29.pdf"
     },
     {
       "id": "afms-ssc-mo-nov-2026",
@@ -82,7 +86,8 @@
         "maxAge": 33,
         "ageOn": "2026-11-19",
         "ageRelax": true
-      }
+      },
+      "noticePdf": "https://www.aiimsbhopal.edu.in/AIIMSFiles/career/Download/Advertisement_JR_27102026.pdf"
     },
     {
       "id": "upsc-cms-2027",
@@ -128,5 +133,5 @@
       "verified": false
     }
   ],
-  "updatedAt": "2026-11-12T07:37:08.693Z"
+  "updatedAt": "2026-11-12T16:50:12.221Z"
 }

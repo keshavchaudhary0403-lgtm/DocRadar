@@ -24,6 +24,7 @@ for (const j of data.jobs) {
   for (const k of ["lastDate", "eventDate", "addedOn"])
     if (j[k] != null && !DATE.test(j[k])) errors.push(`${where}: ${k} must be YYYY-MM-DD`);
   if (!j.officialUrl && !j.sourceUrl) errors.push(`${where}: needs officialUrl or sourceUrl`);
+  if (j.noticePdf != null && !/^https:\/\//.test(j.noticePdf)) errors.push(`${where}: noticePdf must be an https link`);
   const r = j.requirements;
   if (r) {
     const known = ["internshipBy", "registration", "councils", "maxAge", "ageOn", "ageRelax", "neetPg", "maxAttempts", "gender"];

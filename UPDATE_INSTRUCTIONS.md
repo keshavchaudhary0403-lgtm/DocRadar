@@ -108,6 +108,12 @@ For every listing you plan to add or update:
    big expected notifications).
 2. Open the **official notice** (institute or govt domain, ideally the PDF).
    - Confirmed there: `"verified": true`, `officialUrl` = the notice/PDF link.
+   - **`noticePdf` = direct link to the original notification PDF** on the institute / govt
+     domain (or the official Employment News / gazette copy). The site's "Open official notice"
+     button opens this, so it must be the actual notice, not a homepage. Check the link opens a
+     PDF that matches the post and dates. Never use an aggregator's re-upload (FreeJobAlert,
+     Sarkari Result, etc.). If no official PDF exists yet, leave `noticePdf` out. The site then
+     shows an "Official website" button instead. Re-check each day for listings without one.
    - Not confirmable: `"verified": false`, `sourceUrl` = where you found it, `officialUrl` = the
      institute's homepage or recruitment page.
 3. Where sources disagree, the official notice wins. With no official notice, use the **earlier**
@@ -138,7 +144,8 @@ For every listing you plan to add or update:
   "eventDate": "YYYY-MM-DD or null (walk-in / interview / exam date)",
   "eligibility": "intern-ok | after-internship",
   "eligibilityNote": "One or two neutral sentences from the notice: key requirements, reporting time, documents.",
-  "officialUrl": "https://…",
+  "officialUrl": "https://… (institute site or recruitment page)",
+  "noticePdf": "https://….pdf (original notification PDF; omit if none yet)",
   "sourceUrl": "https://…",
   "addedOn": "today YYYY-MM-DD",
   "verified": false,

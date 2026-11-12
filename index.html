@@ -314,6 +314,7 @@ kbd{font-family:"Geist Mono",monospace;font-size:11px;padding:2px 7px;border-rad
 .btn:active{transform:scale(.97)}
 .btn.primary{grid-column:1/-1;background:var(--text);color:var(--bg);border-color:transparent;height:52px;font-size:15px}
 .btn.primary:hover{opacity:.9}
+.acts-note{grid-column:1/-1;font-size:12px;color:var(--faint);text-align:center;margin-top:-2px}
 .btn[aria-pressed=true]{background:var(--green-soft);color:var(--green);border-color:transparent}
 .btn.saved[aria-pressed=true]{background:var(--amber-soft);color:var(--amber)}
 .btn.saved[aria-pressed=true] .ic{fill:currentColor}
@@ -493,6 +494,7 @@ const ICONS = {
   calplus:'<rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4M12 13v5M9.5 15.5h5"/>',
   clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
   check:'<path d="m5 12 4.5 4.5L19 7"/>',
+  doc:'<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/>',
   external:'<path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>',
   share:'<circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="m8.2 10.8 7.6-4.6M8.2 13.2l7.6 4.6"/>',
   x:'<path d="M6 6l12 12M18 6 6 18"/>',
@@ -809,7 +811,7 @@ function viewRadar(){
       ${Object.entries(CAT).map(([k, c]) => `<button class="chip" data-cat="${k}" aria-pressed="${state.cat === k}" style="--c:${c.c}"><span class="sw"></span>${c.label}${counts[k] ? ` <span class="n">${counts[k]}</span>` : ""}</button>`).join("")}
     </div>
     <div class="row2">
-      <div class="seg" role="group" aria-label="Region">${[["mine","My locations"], ...REGIONS].map(([k, l]) => `<button data-region="${k}" aria-pressed="${state.region === k}">${l}</button>`).join("")}</div>
+      <div class="seg" role="group" aria-label="Region">${[["mine","My locations"], ["all","Anywhere"]].map(([k, l]) => `<button data-region="${k}" aria-pressed="${state.region === k}">${l}</button>`).join("")}</div>
       <label class="switch"><input type="checkbox" class="elig-toggle" ${state.eligible ? "checked" : ""}> Can apply now</label>
     </div>
   </div>
@@ -984,21 +986,22 @@ function openSheet(id, focus){
     <div class="sh-head" style="--c:${c.c}"><div class="cat-ic">${ic(c.icon)}</div>
       <div><div class="eyebrow">${c.label}${j.mode ? " · " + esc(j.mode) : ""}</div><h2 id="sh-title">${esc(j.title)}</h2><div class="org" style="white-space:normal">${j.officialUrl ? `<a class="orglink" href="${esc(j.officialUrl)}" target="_blank" rel="noopener">${esc(j.org)} ${ic("external")}</a>` : esc(j.org)}</div></div></div>
     ${(() => { const canCal = open && (j.lastDate || j.eventDate);
-      return `<${canCal ? `button type="button" data-ics="${esc(j.id)}"` : "div"} class="sh-cd ${canCal ? "tap" : ""}" style="--tone:${open ? tone(d) : "var(--faint)"}">${ring(open ? d : null, 60)}<div><b>${cdTitle}</b><span>${j.lastDate ? "Last date " + fmt(j.lastDate, {weekday:"short", day:"numeric", month:"long", year:"numeric"}) : "We'll update this when it's announced"}</span>${canCal ? `<span class="hint">${ic("calplus")}Tap to add to calendar</span>` : ""}</div></${canCal ? "button" : "div"}>`; })()}
+      return `<${canCal ? `button type="button" data-ics="${esc(j.id)}" data-when="last"` : "div"} class="sh-cd ${canCal ? "tap" : ""}" style="--tone:${open ? tone(d) : "var(--faint)"}">${ring(open ? d : null, 60)}<div><b>${cdTitle}</b><span>${j.lastDate ? "Last date " + fmt(j.lastDate, {weekday:"short", day:"numeric", month:"long", year:"numeric"}) : "We'll update this when it's announced"}</span>${canCal ? `<span class="hint">${ic("calplus")}Tap to add to calendar</span>` : ""}</div></${canCal ? "button" : "div"}>`; })()}
     <dl class="kv">
       <a class="wide tap" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(j.org + ", " + j.location.split("(")[0])}" target="_blank" rel="noopener"><dt>${ic("pin")}Location</dt><dd>${esc(j.location)}</dd><span class="hint">${ic("map")}Open in Maps</span></a>
       ${j.posts ? `<div><dt>${ic("users")}Posts</dt><dd>${j.posts}</dd></div>` : ""}
       ${j.mode ? (j.officialUrl ? `<a class="tap" href="${esc(j.officialUrl)}" target="_blank" rel="noopener"><dt>${ic("bolt")}How to apply</dt><dd>${esc(j.mode)}</dd><span class="hint">${ic("external")}Official site</span></a>` : `<div><dt>${ic("bolt")}How to apply</dt><dd>${esc(j.mode)}</dd></div>`) : ""}
       ${j.salary ? `<div class="wide"><dt>${ic("wallet")}Pay</dt><dd>${esc(j.salary)}</dd></div>` : ""}
-      ${j.eventDate && j.eventDate !== j.lastDate ? `<button type="button" class="wide tap" data-ics="${esc(j.id)}"><dt>${ic("cal")}${j.category === "exam" ? "Exam date" : "Interview"}</dt><dd>${fmt(j.eventDate, {weekday:"short", day:"numeric", month:"long", year:"numeric"})}</dd><span class="hint">${ic("calplus")}Add to calendar</span></button>` : ""}
+      ${j.eventDate && j.eventDate !== j.lastDate ? `<button type="button" class="wide tap" data-ics="${esc(j.id)}" data-when="event"><dt>${ic("cal")}${j.category === "exam" ? "Exam date" : "Interview"}</dt><dd>${fmt(j.eventDate, {weekday:"short", day:"numeric", month:"long", year:"numeric"})}</dd><span class="hint">${ic("calplus")}Add to calendar</span></button>` : ""}
     </dl>
     ${eligBlock(j, ok)}
     ${j.verified ? "" : `<div class="callout" style="--tone:var(--muted);--tone-soft:var(--bg-2)">${ic("info")}<div>Found by automated search and not yet checked against the official notice. Confirm before applying.</div></div>`}
     <div class="acts">
-      ${j.officialUrl ? `<a class="btn primary" href="${esc(j.officialUrl)}" target="_blank" rel="noopener">Open official notice ${ic("external")}</a>` : ""}
+      ${j.noticePdf ? `<a class="btn primary" href="${esc(j.noticePdf)}" target="_blank" rel="noopener">${ic("doc")}Open official notice (PDF)</a>`
+        : j.officialUrl ? `<a class="btn primary" href="${esc(j.officialUrl)}" target="_blank" rel="noopener">Official website ${ic("external")}</a><small class="acts-note">Notice PDF not available yet. Look for it on the official website.</small>` : ""}
       <button class="btn saved" data-toggle="saved" data-id="${esc(j.id)}" aria-pressed="${saved}">${ic("star")}${saved ? "Saved" : "Save"}</button>
       <button class="btn" data-toggle="applied" data-id="${esc(j.id)}" aria-pressed="${applied}">${ic("check")}${applied ? "Applied" : "Mark applied"}</button>
-      ${open && (j.lastDate || j.eventDate) ? `<button class="btn" data-ics="${esc(j.id)}">${ic("calplus")}Add to calendar</button>` : ""}
+      ${open && (j.lastDate || j.eventDate) ? `<button class="btn" data-ics="${esc(j.id)}" data-when="${j.lastDate ? "last" : "event"}">${ic("calplus")}Add to calendar</button>` : ""}
       <button class="btn" data-share="${esc(j.id)}">${ic("share")}Share</button>
       ${j.sourceUrl ? `<a class="btn" style="grid-column:1/-1" href="${esc(j.sourceUrl)}" target="_blank" rel="noopener">View source listing ${ic("external")}</a>` : ""}
     </div>`;
@@ -1025,7 +1028,7 @@ function dragToClose(){
 
 function eligBlock(j, ok){
   const v = verdict(j);
-  const note = j.eligibilityNote ? `<div class="callout" style="--tone:var(--muted);--tone-soft:var(--bg-2)">${ic("info")}<div><b style="color:var(--text)">From the notice</b>${esc(j.eligibilityNote)}${j.officialUrl ? `<br><a href="${esc(j.officialUrl)}" target="_blank" rel="noopener">Read the full notice ${ic("external")}</a>` : ""}</div></div>` : "";
+  const note = j.eligibilityNote ? `<div class="callout" style="--tone:var(--muted);--tone-soft:var(--bg-2)">${ic("info")}<div><b style="color:var(--text)">From the notice</b>${esc(j.eligibilityNote)}${j.noticePdf ? `<br><a href="${esc(j.noticePdf)}" target="_blank" rel="noopener">Read the full notice (PDF) ${ic("external")}</a>` : ""}</div></div>` : "";
   if (!v) return `<div class="callout" style="--tone:${ok ? "var(--green)" : "var(--amber)"};--tone-soft:${ok ? "var(--green-soft)" : "var(--amber-soft)"}">${ic(ok ? "check" : "hourglass")}
       <div><b>${ok ? "Can apply during internship" : "Needs completed internship + registration"}</b>${esc(j.eligibilityNote || "")}</div></div>`;
   if (profileEmpty()) return `<div class="setup" style="margin:0 0 10px">${ic("idcard")}<div><b>Am I eligible?</b>Set up your profile to check this post against your details.</div><button class="btn" data-view="profile">Set up</button></div>${note}`;
@@ -1050,29 +1053,22 @@ function toggle(kind, id){
   render(state.view === "saved");
   if ($("#sheet").dataset.id === id) openSheet(id);
 }
-function downloadICS(id){
+function addToCalendar(id, when){
   const j = JOBS.find(x => x.id === id); if (!j) return;
-  const clean = s => String(s).replace(/([,;\\])/g, "\\$1");
-  const stamp = new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z";
-  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//DocRadar//EN", "CALSCALE:GREGORIAN"];
-  const add = (date, label) => {
-    const [y, m, d] = date.split("-").map(Number);
-    const end = new Date(Date.UTC(y, m - 1, d + 1)).toISOString().slice(0, 10).replaceAll("-", "");
-    lines.push("BEGIN:VEVENT", `UID:${j.id}-${date}@docradar`, `DTSTAMP:${stamp}`, `DTSTART;VALUE=DATE:${date.replaceAll("-", "")}`, `DTEND;VALUE=DATE:${end}`,
-      `SUMMARY:${clean(label + ": " + j.title)}`, `DESCRIPTION:${clean(j.org + " — " + (j.officialUrl || j.sourceUrl || ""))}`,
-      "BEGIN:VALARM", "TRIGGER:-P1D", "ACTION:DISPLAY", `DESCRIPTION:${clean(label)} tomorrow`, "END:VALARM", "END:VEVENT");
-  };
-  if (j.lastDate) add(j.lastDate, j.mode === "Walk-in" && j.eventDate === j.lastDate ? "Walk-in" : "Last date");
-  if (j.eventDate && j.eventDate !== j.lastDate) add(j.eventDate, j.category === "exam" ? "Exam" : "Interview");
-  lines.push("END:VCALENDAR");
-  const a = document.createElement("a");
-  a.href = URL.createObjectURL(new Blob([lines.join("\r\n")], { type: "text/calendar" }));
-  a.download = j.id + ".ics"; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
-  toast("Calendar event downloaded, with a reminder 1 day before", "calplus");
+  const date = when === "event" ? j.eventDate : j.lastDate || j.eventDate; if (!date) return;
+  const label = when === "event" && j.eventDate !== j.lastDate ? (j.category === "exam" ? "Exam" : "Interview")
+    : j.mode === "Walk-in" && j.eventDate === j.lastDate ? "Walk-in" : "Last date";
+  const [y, m, d] = date.split("-").map(Number);
+  const ymd = dt => dt.toISOString().slice(0, 10).replaceAll("-", "");
+  const link = j.noticePdf || j.officialUrl || j.sourceUrl || "";
+  const q = new URLSearchParams({ action: "TEMPLATE", text: `${label}: ${j.title}`,
+    dates: `${ymd(new Date(Date.UTC(y, m - 1, d)))}/${ymd(new Date(Date.UTC(y, m - 1, d + 1)))}`,
+    details: `${j.org}${link ? "\n\nNotice: " + link : ""}\n\nFrom DocRadar`, location: j.location || "" });
+  window.open("https://calendar.google.com/calendar/render?" + q, "_blank", "noopener");
 }
 async function share(id){
   const j = JOBS.find(x => x.id === id); if (!j) return;
-  const url = j.officialUrl || j.sourceUrl || location.href;
+  const url = j.noticePdf || j.officialUrl || j.sourceUrl || location.href;
   const text = `${j.title}, ${j.org}${j.lastDate ? ". Last date: " + fmt(j.lastDate) : ""}`;
   if (navigator.share){ try { await navigator.share({ title: j.title, text, url }); } catch {} return; }
   window.open("https://wa.me/?text=" + encodeURIComponent(text + "\n" + url), "_blank", "noopener");
@@ -1122,7 +1118,7 @@ document.addEventListener("click", e => {
     transition(() => render()); return scrollTo({ top: 0 });
   }
   if ((el = t.closest("[data-toggle]"))) { e.stopPropagation(); return toggle(el.dataset.toggle, el.dataset.id); }
-  if ((el = t.closest("[data-ics]"))) return downloadICS(el.dataset.ics);
+  if ((el = t.closest("[data-ics]"))) return addToCalendar(el.dataset.ics, el.dataset.when);
   if ((el = t.closest("[data-share]"))) return share(el.dataset.share);
   if (t.closest("[data-close]") || t.id === "scrim") return closeSheet();
   if ((el = t.closest("[data-open]"))) return openSheet(el.dataset.open, el.dataset.focus);
