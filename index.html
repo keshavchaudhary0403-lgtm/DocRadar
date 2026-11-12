@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DocRadar</title>
+<meta name="description" content="Daily-updated job and exam tracker for a new MBBS doctor.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0f766e">
+<style>
+:root{
+  --bg:#f6f7f9; --card:#ffffff; --text:#16181d; --muted:#5d6472; --line:#e3e6eb;
+  --accent:#0f766e; --accent-soft:#e6f4f2; --danger:#b42318; --danger-soft:#fdecea;
+  --warn:#9a6700; --warn-soft:#fff6db; --ok:#1a7f37; --ok-soft:#e8f5ec; --chip:#eef0f3;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#0f1115; --card:#181b21; --text:#e8eaee; --muted:#9aa2b1; --line:#2a2f38;
+  --accent:#2dd4bf; --accent-soft:#12302d; --danger:#ff8a80; --danger-soft:#3a1a18;
+  --warn:#f5c451; --warn-soft:#352b10; --ok:#6fdd8b; --ok-soft:#14301c; --chip:#232831;
+}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:860px;margin:0 auto;padding:16px}
+header h1{margin:8px 0 2px;font-size:24px;letter-spacing:-.01em}
+header p{margin:0;color:var(--muted);font-size:14px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:16px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.stat b{display:block;font-size:22px}
+.stat span{color:var(--muted);font-size:12px}
+.controls{position:sticky;top:0;background:var(--bg);padding:8px 0;z-index:5}
+input[type=search]{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--text);font-size:15px}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:8px 0 2px;scrollbar-width:none}
+.chip{flex:none;border:1px solid var(--line);background:var(--card);color:var(--text);padding:6px 12px;border-radius:999px;font-size:13px;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.toggle{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);margin-top:6px}
+h2{font-size:16px;margin:24px 0 8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:10px}
+.card.urgent{border-left:4px solid var(--danger)}
+.card.done{opacity:.6}
+.top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.card h3{margin:0;font-size:16px;line-height:1.35}
+.org{color:var(--muted);font-size:13px;margin-top:2px}
+.due{flex:none;text-align:right;font-size:12px;font-weight:600;padding:4px 8px;border-radius:8px;background:var(--chip);white-space:nowrap}
+.due.red{background:var(--danger-soft);color:var(--danger)}
+.due.amber{background:var(--warn-soft);color:var(--warn)}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;color:var(--muted);margin:8px 0}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.badge{font-size:11px;font-weight:600;padding:2px 8px;border-radius:6px;background:var(--chip);color:var(--muted)}
+.badge.new{background:var(--accent-soft);color:var(--accent)}
+.badge.ok{background:var(--ok-soft);color:var(--ok)}
+.badge.wait{background:var(--warn-soft);color:var(--warn)}
+.note{font-size:13px;margin:6px 0 10px}
+.actions{display:flex;flex-wrap:wrap;gap:8px}
+.btn{font-size:13px;padding:6px 12px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--text);text-decoration:none;cursor:pointer}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.btn[aria-pressed=true]{background:var(--ok-soft);border-color:var(--ok);color:var(--ok)}
+.empty{color:var(--muted);text-align:center;padding:24px}
+.sources{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px}
+.src{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;text-decoration:none;color:var(--text)}
+.src b{display:block;font-size:14px;color:var(--accent)}
+.src span{font-size:12px;color:var(--muted)}
+details{margin-top:8px} summary{cursor:pointer;color:var(--muted);font-size:14px}
+footer{color:var(--muted);font-size:12px;margin:32px 0 16px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>DocRadar</h1>
+    <p>Jobs, walk-ins and exams for a new MBBS doctor in Meerut, UP and Delhi NCR · <span id="updated">loading…</span></p>
+  </header>
+
+  <div class="stats">
+    <div class="stat"><b id="s-open">–</b><span>open now</span></div>
+    <div class="stat"><b id="s-soon">–</b><span>closing in 7 days</span></div>
+    <div class="stat"><b id="s-new">–</b><span>new in 2 days</span></div>
+  </div>
+
+  <div class="controls">
+    <input type="search" id="q" placeholder="Search hospital, city, post…" aria-label="Search">
+    <div class="chips" id="cats"></div>
+    <div class="chips" id="regions"></div>
+    <label class="toggle"><input type="checkbox" id="eligibleOnly"> Only what he can apply for now (during internship)</label>
+    <label class="toggle"><input type="checkbox" id="savedOnly"> Only saved ★</label>
+  </div>
+
+  <h2 id="list-title">Openings</h2>
+  <div id="list"></div>
+
+  <details id="closed-wrap"><summary>Recently closed (<span id="closed-count">0</span>), so he knows what to expect next time</summary><div id="closed" style="margin-top:8px"></div></details>
+
+  <h2>Key websites</h2>
+  <div class="sources" id="sources"></div>
+
+  <footer>Updated daily by an automated web search. Always check the official notice before applying or travelling.</footer>
+</div>
+
+<script>
+const CATS = [["all","All"],["jr","Junior Resident"],["mo","Medical Officer"],["defence","Defence"],["exam","Exams"],["private","Private hospitals"],["other","Fellowship / Other"]];
+const REGIONS = [["all","Anywhere"],["meerut","Meerut"],["up","Uttar Pradesh"],["delhi-ncr","Delhi NCR"],["all-india","Other states"]];
+const store = {
+  get(k){ try{ return JSON.parse(localStorage.getItem(k)) ?? {} }catch{ return {} } },
+  set(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)) }catch{} }
+};
+const state = { cat:"all", region:"all", q:"", saved:store.get("dr-saved"), applied:store.get("dr-applied") };
+const today = new Date(); today.setHours(0,0,0,0);
+const days = d => d ? Math.round((new Date(d+"T00:00:00") - today)/864e5) : null;
+const fmt = d => d ? new Date(d+"T00:00:00").toLocaleDateString("en-IN",{day:"numeric",month:"short",year:"numeric"}) : "";
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let JOBS = [];
+
+function chips(el, items, key){
+  el.innerHTML = items.map(([v,l]) => `<button class="chip" data-v="${v}" aria-pressed="${state[key]===v}">${l}</button>`).join("");
+  el.onclick = e => { const b = e.target.closest(".chip"); if(!b) return; state[key] = b.dataset.v; chips(el, items, key); render(); };
+}
+
+function card(j, closed){
+  const d = days(j.lastDate);
+  let due = "Date TBA", cls = "";
+  if (d !== null) {
+    if (closed) due = "Closed " + fmt(j.lastDate);
+    else if (d === 0) { due = "Last day today"; cls = "red"; }
+    else { due = `${d} day${d>1?"s":""} left`; cls = d <= 3 ? "red" : d <= 7 ? "amber" : ""; }
+  }
+  const isNew = days(j.addedOn) !== null && days(j.addedOn) >= -2;
+  const elig = j.eligibility === "intern-ok"
+    ? `<span class="badge ok">Can apply during internship</span>`
+    : `<span class="badge wait">Needs completed internship + registration</span>`;
+  const saved = !!state.saved[j.id], applied = !!state.applied[j.id];
+  return `<article class="card ${!closed && d!==null && d<=3 ? "urgent":""} ${applied?"done":""}">
+    <div class="top"><div><h3>${esc(j.title)}</h3><div class="org">${esc(j.org)}</div></div><div class="due ${cls}">${due}</div></div>
+    <div class="badges">${isNew && !closed ? `<span class="badge new">NEW</span>`:""}${elig}${j.verified?`<span class="badge ok">Verified on official site</span>`:""}</div>
+    <div class="meta">
+      <span>📍 ${esc(j.location)}</span>
+      ${j.posts?`<span>👥 ${j.posts} posts</span>`:""}
+      ${j.salary?`<span>💰 ${esc(j.salary)}</span>`:""}
+      ${j.mode?`<span>📝 ${esc(j.mode)}</span>`:""}
+      ${j.eventDate && j.eventDate!==j.lastDate?`<span>📅 ${j.category==="exam"?"Exam":"Interview"}: ${fmt(j.eventDate)}</span>`:""}
+      ${j.lastDate?`<span>⏳ Last date: ${fmt(j.lastDate)}</span>`:""}
+    </div>
+    ${j.eligibilityNote?`<p class="note">${esc(j.eligibilityNote)}</p>`:""}
+    <div class="actions">
+      ${j.officialUrl?`<a class="btn primary" href="${esc(j.officialUrl)}" target="_blank" rel="noopener">Official notice</a>`:""}
+      ${j.sourceUrl?`<a class="btn" href="${esc(j.sourceUrl)}" target="_blank" rel="noopener">Details</a>`:""}
+      ${closed?"":`<button class="btn" data-act="saved" data-id="${esc(j.id)}" aria-pressed="${saved}">${saved?"★ Saved":"☆ Save"}</button>
+      <button class="btn" data-act="applied" data-id="${esc(j.id)}" aria-pressed="${applied}">${applied?"✓ Applied":"Mark applied"}</button>`}
+    </div></article>`;
+}
+
+function matches(j){
+  if (state.cat !== "all" && j.category !== state.cat) return false;
+  if (state.region !== "all" && j.region !== state.region) return false;
+  if (document.getElementById("eligibleOnly").checked && j.eligibility !== "intern-ok") return false;
+  if (document.getElementById("savedOnly").checked && !state.saved[j.id]) return false;
+  if (state.q) { const hay = [j.title,j.org,j.location,j.eligibilityNote,j.salary].join(" ").toLowerCase(); if (!state.q.split(/\s+/).every(w => hay.includes(w))) return false; }
+  return true;
+}
+
+function render(){
+  const open = JOBS.filter(j => j.lastDate === null || days(j.lastDate) >= 0);
+  const closed = JOBS.filter(j => j.lastDate !== null && days(j.lastDate) < 0 && days(j.lastDate) >= -60);
+  document.getElementById("s-open").textContent = open.length;
+  document.getElementById("s-soon").textContent = open.filter(j => j.lastDate && days(j.lastDate) <= 7).length;
+  document.getElementById("s-new").textContent = open.filter(j => days(j.addedOn) >= -2).length;
+  const shown = open.filter(matches).sort((a,b) => (a.lastDate ?? "9999") < (b.lastDate ?? "9999") ? -1 : 1);
+  document.getElementById("list").innerHTML = shown.length ? shown.map(j => card(j,false)).join("") : `<div class="empty">Nothing matches these filters right now.</div>`;
+  document.getElementById("closed-count").textContent = closed.length;
+  document.getElementById("closed").innerHTML = closed.sort((a,b)=>a.lastDate<b.lastDate?1:-1).map(j => card(j,true)).join("");
+}
+
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-act]"); if(!b) return;
+  const map = state[b.dataset.act]; map[b.dataset.id] ? delete map[b.dataset.id] : map[b.dataset.id] = true;
+  store.set("dr-"+b.dataset.act, map); render();
+});
+document.getElementById("q").oninput = e => { state.q = e.target.value.trim().toLowerCase(); render(); };
+["eligibleOnly","savedOnly"].forEach(id => document.getElementById(id).onchange = render);
+chips(document.getElementById("cats"), CATS, "cat");
+chips(document.getElementById("regions"), REGIONS, "region");
+
+Promise.all([fetch("data/jobs.json",{cache:"no-store"}).then(r=>r.json()), fetch("data/sources.json").then(r=>r.json())])
+  .then(([jobs, src]) => {
+    JOBS = jobs.jobs;
+    document.getElementById("updated").textContent = "updated " + fmt(jobs.updated);
+    document.getElementById("sources").innerHTML = src.sources.sort((a,b)=>a.priority-b.priority)
+      .map(s => `<a class="src" href="${esc(s.url)}" target="_blank" rel="noopener"><b>${esc(s.name)}</b><span>${esc(s.group)} · ${esc(s.why)}</span></a>`).join("");
+    render();
+  })
+  .catch(() => { document.getElementById("list").innerHTML = `<div class="empty">Couldn't load jobs data.</div>`; });
+</script>
+</body>
+</html>
