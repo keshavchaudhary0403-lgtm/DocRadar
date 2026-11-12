@@ -351,7 +351,7 @@ kbd{font-family:"Geist Mono",monospace;font-size:11px;padding:2px 7px;border-rad
 .field{display:block;margin-bottom:16px}
 .field:last-child{margin-bottom:0}
 .field > span{display:block;font-size:13px;font-weight:550;margin-bottom:7px}
-.dob{display:grid;grid-template-columns:1fr 1.2fr 1.2fr;gap:8px}
+.dob{display:grid;grid-template-columns:78px 92px 96px;gap:8px}
 .dob select.inp{padding:0 28px 0 11px;background-position:right 8px center;background-size:16px}
 .field small{display:block;font-size:12px;color:var(--faint);margin-top:6px}
 .inp{width:100%;height:46px;padding:0 13px;border-radius:12px;border:1px solid var(--line-2);background:var(--solid);font-size:15px;outline:none;transition:border-color .2s,box-shadow .2s;appearance:none}
@@ -538,25 +538,27 @@ const VIEWS = [["radar","Radar","radar"],["timeline","Timeline","timeline"],["sa
 const COUNCILS = ["Uttar Pradesh Medical Council","National Medical Commission (IMR)","Delhi Medical Council","Haryana Medical Council","Uttarakhand Medical Council","Rajasthan Medical Council","Madhya Pradesh Medical Council","Punjab Medical Council","Bihar Medical Council","Other state council"];
 const REG = [["none","Not yet"],["provisional","Provisional"],["applied","Permanent: applied"],["permanent","Permanent: received"]];
 const TIPS = {
-  attempts:{ t:"Final MBBS Part I & Part II", h:`The final professional MBBS exam is split into two parts:
-    <table><tr><th>Part I</th><td>End of 3rd year: Community Medicine (PSM), ENT, Ophthalmology, Forensic Medicine</td></tr>
-    <tr><th>Part II</th><td>End of final year: General Medicine, General Surgery, OBG, Paediatrics</td></tr></table>
-    Answer <b>Yes</b> if you cleared <b>each</b> part on the 1st or 2nd attempt (at most one supplementary in each).
-    <p>The Army AFMS Medical Officer entry requires this. Most other jobs don't check it.</p>` },
-  internshipEnd:{ t:"Internship completion date", h:`The last day of your 12-month Compulsory Rotating Medical Internship (CRMI), as on your internship schedule or completion certificate.
-    <p>Most JR and MO posts need it finished <b>by the last date or the interview day</b>, so this one date decides a lot.</p>` },
-  regStatus:{ t:"Registration status", h:`<table><tr><th>Provisional</th><td>Given for the internship period</td></tr>
-    <tr><th>Permanent: applied</th><td>Applied to the council after internship, certificate not yet received</td></tr>
-    <tr><th>Permanent: received</th><td>Permanent registration certificate in hand</td></tr></table>
-    Almost every job after MBBS asks for <b>permanent</b> registration.` },
-  council:{ t:"Medical council", h:`The State Medical Council (or NMC) you're registered with. After Subharti, Meerut, this is usually the <b>Uttar Pradesh Medical Council</b>.
-    <p>Delhi government hospitals often require <b>Delhi Medical Council</b> registration as well, which you can take in addition.</p>` },
-  neetPg:{ t:"NEET-PG appearance", h:`Tick every year you <b>sat</b> NEET-PG, whatever the score.
-    <p>AFMS shortlists Medical Officers on NEET-PG percentile, so it only accepts recent attempts (2025 or 2026 for the current drive).</p>` },
-  category:{ t:"Category & age relaxation", h:`Most government posts relax the upper age limit:
-    <table><tr><th>OBC</th><td>+3 years</td></tr><tr><th>SC / ST</th><td>+5 years</td></tr><tr><th>PwBD</th><td>+10 years (on top of the above)</td></tr><tr><th>EWS / General</th><td>No relaxation</td></tr></table>
-    Some posts (e.g. AFMS) give no relaxation; DocRadar follows each notice.` },
-  pwbd:{ t:"Person with Benchmark Disability", h:`A certified disability of 40% or more. PwBD candidates get reserved posts and an extra 10 years of age relaxation in most government recruitments.` }
+  attempts:{ t:"Passed final MBBS in 2 attempts?", h:`Final-year MBBS exams come in two parts:
+    <table><tr><th>Part I</th><td>3rd year: PSM (Community Medicine), ENT, Eye, Forensic Medicine</td></tr>
+    <tr><th>Part II</th><td>Final year: Medicine, Surgery, OBG, Paediatrics</td></tr></table>
+    <p><b>New since 2019:</b> for batches that joined MBBS in 2019 or later (NMC's new CBME curriculum), Forensic Medicine moved from 2nd year into Part I. Older batches had only PSM, ENT and Eye in Part I.</p>
+    <p>Tap <b>Yes</b> if you passed <b>Part I</b> in your 1st or 2nd try <b>and</b> <b>Part II</b> in your 1st or 2nd try. One supplementary in each part is fine. Two or more in the same part means <b>No</b>.</p>
+    <p>Only the Army (AFMS) Medical Officer job checks this. Most other jobs don't ask.</p>` },
+  internshipEnd:{ t:"When does your internship end?", h:`The last day of your 1-year internship (CRMI). You'll find it on your internship schedule or completion certificate.
+    <p>Most jobs need your internship <b>finished by the last date or the interview day</b>. This one date decides most of what you can apply for.</p>` },
+  regStatus:{ t:"Your registration", h:`<table><tr><th>Provisional</th><td>The temporary registration you get for internship</td></tr>
+    <tr><th>Permanent: applied</th><td>Internship done, applied for permanent, certificate not here yet</td></tr>
+    <tr><th>Permanent: received</th><td>You have the permanent registration certificate</td></tr></table>
+    <p>Almost every job after MBBS needs <b>permanent</b> registration.</p>` },
+  council:{ t:"Which medical council?", h:`The council you're registered with. If you studied at Subharti, Meerut, it's usually the <b>Uttar Pradesh Medical Council</b>.
+    <p>Delhi government hospitals often want <b>Delhi Medical Council</b> registration too. You can get it in addition to UP.</p>` },
+  neetPg:{ t:"Did you write NEET-PG?", h:`Tick each year you <b>sat</b> the NEET-PG exam. Your score doesn't matter here.
+    <p>The Army (AFMS) picks Medical Officers using NEET-PG scores, so it only accepts recent years (2025 or 2026 for the current round).</p>` },
+  category:{ t:"Category and age limit", h:`Most government jobs let you be older than the age limit, depending on category:
+    <table><tr><th>OBC</th><td>3 extra years</td></tr><tr><th>SC / ST</th><td>5 extra years</td></tr><tr><th>PwBD</th><td>10 extra years, added on top</td></tr><tr><th>General / EWS</th><td>No extra years</td></tr></table>
+    <p>Some jobs (like the Army AFMS) give no extra years. DocRadar follows what each notice says.</p>` },
+  pwbd:{ t:"Person with disability (PwBD)", h:`Choose <b>Yes</b> only if you have a disability certificate showing <b>40% or more</b>.
+    <p>PwBD candidates get reserved seats and up to 10 extra years on the age limit in most government jobs.</p>` }
 };
 const tip = k => `<button type="button" class="tip-btn" data-tip="${k}" aria-label="What does this mean?" aria-expanded="false">${ic("info")}</button>`;
 
