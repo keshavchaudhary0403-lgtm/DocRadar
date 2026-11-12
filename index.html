@@ -372,14 +372,33 @@ select.inp{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.
 .opts{display:flex;flex-wrap:wrap;gap:6px}
 .opt{height:38px;padding:0 14px;border-radius:11px;border:1px solid var(--line-2);background:var(--solid);font-size:13.5px;font-weight:550;color:var(--muted);transition:all .2s var(--ease)}
 .opt:hover{color:var(--text)}
-.opt.city{display:inline-flex;align-items:center;gap:4px;padding:0 6px 0 12px;color:var(--text);background:var(--accent-soft);border-color:transparent}
-.opt.city button{display:grid;place-items:center;width:24px;height:24px;border-radius:7px;border:0;background:none;color:var(--muted);cursor:pointer}
-.opt.city button:hover{background:var(--line);color:var(--text)}
-.opt.city .ic{width:14px;height:14px}
-.city-list{margin-bottom:8px}
-.city-add{display:flex;gap:8px;max-width:420px}
+.places{display:flex;flex-wrap:wrap;gap:8px}
+.place-w{display:inline-flex;align-items:center;position:relative}
+.place{display:inline-flex;align-items:center;gap:7px;height:40px;padding:0 8px 0 10px;border-radius:12px;border:1px solid var(--line-2);background:var(--solid);font-size:14px;font-weight:550;color:var(--text);cursor:pointer;transition:all .2s var(--ease)}
+.place:hover{border-color:var(--faint)}
+.place .tick{display:grid;place-items:center;width:18px;height:18px;border-radius:6px;border:1.5px solid var(--line-2);color:transparent;transition:all .2s var(--ease)}
+.place .tick .ic{width:12px;height:12px;stroke-width:3}
+.place .pc{min-width:22px;height:22px;padding:0 6px;border-radius:99px;display:grid;place-items:center;font-size:12px;font-weight:650;background:var(--bg-2);color:var(--muted)}
+.place[aria-pressed=true]{background:var(--accent-soft);border-color:var(--accent)}
+.place[aria-pressed=true] .tick{background:var(--accent);border-color:var(--accent);color:#fff}
+.place[aria-pressed=true] .pc{background:var(--accent);color:#fff}
+.place-w:has(.place-x) .place{padding-right:34px}
+.place-x{position:absolute;right:5px;display:grid;place-items:center;width:24px;height:24px;border-radius:7px;border:0;background:none;color:var(--muted);cursor:pointer}
+.place-x:hover{background:var(--line);color:var(--text)}
+.place-x .ic{width:13px;height:13px}
+.place.add{padding:0 14px;border-style:dashed;color:var(--accent);font-weight:600;background:none}
+.place-sum{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:14px;background:var(--bg-2);margin-bottom:16px}
+.place-sum > .ic{color:var(--muted);flex:none}
+.place-sum.on{background:var(--accent-soft)}
+.place-sum.on > .ic{color:var(--accent)}
+.place-sum div{flex:1;min-width:0}
+.place-sum b{display:block;font-size:14px}
+.place-sum span{font-size:12.5px;color:var(--muted)}
+.place-sum .btn{height:38px;padding:0 14px;flex:none}
+.city-add{display:flex;gap:8px;margin-top:10px;max-width:440px}
 .city-add .inp{flex:1;min-width:0}
-.city-add .btn{flex:none}
+.city-add .btn{flex:none;height:46px}
+.btn.primary-s{background:var(--accent);color:#fff;border-color:transparent}
 .area-note{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:13px;color:var(--muted)}
 .area-note .ic{width:15px;height:15px;color:var(--accent)}
 .opt[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
@@ -797,6 +816,33 @@ function inMyLocs(j){
   return myCities().some(c => cityRe(c).test(hay));
 }
 const inArea = j => state.region !== "mine" || inMyLocs(j);
+/* Profile "Where you want to work": every place is a tick-able chip with a live count */
+const CITY_PRESETS = ["Ghaziabad","Noida","Greater Noida","Delhi","Hapur","Lucknow"];
+let cityAdding = false;
+const allCities = () => { const seen = new Set(); return [...CITY_PRESETS, ...(P().cityPool || []), ...myCities()].filter(c => { const k = c.toLowerCase(); return seen.has(k) ? false : seen.add(k); }); };
+const placeJobs = () => JOBS.filter(isOpen).filter(j => j.category !== "exam");
+const cityHit = (j, c) => cityRe(c).test([j.location, j.org, j.title].join(" ").toLowerCase());
+function placesHTML(){
+  const jobs = placeJobs(), regions = P().regions || [], cities = myCities();
+  const chip = (attr, label, on, n, extra = "") => `<span class="place-w"><button type="button" class="place" ${attr} aria-pressed="${on}">
+    <span class="tick">${ic("check")}</span>${esc(label)}<span class="pc" title="Open jobs now">${n}</span></button>${extra}</span>`;
+  const matched = jobs.filter(inMyLocs).length;
+  const summary = hasMyLocs()
+    ? `<div class="place-sum on">${ic("pin")}<div><b>${matched} opening${matched === 1 ? "" : "s"} in your places right now</b><span>${regions.length + cities.length} place${regions.length + cities.length === 1 ? "" : "s"} ticked · exams always show</span></div><button type="button" class="btn" data-show-mine>Show on Radar</button></div>`
+    : `<div class="place-sum">${ic("pin")}<div><b>No places ticked yet</b><span>Tick at least one place to use "My locations" on Radar.</span></div></div>`;
+  return `${summary}
+    <div class="field" id="pf-regions"><span>Regions</span><div class="places">${REGIONS.filter(r => r[0] !== "all").map(([k, l]) =>
+      chip(`data-place-r="${k}"`, l, regions.includes(k), jobs.filter(j => j.region === k).length)).join("")}</div></div>
+    <div class="field" id="pf-cities"><span>Cities</span><div class="places">${allCities().map(c => {
+      const custom = !CITY_PRESETS.some(x => x.toLowerCase() === c.toLowerCase());
+      return chip(`data-place-c="${esc(c)}"`, c, cities.some(x => x.toLowerCase() === c.toLowerCase()), jobs.filter(j => cityHit(j, c)).length,
+        custom ? `<button type="button" class="place-x" data-city-del="${esc(c)}" aria-label="Remove ${esc(c)}">${ic("x")}</button>` : "");
+    }).join("")}
+      ${cityAdding ? "" : `<button type="button" class="place add" data-city-open>+ Add city</button>`}</div>
+      ${cityAdding ? `<div class="city-add"><input class="inp" id="city-in" type="text" list="city-sugg" placeholder="Type a city or town" maxlength="40" autocomplete="off"><button type="button" class="btn primary-s" data-city-add>Add</button><button type="button" class="btn" data-city-cancel>Cancel</button></div>
+        <datalist id="city-sugg">${CITY_SUGG.filter(c => !allCities().some(x => x.toLowerCase() === c.toLowerCase())).map(c => `<option value="${c}">`).join("")}</datalist>` : ""}
+      <small>The number is how many open jobs mention that place today. New ones are added every morning.</small></div>`;
+}
 const areaOpen = () => JOBS.filter(isOpen).filter(inArea);
 const areaNote = () => state.region === "mine" ? `<div class="area-note">${ic("pin")}Showing My locations only. <button class="link" data-region="all">Show Anywhere</button></div>` : "";
 
@@ -944,13 +990,8 @@ function viewProfile(){
       <div class="field" id="pf-gender"><span>Gender</span>${opt("gender", [["male","Male"],["female","Female"],["other","Other"]])}<small>Some posts (e.g. Female Medical Officer) and AFMS seats are split by gender.</small></div>
       <div class="field" id="pf-pwbd"><span>Person with disability (PwBD)?${tip("pwbd")}</span>${opt("pwbd", [["no","No"],["yes","Yes"]])}</div>
     </section>
-    <section class="pf-card" style="--i:3"><h3>${ic("pin")}Where you want to work</h3><p>Turn on "My locations" on Radar to see only openings in these places. Timeline and Closing soon follow it too. Exams always show.</p>
-      <div class="field" id="pf-regions"><span>Preferred regions</span>${opt("regions", REGIONS.filter(r => r[0] !== "all"), true)}</div>
-      <div class="field" id="pf-cities"><span>Cities</span>
-        ${myCities().length ? `<div class="opts city-list">${myCities().map(c => `<span class="opt city">${esc(c)}<button type="button" data-city-del="${esc(c)}" aria-label="Remove ${esc(c)}">${ic("x")}</button></span>`).join("")}</div>` : ""}
-        <div class="city-add"><input class="inp" id="city-in" type="text" list="city-sugg" placeholder="Add a city, e.g. Ghaziabad" maxlength="40" autocomplete="off"><button type="button" class="btn" data-city-add>Add</button></div>
-        <datalist id="city-sugg">${CITY_SUGG.filter(c => !myCities().some(x => x.toLowerCase() === c.toLowerCase())).map(c => `<option value="${c}">`).join("")}</datalist>
-        <small>Add any city or town. An opening counts if its location, hospital or title mentions the city.</small></div>
+    <section class="pf-card" style="--i:3"><h3>${ic("pin")}Where you want to work</h3><p>Tick the places you'd work in. "My locations" on Radar then shows only these.</p>
+      ${placesHTML()}
     </section>
   </div>
   <div class="pf-foot"><span>${ic("lock")}Stored only in this browser on this device</span><button type="button" class="btn danger" id="pf-reset">Reset profile</button></div>`;
@@ -1199,13 +1240,27 @@ document.addEventListener("click", e => {
     saveProfile(); return render();
   }
   if (t.id === "pf-reset") {
-    if (t.dataset.armed) { state.profile = { name: DEFAULT_NAME }; dobDraft = null; dobOpen = null; saveProfile(); state.region = "all"; toast("Profile cleared", "x"); return render(); }
+    if (t.dataset.armed) { state.profile = { name: DEFAULT_NAME }; dobDraft = null; dobOpen = null; cityAdding = false; saveProfile(); state.region = "all"; toast("Profile cleared", "x"); return render(); }
     t.dataset.armed = 1; t.textContent = "Tap again to clear"; setTimeout(() => { if (t.isConnected) { delete t.dataset.armed; t.textContent = "Reset profile"; } }, 3000); return;
   }
   if (t.closest("[data-city-add]")) return addCity();
+  if (t.closest("[data-city-open]")) { cityAdding = true; render(); return $("#city-in")?.focus({ preventScroll: true }); }
+  if (t.closest("[data-city-cancel]")) { cityAdding = false; return render(); }
   if ((el = t.closest("[data-city-del]"))) {
-    P().cities = myCities().filter(c => c !== el.dataset.cityDel); if (!P().cities.length) delete P().cities;
+    const p = P(), c = el.dataset.cityDel;
+    p.cityPool = (p.cityPool || []).filter(x => x !== c); p.cities = myCities().filter(x => x !== c);
+    if (!p.cityPool.length) delete p.cityPool; if (!p.cities.length) delete p.cities;
     saveProfile(); return render();
+  }
+  if ((el = t.closest("[data-place-r],[data-place-c]"))) {
+    const p = P(), on = el.getAttribute("aria-pressed") !== "true";
+    if (el.dataset.placeR) { const a = new Set(p.regions || []); on ? a.add(el.dataset.placeR) : a.delete(el.dataset.placeR); p.regions = [...a]; }
+    else { const c = el.dataset.placeC, rest = myCities().filter(x => x.toLowerCase() !== c.toLowerCase()); p.cities = on ? [...rest, c] : rest; if (!p.cities.length) delete p.cities; }
+    saveProfile(); return render();
+  }
+  if (t.closest("[data-show-mine]")) {
+    Object.assign(state, { view: "radar", region: "mine" }); store.set("dr-view", "radar");
+    transition(() => render()); return scrollTo({ top: 0 });
   }
   if ((el = t.closest("[data-dob-pick]"))) return setDob(el.dataset.dobPick, el.dataset.v);
   if ((el = t.closest("[data-dob-open]"))) { dobOpen = dobOpen === el.dataset.dobOpen ? null : el.dataset.dobOpen; return showDobMenu(); }
@@ -1266,12 +1321,16 @@ function addCity(){
   const inp = $("#city-in"); if (!inp) return;
   const v = inp.value.trim().replace(/\s+/g, " ").replace(/\b\w/g, ch => ch.toUpperCase());
   if (!v) return inp.focus();
-  if (myCities().some(c => c.toLowerCase() === v.toLowerCase())) { toast(`${v} is already added`, "pin"); inp.value = ""; return inp.focus(); }
-  P().cities = [...myCities(), v]; saveProfile(); render();
-  $("#city-in")?.focus({ preventScroll: true });
+  const p = P(), same = c => c.toLowerCase() === v.toLowerCase();
+  const name = allCities().find(same) || v;
+  if (!allCities().some(same)) p.cityPool = [...(p.cityPool || []), name];
+  if (!myCities().some(same)) p.cities = [...myCities(), name];
+  cityAdding = false; saveProfile(); render();
+  toast(`${name} added to My locations`, "pin");
 }
 document.addEventListener("keydown", e => {
   if (e.key === "Enter" && e.target.id === "city-in") { e.preventDefault(); return addCity(); }
+  if (e.key === "Escape" && cityAdding) { cityAdding = false; return render(); }
   if (e.key === "Escape" && dobOpen) { dobOpen = null; return render(); }
   if (e.key === "Escape" && $("#pop").classList.contains("show")) return closePop();
   if (e.key === "Escape" && $("#sheet").classList.contains("open")) return closeSheet();
