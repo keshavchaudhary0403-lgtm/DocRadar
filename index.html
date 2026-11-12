@@ -387,6 +387,7 @@ select.inp{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.
 .place-x:hover{background:var(--line);color:var(--text)}
 .place-x .ic{width:13px;height:13px}
 .place.add{padding:0 14px;border-style:dashed;color:var(--accent);font-weight:600;background:none}
+.place-help{display:block;font-size:12px;color:var(--faint);margin-top:-4px}
 .place-sum{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:14px;background:var(--bg-2);margin-bottom:16px}
 .place-sum > .ic{color:var(--muted);flex:none}
 .place-sum.on{background:var(--accent-soft)}
@@ -574,7 +575,6 @@ const CAT = {
   private:{label:"Private", icon:"building", c:"#f59e0b"},
   other:{label:"Fellowship", icon:"flask", c:"#ec4899"}
 };
-const REGIONS = [["all","Anywhere"],["meerut","Meerut"],["up","Uttar Pradesh"],["delhi-ncr","Delhi NCR"],["all-india","Other states"]];
 const VIEWS = [["radar","Radar","radar"],["timeline","Timeline","timeline"],["saved","Saved","star"],["sites","Sites","globe"],["profile","Profile","user"]];
 const CITY_SUGG = ["Meerut","Ghaziabad","Noida","Greater Noida","Delhi","Hapur","Baghpat","Bulandshahr","Muzaffarnagar","Shamli","Saharanpur","Bijnor","Moradabad","Aligarh","Agra","Lucknow","Kanpur","Gurugram","Faridabad","Dehradun","Haridwar","Chandigarh","Jaipur"];
 const COUNCILS = ["Uttar Pradesh Medical Council","National Medical Commission (IMR)","Delhi Medical Council","Haryana Medical Council","Uttarakhand Medical Council","Rajasthan Medical Council","Madhya Pradesh Medical Council","Punjab Medical Council","Bihar Medical Council","Other state council"];
@@ -805,44 +805,84 @@ function mini(j, dateText){
     <div class="t"><b>${esc(j.title)}</b><span>${esc(j.org)}</span></div><span class="d">${dateText}</span></div>`;
 }
 
-/* "My locations" = preferred regions + cities from Profile. Exams are national, so they always pass. */
-const myCities = () => P().cities || [];
-const hasMyLocs = () => (P().regions || []).length > 0 || myCities().length > 0;
+/* "My locations" = ticked states + ticked cities from Profile.
+   Exams and all-India recruitments (AFMS, UPSC etc.) aren't tied to a place, so they always pass. */
+const STATES = ["Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chhattisgarh","Goa","Gujarat","Haryana","Himachal Pradesh","Jharkhand","Karnataka","Kerala","Madhya Pradesh","Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland","Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura","Uttar Pradesh","Uttarakhand","West Bengal","Andaman and Nicobar Islands","Chandigarh","Dadra and Nagar Haveli and Daman and Diu","Delhi","Jammu and Kashmir","Ladakh","Lakshadweep","Puducherry"];
+const STATE_ABBR = { UP:"Uttar Pradesh", MP:"Madhya Pradesh", HP:"Himachal Pradesh", AP:"Andhra Pradesh", WB:"West Bengal", TN:"Tamil Nadu", "J&K":"Jammu and Kashmir", UK:"Uttarakhand" };
+const NCR_STATE = { noida:"Uttar Pradesh", "greater noida":"Uttar Pradesh", ghaziabad:"Uttar Pradesh", meerut:"Uttar Pradesh", hapur:"Uttar Pradesh", gurugram:"Haryana", gurgaon:"Haryana", faridabad:"Haryana", sonipat:"Haryana" };
+const PLACES = {
+  state: { label:"States", presets:["Uttar Pradesh","Delhi","Haryana","Uttarakhand"], sel:"states", pool:"statePool", add:"+ Add state", ph:"Type a state, e.g. Rajasthan", sugg:STATES },
+  city:  { label:"Cities", presets:["Meerut","Ghaziabad","Noida","Greater Noida","Hapur","Lucknow"], sel:"cities", pool:"cityPool", add:"+ Add city", ph:"Type a city or town", sugg:CITY_SUGG }
+};
+const picked = k => P()[PLACES[k].sel] || [];
+const myCities = () => picked("city");
+const hasMyLocs = () => picked("state").length > 0 || picked("city").length > 0;
 const cityRe = c => new RegExp(`(^|[^a-z])${c.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}([^a-z]|$)`);
+const isNational = j => j.category === "exam" || j.state === "All India" || (!j.state && j.region === "all-india" && /all india/i.test(j.location || ""));
+function jobState(j){
+  if (j.state) return j.state;
+  if (j.region === "meerut" || j.region === "up") return "Uttar Pradesh";
+  const loc = j.location || "", low = loc.toLowerCase();
+  const full = STATES.find(st => cityRe(st).test(low)); if (full) return full;
+  const ab = Object.keys(STATE_ABBR).find(a => new RegExp(`(^|[^A-Za-z])${a.replace("&", "\\&")}([^A-Za-z]|$)`).test(loc)); if (ab) return STATE_ABBR[ab];
+  const c = Object.keys(NCR_STATE).find(k => cityRe(k).test(low)); return c ? NCR_STATE[c] : null;
+}
+const cityHit = (j, c) => cityRe(c).test([j.location, j.org, j.title].join(" ").toLowerCase());
 function inMyLocs(j){
-  if (j.category === "exam") return true;
-  if ((P().regions || []).includes(j.region)) return true;
-  const hay = [j.location, j.org, j.title].join(" ").toLowerCase();
-  return myCities().some(c => cityRe(c).test(hay));
+  if (isNational(j)) return true;
+  const st = jobState(j);
+  return picked("state").some(x => x === st) || picked("city").some(c => cityHit(j, c));
 }
 const inArea = j => state.region !== "mine" || inMyLocs(j);
-/* Profile "Where you want to work": every place is a tick-able chip with a live count */
-const CITY_PRESETS = ["Ghaziabad","Noida","Greater Noida","Delhi","Hapur","Lucknow"];
-let cityAdding = false;
-const allCities = () => { const seen = new Set(); return [...CITY_PRESETS, ...(P().cityPool || []), ...myCities()].filter(c => { const k = c.toLowerCase(); return seen.has(k) ? false : seen.add(k); }); };
-const placeJobs = () => JOBS.filter(isOpen).filter(j => j.category !== "exam");
-const cityHit = (j, c) => cityRe(c).test([j.location, j.org, j.title].join(" ").toLowerCase());
+/* Profile "Where you want to work": every state / city is a tick-able chip with a live count */
+let placeAdding = null; // "state" | "city" while its add box is open
+const same = (a, b) => a.toLowerCase() === b.toLowerCase();
+const allPlaces = k => { const P_ = PLACES[k], seen = new Set();
+  return [...P_.presets, ...(P()[P_.pool] || []), ...picked(k)].filter(c => { const x = c.toLowerCase(); return seen.has(x) ? false : seen.add(x); }); };
+const placeJobs = () => JOBS.filter(isOpen).filter(j => !isNational(j));
 function placesHTML(){
-  const jobs = placeJobs(), regions = P().regions || [], cities = myCities();
-  const chip = (attr, label, on, n, extra = "") => `<span class="place-w"><button type="button" class="place" ${attr} aria-pressed="${on}">
-    <span class="tick">${ic("check")}</span>${esc(label)}<span class="pc" title="Open jobs now">${n}</span></button>${extra}</span>`;
+  const jobs = placeJobs(), n = picked("state").length + picked("city").length;
   const matched = jobs.filter(inMyLocs).length;
   const summary = hasMyLocs()
-    ? `<div class="place-sum on">${ic("pin")}<div><b>${matched} opening${matched === 1 ? "" : "s"} in your places right now</b><span>${regions.length + cities.length} place${regions.length + cities.length === 1 ? "" : "s"} ticked · exams always show</span></div><button type="button" class="btn" data-show-mine>Show on Radar</button></div>`
-    : `<div class="place-sum">${ic("pin")}<div><b>No places ticked yet</b><span>Tick at least one place to use "My locations" on Radar.</span></div></div>`;
-  return `${summary}
-    <div class="field" id="pf-regions"><span>Regions</span><div class="places">${REGIONS.filter(r => r[0] !== "all").map(([k, l]) =>
-      chip(`data-place-r="${k}"`, l, regions.includes(k), jobs.filter(j => j.region === k).length)).join("")}</div></div>
-    <div class="field" id="pf-cities"><span>Cities</span><div class="places">${allCities().map(c => {
-      const custom = !CITY_PRESETS.some(x => x.toLowerCase() === c.toLowerCase());
-      return chip(`data-place-c="${esc(c)}"`, c, cities.some(x => x.toLowerCase() === c.toLowerCase()), jobs.filter(j => cityHit(j, c)).length,
-        custom ? `<button type="button" class="place-x" data-city-del="${esc(c)}" aria-label="Remove ${esc(c)}">${ic("x")}</button>` : "");
-    }).join("")}
-      ${cityAdding ? "" : `<button type="button" class="place add" data-city-open>+ Add city</button>`}</div>
-      ${cityAdding ? `<div class="city-add"><input class="inp" id="city-in" type="text" list="city-sugg" placeholder="Type a city or town" maxlength="40" autocomplete="off"><button type="button" class="btn primary-s" data-city-add>Add</button><button type="button" class="btn" data-city-cancel>Cancel</button></div>
-        <datalist id="city-sugg">${CITY_SUGG.filter(c => !allCities().some(x => x.toLowerCase() === c.toLowerCase())).map(c => `<option value="${c}">`).join("")}</datalist>` : ""}
-      <small>The number is how many open jobs mention that place today. New ones are added every morning.</small></div>`;
+    ? `<div class="place-sum on">${ic("pin")}<div><b>${matched} opening${matched === 1 ? "" : "s"} in your places right now</b><span>${n} place${n === 1 ? "" : "s"} ticked · exams and all-India jobs always show</span></div><button type="button" class="btn" data-show-mine>Show on Radar</button></div>`
+    : `<div class="place-sum">${ic("pin")}<div><b>No places ticked yet</b><span>Tick a state or city to use "My locations" on Radar.</span></div></div>`;
+  const group = k => {
+    const P_ = PLACES[k], count = v => k === "state" ? jobs.filter(j => jobState(j) === v).length : jobs.filter(j => cityHit(j, v)).length;
+    return `<div class="field" id="pf-${P_.sel}"><span>${P_.label}</span><div class="places">${allPlaces(k).map(v => {
+      const custom = !P_.presets.some(x => same(x, v));
+      return `<span class="place-w"><button type="button" class="place" data-place="${k}" data-v="${esc(v)}" aria-pressed="${picked(k).some(x => same(x, v))}">
+        <span class="tick">${ic("check")}</span>${esc(v)}<span class="pc" title="Open jobs now">${count(v)}</span></button>${custom ? `<button type="button" class="place-x" data-place-del="${k}" data-v="${esc(v)}" aria-label="Remove ${esc(v)}">${ic("x")}</button>` : ""}</span>`;
+    }).join("")}${placeAdding === k ? "" : `<button type="button" class="place add" data-place-open="${k}">${P_.add}</button>`}</div>
+      ${placeAdding === k ? `<div class="city-add"><input class="inp" id="place-in" data-kind="${k}" type="text" list="place-sugg" placeholder="${P_.ph}" maxlength="50" autocomplete="off"><button type="button" class="btn primary-s" data-place-add>Add</button><button type="button" class="btn" data-place-cancel>Cancel</button></div>
+        <datalist id="place-sugg">${P_.sugg.filter(c => !allPlaces(k).some(x => same(x, c))).map(c => `<option value="${c}">`).join("")}</datalist>` : ""}</div>`;
+  };
+  return `${summary}${group("state")}${group("city")}<small class="place-help">The number is how many open jobs are in that place today. New ones are added every morning.</small>`;
 }
+function addPlace(){
+  const inp = $("#place-in"); if (!inp) return;
+  const k = inp.dataset.kind, P_ = PLACES[k], p = P();
+  let v = inp.value.trim().replace(/\s+/g, " ");
+  if (!v) return inp.focus();
+  if (k === "state") {
+    const hit = STATES.find(x => same(x, v)) || STATE_ABBR[v.toUpperCase()];
+    if (!hit) { toast("Pick a state from the list", "pin"); return inp.focus(); }
+    v = hit;
+  } else v = v.replace(/\b\w/g, ch => ch.toUpperCase());
+  const name = allPlaces(k).find(x => same(x, v)) || v;
+  if (!allPlaces(k).some(x => same(x, v))) p[P_.pool] = [...(p[P_.pool] || []), name];
+  if (!picked(k).some(x => same(x, v))) p[P_.sel] = [...picked(k), name];
+  placeAdding = null; saveProfile(); render();
+  toast(`${name} added to My locations`, "pin");
+}
+/* Older profiles used fixed regions: carry them over once */
+(function migrateRegions(){
+  const p = state.profile; if (!p.regions) return;
+  const add = (k, v) => { const a = p[k] || []; if (!a.some(x => same(x, v))) p[k] = [...a, v]; };
+  if (p.regions.includes("meerut")) add("cities", "Meerut");
+  if (p.regions.includes("up")) add("states", "Uttar Pradesh");
+  if (p.regions.includes("delhi-ncr")) { add("states", "Delhi"); ["Noida", "Ghaziabad"].forEach(c => add("cities", c)); }
+  delete p.regions; store.set("dr-profile", p);
+})();
 const areaOpen = () => JOBS.filter(isOpen).filter(inArea);
 const areaNote = () => state.region === "mine" ? `<div class="area-note">${ic("pin")}Showing My locations only. <button class="link" data-region="all">Show Anywhere</button></div>` : "";
 
@@ -913,7 +953,7 @@ function resultsHTML(){
   const title = state.quick === "soon" ? "Closing this week" : state.quick === "new" ? "Fresh in the last 48 hours" : state.cat !== "all" ? CAT[state.cat].label : "All openings";
   return `<div class="sec"><h2>${title}</h2><span>${list.length} result${list.length === 1 ? "" : "s"}${state.region === "mine" ? " in My locations" : ""} · sorted by deadline</span></div>
     ${list.length ? `<div class="grid">${list.map(card).join("")}</div>`
-      : `<div class="empty">${ic("radar")}<b>Nothing on the radar here yet</b>${state.region === "mine" ? `No openings in your locations right now. <button class="link" data-region="all">Show Anywhere</button> or <button class="link" data-goto-pf="regions">add more cities</button>.` : "Try a different filter. New openings land every morning."}</div>`}
+      : `<div class="empty">${ic("radar")}<b>Nothing on the radar here yet</b>${state.region === "mine" ? `No openings in your locations right now. <button class="link" data-region="all">Show Anywhere</button> or <button class="link" data-goto-pf="states">add more cities</button>.` : "Try a different filter. New openings land every morning."}</div>`}
     ${closed.length ? `<details class="closed"><summary>${ic("archive")}Recently closed · ${closed.length}${ic("chev")}</summary>
       ${closed.map(j => mini(j, "closed " + fmt(j.lastDate, {day:"numeric", month:"short"}))).join("")}</details>` : ""}`;
 }
@@ -1240,22 +1280,21 @@ document.addEventListener("click", e => {
     saveProfile(); return render();
   }
   if (t.id === "pf-reset") {
-    if (t.dataset.armed) { state.profile = { name: DEFAULT_NAME }; dobDraft = null; dobOpen = null; cityAdding = false; saveProfile(); state.region = "all"; toast("Profile cleared", "x"); return render(); }
+    if (t.dataset.armed) { state.profile = { name: DEFAULT_NAME }; dobDraft = null; dobOpen = null; placeAdding = null; saveProfile(); state.region = "all"; toast("Profile cleared", "x"); return render(); }
     t.dataset.armed = 1; t.textContent = "Tap again to clear"; setTimeout(() => { if (t.isConnected) { delete t.dataset.armed; t.textContent = "Reset profile"; } }, 3000); return;
   }
-  if (t.closest("[data-city-add]")) return addCity();
-  if (t.closest("[data-city-open]")) { cityAdding = true; render(); return $("#city-in")?.focus({ preventScroll: true }); }
-  if (t.closest("[data-city-cancel]")) { cityAdding = false; return render(); }
-  if ((el = t.closest("[data-city-del]"))) {
-    const p = P(), c = el.dataset.cityDel;
-    p.cityPool = (p.cityPool || []).filter(x => x !== c); p.cities = myCities().filter(x => x !== c);
-    if (!p.cityPool.length) delete p.cityPool; if (!p.cities.length) delete p.cities;
+  if (t.closest("[data-place-add]")) return addPlace();
+  if ((el = t.closest("[data-place-open]"))) { placeAdding = el.dataset.placeOpen; render(); return $("#place-in")?.focus({ preventScroll: true }); }
+  if (t.closest("[data-place-cancel]")) { placeAdding = null; return render(); }
+  if ((el = t.closest("[data-place-del]"))) {
+    const p = P(), P_ = PLACES[el.dataset.placeDel], v = el.dataset.v;
+    for (const key of [P_.pool, P_.sel]) { p[key] = (p[key] || []).filter(x => !same(x, v)); if (!p[key].length) delete p[key]; }
     saveProfile(); return render();
   }
-  if ((el = t.closest("[data-place-r],[data-place-c]"))) {
-    const p = P(), on = el.getAttribute("aria-pressed") !== "true";
-    if (el.dataset.placeR) { const a = new Set(p.regions || []); on ? a.add(el.dataset.placeR) : a.delete(el.dataset.placeR); p.regions = [...a]; }
-    else { const c = el.dataset.placeC, rest = myCities().filter(x => x.toLowerCase() !== c.toLowerCase()); p.cities = on ? [...rest, c] : rest; if (!p.cities.length) delete p.cities; }
+  if ((el = t.closest("[data-place]"))) {
+    const p = P(), P_ = PLACES[el.dataset.place], v = el.dataset.v, on = el.getAttribute("aria-pressed") !== "true";
+    const rest = picked(el.dataset.place).filter(x => !same(x, v));
+    p[P_.sel] = on ? [...rest, v] : rest; if (!p[P_.sel].length) delete p[P_.sel];
     saveProfile(); return render();
   }
   if (t.closest("[data-show-mine]")) {
@@ -1279,7 +1318,7 @@ document.addEventListener("click", e => {
   }
   if ((el = t.closest("[data-cat]"))) { state.cat = el.dataset.cat; return transition(() => render()); }
   if ((el = t.closest("[data-region]"))) {
-    if (el.dataset.region === "mine" && !hasMyLocs()) { toast("Add your preferred locations or cities first", "pin"); return gotoProfileField("regions"); }
+    if (el.dataset.region === "mine" && !hasMyLocs()) { toast("Tick a state or city first", "pin"); return gotoProfileField("states"); }
     state.region = el.dataset.region; return transition(() => render()); }
   if ((el = t.closest("[data-quick]"))) {
     const k = el.dataset.quick;
@@ -1317,20 +1356,9 @@ document.addEventListener("change", e => {
     transition(() => render());
   }
 });
-function addCity(){
-  const inp = $("#city-in"); if (!inp) return;
-  const v = inp.value.trim().replace(/\s+/g, " ").replace(/\b\w/g, ch => ch.toUpperCase());
-  if (!v) return inp.focus();
-  const p = P(), same = c => c.toLowerCase() === v.toLowerCase();
-  const name = allCities().find(same) || v;
-  if (!allCities().some(same)) p.cityPool = [...(p.cityPool || []), name];
-  if (!myCities().some(same)) p.cities = [...myCities(), name];
-  cityAdding = false; saveProfile(); render();
-  toast(`${name} added to My locations`, "pin");
-}
 document.addEventListener("keydown", e => {
-  if (e.key === "Enter" && e.target.id === "city-in") { e.preventDefault(); return addCity(); }
-  if (e.key === "Escape" && cityAdding) { cityAdding = false; return render(); }
+  if (e.key === "Enter" && e.target.id === "place-in") { e.preventDefault(); return addPlace(); }
+  if (e.key === "Escape" && placeAdding) { placeAdding = null; return render(); }
   if (e.key === "Escape" && dobOpen) { dobOpen = null; return render(); }
   if (e.key === "Escape" && $("#pop").classList.contains("show")) return closePop();
   if (e.key === "Escape" && $("#sheet").classList.contains("open")) return closeSheet();

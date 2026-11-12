@@ -7,6 +7,7 @@
       "org": "Maharishi Valmiki Hospital, Pooth Khurd (Delhi Govt)",
       "category": "jr",
       "location": "Delhi",
+      "state": "Delhi",
       "region": "delhi-ncr",
       "posts": 2,
       "salary": "₹56,100 (Level 10, 7th CPC) + allowances",
@@ -37,6 +38,7 @@
       "org": "Armed Forces Medical Services (Indian Army)",
       "category": "defence",
       "location": "All India (interview at Army Hospital R&R, Delhi Cantt)",
+      "state": "All India",
       "region": "all-india",
       "posts": 120,
       "salary": "₹61,300 basic + Military Service Pay + allowances",
@@ -68,6 +70,7 @@
       "org": "AIIMS Bhopal",
       "category": "jr",
       "location": "Bhopal, MP",
+      "state": "Madhya Pradesh",
       "region": "all-india",
       "posts": 20,
       "salary": "₹56,100/month (Level 10) + NPA",
@@ -95,6 +98,7 @@
       "org": "UPSC",
       "category": "exam",
       "location": "All India (Railways, CAPF hospitals, MCD, Ordnance etc.)",
+      "state": "All India",
       "region": "all-india",
       "posts": null,
       "salary": "Group A central govt MO",
@@ -119,6 +123,7 @@
       "org": "NBEMS",
       "category": "exam",
       "location": "All India",
+      "state": "All India",
       "region": "all-india",
       "posts": null,
       "salary": null,
@@ -133,5 +138,5 @@
       "verified": false
     }
   ],
-  "updatedAt": "2026-11-12T16:50:12.221Z"
+  "updatedAt": "2026-11-12T17:43:11.186Z"
 }

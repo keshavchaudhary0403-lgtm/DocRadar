@@ -6,6 +6,7 @@ const FILE = new URL("../data/jobs.json", import.meta.url);
 const CATEGORIES = ["jr", "mo", "defence", "exam", "private", "other"];
 const REGIONS = ["meerut", "up", "delhi-ncr", "all-india"];
 const ELIGIBILITY = ["intern-ok", "after-internship"];
+const STATES = ["All India","Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chhattisgarh","Goa","Gujarat","Haryana","Himachal Pradesh","Jharkhand","Karnataka","Kerala","Madhya Pradesh","Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland","Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura","Uttar Pradesh","Uttarakhand","West Bengal","Andaman and Nicobar Islands","Chandigarh","Dadra and Nagar Haveli and Daman and Diu","Delhi","Jammu and Kashmir","Ladakh","Lakshadweep","Puducherry"];
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
 
 const today = new Date().toISOString().slice(0, 10);
@@ -20,6 +21,8 @@ for (const j of data.jobs) {
     if (!j[k]) errors.push(`${where}: missing ${k}`);
   if (j.category && !CATEGORIES.includes(j.category)) errors.push(`${where}: bad category ${j.category}`);
   if (j.region && !REGIONS.includes(j.region)) errors.push(`${where}: bad region ${j.region}`);
+  if (!j.state) errors.push(`${where}: missing state (a state/UT name, or "All India")`);
+  else if (!STATES.includes(j.state)) errors.push(`${where}: bad state "${j.state}" (use the full state/UT name or "All India")`);
   if (j.eligibility && !ELIGIBILITY.includes(j.eligibility)) errors.push(`${where}: bad eligibility ${j.eligibility}`);
   for (const k of ["lastDate", "eventDate", "addedOn"])
     if (j[k] != null && !DATE.test(j[k])) errors.push(`${where}: ${k} must be YYYY-MM-DD`);

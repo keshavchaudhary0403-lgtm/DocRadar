@@ -136,6 +136,7 @@ For every listing you plan to add or update:
   "org": "Institute / hospital",
   "category": "jr | mo | defence | exam | private | other",
   "location": "City, State",
+  "state": "Uttar Pradesh | Delhi | Haryana | … | All India",
   "region": "meerut | up | delhi-ncr | all-india",
   "posts": 12,
   "salary": "₹56,100 + NPA",
@@ -153,6 +154,10 @@ For every listing you plan to add or update:
 }
 ```
 - `id`: lowercase kebab-case, unique, e.g. `aiims-bhopal-jr-nonacad-2026-11-19`.
+- `state`: the full state / UT name where the job is (e.g. `"Uttar Pradesh"` for Noida or Ghaziabad,
+  `"Haryana"` for Gurugram, `"Delhi"`), exactly as spelled in `scripts/maintain.mjs`. Use `"All India"` only
+  for national recruitments with no fixed place (AFMS, UPSC CMS, Railways-wide) and for exams.
+  The site's "My locations" filter matches on this field.
 - `region`: Meerut district → `meerut`; elsewhere in UP except Noida/Ghaziabad → `up`;
   Delhi, Noida, Greater Noida, Ghaziabad, Gurugram, Faridabad → `delhi-ncr`; everything else → `all-india`.
 - `eligibility`: `intern-ok` only if interns or final-year candidates may apply (e.g. UPSC CMS,
