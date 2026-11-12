@@ -293,12 +293,15 @@ kbd{font-family:"Geist Mono",monospace;font-size:11px;padding:2px 7px;border-rad
 
 /* Right rail */
 .rail{position:sticky;top:0;height:100dvh;overflow-y:auto;padding:22px 20px;border-left:1px solid var(--line);background:var(--surface);backdrop-filter:blur(20px)}
-.rail h4,.rail-inline h4{margin:4px 0 10px;font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.rail h4,.rail-inline h4{display:flex;align-items:center;gap:7px;margin:4px 0 10px;font-size:12.5px;font-weight:650;color:var(--tone,var(--muted));text-transform:uppercase;letter-spacing:.06em}
+.rail h4 .ic,.rail-inline h4 .ic{width:15px;height:15px;padding:5px;box-sizing:content-box;border-radius:8px;background:color-mix(in srgb,var(--tone) 14%,transparent)}
 .rail .box,.rail-inline .box{border-radius:16px;border:1px solid var(--line);background:var(--raise);overflow:hidden;margin-bottom:22px}
 .rail .box .mini:first-child,.rail-inline .box .mini:first-child{border-top:0}
 .ri{display:flex;gap:12px;align-items:center;padding:12px 14px;border-top:1px solid var(--line);cursor:pointer;transition:background .2s}
 .box .ri:first-child{border-top:0}
-.ri:hover{background:var(--bg-2)}
+.ri{position:relative}
+.ri::before{content:"";position:absolute;left:0;top:12px;bottom:12px;width:3px;border-radius:0 3px 3px 0;background:var(--c)}
+.ri:hover{background:color-mix(in srgb,var(--c) 7%,transparent)}
 .ri .ring small{display:none}
 .ri-t{flex:1;min-width:0}
 .ri-t b{display:block;font-size:13.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -1211,7 +1214,7 @@ function railItem(j, date, verb){
   const d = days(date), short = j.title.split(" – ")[0].replace(/\s*\([^)]*\)/g, "").trim();
   const when = date ? fmt(date, {day:"numeric", month:"short"}) : "Date TBA";
   const tip = d === null ? "Dates not announced yet" : d === 0 ? `Last day to ${verb}` : `${d} day${d === 1 ? "" : "s"} left to ${verb}`;
-  return `<div class="ri" data-open="${esc(j.id)}" role="button" tabindex="0" title="${tip}">${ring(d, 44)}
+  return `<div class="ri" style="--c:${(CAT[j.category] || CAT.other).c}" data-open="${esc(j.id)}" role="button" tabindex="0" title="${tip}">${ring(d, 44)}
     <div class="ri-t"><b>${esc(short)}</b><span>${when} · <em class="loc-t">${ic("pin")}${esc(placeLabel(j))}</em></span></div></div>`;
 }
 /* Hover preview for sidebar items (mouse / trackpad only) */
@@ -1248,9 +1251,9 @@ function railHTML(){
   const exams = JOBS.filter(j => j.category === "exam" && isOpen(j));
   const empty = t => `<div class="ri-empty">${t}</div>`;
   return `
-    <h4>Closing soon${state.region === "mine" ? " · My locations" : ""}</h4>
+    <h4 style="--tone:var(--red)">${ic("flame")}Closing soon${state.region === "mine" ? " · My locations" : ""}</h4>
     <div class="box">${soon.length ? soon.map(j => railItem(j, j.lastDate, "apply")).join("") : empty("Nothing closing soon")}</div>
-    <h4>Exams to watch</h4>
+    <h4 style="--tone:${CAT.exam.c}">${ic("book")}Exams to watch</h4>
     <div class="box">${exams.length ? exams.map(j => railItem(j, j.lastDate, "register")).join("") : empty("None right now")}</div>
     <p class="rail-note">${ic("info")}Always confirm on the official notice before you travel.</p>`;
 }
