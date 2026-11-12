@@ -201,6 +201,16 @@ kbd{font-family:"Geist Mono",monospace;font-size:11px;padding:2px 7px;border-rad
 .fact span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .c-foot{display:flex;align-items:flex-end;gap:8px;margin-top:auto;min-width:0}
 .c-tags{flex:1;min-width:0;display:flex;flex-wrap:wrap;gap:6px}
+.loc-t{font-style:normal;font-weight:600;color:var(--indigo)}
+.loc-t .ic{width:12px;height:12px;vertical-align:-1px;margin-right:3px}
+.hc-row.loc-t .ic{width:14px;height:14px;color:var(--indigo);margin:1px 0 0}
+.sh-loc{margin-top:8px}
+.tl-loc{margin-top:7px}
+.tl-loc .pill,.sh-loc .pill{font-size:11.5px;padding:3px 9px}
+.kv .loc-box{background:var(--indigo-soft)}
+.kv .loc-box dt,.kv .loc-box dt .ic{color:var(--indigo)}
+.kv .loc-box dd{color:var(--text)}
+.kv .loc-box .hint{color:var(--indigo)}
 .pill.loc{background:var(--indigo-soft);color:var(--indigo);flex:none;max-width:100%}
 .pill.loc span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .c-foot .pill:not(.loc){flex:none}
@@ -257,7 +267,7 @@ kbd{font-family:"Geist Mono",monospace;font-size:11px;padding:2px 7px;border-rad
 .tl-item:hover .tl-body{transform:translateX(3px);box-shadow:var(--shadow)}
 .tl-body .k{font-size:11.5px;font-weight:650;text-transform:uppercase;letter-spacing:.05em;color:var(--c)}
 .tl-body b{display:block;font-size:14.5px;font-weight:600;margin:2px 0}
-.tl-body span{font-size:13px;color:var(--muted)}
+.tl-body > span{font-size:13px;color:var(--muted)}
 
 /* Sites */
 .srcs{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
@@ -862,7 +872,7 @@ function card(j, i){
 function mini(j, dateText){
   const c = CAT[j.category] || CAT.other;
   return `<div class="mini" style="--c:${c.c}" data-open="${esc(j.id)}" role="button" tabindex="0"><span class="dot"></span>
-    <div class="t"><b>${esc(j.title)}</b><span>${esc(j.org)}</span></div><span class="d">${dateText}</span></div>`;
+    <div class="t"><b>${esc(j.title)}</b><span><em class="loc-t">${ic("pin")}${esc(placeLabel(j))}</em> · ${esc(j.org)}</span></div><span class="d">${dateText}</span></div>`;
 }
 
 /* "My locations" = ticked states + ticked cities from Profile.
@@ -1053,7 +1063,7 @@ function viewTimeline(){
     const c = CAT[e.j.category] || CAT.other, d = days(e.date);
     return `${head}<div class="tl-item" style="--c:${c.c};--i:${i++}" data-open="${esc(e.j.id)}" role="button" tabindex="0">
       <div class="tl-date ${d === 0 ? "today" : ""}"><b>${fmt(e.date, {day:"numeric"})}</b><span>${fmt(e.date, {weekday:"short"})}</span></div>
-      <div class="tl-body"><div class="k">${e.kind}${d === 0 ? " · today" : d <= 7 ? ` · in ${d} day${d === 1 ? "" : "s"}` : ""}</div><b>${esc(e.j.title)}</b><span>${esc(e.j.org)}</span></div></div>`;
+      <div class="tl-body"><div class="k">${e.kind}${d === 0 ? " · today" : d <= 7 ? ` · in ${d} day${d === 1 ? "" : "s"}` : ""}</div><b>${esc(e.j.title)}</b><span>${esc(e.j.org)}</span><div class="tl-loc"><span class="pill loc" title="${esc(e.j.location)}">${ic("pin")}<span>${esc(placeLabel(e.j))}</span></span></div></div></div>`;
   }).join("");
   return `<section class="page-head"><h1>Timeline</h1><p>Every deadline, walk-in and exam date in one place. Open any item to add it to the calendar.</p>${areaNote()}</section>
     ${loaded && !ev.length ? `<div class="empty" style="margin-top:20px">${ic("timeline")}<b>No upcoming dates</b>Check back tomorrow.</div>` : `<div class="tl">${items}</div>`}
@@ -1202,7 +1212,7 @@ function railItem(j, date, verb){
   const when = date ? fmt(date, {day:"numeric", month:"short"}) : "Date TBA";
   const tip = d === null ? "Dates not announced yet" : d === 0 ? `Last day to ${verb}` : `${d} day${d === 1 ? "" : "s"} left to ${verb}`;
   return `<div class="ri" data-open="${esc(j.id)}" role="button" tabindex="0" title="${tip}">${ring(d, 44)}
-    <div class="ri-t"><b>${esc(short)}</b><span>${when} · ${esc(j.org)}</span></div></div>`;
+    <div class="ri-t"><b>${esc(short)}</b><span>${when} · <em class="loc-t">${ic("pin")}${esc(placeLabel(j))}</em></span></div></div>`;
 }
 /* Hover preview for sidebar items (mouse / trackpad only) */
 let hcTimer = null;
@@ -1212,7 +1222,7 @@ function hoverCardHTML(j){
   const due = j.lastDate ? `${d === 0 ? "Last day today" : d + " day" + (d === 1 ? "" : "s") + " left"} · ${fmt(j.lastDate, {day:"numeric", month:"short", year:"numeric"})}` : "Dates not announced yet";
   return `<div class="hc-eyebrow" style="color:${c.c}">${c.label}${j.mode ? " · " + esc(j.mode) : ""}</div>
     <b class="hc-title">${esc(j.title)}</b><div class="hc-org">${esc(j.org)}</div>
-    <div class="hc-rows">${row("clock", due)}${row("pin", esc(j.location.split("(")[0].trim()))}${row("users", j.posts ? j.posts + " posts" : "")}${row("wallet", j.salary ? esc(j.salary) : "")}</div>
+    <div class="hc-rows">${row("clock", due)}<div class="hc-row loc-t">${ic("pin")}<span>${esc(placeLabel(j))}</span></div>${row("users", j.posts ? j.posts + " posts" : "")}${row("wallet", j.salary ? esc(j.salary) : "")}</div>
     <div class="hc-foot">${eligPill(j)}<span class="hc-hint">Click for full details</span></div>`;
 }
 function showHoverCard(item){
@@ -1295,11 +1305,11 @@ function openSheet(id, focus){
   $("#sheet").innerHTML = `
     <div class="grab" id="grab"><i></i><button class="icon-btn sheet-close" data-close aria-label="Close">${ic("x")}</button></div>
     <div class="sh-head" style="--c:${c.c}"><div class="cat-ic">${ic(c.icon)}</div>
-      <div><div class="eyebrow">${c.label}${j.mode ? " · " + esc(j.mode) : ""}</div><h2 id="sh-title">${esc(j.title)}</h2><div class="org" style="white-space:normal">${j.officialUrl ? `<a class="orglink" href="${esc(j.officialUrl)}" target="_blank" rel="noopener">${esc(j.org)} ${ic("external")}</a>` : esc(j.org)}</div></div></div>
+      <div><div class="eyebrow">${c.label}${j.mode ? " · " + esc(j.mode) : ""}</div><h2 id="sh-title">${esc(j.title)}</h2><div class="org" style="white-space:normal">${j.officialUrl ? `<a class="orglink" href="${esc(j.officialUrl)}" target="_blank" rel="noopener">${esc(j.org)} ${ic("external")}</a>` : esc(j.org)}</div><div class="sh-loc"><span class="pill loc" title="${esc(j.location)}">${ic("pin")}<span>${esc(placeLabel(j))}</span></span></div></div></div>
     ${(() => { const canCal = open && (j.lastDate || j.eventDate);
       return `<${canCal ? `button type="button" data-ics="${esc(j.id)}" data-when="last"` : "div"} class="sh-cd ${canCal ? "tap" : ""}" style="--tone:${open ? tone(d) : "var(--faint)"}">${ring(open ? d : null, 60)}<div><b>${cdTitle}</b><span>${j.lastDate ? "Last date " + fmt(j.lastDate, {weekday:"short", day:"numeric", month:"long", year:"numeric"}) : "We'll update this when it's announced"}</span>${canCal ? `<span class="hint">${ic("calplus")}Tap to add to calendar</span>` : ""}</div></${canCal ? "button" : "div"}>`; })()}
     <dl class="kv">
-      <a class="wide tap" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(j.org + ", " + j.location.split("(")[0])}" target="_blank" rel="noopener"><dt>${ic("pin")}Location</dt><dd>${esc(j.location)}</dd><span class="hint">${ic("map")}Open in Maps</span></a>
+      <a class="wide tap loc-box" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(j.org + ", " + j.location.split("(")[0])}" target="_blank" rel="noopener"><dt>${ic("pin")}Location</dt><dd>${esc(j.location)}</dd><span class="hint">${ic("map")}Open in Maps</span></a>
       ${j.posts ? `<div><dt>${ic("users")}Posts</dt><dd>${j.posts}</dd></div>` : ""}
       ${j.mode ? (j.officialUrl ? `<a class="tap" href="${esc(j.officialUrl)}" target="_blank" rel="noopener"><dt>${ic("bolt")}How to apply</dt><dd>${esc(j.mode)}</dd><span class="hint">${ic("external")}Official site</span></a>` : `<div><dt>${ic("bolt")}How to apply</dt><dd>${esc(j.mode)}</dd></div>`) : ""}
       ${j.salary ? `<div class="wide"><dt>${ic("wallet")}Pay</dt><dd>${esc(j.salary)}</dd></div>` : ""}
