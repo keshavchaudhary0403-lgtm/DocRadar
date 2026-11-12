@@ -51,13 +51,38 @@ Find **new, still-open** opportunities and add them to `data/jobs.json`.
      "lastDate": "YYYY-MM-DD or null",
      "eventDate": "YYYY-MM-DD or null (interview / exam date)",
      "eligibility": "intern-ok | after-internship",
-     "eligibilityNote": "One or two plain sentences: key requirements (internship cut-off, registration, age), reporting time.",
+     "eligibilityNote": "One or two neutral sentences from the notice: key requirements, reporting time. Do not judge whether he is eligible; the site does that from his profile.",
      "officialUrl": "https://…",
      "sourceUrl": "https://…",
      "addedOn": "today YYYY-MM-DD",
      "verified": false
    }
    ```
+   **Also add a `requirements` object** whenever the notice states them. The site uses it to check
+   each listing against the doctor's own profile (internship date, registration, age, NEET-PG and so on).
+   Include only what the notice actually says:
+   ```json
+   "requirements": {
+     "internshipBy": "YYYY-MM-DD | \"eventDate\" | \"lastDate\"",
+     "registration": "permanent | any",
+     "councils": ["Delhi Medical Council"],
+     "maxAge": 33,
+     "ageOn": "YYYY-MM-DD",
+     "ageRelax": true,
+     "neetPg": [2025, 2026],
+     "maxAttempts": 2,
+     "gender": "female"
+   }
+   ```
+   - `internshipBy`: the internship cut-off. Use `"eventDate"` when the notice says "completed internship"
+     with no date, meaning it must be done by the walk-in or interview day.
+   - `registration`: `"permanent"` if the notice asks for permanent registration, `"any"` if any NMC/SMC registration works.
+   - `councils`: only when one specific council is required (e.g. Delhi govt hospitals want DMC).
+   - `maxAge` is the highest age in completed years that is allowed. "Below 30" means `29`, and "not more than 33" means `33`.
+     Set `ageRelax: true` if the usual OBC +3 / SC-ST +5 / PwBD +10 relaxation applies.
+   - `maxAttempts`: when the final MBBS must be passed within N attempts.
+   - `gender`: only for single-gender posts (e.g. "Female Medical Officer").
+
    `region` rules: anything in Meerut district → `meerut`; elsewhere in UP (except Noida/Ghaziabad) → `up`;
    Delhi, Noida, Ghaziabad, Gurugram, Faridabad → `delhi-ncr`; everything else → `all-india`.
 5. Run `node scripts/maintain.mjs`. Fix any errors it reports and run it again until it passes.

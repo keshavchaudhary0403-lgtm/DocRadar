@@ -268,7 +268,7 @@ kbd{font-family:"Geist Mono",monospace;font-size:11px;padding:2px 7px;border-rad
 .tip b{color:var(--text);display:flex;align-items:center;gap:6px;margin-bottom:4px}
 
 /* Tab bar (mobile/tablet) */
-.tabbar{position:fixed;left:12px;right:12px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:30;display:grid;grid-template-columns:repeat(4,1fr);padding:6px;border-radius:22px;background:var(--surface);backdrop-filter:blur(24px) saturate(1.6);border:1px solid var(--line-2);box-shadow:var(--shadow-lg);max-width:520px;margin:0 auto}
+.tabbar{position:fixed;left:12px;right:12px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:30;display:grid;grid-template-columns:repeat(5,1fr);padding:6px;border-radius:22px;background:var(--surface);backdrop-filter:blur(24px) saturate(1.6);border:1px solid var(--line-2);box-shadow:var(--shadow-lg);max-width:520px;margin:0 auto}
 .tab{display:flex;flex-direction:column;align-items:center;gap:2px;padding:7px 0 6px;border-radius:16px;font-size:11px;font-weight:600;color:var(--faint);position:relative;transition:color .25s}
 .tab .ic{width:21px;height:21px;transition:transform .35s var(--ease)}
 .tab[aria-current=page]{color:var(--accent);background:var(--accent-soft)}
@@ -317,6 +317,53 @@ kbd{font-family:"Geist Mono",monospace;font-size:11px;padding:2px 7px;border-rad
 .toast.show{opacity:1;transform:translate(-50%,0)}
 @media (min-width:1024px){.toast{bottom:28px}}
 
+/* Profile */
+.pill.no{background:var(--red-soft);color:var(--red)}
+.pill.unk{background:var(--bg-2);color:var(--muted)}
+.setup{display:flex;gap:14px;align-items:center;margin-top:18px;padding:14px 16px;border-radius:var(--r);border:1px solid color-mix(in srgb,var(--accent) 30%,var(--line));background:linear-gradient(120deg,var(--accent-soft),var(--indigo-soft));animation:rise .6s var(--ease) both}
+.setup .ic{width:22px;height:22px;color:var(--accent);flex:none}
+.setup div{flex:1;font-size:13.5px;color:var(--muted)}
+.setup b{display:block;color:var(--text);font-size:14.5px}
+.setup .btn{height:38px;flex:none;background:var(--text);color:var(--bg);border-color:transparent}
+.greet{display:block;margin-top:14px;font-size:14px;color:var(--muted);font-weight:500}
+.pf-sum{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;padding:16px;border-radius:var(--r);border:1px solid var(--line);background:var(--surface);backdrop-filter:blur(16px);box-shadow:var(--shadow);margin:18px 0 6px}
+.pf-sum .ring{width:64px;height:64px}
+.pf-sum b{display:block;font-size:16px}
+.pf-sum span{display:block;font-size:13px;color:var(--muted)}
+.pf-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:14px}
+@media (min-width:900px){.pf-grid{grid-template-columns:1fr 1fr}}
+.pf-card{padding:18px;border-radius:var(--r);border:1px solid var(--line);background:var(--surface);backdrop-filter:blur(16px);box-shadow:var(--shadow);animation:rise .5s var(--ease) both;animation-delay:calc(var(--i,0)*60ms)}
+.pf-card h3{display:flex;align-items:center;gap:8px;margin:0 0 4px;font-size:15.5px;font-weight:650}
+.pf-card h3 .ic{color:var(--accent)}
+.pf-card > p{margin:0 0 14px;font-size:13px;color:var(--muted)}
+.field{display:block;margin-bottom:16px}
+.field:last-child{margin-bottom:0}
+.field > span{display:block;font-size:13px;font-weight:550;margin-bottom:7px}
+.field small{display:block;font-size:12px;color:var(--faint);margin-top:6px}
+.inp{width:100%;height:46px;padding:0 13px;border-radius:12px;border:1px solid var(--line-2);background:var(--solid);font-size:15px;outline:none;transition:border-color .2s,box-shadow .2s;appearance:none}
+.inp:focus{border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+select.inp{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238a92a1' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;background-size:18px;padding-right:38px}
+.opts{display:flex;flex-wrap:wrap;gap:6px}
+.opt{height:38px;padding:0 14px;border-radius:11px;border:1px solid var(--line-2);background:var(--solid);font-size:13.5px;font-weight:550;color:var(--muted);transition:all .2s var(--ease)}
+.opt:hover{color:var(--text)}
+.opt[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.opt:active{transform:scale(.95)}
+.pf-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:16px;font-size:12.5px;color:var(--faint)}
+.pf-foot .ic{width:14px;height:14px;vertical-align:-2px}
+.btn.danger{height:40px;color:var(--red)}
+.checks{border-radius:16px;border:1px solid var(--line);overflow:hidden;margin-bottom:10px}
+.checks h4{margin:0;padding:11px 14px;font-size:12.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);background:var(--bg-2);display:flex;justify-content:space-between;align-items:center}
+.chk{display:flex;gap:10px;padding:10px 14px;border-top:1px solid var(--line);font-size:13.5px}
+.chk .ic{width:17px;height:17px;margin-top:1px}
+.chk.pass .ic{color:var(--green)} .chk.fail .ic{color:var(--red)} .chk.warn .ic{color:var(--amber)} .chk.unknown .ic{color:var(--faint)}
+.chk.unknown{color:var(--muted)}
+.sideprof{display:block;width:100%;text-align:left;padding:14px;border-radius:14px;border:1px solid var(--line);background:var(--raise);font-size:13px;transition:border-color .2s}
+.sideprof:hover{border-color:var(--line-2)}
+.sideprof b{display:block;font-size:14px;margin-bottom:2px}
+.sideprof span{color:var(--muted)}
+.bar{height:6px;border-radius:99px;background:var(--bg-2);margin-top:10px;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--accent),var(--indigo));transition:width .6s var(--ease)}
+
 .foot{color:var(--faint);font-size:12.5px;text-align:center;margin:40px 0 8px}
 
 @media (prefers-reduced-motion: reduce){
@@ -332,7 +379,7 @@ kbd{font-family:"Geist Mono",monospace;font-size:11px;padding:2px 7px;border-rad
     <div class="brand"><span class="logo" id="logo-d"></span>DocRadar</div>
     <nav id="side-nav"></nav>
     <div class="side-foot">
-      <div class="profile"><b>MBBS Intern</b><span>Based in Meerut · Watching UP, Delhi NCR &amp; all-India posts</span></div>
+      <div id="sideprof"></div>
       <button class="nav-item theme-btn" type="button"></button>
     </div>
   </aside>
@@ -386,6 +433,11 @@ const ICONS = {
   hourglass:'<path d="M6 3h12M6 21h12M7 3c0 5 10 5 10 9s-10 4-10 9M17 3c0 5-10 5-10 9s10 4 10 9"/>',
   chev:'<path d="m9 6 6 6-6 6"/>',
   info:'<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/>',
+  user:'<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
+  alert:'<path d="M12 3 2 20h20z"/><path d="M12 10v4M12 17v.5"/>',
+  help:'<circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6v.6M12 17v.5"/>',
+  lock:'<rect x="4" y="10" width="16" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/>',
+  idcard:'<rect x="3" y="5" width="18" height="14" rx="3"/><circle cx="9" cy="11" r="2"/><path d="M6 16a3 3 0 0 1 6 0M14 10h4M14 14h4"/>',
   archive:'<rect x="3" y="4" width="18" height="5" rx="1.5"/><path d="M5 9v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9M10 13h4"/>'
 };
 const ic = (n, extra="") => `<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ${extra}>${ICONS[n]}</svg>`;
@@ -399,7 +451,10 @@ const CAT = {
   other:{label:"Fellowship", icon:"flask", c:"#ec4899"}
 };
 const REGIONS = [["all","Anywhere"],["meerut","Meerut"],["up","Uttar Pradesh"],["delhi-ncr","Delhi NCR"],["all-india","Other states"]];
-const VIEWS = [["radar","Radar","radar"],["timeline","Timeline","timeline"],["saved","Saved","star"],["sites","Sites","globe"]];
+const VIEWS = [["radar","Radar","radar"],["timeline","Timeline","timeline"],["saved","Saved","star"],["sites","Sites","globe"],["profile","Profile","user"]];
+const COUNCILS = ["Uttar Pradesh Medical Council","National Medical Commission (IMR)","Delhi Medical Council","Haryana Medical Council","Uttarakhand Medical Council","Rajasthan Medical Council","Madhya Pradesh Medical Council","Punjab Medical Council","Bihar Medical Council","Other state council"];
+const REG = [["none","Not yet"],["provisional","Provisional"],["applied","Permanent: applied"],["permanent","Permanent: received"]];
+const PF_FIELDS = ["internshipEnd","regStatus","council","neetPg","dob","category","attemptsOk","gender"];
 const GROUP_C = {"Defence":"#65a30d","Exams":"#a855f7","Govt JR / SR":"#6366f1","Govt Medical Officer":"#0d9488","Meerut":"#e5484d","Delhi":"#f97316","Aggregators":"#0ea5e9","Private":"#f59e0b","Research":"#ec4899"};
 
 const $ = s => document.querySelector(s);
@@ -416,8 +471,10 @@ const fmt = (d, o={day:"numeric", month:"short", year:"numeric"}) => d ? new Dat
 
 const state = {
   view: store.get("dr-view", "radar"), cat:"all", region:"all", q:"", quick:null,
-  eligible: store.get("dr-elig", false), saved: store.get("dr-saved"), applied: store.get("dr-applied")
+  eligible: store.get("dr-elig", false), saved: store.get("dr-saved"), applied: store.get("dr-applied"),
+  profile: store.get("dr-profile")
 };
+if ((state.profile.regions || []).length) state.region = "mine";
 let JOBS = [], SOURCES = [], UPDATED = null, loaded = false;
 
 const isOpen = j => j.lastDate == null || days(j.lastDate) >= 0;
@@ -425,6 +482,84 @@ const isNew = j => days(j.addedOn) !== null && days(j.addedOn) >= -2;
 const isSoon = j => j.lastDate && days(j.lastDate) >= 0 && days(j.lastDate) <= 7;
 const tone = d => d === null ? "var(--faint)" : d <= 3 ? "var(--red)" : d <= 7 ? "var(--amber)" : "var(--green)";
 const byDeadline = (a, b) => (a.lastDate ?? "9999").localeCompare(b.lastDate ?? "9999");
+
+/* ---------- Personal eligibility ---------- */
+const RELAX = { UR:0, EWS:0, OBC:3, SC:5, ST:5 };
+const P = () => state.profile;
+const completeness = () => PF_FIELDS.filter(k => P()[k] !== undefined && P()[k] !== "").length / PF_FIELDS.length;
+const profileEmpty = () => completeness() === 0;
+const isoToday = () => { const d = new Date(); return new Date(d - d.getTimezoneOffset() * 6e4).toISOString().slice(0, 10); };
+function ageOn(dob, on){
+  const b = new Date(dob + "T00:00:00"), o = new Date(on + "T00:00:00");
+  let a = o.getFullYear() - b.getFullYear();
+  if (o.getMonth() < b.getMonth() || (o.getMonth() === b.getMonth() && o.getDate() < b.getDate())) a--;
+  return a;
+}
+function checks(j){
+  const r = j.requirements; if (!r) return null;
+  const p = P(), out = [], add = (s, t) => out.push({ s, t });
+  const at = v => v === "eventDate" ? (j.eventDate || j.lastDate) : v === "lastDate" ? j.lastDate : v;
+  const by = r.internshipBy ? at(r.internshipBy) : null;
+  if (by){
+    if (!p.internshipEnd) add("unknown", `Internship must be complete by ${fmt(by)}. Add your completion date.`);
+    else if (p.internshipEnd <= by) add("pass", `Internship complete by ${fmt(by)} (yours ends ${fmt(p.internshipEnd)})`);
+    else add("fail", `Internship must be complete by ${fmt(by)}, but yours ends ${fmt(p.internshipEnd)}`);
+  }
+  if (r.registration){
+    const st = p.regStatus, perm = r.registration === "permanent";
+    if (!st) add("unknown", `Needs ${perm ? "permanent" : "medical council"} registration. Add your registration status.`);
+    else if (st === "permanent" || (!perm && st !== "none")) add("pass", `${perm ? "Permanent registration" : "Registration"} in place`);
+    else if (st === "applied") add("warn", "Needs permanent registration, and yours is still pending. Carry the application receipt.");
+    else if (p.internshipEnd && by && p.internshipEnd <= by) add("warn", "Needs permanent registration. Apply as soon as your internship ends.");
+    else add("fail", `Needs ${perm ? "permanent" : ""} registration (yours: ${st === "provisional" ? "provisional" : "not yet"})`);
+  }
+  if (r.councils?.length){
+    if (!p.council) add("unknown", `Needs ${r.councils.join(" or ")} registration. Add your council.`);
+    else if (r.councils.includes(p.council)) add("pass", `Registered with ${p.council}`);
+    else add("warn", `Needs ${r.councils.join(" or ")} registration. You're with ${p.council}, so you'd have to register there too.`);
+  }
+  if (r.maxAge){
+    const on = r.ageOn || j.lastDate || isoToday();
+    if (!p.dob) add("unknown", `Age limit ${r.maxAge} on ${fmt(on)}. Add your date of birth.`);
+    else {
+      const relax = r.ageRelax ? (RELAX[p.category] || 0) + (p.pwbd === "yes" ? 10 : 0) : 0;
+      const lim = r.maxAge + relax, a = ageOn(p.dob, on);
+      add(a <= lim ? "pass" : "fail", `You'll be ${a} on ${fmt(on)}. The limit is ${lim}${relax ? ` (incl. ${relax} yrs relaxation)` : ""}.`);
+    }
+  }
+  if (r.neetPg?.length){
+    if (!Array.isArray(p.neetPg)) add("unknown", `Needs NEET-PG ${r.neetPg.join(" or ")}. Add your NEET-PG attempts.`);
+    else if (p.neetPg.some(y => r.neetPg.includes(y))) add("pass", `Appeared in NEET-PG ${p.neetPg.filter(y => r.neetPg.includes(y)).join(" & ")}`);
+    else add("fail", `Needs NEET-PG ${r.neetPg.join(" or ")} appearance`);
+  }
+  if (r.maxAttempts){
+    if (!p.attemptsOk) add("unknown", `Final MBBS must be passed within ${r.maxAttempts} attempts. Add this to your profile.`);
+    else add(p.attemptsOk === "yes" ? "pass" : "fail", p.attemptsOk === "yes" ? `Final MBBS passed within ${r.maxAttempts} attempts` : `Final MBBS must be passed within ${r.maxAttempts} attempts`);
+  }
+  if (r.gender){
+    if (!p.gender) add("unknown", `Open to ${r.gender} candidates only. Add your gender.`);
+    else add(p.gender === r.gender ? "pass" : "fail", `Open to ${r.gender} candidates only`);
+  }
+  return out;
+}
+function verdict(j){
+  const c = checks(j); if (!c || !c.length) return null;
+  const s = c.some(x => x.s === "fail") ? "no" : c.some(x => x.s === "unknown") ? "unknown" : c.some(x => x.s === "warn") ? "warn" : "yes";
+  return { s, c };
+}
+function canApply(j){
+  if (profileEmpty()) return j.eligibility === "intern-ok";
+  const v = verdict(j);
+  if (!v) return j.eligibility === "intern-ok";
+  return v.s === "yes" || v.s === "warn" || (v.s === "unknown" && j.eligibility === "intern-ok");
+}
+function eligPill(j){
+  if (state.applied[j.id]) return `<span class="pill ok">${ic("check")}Applied</span>`;
+  const v = profileEmpty() ? null : verdict(j);
+  if (!v) return j.eligibility === "intern-ok" ? `<span class="pill ok">${ic("check")}Open to interns</span>` : `<span class="pill wait">${ic("hourglass")}After internship</span>`;
+  return { yes:`<span class="pill ok">${ic("check")}You're eligible</span>`, warn:`<span class="pill wait">${ic("alert")}Eligible · action needed</span>`,
+           no:`<span class="pill no">${ic("x")}Not eligible</span>`, unknown:`<span class="pill unk">${ic("help")}Complete profile</span>` }[v.s];
+}
 
 function ring(d, size=52){
   const r = size/2 - 4, C = 2 * Math.PI * r;
@@ -452,8 +587,7 @@ function card(j, i){
     </div>
     <div class="c-foot">
       ${isNew(j) ? `<span class="pill new">New</span>` : ""}
-      ${applied ? `<span class="pill ok">${ic("check")}Applied</span>` :
-        j.eligibility === "intern-ok" ? `<span class="pill ok">${ic("check")}Open to interns</span>` : `<span class="pill wait">${ic("hourglass")}After internship</span>`}
+      ${eligPill(j)}
       <button class="save" data-toggle="saved" data-id="${esc(j.id)}" aria-pressed="${saved}" aria-label="${saved ? "Unsave" : "Save"}">${ic("star")}</button>
     </div>
   </article>`;
@@ -467,8 +601,8 @@ function mini(j, dateText){
 
 function matches(j){
   if (state.cat !== "all" && j.category !== state.cat) return false;
-  if (state.region !== "all" && j.region !== state.region) return false;
-  if (state.eligible && j.eligibility !== "intern-ok") return false;
+  if (state.region === "mine" ? !(P().regions || []).includes(j.region) : state.region !== "all" && j.region !== state.region) return false;
+  if (state.eligible && !canApply(j)) return false;
   if (state.quick === "soon" && !isSoon(j)) return false;
   if (state.quick === "new" && !isNew(j)) return false;
   if (state.q){
@@ -498,13 +632,15 @@ function viewRadar(){
     ["all", "Open now", "radar", "var(--accent)", open.length],
     ["soon", "Closing this week", "flame", "var(--red)", open.filter(isSoon).length],
     ["new", "New in 48h", "sparkle", "var(--indigo)", open.filter(isNew).length],
-    ["elig", "Open to interns", "check", "var(--green)", open.filter(j => j.eligibility === "intern-ok").length]
+    ["elig", profileEmpty() ? "Open to interns" : "You can apply", "check", "var(--green)", open.filter(canApply).length]
   ];
   return `
   <section class="hero">
     <span class="live"><span class="dot"></span>Live · updated ${updText}</span>
+    ${P().name ? `<span class="greet">Hi Dr. ${esc(P().name)} 👋${P().internshipEnd && days(P().internshipEnd) > 0 ? ` · internship ends in ${days(P().internshipEnd)} days` : ""}</span>` : ""}
     <h1>Every opening. <em>Every morning.</em></h1>
     <p>Junior Resident walk-ins, Medical Officer posts, defence and PG exams, scanned daily for Meerut, Uttar Pradesh and Delhi NCR.</p>
+    ${completeness() < 0.75 ? `<div class="setup">${ic("idcard")}<div><b>${profileEmpty() ? "Set up your profile" : "Finish your profile"}</b>Add your internship date, registration and NEET-PG details to see exactly which posts you can apply for.</div><button class="btn" data-view="profile">${profileEmpty() ? "Set up" : "Continue"}</button></div>` : ""}
     <div class="stats">${tiles.map(([k, l, i, t, n]) => {
       const pressed = k === "elig" ? state.eligible : k === "all" ? (!state.quick && !state.eligible) : state.quick === k;
       return `<button class="stat" data-quick="${k}" aria-pressed="${pressed}" style="--tone:${t}"><span class="lbl">${ic(i)}${l}</span><div class="num" data-count="${n}" data-key="${k}">${lastCounts[k] ?? 0}</div></button>`;
@@ -517,8 +653,8 @@ function viewRadar(){
       ${Object.entries(CAT).map(([k, c]) => `<button class="chip" data-cat="${k}" aria-pressed="${state.cat === k}" style="--c:${c.c}"><span class="sw"></span>${c.label}${counts[k] ? ` <span class="n">${counts[k]}</span>` : ""}</button>`).join("")}
     </div>
     <div class="row2">
-      <div class="seg" role="group" aria-label="Region">${REGIONS.map(([k, l]) => `<button data-region="${k}" aria-pressed="${state.region === k}">${l}</button>`).join("")}</div>
-      <label class="switch"><input type="checkbox" class="elig-toggle" ${state.eligible ? "checked" : ""}> Eligible during internship</label>
+      <div class="seg" role="group" aria-label="Region">${((P().regions || []).length ? [["mine","My locations"], ...REGIONS] : REGIONS).map(([k, l]) => `<button data-region="${k}" aria-pressed="${state.region === k}">${l}</button>`).join("")}</div>
+      <label class="switch"><input type="checkbox" class="elig-toggle" ${state.eligible ? "checked" : ""}> ${profileEmpty() ? "Eligible during internship" : "Only what I can apply for"}</label>
     </div>
   </div>
   <div id="results"></div>`;
@@ -578,6 +714,43 @@ function viewSites(){
         <span class="t"><b>${esc(s.name)}${s.priority === 1 ? '<span class="daily">Daily</span>' : ""}</b><span>${esc(s.why)}</span></span>${ic("external")}</a>`).join("")}</div>`).join("")}`;
 }
 
+function viewProfile(){
+  const p = P(), pct = Math.round(completeness() * 100), open = JOBS.filter(isOpen);
+  const elig = open.filter(canApply).length;
+  const opt = (key, list, multi = false) => `<div class="opts">${list.map(([v, l]) => {
+    const on = multi ? (p[key] || []).includes(v) : p[key] === v;
+    return `<button type="button" class="opt" data-pf-${multi ? "multi" : "set"}="${key}" data-v="${v}" aria-pressed="${on}">${l}</button>`; }).join("")}</div>`;
+  const ie = p.internshipEnd ? days(p.internshipEnd) : null;
+  return `<section class="page-head"><h1>Profile</h1><p>DocRadar checks every opening against these details. They're saved only on this device. Nothing is uploaded.</p></section>
+  <div class="pf-sum" style="--tone:var(--accent)">${ring(null, 64).replace("<b>TBA</b>", `<b>${pct}%</b>`).replace('stroke-dasharray="3 5"', `stroke-dasharray="${2*Math.PI*28}" stroke-dashoffset="${2*Math.PI*28*(1-Math.max(.02,pct/100))}" style="stroke:var(--accent)"`)}
+    <div><b>${pct === 100 ? "Profile complete" : `Profile ${pct}% complete`}</b>
+    <span>${ie !== null ? (ie > 0 ? `Internship ends in ${ie} days (${fmt(p.internshipEnd)})` : `Internship completed ${fmt(p.internshipEnd)}`) : "Add your internship completion date to start"}</span>
+    ${profileEmpty() ? "" : `<span>Eligible for ${elig} of ${open.length} open listings</span>`}</div></div>
+  <div class="pf-grid">
+    <section class="pf-card" style="--i:0"><h3>${ic("hospital")}Internship &amp; registration</h3><p>Most JR and MO posts need a completed internship and permanent registration.</p>
+      <label class="field"><span>Internship completion date</span><input class="inp" type="date" data-pf="internshipEnd" value="${esc(p.internshipEnd || "")}"><small>The date your CRMI ends, as on your internship schedule.</small></label>
+      <div class="field"><span>Registration status</span>${opt("regStatus", REG)}</div>
+      <label class="field"><span>Medical council</span><select class="inp" data-pf="council"><option value="">Select council…</option>${COUNCILS.map(c => `<option ${p.council === c ? "selected" : ""}>${c}</option>`).join("")}</select><small>Delhi govt hospitals usually want Delhi Medical Council registration.</small></label>
+    </section>
+    <section class="pf-card" style="--i:1"><h3>${ic("book")}NEET-PG &amp; MBBS</h3><p>AFMS and some other posts shortlist on NEET-PG and count MBBS attempts.</p>
+      <div class="field"><span>Appeared in NEET-PG</span><div class="opts">${[2025, 2026].map(y => `<button type="button" class="opt" data-pf-multi="neetPg" data-v="${y}" aria-pressed="${(p.neetPg || []).includes(y)}">${y}</button>`).join("")}
+        <button type="button" class="opt" data-pf-none="neetPg" aria-pressed="${Array.isArray(p.neetPg) && !p.neetPg.length}">Not appeared</button></div></div>
+      <div class="field"><span>Passed final MBBS (Part I &amp; II) within 2 attempts?</span>${opt("attemptsOk", [["yes","Yes"],["no","No"]])}</div>
+    </section>
+    <section class="pf-card" style="--i:2"><h3>${ic("idcard")}Personal details</h3><p>Used for age limits and category relaxation (OBC +3, SC/ST +5, PwBD +10 where allowed).</p>
+      <label class="field"><span>Your name <span style="color:var(--faint);font-weight:400">(optional)</span></span><input class="inp" type="text" data-pf="name" placeholder="e.g. Rahul" value="${esc(p.name || "")}" autocomplete="given-name"></label>
+      <label class="field"><span>Date of birth</span><input class="inp" type="date" data-pf="dob" value="${esc(p.dob || "")}"></label>
+      <div class="field"><span>Category</span>${opt("category", [["UR","General"],["EWS","EWS"],["OBC","OBC"],["SC","SC"],["ST","ST"]])}</div>
+      <div class="field"><span>Gender</span>${opt("gender", [["male","Male"],["female","Female"],["other","Other"]])}<small>Some posts (e.g. Female Medical Officer) and AFMS seats are split by gender.</small></div>
+      <div class="field"><span>Person with disability (PwBD)?</span>${opt("pwbd", [["no","No"],["yes","Yes"]])}</div>
+    </section>
+    <section class="pf-card" style="--i:3"><h3>${ic("pin")}Where you want to work</h3><p>Adds a "My locations" filter to Radar.</p>
+      <div class="field"><span>Preferred locations</span>${opt("regions", REGIONS.filter(r => r[0] !== "all"), true)}</div>
+    </section>
+  </div>
+  <div class="pf-foot"><span>${ic("lock")}Stored only in this browser on this device</span><button type="button" class="btn danger" id="pf-reset">Reset profile</button></div>`;
+}
+
 function rail(){
   const soon = JOBS.filter(isOpen).filter(j => j.lastDate).sort(byDeadline).slice(0, 6);
   const exams = JOBS.filter(j => j.category === "exam" && isOpen(j));
@@ -593,16 +766,20 @@ function rail(){
 function nav(){
   const savedCount = JOBS.filter(j => state.saved[j.id]).length;
   const soon = JOBS.filter(isSoon).length;
-  const counts = { radar: JOBS.filter(isOpen).length, saved: savedCount, timeline: soon, sites: SOURCES.length };
+  const counts = { radar: JOBS.filter(isOpen).length, saved: savedCount, timeline: soon, sites: SOURCES.length, profile: Math.round(completeness() * 100) + "%" };
+  const p = P(), ie = p.internshipEnd ? days(p.internshipEnd) : null;
+  $("#sideprof").innerHTML = `<button class="sideprof" data-view="profile"><b>${p.name ? "Dr. " + esc(p.name) : "Your profile"}</b>
+    <span>${ie !== null ? (ie > 0 ? `Internship ends in ${ie} days` : "Internship complete") : "Add internship & registration details"}</span>
+    <div class="bar"><i style="width:${Math.round(completeness() * 100)}%"></i></div></button>`;
   $("#side-nav").innerHTML = VIEWS.map(([k, l, i]) => `<button class="nav-item" data-view="${k}" ${state.view === k ? 'aria-current="page"' : ""}>${ic(i)}${l}${loaded ? `<span class="count">${counts[k]}</span>` : ""}</button>`).join("");
-  $("#tabbar").innerHTML = VIEWS.map(([k, l, i]) => `<button class="tab" data-view="${k}" ${state.view === k ? 'aria-current="page"' : ""}>${ic(i)}${l}${k === "timeline" && soon ? `<span class="badge">${soon}</span>` : ""}</button>`).join("");
+  $("#tabbar").innerHTML = VIEWS.map(([k, l, i]) => `<button class="tab" data-view="${k}" ${state.view === k ? 'aria-current="page"' : ""}>${ic(i)}${l}${k === "timeline" && soon ? `<span class="badge">${soon}</span>` : ""}${k === "profile" && completeness() < 0.75 ? `<span class="badge" style="background:var(--accent)">!</span>` : ""}</button>`).join("");
 }
 
 function render(full = true){
   const go = () => {
     if (full){
       const v = $("#view");
-      v.innerHTML = state.view === "timeline" ? viewTimeline() : state.view === "saved" ? viewSaved() : state.view === "sites" ? viewSites() : viewRadar();
+      v.innerHTML = state.view === "timeline" ? viewTimeline() : state.view === "saved" ? viewSaved() : state.view === "sites" ? viewSites() : state.view === "profile" ? viewProfile() : viewRadar();
       $$("[data-count]").forEach(el => countUp(el, +el.dataset.count));
       const q = $("#q");
       if (q) q.oninput = e => { state.q = e.target.value.trim().toLowerCase(); $("#results").innerHTML = resultsHTML(); };
@@ -637,8 +814,7 @@ function openSheet(id){
       ${j.salary ? `<div class="wide"><dt>${ic("wallet")}Pay</dt><dd>${esc(j.salary)}</dd></div>` : ""}
       ${j.eventDate && j.eventDate !== j.lastDate ? `<div class="wide"><dt>${ic("cal")}${j.category === "exam" ? "Exam date" : "Interview"}</dt><dd>${fmt(j.eventDate, {weekday:"short", day:"numeric", month:"long", year:"numeric"})}</dd></div>` : ""}
     </dl>
-    <div class="callout" style="--tone:${ok ? "var(--green)" : "var(--amber)"};--tone-soft:${ok ? "var(--green-soft)" : "var(--amber-soft)"}">${ic(ok ? "check" : "hourglass")}
-      <div><b>${ok ? "Can apply during internship" : "Needs completed internship + registration"}</b>${esc(j.eligibilityNote || "")}</div></div>
+    ${eligBlock(j, ok)}
     ${j.verified ? "" : `<div class="callout" style="--tone:var(--muted);--tone-soft:var(--bg-2)">${ic("info")}<div>Found by automated search and not yet checked against the official notice. Confirm before applying.</div></div>`}
     <div class="acts">
       ${j.officialUrl ? `<a class="btn primary" href="${esc(j.officialUrl)}" target="_blank" rel="noopener">Open official notice ${ic("external")}</a>` : ""}
@@ -663,6 +839,18 @@ function dragToClose(){
   g.onpointerdown = e => { if (innerWidth >= 1024 || e.target.closest("button")) return; y0 = e.clientY; s.style.transition = "none"; g.setPointerCapture(e.pointerId); };
   g.onpointermove = e => { if (y0 === null) return; s.style.transform = `translateY(${Math.max(0, e.clientY - y0)}px)`; };
   g.onpointerup = e => { if (y0 === null) return; s.style.transition = ""; const dy = e.clientY - y0; y0 = null; if (dy > 110) closeSheet(); else s.style.transform = ""; };
+}
+
+function eligBlock(j, ok){
+  const v = verdict(j);
+  const note = j.eligibilityNote ? `<div class="callout" style="--tone:var(--muted);--tone-soft:var(--bg-2)">${ic("info")}<div><b style="color:var(--text)">From the notice</b>${esc(j.eligibilityNote)}</div></div>` : "";
+  if (!v) return `<div class="callout" style="--tone:${ok ? "var(--green)" : "var(--amber)"};--tone-soft:${ok ? "var(--green-soft)" : "var(--amber-soft)"}">${ic(ok ? "check" : "hourglass")}
+      <div><b>${ok ? "Can apply during internship" : "Needs completed internship + registration"}</b>${esc(j.eligibilityNote || "")}</div></div>`;
+  if (profileEmpty()) return `<div class="setup" style="margin:0 0 10px">${ic("idcard")}<div><b>Am I eligible?</b>Set up your profile to check this post against your details.</div><button class="btn" data-view="profile">Set up</button></div>${note}`;
+  const head = { yes:["You're eligible","var(--green)"], warn:["Eligible, with action needed","var(--amber)"], no:["Not eligible this time","var(--red)"], unknown:["Need a few more details","var(--muted)"] }[v.s];
+  const icon = { pass:"check", fail:"x", warn:"alert", unknown:"help" };
+  return `<div class="checks"><h4><span style="color:${head[1]}">${head[0]}</span>${v.s === "unknown" ? `<button class="opt" style="height:28px" data-view="profile">Update profile</button>` : ""}</h4>
+    ${v.c.map(x => `<div class="chk ${x.s}">${ic(icon[x.s])}<span>${esc(x.t)}</span></div>`).join("")}</div>${note}`;
 }
 
 /* ---------- Actions ---------- */
@@ -721,7 +909,19 @@ document.addEventListener("click", e => {
   if ((el = t.closest("[data-share]"))) return share(el.dataset.share);
   if (t.closest("[data-close]") || t.id === "scrim") return closeSheet();
   if ((el = t.closest("[data-open]"))) return openSheet(el.dataset.open);
+  if ((el = t.closest("[data-pf-set],[data-pf-multi],[data-pf-none]"))) {
+    const p = P();
+    if (el.dataset.pfSet) { const k = el.dataset.pfSet; p[k] === el.dataset.v ? delete p[k] : (p[k] = el.dataset.v); }
+    else if (el.dataset.pfNone) p[el.dataset.pfNone] = [];
+    else { const k = el.dataset.pfMulti, v = k === "neetPg" ? +el.dataset.v : el.dataset.v, a = new Set(p[k] || []); a.has(v) ? a.delete(v) : a.add(v); p[k] = [...a]; }
+    saveProfile(); return render();
+  }
+  if (t.id === "pf-reset") {
+    if (t.dataset.armed) { state.profile = {}; saveProfile(); state.region = "all"; toast("Profile cleared", "x"); return render(); }
+    t.dataset.armed = 1; t.textContent = "Tap again to clear"; setTimeout(() => { if (t.isConnected) { delete t.dataset.armed; t.textContent = "Reset profile"; } }, 3000); return;
+  }
   if ((el = t.closest("[data-view]"))) {
+    if ($("#sheet").classList.contains("open")) closeSheet();
     state.view = el.dataset.view; store.set("dr-view", state.view);
     transition(() => render()); scrollTo({ top: 0, behavior: reduced ? "auto" : "smooth" }); return;
   }
@@ -743,7 +943,20 @@ document.addEventListener("click", e => {
     paintTheme();
   }
 });
+let pfToast;
+function saveProfile(){
+  store.set("dr-profile", state.profile);
+  if (state.region === "mine" && !(state.profile.regions || []).length) state.region = "all";
+  clearTimeout(pfToast); pfToast = setTimeout(() => toast("Profile saved"), 400);
+}
+document.addEventListener("input", e => {
+  const f = e.target.dataset?.pf; if (!f) return;
+  const v = e.target.value.trim();
+  v ? (state.profile[f] = v) : delete state.profile[f];
+  saveProfile(); nav();
+});
 document.addEventListener("change", e => {
+  if (e.target.dataset?.pf && (e.target.tagName === "SELECT" || e.target.type === "date")) return render();
   if (e.target.classList.contains("elig-toggle")) {
     state.eligible = e.target.checked; store.set("dr-elig", state.eligible);
     if (state.view !== "radar") { state.view = "radar"; store.set("dr-view", "radar"); }

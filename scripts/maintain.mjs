@@ -24,6 +24,17 @@ for (const j of data.jobs) {
   for (const k of ["lastDate", "eventDate", "addedOn"])
     if (j[k] != null && !DATE.test(j[k])) errors.push(`${where}: ${k} must be YYYY-MM-DD`);
   if (!j.officialUrl && !j.sourceUrl) errors.push(`${where}: needs officialUrl or sourceUrl`);
+  const r = j.requirements;
+  if (r) {
+    const known = ["internshipBy", "registration", "councils", "maxAge", "ageOn", "ageRelax", "neetPg", "maxAttempts", "gender"];
+    for (const k of Object.keys(r)) if (!known.includes(k)) errors.push(`${where}: unknown requirement ${k}`);
+    if (r.internshipBy && !["eventDate", "lastDate"].includes(r.internshipBy) && !DATE.test(r.internshipBy)) errors.push(`${where}: internshipBy must be a date, "eventDate" or "lastDate"`);
+    if (r.registration && !["permanent", "any"].includes(r.registration)) errors.push(`${where}: registration must be "permanent" or "any"`);
+    if (r.ageOn && !DATE.test(r.ageOn)) errors.push(`${where}: ageOn must be YYYY-MM-DD`);
+    if (r.maxAge != null && typeof r.maxAge !== "number") errors.push(`${where}: maxAge must be a number`);
+    if (r.neetPg && !Array.isArray(r.neetPg)) errors.push(`${where}: neetPg must be an array of years`);
+    if (r.gender && !["male", "female"].includes(r.gender)) errors.push(`${where}: gender must be "male" or "female"`);
+  }
   if (seen.has(j.id)) { // keep the earliest addedOn, newest details
     const prev = seen.get(j.id);
     seen.set(j.id, { ...prev, ...j, addedOn: prev.addedOn < j.addedOn ? prev.addedOn : j.addedOn });

@@ -18,7 +18,14 @@
       "officialUrl": "https://health.delhi.gov.in",
       "sourceUrl": "https://www.freejobalert.com/articles/mvh-junior-resident-recruitment-2026-3076935",
       "addedOn": "2026-11-12",
-      "verified": false
+      "verified": false,
+      "requirements": {
+        "internshipBy": "eventDate",
+        "registration": "permanent",
+        "councils": [
+          "Delhi Medical Council"
+        ]
+      }
     },
     {
       "id": "afms-ssc-mo-nov-2026",
@@ -33,11 +40,23 @@
       "lastDate": "2026-11-18",
       "eventDate": "2026-12-02",
       "eligibility": "after-internship",
-      "eligibilityNote": "Internship must be completed by 30 Sep 2026, plus permanent registration and NEET-PG 2025/2026 appearance. MBBS age under 30. He cannot apply this round. AFMS usually runs two drives a year, so watch for the next one.",
+      "eligibilityNote": "Internship must be completed by 30 Sep 2026, plus permanent registration and NEET-PG 2025/2026 appearance. MBBS age under 30. AFMS usually runs two SSC drives a year.",
       "officialUrl": "https://join.afms.gov.in",
       "sourceUrl": "https://www.freejobalert.com/articles/afms-medical-officer-short-service-commission-recruitment-2026-3077439",
       "addedOn": "2026-11-12",
-      "verified": false
+      "verified": false,
+      "requirements": {
+        "internshipBy": "2026-09-30",
+        "registration": "permanent",
+        "maxAge": 29,
+        "ageOn": "2026-12-31",
+        "ageRelax": false,
+        "neetPg": [
+          2025,
+          2026
+        ],
+        "maxAttempts": 2
+      }
     },
     {
       "id": "aiims-bhopal-jr-nonacad-2026-11-19",
@@ -56,7 +75,14 @@
       "officialUrl": "https://www.aiimsbhopal.edu.in/AIIMSFiles/career/Download/Advertisement_JR_27102026.pdf",
       "sourceUrl": "https://www.freejobalert.com/articles/aiims-bhopal-junior-resident-recruitment-2026-walkin-for-20-posts-3076186",
       "addedOn": "2026-11-12",
-      "verified": false
+      "verified": false,
+      "requirements": {
+        "internshipBy": "eventDate",
+        "registration": "any",
+        "maxAge": 33,
+        "ageOn": "2026-11-19",
+        "ageRelax": true
+      }
     },
     {
       "id": "upsc-cms-2027",
@@ -75,7 +101,12 @@
       "officialUrl": "https://upsc.gov.in",
       "sourceUrl": "https://pwonlyias.com/blog/upsc-calendar-2027/",
       "addedOn": "2026-11-12",
-      "verified": false
+      "verified": false,
+      "requirements": {
+        "maxAge": 32,
+        "ageOn": "2027-08-01",
+        "ageRelax": true
+      }
     },
     {
       "id": "neet-pg-2027",
