@@ -20,6 +20,8 @@
     { "name": "ESIC Recruitment", "url": "https://www.esic.gov.in/recruitments", "group": "Govt Medical Officer", "priority": 1, "why": "ESIC hospital JR/SR walk-ins, IMO posts" },
     { "name": "Medical Dialogues – Jobs", "url": "https://medicaldialogues.in/jobs", "group": "Aggregators", "priority": 1, "why": "Doctor-focused job news" },
     { "name": "FreeJobAlert – Medical", "url": "https://www.freejobalert.com", "group": "Aggregators", "priority": 1, "why": "Fast coverage of govt walk-ins" },
+    { "name": "Sarkari Result", "url": "https://www.sarkariresult.com", "group": "Aggregators", "priority": 1, "why": "Govt job, exam form and result listings" },
+    { "name": "Sarkari Result (.com.cm)", "url": "https://sarkariresult.com.cm", "group": "Aggregators", "priority": 1, "why": "Separate site from the one above; also lists medical recruitments such as AFMS" },
     { "name": "Docthub Jobs", "url": "https://jobs.docthub.com", "group": "Private", "priority": 2, "why": "Private hospital RMO / duty doctor jobs" },
     { "name": "Indeed – RMO jobs in UP", "url": "https://in.indeed.com/Resident-Medical-Officer-jobs-in-Uttar-Pradesh", "group": "Private", "priority": 2, "why": "Private RMO openings" },
     { "name": "ICMR Recruitment", "url": "https://www.icmr.gov.in", "group": "Research", "priority": 3, "why": "Research / project scientist posts for MBBS" }

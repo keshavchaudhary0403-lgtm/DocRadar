@@ -25,7 +25,10 @@ Find **new, still-open** opportunities and add them to `data/jobs.json`.
    - `ESIC junior resident walk-in <month year>`
    - `Meerut hospital MBBS doctor vacancy` and `RMO MBBS job Ghaziabad Noida`
    - `AFMS SSC medical officer`, `NEET PG 2027 notification`, `INI-CET <next session>`, `UPSC CMS 2027`
-   Also check the priority-1 sites in `sources.json` directly where you can (WebFetch).
+   Also check the priority-1 sites in `sources.json` directly where you can (WebFetch). Always open
+   https://www.sarkariresult.com and https://sarkariresult.com.cm and scan their latest-jobs lists for
+   medical posts (Medical Officer, Junior Resident, AFMS, NHM, ESIC, CMS, NEET-PG). These are
+   aggregators, so use them to find listings, then confirm on the official notice as described below.
 3. For every candidate listing:
    - Keep it only if the **last date is today or later** or the date isn't announced yet (exams/big notifications).
    - Try to open the **official notice** (institute or govt site). If you confirm the details there,
