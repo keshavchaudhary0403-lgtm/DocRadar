@@ -279,6 +279,16 @@ kbd{font-family:"Geist Mono",monospace;font-size:11px;padding:2px 7px;border-rad
 .ri-t b{display:block;font-size:13.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .ri-t span{display:block;font-size:12px;color:var(--muted);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .ri-empty{padding:16px;font-size:13px;color:var(--muted)}
+.hovercard{position:fixed;z-index:60;width:300px;padding:14px 16px;border-radius:16px;background:var(--solid);border:1px solid var(--line-2);box-shadow:var(--shadow-lg);pointer-events:none;opacity:0;transform:translateX(6px);transition:opacity .18s var(--ease),transform .18s var(--ease)}
+.hovercard.show{opacity:1;transform:none}
+.hc-eyebrow{font-size:11.5px;font-weight:650;text-transform:uppercase;letter-spacing:.06em}
+.hc-title{display:block;font-size:14.5px;line-height:1.35;margin-top:4px}
+.hc-org{font-size:12.5px;color:var(--muted);margin-top:2px}
+.hc-rows{display:grid;gap:6px;margin:12px 0;padding-top:12px;border-top:1px solid var(--line)}
+.hc-row{display:flex;gap:8px;align-items:flex-start;font-size:12.5px;line-height:1.4}
+.hc-row .ic{width:14px;height:14px;flex:none;margin-top:1px;color:var(--muted)}
+.hc-foot{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.hc-hint{font-size:11.5px;color:var(--faint)}
 .rail-note{display:flex;gap:6px;align-items:flex-start;margin:0;font-size:12px;line-height:1.45;color:var(--faint)}
 .rail-note .ic{width:14px;height:14px;flex:none;margin-top:1px}
 .tip{padding:14px;border-radius:16px;background:linear-gradient(135deg,var(--accent-soft),var(--indigo-soft));font-size:13px;color:var(--muted)}
@@ -297,15 +307,19 @@ kbd{font-family:"Geist Mono",monospace;font-size:11px;padding:2px 7px;border-rad
 .scrim.open{opacity:1;pointer-events:auto}
 .sheet{position:fixed;z-index:51;left:0;right:0;bottom:0;max-height:90dvh;overflow-y:auto;overscroll-behavior:contain;background:var(--solid);border-radius:26px 26px 0 0;border-top:1px solid var(--line-2);box-shadow:var(--shadow-lg);transform:translateY(105%);transition:transform .45s var(--ease);padding:0 20px calc(24px + env(safe-area-inset-bottom))}
 .sheet.open{transform:none}
-@media (min-width:1024px){
-  .sheet{left:auto;top:12px;bottom:12px;right:12px;width:460px;max-height:none;border-radius:24px;border:1px solid var(--line-2);transform:translateX(110%);padding:0 26px 26px}
+/* iPad and desktop: details open as a centred window; phones keep the bottom sheet */
+@media (min-width:768px){
+  .sheet{left:50%;right:auto;top:50%;bottom:auto;width:min(600px,calc(100vw - 48px));max-height:min(88dvh,900px);border-radius:24px;border:1px solid var(--line-2);padding:0 28px 28px;
+    transform:translate(-50%,-47%) scale(.97);opacity:0;pointer-events:none;transition:transform .35s var(--ease),opacity .25s var(--ease)}
+  .sheet.open{transform:translate(-50%,-50%);opacity:1;pointer-events:auto}
+  .grab i{visibility:hidden}
 }
 .grab{position:sticky;top:0;padding:10px 0 6px;background:var(--solid);display:flex;justify-content:center;z-index:2;touch-action:none}
 .grab i{width:40px;height:5px;border-radius:99px;background:var(--line-2)}
 .sheet-close{position:absolute;right:0;top:6px;width:38px;height:38px;border-radius:50%;background:var(--text);color:var(--bg);border:0;box-shadow:0 4px 14px rgba(0,0,0,.28),0 0 0 3px var(--solid)}
 .sheet-close .ic{width:18px;height:18px;stroke-width:2.6}
 .sheet-close:hover{opacity:.88}
-@media (min-width:1024px){.grab i{visibility:hidden}}
+
 .sh-head{display:flex;gap:14px;align-items:flex-start;margin:10px 0 16px}
 .sh-head h2{font-size:21px;line-height:1.25;letter-spacing:-.025em;margin:4px 0 4px;font-weight:680}
 .sh-cd{display:flex;align-items:center;gap:14px;padding:14px;border-radius:16px;background:color-mix(in srgb,var(--tone) 10%,transparent);border:1px solid color-mix(in srgb,var(--tone) 22%,transparent);margin-bottom:14px}
@@ -542,6 +556,7 @@ button.live:active{transform:scale(.97)}
 
 <div class="scrim" id="scrim"></div>
 <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-title"></div>
+<div class="hovercard" id="hovercard" aria-hidden="true"></div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <div class="pop" id="pop" role="tooltip"></div>
 
@@ -1126,6 +1141,35 @@ function railItem(j, date, verb){
   return `<div class="ri" data-open="${esc(j.id)}" role="button" tabindex="0" title="${tip}">${ring(d, 44)}
     <div class="ri-t"><b>${esc(short)}</b><span>${when} · ${esc(j.org)}</span></div></div>`;
 }
+/* Hover preview for sidebar items (mouse / trackpad only) */
+let hcTimer = null;
+function hoverCardHTML(j){
+  const c = CAT[j.category] || CAT.other, d = days(j.lastDate);
+  const row = (i, t) => t ? `<div class="hc-row">${ic(i)}<span>${t}</span></div>` : "";
+  const due = j.lastDate ? `${d === 0 ? "Last day today" : d + " day" + (d === 1 ? "" : "s") + " left"} · ${fmt(j.lastDate, {day:"numeric", month:"short", year:"numeric"})}` : "Dates not announced yet";
+  return `<div class="hc-eyebrow" style="color:${c.c}">${c.label}${j.mode ? " · " + esc(j.mode) : ""}</div>
+    <b class="hc-title">${esc(j.title)}</b><div class="hc-org">${esc(j.org)}</div>
+    <div class="hc-rows">${row("clock", due)}${row("pin", esc(j.location.split("(")[0].trim()))}${row("users", j.posts ? j.posts + " posts" : "")}${row("wallet", j.salary ? esc(j.salary) : "")}</div>
+    <div class="hc-foot">${eligPill(j)}<span class="hc-hint">Click for full details</span></div>`;
+}
+function showHoverCard(item){
+  const j = JOBS.find(x => x.id === item.dataset.open), hc = $("#hovercard"); if (!j || !hc) return;
+  hc.innerHTML = hoverCardHTML(j); hc.classList.add("show");
+  const r = item.getBoundingClientRect(), h = hc.offsetHeight, w = hc.offsetWidth;
+  const top = Math.max(12, Math.min(innerHeight - h - 12, r.top + r.height / 2 - h / 2));
+  hc.style.top = top + "px"; hc.style.left = Math.max(12, r.left - w - 12) + "px";
+}
+function hideHoverCard(){ clearTimeout(hcTimer); $("#hovercard")?.classList.remove("show"); }
+if (matchMedia("(hover:hover) and (pointer:fine)").matches) {
+  document.addEventListener("mouseover", e => {
+    const item = e.target.closest?.("#rail .ri"); if (!item) return;
+    clearTimeout(hcTimer); hcTimer = setTimeout(() => showHoverCard(item), 180);
+  });
+  document.addEventListener("mouseout", e => {
+    const item = e.target.closest?.("#rail .ri"); if (item && !item.contains(e.relatedTarget)) hideHoverCard();
+  });
+  addEventListener("scroll", hideHoverCard, { passive: true, capture: true });
+}
 function railHTML(){
   const soon = areaOpen().filter(j => j.lastDate && j.category !== "exam").sort(byDeadline).slice(0, 6);
   const exams = JOBS.filter(j => j.category === "exam" && isOpen(j));
@@ -1178,6 +1222,7 @@ function transition(fn){
 /* ---------- Sheet ---------- */
 function openSheet(id, focus){
   const j = JOBS.find(x => x.id === id); if (!j) return;
+  hideHoverCard();
   const c = CAT[j.category] || CAT.other, d = days(j.lastDate), open = isOpen(j);
   const saved = !!state.saved[j.id], applied = !!state.applied[j.id];
   const ok = j.eligibility === "intern-ok";
@@ -1222,7 +1267,7 @@ function closeSheet(){
 }
 function dragToClose(){
   const g = $("#grab"), s = $("#sheet"); let y0 = null;
-  g.onpointerdown = e => { if (innerWidth >= 1024 || e.target.closest("button")) return; y0 = e.clientY; s.style.transition = "none"; g.setPointerCapture(e.pointerId); };
+  g.onpointerdown = e => { if (innerWidth >= 768 || e.target.closest("button")) return; y0 = e.clientY; s.style.transition = "none"; g.setPointerCapture(e.pointerId); };
   g.onpointermove = e => { if (y0 === null) return; s.style.transform = `translateY(${Math.max(0, e.clientY - y0)}px)`; };
   g.onpointerup = e => { if (y0 === null) return; s.style.transition = ""; const dy = e.clientY - y0; y0 = null; if (dy > 110) closeSheet(); else s.style.transform = ""; };
 }
