@@ -784,7 +784,7 @@ function viewRadar(){
     ["all", "Open now", "radar", "var(--accent)", open.length],
     ["soon", "Closing this week", "flame", "var(--red)", open.filter(isSoon).length],
     ["new", "New in 48h", "sparkle", "var(--indigo)", open.filter(isNew).length],
-    ["elig", profileEmpty() ? "Open to interns" : "You can apply", "check", "var(--green)", open.filter(canApply).length]
+    ["elig", "Can apply now", "check", "var(--green)", open.filter(canApply).length]
   ];
   return `
   <section class="hero">
@@ -806,7 +806,7 @@ function viewRadar(){
     </div>
     <div class="row2">
       <div class="seg" role="group" aria-label="Region">${((P().regions || []).length ? [["mine","My locations"], ...REGIONS] : REGIONS).map(([k, l]) => `<button data-region="${k}" aria-pressed="${state.region === k}">${l}</button>`).join("")}</div>
-      <label class="switch"><input type="checkbox" class="elig-toggle" ${state.eligible ? "checked" : ""}> ${profileEmpty() ? "Eligible during internship" : "Only what I can apply for"}</label>
+      <label class="switch"><input type="checkbox" class="elig-toggle" ${state.eligible ? "checked" : ""}> Can apply now</label>
     </div>
   </div>
   <div id="results"></div>`;
