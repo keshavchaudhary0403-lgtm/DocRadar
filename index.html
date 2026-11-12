@@ -403,6 +403,32 @@ a.orglink .ic{width:13px;height:13px}
 .pf-sum .link{background:none;color:var(--accent);font-weight:600;font-size:13px;padding:0;display:inline-flex;align-items:center;gap:3px}
 .pf-sum .link .ic{width:13px;height:13px}
 
+/* Update status */
+button.live{cursor:pointer;transition:border-color .2s,transform .2s var(--ease)}
+button.live:hover{border-color:var(--line-2)}
+button.live:active{transform:scale(.97)}
+.live b{color:var(--text);font-weight:600}
+.live.warn .dot{background:var(--amber);animation:none}
+.live.bad{border-color:color-mix(in srgb,var(--red) 40%,transparent);color:var(--red)}
+.live.bad .dot{background:var(--red);animation:none}
+.live .ic{width:14px;height:14px;margin-left:-2px}
+.topbar .live{padding:4px 10px 4px 9px;font-size:12px;margin-left:auto;margin-right:8px;max-width:52vw;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sidebar .live{width:100%;justify-content:flex-start}
+.hero-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.newpill{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;padding:5px 12px;border-radius:99px;background:var(--indigo-soft);color:var(--indigo);cursor:pointer;border:1px solid transparent;transition:border-color .2s}
+.newpill:hover{border-color:var(--indigo)}
+.newpill .ic{width:14px;height:14px}
+.runkv{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:0 0 14px}
+.runkv div{padding:12px;border-radius:14px;background:var(--bg-2)}
+.runkv b{display:block;font-size:22px;letter-spacing:-.03em}
+.runkv span{font-size:12px;color:var(--muted)}
+.runhist{border-radius:16px;border:1px solid var(--line);overflow:hidden;margin-bottom:14px}
+.runhist h4,.runnew h4{margin:0;padding:11px 14px;font-size:12.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);background:var(--bg-2)}
+.runhist .r{display:flex;gap:12px;padding:10px 14px;border-top:1px solid var(--line);font-size:13px}
+.runhist .r b{flex:none;width:64px;font-family:"Geist Mono",monospace;font-size:12px;font-weight:600;padding-top:1px}
+.runhist .r span{color:var(--muted)}
+.runnew{border-radius:16px;border:1px solid var(--line);overflow:hidden;margin-bottom:14px}
+
 .foot{color:var(--faint);font-size:12.5px;text-align:center;margin:40px 0 8px}
 
 @media (prefers-reduced-motion: reduce){
@@ -418,6 +444,7 @@ a.orglink .ic{width:13px;height:13px}
     <div class="brand"><span class="logo" id="logo-d"></span>DocRadar</div>
     <nav id="side-nav"></nav>
     <div class="side-foot">
+      <button class="live" data-runlog id="status-d"><span class="dot"></span>Checking…</button>
       <div id="sideprof"></div>
       <button class="nav-item theme-btn" type="button"></button>
     </div>
@@ -426,6 +453,7 @@ a.orglink .ic{width:13px;height:13px}
   <main class="main">
     <div class="topbar">
       <div class="brand"><span class="logo" id="logo-m"></span>DocRadar</div>
+      <button class="live" data-runlog id="status-m"><span class="dot"></span>…</button>
       <button class="icon-btn theme-btn" type="button" aria-label="Toggle theme"></button>
     </div>
     <div id="view"></div>
@@ -543,7 +571,56 @@ const DEFAULT_NAME = "Manish Teotia";
 if (state.profile.name === undefined) state.profile.name = DEFAULT_NAME;
 const firstName = () => (P().name || "").trim().split(/\s+/)[0];
 if ((state.profile.regions || []).length) state.region = "mine";
-let JOBS = [], SOURCES = [], UPDATED = null, loaded = false;
+let JOBS = [], SOURCES = [], UPDATED = null, UPDATED_AT = null, RUNLOG = [], loaded = false;
+const LAST_SEEN = store.get("dr-seen", null);   // date of the previous visit (YYYY-MM-DD)
+const newSinceVisit = () => LAST_SEEN ? JOBS.filter(j => j.addedOn > LAST_SEEN && isOpen(j)) : [];
+
+/* ---------- Update freshness ---------- */
+function freshness(){
+  if (!UPDATED) return { level:"warn", short:"…", long:"Checking…" };
+  const d = days(UPDATED), hr = new Date().getHours();
+  const time = UPDATED_AT ? new Date(UPDATED_AT).toLocaleTimeString("en-IN", { hour:"numeric", minute:"2-digit" }) : "";
+  if (d >= 0) return { level:"ok", short:"Updated today", long:`Updated today${time ? " · " + time : ""}` };
+  if (d === -1 && hr < 10) return { level:"ok", short:"Updated yesterday", long:"Updated yesterday · today's scan runs around 7 AM" };
+  if (d === -1) return { level:"warn", short:"Not updated today", long:"Not updated today yet · last scan yesterday" };
+  return { level:"bad", short:`Stale · ${-d} days`, long:`Not updated for ${-d} days · last scan ${fmt(UPDATED, {day:"numeric", month:"short"})}` };
+}
+function paintStatus(){
+  const f = freshness();
+  const sd = $("#status-d"), sm = $("#status-m");
+  if (sd){ sd.className = "live " + f.level; sd.innerHTML = `<span class="dot"></span>${f.long}`; }
+  if (sm){ sm.className = "live " + f.level; sm.innerHTML = `<span class="dot"></span>${f.short}`; }
+}
+function parseLog(md){
+  return md.split(/^## /m).slice(1).map(sec => {
+    const [head, ...lines] = sec.split("\n");
+    const items = lines.filter(l => l.startsWith("- ")).map(l => { const i = l.indexOf(":"); return [l.slice(2, i).trim(), l.slice(i + 1).trim()]; });
+    return { date: head.trim(), items };
+  }).filter(e => /^\d{4}-\d{2}-\d{2}$/.test(e.date));
+}
+function openRunSheet(){
+  const f = freshness(), last = RUNLOG[0], get = (e, k) => (e?.items.find(([a]) => a.toLowerCase().startsWith(k)) || [])[1] || "";
+  const num = v => (v.match(/^\d+/) || ["–"])[0];
+  const fresh = newSinceVisit();
+  const color = { ok:"var(--green)", warn:"var(--amber)", bad:"var(--red)" }[f.level];
+  $("#sheet").innerHTML = `
+    <div class="grab" id="grab"><i></i><button class="icon-btn sheet-close" data-close aria-label="Close">${ic("x")}</button></div>
+    <div class="sh-head" style="--c:${color}"><div class="cat-ic">${ic("radar")}</div>
+      <div><div class="eyebrow">Daily scan</div><h2 id="sh-title">${esc(f.long)}</h2>
+      <div class="org" style="white-space:normal">DocRadar scans ${SOURCES.length} websites and runs about 30 web searches every morning.</div></div></div>
+    ${f.level === "bad" ? `<div class="callout" style="--tone:var(--red);--tone-soft:var(--red-soft)">${ic("alert")}<div><b>The daily scan seems to have stopped</b>Listings may be out of date. Check the official sites under Sites, and ask whoever set up DocRadar to check the scheduled task.</div></div>` : ""}
+    ${last ? `<div class="runkv">
+      <div><b>${num(get(last, "new"))}</b><span>new listings${last.date !== UPDATED ? ` (${fmt(last.date, {day:"numeric", month:"short"})})` : ""}</span></div>
+      <div><b>${num(get(last, "updated"))}</b><span>listings updated</span></div>
+      <div><b>${esc((get(last, "sources").match(/^[\d\s\/]+/) || ["–"])[0].trim() || "–")}</b><span>sources scanned</span></div>
+      <div><b>${num(get(last, "searches"))}</b><span>web searches run</span></div></div>
+      ${get(last, "notes") ? `<div class="callout" style="--tone:var(--muted);--tone-soft:var(--bg-2)">${ic("info")}<div><b style="color:var(--text)">Notes from the scan</b>${esc(get(last, "notes"))}</div></div>` : ""}` : ""}
+    ${fresh.length ? `<div class="runnew"><h4>New since your last visit · ${fresh.length}</h4>${fresh.map(j => mini(j, fmt(j.addedOn, {day:"numeric", month:"short"}))).join("")}</div>` : ""}
+    ${RUNLOG.length ? `<div class="runhist"><h4>Recent scans</h4>${RUNLOG.slice(0, 7).map(e => `<div class="r"><b>${fmt(e.date, {day:"numeric", month:"short"})}</b><span>${esc(get(e, "new") || "–")}</span></div>`).join("")}</div>` : ""}`;
+  $("#scrim").classList.add("open"); $("#sheet").classList.add("open");
+  $("#sheet").scrollTop = 0; document.body.style.overflow = "hidden"; delete $("#sheet").dataset.id;
+  dragToClose();
+}
 
 const isOpen = j => j.lastDate == null || days(j.lastDate) >= 0;
 const isNew = j => days(j.addedOn) !== null && days(j.addedOn) >= -2;
@@ -695,8 +772,6 @@ function viewRadar(){
   const open = JOBS.filter(isOpen);
   const counts = { all: open.length };
   open.forEach(j => counts[j.category] = (counts[j.category] || 0) + 1);
-  const upd = days(UPDATED);
-  const updText = upd === 0 ? "today" : upd === -1 ? "yesterday" : fmt(UPDATED, {day:"numeric", month:"short"});
   const tiles = [
     ["all", "Open now", "radar", "var(--accent)", open.length],
     ["soon", "Closing this week", "flame", "var(--red)", open.filter(isSoon).length],
@@ -705,7 +780,8 @@ function viewRadar(){
   ];
   return `
   <section class="hero">
-    <span class="live"><span class="dot"></span>Live · updated ${updText}</span>
+    <div class="hero-row"><button class="live ${freshness().level}" data-runlog><span class="dot"></span>${esc(freshness().long)}${ic("chev")}</button>
+    ${newSinceVisit().length ? `<button class="newpill" data-quick="new">${ic("sparkle")}${newSinceVisit().length} new since your last visit</button>` : ""}</div>
     ${P().name ? `<span class="greet">Hi Dr. ${esc(firstName())} 👋${P().internshipEnd && days(P().internshipEnd) > 0 ? ` · internship ends in ${days(P().internshipEnd)} days` : ""}</span>` : ""}
     <h1>Every opening. <em>Every morning.</em></h1>
     <p>Junior Resident walk-ins, Medical Officer posts, defence and PG exams, scanned daily for Meerut, Uttar Pradesh and Delhi NCR.</p>
@@ -855,7 +931,8 @@ function render(full = true){
     }
     if ($("#results")) $("#results").innerHTML = resultsHTML();
     $$(".elig-toggle").forEach(t => t.checked = state.eligible);
-    nav(); rail();
+    nav(); rail(); paintStatus();
+    const n = newSinceVisit().length; document.title = n ? `(${n} new) DocRadar` : "DocRadar";
   };
   go();
 }
@@ -1008,6 +1085,7 @@ document.addEventListener("click", e => {
   if ((el = t.closest("[data-tip]"))) { e.preventDefault(); return openPop(el); }
   if (!t.closest("#pop")) closePop();
   if ((el = t.closest("[data-goto-pf]"))) return gotoProfileField(el.dataset.gotoPf);
+  if (t.closest("[data-runlog]")) return openRunSheet();
   if (t.closest("[data-show-eligible]")) {
     state.eligible = true; store.set("dr-elig", true); state.view = "radar"; store.set("dr-view", "radar");
     transition(() => render()); return scrollTo({ top: 0 });
@@ -1094,10 +1172,13 @@ paintTheme();
 render();
 Promise.all([
   fetch("data/jobs.json", { cache: "no-store" }).then(r => r.json()),
-  fetch("data/sources.json", { cache: "no-store" }).then(r => r.json())
-]).then(([jobs, src]) => {
-  JOBS = jobs.jobs; UPDATED = jobs.updated; SOURCES = src.sources; loaded = true;
+  fetch("data/sources.json", { cache: "no-store" }).then(r => r.json()),
+  fetch("data/update-log.md", { cache: "no-store" }).then(r => r.ok ? r.text() : "").catch(() => "")
+]).then(([jobs, src, log]) => {
+  JOBS = jobs.jobs; UPDATED = jobs.updated; UPDATED_AT = jobs.updatedAt || null; SOURCES = src.sources; loaded = true;
+  RUNLOG = parseLog(log);
   render();
+  store.set("dr-seen", isoToday());
 }).catch(() => {
   loaded = true; render();
   $("#results") && ($("#results").innerHTML = `<div class="empty">${ic("info")}<b>Couldn't load openings</b>Check your connection and refresh.</div>`);

@@ -51,6 +51,7 @@ data.jobs = [...seen.values()]
   .filter(j => j.lastDate == null || j.lastDate >= cutoff)
   .sort((a, b) => (a.lastDate ?? "9999") .localeCompare(b.lastDate ?? "9999"));
 data.updated = today;
+data.updatedAt = new Date().toISOString();
 writeFileSync(FILE, JSON.stringify(data, null, 2) + "\n");
 
 const open = data.jobs.filter(j => j.lastDate == null || j.lastDate >= today).length;
