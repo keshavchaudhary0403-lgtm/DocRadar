@@ -314,22 +314,23 @@ kbd{font-family:"Geist Mono",monospace;font-size:11px;padding:2px 7px;border-rad
 /* Sheet / drawer */
 .scrim{position:fixed;inset:0;z-index:50;background:rgba(5,8,12,.45);backdrop-filter:blur(6px);opacity:0;pointer-events:none;transition:opacity .35s var(--ease)}
 .scrim.open{opacity:1;pointer-events:auto}
-.sheet{position:fixed;z-index:51;left:0;right:0;bottom:0;max-height:90dvh;overflow-y:auto;overscroll-behavior:contain;background:var(--solid);border-radius:26px 26px 0 0;border-top:1px solid var(--line-2);box-shadow:var(--shadow-lg);transform:translateY(105%);transition:transform .45s var(--ease);padding:0 20px calc(24px + env(safe-area-inset-bottom))}
+.sheet{--sp:20px;position:fixed;z-index:51;left:0;right:0;bottom:0;max-height:90dvh;overflow-y:auto;overscroll-behavior:contain;background:var(--solid);border-radius:26px 26px 0 0;border-top:1px solid var(--line-2);box-shadow:var(--shadow-lg);transform:translateY(105%);transition:transform .45s var(--ease);padding:0 20px calc(24px + env(safe-area-inset-bottom))}
 .sheet.open{transform:none}
 /* iPad and desktop: details open as a centred window; phones keep the bottom sheet */
 @media (min-width:768px){
   .sheet{left:50%;right:auto;top:50%;bottom:auto;width:min(600px,calc(100vw - 48px));max-height:min(88dvh,900px);border-radius:24px;border:1px solid var(--line-2);padding:0 28px 28px;
     transform:translate(-50%,-47%) scale(.97);opacity:0;pointer-events:none;transition:transform .35s var(--ease),opacity .25s var(--ease)}
   .sheet.open{transform:translate(-50%,-50%);opacity:1;pointer-events:auto}
+  .sheet{--sp:28px}
   .grab i{visibility:hidden}
 }
-.grab{position:sticky;top:0;padding:10px 0 6px;background:var(--solid);display:flex;justify-content:center;z-index:2;touch-action:none}
+.grab{position:sticky;top:0;margin:0 calc(-1 * var(--sp));padding:10px var(--sp) 6px;background:var(--solid);display:flex;justify-content:center;z-index:3;touch-action:none}
 .grab i{width:40px;height:5px;border-radius:99px;background:var(--line-2)}
-.sheet-close{position:absolute;right:0;top:6px;width:38px;height:38px;border-radius:50%;background:var(--text);color:var(--bg);border:0;box-shadow:0 4px 14px rgba(0,0,0,.28),0 0 0 3px var(--solid)}
+.sheet-close{position:absolute;right:var(--sp);top:6px;width:38px;height:38px;border-radius:50%;background:var(--text);color:var(--bg);border:0;box-shadow:0 4px 14px rgba(0,0,0,.28),0 0 0 3px var(--solid)}
 .sheet-close .ic{width:18px;height:18px;stroke-width:2.6}
 .sheet-close:hover{opacity:.88}
 
-.sh-head{display:flex;gap:14px;align-items:flex-start;margin:10px 0 16px}
+.sh-head{position:sticky;top:21px;z-index:2;display:flex;gap:14px;align-items:flex-start;margin:0 calc(-1 * var(--sp)) 16px;padding:10px calc(var(--sp) + 46px) 14px var(--sp);background:var(--solid);border-bottom:1px solid var(--line)}
 .sh-head h2{font-size:21px;line-height:1.25;letter-spacing:-.025em;margin:4px 0 4px;font-weight:680}
 .sh-cd{display:flex;align-items:center;gap:14px;padding:14px;border-radius:16px;background:color-mix(in srgb,var(--tone) 10%,transparent);border:1px solid color-mix(in srgb,var(--tone) 22%,transparent);margin-bottom:14px}
 .sh-cd b{display:block;font-size:16px}
@@ -710,7 +711,7 @@ function openRunSheet(){
     <div class="sh-head" style="--c:${color}"><div class="cat-ic">${ic("radar")}</div>
       <div><div class="eyebrow">Daily scan</div><h2 id="sh-title">${esc(f.long)}</h2>
       <div class="org" style="white-space:normal">DocRadar scans ${SOURCES.length} websites and runs about 45 web searches across India every morning.</div></div></div>
-    ${f.level === "bad" ? `<div class="callout" style="--tone:var(--red);--tone-soft:var(--red-soft)">${ic("alert")}<div><b>The daily scan seems to have stopped</b>Listings may be out of date. Check the official sites under Sites, and ask whoever set up DocRadar to check the scheduled task.</div></div>` : ""}
+    ${f.level === "bad" ? `<div class="callout" style="--tone:var(--red);--tone-soft:var(--red-soft)">${ic("alert")}<div><b>The daily scan seems to have stopped</b>Listings may be out of date. Check the official sites under Sources, and ask whoever set up DocRadar to check the scheduled task.</div></div>` : ""}
     ${last ? `<div class="runkv">
       <div><b>${num(get(last, "new"))}</b><span>new listings${last.date !== UPDATED ? ` (${fmt(last.date, {day:"numeric", month:"short"})})` : ""}</span></div>
       <div><b>${num(get(last, "updated"))}</b><span>listings updated</span></div>
