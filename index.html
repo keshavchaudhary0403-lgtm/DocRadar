@@ -199,7 +199,7 @@ kbd{font-family:"Geist Mono",monospace;font-size:11px;padding:2px 7px;border-rad
 .pill.wait{background:var(--amber-soft);color:var(--amber)}
 .pill.new{background:var(--indigo-soft);color:var(--indigo)}
 .pill.new::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;animation:ping 2s infinite}
-.save{margin-left:auto;width:36px;height:36px;border-radius:10px;display:grid;place-items:center;color:var(--faint);border:1px solid var(--line);background:var(--raise);transition:all .25s var(--ease)}
+.save{margin-left:auto;flex:none;width:36px;height:36px;border-radius:10px;display:grid;place-items:center;color:var(--faint);border:1px solid var(--line);background:var(--raise);transition:all .25s var(--ease)}
 .save:hover{color:var(--amber)}
 .save[aria-pressed=true]{color:var(--amber);background:var(--amber-soft);border-color:transparent}
 .save[aria-pressed=true] .ic{fill:currentColor;animation:pop .4s var(--ease)}
@@ -294,7 +294,8 @@ kbd{font-family:"Geist Mono",monospace;font-size:11px;padding:2px 7px;border-rad
 .sh-cd b{display:block;font-size:16px}
 .sh-cd span{font-size:13px;color:var(--muted)}
 .kv{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px}
-.kv div{padding:11px 12px;border-radius:14px;background:var(--bg-2)}
+.kv > *{padding:11px 12px;border-radius:14px;background:var(--bg-2);color:inherit}
+.kv > .tap{display:block}
 .kv dt{font-size:11.5px;color:var(--muted);display:flex;align-items:center;gap:5px;font-weight:500}
 .kv dt .ic{width:13px;height:13px}
 .kv dd{margin:3px 0 0;font-size:14px;font-weight:550}
@@ -364,6 +365,43 @@ select.inp{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.
 .bar{height:6px;border-radius:99px;background:var(--bg-2);margin-top:10px;overflow:hidden}
 .bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--accent),var(--indigo));transition:width .6s var(--ease)}
 
+/* Info popovers */
+.tip-btn{display:inline-grid;place-items:center;width:22px;height:22px;margin-left:4px;border-radius:50%;color:var(--accent);background:var(--accent-soft);vertical-align:-5px;transition:transform .2s var(--ease)}
+.tip-btn .ic{width:14px;height:14px}
+.tip-btn:hover{transform:scale(1.12)}
+.tip-btn[aria-expanded=true]{background:var(--accent);color:var(--accent-ink)}
+.pop{position:fixed;z-index:70;max-height:calc(100dvh - 24px);overflow-y:auto;width:min(340px,calc(100vw - 24px));padding:14px 16px;border-radius:16px;background:var(--solid);border:1px solid var(--line-2);box-shadow:var(--shadow-lg);font-size:13.5px;color:var(--muted);opacity:0;transform:translateY(6px) scale(.98);pointer-events:none;transition:opacity .2s var(--ease),transform .25s var(--ease)}
+.pop.show{opacity:1;transform:none;pointer-events:auto}
+.pop b.pt{display:flex;align-items:center;justify-content:space-between;color:var(--text);font-size:14.5px;margin-bottom:6px}
+.pop table{width:100%;border-collapse:collapse;margin:8px 0;font-size:12.5px}
+.pop th,.pop td{text-align:left;padding:6px 8px;border-top:1px solid var(--line);vertical-align:top}
+.pop th{color:var(--text);white-space:nowrap}
+.pop p{margin:6px 0 0}
+.flash{animation:flash 1.6s var(--ease)}
+@keyframes flash{0%,40%{box-shadow:0 0 0 4px var(--accent-soft);border-radius:14px;background:var(--accent-soft)}}
+
+/* More tap targets */
+.go{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;color:var(--muted);background:var(--bg-2);transition:all .3s var(--ease)}
+.card:hover .go{background:var(--c);color:#fff;transform:translateX(2px)}
+.c-foot .pill[data-open]{cursor:pointer;transition:filter .2s}
+.c-foot .pill[data-open]:hover{filter:brightness(1.1);text-decoration:underline;text-underline-offset:2px}
+.tap{width:100%;text-align:left;cursor:pointer;transition:background .2s,transform .2s var(--ease)}
+.kv .tap:hover{background:color-mix(in srgb,var(--accent) 10%,var(--bg-2))}
+.kv .tap:active{transform:scale(.98)}
+.kv .hint{display:flex;align-items:center;gap:4px;font-size:11.5px;color:var(--accent);font-weight:600;margin-top:4px}
+.kv .hint .ic{width:12px;height:12px}
+.sh-cd.tap:hover{filter:brightness(1.04)}
+.sh-cd .hint{display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--accent);font-weight:600;margin-top:2px}
+.sh-cd .hint .ic{width:13px;height:13px}
+a.orglink{display:inline-flex;align-items:center;gap:4px;color:var(--accent)}
+a.orglink .ic{width:13px;height:13px}
+.chk.unknown.tap:hover{background:var(--bg-2)}
+.chk .fix{margin-left:auto;flex:none;font-size:12px;font-weight:600;color:var(--accent);white-space:nowrap}
+.callout a{color:var(--accent);font-weight:600;display:inline-flex;align-items:center;gap:3px;margin-top:4px}
+.callout a .ic{width:13px;height:13px}
+.pf-sum .link{background:none;color:var(--accent);font-weight:600;font-size:13px;padding:0;display:inline-flex;align-items:center;gap:3px}
+.pf-sum .link .ic{width:13px;height:13px}
+
 .foot{color:var(--faint);font-size:12.5px;text-align:center;margin:40px 0 8px}
 
 @media (prefers-reduced-motion: reduce){
@@ -401,6 +439,7 @@ select.inp{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.
 <div class="scrim" id="scrim"></div>
 <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-title"></div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="pop" id="pop" role="tooltip"></div>
 
 <script>
 const ICONS = {
@@ -438,6 +477,8 @@ const ICONS = {
   help:'<circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6v.6M12 17v.5"/>',
   lock:'<rect x="4" y="10" width="16" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/>',
   idcard:'<rect x="3" y="5" width="18" height="14" rx="3"/><circle cx="9" cy="11" r="2"/><path d="M6 16a3 3 0 0 1 6 0M14 10h4M14 14h4"/>',
+  arrow:'<path d="M5 12h14M13 6l6 6-6 6"/>',
+  map:'<path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/>',
   archive:'<rect x="3" y="4" width="18" height="5" rx="1.5"/><path d="M5 9v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9M10 13h4"/>'
 };
 const ic = (n, extra="") => `<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ${extra}>${ICONS[n]}</svg>`;
@@ -454,6 +495,29 @@ const REGIONS = [["all","Anywhere"],["meerut","Meerut"],["up","Uttar Pradesh"],[
 const VIEWS = [["radar","Radar","radar"],["timeline","Timeline","timeline"],["saved","Saved","star"],["sites","Sites","globe"],["profile","Profile","user"]];
 const COUNCILS = ["Uttar Pradesh Medical Council","National Medical Commission (IMR)","Delhi Medical Council","Haryana Medical Council","Uttarakhand Medical Council","Rajasthan Medical Council","Madhya Pradesh Medical Council","Punjab Medical Council","Bihar Medical Council","Other state council"];
 const REG = [["none","Not yet"],["provisional","Provisional"],["applied","Permanent: applied"],["permanent","Permanent: received"]];
+const TIPS = {
+  attempts:{ t:"Final MBBS Part I & Part II", h:`The final professional MBBS exam is split into two parts:
+    <table><tr><th>Part I</th><td>End of 3rd year: Community Medicine (PSM), ENT, Ophthalmology, Forensic Medicine</td></tr>
+    <tr><th>Part II</th><td>End of final year: General Medicine, General Surgery, OBG, Paediatrics</td></tr></table>
+    Answer <b>Yes</b> if you cleared <b>each</b> part on the 1st or 2nd attempt (at most one supplementary in each).
+    <p>The Army AFMS Medical Officer entry requires this. Most other jobs don't check it.</p>` },
+  internshipEnd:{ t:"Internship completion date", h:`The last day of your 12-month Compulsory Rotating Medical Internship (CRMI), as on your internship schedule or completion certificate.
+    <p>Most JR and MO posts need it finished <b>by the last date or the interview day</b>, so this one date decides a lot.</p>` },
+  regStatus:{ t:"Registration status", h:`<table><tr><th>Provisional</th><td>Given for the internship period</td></tr>
+    <tr><th>Permanent: applied</th><td>Applied to the council after internship, certificate not yet received</td></tr>
+    <tr><th>Permanent: received</th><td>Permanent registration certificate in hand</td></tr></table>
+    Almost every job after MBBS asks for <b>permanent</b> registration.` },
+  council:{ t:"Medical council", h:`The State Medical Council (or NMC) you're registered with. After Subharti, Meerut, this is usually the <b>Uttar Pradesh Medical Council</b>.
+    <p>Delhi government hospitals often require <b>Delhi Medical Council</b> registration as well, which you can take in addition.</p>` },
+  neetPg:{ t:"NEET-PG appearance", h:`Tick every year you <b>sat</b> NEET-PG, whatever the score.
+    <p>AFMS shortlists Medical Officers on NEET-PG percentile, so it only accepts recent attempts (2025 or 2026 for the current drive).</p>` },
+  category:{ t:"Category & age relaxation", h:`Most government posts relax the upper age limit:
+    <table><tr><th>OBC</th><td>+3 years</td></tr><tr><th>SC / ST</th><td>+5 years</td></tr><tr><th>PwBD</th><td>+10 years (on top of the above)</td></tr><tr><th>EWS / General</th><td>No relaxation</td></tr></table>
+    Some posts (e.g. AFMS) give no relaxation; DocRadar follows each notice.` },
+  pwbd:{ t:"Person with Benchmark Disability", h:`A certified disability of 40% or more. PwBD candidates get reserved posts and an extra 10 years of age relaxation in most government recruitments.` }
+};
+const tip = k => `<button type="button" class="tip-btn" data-tip="${k}" aria-label="What does this mean?" aria-expanded="false">${ic("info")}</button>`;
+
 const PF_FIELDS = ["internshipEnd","regStatus","council","neetPg","dob","category","attemptsOk","gender"];
 const GROUP_C = {"Defence":"#65a30d","Exams":"#a855f7","Govt JR / SR":"#6366f1","Govt Medical Officer":"#0d9488","Meerut":"#e5484d","Delhi":"#f97316","Aggregators":"#0ea5e9","Private":"#f59e0b","Research":"#ec4899"};
 
@@ -500,30 +564,30 @@ function ageOn(dob, on){
 }
 function checks(j){
   const r = j.requirements; if (!r) return null;
-  const p = P(), out = [], add = (s, t) => out.push({ s, t });
+  const p = P(), out = [], add = (s, t, f) => out.push({ s, t, f });
   const at = v => v === "eventDate" ? (j.eventDate || j.lastDate) : v === "lastDate" ? j.lastDate : v;
   const by = r.internshipBy ? at(r.internshipBy) : null;
   if (by){
-    if (!p.internshipEnd) add("unknown", `Internship must be complete by ${fmt(by)}. Add your completion date.`);
+    if (!p.internshipEnd) add("unknown", `Internship must be complete by ${fmt(by)}. Add your completion date.`, "internshipEnd");
     else if (p.internshipEnd <= by) add("pass", `Internship complete by ${fmt(by)} (yours ends ${fmt(p.internshipEnd)})`);
     else add("fail", `Internship must be complete by ${fmt(by)}, but yours ends ${fmt(p.internshipEnd)}`);
   }
   if (r.registration){
     const st = p.regStatus, perm = r.registration === "permanent";
-    if (!st) add("unknown", `Needs ${perm ? "permanent" : "medical council"} registration. Add your registration status.`);
-    else if (st === "permanent" || (!perm && st !== "none")) add("pass", `${perm ? "Permanent registration" : "Registration"} in place`);
+    if (!st) add("unknown", `Needs ${perm ? "permanent" : "medical council"} registration. Add your registration status.`, "regStatus");
+    else if (st === "permanent") add("pass", "Permanent registration in place");
     else if (st === "applied") add("warn", "Needs permanent registration, and yours is still pending. Carry the application receipt.");
     else if (p.internshipEnd && by && p.internshipEnd <= by) add("warn", "Needs permanent registration. Apply as soon as your internship ends.");
     else add("fail", `Needs ${perm ? "permanent" : ""} registration (yours: ${st === "provisional" ? "provisional" : "not yet"})`);
   }
   if (r.councils?.length){
-    if (!p.council) add("unknown", `Needs ${r.councils.join(" or ")} registration. Add your council.`);
+    if (!p.council) add("unknown", `Needs ${r.councils.join(" or ")} registration. Add your council.`, "council");
     else if (r.councils.includes(p.council)) add("pass", `Registered with ${p.council}`);
     else add("warn", `Needs ${r.councils.join(" or ")} registration. You're with ${p.council}, so you'd have to register there too.`);
   }
   if (r.maxAge){
     const on = r.ageOn || j.lastDate || isoToday();
-    if (!p.dob) add("unknown", `Age limit ${r.maxAge} on ${fmt(on)}. Add your date of birth.`);
+    if (!p.dob) add("unknown", `Age limit ${r.maxAge} on ${fmt(on)}. Add your date of birth.`, "dob");
     else {
       const relax = r.ageRelax ? (RELAX[p.category] || 0) + (p.pwbd === "yes" ? 10 : 0) : 0;
       const lim = r.maxAge + relax, a = ageOn(p.dob, on);
@@ -531,16 +595,16 @@ function checks(j){
     }
   }
   if (r.neetPg?.length){
-    if (!Array.isArray(p.neetPg)) add("unknown", `Needs NEET-PG ${r.neetPg.join(" or ")}. Add your NEET-PG attempts.`);
+    if (!Array.isArray(p.neetPg)) add("unknown", `Needs NEET-PG ${r.neetPg.join(" or ")}. Add your NEET-PG attempts.`, "neetPg");
     else if (p.neetPg.some(y => r.neetPg.includes(y))) add("pass", `Appeared in NEET-PG ${p.neetPg.filter(y => r.neetPg.includes(y)).join(" & ")}`);
     else add("fail", `Needs NEET-PG ${r.neetPg.join(" or ")} appearance`);
   }
   if (r.maxAttempts){
-    if (!p.attemptsOk) add("unknown", `Final MBBS must be passed within ${r.maxAttempts} attempts. Add this to your profile.`);
+    if (!p.attemptsOk) add("unknown", `Final MBBS must be passed within ${r.maxAttempts} attempts. Add this to your profile.`, "attemptsOk");
     else add(p.attemptsOk === "yes" ? "pass" : "fail", p.attemptsOk === "yes" ? `Final MBBS passed within ${r.maxAttempts} attempts` : `Final MBBS must be passed within ${r.maxAttempts} attempts`);
   }
   if (r.gender){
-    if (!p.gender) add("unknown", `Open to ${r.gender} candidates only. Add your gender.`);
+    if (!p.gender) add("unknown", `Open to ${r.gender} candidates only. Add your gender.`, "gender");
     else add(p.gender === r.gender ? "pass" : "fail", `Open to ${r.gender} candidates only`);
   }
   return out;
@@ -590,8 +654,9 @@ function card(j, i){
     </div>
     <div class="c-foot">
       ${isNew(j) ? `<span class="pill new">New</span>` : ""}
-      ${eligPill(j)}
+      ${eligPill(j).replace('<span class="pill', `<span data-open="${esc(j.id)}" data-focus="checks" title="See eligibility details" class="pill`)}
       <button class="save" data-toggle="saved" data-id="${esc(j.id)}" aria-pressed="${saved}" aria-label="${saved ? "Unsave" : "Save"}">${ic("star")}</button>
+      <span class="go" aria-hidden="true">${ic("arrow")}</span>
     </div>
   </article>`;
 }
@@ -728,24 +793,24 @@ function viewProfile(){
   <div class="pf-sum" style="--tone:var(--accent)">${ring(null, 64).replace("<b>TBA</b>", `<b>${pct}%</b>`).replace('stroke-dasharray="3 5"', `stroke-dasharray="${2*Math.PI*28}" stroke-dashoffset="${2*Math.PI*28*(1-Math.max(.02,pct/100))}" style="stroke:var(--accent)"`)}
     <div><b>${pct === 100 ? "Profile complete" : `Profile ${pct}% complete`}</b>
     <span>${ie !== null ? (ie > 0 ? `Internship ends in ${ie} days (${fmt(p.internshipEnd)})` : `Internship completed ${fmt(p.internshipEnd)}`) : "Add your internship completion date to start"}</span>
-    ${profileEmpty() ? "" : `<span>Eligible for ${elig} of ${open.length} open listings</span>`}</div></div>
+    ${profileEmpty() ? "" : `<span><button class="link" data-show-eligible>Eligible for ${elig} of ${open.length} open listings ${ic("arrow")}</button></span>`}</div></div>
   <div class="pf-grid">
     <section class="pf-card" style="--i:0"><h3>${ic("hospital")}Internship &amp; registration</h3><p>Most JR and MO posts need a completed internship and permanent registration.</p>
-      <label class="field"><span>Internship completion date</span><input class="inp" type="date" data-pf="internshipEnd" value="${esc(p.internshipEnd || "")}"><small>The date your CRMI ends, as on your internship schedule.</small></label>
-      <div class="field"><span>Registration status</span>${opt("regStatus", REG)}</div>
-      <label class="field"><span>Medical council</span><select class="inp" data-pf="council"><option value="">Select council…</option>${COUNCILS.map(c => `<option ${p.council === c ? "selected" : ""}>${c}</option>`).join("")}</select><small>Delhi govt hospitals usually want Delhi Medical Council registration.</small></label>
+      <label class="field" id="pf-internshipEnd"><span>Internship completion date${tip("internshipEnd")}</span><input class="inp" type="date" data-pf="internshipEnd" value="${esc(p.internshipEnd || "")}"><small>The date your CRMI ends, as on your internship schedule.</small></label>
+      <div class="field" id="pf-regStatus"><span>Registration status${tip("regStatus")}</span>${opt("regStatus", REG)}</div>
+      <label class="field" id="pf-council"><span>Medical council${tip("council")}</span><select class="inp" data-pf="council"><option value="">Select council…</option>${COUNCILS.map(c => `<option ${p.council === c ? "selected" : ""}>${c}</option>`).join("")}</select><small>Delhi govt hospitals usually want Delhi Medical Council registration.</small></label>
     </section>
     <section class="pf-card" style="--i:1"><h3>${ic("book")}NEET-PG &amp; MBBS</h3><p>AFMS and some other posts shortlist on NEET-PG and count MBBS attempts.</p>
-      <div class="field"><span>Appeared in NEET-PG</span><div class="opts">${[2025, 2026].map(y => `<button type="button" class="opt" data-pf-multi="neetPg" data-v="${y}" aria-pressed="${(p.neetPg || []).includes(y)}">${y}</button>`).join("")}
+      <div class="field" id="pf-neetPg"><span>Appeared in NEET-PG${tip("neetPg")}</span><div class="opts">${[2025, 2026].map(y => `<button type="button" class="opt" data-pf-multi="neetPg" data-v="${y}" aria-pressed="${(p.neetPg || []).includes(y)}">${y}</button>`).join("")}
         <button type="button" class="opt" data-pf-none="neetPg" aria-pressed="${Array.isArray(p.neetPg) && !p.neetPg.length}">Not appeared</button></div></div>
-      <div class="field"><span>Passed final MBBS (Part I &amp; II) within 2 attempts?</span>${opt("attemptsOk", [["yes","Yes"],["no","No"]])}</div>
+      <div class="field" id="pf-attemptsOk"><span>Passed final MBBS (Part I &amp; II) within 2 attempts?${tip("attempts")}</span>${opt("attemptsOk", [["yes","Yes"],["no","No"]])}<small>Part I = PSM, ENT, Eye, Forensic · Part II = Medicine, Surgery, OBG, Paeds</small></div>
     </section>
     <section class="pf-card" style="--i:2"><h3>${ic("idcard")}Personal details</h3><p>Used for age limits and category relaxation (OBC +3, SC/ST +5, PwBD +10 where allowed).</p>
       <label class="field"><span>Full name</span><input class="inp" type="text" data-pf="name" placeholder="Your full name" value="${esc(p.name || "")}" autocomplete="given-name"></label>
-      <label class="field"><span>Date of birth</span><input class="inp" type="date" data-pf="dob" value="${esc(p.dob || "")}"></label>
-      <div class="field"><span>Category</span>${opt("category", [["UR","General"],["EWS","EWS"],["OBC","OBC"],["SC","SC"],["ST","ST"]])}</div>
-      <div class="field"><span>Gender</span>${opt("gender", [["male","Male"],["female","Female"],["other","Other"]])}<small>Some posts (e.g. Female Medical Officer) and AFMS seats are split by gender.</small></div>
-      <div class="field"><span>Person with disability (PwBD)?</span>${opt("pwbd", [["no","No"],["yes","Yes"]])}</div>
+      <label class="field" id="pf-dob"><span>Date of birth</span><input class="inp" type="date" data-pf="dob" value="${esc(p.dob || "")}"></label>
+      <div class="field" id="pf-category"><span>Category${tip("category")}</span>${opt("category", [["UR","General"],["EWS","EWS"],["OBC","OBC"],["SC","SC"],["ST","ST"]])}</div>
+      <div class="field" id="pf-gender"><span>Gender</span>${opt("gender", [["male","Male"],["female","Female"],["other","Other"]])}<small>Some posts (e.g. Female Medical Officer) and AFMS seats are split by gender.</small></div>
+      <div class="field" id="pf-pwbd"><span>Person with disability (PwBD)?${tip("pwbd")}</span>${opt("pwbd", [["no","No"],["yes","Yes"]])}</div>
     </section>
     <section class="pf-card" style="--i:3"><h3>${ic("pin")}Where you want to work</h3><p>Adds a "My locations" filter to Radar.</p>
       <div class="field"><span>Preferred locations</span>${opt("regions", REGIONS.filter(r => r[0] !== "all"), true)}</div>
@@ -799,7 +864,7 @@ function transition(fn){
 }
 
 /* ---------- Sheet ---------- */
-function openSheet(id){
+function openSheet(id, focus){
   const j = JOBS.find(x => x.id === id); if (!j) return;
   const c = CAT[j.category] || CAT.other, d = days(j.lastDate), open = isOpen(j);
   const saved = !!state.saved[j.id], applied = !!state.applied[j.id];
@@ -808,14 +873,15 @@ function openSheet(id){
   $("#sheet").innerHTML = `
     <div class="grab" id="grab"><i></i><button class="icon-btn sheet-close" data-close aria-label="Close">${ic("x")}</button></div>
     <div class="sh-head" style="--c:${c.c}"><div class="cat-ic">${ic(c.icon)}</div>
-      <div><div class="eyebrow">${c.label}${j.mode ? " · " + esc(j.mode) : ""}</div><h2 id="sh-title">${esc(j.title)}</h2><div class="org" style="white-space:normal">${esc(j.org)}</div></div></div>
-    <div class="sh-cd" style="--tone:${open ? tone(d) : "var(--faint)"}">${ring(open ? d : null, 60)}<div><b>${cdTitle}</b><span>${j.lastDate ? "Last date " + fmt(j.lastDate, {weekday:"short", day:"numeric", month:"long", year:"numeric"}) : "We'll update this when it's announced"}</span></div></div>
+      <div><div class="eyebrow">${c.label}${j.mode ? " · " + esc(j.mode) : ""}</div><h2 id="sh-title">${esc(j.title)}</h2><div class="org" style="white-space:normal">${j.officialUrl ? `<a class="orglink" href="${esc(j.officialUrl)}" target="_blank" rel="noopener">${esc(j.org)} ${ic("external")}</a>` : esc(j.org)}</div></div></div>
+    ${(() => { const canCal = open && (j.lastDate || j.eventDate);
+      return `<${canCal ? `button type="button" data-ics="${esc(j.id)}"` : "div"} class="sh-cd ${canCal ? "tap" : ""}" style="--tone:${open ? tone(d) : "var(--faint)"}">${ring(open ? d : null, 60)}<div><b>${cdTitle}</b><span>${j.lastDate ? "Last date " + fmt(j.lastDate, {weekday:"short", day:"numeric", month:"long", year:"numeric"}) : "We'll update this when it's announced"}</span>${canCal ? `<span class="hint">${ic("calplus")}Tap to add to calendar</span>` : ""}</div></${canCal ? "button" : "div"}>`; })()}
     <dl class="kv">
-      <div class="wide"><dt>${ic("pin")}Location</dt><dd>${esc(j.location)}</dd></div>
+      <a class="wide tap" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(j.org + ", " + j.location.split("(")[0])}" target="_blank" rel="noopener"><dt>${ic("pin")}Location</dt><dd>${esc(j.location)}</dd><span class="hint">${ic("map")}Open in Maps</span></a>
       ${j.posts ? `<div><dt>${ic("users")}Posts</dt><dd>${j.posts}</dd></div>` : ""}
-      ${j.mode ? `<div><dt>${ic("bolt")}How to apply</dt><dd>${esc(j.mode)}</dd></div>` : ""}
+      ${j.mode ? (j.officialUrl ? `<a class="tap" href="${esc(j.officialUrl)}" target="_blank" rel="noopener"><dt>${ic("bolt")}How to apply</dt><dd>${esc(j.mode)}</dd><span class="hint">${ic("external")}Official site</span></a>` : `<div><dt>${ic("bolt")}How to apply</dt><dd>${esc(j.mode)}</dd></div>`) : ""}
       ${j.salary ? `<div class="wide"><dt>${ic("wallet")}Pay</dt><dd>${esc(j.salary)}</dd></div>` : ""}
-      ${j.eventDate && j.eventDate !== j.lastDate ? `<div class="wide"><dt>${ic("cal")}${j.category === "exam" ? "Exam date" : "Interview"}</dt><dd>${fmt(j.eventDate, {weekday:"short", day:"numeric", month:"long", year:"numeric"})}</dd></div>` : ""}
+      ${j.eventDate && j.eventDate !== j.lastDate ? `<button type="button" class="wide tap" data-ics="${esc(j.id)}"><dt>${ic("cal")}${j.category === "exam" ? "Exam date" : "Interview"}</dt><dd>${fmt(j.eventDate, {weekday:"short", day:"numeric", month:"long", year:"numeric"})}</dd><span class="hint">${ic("calplus")}Add to calendar</span></button>` : ""}
     </dl>
     ${eligBlock(j, ok)}
     ${j.verified ? "" : `<div class="callout" style="--tone:var(--muted);--tone-soft:var(--bg-2)">${ic("info")}<div>Found by automated search and not yet checked against the official notice. Confirm before applying.</div></div>`}
@@ -832,6 +898,10 @@ function openSheet(id){
   $("#sheet").dataset.id = id;
   setTimeout(() => $("[data-close]")?.focus({ preventScroll: true }), 50);
   dragToClose();
+  if (focus === "checks") setTimeout(() => {
+    const el = $("#sheet .checks") || $("#sheet .callout") || $("#sheet .setup");
+    if (el) { $("#sheet").scrollTo({ top: el.offsetTop - 70, behavior: reduced ? "auto" : "smooth" }); el.classList.add("flash"); }
+  }, 350);
 }
 function closeSheet(){
   $("#scrim").classList.remove("open"); $("#sheet").classList.remove("open");
@@ -846,14 +916,16 @@ function dragToClose(){
 
 function eligBlock(j, ok){
   const v = verdict(j);
-  const note = j.eligibilityNote ? `<div class="callout" style="--tone:var(--muted);--tone-soft:var(--bg-2)">${ic("info")}<div><b style="color:var(--text)">From the notice</b>${esc(j.eligibilityNote)}</div></div>` : "";
+  const note = j.eligibilityNote ? `<div class="callout" style="--tone:var(--muted);--tone-soft:var(--bg-2)">${ic("info")}<div><b style="color:var(--text)">From the notice</b>${esc(j.eligibilityNote)}${j.officialUrl ? `<br><a href="${esc(j.officialUrl)}" target="_blank" rel="noopener">Read the full notice ${ic("external")}</a>` : ""}</div></div>` : "";
   if (!v) return `<div class="callout" style="--tone:${ok ? "var(--green)" : "var(--amber)"};--tone-soft:${ok ? "var(--green-soft)" : "var(--amber-soft)"}">${ic(ok ? "check" : "hourglass")}
       <div><b>${ok ? "Can apply during internship" : "Needs completed internship + registration"}</b>${esc(j.eligibilityNote || "")}</div></div>`;
   if (profileEmpty()) return `<div class="setup" style="margin:0 0 10px">${ic("idcard")}<div><b>Am I eligible?</b>Set up your profile to check this post against your details.</div><button class="btn" data-view="profile">Set up</button></div>${note}`;
   const head = { yes:["You're eligible","var(--green)"], warn:["Eligible, with action needed","var(--amber)"], no:["Not eligible this time","var(--red)"], unknown:["Need a few more details","var(--muted)"] }[v.s];
   const icon = { pass:"check", fail:"x", warn:"alert", unknown:"help" };
   return `<div class="checks"><h4><span style="color:${head[1]}">${head[0]}</span>${v.s === "unknown" ? `<button class="opt" style="height:28px" data-view="profile">Update profile</button>` : ""}</h4>
-    ${v.c.map(x => `<div class="chk ${x.s}">${ic(icon[x.s])}<span>${esc(x.t)}</span></div>`).join("")}</div>${note}`;
+    ${v.c.map(x => x.s === "unknown" && x.f
+      ? `<button type="button" class="chk unknown tap" data-goto-pf="${x.f}">${ic(icon[x.s])}<span>${esc(x.t)}</span><span class="fix">Add →</span></button>`
+      : `<div class="chk ${x.s}">${ic(icon[x.s])}<span>${esc(x.t)}</span></div>`).join("")}</div>${note}`;
 }
 
 /* ---------- Actions ---------- */
@@ -904,14 +976,46 @@ function paintTheme(){
 }
 
 /* ---------- Events ---------- */
+let popBtn = null;
+function closePop(){ popBtn = null; $("#pop").classList.remove("show"); $$(".tip-btn[aria-expanded=true]").forEach(b => b.setAttribute("aria-expanded", "false")); }
+function openPop(btn){
+  const tp = TIPS[btn.dataset.tip]; if (!tp) return;
+  const pop = $("#pop"), wasOpen = btn.getAttribute("aria-expanded") === "true";
+  closePop(); if (wasOpen) return;
+  pop.innerHTML = `<b class="pt">${esc(tp.t)}</b>${tp.h}`;
+  btn.setAttribute("aria-expanded", "true"); popBtn = btn;
+  pop.style.top = "0px"; pop.classList.add("show"); placePop();
+}
+function placePop(){
+  const btn = popBtn, pop = $("#pop"); if (!btn) return;
+  if (!btn.isConnected) return closePop();
+  const r = btn.getBoundingClientRect(), w = Math.min(340, innerWidth - 24);
+  pop.style.left = Math.max(12, Math.min(innerWidth - w - 12, r.left + r.width / 2 - w / 2)) + "px";
+  const h = pop.offsetHeight;
+  const below = r.bottom + 8, above = r.top - h - 8;
+  pop.style.top = (below + h <= innerHeight - 12 ? below : above >= 12 ? above : Math.max(12, innerHeight - h - 12)) + "px";
+}
+function gotoProfileField(f){
+  closeSheet(); state.view = "profile"; store.set("dr-view", "profile"); render();
+  setTimeout(() => { const el = $("#pf-" + f); if (!el) return; el.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "center" }); el.classList.add("flash"); }, 80);
+}
+addEventListener("scroll", () => placePop(), { passive: true });
+addEventListener("resize", () => placePop());
 document.addEventListener("click", e => {
   const t = e.target;
   let el;
+  if ((el = t.closest("[data-tip]"))) { e.preventDefault(); return openPop(el); }
+  if (!t.closest("#pop")) closePop();
+  if ((el = t.closest("[data-goto-pf]"))) return gotoProfileField(el.dataset.gotoPf);
+  if (t.closest("[data-show-eligible]")) {
+    state.eligible = true; store.set("dr-elig", true); state.view = "radar"; store.set("dr-view", "radar");
+    transition(() => render()); return scrollTo({ top: 0 });
+  }
   if ((el = t.closest("[data-toggle]"))) { e.stopPropagation(); return toggle(el.dataset.toggle, el.dataset.id); }
   if ((el = t.closest("[data-ics]"))) return downloadICS(el.dataset.ics);
   if ((el = t.closest("[data-share]"))) return share(el.dataset.share);
   if (t.closest("[data-close]") || t.id === "scrim") return closeSheet();
-  if ((el = t.closest("[data-open]"))) return openSheet(el.dataset.open);
+  if ((el = t.closest("[data-open]"))) return openSheet(el.dataset.open, el.dataset.focus);
   if ((el = t.closest("[data-pf-set],[data-pf-multi],[data-pf-none]"))) {
     const p = P();
     if (el.dataset.pfSet) { const k = el.dataset.pfSet; p[k] === el.dataset.v ? delete p[k] : (p[k] = el.dataset.v); }
@@ -967,6 +1071,7 @@ document.addEventListener("change", e => {
   }
 });
 document.addEventListener("keydown", e => {
+  if (e.key === "Escape" && $("#pop").classList.contains("show")) return closePop();
   if (e.key === "Escape" && $("#sheet").classList.contains("open")) return closeSheet();
   if (e.key === "/" && !/INPUT|TEXTAREA/.test(document.activeElement.tagName)) {
     e.preventDefault();
