@@ -112,7 +112,7 @@ a{color:inherit;text-decoration:none}
 .live{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:500;color:var(--muted);padding:5px 12px 5px 10px;border-radius:99px;border:1px solid var(--line);background:var(--surface);backdrop-filter:blur(12px)}
 .live .dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 0 var(--green);animation:ping 2s infinite}
 @keyframes ping{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--green) 60%,transparent)}100%{box-shadow:0 0 0 10px transparent}}
-.hero h1{font-size:clamp(32px,6.4vw,56px);line-height:1.02;letter-spacing:-.045em;font-weight:750;margin:16px 0 12px;max-width:14ch}
+.hero h1{font-size:clamp(32px,6.4vw,56px);line-height:1.02;letter-spacing:-.045em;font-weight:750;margin:16px 0 12px;max-width:18ch}
 .hero h1 em{font-style:normal;background:linear-gradient(100deg,var(--accent),var(--indigo) 70%);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero p{color:var(--muted);margin:0;max-width:56ch;font-size:clamp(14.5px,1.6vw,16.5px)}
 
@@ -327,7 +327,11 @@ kbd{font-family:"Geist Mono",monospace;font-size:11px;padding:2px 7px;border-rad
 .setup div{flex:1;font-size:13.5px;color:var(--muted)}
 .setup b{display:block;color:var(--text);font-size:14.5px}
 .setup .btn{height:38px;flex:none;background:var(--text);color:var(--bg);border-color:transparent}
-.greet{display:block;margin-top:14px;font-size:14px;color:var(--muted);font-weight:500}
+.greet{display:inline-flex;align-items:center;flex-wrap:wrap;gap:4px 10px;margin-top:14px;padding:7px 16px 7px 10px;border-radius:99px;background:linear-gradient(120deg,var(--accent-soft),var(--indigo-soft));border:1px solid color-mix(in srgb,var(--accent) 28%,transparent);font-size:15.5px;font-weight:600;color:var(--text);letter-spacing:-.01em;animation:rise .6s var(--ease) both}
+.greet .wave{display:inline-block;font-size:18px;transform-origin:70% 70%;animation:wave 2.4s ease-in-out .6s 2}
+.greet b{font-weight:700;background:linear-gradient(100deg,var(--accent),var(--indigo));-webkit-background-clip:text;background-clip:text;color:transparent}
+.greet small{font-size:12.5px;font-weight:500;color:var(--muted)}
+@keyframes wave{0%,60%,100%{transform:rotate(0)}10%,30%{transform:rotate(16deg)}20%{transform:rotate(-8deg)}40%{transform:rotate(-4deg)}50%{transform:rotate(10deg)}}
 .pf-sum{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;padding:16px;border-radius:var(--r);border:1px solid var(--line);background:var(--surface);backdrop-filter:blur(16px);box-shadow:var(--shadow);margin:18px 0 6px}
 .pf-sum .ring{width:64px;height:64px}
 .pf-sum b{display:block;font-size:16px}
@@ -781,8 +785,8 @@ function viewRadar(){
   return `
   <section class="hero">
     ${newSinceVisit().length ? `<div class="hero-row"><button class="newpill" data-quick="new">${ic("sparkle")}${newSinceVisit().length} new since your last visit</button></div>` : ""}
-    ${P().name ? `<span class="greet">Hi Dr. ${esc(firstName())} 👋${P().internshipEnd && days(P().internshipEnd) > 0 ? ` · internship ends in ${days(P().internshipEnd)} days` : ""}</span>` : ""}
-    <h1>Every opening. <em>Every morning.</em></h1>
+    ${P().name ? `<span class="greet"><span class="wave">👋</span><span>Hi <b>Dr. ${esc(firstName())}</b></span>${P().internshipEnd && days(P().internshipEnd) > 0 ? `<small>Internship ends in ${days(P().internshipEnd)} days</small>` : ""}</span>` : ""}
+    <h1>Every job opening. <em>Every morning.</em></h1>
     <p>Junior Resident walk-ins, Medical Officer posts, defence and PG exams, scanned daily for Meerut, Uttar Pradesh and Delhi NCR.</p>
     ${completeness() < 0.75 ? `<div class="setup">${ic("idcard")}<div><b>${profileEmpty() ? "Set up your profile" : "Finish your profile"}</b>Add your internship date, registration and NEET-PG details to see exactly which posts you can apply for.</div><button class="btn" data-view="profile">${profileEmpty() ? "Set up" : "Continue"}</button></div>` : ""}
     <div class="stats">${tiles.map(([k, l, i, t, n]) => {
