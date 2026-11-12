@@ -267,6 +267,8 @@ kbd{font-family:"Geist Mono",monospace;font-size:11px;padding:2px 7px;border-rad
 .src .go .ic{width:15px;height:15px}
 .src:hover .go{background:var(--c);color:#fff}
 .src-stats{grid-template-columns:repeat(3,1fr)}
+.src-search{margin-top:18px}
+.src-t .dom em{font-style:normal;font-family:Geist,system-ui,sans-serif;font-weight:600;color:var(--muted)}
 .src-stats .stat{cursor:default}
 .src-stats .stat:hover{transform:none;box-shadow:var(--shadow)}
 @media (max-width:560px){.src-stats .num{font-size:26px}.src-stats .lbl{font-size:11.5px}}
@@ -1068,28 +1070,38 @@ function viewSaved(){
 }
 
 const GROUP_IC = {"National portals":"globe","Exams":"book","Defence":"shield","Govt Medical Officer":"steth","Central Hospitals":"hospital","Govt JR / SR":"hospital","State Govt":"building","Medical colleges":"building","Aggregators":"search","Private":"hospital","Research":"flask"};
-let srcGroup = "all";
+let srcGroup = "all", srcQ = "";
+function srcListHTML(){
+  const dom = u => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return u; } };
+  const q = srcQ.toLowerCase(), groups = {};
+  SOURCES.filter(s => (srcGroup === "all" || s.group === srcGroup) && (!q || [s.name, s.why, s.state, s.group, s.url].join(" ").toLowerCase().includes(q)))
+    .forEach(s => (groups[s.group] = groups[s.group] || []).push(s));
+  const entries = Object.entries(groups);
+  if (!entries.length) return `<div class="empty" style="margin-top:20px">${ic("search")}<b>No sources match</b>Try a state name like "Kerala" or a word like "AIIMS".</div>`;
+  let i = 0;
+  return entries.map(([g, list]) => `<div class="sec"><h2>${esc(g)}</h2><span>${list.length}</span></div><div class="srcs">${list
+    .sort((a, b) => (a.state === "All India" ? "" : a.state || "").localeCompare(b.state === "All India" ? "" : b.state || "") || a.priority - b.priority || a.name.localeCompare(b.name)).map(s =>
+    `<a class="src" href="${esc(s.url)}" target="_blank" rel="noopener" style="--c:${GROUP_C[g] || "#64748b"};--i:${Math.min(i++, 12)}">
+      <div class="cat-ic">${ic(GROUP_IC[g] || "globe")}</div>
+      <div class="src-t"><b>${esc(s.name)}</b><span class="why">${esc(s.why)}</span><span class="dom">${s.state && s.state !== "All India" ? `<em>${esc(s.state)}</em> · ` : ""}${esc(dom(s.url))}</span></div>
+      <span class="go" aria-hidden="true">${ic("external")}</span></a>`).join("")}</div>`).join("");
+}
 function viewSites(){
   const groups = {};
   SOURCES.forEach(s => (groups[s.group] = groups[s.group] || []).push(s));
-  const dom = u => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return u; } };
-  const shown = Object.entries(groups).filter(([g]) => srcGroup === "all" || g === srcGroup);
-  let i = 0;
-  return `<section class="page-head"><h1>Sources</h1><p>Where DocRadar looks every morning. Every website below is checked daily, along with web searches that cover all of India.</p></section>
+  const states = new Set(SOURCES.map(s => s.state).filter(x => x && x !== "All India")).size;
+  return `<section class="page-head"><h1>Sources</h1><p>Where DocRadar looks. National sources are checked every morning; each state's sources on its day of the week, and web searches cover all of India daily.</p></section>
     <div class="stats src-stats">
-      <div class="stat" style="--tone:var(--accent)"><span class="lbl">${ic("globe")}Websites checked daily</span><div class="num">${SOURCES.length}</div></div>
+      <div class="stat" style="--tone:var(--accent)"><span class="lbl">${ic("globe")}Official websites</span><div class="num">${SOURCES.length}</div></div>
       <div class="stat" style="--tone:var(--indigo)"><span class="lbl">${ic("search")}Web searches daily</span><div class="num">~45</div></div>
-      <div class="stat" style="--tone:var(--green)"><span class="lbl">${ic("map")}States &amp; UTs each week</span><div class="num">36</div></div>
+      <div class="stat" style="--tone:var(--green)"><span class="lbl">${ic("map")}States &amp; UTs covered</span><div class="num">${states}</div></div>
     </div>
+    <label class="search src-search">${ic("search")}<input id="src-q" type="search" placeholder="Search a state, AIIMS, NHM, PSC…" value="${esc(srcQ)}" autocomplete="off"></label>
     <div class="chips" role="group" aria-label="Source type">
       <button class="chip" data-src-group="all" aria-pressed="${srcGroup === "all"}">All <span class="n">${SOURCES.length}</span></button>
       ${Object.entries(groups).map(([g, l]) => `<button class="chip" data-src-group="${esc(g)}" aria-pressed="${srcGroup === g}" style="--c:${GROUP_C[g] || "#64748b"}"><span class="sw"></span>${esc(g)} <span class="n">${l.length}</span></button>`).join("")}
     </div>
-    ${shown.map(([g, list]) => `<div class="sec"><h2>${esc(g)}</h2><span>${list.length}</span></div><div class="srcs">${list.sort((a, b) => a.priority - b.priority).map(s =>
-      `<a class="src" href="${esc(s.url)}" target="_blank" rel="noopener" style="--c:${GROUP_C[g] || "#64748b"};--i:${i++}">
-        <div class="cat-ic">${ic(GROUP_IC[g] || "globe")}</div>
-        <div class="src-t"><b>${esc(s.name)}</b><span class="why">${esc(s.why)}</span><span class="dom">${esc(dom(s.url))}</span></div>
-        <span class="go" aria-hidden="true">${ic("external")}</span></a>`).join("")}</div>`).join("")}`;
+    <div id="src-list">${srcListHTML()}</div>`;
 }
 
 function viewProfile(){
@@ -1242,6 +1254,8 @@ function render(full = true){
       $$("[data-count]").forEach(el => countUp(el, +el.dataset.count));
       const q = $("#q");
       if (q) q.oninput = e => { state.q = e.target.value.trim().toLowerCase(); $("#results").innerHTML = resultsHTML(); };
+      const sq = $("#src-q");
+      if (sq) sq.oninput = e => { srcQ = e.target.value.trim(); $("#src-list").innerHTML = srcListHTML(); };
     }
     if ($("#results")) $("#results").innerHTML = resultsHTML();
     $$(".elig-toggle").forEach(t => t.checked = state.eligible);

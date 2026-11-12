@@ -102,20 +102,41 @@ Each day, cover that weekday's group. Run all three queries for **each** state o
 
 ### 2c. Keep the source list growing
 If a search keeps surfacing a site with real MBBS listings (a state health portal, a state PSC, a
-big hospital group) that isn't in `sources.json`, **add it** (same fields, `priority` 2, a fitting
-`group`) so it's scanned every day.
+medical college, a hospital group) that isn't in `sources.json`, **add it** (see "Adding sources"
+in section 3) so it's scanned from then on.
 
-## 3. Scan every source in `data/sources.json`
-After the search sweep, go through **every** entry in `sources.json` (not just priority 1):
+## 3. Scan the sources in `data/sources.json`
+`sources.json` lists 150+ official websites across India. Each has a `state` (a state/UT name, or
+`"All India"`) and a `group` (National portals, Exams, Defence, Govt Medical Officer, Central
+Hospitals, State Govt, Medical colleges, Aggregators, Private, Research).
+
+Scan them on this schedule, so **every source is checked at least once a week** and the national
+ones every day:
+1. **Every day:** every source whose `state` is `"All India"` (national portals, exams, defence,
+   CAPF / Railways / PSUs, aggregators, private hospital chains and job portals, research).
+2. **Every day:** every source whose `state` is in **today's state group** from section 2b
+   (state health departments, NHM, PSCs, recruitment boards, AIIMS and medical colleges in those states).
+3. **Any day:** a source whose site appeared in today's search results with a fresh notice.
+4. **Priority 1 sources** (`"priority": 1`) are scanned every day whatever their state.
+
+For each source:
 - Use WebFetch on the URL and look for recruitment / careers / walk-in / notices / latest jobs
   sections. Follow one level of links into a recruitment page if needed.
 - Collect anything matching section 1 with a last date of today or later, or no date yet.
 - If a site fails to load (timeout, 403, captcha), don't retry endlessly. Note it for the run log
   (step 8) and cover it with a search like `site:<domain> recruitment <M Y>`.
+- If a URL is permanently dead or has moved, fix the `url` in `sources.json` (or remove the entry
+  if the institution no longer posts there) and say so in the run log.
 
 Aggregators (Sarkari Result `www.sarkariresult.com`, `sarkariresult.com.cm`, FreeJobAlert,
-Medical Dialogues jobs, Employment News) are for **finding** listings. Always confirm details on the
-institute's own notice (step 4). `sarkariresult.com.cm` is a separate site from `sarkariresult.com`.
+Medical Dialogues jobs, Employment News, Naukri, Indeed, Docthub) are for **finding** listings.
+Always confirm details on the institution's own notice (step 4). `sarkariresult.com.cm` is a
+separate site from `sarkariresult.com`.
+
+### Adding sources
+When you add a source, use the same fields as the others:
+`{"name", "url", "group", "state", "priority", "why"}`. `state` is the full state/UT name or
+`"All India"`; `priority` is 1 for the busiest national sites, otherwise 2.
 
 ## 4. Verify each candidate
 For every listing you plan to add or update:
@@ -230,7 +251,7 @@ Append one entry to the top of `data/update-log.md` (create the file if missing)
 - New: N (titles with state)
 - Updated: N (what changed)
 - State group covered: <weekday> – list of states
-- Searches run: N · Sources scanned: N / total · failed: list domains or "none"
+- Searches run: N · Sources scanned: N (All India: N, today's states: N) · failed: list domains or "none"
 - Notes: anything odd (conflicting dates, sites down, possible upcoming notifications)
 ```
 Keep only the latest 60 entries.

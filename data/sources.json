@@ -5,6 +5,7 @@
       "name": "Employment News (Govt of India)",
       "url": "https://employmentnews.gov.in",
       "group": "National portals",
+      "state": "All India",
       "priority": 1,
       "why": "Weekly gazette of central and state govt vacancies, incl. Medical Officer posts"
     },
@@ -12,6 +13,7 @@
       "name": "National Health Mission",
       "url": "https://nhm.gov.in",
       "group": "National portals",
+      "state": "All India",
       "priority": 2,
       "why": "Links to every state NHM, which hire contract Medical Officers"
     },
@@ -19,6 +21,7 @@
       "name": "AIIMS Exams (INI-CET)",
       "url": "https://www.aiimsexams.ac.in",
       "group": "Exams",
+      "state": "All India",
       "priority": 1,
       "why": "INI-CET PG entrance, AIIMS JR results"
     },
@@ -26,6 +29,7 @@
       "name": "NBEMS (NEET-PG, DNB)",
       "url": "https://natboard.edu.in",
       "group": "Exams",
+      "state": "All India",
       "priority": 1,
       "why": "NEET-PG notifications and exam calendar"
     },
@@ -33,6 +37,7 @@
       "name": "NMC – National Medical Commission",
       "url": "https://www.nmc.org.in",
       "group": "Exams",
+      "state": "All India",
       "priority": 2,
       "why": "NExT updates, registration rules"
     },
@@ -40,97 +45,1031 @@
       "name": "AFMS – Army Medical Officer (SSC)",
       "url": "https://join.afms.gov.in",
       "group": "Defence",
+      "state": "All India",
       "priority": 1,
       "why": "SSC Medical Officer drives (usually 2 per year)"
+    },
+    {
+      "name": "Indian Navy",
+      "url": "https://www.joinindiannavy.gov.in",
+      "group": "Defence",
+      "state": "All India",
+      "priority": 2,
+      "why": "Navy medical entries"
+    },
+    {
+      "name": "CRPF Recruitment",
+      "url": "https://rect.crpf.gov.in",
+      "group": "Govt Medical Officer",
+      "state": "All India",
+      "priority": 1,
+      "why": "CRPF contractual GDMO walk-ins"
     },
     {
       "name": "UPSC (CMS exam)",
       "url": "https://upsc.gov.in",
       "group": "Govt Medical Officer",
+      "state": "All India",
       "priority": 1,
       "why": "Combined Medical Services – Railways, CAPF, MCD and other central MO posts"
     },
     {
-      "name": "AIIMS New Delhi – Recruitment",
-      "url": "https://www.aiims.edu/index.php/en/notices/recruitment/aiims-recruitment",
-      "group": "Central Hospitals",
-      "priority": 1,
-      "why": "JR (non-academic) and other posts"
+      "name": "Assam Rifles",
+      "url": "https://assamrifles.gov.in",
+      "group": "Govt Medical Officer",
+      "state": "All India",
+      "priority": 2,
+      "why": "Medical Officer walk-ins"
     },
     {
-      "name": "VMMC & Safdarjung Hospital",
-      "url": "https://vmmc-sjh.mohfw.gov.in/recruitment-all",
-      "group": "Central Hospitals",
-      "priority": 1,
-      "why": "Large JR (Non-PG) intakes several times a year"
+      "name": "BSF Recruitment",
+      "url": "https://rectt.bsf.gov.in",
+      "group": "Govt Medical Officer",
+      "state": "All India",
+      "priority": 2,
+      "why": "CAPF Medical Officer / walk-in posts"
     },
     {
-      "name": "Dr. RML Hospital, Delhi",
-      "url": "https://rmlh.nic.in",
-      "group": "Central Hospitals",
-      "priority": 1,
-      "why": "JR (non-PG) recruitment"
+      "name": "CISF Recruitment",
+      "url": "https://cisfrectt.cisf.gov.in",
+      "group": "Govt Medical Officer",
+      "state": "All India",
+      "priority": 2,
+      "why": "CAPF Medical Officer posts"
+    },
+    {
+      "name": "CRPF",
+      "url": "https://crpf.gov.in",
+      "group": "Govt Medical Officer",
+      "state": "All India",
+      "priority": 2,
+      "why": "CAPF Medical Officer walk-ins"
+    },
+    {
+      "name": "Coal India",
+      "url": "https://www.coalindia.in",
+      "group": "Govt Medical Officer",
+      "state": "All India",
+      "priority": 2,
+      "why": "PSU Medical Officer posts"
+    },
+    {
+      "name": "Indian Railways",
+      "url": "https://indianrailways.gov.in/railwayboard/",
+      "group": "Govt Medical Officer",
+      "state": "All India",
+      "priority": 2,
+      "why": "Contract Medical Officer walk-ins at railway hospitals"
+    },
+    {
+      "name": "NTPC",
+      "url": "https://careers.ntpc.co.in",
+      "group": "Govt Medical Officer",
+      "state": "All India",
+      "priority": 2,
+      "why": "PSU Medical Officer posts"
+    },
+    {
+      "name": "SAIL",
+      "url": "https://www.sail.co.in",
+      "group": "Govt Medical Officer",
+      "state": "All India",
+      "priority": 2,
+      "why": "PSU hospital Medical Officer posts"
     },
     {
       "name": "ESIC Recruitment",
       "url": "https://www.esic.gov.in/recruitments",
       "group": "Central Hospitals",
+      "state": "All India",
       "priority": 1,
       "why": "ESIC hospital JR/SR walk-ins, IMO posts"
     },
     {
-      "name": "LHMC & Associated Hospitals",
-      "url": "https://lhmc-hosp.gov.in",
+      "name": "AIIMS Mangalagiri",
+      "url": "https://www.aiimsmangalagiri.edu.in",
       "group": "Central Hospitals",
+      "state": "Andhra Pradesh",
       "priority": 2,
-      "why": "JR recruitment"
+      "why": "JR (non-academic) and other posts"
+    },
+    {
+      "name": "AIIMS Guwahati",
+      "url": "https://aiimsguwahati.ac.in",
+      "group": "Central Hospitals",
+      "state": "Assam",
+      "priority": 2,
+      "why": "JR (non-academic) and other posts"
+    },
+    {
+      "name": "AIIMS Patna",
+      "url": "https://aiimspatna.edu.in",
+      "group": "Central Hospitals",
+      "state": "Bihar",
+      "priority": 2,
+      "why": "JR (non-academic) and other posts"
+    },
+    {
+      "name": "IGIMS Patna",
+      "url": "https://www.igims.org",
+      "group": "Central Hospitals",
+      "state": "Bihar",
+      "priority": 2,
+      "why": "JR and MO posts"
+    },
+    {
+      "name": "GMCH Chandigarh",
+      "url": "https://gmch.gov.in",
+      "group": "Central Hospitals",
+      "state": "Chandigarh",
+      "priority": 2,
+      "why": "JR (non-academic) posts"
     },
     {
       "name": "PGIMER Chandigarh",
       "url": "https://pgimer.edu.in",
       "group": "Central Hospitals",
+      "state": "Chandigarh",
       "priority": 2,
       "why": "JR (non-academic) and MO posts"
+    },
+    {
+      "name": "AIIMS Raipur",
+      "url": "https://www.aiimsraipur.edu.in",
+      "group": "Central Hospitals",
+      "state": "Chhattisgarh",
+      "priority": 2,
+      "why": "JR (non-academic) and other posts"
+    },
+    {
+      "name": "AIIMS New Delhi – Recruitment",
+      "url": "https://www.aiims.edu/index.php/en/notices/recruitment/aiims-recruitment",
+      "group": "Central Hospitals",
+      "state": "Delhi",
+      "priority": 1,
+      "why": "JR (non-academic) and other posts"
+    },
+    {
+      "name": "Dr. RML Hospital, Delhi",
+      "url": "https://rmlh.nic.in",
+      "group": "Central Hospitals",
+      "state": "Delhi",
+      "priority": 1,
+      "why": "JR (non-PG) recruitment"
+    },
+    {
+      "name": "VMMC & Safdarjung Hospital",
+      "url": "https://vmmc-sjh.mohfw.gov.in/recruitment-all",
+      "group": "Central Hospitals",
+      "state": "Delhi",
+      "priority": 1,
+      "why": "Large JR (Non-PG) intakes several times a year"
+    },
+    {
+      "name": "LHMC & Associated Hospitals",
+      "url": "https://lhmc-hosp.gov.in",
+      "group": "Central Hospitals",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "JR recruitment"
+    },
+    {
+      "name": "MAMC & LNJP Delhi",
+      "url": "https://mamc.delhi.gov.in",
+      "group": "Central Hospitals",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "JR (non-academic) posts"
+    },
+    {
+      "name": "UCMS & GTB Hospital Delhi",
+      "url": "https://ucms.ac.in",
+      "group": "Central Hospitals",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "JR posts"
+    },
+    {
+      "name": "AIIMS Rajkot",
+      "url": "https://aiimsrajkot.edu.in",
+      "group": "Central Hospitals",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "JR (non-academic) and other posts"
+    },
+    {
+      "name": "AIIMS Bilaspur",
+      "url": "https://aiimsbilaspur.edu.in",
+      "group": "Central Hospitals",
+      "state": "Himachal Pradesh",
+      "priority": 2,
+      "why": "JR (non-academic) and other posts"
+    },
+    {
+      "name": "AIIMS Jammu",
+      "url": "https://www.aiimsjammu.edu.in",
+      "group": "Central Hospitals",
+      "state": "Jammu and Kashmir",
+      "priority": 2,
+      "why": "JR (non-academic) and other posts"
+    },
+    {
+      "name": "AIIMS Deoghar",
+      "url": "https://www.aiimsdeoghar.edu.in",
+      "group": "Central Hospitals",
+      "state": "Jharkhand",
+      "priority": 2,
+      "why": "JR (non-academic) and other posts"
+    },
+    {
+      "name": "RIMS Ranchi",
+      "url": "https://rimsranchi.org",
+      "group": "Central Hospitals",
+      "state": "Jharkhand",
+      "priority": 2,
+      "why": "JR posts"
+    },
+    {
+      "name": "NIMHANS Bengaluru",
+      "url": "https://nimhans.ac.in",
+      "group": "Central Hospitals",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "JR and project posts"
+    },
+    {
+      "name": "AIIMS Bhopal",
+      "url": "https://aiimsbhopal.edu.in",
+      "group": "Central Hospitals",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "JR (non-academic) and other posts"
+    },
+    {
+      "name": "AIIMS Nagpur",
+      "url": "https://aiimsnagpur.edu.in",
+      "group": "Central Hospitals",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "JR (non-academic) and other posts"
+    },
+    {
+      "name": "RIMS Imphal",
+      "url": "https://rims.edu.in",
+      "group": "Central Hospitals",
+      "state": "Manipur",
+      "priority": 2,
+      "why": "JR posts"
+    },
+    {
+      "name": "NEIGRIHMS Shillong",
+      "url": "https://neigrihms.gov.in",
+      "group": "Central Hospitals",
+      "state": "Meghalaya",
+      "priority": 2,
+      "why": "JR (non-academic) posts"
+    },
+    {
+      "name": "AIIMS Bhubaneswar",
+      "url": "https://aiimsbhubaneswar.nic.in",
+      "group": "Central Hospitals",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "JR (non-academic) and other posts"
     },
     {
       "name": "JIPMER Puducherry",
       "url": "https://jipmer.edu.in",
       "group": "Central Hospitals",
+      "state": "Puducherry",
       "priority": 2,
       "why": "JR (non-academic) posts"
     },
     {
-      "name": "UPPSC",
-      "url": "https://uppsc.up.nic.in",
-      "group": "State Govt",
-      "priority": 1,
-      "why": "UP Medical Officer and lecturer posts"
+      "name": "AIIMS Bathinda",
+      "url": "https://aiimsbathinda.edu.in",
+      "group": "Central Hospitals",
+      "state": "Punjab",
+      "priority": 2,
+      "why": "JR (non-academic) and other posts"
     },
     {
-      "name": "NHM Uttar Pradesh",
-      "url": "https://upnrhm.gov.in",
+      "name": "AIIMS Jodhpur",
+      "url": "https://aiimsjodhpur.edu.in",
+      "group": "Central Hospitals",
+      "state": "Rajasthan",
+      "priority": 2,
+      "why": "JR (non-academic) and other posts"
+    },
+    {
+      "name": "AIIMS Madurai",
+      "url": "https://aiimsmadurai.edu.in",
+      "group": "Central Hospitals",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "JR (non-academic) and other posts"
+    },
+    {
+      "name": "AIIMS Bibinagar",
+      "url": "https://aiimsbibinagar.edu.in",
+      "group": "Central Hospitals",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "JR (non-academic) and other posts"
+    },
+    {
+      "name": "AIIMS Gorakhpur",
+      "url": "https://aiimsgorakhpur.edu.in",
+      "group": "Central Hospitals",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "JR (non-academic) and other posts"
+    },
+    {
+      "name": "AIIMS Raebareli",
+      "url": "https://aiimsrbl.edu.in",
+      "group": "Central Hospitals",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "JR (non-academic) and other posts"
+    },
+    {
+      "name": "Dr RML Institute (RMLIMS) Lucknow",
+      "url": "https://www.drrmlims.ac.in",
+      "group": "Central Hospitals",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "JR posts"
+    },
+    {
+      "name": "IMS BHU Varanasi",
+      "url": "https://www.bhu.ac.in",
+      "group": "Central Hospitals",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "JR and MO posts at Sir Sunderlal Hospital"
+    },
+    {
+      "name": "JNMC AMU Aligarh",
+      "url": "https://www.amu.ac.in",
+      "group": "Central Hospitals",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "JR and MO posts at JN Medical College"
+    },
+    {
+      "name": "SGPGIMS Lucknow",
+      "url": "https://sgpgims.org.in",
+      "group": "Central Hospitals",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "JR (non-PG) and MO posts"
+    },
+    {
+      "name": "AIIMS Rishikesh",
+      "url": "https://aiimsrishikesh.edu.in",
+      "group": "Central Hospitals",
+      "state": "Uttarakhand",
+      "priority": 2,
+      "why": "JR (non-academic) and other posts"
+    },
+    {
+      "name": "AIIMS Kalyani",
+      "url": "https://aiimskalyani.edu.in",
+      "group": "Central Hospitals",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "JR (non-academic) and other posts"
+    },
+    {
+      "name": "Andhra Pradesh CFW",
+      "url": "https://cfw.ap.nic.in",
       "group": "State Govt",
-      "priority": 1,
-      "why": "Contract Medical Officer posts across UP"
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Commissionerate of Family Welfare: MO / contract posts"
+    },
+    {
+      "name": "Andhra Pradesh HMFW",
+      "url": "https://hmfw.ap.gov.in",
+      "group": "State Govt",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Health dept MO posts"
+    },
+    {
+      "name": "Andhra Pradesh PSC",
+      "url": "https://psc.ap.gov.in",
+      "group": "State Govt",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Medical Officer exams"
+    },
+    {
+      "name": "Arunachal Health Dept",
+      "url": "https://health.arunachal.gov.in",
+      "group": "State Govt",
+      "state": "Arunachal Pradesh",
+      "priority": 2,
+      "why": "Medical Officer posts"
+    },
+    {
+      "name": "Arunachal PSC",
+      "url": "https://appsc.gov.in",
+      "group": "State Govt",
+      "state": "Arunachal Pradesh",
+      "priority": 2,
+      "why": "Medical Officer exams"
+    },
+    {
+      "name": "Assam NHM",
+      "url": "https://nhm.assam.gov.in",
+      "group": "State Govt",
+      "state": "Assam",
+      "priority": 2,
+      "why": "NHM contract MO posts"
+    },
+    {
+      "name": "Assam PSC",
+      "url": "https://apsc.nic.in",
+      "group": "State Govt",
+      "state": "Assam",
+      "priority": 2,
+      "why": "Medical Officer exams"
+    },
+    {
+      "name": "Bihar PSC",
+      "url": "https://bpsc.bihar.gov.in",
+      "group": "State Govt",
+      "state": "Bihar",
+      "priority": 2,
+      "why": "Medical Officer exams"
+    },
+    {
+      "name": "Bihar State Health Society",
+      "url": "https://statehealthsocietybihar.org",
+      "group": "State Govt",
+      "state": "Bihar",
+      "priority": 2,
+      "why": "NHM contract MO posts"
+    },
+    {
+      "name": "Chhattisgarh Health",
+      "url": "https://cghealth.nic.in",
+      "group": "State Govt",
+      "state": "Chhattisgarh",
+      "priority": 2,
+      "why": "MO / NHM posts"
+    },
+    {
+      "name": "Chhattisgarh PSC",
+      "url": "https://psc.cg.gov.in",
+      "group": "State Govt",
+      "state": "Chhattisgarh",
+      "priority": 2,
+      "why": "Medical Officer exams"
+    },
+    {
+      "name": "DNH & Daman Diu Administration",
+      "url": "https://ddd.gov.in",
+      "group": "State Govt",
+      "state": "Dadra and Nagar Haveli and Daman and Diu",
+      "priority": 2,
+      "why": "Health dept posts"
     },
     {
       "name": "Delhi Health Dept – Circulars",
       "url": "https://health.delhi.gov.in",
       "group": "State Govt",
+      "state": "Delhi",
       "priority": 1,
       "why": "Walk-ins at Delhi govt hospitals"
+    },
+    {
+      "name": "Delhi State Health Mission",
+      "url": "https://dshm.delhi.gov.in",
+      "group": "State Govt",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "NHM contract posts in Delhi"
+    },
+    {
+      "name": "Goa Directorate of Health Services",
+      "url": "https://dhs.goa.gov.in",
+      "group": "State Govt",
+      "state": "Goa",
+      "priority": 2,
+      "why": "Medical Officer posts"
+    },
+    {
+      "name": "Goa PSC",
+      "url": "https://gpsc.goa.gov.in",
+      "group": "State Govt",
+      "state": "Goa",
+      "priority": 2,
+      "why": "Medical Officer recruitment"
+    },
+    {
+      "name": "Gujarat NHM",
+      "url": "https://nhm.gujarat.gov.in",
+      "group": "State Govt",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "NHM contract MO posts"
+    },
+    {
+      "name": "Gujarat PSC",
+      "url": "https://gpsc.gujarat.gov.in",
+      "group": "State Govt",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Medical Officer exams"
+    },
+    {
+      "name": "Haryana NHM",
+      "url": "https://nhmharyana.gov.in",
+      "group": "State Govt",
+      "state": "Haryana",
+      "priority": 2,
+      "why": "NHM contract MO posts"
+    },
+    {
+      "name": "Haryana PSC",
+      "url": "https://hpsc.gov.in",
+      "group": "State Govt",
+      "state": "Haryana",
+      "priority": 2,
+      "why": "Medical Officer exams"
+    },
+    {
+      "name": "Himachal NHM",
+      "url": "https://nhm.hp.gov.in",
+      "group": "State Govt",
+      "state": "Himachal Pradesh",
+      "priority": 2,
+      "why": "NHM contract MO posts"
+    },
+    {
+      "name": "Himachal PSC",
+      "url": "https://hppsc.hp.gov.in",
+      "group": "State Govt",
+      "state": "Himachal Pradesh",
+      "priority": 2,
+      "why": "Medical Officer exams"
+    },
+    {
+      "name": "J&K NHM",
+      "url": "https://jknhm.com",
+      "group": "State Govt",
+      "state": "Jammu and Kashmir",
+      "priority": 2,
+      "why": "NHM contract MO posts"
+    },
+    {
+      "name": "J&K PSC",
+      "url": "https://jkpsc.nic.in",
+      "group": "State Govt",
+      "state": "Jammu and Kashmir",
+      "priority": 2,
+      "why": "Medical Officer exams"
+    },
+    {
+      "name": "Jharkhand NHM",
+      "url": "https://jrhms.jharkhand.gov.in",
+      "group": "State Govt",
+      "state": "Jharkhand",
+      "priority": 2,
+      "why": "NHM contract MO posts"
+    },
+    {
+      "name": "Jharkhand PSC",
+      "url": "https://www.jpsc.gov.in",
+      "group": "State Govt",
+      "state": "Jharkhand",
+      "priority": 2,
+      "why": "Medical Officer exams"
+    },
+    {
+      "name": "Karnataka DME",
+      "url": "https://dme.karnataka.gov.in",
+      "group": "State Govt",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "Govt medical college posts"
+    },
+    {
+      "name": "Karnataka NHM",
+      "url": "https://nhm.karnataka.gov.in",
+      "group": "State Govt",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "NHM contract MO posts"
+    },
+    {
+      "name": "Karnataka PSC",
+      "url": "https://kpsc.kar.nic.in",
+      "group": "State Govt",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "Medical Officer exams"
+    },
+    {
+      "name": "Kerala DHS",
+      "url": "https://dhs.kerala.gov.in",
+      "group": "State Govt",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "Assistant Surgeon / MO posts"
+    },
+    {
+      "name": "Kerala DME",
+      "url": "https://dme.kerala.gov.in",
+      "group": "State Govt",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "Govt medical college posts"
+    },
+    {
+      "name": "Kerala NHM (Arogyakeralam)",
+      "url": "https://arogyakeralam.gov.in",
+      "group": "State Govt",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "NHM contract MO posts"
+    },
+    {
+      "name": "Kerala PSC",
+      "url": "https://www.keralapsc.gov.in",
+      "group": "State Govt",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "Assistant Surgeon exams"
+    },
+    {
+      "name": "Ladakh Administration",
+      "url": "https://ladakh.gov.in",
+      "group": "State Govt",
+      "state": "Ladakh",
+      "priority": 2,
+      "why": "Health dept posts"
+    },
+    {
+      "name": "Lakshadweep Administration",
+      "url": "https://lakshadweep.gov.in",
+      "group": "State Govt",
+      "state": "Lakshadweep",
+      "priority": 2,
+      "why": "Health dept posts"
+    },
+    {
+      "name": "Madhya Pradesh NHM",
+      "url": "https://www.nhmmp.gov.in",
+      "group": "State Govt",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "NHM contract MO posts"
+    },
+    {
+      "name": "Madhya Pradesh PSC",
+      "url": "https://mppsc.mp.gov.in",
+      "group": "State Govt",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "Medical Officer exams"
+    },
+    {
+      "name": "Maharashtra DMER",
+      "url": "https://dmer.maharashtra.gov.in",
+      "group": "State Govt",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college JR / MO posts"
+    },
+    {
+      "name": "Maharashtra NHM",
+      "url": "https://nhm.maharashtra.gov.in",
+      "group": "State Govt",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "NHM contract MO posts"
+    },
+    {
+      "name": "Maharashtra PSC",
+      "url": "https://mpsc.gov.in",
+      "group": "State Govt",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Medical Officer exams"
+    },
+    {
+      "name": "Meghalaya NHM",
+      "url": "https://nhmmeghalaya.nic.in",
+      "group": "State Govt",
+      "state": "Meghalaya",
+      "priority": 2,
+      "why": "NHM contract MO posts"
+    },
+    {
+      "name": "Mizoram Health Dept",
+      "url": "https://health.mizoram.gov.in",
+      "group": "State Govt",
+      "state": "Mizoram",
+      "priority": 2,
+      "why": "NHM contract MO posts"
+    },
+    {
+      "name": "Nagaland NHM",
+      "url": "https://nhmnagaland.in",
+      "group": "State Govt",
+      "state": "Nagaland",
+      "priority": 2,
+      "why": "NHM contract MO posts"
+    },
+    {
+      "name": "Odisha NHM",
+      "url": "https://nhmodisha.gov.in",
+      "group": "State Govt",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "NHM contract MO posts"
+    },
+    {
+      "name": "Odisha PSC",
+      "url": "https://www.opsc.gov.in",
+      "group": "State Govt",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "Medical Officer exams"
+    },
+    {
+      "name": "Puducherry Health Dept",
+      "url": "https://health.py.gov.in",
+      "group": "State Govt",
+      "state": "Puducherry",
+      "priority": 2,
+      "why": "MO posts"
+    },
+    {
+      "name": "Baba Farid University (Punjab)",
+      "url": "https://bfuhs.ac.in",
+      "group": "State Govt",
+      "state": "Punjab",
+      "priority": 2,
+      "why": "Punjab health recruitment and MO posts"
+    },
+    {
+      "name": "Punjab NHM",
+      "url": "https://nhm.punjab.gov.in",
+      "group": "State Govt",
+      "state": "Punjab",
+      "priority": 2,
+      "why": "NHM contract MO posts"
+    },
+    {
+      "name": "Punjab PSC",
+      "url": "https://ppsc.gov.in",
+      "group": "State Govt",
+      "state": "Punjab",
+      "priority": 2,
+      "why": "Medical Officer exams"
+    },
+    {
+      "name": "Rajasthan Health Dept",
+      "url": "https://rajswasthya.nic.in",
+      "group": "State Govt",
+      "state": "Rajasthan",
+      "priority": 2,
+      "why": "Medical Officer posts"
+    },
+    {
+      "name": "Rajasthan NHM",
+      "url": "https://nhm.rajasthan.gov.in",
+      "group": "State Govt",
+      "state": "Rajasthan",
+      "priority": 2,
+      "why": "NHM contract MO posts"
+    },
+    {
+      "name": "Rajasthan PSC",
+      "url": "https://rpsc.rajasthan.gov.in",
+      "group": "State Govt",
+      "state": "Rajasthan",
+      "priority": 2,
+      "why": "Medical Officer exams"
+    },
+    {
+      "name": "Sikkim Health",
+      "url": "https://health.sikkim.gov.in",
+      "group": "State Govt",
+      "state": "Sikkim",
+      "priority": 2,
+      "why": "MO posts"
+    },
+    {
+      "name": "Tamil Nadu MRB",
+      "url": "https://www.mrb.tn.gov.in",
+      "group": "State Govt",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Medical Services Recruitment Board: Assistant Surgeon / MO"
+    },
+    {
+      "name": "Tamil Nadu NHM",
+      "url": "https://nhm.tn.gov.in",
+      "group": "State Govt",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "NHM contract MO posts"
+    },
+    {
+      "name": "Telangana Health (CHFW)",
+      "url": "https://chfw.telangana.gov.in",
+      "group": "State Govt",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Contract MO posts"
+    },
+    {
+      "name": "Telangana MHSRB",
+      "url": "https://mhsrb.telangana.gov.in",
+      "group": "State Govt",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Medical & Health Services Recruitment Board"
+    },
+    {
+      "name": "Telangana PSC (TGPSC)",
+      "url": "https://www.tgpsc.gov.in",
+      "group": "State Govt",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Medical Officer exams"
+    },
+    {
+      "name": "Tripura Health Dept",
+      "url": "https://health.tripura.gov.in",
+      "group": "State Govt",
+      "state": "Tripura",
+      "priority": 2,
+      "why": "Medical Officer posts"
+    },
+    {
+      "name": "Tripura PSC",
+      "url": "https://tpsc.tripura.gov.in",
+      "group": "State Govt",
+      "state": "Tripura",
+      "priority": 2,
+      "why": "Medical Officer exams"
+    },
+    {
+      "name": "NHM Uttar Pradesh",
+      "url": "https://upnrhm.gov.in",
+      "group": "State Govt",
+      "state": "Uttar Pradesh",
+      "priority": 1,
+      "why": "Contract Medical Officer posts across UP"
+    },
+    {
+      "name": "UPPSC",
+      "url": "https://uppsc.up.nic.in",
+      "group": "State Govt",
+      "state": "Uttar Pradesh",
+      "priority": 1,
+      "why": "UP Medical Officer and lecturer posts"
     },
     {
       "name": "UP Medical Education (DGME)",
       "url": "https://dgme.up.gov.in",
       "group": "State Govt",
+      "state": "Uttar Pradesh",
       "priority": 2,
       "why": "UP govt medical college posts"
+    },
+    {
+      "name": "Uttarakhand Medical Service Selection Board",
+      "url": "https://ukmssb.org",
+      "group": "State Govt",
+      "state": "Uttarakhand",
+      "priority": 2,
+      "why": "Medical Officer recruitment"
+    },
+    {
+      "name": "Uttarakhand NHM",
+      "url": "https://nhm.uk.gov.in",
+      "group": "State Govt",
+      "state": "Uttarakhand",
+      "priority": 2,
+      "why": "NHM contract MO posts"
+    },
+    {
+      "name": "West Bengal Health",
+      "url": "https://www.wbhealth.gov.in",
+      "group": "State Govt",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "Health dept MO posts"
+    },
+    {
+      "name": "West Bengal Health Recruitment Board",
+      "url": "https://wbhrb.in",
+      "group": "State Govt",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "Medical Officer recruitment"
+    },
+    {
+      "name": "West Bengal PSC",
+      "url": "https://psc.wb.gov.in",
+      "group": "State Govt",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "Medical Officer exams"
+    },
+    {
+      "name": "JSS Medical College Mysuru",
+      "url": "https://jssuni.edu.in",
+      "group": "Medical colleges",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "JR / MO posts"
+    },
+    {
+      "name": "Kasturba Hospital Manipal (MAHE)",
+      "url": "https://manipal.edu",
+      "group": "Medical colleges",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "JR / MO posts"
+    },
+    {
+      "name": "St John's Medical College Bengaluru",
+      "url": "https://www.stjohns.in",
+      "group": "Medical colleges",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "JR / MO posts"
+    },
+    {
+      "name": "Amrita Institute Kochi",
+      "url": "https://www.amrita.edu",
+      "group": "Medical colleges",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "JR / MO posts"
+    },
+    {
+      "name": "DY Patil Pune",
+      "url": "https://dpu.edu.in",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "JR / MO posts"
+    },
+    {
+      "name": "Datta Meghe Wardha",
+      "url": "https://dmiher.edu.in",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "JR / MO posts"
+    },
+    {
+      "name": "KEM Hospital Mumbai",
+      "url": "https://www.kem.edu",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "JR / MO posts"
+    },
+    {
+      "name": "CMC Ludhiana",
+      "url": "https://www.cmcludhiana.in",
+      "group": "Medical colleges",
+      "state": "Punjab",
+      "priority": 2,
+      "why": "JR / MO posts"
+    },
+    {
+      "name": "CMC Vellore",
+      "url": "https://www.cmch-vellore.edu",
+      "group": "Medical colleges",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Junior Resident / non-PG posts"
+    },
+    {
+      "name": "Sri Ramachandra Chennai",
+      "url": "https://www.sriramachandra.edu.in",
+      "group": "Medical colleges",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "JR / MO posts"
     },
     {
       "name": "LLRM Medical College, Meerut",
       "url": "https://llrmmedicalcollege.nic.in",
       "group": "Medical colleges",
+      "state": "Uttar Pradesh",
       "priority": 1,
       "why": "Govt medical college, Meerut: JR / MO openings"
     },
@@ -138,6 +1077,7 @@
       "name": "Subharti Medical College",
       "url": "https://www.subharti.org",
       "group": "Medical colleges",
+      "state": "Uttar Pradesh",
       "priority": 1,
       "why": "Private medical college, Meerut: JR / MO openings"
     },
@@ -145,27 +1085,31 @@
       "name": "KGMU Lucknow",
       "url": "https://www.kgmu.org",
       "group": "Medical colleges",
+      "state": "Uttar Pradesh",
       "priority": 2,
       "why": "JR / MO posts"
-    },
-    {
-      "name": "Medical Dialogues – Jobs",
-      "url": "https://medicaldialogues.in/jobs",
-      "group": "Aggregators",
-      "priority": 1,
-      "why": "Doctor-focused job news"
     },
     {
       "name": "FreeJobAlert – Medical",
       "url": "https://www.freejobalert.com",
       "group": "Aggregators",
+      "state": "All India",
       "priority": 1,
       "why": "Fast coverage of govt walk-ins"
+    },
+    {
+      "name": "Medical Dialogues – Jobs",
+      "url": "https://medicaldialogues.in/jobs",
+      "group": "Aggregators",
+      "state": "All India",
+      "priority": 1,
+      "why": "Doctor-focused job news"
     },
     {
       "name": "Sarkari Result",
       "url": "https://www.sarkariresult.com",
       "group": "Aggregators",
+      "state": "All India",
       "priority": 1,
       "why": "Govt job, exam form and result listings"
     },
@@ -173,27 +1117,87 @@
       "name": "Sarkari Result (.com.cm)",
       "url": "https://sarkariresult.com.cm",
       "group": "Aggregators",
+      "state": "All India",
       "priority": 1,
       "why": "Separate site from the one above; also lists medical recruitments such as AFMS"
+    },
+    {
+      "name": "Aster DM Healthcare Careers",
+      "url": "https://www.asterdmhealthcare.com/careers",
+      "group": "Private",
+      "state": "All India",
+      "priority": 2,
+      "why": "RMO / duty doctor openings"
+    },
+    {
+      "name": "CARE Hospitals Careers",
+      "url": "https://www.carehospitals.com/careers",
+      "group": "Private",
+      "state": "All India",
+      "priority": 2,
+      "why": "RMO / duty doctor openings"
     },
     {
       "name": "Docthub Jobs",
       "url": "https://jobs.docthub.com",
       "group": "Private",
+      "state": "All India",
       "priority": 2,
       "why": "Private hospital RMO / duty doctor jobs"
+    },
+    {
+      "name": "Fortis Careers",
+      "url": "https://www.fortishealthcare.com/careers",
+      "group": "Private",
+      "state": "All India",
+      "priority": 2,
+      "why": "RMO / duty doctor openings"
     },
     {
       "name": "Indeed – MBBS doctor jobs",
       "url": "https://in.indeed.com/q-mbbs-doctor-jobs.html",
       "group": "Private",
+      "state": "All India",
       "priority": 2,
       "why": "Private RMO / duty doctor openings across India"
+    },
+    {
+      "name": "KIMS Hospitals Careers",
+      "url": "https://www.kimshospitals.com/careers",
+      "group": "Private",
+      "state": "All India",
+      "priority": 2,
+      "why": "RMO / duty doctor openings"
+    },
+    {
+      "name": "Max Healthcare Careers",
+      "url": "https://www.maxhealthcare.in/careers",
+      "group": "Private",
+      "state": "All India",
+      "priority": 2,
+      "why": "RMO / duty doctor openings"
+    },
+    {
+      "name": "Medanta Careers",
+      "url": "https://www.medanta.org/careers",
+      "group": "Private",
+      "state": "All India",
+      "priority": 2,
+      "why": "RMO / duty doctor openings"
+    },
+    {
+      "name": "Naukri – MBBS jobs",
+      "url": "https://www.naukri.com/mbbs-jobs",
+      "group": "Private",
+      "state": "All India",
+      "priority": 2,
+      "why": "Private MBBS doctor jobs across India"
     },
     {
       "name": "ICMR Recruitment",
       "url": "https://www.icmr.gov.in",
       "group": "Research",
+      "state": "All India",
       "priority": 3,
       "why": "Research / project scientist posts for MBBS"
     }
