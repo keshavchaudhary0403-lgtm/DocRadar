@@ -254,19 +254,19 @@ kbd{font-family:"Geist Mono",monospace;font-size:11px;padding:2px 7px;border-rad
 .tl-body span{font-size:13px;color:var(--muted)}
 
 /* Sites */
-.srcs{display:grid;grid-template-columns:1fr;gap:12px}
+.srcs{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
 @media (min-width:680px){.srcs{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (min-width:1500px){.srcs{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .src{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border-radius:var(--r);border:1px solid var(--line);background:var(--surface);backdrop-filter:blur(16px);box-shadow:var(--shadow);color:inherit;text-decoration:none;transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .2s;animation:rise .5s var(--ease) both;animation-delay:calc(var(--i,0)*30ms)}
 .src:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:color-mix(in srgb,var(--c) 35%,var(--line))}
-.src-t{flex:1;min-width:0}
+.src-t{flex:1;min-width:0;overflow:hidden}
 .src-t b{display:block;font-size:14.5px;font-weight:620;line-height:1.3}
 .src-t .why{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:13px;color:var(--muted);margin-top:3px;line-height:1.4}
 .src-t .dom{display:block;font-size:12px;color:var(--faint);margin-top:8px;font-family:"Geist Mono",monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .src .go{flex:none;width:30px;height:30px;border-radius:9px;display:grid;place-items:center;color:var(--faint);transition:all .25s var(--ease)}
 .src .go .ic{width:15px;height:15px}
 .src:hover .go{background:var(--c);color:#fff}
-.src-stats{grid-template-columns:repeat(3,1fr)}
+.src-stats{grid-template-columns:repeat(3,minmax(0,1fr))}
 .src-search{margin-top:18px}
 .src-t .dom em{font-style:normal;font-family:Geist,system-ui,sans-serif;font-weight:600;color:var(--muted)}
 .src-stats .stat{cursor:default}
@@ -1092,9 +1092,9 @@ function viewSites(){
   const states = new Set(SOURCES.map(s => s.state).filter(x => x && x !== "All India")).size;
   return `<section class="page-head"><h1>Sources</h1><p>Where DocRadar looks. National sources are checked every morning; each state's sources on its day of the week, and web searches cover all of India daily.</p></section>
     <div class="stats src-stats">
-      <div class="stat" style="--tone:var(--accent)"><span class="lbl">${ic("globe")}Official websites</span><div class="num">${SOURCES.length}</div></div>
-      <div class="stat" style="--tone:var(--indigo)"><span class="lbl">${ic("search")}Web searches daily</span><div class="num">~45</div></div>
-      <div class="stat" style="--tone:var(--green)"><span class="lbl">${ic("map")}States &amp; UTs covered</span><div class="num">${states}</div></div>
+      <div class="stat" style="--tone:var(--accent)"><span class="lbl">${ic("globe")}Websites</span><div class="num">${SOURCES.length}</div></div>
+      <div class="stat" style="--tone:var(--indigo)"><span class="lbl">${ic("search")}Searches / day</span><div class="num">~45</div></div>
+      <div class="stat" style="--tone:var(--green)"><span class="lbl">${ic("map")}States &amp; UTs</span><div class="num">${states}</div></div>
     </div>
     <label class="search src-search">${ic("search")}<input id="src-q" type="search" placeholder="Search a state, AIIMS, NHM, PSC…" value="${esc(srcQ)}" autocomplete="off"></label>
     <div class="chips" role="group" aria-label="Source type">
