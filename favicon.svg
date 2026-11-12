@@ -1,20 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <defs>
+    <!-- Same as the in-page logo: linear-gradient(135deg, #14b8a6, #0f766e), 10px radius on a 34px tile -->
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#14b8a6"/>
       <stop offset="1" stop-color="#0f766e"/>
     </linearGradient>
-    <radialGradient id="sweep" cx="32" cy="32" r="44" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#fff" stop-opacity=".5"/>
-      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
-    </radialGradient>
-    <clipPath id="clip"><rect width="64" height="64" rx="18"/></clipPath>
+    <!-- Radar sweep: the logo's conic highlight in the top-left quarter, brightest at 12 o'clock -->
+    <linearGradient id="sweep" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".5"/>
+    </linearGradient>
+    <clipPath id="tile"><rect width="64" height="64" rx="19"/></clipPath>
   </defs>
-  <g clip-path="url(#clip)">
+  <g clip-path="url(#tile)">
     <rect width="64" height="64" fill="url(#bg)"/>
-    <path d="M32 32 L32 -12 A44 44 0 0 1 75 22 Z" fill="url(#sweep)" opacity=".55"/>
+    <path d="M32 32 L-14 32 A46 46 0 0 1 32 -14 Z" fill="url(#sweep)"/>
   </g>
-  <g transform="translate(12 12) scale(1.6667)" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Stethoscope icon: 18px inside the 34px logo => 33.9px inside 64 -->
+  <g transform="translate(15.06 15.06) scale(1.4118)" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M5 3H4v6a5 5 0 0 0 10 0V3h-1"/>
     <path d="M9 14v1a5 5 0 0 0 10 0v-3"/>
     <circle cx="19" cy="10" r="2"/>
