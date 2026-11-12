@@ -474,6 +474,9 @@ const state = {
   eligible: store.get("dr-elig", false), saved: store.get("dr-saved"), applied: store.get("dr-applied"),
   profile: store.get("dr-profile")
 };
+const DEFAULT_NAME = "Manish Teotia";
+if (state.profile.name === undefined) state.profile.name = DEFAULT_NAME;
+const firstName = () => (P().name || "").trim().split(/\s+/)[0];
 if ((state.profile.regions || []).length) state.region = "mine";
 let JOBS = [], SOURCES = [], UPDATED = null, loaded = false;
 
@@ -637,7 +640,7 @@ function viewRadar(){
   return `
   <section class="hero">
     <span class="live"><span class="dot"></span>Live · updated ${updText}</span>
-    ${P().name ? `<span class="greet">Hi Dr. ${esc(P().name)} 👋${P().internshipEnd && days(P().internshipEnd) > 0 ? ` · internship ends in ${days(P().internshipEnd)} days` : ""}</span>` : ""}
+    ${P().name ? `<span class="greet">Hi Dr. ${esc(firstName())} 👋${P().internshipEnd && days(P().internshipEnd) > 0 ? ` · internship ends in ${days(P().internshipEnd)} days` : ""}</span>` : ""}
     <h1>Every opening. <em>Every morning.</em></h1>
     <p>Junior Resident walk-ins, Medical Officer posts, defence and PG exams, scanned daily for Meerut, Uttar Pradesh and Delhi NCR.</p>
     ${completeness() < 0.75 ? `<div class="setup">${ic("idcard")}<div><b>${profileEmpty() ? "Set up your profile" : "Finish your profile"}</b>Add your internship date, registration and NEET-PG details to see exactly which posts you can apply for.</div><button class="btn" data-view="profile">${profileEmpty() ? "Set up" : "Continue"}</button></div>` : ""}
@@ -738,7 +741,7 @@ function viewProfile(){
       <div class="field"><span>Passed final MBBS (Part I &amp; II) within 2 attempts?</span>${opt("attemptsOk", [["yes","Yes"],["no","No"]])}</div>
     </section>
     <section class="pf-card" style="--i:2"><h3>${ic("idcard")}Personal details</h3><p>Used for age limits and category relaxation (OBC +3, SC/ST +5, PwBD +10 where allowed).</p>
-      <label class="field"><span>Your name <span style="color:var(--faint);font-weight:400">(optional)</span></span><input class="inp" type="text" data-pf="name" placeholder="e.g. Rahul" value="${esc(p.name || "")}" autocomplete="given-name"></label>
+      <label class="field"><span>Full name</span><input class="inp" type="text" data-pf="name" placeholder="Your full name" value="${esc(p.name || "")}" autocomplete="given-name"></label>
       <label class="field"><span>Date of birth</span><input class="inp" type="date" data-pf="dob" value="${esc(p.dob || "")}"></label>
       <div class="field"><span>Category</span>${opt("category", [["UR","General"],["EWS","EWS"],["OBC","OBC"],["SC","SC"],["ST","ST"]])}</div>
       <div class="field"><span>Gender</span>${opt("gender", [["male","Male"],["female","Female"],["other","Other"]])}<small>Some posts (e.g. Female Medical Officer) and AFMS seats are split by gender.</small></div>
@@ -917,7 +920,7 @@ document.addEventListener("click", e => {
     saveProfile(); return render();
   }
   if (t.id === "pf-reset") {
-    if (t.dataset.armed) { state.profile = {}; saveProfile(); state.region = "all"; toast("Profile cleared", "x"); return render(); }
+    if (t.dataset.armed) { state.profile = { name: DEFAULT_NAME }; saveProfile(); state.region = "all"; toast("Profile cleared", "x"); return render(); }
     t.dataset.armed = 1; t.textContent = "Tap again to clear"; setTimeout(() => { if (t.isConnected) { delete t.dataset.armed; t.textContent = "Reset profile"; } }, 3000); return;
   }
   if ((el = t.closest("[data-view]"))) {
@@ -952,7 +955,7 @@ function saveProfile(){
 document.addEventListener("input", e => {
   const f = e.target.dataset?.pf; if (!f) return;
   const v = e.target.value.trim();
-  v ? (state.profile[f] = v) : delete state.profile[f];
+  v ? (state.profile[f] = v) : (f === "name" ? (state.profile[f] = "") : delete state.profile[f]);
   saveProfile(); nav();
 });
 document.addEventListener("change", e => {
