@@ -353,7 +353,18 @@ kbd{font-family:"Geist Mono",monospace;font-size:11px;padding:2px 7px;border-rad
 .field > span{display:block;font-size:13px;font-weight:550;margin-bottom:7px}
 .dob{display:grid;grid-template-columns:78px 92px 96px;gap:8px}
 .inp[type=date]{max-width:282px}
-.dob select.inp{padding:0 28px 0 11px;background-position:right 8px center;background-size:16px}
+.dob{position:relative}
+.dob-btn{text-align:left;padding:0 26px 0 12px;cursor:pointer;background:var(--solid) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238a92a1' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 8px center/16px}
+.dob-btn.ph{color:var(--faint)}
+.dob-btn[aria-expanded="true"]{border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+.dob-menu{position:absolute;z-index:30;top:calc(100% + 6px);left:0;width:282px;max-width:calc(100vw - 32px);max-height:236px;overflow-y:auto;overscroll-behavior:contain;display:grid;gap:4px;padding:8px;border-radius:14px;background:var(--solid);border:1px solid var(--line-2);box-shadow:var(--shadow-lg)}
+.dob-d{grid-template-columns:repeat(7,1fr)}
+.dob-m{grid-template-columns:repeat(4,1fr)}
+.dob-y{grid-template-columns:repeat(4,1fr)}
+.dob-menu button{height:36px;border-radius:9px;font-size:14px;font-weight:550;border:0;background:none;color:var(--text);cursor:pointer}
+.dob-menu button:hover{background:var(--bg-2)}
+.dob-menu button[aria-selected="true"]{background:var(--accent);color:#fff}
+.pf-card:has(.dob-menu){position:relative;z-index:5}
 .field small{display:block;font-size:12px;color:var(--faint);margin-top:6px}
 .inp{width:100%;height:46px;padding:0 13px;border-radius:12px;border:1px solid var(--line-2);background:var(--solid);font-size:15px;outline:none;transition:border-color .2s,box-shadow .2s;appearance:none}
 .inp:focus{border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
@@ -922,15 +933,38 @@ function dobParts(dob){
   const [y, m, d] = (dob || "").split("-").map(Number);
   return { d: d || "", m: m || "", y: y || "" };
 }
+let dobOpen = null; // which of "d" | "m" | "y" has its menu open
 function dobPicker(dob){
   const { d, m, y } = dobParts(dob), maxY = new Date().getFullYear() - 18;
   const dim = m ? new Date(y || 2000, m, 0).getDate() : 31;
-  const sel = (k, label, opts) => `<select class="inp" data-dob="${k}" aria-label="${label}"><option value="">${label}</option>${opts}</select>`;
-  return `<div class="dob">
-    ${sel("d", "Day", Array.from({ length: dim }, (_, i) => `<option value="${i + 1}" ${+d === i + 1 ? "selected" : ""}>${i + 1}</option>`).join(""))}
-    ${sel("m", "Month", MONTHS.map((n, i) => `<option value="${i + 1}" ${+m === i + 1 ? "selected" : ""}>${n}</option>`).join(""))}
-    ${sel("y", "Year", Array.from({ length: maxY - 1960 + 1 }, (_, i) => maxY - i).map(v => `<option value="${v}" ${+y === v ? "selected" : ""}>${v}</option>`).join(""))}
-  </div>`;
+  const cells = {
+    d: Array.from({ length: dim }, (_, i) => [i + 1, i + 1]),
+    m: MONTHS.map((n, i) => [i + 1, n]),
+    y: Array.from({ length: maxY - 1960 + 1 }, (_, i) => [maxY - i, maxY - i])
+  };
+  const cur = { d, m, y }, shown = { d: d || "Day", m: m ? MONTHS[m - 1] : "Month", y: y || "Year" };
+  const btn = k => `<button type="button" class="inp dob-btn ${cur[k] ? "" : "ph"}" data-dob-open="${k}" aria-haspopup="true" aria-expanded="${dobOpen === k}">${shown[k]}</button>`;
+  const menu = dobOpen ? `<div class="dob-menu dob-${dobOpen}" role="listbox" aria-label="${{ d: "Day", m: "Month", y: "Year" }[dobOpen]}">${cells[dobOpen].map(([v, l]) =>
+    `<button type="button" role="option" data-dob-pick="${dobOpen}" data-v="${v}" aria-selected="${+cur[dobOpen] === v}">${l}</button>`).join("")}</div>` : "";
+  return `<div class="dob">${btn("d")}${btn("m")}${btn("y")}${menu}</div>`;
+}
+function setDob(k, v){
+  const p = P(), parts = { ...dobParts(p.dob), [k]: +v || "" };
+  if (parts.d && parts.m && parts.y) {
+    parts.d = Math.min(parts.d, new Date(parts.y, parts.m, 0).getDate());
+    p.dob = `${parts.y}-${String(parts.m).padStart(2, "0")}-${String(parts.d).padStart(2, "0")}`;
+    dobDraft = null;
+  } else { delete p.dob; dobDraft = parts; }
+  saveProfile();
+  dobOpen = ["d", "m", "y"].find(x => !parts[x]) || null; // move on to the next empty part
+  showDobMenu();
+}
+function showDobMenu(){
+  render();
+  const menu = $(".dob-menu"); if (!menu) return;
+  const sel = menu.querySelector('[aria-selected="true"]')
+    || (menu.classList.contains("dob-y") && menu.querySelector(`[data-v="${new Date().getFullYear() - 26}"]`));
+  if (sel) menu.scrollTop = sel.offsetTop - menu.clientHeight / 2 + sel.offsetHeight / 2;
 }
 
 function railHTML(){
@@ -1135,9 +1169,12 @@ document.addEventListener("click", e => {
     saveProfile(); return render();
   }
   if (t.id === "pf-reset") {
-    if (t.dataset.armed) { state.profile = { name: DEFAULT_NAME }; dobDraft = null; saveProfile(); state.region = "all"; toast("Profile cleared", "x"); return render(); }
+    if (t.dataset.armed) { state.profile = { name: DEFAULT_NAME }; dobDraft = null; dobOpen = null; saveProfile(); state.region = "all"; toast("Profile cleared", "x"); return render(); }
     t.dataset.armed = 1; t.textContent = "Tap again to clear"; setTimeout(() => { if (t.isConnected) { delete t.dataset.armed; t.textContent = "Reset profile"; } }, 3000); return;
   }
+  if ((el = t.closest("[data-dob-pick]"))) return setDob(el.dataset.dobPick, el.dataset.v);
+  if ((el = t.closest("[data-dob-open]"))) { dobOpen = dobOpen === el.dataset.dobOpen ? null : el.dataset.dobOpen; return showDobMenu(); }
+  if (dobOpen && !t.closest(".dob")) { dobOpen = null; render(); }
   if (t.closest("[data-home]")) {
     e.preventDefault();
     if ($("#sheet").classList.contains("open")) closeSheet();
@@ -1183,15 +1220,6 @@ document.addEventListener("input", e => {
   saveProfile(); nav();
 });
 document.addEventListener("change", e => {
-  if (e.target.dataset?.dob) {
-    const p = P(), parts = { ...dobParts(p.dob), [e.target.dataset.dob]: +e.target.value || "" };
-    if (parts.d && parts.m && parts.y) {
-      parts.d = Math.min(parts.d, new Date(parts.y, parts.m, 0).getDate());
-      p.dob = `${parts.y}-${String(parts.m).padStart(2, "0")}-${String(parts.d).padStart(2, "0")}`;
-      dobDraft = null;
-    } else { delete p.dob; dobDraft = parts; }
-    saveProfile(); return render();
-  }
   if (e.target.dataset?.pf && (e.target.tagName === "SELECT" || e.target.type === "date")) return render();
   if (e.target.classList.contains("elig-toggle")) {
     state.eligible = e.target.checked; store.set("dr-elig", state.eligible);
@@ -1200,6 +1228,7 @@ document.addEventListener("change", e => {
   }
 });
 document.addEventListener("keydown", e => {
+  if (e.key === "Escape" && dobOpen) { dobOpen = null; return render(); }
   if (e.key === "Escape" && $("#pop").classList.contains("show")) return closePop();
   if (e.key === "Escape" && $("#sheet").classList.contains("open")) return closeSheet();
   if (e.key === "/" && !/INPUT|TEXTAREA/.test(document.activeElement.tagName)) {
