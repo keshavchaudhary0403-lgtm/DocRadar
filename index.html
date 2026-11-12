@@ -199,7 +199,13 @@ kbd{font-family:"Geist Mono",monospace;font-size:11px;padding:2px 7px;border-rad
 .fact{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;color:var(--muted);padding:4px 9px;border-radius:8px;background:var(--bg-2);max-width:100%}
 .fact .ic{width:14px;height:14px}
 .fact span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.c-foot{display:flex;align-items:center;gap:8px;margin-top:auto}
+.c-foot{display:flex;align-items:flex-end;gap:8px;margin-top:auto;min-width:0}
+.c-tags{flex:1;min-width:0;display:flex;flex-wrap:wrap;gap:6px}
+.pill.loc{background:var(--indigo-soft);color:var(--indigo);flex:none;max-width:100%}
+.pill.loc span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.c-foot .pill:not(.loc){flex:none}
+.cat-ic{position:relative}
+.new-dot{position:absolute;top:-3px;right:-3px;width:10px;height:10px;border-radius:50%;background:var(--green);border:2px solid var(--solid);animation:ping 2s infinite}
 .pill{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;padding:4px 10px;border-radius:99px}
 .pill .ic{width:13px;height:13px}
 .pill.ok{background:var(--green-soft);color:var(--green)}
@@ -823,23 +829,30 @@ function ring(d, size = 56, o = {}){
     <div class="in">${label}</div></div>`;
 }
 
+/* Short place for cards: "City, State" (or "All India" / just the state) */
+function placeLabel(j){
+  const loc = (j.location || "").split("(")[0].trim(), city = loc.split(",")[0].trim(), st = j.state || jobState(j) || "";
+  if (!loc || /^all india/i.test(loc)) return st && st !== "All India" ? st : "All India";
+  const SHORT = { "Jammu and Kashmir":"J&K", "Dadra and Nagar Haveli and Daman and Diu":"DNH & DD", "Andaman and Nicobar Islands":"A&N Islands" };
+  if (!st || st === "All India" || same(city, st)) return city || st;
+  return `${city}, ${SHORT[st] || st}`;
+}
 function card(j, i){
   const c = CAT[j.category] || CAT.other, d = days(j.lastDate);
   const saved = !!state.saved[j.id], applied = !!state.applied[j.id];
   return `<article class="card ${applied ? "applied" : ""} ${d !== null && d <= 3 ? "urgent" : ""}" style="--c:${c.c};--i:${i}" data-open="${esc(j.id)}" tabindex="0" role="button" aria-label="${esc(j.title)}">
     <div class="c-top">
-      <div class="cat-ic">${ic(c.icon)}</div>
+      <div class="cat-ic">${ic(c.icon)}${isNew(j) ? `<span class="new-dot" title="New: added in the last 48 hours"></span>` : ""}</div>
       <div class="c-head"><div class="eyebrow">${c.label}${j.mode ? " · " + esc(j.mode) : ""}</div><h3>${esc(j.title)}</h3><div class="org">${esc(j.org)}</div></div>
       ${ring(d)}
     </div>
     <div class="facts">
-      <span class="fact">${ic("pin")}<span>${esc(j.location.split("(")[0].trim())}</span></span>
       ${j.posts ? `<span class="fact">${ic("users")}<span>${j.posts} posts</span></span>` : ""}
       ${j.salary ? `<span class="fact">${ic("wallet")}<span>${esc(j.salary.split("+")[0].trim())}</span></span>` : ""}
     </div>
     <div class="c-foot">
-      ${isNew(j) ? `<span class="pill new">New</span>` : ""}
-      ${eligPill(j).replace('<span class="pill', `<span data-open="${esc(j.id)}" data-focus="checks" title="See eligibility details" class="pill`)}
+      <div class="c-tags"><span class="pill loc" title="${esc(j.location)}">${ic("pin")}<span>${esc(placeLabel(j))}</span></span>
+      ${eligPill(j).replace('<span class="pill', `<span data-open="${esc(j.id)}" data-focus="checks" title="See eligibility details" class="pill`)}</div>
       <button class="save" data-toggle="saved" data-id="${esc(j.id)}" aria-pressed="${saved}" aria-label="${saved ? "Unsave" : "Save"}">${ic("star")}</button>
       <span class="go" aria-hidden="true">${ic("arrow")}</span>
     </div>
