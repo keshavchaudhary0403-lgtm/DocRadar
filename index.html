@@ -410,6 +410,16 @@ select.inp{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.
 .place-sum span{font-size:12.5px;color:var(--muted)}
 .place-sum .btn{height:38px;padding:0 14px;flex:none}
 .city-add{display:flex;gap:8px;margin-top:10px;max-width:440px}
+.sugg-wrap{position:relative;flex:1;min-width:0}
+.sugg-wrap .inp{width:100%}
+.sugg{position:absolute;z-index:30;top:calc(100% + 6px);left:0;right:0;max-height:min(232px,36vh);overflow-y:auto;overscroll-behavior:contain;padding:6px;border-radius:14px;background:var(--solid);border:1px solid var(--line-2);box-shadow:var(--shadow-lg)}
+.sugg button{display:block;width:100%;min-height:40px;padding:10px 12px;border:0;border-radius:9px;background:none;color:var(--text);font-size:14px;line-height:1.35;text-align:left;cursor:pointer}
+.sugg button b{font-weight:700;color:var(--accent)}
+.sugg button:hover,.sugg button[aria-selected="true"]{background:var(--bg-2)}
+.sugg .sugg-custom{display:flex;align-items:center;gap:8px;color:var(--accent);font-weight:600;border-top:1px solid var(--line);border-radius:0 0 9px 9px}
+.sugg .sugg-custom .ic{width:15px;height:15px}
+.sugg-none{padding:10px 12px;font-size:13px;color:var(--muted)}
+.pf-card:has(.sugg:not([hidden])){position:relative;z-index:5}
 .city-add .inp{flex:1;min-width:0}
 .city-add .btn{flex:none;height:46px}
 .btn.primary-s{background:var(--accent);color:#fff;border-color:transparent}
@@ -866,11 +876,31 @@ function placesHTML(){
       return `<span class="place-w"><button type="button" class="place" data-place="${k}" data-v="${esc(v)}" aria-pressed="${picked(k).some(x => same(x, v))}">
         <span class="tick">${ic("check")}</span>${esc(v)}<span class="pc" title="Open jobs now">${count(v)}</span></button>${custom ? `<button type="button" class="place-x" data-place-del="${k}" data-v="${esc(v)}" aria-label="Remove ${esc(v)}">${ic("x")}</button>` : ""}</span>`;
     }).join("")}${placeAdding === k ? "" : `<button type="button" class="place add" data-place-open="${k}">${P_.add}</button>`}</div>
-      ${placeAdding === k ? `<div class="city-add"><input class="inp" id="place-in" data-kind="${k}" type="text" list="place-sugg" placeholder="${P_.ph}" maxlength="50" autocomplete="off"><button type="button" class="btn primary-s" data-place-add>Add</button><button type="button" class="btn" data-place-cancel>Cancel</button></div>
-        <datalist id="place-sugg">${P_.sugg.filter(c => !allPlaces(k).some(x => same(x, c))).map(c => `<option value="${c}">`).join("")}</datalist>` : ""}</div>`;
+      ${placeAdding === k ? `<div class="city-add"><div class="sugg-wrap"><input class="inp" id="place-in" data-kind="${k}" type="text" placeholder="${P_.ph}" maxlength="50" autocomplete="off" role="combobox" aria-autocomplete="list" aria-controls="place-sugg" aria-expanded="false"><div class="sugg" id="place-sugg" role="listbox" hidden></div></div><button type="button" class="btn primary-s" data-place-add>Add</button><button type="button" class="btn" data-place-cancel>Cancel</button></div>
+` : ""}</div>`;
   };
   return `${summary}${group("state")}${group("city")}<small class="place-help">The number is how many open jobs are in that place today. New ones are added every morning.</small>`;
 }
+/* Suggestions under the add box: filtered as you type, short, scrolls inside itself */
+let suggIdx = -1;
+function updateSugg(){
+  const inp = $("#place-in"), box = $("#place-sugg"); if (!inp || !box) return;
+  const k = inp.dataset.kind, q = inp.value.trim().toLowerCase();
+  const pool = PLACES[k].sugg.filter(c => !allPlaces(k).some(x => same(x, c)));
+  const list = q ? [...pool.filter(c => c.toLowerCase().startsWith(q)), ...pool.filter(c => !c.toLowerCase().startsWith(q) && c.toLowerCase().includes(q))] : pool;
+  const custom = k === "city" && q && !PLACES.city.sugg.some(c => same(c, q)) ? inp.value.trim() : null;
+  const items = list.slice(0, 30);
+  if (!items.length && !custom) {
+    box.innerHTML = `<div class="sugg-none">${k === "state" ? "No state matches. Check the spelling." : "Type a city name"}</div>`;
+  } else {
+    box.innerHTML = items.map((c, i) => `<button type="button" role="option" data-sugg="${esc(c)}" aria-selected="${i === suggIdx}">${hl(c, q)}</button>`).join("")
+      + (custom ? `<button type="button" role="option" class="sugg-custom" data-sugg="${esc(custom)}" aria-selected="${suggIdx === items.length}">${ic("pin")}Add "${esc(custom)}"</button>` : "");
+  }
+  box.hidden = false; inp.setAttribute("aria-expanded", "true");
+  box.querySelector('[aria-selected="true"]')?.scrollIntoView({ block: "nearest" });
+}
+const hl = (c, q) => { const i = q ? c.toLowerCase().indexOf(q) : -1; return i < 0 ? esc(c) : esc(c.slice(0, i)) + "<b>" + esc(c.slice(i, i + q.length)) + "</b>" + esc(c.slice(i + q.length)); };
+function pickSugg(v){ const inp = $("#place-in"); if (!inp) return; inp.value = v; suggIdx = -1; addPlace(); }
 function addPlace(){
   const inp = $("#place-in"); if (!inp) return;
   const k = inp.dataset.kind, P_ = PLACES[k], p = P();
@@ -1306,8 +1336,9 @@ document.addEventListener("click", e => {
     if (t.dataset.armed) { state.profile = { name: DEFAULT_NAME }; dobDraft = null; dobOpen = null; placeAdding = null; saveProfile(); state.region = "all"; toast("Profile cleared", "x"); return render(); }
     t.dataset.armed = 1; t.textContent = "Tap again to clear"; setTimeout(() => { if (t.isConnected) { delete t.dataset.armed; t.textContent = "Reset profile"; } }, 3000); return;
   }
+  if ((el = t.closest("[data-sugg]"))) return pickSugg(el.dataset.sugg);
   if (t.closest("[data-place-add]")) return addPlace();
-  if ((el = t.closest("[data-place-open]"))) { placeAdding = el.dataset.placeOpen; render(); return $("#place-in")?.focus({ preventScroll: true }); }
+  if ((el = t.closest("[data-place-open]"))) { placeAdding = el.dataset.placeOpen; suggIdx = -1; render(); $("#place-in")?.focus({ preventScroll: true }); return updateSugg(); }
   if (t.closest("[data-place-cancel]")) { placeAdding = null; return render(); }
   if ((el = t.closest("[data-place-del]"))) {
     const p = P(), P_ = PLACES[el.dataset.placeDel], v = el.dataset.v;
@@ -1366,6 +1397,7 @@ function saveProfile(){
   clearTimeout(pfToast); pfToast = setTimeout(() => toast("Profile saved"), 400);
 }
 document.addEventListener("input", e => {
+  if (e.target.id === "place-in") { suggIdx = -1; return updateSugg(); }
   const f = e.target.dataset?.pf; if (!f) return;
   const v = e.target.value.trim();
   v ? (state.profile[f] = v) : (f === "name" ? (state.profile[f] = "") : delete state.profile[f]);
@@ -1380,7 +1412,14 @@ document.addEventListener("change", e => {
   }
 });
 document.addEventListener("keydown", e => {
-  if (e.key === "Enter" && e.target.id === "place-in") { e.preventDefault(); return addPlace(); }
+  if (e.target.id === "place-in" && (e.key === "ArrowDown" || e.key === "ArrowUp")) {
+    e.preventDefault(); const n = $("#place-sugg")?.querySelectorAll("[data-sugg]").length || 0; if (!n) return;
+    suggIdx = e.key === "ArrowDown" ? (suggIdx + 1) % n : (suggIdx - 1 + n) % n; return updateSugg();
+  }
+  if (e.key === "Enter" && e.target.id === "place-in") {
+    e.preventDefault(); const sel = $("#place-sugg")?.querySelectorAll("[data-sugg]")[suggIdx];
+    return sel ? pickSugg(sel.dataset.sugg) : addPlace();
+  }
   if (e.key === "Escape" && placeAdding) { placeAdding = null; return render(); }
   if (e.key === "Escape" && dobOpen) { dobOpen = null; return render(); }
   if (e.key === "Escape" && $("#pop").classList.contains("show")) return closePop();
