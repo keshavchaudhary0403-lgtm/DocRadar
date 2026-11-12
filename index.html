@@ -348,6 +348,8 @@ kbd{font-family:"Geist Mono",monospace;font-size:11px;padding:2px 7px;border-rad
 .field{display:block;margin-bottom:16px}
 .field:last-child{margin-bottom:0}
 .field > span{display:block;font-size:13px;font-weight:550;margin-bottom:7px}
+.dob{display:grid;grid-template-columns:1fr 1.2fr 1.2fr;gap:8px}
+.dob select.inp{padding:0 28px 0 11px;background-position:right 8px center;background-size:16px}
 .field small{display:block;font-size:12px;color:var(--faint);margin-top:6px}
 .inp{width:100%;height:46px;padding:0 13px;border-radius:12px;border:1px solid var(--line-2);background:var(--solid);font-size:15px;outline:none;transition:border-color .2s,box-shadow .2s;appearance:none}
 .inp:focus{border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
@@ -894,7 +896,7 @@ function viewProfile(){
     </section>
     <section class="pf-card" style="--i:2"><h3>${ic("idcard")}Personal details</h3><p>Used for age limits and category relaxation (OBC +3, SC/ST +5, PwBD +10 where allowed).</p>
       <label class="field"><span>Full name</span><input class="inp" type="text" data-pf="name" placeholder="Your full name" value="${esc(p.name || "")}" autocomplete="given-name"></label>
-      <label class="field" id="pf-dob"><span>Date of birth</span><input class="inp" type="date" data-pf="dob" value="${esc(p.dob || "")}"></label>
+      <div class="field" id="pf-dob"><span>Date of birth</span>${dobPicker(p.dob)}</div>
       <div class="field" id="pf-category"><span>Category${tip("category")}</span>${opt("category", [["UR","General"],["EWS","EWS"],["OBC","OBC"],["SC","SC"],["ST","ST"]])}</div>
       <div class="field" id="pf-gender"><span>Gender</span>${opt("gender", [["male","Male"],["female","Female"],["other","Other"]])}<small>Some posts (e.g. Female Medical Officer) and AFMS seats are split by gender.</small></div>
       <div class="field" id="pf-pwbd"><span>Person with disability (PwBD)?${tip("pwbd")}</span>${opt("pwbd", [["no","No"],["yes","Yes"]])}</div>
@@ -904,6 +906,24 @@ function viewProfile(){
     </section>
   </div>
   <div class="pf-foot"><span>${ic("lock")}Stored only in this browser on this device</span><button type="button" class="btn danger" id="pf-reset">Reset profile</button></div>`;
+}
+
+const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+let dobDraft = null; // partial Day/Month/Year choice until all three are picked
+function dobParts(dob){
+  if (dobDraft) return dobDraft;
+  const [y, m, d] = (dob || "").split("-").map(Number);
+  return { d: d || "", m: m || "", y: y || "" };
+}
+function dobPicker(dob){
+  const { d, m, y } = dobParts(dob), maxY = new Date().getFullYear() - 18;
+  const dim = m ? new Date(y || 2000, m, 0).getDate() : 31;
+  const sel = (k, label, opts) => `<select class="inp" data-dob="${k}" aria-label="${label}"><option value="">${label}</option>${opts}</select>`;
+  return `<div class="dob">
+    ${sel("d", "Day", Array.from({ length: dim }, (_, i) => `<option value="${i + 1}" ${+d === i + 1 ? "selected" : ""}>${i + 1}</option>`).join(""))}
+    ${sel("m", "Month", MONTHS.map((n, i) => `<option value="${i + 1}" ${+m === i + 1 ? "selected" : ""}>${n}</option>`).join(""))}
+    ${sel("y", "Year", Array.from({ length: maxY - 1960 + 1 }, (_, i) => maxY - i).map(v => `<option value="${v}" ${+y === v ? "selected" : ""}>${v}</option>`).join(""))}
+  </div>`;
 }
 
 function railHTML(){
@@ -1114,7 +1134,7 @@ document.addEventListener("click", e => {
     saveProfile(); return render();
   }
   if (t.id === "pf-reset") {
-    if (t.dataset.armed) { state.profile = { name: DEFAULT_NAME }; saveProfile(); state.region = "all"; toast("Profile cleared", "x"); return render(); }
+    if (t.dataset.armed) { state.profile = { name: DEFAULT_NAME }; dobDraft = null; saveProfile(); state.region = "all"; toast("Profile cleared", "x"); return render(); }
     t.dataset.armed = 1; t.textContent = "Tap again to clear"; setTimeout(() => { if (t.isConnected) { delete t.dataset.armed; t.textContent = "Reset profile"; } }, 3000); return;
   }
   if (t.closest("[data-home]")) {
@@ -1162,6 +1182,15 @@ document.addEventListener("input", e => {
   saveProfile(); nav();
 });
 document.addEventListener("change", e => {
+  if (e.target.dataset?.dob) {
+    const p = P(), parts = { ...dobParts(p.dob), [e.target.dataset.dob]: +e.target.value || "" };
+    if (parts.d && parts.m && parts.y) {
+      parts.d = Math.min(parts.d, new Date(parts.y, parts.m, 0).getDate());
+      p.dob = `${parts.y}-${String(parts.m).padStart(2, "0")}-${String(parts.d).padStart(2, "0")}`;
+      dobDraft = null;
+    } else { delete p.dob; dobDraft = parts; }
+    saveProfile(); return render();
+  }
   if (e.target.dataset?.pf && (e.target.tagName === "SELECT" || e.target.type === "date")) return render();
   if (e.target.classList.contains("elig-toggle")) {
     state.eligible = e.target.checked; store.set("dr-elig", state.eligible);
