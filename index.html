@@ -73,6 +73,7 @@ a{color:inherit;text-decoration:none}
 /* Layout */
 .app{display:grid;grid-template-columns:1fr;min-height:100dvh}
 .sidebar,.rail{display:none}
+.rail-inline{margin-top:32px}
 .main{min-width:0;padding:0 16px calc(96px + env(safe-area-inset-bottom))}
 @media (min-width:1024px){
   .app{grid-template-columns:248px minmax(0,1fr)}
@@ -83,6 +84,7 @@ a{color:inherit;text-decoration:none}
 @media (min-width:1360px){
   .app{grid-template-columns:248px minmax(0,1fr) 320px}
   .rail{display:block}
+  .rail-inline{display:none}
 }
 
 /* Sidebar */
@@ -265,9 +267,9 @@ kbd{font-family:"Geist Mono",monospace;font-size:11px;padding:2px 7px;border-rad
 
 /* Right rail */
 .rail{position:sticky;top:0;height:100dvh;overflow-y:auto;padding:22px 20px;border-left:1px solid var(--line);background:var(--surface);backdrop-filter:blur(20px)}
-.rail h4{margin:4px 0 10px;font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
-.rail .box{border-radius:16px;border:1px solid var(--line);background:var(--raise);overflow:hidden;margin-bottom:22px}
-.rail .box .mini:first-child{border-top:0}
+.rail h4,.rail-inline h4{margin:4px 0 10px;font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.rail .box,.rail-inline .box{border-radius:16px;border:1px solid var(--line);background:var(--raise);overflow:hidden;margin-bottom:22px}
+.rail .box .mini:first-child,.rail-inline .box .mini:first-child{border-top:0}
 .tip{padding:14px;border-radius:16px;background:linear-gradient(135deg,var(--accent-soft),var(--indigo-soft));font-size:13px;color:var(--muted)}
 .tip b{color:var(--text);display:flex;align-items:center;gap:6px;margin-bottom:4px}
 
@@ -593,7 +595,7 @@ function paintStatus(){
   const f = freshness();
   const sd = $("#status-d"), sm = $("#status-m");
   if (sd){ sd.className = "live " + f.level; sd.innerHTML = `<span class="dot"></span>${f.long}`; }
-  if (sm){ sm.className = "live " + f.level; sm.innerHTML = `<span class="dot"></span>${f.short}`; }
+  if (sm){ sm.className = "live " + f.level; sm.innerHTML = `<span class="dot"></span>${f.long}`; }
 }
 function parseLog(md){
   return md.split(/^## /m).slice(1).map(sec => {
@@ -805,11 +807,12 @@ function viewRadar(){
       ${Object.entries(CAT).map(([k, c]) => `<button class="chip" data-cat="${k}" aria-pressed="${state.cat === k}" style="--c:${c.c}"><span class="sw"></span>${c.label}${counts[k] ? ` <span class="n">${counts[k]}</span>` : ""}</button>`).join("")}
     </div>
     <div class="row2">
-      <div class="seg" role="group" aria-label="Region">${((P().regions || []).length ? [["mine","My locations"], ...REGIONS] : REGIONS).map(([k, l]) => `<button data-region="${k}" aria-pressed="${state.region === k}">${l}</button>`).join("")}</div>
+      <div class="seg" role="group" aria-label="Region">${[["mine","My locations"], ...REGIONS].map(([k, l]) => `<button data-region="${k}" aria-pressed="${state.region === k}">${l}</button>`).join("")}</div>
       <label class="switch"><input type="checkbox" class="elig-toggle" ${state.eligible ? "checked" : ""}> Can apply now</label>
     </div>
   </div>
-  <div id="results"></div>`;
+  <div id="results"></div>
+  <div class="rail-inline">${railHTML()}</div>`;
 }
 
 function resultsHTML(){
@@ -897,22 +900,23 @@ function viewProfile(){
       <div class="field" id="pf-pwbd"><span>Person with disability (PwBD)?${tip("pwbd")}</span>${opt("pwbd", [["no","No"],["yes","Yes"]])}</div>
     </section>
     <section class="pf-card" style="--i:3"><h3>${ic("pin")}Where you want to work</h3><p>Adds a "My locations" filter to Radar.</p>
-      <div class="field"><span>Preferred locations</span>${opt("regions", REGIONS.filter(r => r[0] !== "all"), true)}</div>
+      <div class="field" id="pf-regions"><span>Preferred locations</span>${opt("regions", REGIONS.filter(r => r[0] !== "all"), true)}</div>
     </section>
   </div>
   <div class="pf-foot"><span>${ic("lock")}Stored only in this browser on this device</span><button type="button" class="btn danger" id="pf-reset">Reset profile</button></div>`;
 }
 
-function rail(){
+function railHTML(){
   const soon = JOBS.filter(isOpen).filter(j => j.lastDate).sort(byDeadline).slice(0, 6);
   const exams = JOBS.filter(j => j.category === "exam" && isOpen(j));
-  $("#rail").innerHTML = `
+  return `
     <h4>Closing soon</h4>
     <div class="box">${soon.length ? soon.map(j => { const d = days(j.lastDate); return mini(j, d === 0 ? "today" : d + "d left"); }).join("") : `<div class="mini"><div class="t"><span>Nothing closing soon</span></div></div>`}</div>
     <h4>Exams to watch</h4>
     <div class="box">${exams.length ? exams.map(j => mini(j, j.lastDate ? fmt(j.lastDate, {day:"numeric", month:"short"}) : "TBA")).join("") : `<div class="mini"><div class="t"><span>None right now</span></div></div>`}</div>
     <div class="tip"><b>${ic("info")}Before you travel</b>Details come from automated searches. Open the official notice and confirm the date, venue and documents list before going to a walk-in.</div>`;
 }
+function rail(){ $("#rail").innerHTML = railHTML(); }
 
 /* ---------- Render ---------- */
 function nav(){
@@ -1126,7 +1130,9 @@ document.addEventListener("click", e => {
     transition(() => render()); scrollTo({ top: 0, behavior: reduced ? "auto" : "smooth" }); return;
   }
   if ((el = t.closest("[data-cat]"))) { state.cat = el.dataset.cat; return transition(() => render()); }
-  if ((el = t.closest("[data-region]"))) { state.region = el.dataset.region; return transition(() => render()); }
+  if ((el = t.closest("[data-region]"))) {
+    if (el.dataset.region === "mine" && !(P().regions || []).length) { toast("Pick your preferred locations first", "pin"); return gotoProfileField("regions"); }
+    state.region = el.dataset.region; return transition(() => render()); }
   if ((el = t.closest("[data-quick]"))) {
     const k = el.dataset.quick;
     if (k === "elig") { state.eligible = !state.eligible; store.set("dr-elig", state.eligible); }
