@@ -174,7 +174,7 @@ kbd{font-family:"Geist Mono",monospace;font-size:11px;padding:2px 7px;border-rad
 .card:active{transform:scale(.985)}
 .card.applied{opacity:.62}
 .card.urgent{border-color:color-mix(in srgb,var(--red) 35%,var(--line))}
-#view.still :is(.card,.tl-item,.site,.setup,.greet,.pf-card){animation:none}
+#view.still :is(.card,.tl-item,.src,.setup,.greet,.pf-card){animation:none}
 @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 .c-top{display:flex;gap:12px;align-items:flex-start}
 .cat-ic{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;flex:none;color:var(--c);background:color-mix(in srgb,var(--c) 13%,transparent);border:1px solid color-mix(in srgb,var(--c) 22%,transparent)}
@@ -254,17 +254,24 @@ kbd{font-family:"Geist Mono",monospace;font-size:11px;padding:2px 7px;border-rad
 .tl-body span{font-size:13px;color:var(--muted)}
 
 /* Sites */
-.sites{display:grid;grid-template-columns:1fr;gap:10px}
-@media (min-width:600px){.sites{grid-template-columns:repeat(2,1fr)}}
-@media (min-width:1500px){.sites{grid-template-columns:repeat(3,1fr)}}
-.site{display:flex;gap:12px;align-items:center;padding:12px 14px;border-radius:16px;border:1px solid var(--line);background:var(--surface);transition:transform .3s var(--ease),box-shadow .3s,border-color .2s;animation:rise .5s var(--ease) both;animation-delay:calc(var(--i,0)*25ms)}
-.site:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg);border-color:var(--line-2)}
-.av{width:40px;height:40px;border-radius:11px;flex:none;display:grid;place-items:center;font-weight:700;font-size:15px;color:#fff;background:linear-gradient(135deg,var(--c),color-mix(in srgb,var(--c) 60%,#000))}
-.site .t{flex:1;min-width:0}
-.site b{display:block;font-size:14px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.site span{font-size:12.5px;color:var(--muted);display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
-.site .ic{color:var(--faint)}
-.daily{font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:2px 7px;border-radius:6px;margin-left:6px;vertical-align:1px}
+.srcs{display:grid;grid-template-columns:1fr;gap:12px}
+@media (min-width:680px){.srcs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1500px){.srcs{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.src{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border-radius:var(--r);border:1px solid var(--line);background:var(--surface);backdrop-filter:blur(16px);box-shadow:var(--shadow);color:inherit;text-decoration:none;transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .2s;animation:rise .5s var(--ease) both;animation-delay:calc(var(--i,0)*30ms)}
+.src:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:color-mix(in srgb,var(--c) 35%,var(--line))}
+.src-t{flex:1;min-width:0}
+.src-t b{display:block;font-size:14.5px;font-weight:620;line-height:1.3}
+.src-t .why{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:13px;color:var(--muted);margin-top:3px;line-height:1.4}
+.src-t .dom{display:block;font-size:12px;color:var(--faint);margin-top:8px;font-family:"Geist Mono",monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.src .go{flex:none;width:30px;height:30px;border-radius:9px;display:grid;place-items:center;color:var(--faint);transition:all .25s var(--ease)}
+.src .go .ic{width:15px;height:15px}
+.src:hover .go{background:var(--c);color:#fff}
+.src-stats{grid-template-columns:repeat(3,1fr)}
+.src-stats .stat{cursor:default}
+.src-stats .stat:hover{transform:none;box-shadow:var(--shadow)}
+@media (max-width:560px){.src-stats .num{font-size:26px}.src-stats .lbl{font-size:11.5px}}
+.empty.big{padding:56px 20px;margin-top:20px}
+.empty .btn{margin:16px auto 0}
 
 /* Right rail */
 .rail{position:sticky;top:0;height:100dvh;overflow-y:auto;padding:22px 20px;border-left:1px solid var(--line);background:var(--surface);backdrop-filter:blur(20px)}
@@ -611,7 +618,7 @@ const CAT = {
   private:{label:"Private", icon:"building", c:"#f59e0b"},
   other:{label:"Fellowship", icon:"flask", c:"#ec4899"}
 };
-const VIEWS = [["radar","Radar","radar"],["timeline","Timeline","timeline"],["saved","Saved","star"],["sites","Sites","globe"],["profile","Profile","user"]];
+const VIEWS = [["radar","Radar","radar"],["timeline","Timeline","timeline"],["saved","Saved","star"],["sites","Sources","globe"],["profile","Profile","user"]];
 const CITY_SUGG = ["Delhi","Mumbai","Bengaluru","Chennai","Hyderabad","Kolkata","Pune","Ahmedabad","Jaipur","Lucknow","Chandigarh","Bhopal","Indore","Patna","Bhubaneswar","Raipur","Ranchi","Dehradun","Rishikesh","Jodhpur","Nagpur","Kochi","Thiruvananthapuram","Guwahati","Srinagar","Jammu","Shimla","Varanasi","Kanpur","Agra","Meerut","Noida","Greater Noida","Ghaziabad","Gurugram","Faridabad","Puducherry","Mangaluru","Mysuru","Vellore","Visakhapatnam","Surat","Vadodara","Nashik","Aurangabad","Gorakhpur","Prayagraj","Bareilly","Aligarh","Ludhiana","Amritsar"];
 const COUNCILS = ["Uttar Pradesh Medical Council","National Medical Commission (IMR)","Delhi Medical Council","Haryana Medical Council","Uttarakhand Medical Council","Rajasthan Medical Council","Madhya Pradesh Medical Council","Punjab Medical Council","Bihar Medical Council","Other state council"];
 const REG = [["none","Not yet"],["provisional","Provisional"],["applied","Permanent: applied"],["permanent","Permanent: received"]];
@@ -699,7 +706,7 @@ function openRunSheet(){
     <div class="grab" id="grab"><i></i><button class="icon-btn sheet-close" data-close aria-label="Close">${ic("x")}</button></div>
     <div class="sh-head" style="--c:${color}"><div class="cat-ic">${ic("radar")}</div>
       <div><div class="eyebrow">Daily scan</div><h2 id="sh-title">${esc(f.long)}</h2>
-      <div class="org" style="white-space:normal">DocRadar scans ${SOURCES.length} websites and runs about 30 web searches every morning.</div></div></div>
+      <div class="org" style="white-space:normal">DocRadar scans ${SOURCES.length} websites and runs about 45 web searches across India every morning.</div></div></div>
     ${f.level === "bad" ? `<div class="callout" style="--tone:var(--red);--tone-soft:var(--red-soft)">${ic("alert")}<div><b>The daily scan seems to have stopped</b>Listings may be out of date. Check the official sites under Sites, and ask whoever set up DocRadar to check the scheduled task.</div></div>` : ""}
     ${last ? `<div class="runkv">
       <div><b>${num(get(last, "new"))}</b><span>new listings${last.date !== UPDATED ? ` (${fmt(last.date, {day:"numeric", month:"short"})})` : ""}</span></div>
@@ -1036,24 +1043,53 @@ function viewTimeline(){
     ${tba.length ? `<div class="month">Date not announced yet</div><div class="closed" style="margin-top:0">${tba.map(j => mini(j, "TBA")).join("")}</div>` : ""}`;
 }
 
+let savedFilter = "all";
 function viewSaved(){
-  const saved = JOBS.filter(j => state.saved[j.id]).sort(byDeadline);
-  const applied = JOBS.filter(j => state.applied[j.id] && !state.saved[j.id]).sort(byDeadline);
-  const all = [...saved, ...applied];
-  return `<section class="page-head"><h1>Saved</h1><p>Openings you starred or marked as applied. These are stored on this device only.</p></section>
-    ${all.length ? `<div class="sec"><h2>Your shortlist</h2><span>${all.length}</span></div><div class="grid">${all.map(card).join("")}</div>`
-      : `<div class="empty" style="margin-top:20px">${ic("star")}<b>No saved openings yet</b>Tap the star on any opening to keep it here.</div>`}`;
+  const mine = JOBS.filter(j => state.saved[j.id] || state.applied[j.id]);
+  const open = mine.filter(isOpen).sort(byDeadline), closed = mine.filter(j => !isOpen(j)).sort((a, b) => b.lastDate.localeCompare(a.lastDate));
+  const head = `<section class="page-head"><h1>Saved</h1><p>Openings you starred or marked as applied. Stored on this device only.</p></section>`;
+  if (!mine.length) return `${head}<div class="empty big">${ic("star")}<b>Nothing saved yet</b>Tap the star on any opening to keep it here, and mark it applied once you've sent the form.
+    <button class="btn" data-view="radar">${ic("radar")}Browse openings</button></div>`;
+  const F = {
+    all:    ["Shortlist", "star", "var(--accent)", open],
+    saved:  ["Starred", "star", "var(--amber)", open.filter(j => state.saved[j.id])],
+    applied:["Applied", "check", "var(--green)", open.filter(j => state.applied[j.id])],
+    soon:   ["Closing this week", "flame", "var(--red)", open.filter(isSoon)]
+  };
+  const [title, , , list] = F[savedFilter] || F.all;
+  return `${head}
+    <div class="stats">${Object.entries(F).map(([k, [l, i, t, arr]]) =>
+      `<button class="stat" data-sv="${k}" aria-pressed="${savedFilter === k}" style="--tone:${t}"><span class="lbl">${ic(i)}${l}</span><div class="num">${arr.length}</div></button>`).join("")}</div>
+    <div class="sec"><h2>${title}</h2><span>${list.length} open · sorted by deadline</span></div>
+    ${list.length ? `<div class="grid">${list.map(card).join("")}</div>`
+      : `<div class="empty">${ic(F[savedFilter][1])}<b>Nothing here right now</b>${savedFilter === "applied" ? "Open a saved opening and tap Mark applied once you've applied." : savedFilter === "soon" ? "None of your saved openings close in the next 7 days." : "Tap the star on any opening to keep it here."}</div>`}
+    ${closed.length ? `<details class="closed"><summary>${ic("archive")}Closed · ${closed.length}${ic("chev")}</summary>
+      ${closed.map(j => mini(j, (state.applied[j.id] ? "applied · " : "") + "closed " + fmt(j.lastDate, {day:"numeric", month:"short"}))).join("")}</details>` : ""}`;
 }
 
+const GROUP_IC = {"National portals":"globe","Exams":"book","Defence":"shield","Govt Medical Officer":"steth","Central Hospitals":"hospital","Govt JR / SR":"hospital","State Govt":"building","Medical colleges":"building","Aggregators":"search","Private":"hospital","Research":"flask"};
+let srcGroup = "all";
 function viewSites(){
   const groups = {};
   SOURCES.forEach(s => (groups[s.group] = groups[s.group] || []).push(s));
+  const dom = u => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return u; } };
+  const shown = Object.entries(groups).filter(([g]) => srcGroup === "all" || g === srcGroup);
   let i = 0;
-  return `<section class="page-head"><h1>Key websites</h1><p>The sites DocRadar checks. Ones marked <span class="daily">Daily</span> are scanned every morning.</p></section>
-    ${Object.entries(groups).map(([g, list]) => `<div class="month">${esc(g)}</div><div class="sites">${list.sort((a, b) => a.priority - b.priority).map(s =>
-      `<a class="site" href="${esc(s.url)}" target="_blank" rel="noopener" style="--c:${GROUP_C[g] || "#64748b"};--i:${i++}">
-        <span class="av">${esc(s.name.replace(/^Dr\.\s*/, "").charAt(0))}</span>
-        <span class="t"><b>${esc(s.name)}${s.priority === 1 ? '<span class="daily">Daily</span>' : ""}</b><span>${esc(s.why)}</span></span>${ic("external")}</a>`).join("")}</div>`).join("")}`;
+  return `<section class="page-head"><h1>Sources</h1><p>Where DocRadar looks every morning. Every website below is checked daily, along with web searches that cover all of India.</p></section>
+    <div class="stats src-stats">
+      <div class="stat" style="--tone:var(--accent)"><span class="lbl">${ic("globe")}Websites checked daily</span><div class="num">${SOURCES.length}</div></div>
+      <div class="stat" style="--tone:var(--indigo)"><span class="lbl">${ic("search")}Web searches daily</span><div class="num">~45</div></div>
+      <div class="stat" style="--tone:var(--green)"><span class="lbl">${ic("map")}States &amp; UTs each week</span><div class="num">36</div></div>
+    </div>
+    <div class="chips" role="group" aria-label="Source type">
+      <button class="chip" data-src-group="all" aria-pressed="${srcGroup === "all"}">All <span class="n">${SOURCES.length}</span></button>
+      ${Object.entries(groups).map(([g, l]) => `<button class="chip" data-src-group="${esc(g)}" aria-pressed="${srcGroup === g}" style="--c:${GROUP_C[g] || "#64748b"}"><span class="sw"></span>${esc(g)} <span class="n">${l.length}</span></button>`).join("")}
+    </div>
+    ${shown.map(([g, list]) => `<div class="sec"><h2>${esc(g)}</h2><span>${list.length}</span></div><div class="srcs">${list.sort((a, b) => a.priority - b.priority).map(s =>
+      `<a class="src" href="${esc(s.url)}" target="_blank" rel="noopener" style="--c:${GROUP_C[g] || "#64748b"};--i:${i++}">
+        <div class="cat-ic">${ic(GROUP_IC[g] || "globe")}</div>
+        <div class="src-t"><b>${esc(s.name)}</b><span class="why">${esc(s.why)}</span><span class="dom">${esc(dom(s.url))}</span></div>
+        <span class="go" aria-hidden="true">${ic("external")}</span></a>`).join("")}</div>`).join("")}`;
 }
 
 function viewProfile(){
@@ -1185,7 +1221,7 @@ function rail(){ $("#rail").innerHTML = railHTML(); }
 
 /* ---------- Render ---------- */
 function nav(){
-  const savedCount = JOBS.filter(j => state.saved[j.id]).length;
+  const savedCount = JOBS.filter(j => state.saved[j.id] || state.applied[j.id]).length;
   const soon = areaOpen().filter(isSoon).length;
   const counts = { radar: areaOpen().length, saved: savedCount, timeline: soon, sites: SOURCES.length, profile: Math.round(completeness() * 100) + "%" };
   const p = P(), ie = p.internshipEnd ? days(p.internshipEnd) : null;
@@ -1413,6 +1449,8 @@ document.addEventListener("click", e => {
     state.view = el.dataset.view; store.set("dr-view", state.view);
     transition(() => render()); scrollTo({ top: 0, behavior: reduced ? "auto" : "smooth" }); return;
   }
+  if ((el = t.closest("[data-sv]"))) { savedFilter = el.dataset.sv; return render(); }
+  if ((el = t.closest("[data-src-group]"))) { srcGroup = el.dataset.srcGroup; return render(); }
   if ((el = t.closest("[data-cat]"))) { state.cat = el.dataset.cat; return transition(() => render()); }
   if ((el = t.closest("[data-region]"))) {
     if (el.dataset.region === "mine" && !hasMyLocs()) { toast("Tick a state or city first", "pin"); return gotoProfileField("states"); }
