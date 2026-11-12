@@ -680,11 +680,12 @@ const newSinceVisit = () => LAST_SEEN ? JOBS.filter(j => j.addedOn > LAST_SEEN &
 function freshness(){
   if (!UPDATED) return { level:"warn", short:"…", long:"Checking…" };
   const d = days(UPDATED), hr = new Date().getHours();
+  const when = d >= 0 ? "today" : d === -1 ? "yesterday" : fmt(UPDATED, {day:"numeric", month:"short"});
   const time = UPDATED_AT ? new Date(UPDATED_AT).toLocaleTimeString("en-IN", { hour:"numeric", minute:"2-digit" }) : "";
-  if (d >= 0) return { level:"ok", short:"Updated today", long:`Updated today${time ? " · " + time : ""}` };
-  if (d === -1 && hr < 10) return { level:"ok", short:"Updated yesterday", long:"Updated yesterday · today's scan runs around 7 AM" };
-  if (d === -1) return { level:"warn", short:"Not updated today", long:"Not updated today yet · last scan yesterday" };
-  return { level:"bad", short:`Stale · ${-d} days`, long:`Not updated for ${-d} days · last scan ${fmt(UPDATED, {day:"numeric", month:"short"})}` };
+  const text = `Updated ${when}${time ? " · " + time : ""}`;
+  // the dot colour still flags a missed scan: amber after a missed morning, red after 2+ days
+  const level = d >= 0 || (d === -1 && hr < 10) ? "ok" : d === -1 ? "warn" : "bad";
+  return { level, short: text, long: text };
 }
 function paintStatus(){
   const f = freshness();
