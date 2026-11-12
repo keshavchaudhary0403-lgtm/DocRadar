@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>DocRadar</title>
-<meta name="description" content="Junior Resident walk-ins, Medical Officer posts, defence and PG exams, scanned every morning for Meerut, UP and Delhi NCR.">
+<meta name="description" content="Jobs and exams for MBBS doctors across India: Junior Resident walk-ins, Medical Officer posts, defence entries and PG exams, searched every morning.">
 <link rel="icon" href="favicon.ico?v=3" sizes="32x32">
 <link rel="icon" href="favicon.svg?v=3" type="image/svg+xml">
 <link rel="icon" href="favicon-96.png?v=3" type="image/png" sizes="96x96">
@@ -270,6 +270,19 @@ kbd{font-family:"Geist Mono",monospace;font-size:11px;padding:2px 7px;border-rad
 .rail h4,.rail-inline h4{margin:4px 0 10px;font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
 .rail .box,.rail-inline .box{border-radius:16px;border:1px solid var(--line);background:var(--raise);overflow:hidden;margin-bottom:22px}
 .rail .box .mini:first-child,.rail-inline .box .mini:first-child{border-top:0}
+.ri{display:flex;gap:12px;align-items:flex-start;padding:14px;border-top:1px solid var(--line);cursor:pointer;transition:background .2s}
+.box .ri:first-child{border-top:0}
+.ri:hover{background:var(--bg-2)}
+.ri-date{flex:none;width:46px;height:50px;border-radius:13px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:color-mix(in srgb,var(--c) 13%,transparent);color:var(--c)}
+.ri-date b{font-size:18px;font-weight:700;line-height:1;letter-spacing:-.02em}
+.ri-date b.tba{font-size:12.5px;letter-spacing:.04em}
+.ri-date span{font-size:10.5px;font-weight:650;text-transform:uppercase;letter-spacing:.06em;margin-top:3px}
+.ri-t{flex:1;min-width:0}
+.ri-t b{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:13.5px;font-weight:600;line-height:1.35}
+.ri-org{display:block;font-size:12.5px;color:var(--muted);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ri-cd{display:inline-flex;align-items:center;gap:5px;margin-top:8px;padding:3px 9px;border-radius:99px;font-size:11.5px;font-weight:600;color:var(--tone);background:color-mix(in srgb,var(--tone) 12%,transparent)}
+.ri-cd .ic{width:12px;height:12px}
+.ri-empty{padding:16px;font-size:13px;color:var(--muted)}
 .tip{padding:14px;border-radius:16px;background:linear-gradient(135deg,var(--accent-soft),var(--indigo-soft));font-size:13px;color:var(--muted)}
 .tip b{color:var(--text);display:flex;align-items:center;gap:6px;margin-bottom:4px}
 
@@ -576,7 +589,7 @@ const CAT = {
   other:{label:"Fellowship", icon:"flask", c:"#ec4899"}
 };
 const VIEWS = [["radar","Radar","radar"],["timeline","Timeline","timeline"],["saved","Saved","star"],["sites","Sites","globe"],["profile","Profile","user"]];
-const CITY_SUGG = ["Meerut","Ghaziabad","Noida","Greater Noida","Delhi","Hapur","Baghpat","Bulandshahr","Muzaffarnagar","Shamli","Saharanpur","Bijnor","Moradabad","Aligarh","Agra","Lucknow","Kanpur","Gurugram","Faridabad","Dehradun","Haridwar","Chandigarh","Jaipur"];
+const CITY_SUGG = ["Delhi","Mumbai","Bengaluru","Chennai","Hyderabad","Kolkata","Pune","Ahmedabad","Jaipur","Lucknow","Chandigarh","Bhopal","Indore","Patna","Bhubaneswar","Raipur","Ranchi","Dehradun","Rishikesh","Jodhpur","Nagpur","Kochi","Thiruvananthapuram","Guwahati","Srinagar","Jammu","Shimla","Varanasi","Kanpur","Agra","Meerut","Noida","Greater Noida","Ghaziabad","Gurugram","Faridabad","Puducherry","Mangaluru","Mysuru","Vellore","Visakhapatnam","Surat","Vadodara","Nashik","Aurangabad","Gorakhpur","Prayagraj","Bareilly","Aligarh","Ludhiana","Amritsar"];
 const COUNCILS = ["Uttar Pradesh Medical Council","National Medical Commission (IMR)","Delhi Medical Council","Haryana Medical Council","Uttarakhand Medical Council","Rajasthan Medical Council","Madhya Pradesh Medical Council","Punjab Medical Council","Bihar Medical Council","Other state council"];
 const REG = [["none","Not yet"],["provisional","Provisional"],["applied","Permanent: applied"],["permanent","Permanent: received"]];
 const TIPS = {
@@ -592,8 +605,8 @@ const TIPS = {
     <tr><th>Permanent: applied</th><td>Internship done, applied for permanent, certificate not here yet</td></tr>
     <tr><th>Permanent: received</th><td>You have the permanent registration certificate</td></tr></table>
     <p>Almost every job after MBBS needs <b>permanent</b> registration.</p>` },
-  council:{ t:"Which medical council?", h:`The council you're registered with. If you studied at Subharti, Meerut, it's usually the <b>Uttar Pradesh Medical Council</b>.
-    <p>Delhi government hospitals often want <b>Delhi Medical Council</b> registration too. You can get it in addition to UP.</p>` },
+  council:{ t:"Which medical council?", h:`The council you're registered with. It's usually the <b>State Medical Council of the state where you did MBBS</b>, or the NMC's Indian Medical Register.
+    <p>Some state government hospitals (Delhi, for example) want registration with <b>their own state council</b> too. You can hold it in addition to your home state's.</p>` },
   neetPg:{ t:"Did you write NEET-PG?", h:`Tick each year you <b>sat</b> the NEET-PG exam. Your score doesn't matter here.
     <p>The Army (AFMS) picks Medical Officers using NEET-PG scores, so it only accepts recent years (2025 or 2026 for the current round).</p>` },
   category:{ t:"Category and age limit", h:`Most government jobs let you be older than the age limit, depending on category:
@@ -605,7 +618,7 @@ const TIPS = {
 const tip = k => `<button type="button" class="tip-btn" data-tip="${k}" aria-label="What does this mean?" aria-expanded="false">${ic("info")}</button>`;
 
 const PF_FIELDS = ["internshipEnd","regStatus","council","neetPg","dob","category","attemptsOk","gender"];
-const GROUP_C = {"Defence":"#65a30d","Exams":"#a855f7","Govt JR / SR":"#6366f1","Govt Medical Officer":"#0d9488","Meerut":"#e5484d","Delhi":"#f97316","Aggregators":"#0ea5e9","Private":"#f59e0b","Research":"#ec4899"};
+const GROUP_C = {"State Govt":"#e5484d","Central Hospitals":"#f97316","National portals":"#14b8a6","Defence":"#65a30d","Exams":"#a855f7","Govt JR / SR":"#6366f1","Govt Medical Officer":"#0d9488","Medical colleges":"#8b5cf6","Aggregators":"#0ea5e9","Private":"#f59e0b","Research":"#ec4899"};
 
 const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
@@ -811,8 +824,8 @@ const STATES = ["Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chhattisga
 const STATE_ABBR = { UP:"Uttar Pradesh", MP:"Madhya Pradesh", HP:"Himachal Pradesh", AP:"Andhra Pradesh", WB:"West Bengal", TN:"Tamil Nadu", "J&K":"Jammu and Kashmir", UK:"Uttarakhand" };
 const NCR_STATE = { noida:"Uttar Pradesh", "greater noida":"Uttar Pradesh", ghaziabad:"Uttar Pradesh", meerut:"Uttar Pradesh", hapur:"Uttar Pradesh", gurugram:"Haryana", gurgaon:"Haryana", faridabad:"Haryana", sonipat:"Haryana" };
 const PLACES = {
-  state: { label:"States", presets:["Uttar Pradesh","Delhi","Haryana","Uttarakhand"], sel:"states", pool:"statePool", add:"+ Add state", ph:"Type a state, e.g. Rajasthan", sugg:STATES },
-  city:  { label:"Cities", presets:["Meerut","Ghaziabad","Noida","Greater Noida","Hapur","Lucknow"], sel:"cities", pool:"cityPool", add:"+ Add city", ph:"Type a city or town", sugg:CITY_SUGG }
+  state: { label:"States", presets:["Delhi","Uttar Pradesh","Maharashtra","Karnataka","Tamil Nadu"], sel:"states", pool:"statePool", add:"+ Add state", ph:"Type a state, e.g. Rajasthan", sugg:STATES },
+  city:  { label:"Cities", presets:["Delhi","Mumbai","Bengaluru","Chennai","Hyderabad","Kolkata"], sel:"cities", pool:"cityPool", add:"+ Add city", ph:"Type a city or town", sugg:CITY_SUGG }
 };
 const picked = k => P()[PLACES[k].sel] || [];
 const myCities = () => picked("city");
@@ -924,7 +937,7 @@ function viewRadar(){
     ${newSinceVisit().length ? `<div class="hero-row"><button class="newpill" data-quick="new">${ic("sparkle")}${newSinceVisit().length} new since your last visit</button></div>` : ""}
     ${P().name ? `<span class="greet"><span class="wave">👋</span><span>Hi <b>Dr. ${esc(firstName())}</b></span>${P().internshipEnd && days(P().internshipEnd) > 0 ? `<small>Internship ends in ${days(P().internshipEnd)} days</small>` : ""}</span>` : ""}
     <h1>Every job opening. <em>Every morning.</em></h1>
-    <p>Junior Resident walk-ins, Medical Officer posts, defence and PG exams, scanned daily for Meerut, Uttar Pradesh and Delhi NCR.</p>
+    <p>Junior Resident walk-ins, Medical Officer posts, defence entries and PG exams for MBBS doctors, searched across India every morning.</p>
     ${completeness() < 0.75 ? `<div class="setup">${ic("idcard")}<div><b>${profileEmpty() ? "Set up your profile" : "Finish your profile"}</b>Add your internship date, registration and NEET-PG details to see exactly which posts you can apply for.</div><button class="btn" data-view="profile">${profileEmpty() ? "Set up" : "Continue"}</button></div>` : ""}
     <div class="stats">${tiles.map(([k, l, i, t, n]) => {
       const pressed = k === "elig" ? state.eligible : k === "all" ? (!state.quick && !state.eligible) : state.quick === k;
@@ -1078,14 +1091,24 @@ function showDobMenu(){
   if (sel) menu.scrollTop = sel.offsetTop - menu.clientHeight / 2 + sel.offsetHeight / 2;
 }
 
+function railItem(j, date, verb){
+  const c = CAT[j.category] || CAT.other, d = days(date);
+  const tile = date ? `<b>${fmt(date, {day:"numeric"})}</b><span>${fmt(date, {month:"short"})}</span>` : `<b class="tba">TBA</b>`;
+  const cd = d === null ? `<span class="ri-cd" style="--tone:var(--muted)">Dates not out yet</span>`
+    : `<span class="ri-cd" style="--tone:${tone(d)}">${ic("clock")}${d === 0 ? `Last day to ${verb}` : d === 1 ? `1 day left to ${verb}` : `${d} days left to ${verb}`}</span>`;
+  return `<div class="ri" style="--c:${c.c}" data-open="${esc(j.id)}" role="button" tabindex="0">
+    <div class="ri-date">${tile}</div>
+    <div class="ri-t"><b>${esc(j.title)}</b><span class="ri-org">${esc(j.org)}</span>${cd}</div></div>`;
+}
 function railHTML(){
   const soon = areaOpen().filter(j => j.lastDate && j.category !== "exam").sort(byDeadline).slice(0, 6);
   const exams = JOBS.filter(j => j.category === "exam" && isOpen(j));
+  const empty = t => `<div class="ri-empty">${t}</div>`;
   return `
     <h4>Closing soon${state.region === "mine" ? " · My locations" : ""}</h4>
-    <div class="box">${soon.length ? soon.map(j => { const d = days(j.lastDate); return mini(j, d === 0 ? "today" : d + "d left"); }).join("") : `<div class="mini"><div class="t"><span>Nothing closing soon</span></div></div>`}</div>
+    <div class="box">${soon.length ? soon.map(j => railItem(j, j.lastDate, "apply")).join("") : empty("Nothing closing soon")}</div>
     <h4>Exams to watch</h4>
-    <div class="box">${exams.length ? exams.map(j => mini(j, j.lastDate ? fmt(j.lastDate, {day:"numeric", month:"short"}) : "TBA")).join("") : `<div class="mini"><div class="t"><span>None right now</span></div></div>`}</div>
+    <div class="box">${exams.length ? exams.map(j => railItem(j, j.lastDate, "register")).join("") : empty("None right now")}</div>
     <div class="tip"><b>${ic("info")}Before you travel</b>Details come from automated searches. Open the official notice and confirm the date, venue and documents list before going to a walk-in.</div>`;
 }
 function rail(){ $("#rail").innerHTML = railHTML(); }

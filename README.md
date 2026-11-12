@@ -1,6 +1,6 @@
 # DocRadar
 
-A daily-updated tracker of jobs, walk-ins and exams for a new MBBS doctor based in Meerut, UP.
+A daily-updated tracker of jobs, walk-ins and exams for MBBS doctors across India.
 
 - `index.html`: the website (static, no build step)
 - `data/jobs.json`: the listings, rewritten by the daily update

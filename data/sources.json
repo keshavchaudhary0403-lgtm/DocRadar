@@ -1,29 +1,201 @@
 {
   "_note": "Key websites. The daily updater checks these first; the site shows them under 'Key websites'. Priority 1 = check every day.",
   "sources": [
-    { "name": "AFMS – Army Medical Officer (SSC)", "url": "https://join.afms.gov.in", "group": "Defence", "priority": 1, "why": "SSC Medical Officer drives (usually 2 per year)" },
-    { "name": "AIIMS New Delhi – Recruitment", "url": "https://www.aiims.edu/index.php/en/notices/recruitment/aiims-recruitment", "group": "Govt JR / SR", "priority": 1, "why": "JR (non-academic) and other posts" },
-    { "name": "AIIMS Exams (INI-CET)", "url": "https://www.aiimsexams.ac.in", "group": "Exams", "priority": 1, "why": "INI-CET PG entrance, AIIMS JR results" },
-    { "name": "NBEMS (NEET-PG, DNB)", "url": "https://natboard.edu.in", "group": "Exams", "priority": 1, "why": "NEET-PG notifications and exam calendar" },
-    { "name": "NMC – National Medical Commission", "url": "https://www.nmc.org.in", "group": "Exams", "priority": 2, "why": "NExT updates, registration rules" },
-    { "name": "UPSC (CMS exam)", "url": "https://upsc.gov.in", "group": "Govt Medical Officer", "priority": 1, "why": "Combined Medical Services – Railways, CAPF, MCD and other central MO posts" },
-    { "name": "UPPSC", "url": "https://uppsc.up.nic.in", "group": "Govt Medical Officer", "priority": 1, "why": "UP Medical Officer and lecturer posts" },
-    { "name": "NHM Uttar Pradesh", "url": "https://upnrhm.gov.in", "group": "Govt Medical Officer", "priority": 1, "why": "Contract Medical Officer posts in UP districts" },
-    { "name": "UP Medical Education (DGME)", "url": "https://dgme.up.gov.in", "group": "Govt JR / SR", "priority": 2, "why": "UP govt medical college posts" },
-    { "name": "LLRM Medical College, Meerut", "url": "https://llrmmedicalcollege.nic.in", "group": "Meerut", "priority": 1, "why": "Govt medical college in Meerut, close to home" },
-    { "name": "Subharti Medical College", "url": "https://www.subharti.org", "group": "Meerut", "priority": 1, "why": "Home college – JR/MO openings after internship" },
-    { "name": "KGMU Lucknow", "url": "https://www.kgmu.org", "group": "Govt JR / SR", "priority": 2, "why": "JR / MO posts" },
-    { "name": "VMMC & Safdarjung Hospital", "url": "https://vmmc-sjh.mohfw.gov.in/recruitment-all", "group": "Delhi", "priority": 1, "why": "Large JR (Non-PG) intakes several times a year" },
-    { "name": "Dr. RML Hospital, Delhi", "url": "https://rmlh.nic.in", "group": "Delhi", "priority": 1, "why": "JR (non-PG) recruitment" },
-    { "name": "LHMC & Associated Hospitals", "url": "https://lhmc-hosp.gov.in", "group": "Delhi", "priority": 2, "why": "JR recruitment" },
-    { "name": "Delhi Health Dept – Circulars", "url": "https://health.delhi.gov.in", "group": "Delhi", "priority": 1, "why": "Walk-ins at Delhi govt hospitals (needs DMC registration)" },
-    { "name": "ESIC Recruitment", "url": "https://www.esic.gov.in/recruitments", "group": "Govt Medical Officer", "priority": 1, "why": "ESIC hospital JR/SR walk-ins, IMO posts" },
-    { "name": "Medical Dialogues – Jobs", "url": "https://medicaldialogues.in/jobs", "group": "Aggregators", "priority": 1, "why": "Doctor-focused job news" },
-    { "name": "FreeJobAlert – Medical", "url": "https://www.freejobalert.com", "group": "Aggregators", "priority": 1, "why": "Fast coverage of govt walk-ins" },
-    { "name": "Sarkari Result", "url": "https://www.sarkariresult.com", "group": "Aggregators", "priority": 1, "why": "Govt job, exam form and result listings" },
-    { "name": "Sarkari Result (.com.cm)", "url": "https://sarkariresult.com.cm", "group": "Aggregators", "priority": 1, "why": "Separate site from the one above; also lists medical recruitments such as AFMS" },
-    { "name": "Docthub Jobs", "url": "https://jobs.docthub.com", "group": "Private", "priority": 2, "why": "Private hospital RMO / duty doctor jobs" },
-    { "name": "Indeed – RMO jobs in UP", "url": "https://in.indeed.com/Resident-Medical-Officer-jobs-in-Uttar-Pradesh", "group": "Private", "priority": 2, "why": "Private RMO openings" },
-    { "name": "ICMR Recruitment", "url": "https://www.icmr.gov.in", "group": "Research", "priority": 3, "why": "Research / project scientist posts for MBBS" }
+    {
+      "name": "Employment News (Govt of India)",
+      "url": "https://employmentnews.gov.in",
+      "group": "National portals",
+      "priority": 1,
+      "why": "Weekly gazette of central and state govt vacancies, incl. Medical Officer posts"
+    },
+    {
+      "name": "National Health Mission",
+      "url": "https://nhm.gov.in",
+      "group": "National portals",
+      "priority": 2,
+      "why": "Links to every state NHM, which hire contract Medical Officers"
+    },
+    {
+      "name": "AIIMS Exams (INI-CET)",
+      "url": "https://www.aiimsexams.ac.in",
+      "group": "Exams",
+      "priority": 1,
+      "why": "INI-CET PG entrance, AIIMS JR results"
+    },
+    {
+      "name": "NBEMS (NEET-PG, DNB)",
+      "url": "https://natboard.edu.in",
+      "group": "Exams",
+      "priority": 1,
+      "why": "NEET-PG notifications and exam calendar"
+    },
+    {
+      "name": "NMC – National Medical Commission",
+      "url": "https://www.nmc.org.in",
+      "group": "Exams",
+      "priority": 2,
+      "why": "NExT updates, registration rules"
+    },
+    {
+      "name": "AFMS – Army Medical Officer (SSC)",
+      "url": "https://join.afms.gov.in",
+      "group": "Defence",
+      "priority": 1,
+      "why": "SSC Medical Officer drives (usually 2 per year)"
+    },
+    {
+      "name": "UPSC (CMS exam)",
+      "url": "https://upsc.gov.in",
+      "group": "Govt Medical Officer",
+      "priority": 1,
+      "why": "Combined Medical Services – Railways, CAPF, MCD and other central MO posts"
+    },
+    {
+      "name": "AIIMS New Delhi – Recruitment",
+      "url": "https://www.aiims.edu/index.php/en/notices/recruitment/aiims-recruitment",
+      "group": "Central Hospitals",
+      "priority": 1,
+      "why": "JR (non-academic) and other posts"
+    },
+    {
+      "name": "VMMC & Safdarjung Hospital",
+      "url": "https://vmmc-sjh.mohfw.gov.in/recruitment-all",
+      "group": "Central Hospitals",
+      "priority": 1,
+      "why": "Large JR (Non-PG) intakes several times a year"
+    },
+    {
+      "name": "Dr. RML Hospital, Delhi",
+      "url": "https://rmlh.nic.in",
+      "group": "Central Hospitals",
+      "priority": 1,
+      "why": "JR (non-PG) recruitment"
+    },
+    {
+      "name": "ESIC Recruitment",
+      "url": "https://www.esic.gov.in/recruitments",
+      "group": "Central Hospitals",
+      "priority": 1,
+      "why": "ESIC hospital JR/SR walk-ins, IMO posts"
+    },
+    {
+      "name": "LHMC & Associated Hospitals",
+      "url": "https://lhmc-hosp.gov.in",
+      "group": "Central Hospitals",
+      "priority": 2,
+      "why": "JR recruitment"
+    },
+    {
+      "name": "PGIMER Chandigarh",
+      "url": "https://pgimer.edu.in",
+      "group": "Central Hospitals",
+      "priority": 2,
+      "why": "JR (non-academic) and MO posts"
+    },
+    {
+      "name": "JIPMER Puducherry",
+      "url": "https://jipmer.edu.in",
+      "group": "Central Hospitals",
+      "priority": 2,
+      "why": "JR (non-academic) posts"
+    },
+    {
+      "name": "UPPSC",
+      "url": "https://uppsc.up.nic.in",
+      "group": "State Govt",
+      "priority": 1,
+      "why": "UP Medical Officer and lecturer posts"
+    },
+    {
+      "name": "NHM Uttar Pradesh",
+      "url": "https://upnrhm.gov.in",
+      "group": "State Govt",
+      "priority": 1,
+      "why": "Contract Medical Officer posts across UP"
+    },
+    {
+      "name": "Delhi Health Dept – Circulars",
+      "url": "https://health.delhi.gov.in",
+      "group": "State Govt",
+      "priority": 1,
+      "why": "Walk-ins at Delhi govt hospitals"
+    },
+    {
+      "name": "UP Medical Education (DGME)",
+      "url": "https://dgme.up.gov.in",
+      "group": "State Govt",
+      "priority": 2,
+      "why": "UP govt medical college posts"
+    },
+    {
+      "name": "LLRM Medical College, Meerut",
+      "url": "https://llrmmedicalcollege.nic.in",
+      "group": "Medical colleges",
+      "priority": 1,
+      "why": "Govt medical college, Meerut: JR / MO openings"
+    },
+    {
+      "name": "Subharti Medical College",
+      "url": "https://www.subharti.org",
+      "group": "Medical colleges",
+      "priority": 1,
+      "why": "Private medical college, Meerut: JR / MO openings"
+    },
+    {
+      "name": "KGMU Lucknow",
+      "url": "https://www.kgmu.org",
+      "group": "Medical colleges",
+      "priority": 2,
+      "why": "JR / MO posts"
+    },
+    {
+      "name": "Medical Dialogues – Jobs",
+      "url": "https://medicaldialogues.in/jobs",
+      "group": "Aggregators",
+      "priority": 1,
+      "why": "Doctor-focused job news"
+    },
+    {
+      "name": "FreeJobAlert – Medical",
+      "url": "https://www.freejobalert.com",
+      "group": "Aggregators",
+      "priority": 1,
+      "why": "Fast coverage of govt walk-ins"
+    },
+    {
+      "name": "Sarkari Result",
+      "url": "https://www.sarkariresult.com",
+      "group": "Aggregators",
+      "priority": 1,
+      "why": "Govt job, exam form and result listings"
+    },
+    {
+      "name": "Sarkari Result (.com.cm)",
+      "url": "https://sarkariresult.com.cm",
+      "group": "Aggregators",
+      "priority": 1,
+      "why": "Separate site from the one above; also lists medical recruitments such as AFMS"
+    },
+    {
+      "name": "Docthub Jobs",
+      "url": "https://jobs.docthub.com",
+      "group": "Private",
+      "priority": 2,
+      "why": "Private hospital RMO / duty doctor jobs"
+    },
+    {
+      "name": "Indeed – MBBS doctor jobs",
+      "url": "https://in.indeed.com/q-mbbs-doctor-jobs.html",
+      "group": "Private",
+      "priority": 2,
+      "why": "Private RMO / duty doctor openings across India"
+    },
+    {
+      "name": "ICMR Recruitment",
+      "url": "https://www.icmr.gov.in",
+      "group": "Research",
+      "priority": 3,
+      "why": "Research / project scientist posts for MBBS"
+    }
   ]
 }

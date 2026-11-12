@@ -17,7 +17,7 @@ const seen = new Map();
 
 for (const j of data.jobs) {
   const where = `job "${j.id ?? j.title}"`;
-  for (const k of ["id", "title", "org", "category", "location", "region", "eligibility", "addedOn"])
+  for (const k of ["id", "title", "org", "category", "location", "eligibility", "addedOn"])
     if (!j[k]) errors.push(`${where}: missing ${k}`);
   if (j.category && !CATEGORIES.includes(j.category)) errors.push(`${where}: bad category ${j.category}`);
   if (j.region && !REGIONS.includes(j.region)) errors.push(`${where}: bad region ${j.region}`);
