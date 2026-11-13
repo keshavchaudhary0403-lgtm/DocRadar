@@ -696,6 +696,26 @@
       }
     },
     {
+      "id": "echs-leh-mo-2026-11-20",
+      "title": "Medical Officer – 1 post, ECHS Polyclinic",
+      "org": "ECHS Cell, Station HQ Leh",
+      "category": "mo",
+      "location": "Leh, Ladakh",
+      "state": "Ladakh",
+      "posts": 1,
+      "salary": null,
+      "mode": "Apply offline",
+      "lastDate": "2026-11-20",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Contract MO at ECHS Polyclinic Leh; offline application to ECHS Cell, Stn HQ Leh by 20 Nov. Aggregator reports MBBS with 5 years post-internship experience and interview in the third week of December — unconfirmed; check the advertisement on echs.gov.in.",
+      "officialUrl": "https://www.echs.gov.in/advertisement.php",
+      "sourceUrl": "https://www.mysarkarinaukri.com/find/ex-servicemen-contributory-health-scheme-echs-jobs/166675",
+      "addedOn": "2026-11-13",
+      "verified": false,
+      "requirements": {}
+    },
+    {
       "id": "dmft-dhanbad-mo-48-2026-11-21",
       "title": "Medical Officer – 48 posts (DMFT, NRHM + NUHM)",
       "org": "District Mineral Foundation Trust, Dhanbad",
@@ -997,6 +1017,26 @@
       }
     },
     {
+      "id": "cmo-baghpat-nhm-mo-fmo-2026-12-03",
+      "title": "Medical Officer / Female Medical Officer (NHM) – 23 posts",
+      "org": "Chief Medical Officer, Baghpat (NHM Uttar Pradesh)",
+      "category": "mo",
+      "location": "Baghpat, Uttar Pradesh",
+      "state": "Uttar Pradesh",
+      "posts": 23,
+      "salary": null,
+      "mode": "Apply offline",
+      "lastDate": "2026-12-03",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Medical Officer and Female Medical Officer posts under NHM, CMO office Baghpat; offline application. Details (pay, age, posting) taken from aggregator listings only — official notice not yet opened; check bagpat.nic.in before applying.",
+      "officialUrl": "https://bagpat.nic.in/",
+      "sourceUrl": "https://govtjobsalert.in/cmo-baghpat-medical-officer-recruitment-2026/",
+      "addedOn": "2026-11-13",
+      "verified": false,
+      "requirements": {}
+    },
+    {
       "id": "umc-navi-mumbai-rmo-dec-2026",
       "title": "Resident Medical Officer (fresher) – 1 post",
       "org": "UMC Hospitals, Nerul",
@@ -1211,5 +1251,5 @@
       }
     }
   ],
-  "updatedAt": "2026-11-13T04:29:07.356Z"
+  "updatedAt": "2026-11-13T06:57:57.211Z"
 }
