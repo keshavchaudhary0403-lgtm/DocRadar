@@ -34,7 +34,7 @@ exam tracker for MBBS doctors anywhere in India. The site is deployed on Vercel 
 ## Option A: cloud routine, every morning (recommended)
 Runs on Anthropic's cloud even when no computer is on.
 1. Open Claude Code on the other login and type `/schedule`.
-2. Ask it to create a daily routine at **7:00 AM IST** (01:30 UTC) for the repo
+2. Ask it to create a daily routine at **6:40 AM IST** (01:10 UTC) for the repo
    `keshavchaudhary0403-lgtm/DocRadar`, using the prompt above.
 3. Make sure the routine has GitHub access to the repo (the `/schedule` flow will ask) and that
    web search is allowed.
@@ -60,6 +60,6 @@ Then schedule it with `crontab -e` and this line (7:00 AM daily):
 The Mac must be awake at 7:00 for this to run.
 
 ## Checking it's working
-- The site's header says **"Live · updated today"** after each run.
+- The site's header says **"Updated today · <time>"** after each run.
 - `data/update-log.md` in the repo has one entry per day showing what was found and which sites failed.
 - GitHub shows a commit `Daily update YYYY-MM-DD: …` every morning.
