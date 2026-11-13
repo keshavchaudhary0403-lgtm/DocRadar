@@ -7,6 +7,10 @@
 //   node scripts/scan-sources.mjs --limit 50     # first 50 (testing)
 //   node scripts/scan-sources.mjs --only-failed  # catch-up: only the sources listed in
 //                                                # data/scan-failed.json from today's full scan
+//   node scripts/scan-sources.mjs --only-failed --input-dir scan
+//        same, but reads sources.json and scan-failed.json from scan/ (copied there from a
+//        fresh clone) instead of data/, and writes the catch-up result to scan/catchup.json,
+//        so the computer running it needs no git.
 //
 // Output (git-ignored):
 //   scan/digest.md   one section per source: [index] name · state · group · status, then links
@@ -25,6 +29,8 @@ const args = process.argv.slice(2);
 const opt = (k, d) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : d; };
 const LIMIT = +opt('--limit', 0);
 const ONLY_FAILED = args.includes('--only-failed');
+const INPUT_DIR = opt('--input-dir', '');
+const loadJSON = path => JSON.parse(readFileSync(new URL('../' + (INPUT_DIR ? INPUT_DIR.replace(/\/$/, '') + '/' + path.split('/').pop() : path), import.meta.url), 'utf8'));
 const today = () => new Date(Date.now() + 5.5 * 3600e3).toISOString().slice(0, 10); // IST date
 const FAILED_FILE = new URL('../data/scan-failed.json', import.meta.url);
 const CONC = +opt('--concurrency', 32);
@@ -138,11 +144,11 @@ async function scan(src, i) {
   return res;
 }
 
-const data = JSON.parse(readFileSync(new URL('../data/sources.json', import.meta.url)));
+const data = loadJSON('data/sources.json');
 let list = data.sources.map((s, k) => ({ ...s, _i: k + 1 }));
 let failedFile = null;
 if (ONLY_FAILED) {
-  try { failedFile = JSON.parse(readFileSync(FAILED_FILE, 'utf8')); } catch {}
+  try { failedFile = loadJSON('data/scan-failed.json'); } catch {}
   if (!failedFile || failedFile.date !== today()) {
     console.error(`  data/scan-failed.json is missing or not from today (${failedFile?.date ?? 'none'}): today's cloud scan didn't run, so scanning ALL sources.`);
   } else {
@@ -188,7 +194,10 @@ for (const r of out) {
 writeFileSync(new URL('../scan/digest.md', import.meta.url), md);
 
 const brief = r => ({ i: r.i, name: r.name, url: r.url, state: r.state, group: r.group, status: String(r.status) });
-if (!LIMIT && !ONLY_FAILED) {
+if (INPUT_DIR) {
+  // No git on this computer: hand the result to the publishing step via scan/.
+  writeFileSync(new URL('../scan/catchup.json', import.meta.url), JSON.stringify({ morningDate: failedFile?.date ?? null, catchup: { date: summary.date, scanned: summary.scanned, ok: summary.ok, stillFailed: failed.map(brief) } }, null, 1) + '\n');
+} else if (!LIMIT && !ONLY_FAILED) {
   writeFileSync(FAILED_FILE, JSON.stringify({ date: summary.date, total: summary.total, ok: summary.ok, failed: failed.map(brief) }, null, 1) + '\n');
 } else if (ONLY_FAILED && failedFile && failedFile.date === summary.date) {
   failedFile.catchup = { date: summary.date, scanned: summary.scanned, ok: summary.ok, stillFailed: failed.map(brief) };
