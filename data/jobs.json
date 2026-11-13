@@ -89,6 +89,31 @@
       "requirements": {}
     },
     {
+      "id": "aiims-delhi-radonc-prs1-medical-2026-11-13",
+      "title": "Project Research Scientist-I (Medical), ICMR project – 1 post",
+      "org": "AIIMS New Delhi (Dept. of Radiation Oncology)",
+      "category": "other",
+      "location": "New Delhi, Delhi",
+      "state": "Delhi",
+      "posts": 1,
+      "salary": "₹67,000 + HRA",
+      "mode": "Apply online",
+      "lastDate": "2026-11-13",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "ICMR-funded cervix cancer IG-IMRT trial (code I-2044). Qualification as per ICMR guidelines (MBBS); clinical-trial/public-health experience desirable. CV by email to drsuren.clinonco@aiims.edu or by hand at Room 301, Main Radiotherapy, by 5 PM on 13 Nov. Age up to 35 on the last date, relaxation as per rules.",
+      "officialUrl": "https://www.aiims.edu/index.php/en/notices/recruitment/aiims-recruitment?id=25006",
+      "noticePdf": "https://www.aiims.edu/images/pdf/recruitment/advertisement/readiationonco-29-10-26.pdf",
+      "sourceUrl": "https://www.aiims.edu/index.php/en/notices/recruitment/aiims-recruitment?id=25006",
+      "verified": true,
+      "requirements": {
+        "maxAge": 35,
+        "ageOn": "2026-11-13",
+        "ageRelax": true
+      },
+      "addedOn": "2026-11-13"
+    },
+    {
       "id": "gmc-udhampur-junior-resident-2026-11-14",
       "title": "Junior Resident (tenure) – 18 posts",
       "org": "Government Medical College, Udhampur",
@@ -382,6 +407,59 @@
       }
     },
     {
+      "id": "jmc-jamnagar-mo-class2-2026-11-17",
+      "title": "Medical Officer Class-2 – 5 posts (Advt 08/2026-27)",
+      "org": "Jamnagar Municipal Corporation",
+      "category": "mo",
+      "location": "Jamnagar, Gujarat",
+      "state": "Gujarat",
+      "posts": 5,
+      "salary": "Level-9, ₹53,100–1,67,800 (fixed ₹53,100 + allowances during 2-yr probation)",
+      "mode": "Apply online",
+      "lastDate": "2026-11-17",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS with Gujarat Medical Council registration (per summary; notice in Gujarati). Apply on OJAS (ojas.gujarat.gov.in) by 23:59 on 17 Nov; selection by written test (CBRT/OMR) and interview. Age 18–35 on 17 Nov 2026, with relaxation for women and Gujarat reserved categories (max 45).",
+      "officialUrl": "https://www.mcjamnagar.com/information/recruitment.aspx",
+      "noticePdf": "https://www.mcjamnagar.com/jmcForms/req/GENERAL%20ADMINISTRATION%20DEPARTMENTADV.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/jmc-recruitment-2026-staff-nurse-class-gynecologist-class-3076337",
+      "verified": true,
+      "requirements": {
+        "maxAge": 35,
+        "ageOn": "2026-11-17",
+        "ageRelax": true,
+        "councils": [
+          "Gujarat Medical Council"
+        ]
+      },
+      "addedOn": "2026-11-13"
+    },
+    {
+      "id": "sainik-school-tilaiya-mo-2026-11-17",
+      "title": "Medical Officer (contract) – 1 post",
+      "org": "Sainik School Tilaiya",
+      "category": "mo",
+      "location": "Tilaiya Dam, Koderma, Jharkhand",
+      "state": "Jharkhand",
+      "posts": 1,
+      "salary": "₹70,000/month fixed",
+      "mode": "Apply offline",
+      "lastDate": "2026-11-17",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS from a recognised institution; 2 years' experience in govt/reputed hospitals desirable. Application with DD (₹400 Gen/OBC, ₹250 SC/ST) must reach the Principal by 17 Nov; selection by written test, skill test and interview. 11-month contract; age 18–50 as on 1 Oct 2026.",
+      "officialUrl": "https://www.sainikschooltilaiya.org/careers/",
+      "noticePdf": "https://www.sainikschooltilaiya.org/wp-content/uploads/2026/10/PUBLICATION-OF-ADVERTISEMENT-.pdf",
+      "sourceUrl": "https://www.mysarkarinaukri.com/find/sainik-school-tilaiya-jobs/167043",
+      "verified": true,
+      "requirements": {
+        "maxAge": 50,
+        "ageOn": "2026-10-01",
+        "ageRelax": false
+      },
+      "addedOn": "2026-11-13"
+    },
+    {
       "id": "afms-ssc-mo-nov-2026",
       "title": "Medical Officer – Short Service Commission (120 posts)",
       "org": "Armed Forces Medical Services (Indian Army)",
@@ -525,10 +603,11 @@
       "officialUrl": "https://chatra.nic.in/",
       "sourceUrl": "https://www.freejobalert.com/articles/dmft-chatra-medical-officer-recruitment-2026-apply-offline-for-15-posts-3078179",
       "addedOn": "2026-11-13",
-      "verified": false,
+      "verified": true,
       "requirements": {
         "registration": "any"
-      }
+      },
+      "noticePdf": "https://cdn.s3waas.gov.in/s3ff4d5fbbafdf976cfdc032e3bde78de5/uploads/2026/11/17936897891706.pdf"
     },
     {
       "id": "aiims-bhopal-jr-nonacad-2026-11-19",
@@ -703,17 +782,64 @@
       "location": "Leh, Ladakh",
       "state": "Ladakh",
       "posts": 1,
-      "salary": null,
+      "salary": "₹95,000/month fixed",
       "mode": "Apply offline",
       "lastDate": "2026-11-20",
       "eventDate": null,
       "eligibility": "after-internship",
-      "eligibilityNote": "Contract MO at ECHS Polyclinic Leh; offline application to ECHS Cell, Stn HQ Leh by 20 Nov. Aggregator reports MBBS with 5 years post-internship experience and interview in the third week of December — unconfirmed; check the advertisement on echs.gov.in.",
+      "eligibilityNote": "MBBS with minimum 5 years' experience after internship (additional qualification in Medicine/Surgery preferred). Application in duplicate must reach ECHS Cell, Stn HQ Leh by 20 Nov; interview in the third week of December, date by phone/SMS/email. 60% posts for ex-servicemen, 40% civilians.",
       "officialUrl": "https://www.echs.gov.in/advertisement.php",
       "sourceUrl": "https://www.mysarkarinaukri.com/find/ex-servicemen-contributory-health-scheme-echs-jobs/166675",
       "addedOn": "2026-11-13",
-      "verified": false,
-      "requirements": {}
+      "verified": true,
+      "requirements": {},
+      "noticePdf": "https://www.echs.gov.in/assets/advertisement/Advt%20for%20Stn%20HQ%20Leh%20on%2020%20Nov.pdf"
+    },
+    {
+      "id": "sail-cfp-chandrapur-gdmo-2026-11-20",
+      "title": "General Duty Medical Officer (contract) – 1 post, walk-in",
+      "org": "SAIL – Chandrapur Ferro Alloy Plant (CFP)",
+      "category": "mo",
+      "location": "Chandrapur, Maharashtra",
+      "state": "Maharashtra",
+      "posts": 1,
+      "salary": "₹90,000/month consolidated",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-20",
+      "eventDate": "2026-11-20",
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS with MCI/NMC registration. Document verification 20 Nov at 10 AM and interview at 2:30 PM, HRD Center, SAIL-CFP, Mul Road, Chandrapur; bring originals, bio-data form and fitness certificate. One-year contract (8 hrs/day, 6 days/week), extendable; upper age 70.",
+      "officialUrl": "https://sailcareers.com",
+      "noticePdf": "https://aima-web-images.s3.ap-south-1.amazonaws.com/sailcareers.com/Downloads/SAIL-CFP_News%20&%20Jobs_13112026_094312.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/sail-general-duty-medical-officer-recruitment-2026-walkin-3080862",
+      "verified": true,
+      "requirements": {
+        "registration": "any",
+        "maxAge": 70,
+        "ageRelax": false
+      },
+      "addedOn": "2026-11-13"
+    },
+    {
+      "id": "echs-barnala-mo-2026-11-20",
+      "title": "Medical Officer – 2 posts, ECHS Polyclinic",
+      "org": "ECHS, Station HQ (ECHS Cell) Barnala",
+      "category": "mo",
+      "location": "Barnala, Punjab",
+      "state": "Punjab",
+      "posts": 2,
+      "salary": "₹95,000/month fixed",
+      "mode": "Apply offline",
+      "lastDate": "2026-11-20",
+      "eventDate": "2026-11-25",
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS. Application in the prescribed format must reach OIC, Stn HQ (ECHS Cell) Barnala by 20 Nov; interview 25 Nov (report 9 AM, Air Force Station Barnala) with originals. Contract 11 months for civilians.",
+      "officialUrl": "https://www.echs.gov.in",
+      "noticePdf": "https://www.echs.gov.in/assets/advertisement/Advt%20for%20Barnala%20RC%20Chandimandir%20on%2020%20Nov.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/echs-barnala-recruitment-2026-apply-offline-for-9-clerk-driver-and-more-posts-3077131",
+      "verified": true,
+      "requirements": {},
+      "addedOn": "2026-11-13"
     },
     {
       "id": "dmft-dhanbad-mo-48-2026-11-21",
@@ -732,8 +858,35 @@
       "officialUrl": "https://doctorrg.egovdhn.in/",
       "sourceUrl": "https://www.freejobalert.com/articles/dmft-dhanbad-recruitment-2026-medical-officer-3077230",
       "addedOn": "2026-11-13",
-      "verified": false,
-      "requirements": {}
+      "verified": true,
+      "requirements": {},
+      "noticePdf": "https://cdn.s3waas.gov.in/s337f0e884fbad9667e38940169d0a3c95/uploads/17933632561062.pdf"
+    },
+    {
+      "id": "aiims-mangalagiri-tutor-2026-11-21",
+      "title": "Tutor/Demonstrator (contract) – 2 posts (Anatomy, Pharmacology)",
+      "org": "AIIMS Mangalagiri",
+      "category": "other",
+      "location": "Mangalagiri, Andhra Pradesh",
+      "state": "Andhra Pradesh",
+      "posts": 2,
+      "salary": "₹56,100 basic (Level 10) + allowances incl. NPA",
+      "mode": "Apply online",
+      "lastDate": "2026-11-21",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS with compulsory internship completed (MD/MS desirable); non-medical Master's also eligible. Apply via the Google form in the notice by 21 Nov (no walk-in); fee ₹1,500 Gen/EWS/OBC, ₹1,000 SC/ST. Interview at AIIMS Mangalagiri, MCQ test if many apply. One-year contract; max age 37 on closing date.",
+      "officialUrl": "https://www.aiimsmangalagiri.edu.in/vacancies",
+      "noticePdf": "https://www.aiimsmangalagiri.edu.in/wp-content/uploads/2026/10/Advertisement-for-recruitment-of-Tutors.-Demonstrators-on-contractual-basis-October-2026.pdf",
+      "sourceUrl": "https://www.aiimsmangalagiri.edu.in/vacancies",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "lastDate",
+        "maxAge": 37,
+        "ageOn": "2026-11-21",
+        "ageRelax": true
+      },
+      "addedOn": "2026-11-13"
     },
     {
       "id": "iit-gandhinagar-resident-doctor-2026-11-25",
@@ -889,6 +1042,27 @@
       }
     },
     {
+      "id": "echs-mumbai-ins-angre-mo-2026-11-27",
+      "title": "Medical Officer – ECHS Polyclinics Mumbai & RC Mumbai (contract)",
+      "org": "ECHS, Station HQ INS Angre (Mumbai)",
+      "category": "mo",
+      "location": "Mumbai, Maharashtra",
+      "state": "Maharashtra",
+      "posts": null,
+      "salary": "₹95,000/month fixed",
+      "mode": "Apply offline",
+      "lastDate": "2026-11-27",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS with minimum 3 years' experience. MO posts at Polyclinic Mumbai (INHS Asvini) and Regional Centre Mumbai (aggregator counts 5). Application must reach Stn HQ ECHS, INS Angre, SBS Road, Mumbai by 27 Nov; interview date by phone. One-year contract.",
+      "officialUrl": "https://www.echs.gov.in",
+      "noticePdf": "https://www.echs.gov.in/assets/advertisement/Advt%20for%20Stn%20HQ%20INS%20Angra%20on%2027%20Nov.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/echs-recruitment-2026-clerk-deo-peon-3077706",
+      "verified": true,
+      "requirements": {},
+      "addedOn": "2026-11-13"
+    },
+    {
       "id": "nit-agartala-mo-campus-doctor-2026-11-28",
       "title": "Medical Officer / Campus Doctor – 2 posts (contract)",
       "org": "NIT Agartala",
@@ -938,6 +1112,51 @@
         ]
       },
       "noticePdf": "https://www.igims.org/resources/uploads/TenderManagement/179421839322.pdf"
+    },
+    {
+      "id": "nitrd-delhi-mo-2026-11-30",
+      "title": "Medical Officer (regular, Group A) – 2 posts",
+      "org": "National Institute of TB & Respiratory Diseases (NITRD)",
+      "category": "mo",
+      "location": "New Delhi, Delhi",
+      "state": "Delhi",
+      "posts": 2,
+      "salary": null,
+      "mode": "Apply offline",
+      "lastDate": "2026-11-30",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Reported: MBBS with medical council registration; PG in TB/chest or TB-programme experience preferred; age up to 45 on 30 Nov. Application by post to the Director, NITRD, Sri Aurobindo Marg, to reach by 3:30 PM on 30 Nov. Official notice could not be opened — check nitrd.mohfw.gov.in.",
+      "officialUrl": "https://nitrd.mohfw.gov.in/vacancy/",
+      "sourceUrl": "https://centralstatejobs.in/jobs/nitrd-specialist-and-medical-officer-recruitment-2026",
+      "verified": false,
+      "requirements": {},
+      "addedOn": "2026-11-13"
+    },
+    {
+      "id": "ucms-mru-rs1-medical-2026-12-01",
+      "title": "Research Scientist-I (Medical/Non-medical), MRU – 1 post",
+      "org": "University College of Medical Sciences & GTB Hospital",
+      "category": "other",
+      "location": "Delhi, Delhi",
+      "state": "Delhi",
+      "posts": 1,
+      "salary": "₹56,000 + HRA",
+      "mode": "Apply online",
+      "lastDate": "2026-12-01",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS (or BE/B.Tech Biotech, first-class Master's in life sciences, or M.Sc + PhD); MD/PhD desirable. Email application with documents to nodalofficermru@gmail.com and fill the Google form by 4 PM on 1 Dec; interview/test date by email. Age limit 35 on the last date, relaxation as per ICMR-DHR norms.",
+      "officialUrl": "https://ucms.ac.in/",
+      "noticePdf": "https://ucms-bucket-mumbai.s3.ap-south-1.amazonaws.com/recruitment/2/194/9aVigGu6FUxJ9hoSAyqCWq8KMGJO8SQfIiZaaKbI.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/ucms-recruitment-2026-lab-assistant-data-entry-operator-3080314",
+      "verified": true,
+      "requirements": {
+        "maxAge": 35,
+        "ageOn": "2026-12-01",
+        "ageRelax": true
+      },
+      "addedOn": "2026-11-13"
     },
     {
       "id": "crpf-gdmo-contract-walkin-2026-12-02",
@@ -1035,6 +1254,29 @@
       "addedOn": "2026-11-13",
       "verified": false,
       "requirements": {}
+    },
+    {
+      "id": "gsvm-kanpur-mru-rs1-2026-12-03",
+      "title": "Research Scientist-I, MRU – 1 post",
+      "org": "GSVM Medical College, Kanpur",
+      "category": "other",
+      "location": "Kanpur, Uttar Pradesh",
+      "state": "Uttar Pradesh",
+      "posts": 1,
+      "salary": "₹56,000 + HRA",
+      "mode": "Apply offline",
+      "lastDate": "2026-12-03",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Multi-Disciplinary Research Unit contract post. MBBS (or BE/B.Tech Biotech, first-class Master's in life sciences, or M.Sc + PhD); MD/PhD desirable. Applications by 3 Dec 2026; age limit 35. Notice is a scanned Hindi/English PDF — check fee and submission details there.",
+      "officialUrl": "https://gsvmmedicalcollege.com",
+      "noticePdf": "https://gsvmmedicalcollege.com/wp-content/uploads/2026/11/New-Doc-11-13-2026-10.24.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/gsvm-medical-college-recruitment-2026-research-scientist-i-3080868",
+      "verified": true,
+      "requirements": {
+        "maxAge": 35
+      },
+      "addedOn": "2026-11-13"
     },
     {
       "id": "umc-navi-mumbai-rmo-dec-2026",
@@ -1249,7 +1491,70 @@
         "internshipBy": "lastDate",
         "registration": "any"
       }
+    },
+    {
+      "id": "asmc-lalitpur-nonpg-jr-rolling-2026",
+      "title": "Non-PG Junior Resident / Demonstrator / Tutor – rolling walk-in (about 10 posts)",
+      "org": "Autonomous State Medical College, Lalitpur",
+      "category": "jr",
+      "location": "Lalitpur, Uttar Pradesh",
+      "state": "Uttar Pradesh",
+      "posts": null,
+      "salary": null,
+      "mode": "Walk-in",
+      "lastDate": null,
+      "eventDate": "2026-11-17",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Walk-in every Tuesday and Friday from 22 Oct 2026, 11 AM–4 PM, until posts are filled (OBG, Medicine, Surgery and others). Bring originals, one set of self-attested copies, 2 photos, biodata and ₹500 DD in favour of the Principal.",
+      "officialUrl": "https://asmclalitpur.edu.in/notices/recruitment-notice-non-pg-junior-resident-vacancies-asmc-lalitpur/",
+      "noticePdf": "https://asmclalitpur.edu.in/wp-content/uploads/2026/10/JR-Advertisement-21-Oct.pdf",
+      "sourceUrl": "https://asmclalitpur.edu.in/notices/recruitment-notice-non-pg-junior-resident-vacancies-asmc-lalitpur/",
+      "verified": true,
+      "requirements": {},
+      "addedOn": "2026-11-13"
+    },
+    {
+      "id": "mptmc-siddharthnagar-nonpg-jr-rolling-2026",
+      "title": "Tutor / Demonstrator / Non-PG Junior Resident – 2 posts, weekly walk-in",
+      "org": "Madhav Prasad Tripathi Medical College (ASMC), Siddharthnagar",
+      "category": "jr",
+      "location": "Siddharthnagar, Uttar Pradesh",
+      "state": "Uttar Pradesh",
+      "posts": 2,
+      "salary": "Grade pay ₹5,400 + HRA if no housing",
+      "mode": "Walk-in",
+      "lastDate": null,
+      "eventDate": "2026-11-17",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Walk-in with MCQ test every Tuesday, 10 AM–2 PM, until posts are filled (notice 9 Oct 2026). Eligibility as per NMC; NOC needed if employed. Initial 3-month term, extendable.",
+      "officialUrl": "https://asmcsiddharthnagar.ac.in/",
+      "noticePdf": "https://www.asmcsiddharthnagar.ac.in/Notification_Uploads/8fb760d8eecdf15a4b4667c4a0f6574f.pdf",
+      "sourceUrl": "https://asmcsiddharthnagar.ac.in/",
+      "verified": true,
+      "requirements": {},
+      "addedOn": "2026-11-13"
+    },
+    {
+      "id": "gmc-badaun-jr-tutor-rolling-2026",
+      "title": "Junior Resident / Tutor (contract) – weekly walk-in",
+      "org": "Government Medical College, Badaun",
+      "category": "jr",
+      "location": "Badaun, Uttar Pradesh",
+      "state": "Uttar Pradesh",
+      "posts": null,
+      "salary": null,
+      "mode": "Walk-in",
+      "lastDate": null,
+      "eventDate": "2026-11-17",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Re-advertisement: walk-in every Tuesday from November until posts are filled. Post count, pay and age details are on the college website.",
+      "officialUrl": "https://gmcbadaun.edu.in/advertisement-for-jr-recruitment/",
+      "noticePdf": "https://gmcbadaun.edu.in/wp-content/uploads/2026/11/CamScanner-11-07-2026-13.07.45_1_compressed.pdf",
+      "sourceUrl": "https://gmcbadaun.edu.in/advertisement-for-jr-recruitment/",
+      "verified": true,
+      "requirements": {},
+      "addedOn": "2026-11-13"
     }
   ],
-  "updatedAt": "2026-11-13T06:57:57.211Z"
+  "updatedAt": "2026-11-13T08:31:30.421Z"
 }

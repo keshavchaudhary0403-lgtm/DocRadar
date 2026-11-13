@@ -2419,7 +2419,7 @@
     },
     {
       "name": "Dr. RML Hospital, Delhi",
-      "url": "https://rmlh.nic.in",
+      "url": "https://rmlh.mohfw.gov.in/",
       "group": "Central Hospitals",
       "state": "Delhi",
       "priority": 1,
@@ -2971,7 +2971,7 @@
     },
     {
       "name": "Karnataka PSC",
-      "url": "https://kpsc.kar.nic.in",
+      "url": "https://kpsc.karnataka.gov.in/",
       "group": "State Govt",
       "state": "Karnataka",
       "priority": 2,
@@ -6232,6 +6232,30 @@
       "state": "All India",
       "priority": 3,
       "why": "Research / project scientist posts for MBBS"
+    },
+    {
+      "name": "Jamnagar Municipal Corporation – recruitment",
+      "url": "https://www.mcjamnagar.com/information/recruitment.aspx",
+      "group": "State Govt",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Municipal Medical Officer Class-2 recruitments (via OJAS)"
+    },
+    {
+      "name": "Sainik School Tilaiya – careers",
+      "url": "https://www.sainikschooltilaiya.org/careers/",
+      "group": "Central Govt",
+      "state": "Jharkhand",
+      "priority": 2,
+      "why": "School Medical Officer contract posts"
+    },
+    {
+      "name": "GSVM Medical College, Kanpur",
+      "url": "https://gsvmmedicalcollege.com/",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MRU research posts"
     }
   ]
 }

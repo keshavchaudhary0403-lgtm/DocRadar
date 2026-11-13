@@ -1,5 +1,52 @@
 # DocRadar update log
 
+## 2026-11-13 (run 4, full scan)
+- New: 13. SAIL CFP GDMO walk-in (Maharashtra), Jamnagar MC MO Class-2 5 posts (Gujarat), Sainik School Tilaiya MO (Jharkhand), NITRD MO 2 posts (Delhi, unverified), UCMS MRU Research Scientist-I (Delhi), GSVM Kanpur MRU Research Scientist-I (Uttar Pradesh), AIIMS Delhi Radiation Oncology PRS-I Medical (Delhi, closes today), AIIMS Mangalagiri Tutor/Demonstrator 2 posts (Andhra Pradesh), ECHS INS Angre Mumbai MO (Maharashtra), ECHS Barnala MO 2 posts (Punjab), and rolling non-PG JR walk-ins at ASMC Lalitpur, MPT Medical College Siddharthnagar and GMC Badaun (Uttar Pradesh).
+- Updated: 3. DMFT Chatra and DMFT Dhanbad are now verified with their official PDFs. ECHS Leh is verified from its official PDF, with ₹95,000 pay, 5 years' post-internship experience and an interview in the third week of December.
+- State group covered: Friday (West Bengal, Assam, Sikkim, Meghalaya, Andaman and Nicobar Islands), with all 14 rotation queries plus extended reruns. Nothing new; the open WB district notices are AYUSH, nursing or pharmacist only.
+- Listing tables:
+  - FreeJobAlert medical table: 221 rows read (all open rows, back to Oct and earlier). About 30 already listed, 6 added, the rest skipped (SR/faculty/PG-only, AYUSH/BDS/nursing, non-medical).
+  - MySarkariNaukri: 220 rows read, 3 candidates.
+  - GovtJobsAlert: 108 rows read, 1 candidate.
+  - SahiSarkariJobs: 7 rows read, 0 new.
+  - CentralStateJobs: about 82 rows read, 3 candidates.
+  - Medical Dialogues jobs: 24 rows, all stale (latest Feb 2026).
+  - Reconciliation, every open MBBS row in the FJA table is either listed or skipped. Skips and reasons:
+    - IIM Mumbai MO (needs 5 years' experience, closes today)
+    - GMC Haldwani Scientist-B (qualification not stated in the notice)
+    - BCECEB SR/Tutor 575 (appears PG-oriented, unclear)
+    - ESIC Delhi SR-against-GDMO (PG preferred / MBBS with 2 years, notice not reachable)
+    - ESIC Korba, Chennai and Ludhiana SR (PG)
+    - NIEPMD (per-visit doctor)
+    - Jhargram, Rampurhat, Purulia, Birbhum, Tirunelveli MO posts (AYUSH)
+    - PGIMER MO (MHA/MPH)
+    - IPGMER-SSKM house staff (own alumni only, closes today)
+    - ECHS Meerut (BAMS)
+    - RIMS JR (BDS)
+    - Visva-Bharati radiologist (MD)
+    - Chennai Port Sr Dy CMO (senior)
+- Searches run: about 125 web searches, plus about 300 page/PDF fetches via curl.
+- Sources: scanned 779 of 779 · ok 533 · failed 246.
+  - Every section of the digest was reviewed by index range.
+  - On retry, 23 failed sources loaded (powergrid, nclcil, nmdc, hindustancopper, bharatpetroleum, niih, cochinport, coalindia, iocl, TGPSC, GMERS Vadnagar/Valsad, Sumandeep, RPGMC Tanda, GMC Chandrapur/Gadchiroli, NIT Nagaland/Jalandhar, BBAU, AIIMS Patna, LHMC, sknmcgh, sarkariresult).
+  - Central/PSU/defence failures were covered by site:/topic searches: NTPC, BHEL, BEL, MCL, NALCO, NLC, NPCIL, CPCL, RCF, CGHS, BMHRC, ITBP, CISF, Assam Rifles, BSF, railway CMP, cantonment boards, AIIMS Guwahati/Rajkot/Jodhpur/Bibinagar/Patna, JIPMER, GMCH Chandigarh, RML, AMU, ESIC. Nothing new and open.
+  - Failed and still not covered: about 150 state-government and medical-college hosts that reset the connection from the cloud. These include most *.gov.in / *.nic.in state portals (Rajasthan, Tripura, Telangana, TN, UP DGMH/DGME/UPPSC, WB health/HR/PSC, AP DME, Haryana DMER, Gujarat, Karnataka, MP, Odisha, Punjab, Bihar, Assam NHM/PSC), all 14 Assam medical colleges, the Odisha medical colleges (SCB, MKCG, VSS etc.), RCC Trivandrum, SCTIMST, AFMC, ESIC Andheri, AIIMS Bhopal/Jodhpur/Rajkot/Bibinagar/Guwahati, and the zonal railway and cantonment sites. Plus 403s: natboard, careers.ntpc, rectt.bsf, iitgn, gitam, skims, jnmc, gmcparbhani, kims.kiit, medicalcollegekolkata, fortis, max.
+- Sources: rmlh.nic.in changed to rmlh.mohfw.gov.in and kpsc.kar.nic.in to kpsc.karnataka.gov.in. Added Jamnagar MC recruitment, Sainik School Tilaiya careers, and GSVM Medical College Kanpur. bbmb.gov.in and ruhscms.org/Recruitments.aspx now redirect to error pages; no replacement found.
+- Coverage check: Odisha, Rajasthan, Chhattisgarh, HP, Goa, Puducherry, Chandigarh, Arunachal, Manipur, Mizoram, Nagaland, Sikkim, DNH&DD and Lakshadweep each got a search; all leads found were closed. No category is empty.
+- Leads not listed:
+  - NHM Uttarakhand MO walk-in, 16 vacancies, held today 13 Nov in Dehradun. The next date is not announced; the second Friday of December is likely.
+  - ASMC Firozabad EMO (non-PG JR) walk-in, today.
+  - CIMS Chhindwara JR rolling walk-in (Tue/Thu; JR eligibility unreadable in the scan).
+  - GMERS Morbi JR/Tutor rolling walk-in (next date not stated).
+  - GMC Mahasamund JR/Tutor walk-in (page blocked).
+  - IIT Indore locum MO (rolling since July, 2 years' experience, apply page 404).
+  - MANUU Hyderabad campus doctors (5+ years).
+  - IHBAS Delhi JR walk-in cancelled; fresh notification awaited.
+  - RUHS MODRE-2026 written exam reportedly 13 Dec and HPPSC MO screening exam pending (both unconfirmed).
+  - ISRO HSFC MO extended to 22 Nov but needs MD/DNB.
+  - No NEET-PG 2027, INI-CET July 2027 or NExT notice yet. UPSC calendar matches CMS 2027 (notification 3 Mar, last date 23 Mar, exam 18 Jul 2027).
+  - The ANIIMS Lady MO notice was re-published on andamannicobar.gov.in, with no date change.
+
 ## 2026-11-13 (run 3, INCOMPLETE: fetch and search limits)
 - New: 2, both unverified: CMO Baghpat NHM MO/Female MO, 23 posts (Uttar Pradesh), ECHS Leh MO (Ladakh)
 - Updated: 0. NHPC eventDate (19 Nov) and KSSM, ASACS and AFMS dates were rechecked, with no confirmed change.
