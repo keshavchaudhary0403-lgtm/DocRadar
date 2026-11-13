@@ -21,7 +21,8 @@ exam tracker for MBBS doctors anywhere in India. The site is deployed on Vercel 
 3. Do ALL of it, in order. FIRST read EVERY row of the listing tables in section 1b (all pages
    back 21 days) and add every open MBBS listing that isn't in jobs.json. Then run EVERY all-India
    query in section 2a (including 30–37) AND today's state group in section 2b, then scan EVERY
-   site in data/sources.json. Verify each listing against its official notice (find the original PDF for
+   site in data/sources.json, every day, in parallel batches with subagents (section 3). No
+   skipping and no time cutoff: the run log must show all sources attempted. Verify each listing against its official notice (find the original PDF for
    noticePdf), update data/jobs.json including "state" and the "requirements" object, run
    node scripts/maintain.mjs until it passes, do the coverage check and the reconciliation
    against the FreeJobAlert table (section 7), write the run log in

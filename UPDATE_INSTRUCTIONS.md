@@ -120,8 +120,9 @@ If a query returns little or stale results, rerun it once with the more thorough
 36. `"social security mission" OR "ESIS" OR "Sainik School" OR "Kendriya Vidyalaya" "medical officer" <M Y>`
 37. `CMO OR "Chief Medical Officer" office NHM "medical officer" MBBS <M Y> -AYUSH`
 
-### 2b. State rotation (every state, every week)
-Each day, cover that weekday's group. Run all three queries for **each** state or UT in it:
+### 2b. State search rotation (extra state-by-state searches)
+The rotation below is only for these extra searches. Sources are scanned every day for every
+state (section 3). Each day, cover that weekday's group. Run all three queries for **each** state or UT in it:
 - `<State> "medical officer" recruitment MBBS <M Y>`
 - `<State> "junior resident" walk-in MBBS <M Y>`
 - `NHM <State> "medical officer" vacancy <M Y>` (skip for UTs without their own NHM site)
@@ -145,30 +146,26 @@ in section 3) so it's scanned from then on.
 `sources.json` lists 750+ official websites across India. Each has a `state` (a state/UT name, or
 `"All India"`) and a `group` (National portals, Exams, Defence, Govt Medical Officer, PSUs,
 Central Govt, Central Hospitals, State Govt, Medical colleges, Aggregators, Private, Research).
-PSUs, IITs/NITs, ICMR institutes, railway zones, ports and medical colleges carry the `state` of
-their headquarters/campus, so they are scanned on that state's weekday (rule 2 below).
+**Scan EVERY source in `sources.json` EVERY day. No rotation, no skipping, no time cutoff.**
+Users must be able to trust that every site listed on the Sources page was checked this morning.
 
-Scan them on this schedule, so **every source is checked at least once a week** and the national
-ones every day:
-1. **Every day:** every source whose `state` is `"All India"` (national portals, exams, defence,
-   CAPF, nationwide PSU/railway career portals, aggregators, private hospital chains and job portals, research).
-2. **Every day:** every source whose `state` is in **today's state group** from section 2b
-   (state health departments, NHM, PSCs, recruitment boards, AIIMS and medical colleges in those states).
-3. **Any day:** a source whose site appeared in today's search results with a fresh notice.
-4. **Priority 1 sources** (`"priority": 1`) are scanned every day whatever their state.
-
-A state-group day is about 130–230 sources, so scan in this order and keep the run finishing:
-- **Full scan** (follow one level of links into the recruitment page if needed): groups State Govt,
-  Central Hospitals, Govt Medical Officer and PSUs, plus every `"All India"` source.
-- **Quick scan** (one WebFetch of the listed URL only, no link-following; move on unless it shows a
-  notice dated in the last 21 days): groups Medical colleges and Central Govt (IITs, NITs,
-  universities, ICMR institutes, cantonment boards, railway zones, ports).
-- If time runs short, finish the full-scan groups first and record in the run log how many of
-  today's quick-scan sources were reached. The listing tables (1b) and searches (2) cover the rest.
+How to get through all of them (750+):
+- **Split the list into batches of about 50–100 sources and scan the batches in parallel** with
+  subagents (the Agent / Task tool) if available. Give each subagent its batch (name, url, group,
+  state), section 1's "what to look for" and section 5's listing format, and have it return
+  candidate listings plus a list of sources it could not load. If subagents aren't available,
+  scan the batches one after another until every source is done.
+- Every source gets at least one WebFetch of its listed URL. If that page is a homepage with no
+  notices on it, follow the single link labelled recruitment / careers / notices / vacancies /
+  walk-in. Groups State Govt, Central Hospitals, Govt Medical Officer, PSUs and every
+  `"All India"` source may follow one more level if notices are a click deeper.
+- The run is not finished until every source has been attempted. A source counts as done when it
+  was scanned, or when it failed to load and was covered by a `site:<domain> recruitment <M Y>`
+  search instead.
 
 For each source:
 - Use WebFetch on the URL and look for recruitment / careers / walk-in / notices / latest jobs
-  sections (follow links only for full-scan groups, as above).
+  sections (following links as described above).
 - Collect anything matching section 1 with a last date of today or later, or no date yet.
 - If a site fails to load (timeout, 403, captcha), don't retry endlessly. Note it for the run log
   (step 8) and cover it with a search like `site:<domain> recruitment <M Y>`.
@@ -307,7 +304,7 @@ Append one entry to the top of `data/update-log.md` (create the file if missing)
 - Updated: N (what changed)
 - State group covered: <weekday> – list of states
 - Listing tables: rows read N · already listed N · added N · skipped N (reasons)
-- Searches run: N · Sources scanned: N (All India: N, today's states: full N / quick N of M) · failed: list domains or "none"
+- Searches run: N · Sources: scanned N of TOTAL (must equal TOTAL with the failed ones) · failed (covered by site: search): list domains or "none"
 - Notes: anything odd (conflicting dates, sites down, possible upcoming notifications)
 ```
 Keep only the latest 60 entries.

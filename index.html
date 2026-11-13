@@ -1118,7 +1118,7 @@ function viewSites(){
   const groups = {};
   SOURCES.forEach(s => (groups[s.group] = groups[s.group] || []).push(s));
   const states = new Set(SOURCES.map(s => s.state).filter(x => x && x !== "All India")).size;
-  return `<section class="page-head"><h1>Sources</h1><p>Where DocRadar looks. National sources are checked every morning; each state's sources on its day of the week, and web searches cover all of India daily.</p></section>
+  return `<section class="page-head"><h1>Sources</h1><p>Where DocRadar looks. Every source below is checked every morning, along with web searches across all of India.</p></section>
     <div class="stats src-stats">
       <div class="stat" style="--tone:var(--accent)"><span class="lbl">${ic("globe")}Websites</span><div class="num">${SOURCES.length}</div></div>
       <div class="stat" style="--tone:var(--indigo)"><span class="lbl">${ic("search")}Searches / day</span><div class="num">~55</div></div>
