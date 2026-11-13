@@ -670,7 +670,7 @@ const TIPS = {
 const tip = k => `<button type="button" class="tip-btn" data-tip="${k}" aria-label="What does this mean?" aria-expanded="false">${ic("info")}</button>`;
 
 const PF_FIELDS = ["internshipEnd","regStatus","council","neetPg","dob","category","attemptsOk","gender"];
-const GROUP_C = {"State Govt":"#e5484d","Central Hospitals":"#f97316","National portals":"#14b8a6","Defence":"#65a30d","Exams":"#a855f7","Govt JR / SR":"#6366f1","Govt Medical Officer":"#0d9488","Medical colleges":"#8b5cf6","Aggregators":"#0ea5e9","Private":"#f59e0b","Research":"#ec4899"};
+const GROUP_C = {"PSUs":"#d97706","Central Govt":"#0891b2","State Govt":"#e5484d","Central Hospitals":"#f97316","National portals":"#14b8a6","Defence":"#65a30d","Exams":"#a855f7","Govt JR / SR":"#6366f1","Govt Medical Officer":"#0d9488","Medical colleges":"#8b5cf6","Aggregators":"#0ea5e9","Private":"#f59e0b","Research":"#ec4899"};
 
 const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
@@ -729,7 +729,7 @@ function openRunSheet(){
     <div class="grab" id="grab"><i></i><button class="icon-btn sheet-close" data-close aria-label="Close">${ic("x")}</button></div>
     <div class="sh-head" style="--c:${color}"><div class="cat-ic">${ic("radar")}</div>
       <div><div class="eyebrow">Daily scan</div><h2 id="sh-title">${esc(f.long)}</h2>
-      <div class="org" style="white-space:normal">DocRadar scans ${SOURCES.length} websites and runs about 45 web searches across India every morning.</div></div></div>
+      <div class="org" style="white-space:normal">DocRadar scans ${SOURCES.length} websites and runs about 55 web searches across India every morning.</div></div></div>
     ${f.level === "bad" ? `<div class="callout" style="--tone:var(--red);--tone-soft:var(--red-soft)">${ic("alert")}<div><b>The daily scan seems to have stopped</b>Listings may be out of date. Check the official sites under Sources, and ask whoever set up DocRadar to check the scheduled task.</div></div>` : ""}
     ${last ? `<div class="runkv">
       <div><b>${num(get(last, "new"))}</b><span>new listings${last.date !== UPDATED ? ` (${fmt(last.date, {day:"numeric", month:"short"})})` : ""}</span></div>
@@ -1097,7 +1097,7 @@ function viewSaved(){
       ${closed.map(j => mini(j, (state.applied[j.id] ? "applied · " : "") + "closed " + fmt(j.lastDate, {day:"numeric", month:"short"}))).join("")}</details>` : ""}`;
 }
 
-const GROUP_IC = {"National portals":"globe","Exams":"book","Defence":"shield","Govt Medical Officer":"steth","Central Hospitals":"hospital","Govt JR / SR":"hospital","State Govt":"building","Medical colleges":"building","Aggregators":"search","Private":"hospital","Research":"flask"};
+const GROUP_IC = {"PSUs":"building","Central Govt":"shield","National portals":"globe","Exams":"book","Defence":"shield","Govt Medical Officer":"steth","Central Hospitals":"hospital","Govt JR / SR":"hospital","State Govt":"building","Medical colleges":"building","Aggregators":"search","Private":"hospital","Research":"flask"};
 let srcGroup = "all", srcQ = "";
 function srcListHTML(){
   const dom = u => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return u; } };
@@ -1121,7 +1121,7 @@ function viewSites(){
   return `<section class="page-head"><h1>Sources</h1><p>Where DocRadar looks. National sources are checked every morning; each state's sources on its day of the week, and web searches cover all of India daily.</p></section>
     <div class="stats src-stats">
       <div class="stat" style="--tone:var(--accent)"><span class="lbl">${ic("globe")}Websites</span><div class="num">${SOURCES.length}</div></div>
-      <div class="stat" style="--tone:var(--indigo)"><span class="lbl">${ic("search")}Searches / day</span><div class="num">~45</div></div>
+      <div class="stat" style="--tone:var(--indigo)"><span class="lbl">${ic("search")}Searches / day</span><div class="num">~55</div></div>
       <div class="stat" style="--tone:var(--green)"><span class="lbl">${ic("map")}States &amp; UTs</span><div class="num">${states}</div></div>
     </div>
     <label class="search src-search">${ic("search")}<input id="src-q" type="search" placeholder="Search a state, AIIMS, NHM, PSC…" value="${esc(srcQ)}" autocomplete="off"></label>

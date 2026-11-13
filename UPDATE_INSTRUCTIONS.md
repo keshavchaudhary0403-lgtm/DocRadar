@@ -142,22 +142,33 @@ medical college, a hospital group) that isn't in `sources.json`, **add it** (see
 in section 3) so it's scanned from then on.
 
 ## 3. Scan the sources in `data/sources.json`
-`sources.json` lists 150+ official websites across India. Each has a `state` (a state/UT name, or
-`"All India"`) and a `group` (National portals, Exams, Defence, Govt Medical Officer, Central
-Hospitals, State Govt, Medical colleges, Aggregators, Private, Research).
+`sources.json` lists 750+ official websites across India. Each has a `state` (a state/UT name, or
+`"All India"`) and a `group` (National portals, Exams, Defence, Govt Medical Officer, PSUs,
+Central Govt, Central Hospitals, State Govt, Medical colleges, Aggregators, Private, Research).
+PSUs, IITs/NITs, ICMR institutes, railway zones, ports and medical colleges carry the `state` of
+their headquarters/campus, so they are scanned on that state's weekday (rule 2 below).
 
 Scan them on this schedule, so **every source is checked at least once a week** and the national
 ones every day:
 1. **Every day:** every source whose `state` is `"All India"` (national portals, exams, defence,
-   CAPF / Railways / PSUs, aggregators, private hospital chains and job portals, research).
+   CAPF, nationwide PSU/railway career portals, aggregators, private hospital chains and job portals, research).
 2. **Every day:** every source whose `state` is in **today's state group** from section 2b
    (state health departments, NHM, PSCs, recruitment boards, AIIMS and medical colleges in those states).
 3. **Any day:** a source whose site appeared in today's search results with a fresh notice.
 4. **Priority 1 sources** (`"priority": 1`) are scanned every day whatever their state.
 
+A state-group day is about 130–230 sources, so scan in this order and keep the run finishing:
+- **Full scan** (follow one level of links into the recruitment page if needed): groups State Govt,
+  Central Hospitals, Govt Medical Officer and PSUs, plus every `"All India"` source.
+- **Quick scan** (one WebFetch of the listed URL only, no link-following; move on unless it shows a
+  notice dated in the last 21 days): groups Medical colleges and Central Govt (IITs, NITs,
+  universities, ICMR institutes, cantonment boards, railway zones, ports).
+- If time runs short, finish the full-scan groups first and record in the run log how many of
+  today's quick-scan sources were reached. The listing tables (1b) and searches (2) cover the rest.
+
 For each source:
 - Use WebFetch on the URL and look for recruitment / careers / walk-in / notices / latest jobs
-  sections. Follow one level of links into a recruitment page if needed.
+  sections (follow links only for full-scan groups, as above).
 - Collect anything matching section 1 with a last date of today or later, or no date yet.
 - If a site fails to load (timeout, 403, captcha), don't retry endlessly. Note it for the run log
   (step 8) and cover it with a search like `site:<domain> recruitment <M Y>`.
@@ -171,8 +182,9 @@ separate site from `sarkariresult.com`.
 
 ### Adding sources
 When you add a source, use the same fields as the others:
-`{"name", "url", "group", "state", "priority", "why"}`. `state` is the full state/UT name or
-`"All India"`; `priority` is 1 for the busiest national sites, otherwise 2.
+`{"name", "url", "group", "state", "priority", "why"}`. `group` is one of the groups listed at the
+top of this section. `state` is the full state/UT name or `"All India"`; `priority` is 1 for the
+busiest national sites, otherwise 2.
 
 ## 4. Verify each candidate
 For every listing you plan to add or update:
@@ -295,7 +307,7 @@ Append one entry to the top of `data/update-log.md` (create the file if missing)
 - Updated: N (what changed)
 - State group covered: <weekday> – list of states
 - Listing tables: rows read N · already listed N · added N · skipped N (reasons)
-- Searches run: N · Sources scanned: N (All India: N, today's states: N) · failed: list domains or "none"
+- Searches run: N · Sources scanned: N (All India: N, today's states: full N / quick N of M) · failed: list domains or "none"
 - Notes: anything odd (conflicting dates, sites down, possible upcoming notifications)
 ```
 Keep only the latest 60 entries.

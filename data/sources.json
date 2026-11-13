@@ -106,14 +106,6 @@
       "why": "CAPF Medical Officer walk-ins"
     },
     {
-      "name": "Coal India",
-      "url": "https://www.coalindia.in",
-      "group": "Govt Medical Officer",
-      "state": "All India",
-      "priority": 2,
-      "why": "PSU Medical Officer posts"
-    },
-    {
       "name": "Indian Railways",
       "url": "https://indianrailways.gov.in/railwayboard/",
       "group": "Govt Medical Officer",
@@ -122,9 +114,17 @@
       "why": "Contract Medical Officer walk-ins at railway hospitals"
     },
     {
+      "name": "Coal India",
+      "url": "https://www.coalindia.in",
+      "group": "PSUs",
+      "state": "All India",
+      "priority": 2,
+      "why": "PSU Medical Officer posts"
+    },
+    {
       "name": "NTPC",
       "url": "https://careers.ntpc.co.in",
-      "group": "Govt Medical Officer",
+      "group": "PSUs",
       "state": "All India",
       "priority": 2,
       "why": "PSU Medical Officer posts"
@@ -132,10 +132,2210 @@
     {
       "name": "SAIL",
       "url": "https://www.sail.co.in",
-      "group": "Govt Medical Officer",
+      "group": "PSUs",
       "state": "All India",
       "priority": 2,
       "why": "PSU hospital Medical Officer posts"
+    },
+    {
+      "name": "SAIL Careers (all plants)",
+      "url": "https://sailcareers.com",
+      "group": "PSUs",
+      "state": "All India",
+      "priority": 2,
+      "why": "Official SAIL portal hosting plant-level GDMO walk-in PDFs (Salem Nov 2026, Rourkela, Bhilai); robots-blocked, cover by search"
+    },
+    {
+      "name": "Hindustan Shipyard",
+      "url": "https://www.hslvizag.in",
+      "group": "PSUs",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "MO posts"
+    },
+    {
+      "name": "RINL Vizag Steel",
+      "url": "https://www.vizagsteel.com",
+      "group": "PSUs",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Steel plant hospital: MO posts"
+    },
+    {
+      "name": "Numaligarh Refinery",
+      "url": "https://www.nrl.co.in",
+      "group": "PSUs",
+      "state": "Assam",
+      "priority": 2,
+      "why": "Township hospital: MO posts"
+    },
+    {
+      "name": "Oil India",
+      "url": "https://www.oil-india.com",
+      "group": "PSUs",
+      "state": "Assam",
+      "priority": 2,
+      "why": "Oil India Hospital Duliajan: MO / contract doctor posts"
+    },
+    {
+      "name": "Bhakra Beas Management Board",
+      "url": "https://bbmb.gov.in",
+      "group": "PSUs",
+      "state": "Chandigarh",
+      "priority": 2,
+      "why": "BBMB hospitals: MO posts"
+    },
+    {
+      "name": "South Eastern Coalfields (SECL)",
+      "url": "https://www.secl-cil.in",
+      "group": "PSUs",
+      "state": "Chhattisgarh",
+      "priority": 2,
+      "why": "Coal India subsidiary hospitals: MO posts"
+    },
+    {
+      "name": "Airports Authority of India",
+      "url": "https://www.aai.aero",
+      "group": "PSUs",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "MO posts"
+    },
+    {
+      "name": "BHEL",
+      "url": "https://careers.bhel.in",
+      "group": "PSUs",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "BHEL hospitals: MO posts"
+    },
+    {
+      "name": "GAIL",
+      "url": "https://gailonline.com",
+      "group": "PSUs",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "Plant hospitals: MO posts"
+    },
+    {
+      "name": "ONGC",
+      "url": "https://ongcindia.com",
+      "group": "PSUs",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "ONGC hospitals: MO / contract doctor posts"
+    },
+    {
+      "name": "NHPC",
+      "url": "https://www.nhpcindia.com",
+      "group": "PSUs",
+      "state": "Haryana",
+      "priority": 2,
+      "why": "Project hospitals: MO posts"
+    },
+    {
+      "name": "Power Grid",
+      "url": "https://www.powergrid.in",
+      "group": "PSUs",
+      "state": "Haryana",
+      "priority": 2,
+      "why": "Medical officer posts"
+    },
+    {
+      "name": "SJVN",
+      "url": "https://sjvn.nic.in",
+      "group": "PSUs",
+      "state": "Himachal Pradesh",
+      "priority": 2,
+      "why": "Project hospitals: MO posts"
+    },
+    {
+      "name": "Bharat Coking Coal (BCCL)",
+      "url": "https://www.bcclweb.in",
+      "group": "PSUs",
+      "state": "Jharkhand",
+      "priority": 2,
+      "why": "Coal India subsidiary hospitals: MO posts"
+    },
+    {
+      "name": "Central Coalfields (CCL)",
+      "url": "https://www.centralcoalfields.in",
+      "group": "PSUs",
+      "state": "Jharkhand",
+      "priority": 2,
+      "why": "Coal India subsidiary hospitals: MO / specialist posts"
+    },
+    {
+      "name": "Uranium Corporation (UCIL)",
+      "url": "https://ucil.gov.in",
+      "group": "PSUs",
+      "state": "Jharkhand",
+      "priority": 2,
+      "why": "Mine hospitals: MO posts"
+    },
+    {
+      "name": "BEL",
+      "url": "https://bel-india.in",
+      "group": "PSUs",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "BEL hospitals: MO posts"
+    },
+    {
+      "name": "BEML",
+      "url": "https://www.bemlindia.in",
+      "group": "PSUs",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "BEML hospitals: MO posts"
+    },
+    {
+      "name": "HAL",
+      "url": "https://hal-india.co.in",
+      "group": "PSUs",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "HAL hospitals: MO posts"
+    },
+    {
+      "name": "Cochin Shipyard",
+      "url": "https://cochinshipyard.in",
+      "group": "PSUs",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "MO posts"
+    },
+    {
+      "name": "FACT",
+      "url": "https://www.fact.co.in",
+      "group": "PSUs",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "FACT hospital: MO posts"
+    },
+    {
+      "name": "HLL Lifecare",
+      "url": "https://www.lifecarehll.com",
+      "group": "PSUs",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "Health PSU: MO / project doctor posts"
+    },
+    {
+      "name": "Northern Coalfields (NCL)",
+      "url": "https://www.nclcil.in",
+      "group": "PSUs",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "Coal India subsidiary hospitals: MO posts"
+    },
+    {
+      "name": "BPCL",
+      "url": "https://www.bharatpetroleum.in",
+      "group": "PSUs",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Refinery hospitals: MO posts"
+    },
+    {
+      "name": "HPCL",
+      "url": "https://www.hindustanpetroleum.com",
+      "group": "PSUs",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Refinery hospitals: MO posts"
+    },
+    {
+      "name": "Indian Oil (IOCL)",
+      "url": "https://iocl.com",
+      "group": "PSUs",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Refinery hospitals: MO / retainer doctor posts"
+    },
+    {
+      "name": "Indian Rare Earths (IREL)",
+      "url": "https://www.irel.co.in",
+      "group": "PSUs",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "MO posts"
+    },
+    {
+      "name": "MOIL",
+      "url": "https://www.moil.nic.in",
+      "group": "PSUs",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Mine hospitals: MO posts"
+    },
+    {
+      "name": "Mazagon Dock",
+      "url": "https://mazagondock.in",
+      "group": "PSUs",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Dock hospital: MO posts"
+    },
+    {
+      "name": "NPCIL",
+      "url": "https://www.npcilcareers.co.in",
+      "group": "PSUs",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Nuclear plant hospitals: MO posts"
+    },
+    {
+      "name": "RCF",
+      "url": "https://www.rcfltd.com",
+      "group": "PSUs",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "RCF hospital: MO posts"
+    },
+    {
+      "name": "Western Coalfields (WCL)",
+      "url": "https://www.westerncoal.in",
+      "group": "PSUs",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Coal India subsidiary hospitals: MO posts"
+    },
+    {
+      "name": "NEEPCO",
+      "url": "https://neepco.co.in",
+      "group": "PSUs",
+      "state": "Meghalaya",
+      "priority": 2,
+      "why": "Project hospitals: MO posts"
+    },
+    {
+      "name": "Mahanadi Coalfields (MCL)",
+      "url": "https://www.mahanadicoal.in",
+      "group": "PSUs",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "Coal India subsidiary hospitals: MO / contract doctor posts"
+    },
+    {
+      "name": "NALCO",
+      "url": "https://nalcoindia.com",
+      "group": "PSUs",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "NALCO hospitals: MO posts"
+    },
+    {
+      "name": "Hindustan Zinc",
+      "url": "https://www.hzlindia.com",
+      "group": "PSUs",
+      "state": "Rajasthan",
+      "priority": 2,
+      "why": "Company hospitals: MO posts"
+    },
+    {
+      "name": "Chennai Petroleum (CPCL)",
+      "url": "https://www.cpcl.co.in",
+      "group": "PSUs",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Refinery hospital: MO posts"
+    },
+    {
+      "name": "NLC India",
+      "url": "https://www.nlcindia.in",
+      "group": "PSUs",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "NLC General Hospital: MO posts"
+    },
+    {
+      "name": "Bharat Dynamics (BDL)",
+      "url": "https://bdl-india.in",
+      "group": "PSUs",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "MO posts"
+    },
+    {
+      "name": "ECIL",
+      "url": "https://www.ecil.co.in",
+      "group": "PSUs",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "ECIL hospital: MO posts"
+    },
+    {
+      "name": "Mishra Dhatu Nigam",
+      "url": "https://midhani-india.in",
+      "group": "PSUs",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "MO posts"
+    },
+    {
+      "name": "NMDC",
+      "url": "https://www.nmdc.co.in",
+      "group": "PSUs",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Mine hospitals (Chhattisgarh, Karnataka): MO posts"
+    },
+    {
+      "name": "Singareni Collieries (SCCL)",
+      "url": "https://scclmines.com",
+      "group": "PSUs",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Company hospitals: MO / contract doctor posts"
+    },
+    {
+      "name": "National Fertilizers (NFL)",
+      "url": "https://www.nationalfertilizers.com",
+      "group": "PSUs",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Plant hospitals: MO posts"
+    },
+    {
+      "name": "THDC India Ltd careers",
+      "url": "https://www.thdc.co.in",
+      "group": "PSUs",
+      "state": "Uttarakhand",
+      "priority": 2,
+      "why": "Repeated ad hoc GDMO walk-ins (Apr and Nov 2026)"
+    },
+    {
+      "name": "Damodar Valley Corporation",
+      "url": "https://www.dvc.gov.in",
+      "group": "PSUs",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "DVC hospitals: MO posts"
+    },
+    {
+      "name": "Garden Reach Shipbuilders (GRSE)",
+      "url": "https://grse.in",
+      "group": "PSUs",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "MO posts"
+    },
+    {
+      "name": "Hindustan Copper",
+      "url": "https://www.hindustancopper.com",
+      "group": "PSUs",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "Mine hospitals: MO posts"
+    },
+    {
+      "name": "Airports Authority of India",
+      "url": "https://www.aai.aero/en/careers/recruitment",
+      "group": "Central Govt",
+      "state": "All India",
+      "priority": 2,
+      "why": "AAI: medical officer / part-time doctor posts"
+    },
+    {
+      "name": "CGHS",
+      "url": "https://cghs.mohfw.gov.in/",
+      "group": "Central Govt",
+      "state": "All India",
+      "priority": 2,
+      "why": "CGHS: contract/retired Medical Officer posts at wellness centres"
+    },
+    {
+      "name": "DGHS",
+      "url": "https://dghs.mohfw.gov.in/vacancy-tenders.php",
+      "group": "Central Govt",
+      "state": "All India",
+      "priority": 2,
+      "why": "DGHS: central health vacancies incl. MO/GDMO"
+    },
+    {
+      "name": "Department of Atomic Energy",
+      "url": "https://dae.gov.in/notice-category/vacancy-notices/",
+      "group": "Central Govt",
+      "state": "All India",
+      "priority": 2,
+      "why": "DAE: medical officer vacancies in DAE units"
+    },
+    {
+      "name": "Directorate General Defence Estates",
+      "url": "https://dgde.gov.in/",
+      "group": "Central Govt",
+      "state": "All India",
+      "priority": 2,
+      "why": "DGDE: cantonment hospital recruitment notices"
+    },
+    {
+      "name": "ECHS Central Organisation",
+      "url": "https://www.echs.gov.in/advertisement.php",
+      "group": "Central Govt",
+      "state": "All India",
+      "priority": 2,
+      "why": "ECHS polyclinics: contract Medical Officer vacancies"
+    },
+    {
+      "name": "ICMR Recruitment Portal",
+      "url": "https://recruitment.icmr.org.in/",
+      "group": "Central Govt",
+      "state": "All India",
+      "priority": 2,
+      "why": "ICMR central portal: Medical Officer/Scientist/project posts across institutes"
+    },
+    {
+      "name": "ISRO Careers",
+      "url": "https://www.isro.gov.in/Careers.html",
+      "group": "Central Govt",
+      "state": "All India",
+      "priority": 2,
+      "why": "ISRO centres: Medical Officer posts"
+    },
+    {
+      "name": "Indo-Tibetan Border Police",
+      "url": "https://www.itbp.mha.gov.in/",
+      "group": "Central Govt",
+      "state": "All India",
+      "priority": 2,
+      "why": "CAPF: Medical Officer / GDMO recruitment"
+    },
+    {
+      "name": "MoHFW",
+      "url": "https://www.mohfw.gov.in/",
+      "group": "Central Govt",
+      "state": "All India",
+      "priority": 2,
+      "why": "Health ministry: central MO/GDMO notices"
+    },
+    {
+      "name": "National Disaster Response Force",
+      "url": "https://www.ndrf.gov.in/en/job-opportunity.html",
+      "group": "Central Govt",
+      "state": "All India",
+      "priority": 2,
+      "why": "CAPF: MO deputation/contract posts"
+    },
+    {
+      "name": "National Security Guard",
+      "url": "https://nsg.mha.gov.in/document/vacancies",
+      "group": "Central Govt",
+      "state": "All India",
+      "priority": 2,
+      "why": "CAPF: contract MO / GDMO vacancies"
+    },
+    {
+      "name": "Railway Protection Force",
+      "url": "https://rpf.indianrailways.gov.in/RPF/Recruitments/Upcoming.jsp",
+      "group": "Central Govt",
+      "state": "All India",
+      "priority": 2,
+      "why": "CAPF/railway force recruitment notices"
+    },
+    {
+      "name": "Sashastra Seema Bal",
+      "url": "https://ssb.mha.gov.in/recruitment",
+      "group": "Central Govt",
+      "state": "All India",
+      "priority": 2,
+      "why": "CAPF: Medical Officer / contract GDMO recruitment"
+    },
+    {
+      "name": "Shipping Ministry Port Vacancy Portal",
+      "url": "https://onlinevacancy.shipmin.nic.in/",
+      "group": "Central Govt",
+      "state": "All India",
+      "priority": 2,
+      "why": "Common portal for major port MO/CMO applications"
+    },
+    {
+      "name": "eChhawani Cantonment Boards Portal",
+      "url": "https://cantt.gov.in/",
+      "group": "Central Govt",
+      "state": "All India",
+      "priority": 2,
+      "why": "Cantonment boards portal: links to all cantt hospital vacancies"
+    },
+    {
+      "name": "ICMR-RMRC Sri Vijaya Puram (Port Blair)",
+      "url": "http://rmrc.res.in/career/recruitment.html",
+      "group": "Central Govt",
+      "state": "Andaman and Nicobar Islands",
+      "priority": 2,
+      "why": "ICMR regional centre: project MO posts"
+    },
+    {
+      "name": "Central University of Andhra Pradesh",
+      "url": "https://cuap.ac.in/recruitment/",
+      "group": "Central Govt",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "IISER Tirupati",
+      "url": "https://www.iisertirupati.ac.in/job/",
+      "group": "Central Govt",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "IISER health centre: Medical Officer posts"
+    },
+    {
+      "name": "IIT Tirupati",
+      "url": "https://www.iittp.ac.in/recruitment",
+      "group": "Central Govt",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "IIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "NIT Andhra Pradesh",
+      "url": "https://nitandhra.ac.in/main/careers.php",
+      "group": "Central Govt",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "South Coast Railway",
+      "url": "https://scor.indianrailways.gov.in/offerings/vacancies",
+      "group": "Central Govt",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Railway zone: contract MO / CMP walk-ins"
+    },
+    {
+      "name": "Visakhapatnam Port Authority",
+      "url": "https://www.vizagport.com/careers/",
+      "group": "Central Govt",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Port hospital: MO / contract doctor posts"
+    },
+    {
+      "name": "NIT Arunachal Pradesh",
+      "url": "https://www.nitap.ac.in/notices/?type=RECRUITMENT",
+      "group": "Central Govt",
+      "state": "Arunachal Pradesh",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Rajiv Gandhi University",
+      "url": "https://rgu.ac.in/recruitments",
+      "group": "Central Govt",
+      "state": "Arunachal Pradesh",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "Assam University Silchar",
+      "url": "https://www.aus.ac.in/recruitment-nonteaching/",
+      "group": "Central Govt",
+      "state": "Assam",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "IIT Guwahati",
+      "url": "https://www.iitg.ac.in/iitg_reqr",
+      "group": "Central Govt",
+      "state": "Assam",
+      "priority": 2,
+      "why": "IIT hospital: Medical Officer posts"
+    },
+    {
+      "name": "LGBRIMH Tezpur",
+      "url": "https://lgbrimh.gov.in/career.html",
+      "group": "Central Govt",
+      "state": "Assam",
+      "priority": 2,
+      "why": "Central mental health institute: JR / MO posts"
+    },
+    {
+      "name": "NIT Silchar",
+      "url": "https://www.nits.ac.in/recruitment-view-all",
+      "group": "Central Govt",
+      "state": "Assam",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Northeast Frontier Railway",
+      "url": "https://nfr.indianrailways.gov.in/offerings/vacancies",
+      "group": "Central Govt",
+      "state": "Assam",
+      "priority": 2,
+      "why": "Railway zone: contract MO / CMP walk-ins"
+    },
+    {
+      "name": "Tezpur University",
+      "url": "http://www.tezu.ernet.in/other/jobs.htm",
+      "group": "Central Govt",
+      "state": "Assam",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "Central University of South Bihar",
+      "url": "https://www.cusb.ac.in/",
+      "group": "Central Govt",
+      "state": "Bihar",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "Danapur Cantonment Board",
+      "url": "https://danapur.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Bihar",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "East Central Railway",
+      "url": "https://ecr.indianrailways.gov.in/offerings/vacancies",
+      "group": "Central Govt",
+      "state": "Bihar",
+      "priority": 2,
+      "why": "Railway zone: contract MO / CMP walk-ins"
+    },
+    {
+      "name": "ICMR-RMRIMS Patna",
+      "url": "https://www.rmrims.org.in/",
+      "group": "Central Govt",
+      "state": "Bihar",
+      "priority": 2,
+      "why": "ICMR institute: project MO posts (site blocks some networks)"
+    },
+    {
+      "name": "IIT Patna",
+      "url": "https://www.iitp.ac.in/vacancies",
+      "group": "Central Govt",
+      "state": "Bihar",
+      "priority": 2,
+      "why": "IIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Mahatma Gandhi Central University",
+      "url": "https://www.mgcub.ac.in/recruitment",
+      "group": "Central Govt",
+      "state": "Bihar",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "NIT Patna",
+      "url": "https://www.nitp.ac.in/Others/recruitment",
+      "group": "Central Govt",
+      "state": "Bihar",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Guru Ghasidas Vishwavidyalaya",
+      "url": "https://www.ggu.ac.in/",
+      "group": "Central Govt",
+      "state": "Chhattisgarh",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "IIT Bhilai",
+      "url": "https://www.iitbhilai.ac.in/",
+      "group": "Central Govt",
+      "state": "Chhattisgarh",
+      "priority": 2,
+      "why": "IIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "NIT Raipur",
+      "url": "https://www.nitrr.ac.in/advertisement.php",
+      "group": "Central Govt",
+      "state": "Chhattisgarh",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "South East Central Railway",
+      "url": "https://secr.indianrailways.gov.in/offerings/vacancies",
+      "group": "Central Govt",
+      "state": "Chhattisgarh",
+      "priority": 2,
+      "why": "Railway zone: contract MO / CMP walk-ins"
+    },
+    {
+      "name": "Delhi Cantonment Board",
+      "url": "https://delhi.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "Cantonment General Hospital: contract MO posts"
+    },
+    {
+      "name": "ICMR-NICHR",
+      "url": "https://nichr.icmr.org.in/career",
+      "group": "Central Govt",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "ICMR child health institute: project MO posts"
+    },
+    {
+      "name": "ICMR-NIDHR (NIMS) New Delhi",
+      "url": "https://nidhr.icmr.org.in/",
+      "group": "Central Govt",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "ICMR institute: consultant (scientific-medical) / project MO posts"
+    },
+    {
+      "name": "ICMR-NIMR Delhi",
+      "url": "https://nimr.icmr.org.in/notifications/vacancies",
+      "group": "Central Govt",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "ICMR malaria institute: project MO field posts"
+    },
+    {
+      "name": "IIT Delhi",
+      "url": "https://home.iitd.ac.in/jobs-iitd/index.php",
+      "group": "Central Govt",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "IIT hospital: Medical Officer posts"
+    },
+    {
+      "name": "JNU New Delhi",
+      "url": "https://www.jnu.ac.in/career",
+      "group": "Central Govt",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "Jamia Millia Islamia",
+      "url": "https://www.jmi.ac.in/BULLETIN-BOARD/Jobs/Careers@JMI",
+      "group": "Central Govt",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "NCDC Delhi",
+      "url": "https://ncdc.mohfw.gov.in/includes/Work_With_Us/Vacancies.php",
+      "group": "Central Govt",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "MoHFW disease control centre: consultant/MO epidemiology posts"
+    },
+    {
+      "name": "NIHFW New Delhi",
+      "url": "https://nihfw.ac.in/cms/vacancy.php",
+      "group": "Central Govt",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "MoHFW institute: MO / consultant contract posts"
+    },
+    {
+      "name": "NIT Delhi",
+      "url": "https://nitdelhi.ac.in/",
+      "group": "Central Govt",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "NITRD New Delhi",
+      "url": "https://nitrd.mohfw.gov.in/vacancy/",
+      "group": "Central Govt",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "Central TB hospital: Junior Resident / MO posts"
+    },
+    {
+      "name": "Northern Railway",
+      "url": "https://nr.indianrailways.gov.in/offerings/vacancies",
+      "group": "Central Govt",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "Railway zone: contract MO / CMP walk-ins"
+    },
+    {
+      "name": "South Asian University",
+      "url": "https://sau.int/recruitment/job-announcements/",
+      "group": "Central Govt",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "University health centre: Medical Officer posts"
+    },
+    {
+      "name": "University of Delhi",
+      "url": "https://www.du.ac.in/",
+      "group": "Central Govt",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "Central university WUS health centre: Medical Officer posts"
+    },
+    {
+      "name": "IIT Goa",
+      "url": "https://iitgoa.ac.in/careers-iitgoa/",
+      "group": "Central Govt",
+      "state": "Goa",
+      "priority": 2,
+      "why": "IIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Mormugao Port Authority",
+      "url": "https://www.mormugaoport.gov.in/master-controller/careers",
+      "group": "Central Govt",
+      "state": "Goa",
+      "priority": 2,
+      "why": "Port hospital: MO / contract doctor posts"
+    },
+    {
+      "name": "NIT Goa",
+      "url": "https://www.nitgoa.ac.in/recruitment.html",
+      "group": "Central Govt",
+      "state": "Goa",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Ahmedabad Cantonment Board",
+      "url": "https://ahmedabad.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "Central University of Gujarat",
+      "url": "https://www.cug.ac.in/career.php",
+      "group": "Central Govt",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "Deendayal Port Authority",
+      "url": "https://www.deendayalport.gov.in/careers/",
+      "group": "Central Govt",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Port hospital: MO / contract doctor posts"
+    },
+    {
+      "name": "ICMR-NIOH Ahmedabad",
+      "url": "https://nioh.org/recruitments/",
+      "group": "Central Govt",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "ICMR occupational health institute: project Medical Officer posts"
+    },
+    {
+      "name": "IIM Ahmedabad",
+      "url": "https://www.iima.ac.in/",
+      "group": "Central Govt",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "IIM medical centre: part-time/retainer doctor posts"
+    },
+    {
+      "name": "IIT Gandhinagar",
+      "url": "https://iitgn.ac.in/careers",
+      "group": "Central Govt",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "IIT health centre: Medical Officer posts (Cloudflare-protected)"
+    },
+    {
+      "name": "SVNIT Surat",
+      "url": "https://www.svnit.ac.in/web/jobs.php",
+      "group": "Central Govt",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Ambala Cantonment Board",
+      "url": "https://ambala.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Haryana",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "Central University of Haryana",
+      "url": "https://www.cuh.ac.in/cuh-jobs.aspx",
+      "group": "Central Govt",
+      "state": "Haryana",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "NIT Kurukshetra",
+      "url": "https://nitkkr.ac.in/recruitment/",
+      "group": "Central Govt",
+      "state": "Haryana",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Central University of Himachal Pradesh",
+      "url": "https://www.cuhimachal.ac.in/",
+      "group": "Central Govt",
+      "state": "Himachal Pradesh",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "IIT Mandi",
+      "url": "https://iitmandi.ac.in/recruitments/",
+      "group": "Central Govt",
+      "state": "Himachal Pradesh",
+      "priority": 2,
+      "why": "IIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "NIT Hamirpur",
+      "url": "https://nith.ac.in/advertisement-recruitments",
+      "group": "Central Govt",
+      "state": "Himachal Pradesh",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Central University of Jammu",
+      "url": "https://www.cujammu.ac.in/en/viewAllJobs/",
+      "group": "Central Govt",
+      "state": "Jammu and Kashmir",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "Central University of Kashmir",
+      "url": "https://www.cukashmir.ac.in/",
+      "group": "Central Govt",
+      "state": "Jammu and Kashmir",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "IIT Jammu",
+      "url": "https://www.iitjammu.ac.in/recruitments",
+      "group": "Central Govt",
+      "state": "Jammu and Kashmir",
+      "priority": 2,
+      "why": "IIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Jammu Cantonment Board",
+      "url": "https://jammu.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Jammu and Kashmir",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "NIT Srinagar",
+      "url": "https://nitsri.ac.in/Pages/JobsMain.aspx",
+      "group": "Central Govt",
+      "state": "Jammu and Kashmir",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Central University of Jharkhand",
+      "url": "https://cuj.ac.in/careers.php",
+      "group": "Central Govt",
+      "state": "Jharkhand",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "IIT (ISM) Dhanbad",
+      "url": "https://www.iitism.ac.in/career-non-faculty",
+      "group": "Central Govt",
+      "state": "Jharkhand",
+      "priority": 2,
+      "why": "IIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "NIT Jamshedpur",
+      "url": "https://www.nitjsr.ac.in/Recruitments",
+      "group": "Central Govt",
+      "state": "Jharkhand",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Ramgarh Cantonment Board",
+      "url": "https://ramgarh.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Jharkhand",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "Belagavi Cantonment Board",
+      "url": "https://belgaum.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "Central University of Karnataka",
+      "url": "https://www.cuk.ac.in/recruitment",
+      "group": "Central Govt",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "ICMR-NCDIR Bengaluru",
+      "url": "https://www.ncdirindia.org/",
+      "group": "Central Govt",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "ICMR cancer registry institute: project MO / consultant posts"
+    },
+    {
+      "name": "ICMR-NITM Belagavi",
+      "url": "https://icmrnitm.res.in/page.html?slug=careers",
+      "group": "Central Govt",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "ICMR institute: project MO posts"
+    },
+    {
+      "name": "IIM Bangalore",
+      "url": "https://www.iimb.ac.in/",
+      "group": "Central Govt",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "IIM health centre: Medical Officer posts (blocks scripted fetch)"
+    },
+    {
+      "name": "IISc Bengaluru",
+      "url": "https://www.iisc.ac.in/careers/",
+      "group": "Central Govt",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "IISc health centre: Medical Officer posts"
+    },
+    {
+      "name": "IIT Dharwad",
+      "url": "https://www.iitdh.ac.in/recruitment",
+      "group": "Central Govt",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "IIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "NIT Karnataka Surathkal",
+      "url": "https://www.nitk.ac.in/announcements",
+      "group": "Central Govt",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "New Mangalore Port Authority",
+      "url": "https://newmangaloreport.gov.in/vacancy",
+      "group": "Central Govt",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "Port hospital: MO / contract doctor posts"
+    },
+    {
+      "name": "Rail Wheel Factory Bengaluru",
+      "url": "https://rwf.indianrailways.gov.in/offerings/vacancies",
+      "group": "Central Govt",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "Railway production unit hospital: contract MO"
+    },
+    {
+      "name": "South Western Railway",
+      "url": "https://swr.indianrailways.gov.in/offerings/vacancies",
+      "group": "Central Govt",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "Railway zone: contract MO / CMP walk-ins"
+    },
+    {
+      "name": "Central University of Kerala",
+      "url": "https://www.cukerala.ac.in/",
+      "group": "Central Govt",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "Cochin Port Authority",
+      "url": "https://www.cochinport.gov.in/",
+      "group": "Central Govt",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "Port hospital: MO / contract doctor posts"
+    },
+    {
+      "name": "IIM Kozhikode",
+      "url": "https://iimk.ac.in/careers",
+      "group": "Central Govt",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "IIM medical centre: Medical Officer posts"
+    },
+    {
+      "name": "IISER Thiruvananthapuram",
+      "url": "https://www.iisertvm.ac.in/pages/careers-at-iiser-tvm",
+      "group": "Central Govt",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "IISER health centre: Medical Officer posts"
+    },
+    {
+      "name": "IIT Palakkad",
+      "url": "https://iitpkd.ac.in/",
+      "group": "Central Govt",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "IIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "NIT Calicut",
+      "url": "https://nitc.ac.in/recruitments",
+      "group": "Central Govt",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Bhopal Memorial Hospital & Research Centre",
+      "url": "https://bmhrc.ac.in/",
+      "group": "Central Govt",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "ICMR hospital: Medical Officer / residents posts"
+    },
+    {
+      "name": "Dr. Harisingh Gour Vishwavidyalaya",
+      "url": "https://www.dhsgsu.edu.in/index.php/en/recruitment",
+      "group": "Central Govt",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "ICMR-NIREH Bhopal",
+      "url": "https://nireh.icmr.org.in/",
+      "group": "Central Govt",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "ICMR environmental health institute: project MO posts"
+    },
+    {
+      "name": "ICMR-NITHR (NIRTH) Jabalpur",
+      "url": "https://www.nirth.res.in/vacancies.php",
+      "group": "Central Govt",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "ICMR tribal health institute: project Medical Officer posts"
+    },
+    {
+      "name": "IIM Indore",
+      "url": "https://iimidr.ac.in/careers/",
+      "group": "Central Govt",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "IIM medical centre: Medical Officer posts"
+    },
+    {
+      "name": "IISER Bhopal",
+      "url": "https://www.iiserb.ac.in/dofa/vacancy",
+      "group": "Central Govt",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "IISER health centre: Medical Officer posts"
+    },
+    {
+      "name": "IIT Indore",
+      "url": "https://www.iiti.ac.in/careers",
+      "group": "Central Govt",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "IIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Indira Gandhi National Tribal University",
+      "url": "https://www.igntu.ac.in/page/Recruitment",
+      "group": "Central Govt",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "Jabalpur Cantonment Board",
+      "url": "https://jabalpur.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "MANIT Bhopal",
+      "url": "https://www.manit.ac.in/content/jobs",
+      "group": "Central Govt",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Mhow Cantonment Board",
+      "url": "https://mhow.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "Sagar Cantonment Board",
+      "url": "https://sagar.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "West Central Railway",
+      "url": "https://wcr.indianrailways.gov.in/offerings/vacancies",
+      "group": "Central Govt",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "Railway zone: contract MO / CMP walk-ins"
+    },
+    {
+      "name": "AIIPMR Mumbai",
+      "url": "https://aiipmr.gov.in/Pages/Recruitment.aspx",
+      "group": "Central Govt",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Central PMR institute: MO / residents"
+    },
+    {
+      "name": "Ahilyanagar Cantonment Board",
+      "url": "https://ahmednagar.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "BARC Careers",
+      "url": "https://www.barc.gov.in/careers/",
+      "group": "Central Govt",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "DAE: Medical Officer recruitment for BARC hospitals"
+    },
+    {
+      "name": "Central Railway",
+      "url": "https://cr.indianrailways.gov.in/offerings/vacancies",
+      "group": "Central Govt",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Railway zone: contract MO / CMP walk-ins"
+    },
+    {
+      "name": "Chhatrapati Sambhajinagar Cantonment Board",
+      "url": "https://aurangabad.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "Deolali Cantonment Board",
+      "url": "https://deolali.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "ICMR-NIIH Mumbai",
+      "url": "https://www.niih.org.in/advertise-list",
+      "group": "Central Govt",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "ICMR immunohaematology institute: project MO posts"
+    },
+    {
+      "name": "ICMR-NIRWH (NIRRCH) Mumbai",
+      "url": "https://nirwoh.icmr.gov.in/",
+      "group": "Central Govt",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "ICMR women's health institute: project MO posts"
+    },
+    {
+      "name": "ICMR-NITVAR (NARI) Pune",
+      "url": "https://www.nari-icmr.res.in/Nari/Career",
+      "group": "Central Govt",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "ICMR HIV institute: project Medical Officer posts"
+    },
+    {
+      "name": "ICMR-NIV Pune",
+      "url": "https://niv.icmr.gov.in/CircularsAdvertisementsTenders.php",
+      "group": "Central Govt",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "ICMR virology institute: project MO / medical scientist posts"
+    },
+    {
+      "name": "IISER Pune",
+      "url": "https://www.iiserpune.ac.in/",
+      "group": "Central Govt",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "IISER health centre: Medical Officer posts"
+    },
+    {
+      "name": "IIT Bombay",
+      "url": "https://www.iitb.ac.in/en/careers/staff-recruitment",
+      "group": "Central Govt",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "IIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Jawaharlal Nehru Port Authority",
+      "url": "https://www.jnport.gov.in/page/careers/blFJVkdZUThLQzc4ZWdXWk4xMkZ0UT09",
+      "group": "Central Govt",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Port hospital: MO / contract doctor posts"
+    },
+    {
+      "name": "Kamptee Cantonment Board",
+      "url": "https://kamptee.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "Khadki Cantonment Board",
+      "url": "https://kirkee.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "Mumbai Port Authority",
+      "url": "https://www.mumbaiport.gov.in/",
+      "group": "Central Govt",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Port hospital: MO / contract doctor posts"
+    },
+    {
+      "name": "Pune Cantonment Board",
+      "url": "https://pune.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Sardar Vallabhbhai Patel Cantt hospital: MO posts"
+    },
+    {
+      "name": "TIFR Mumbai",
+      "url": "https://www.tifr.res.in/positions/",
+      "group": "Central Govt",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "TIFR dispensary: Medical Officer posts"
+    },
+    {
+      "name": "VNIT Nagpur",
+      "url": "https://vnit.ac.in/recruitment/",
+      "group": "Central Govt",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Western Railway",
+      "url": "https://wr.indianrailways.gov.in/offerings/vacancies",
+      "group": "Central Govt",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Railway zone: contract MO / CMP walk-ins"
+    },
+    {
+      "name": "Central Agricultural University Imphal",
+      "url": "https://cau.ac.in/recruitment-cau-imphal/",
+      "group": "Central Govt",
+      "state": "Manipur",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "Manipur University",
+      "url": "https://www.manipuruniv.ac.in/recruitment",
+      "group": "Central Govt",
+      "state": "Manipur",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "NEHU Shillong",
+      "url": "https://nehu.ac.in/",
+      "group": "Central Govt",
+      "state": "Meghalaya",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "NIT Meghalaya",
+      "url": "https://nitm.ac.in/Career/",
+      "group": "Central Govt",
+      "state": "Meghalaya",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Shillong Cantonment Board",
+      "url": "https://shillong.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Meghalaya",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "Mizoram University",
+      "url": "https://mzu.edu.in/employment-news/",
+      "group": "Central Govt",
+      "state": "Mizoram",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "NIT Mizoram",
+      "url": "https://nitmz.ac.in/category/recruitment/",
+      "group": "Central Govt",
+      "state": "Mizoram",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "NIT Nagaland",
+      "url": "https://www.nitnagaland.ac.in/index.php/recruitment",
+      "group": "Central Govt",
+      "state": "Nagaland",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Nagaland University",
+      "url": "https://nagalanduniversity.ac.in/",
+      "group": "Central Govt",
+      "state": "Nagaland",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "Central University of Odisha",
+      "url": "https://cuo.ac.in/notification_Recruitment.asp?pgid=8&subid=7",
+      "group": "Central Govt",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "ICMR-RMRC Bhubaneswar",
+      "url": "https://www.rmrcbbsr.gov.in/career/",
+      "group": "Central Govt",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "ICMR regional centre: project Medical Officer walk-ins"
+    },
+    {
+      "name": "IISER Berhampur",
+      "url": "https://www.iiserbpr.ac.in/",
+      "group": "Central Govt",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "IISER health centre: Medical Officer posts"
+    },
+    {
+      "name": "IIT Bhubaneswar",
+      "url": "https://www.iitbbs.ac.in/index.php/home/jobs/",
+      "group": "Central Govt",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "IIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "NIT Rourkela",
+      "url": "https://www.nitrkl.ac.in/Career/NonTeaching/",
+      "group": "Central Govt",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Paradip Port Authority",
+      "url": "https://paradipport.gov.in/career/",
+      "group": "Central Govt",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "Port hospital: MO / contract doctor posts"
+    },
+    {
+      "name": "ICMR-NIVCR (VCRC) Puducherry",
+      "url": "https://vcrc.icmr.org.in/",
+      "group": "Central Govt",
+      "state": "Puducherry",
+      "priority": 2,
+      "why": "ICMR vector control institute: project MO posts"
+    },
+    {
+      "name": "NIT Puducherry",
+      "url": "https://www.nitpy.ac.in/recruitment",
+      "group": "Central Govt",
+      "state": "Puducherry",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Pondicherry University",
+      "url": "https://www.pondiuni.edu.in/department/recruitment-cell/",
+      "group": "Central Govt",
+      "state": "Puducherry",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "Central University of Punjab",
+      "url": "https://cup.edu.in/non-teaching_jobs.php",
+      "group": "Central Govt",
+      "state": "Punjab",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "Ferozepur Cantonment Board",
+      "url": "https://ferozepur.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Punjab",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "IISER Mohali",
+      "url": "https://www.iisermohali.ac.in/recruitment",
+      "group": "Central Govt",
+      "state": "Punjab",
+      "priority": 2,
+      "why": "IISER health centre: Medical Officer posts"
+    },
+    {
+      "name": "IIT Ropar",
+      "url": "https://www.iitrpr.ac.in/recruitments",
+      "group": "Central Govt",
+      "state": "Punjab",
+      "priority": 2,
+      "why": "IIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Jalandhar Cantonment Board",
+      "url": "https://jalandhar.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Punjab",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "NIT Jalandhar",
+      "url": "https://nitj.ac.in/index.html?page=recruitments",
+      "group": "Central Govt",
+      "state": "Punjab",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Patiala Locomotive Works",
+      "url": "https://plw.indianrailways.gov.in/offerings/vacancies",
+      "group": "Central Govt",
+      "state": "Punjab",
+      "priority": 2,
+      "why": "Railway production unit hospital: contract MO"
+    },
+    {
+      "name": "Rail Coach Factory Kapurthala",
+      "url": "https://rcf.indianrailways.gov.in/offerings/vacancies",
+      "group": "Central Govt",
+      "state": "Punjab",
+      "priority": 2,
+      "why": "Railway production unit hospital: contract MO"
+    },
+    {
+      "name": "Central University of Rajasthan",
+      "url": "https://www.curaj.ac.in/acts/recruitments",
+      "group": "Central Govt",
+      "state": "Rajasthan",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "ICMR-NIHR Jodhpur (NIIRNCD)",
+      "url": "https://nihrjodhpur.icmr.org.in/recruitment.php",
+      "group": "Central Govt",
+      "state": "Rajasthan",
+      "priority": 2,
+      "why": "ICMR NCD institute: project Medical Officer posts"
+    },
+    {
+      "name": "IIT Jodhpur",
+      "url": "https://www.iitj.ac.in/Recruitment/",
+      "group": "Central Govt",
+      "state": "Rajasthan",
+      "priority": 2,
+      "why": "IIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "MNIT Jaipur",
+      "url": "https://mnit.ac.in/quick_links/recruitment",
+      "group": "Central Govt",
+      "state": "Rajasthan",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "North Western Railway",
+      "url": "https://nwr.indianrailways.gov.in/offerings/vacancies",
+      "group": "Central Govt",
+      "state": "Rajasthan",
+      "priority": 2,
+      "why": "Railway zone: contract MO / CMP walk-ins"
+    },
+    {
+      "name": "NIT Sikkim",
+      "url": "https://nitsikkim.ac.in/institute/job_oppurtunities.php",
+      "group": "Central Govt",
+      "state": "Sikkim",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Sikkim University",
+      "url": "https://cus.ac.in/index.php/en/",
+      "group": "Central Govt",
+      "state": "Sikkim",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "Central University of Tamil Nadu",
+      "url": "https://cutn.ac.in/careers/",
+      "group": "Central Govt",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "Chennai Port Authority",
+      "url": "https://www.chennaiport.gov.in/career",
+      "group": "Central Govt",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Port hospital: MO / contract doctor posts"
+    },
+    {
+      "name": "ICMR-NIE Chennai",
+      "url": "https://www.nie.gov.in/pages/careers",
+      "group": "Central Govt",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "ICMR institute: project MO / Scientist-B (medical) posts"
+    },
+    {
+      "name": "ICMR-NIRT Chennai",
+      "url": "https://www.nirt.res.in/",
+      "group": "Central Govt",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "ICMR TB institute: project Medical Officer walk-ins"
+    },
+    {
+      "name": "IIT Madras",
+      "url": "https://www.iitm.ac.in/careers/non-teaching-positions",
+      "group": "Central Govt",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "IIT hospital: Medical Officer posts"
+    },
+    {
+      "name": "Integral Coach Factory",
+      "url": "https://icf.indianrailways.gov.in/offerings/vacancies",
+      "group": "Central Govt",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Railway production unit hospital: contract MO"
+    },
+    {
+      "name": "Kamarajar Port",
+      "url": "https://www.kamarajarport.in/career",
+      "group": "Central Govt",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Port: medical officer / retainer doctor posts"
+    },
+    {
+      "name": "NIT Tiruchirappalli",
+      "url": "https://www.nitt.edu/home/other/jobs/",
+      "group": "Central Govt",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Southern Railway",
+      "url": "https://sr.indianrailways.gov.in/offerings/vacancies",
+      "group": "Central Govt",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Railway zone: contract MO / CMP walk-ins"
+    },
+    {
+      "name": "V.O. Chidambaranar Port Authority",
+      "url": "https://www.vocport.gov.in/careers",
+      "group": "Central Govt",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Port hospital: MO / contract doctor posts"
+    },
+    {
+      "name": "Wellington Cantonment Board",
+      "url": "https://wellington.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "EFL University",
+      "url": "https://www.efluniversity.ac.in/",
+      "group": "Central Govt",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "ICMR-NIN Hyderabad",
+      "url": "https://www.nin.res.in/",
+      "group": "Central Govt",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "ICMR nutrition institute: project MO / medical consultant posts"
+    },
+    {
+      "name": "IIT Hyderabad",
+      "url": "https://iith.ac.in/careers/",
+      "group": "Central Govt",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "IIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Maulana Azad National Urdu University",
+      "url": "https://manuu.edu.in/notifications/Employment",
+      "group": "Central Govt",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "NIT Warangal",
+      "url": "https://nitw.ac.in/page/?url=/Recruitment",
+      "group": "Central Govt",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Secunderabad Cantonment Board",
+      "url": "https://secunderabad.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Cantonment general hospital: contract MO posts"
+    },
+    {
+      "name": "South Central Railway",
+      "url": "https://scr.indianrailways.gov.in/offerings/vacancies",
+      "group": "Central Govt",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Railway zone: contract MO / CMP walk-ins"
+    },
+    {
+      "name": "University of Hyderabad",
+      "url": "https://uohyd.ac.in/careers-uoh/",
+      "group": "Central Govt",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "Tripura University",
+      "url": "https://www.tripurauniv.ac.in/",
+      "group": "Central Govt",
+      "state": "Tripura",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "Agra Cantonment Board",
+      "url": "https://agra.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "BBAU Lucknow",
+      "url": "https://www.bbau.ac.in/CareerNonTeaching25.aspx",
+      "group": "Central Govt",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "Babina Cantonment Board",
+      "url": "https://babina.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "Banaras Locomotive Works",
+      "url": "https://blw.indianrailways.gov.in/offerings/vacancies",
+      "group": "Central Govt",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Railway production unit hospital: contract MO"
+    },
+    {
+      "name": "Bareilly Cantonment Board",
+      "url": "https://bareilly.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "ICMR-NICPR Noida",
+      "url": "https://nicpr.org/career/",
+      "group": "Central Govt",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "ICMR cancer prevention institute: project MO posts (Noida, UP)"
+    },
+    {
+      "name": "ICMR-NIHR Gorakhpur (RMRC)",
+      "url": "https://nihrgkp.icmr.org.in/root/career-page.html",
+      "group": "Central Govt",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "ICMR regional centre: project MO posts (near UP)"
+    },
+    {
+      "name": "IIM Lucknow",
+      "url": "https://www.iiml.ac.in/job-detail",
+      "group": "Central Govt",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "IIM medical centre: Medical Officer posts"
+    },
+    {
+      "name": "IIT (BHU) Varanasi",
+      "url": "https://iitbhu.ac.in/recruitment_nf",
+      "group": "Central Govt",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "IIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "IIT Kanpur",
+      "url": "https://www.iitk.ac.in/staff-vacancies",
+      "group": "Central Govt",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "IIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Jhansi Cantonment Board",
+      "url": "https://jhansi.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "Kanpur Cantonment Board",
+      "url": "https://kanpur.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "Lucknow Cantonment Board",
+      "url": "https://lucknow.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "MNNIT Allahabad",
+      "url": "https://www.mnnit.ac.in/jobs-mnnit",
+      "group": "Central Govt",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Mathura Cantonment Board",
+      "url": "https://mathura.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "Meerut Cantonment Board",
+      "url": "https://meerut.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Cantonment General Hospital: contract MO posts"
+    },
+    {
+      "name": "Modern Coach Factory Raebareli",
+      "url": "https://mcf.indianrailways.gov.in/offerings/vacancies",
+      "group": "Central Govt",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Railway production unit hospital: contract MO"
+    },
+    {
+      "name": "North Central Railway",
+      "url": "https://ncr.indianrailways.gov.in/offerings/vacancies",
+      "group": "Central Govt",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Railway zone (Prayagraj): contract MO / CMP walk-ins"
+    },
+    {
+      "name": "North Eastern Railway",
+      "url": "https://ner.indianrailways.gov.in/offerings/vacancies",
+      "group": "Central Govt",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Railway zone (Gorakhpur): contract MO / CMP walk-ins"
+    },
+    {
+      "name": "Prayagraj Cantonment Board",
+      "url": "https://prayagraj.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "University of Allahabad",
+      "url": "https://www.allduniv.ac.in/about-uoa/recruitment",
+      "group": "Central Govt",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "Varanasi Cantonment Board",
+      "url": "https://varanasi.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "Dehradun Cantonment Board",
+      "url": "https://dehradun.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Uttarakhand",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "HNB Garhwal University",
+      "url": "https://www.hnbgu.ac.in/",
+      "group": "Central Govt",
+      "state": "Uttarakhand",
+      "priority": 2,
+      "why": "Central university health centre: Medical Officer posts"
+    },
+    {
+      "name": "IIT Roorkee",
+      "url": "https://iitr.ac.in/Careers/index.html",
+      "group": "Central Govt",
+      "state": "Uttarakhand",
+      "priority": 2,
+      "why": "IIT hospital: Medical Officer posts"
+    },
+    {
+      "name": "NIT Uttarakhand",
+      "url": "https://nituk.ac.in/recruitment",
+      "group": "Central Govt",
+      "state": "Uttarakhand",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "Roorkee Cantonment Board",
+      "url": "https://roorkee.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "Uttarakhand",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "AIIH&PH Kolkata",
+      "url": "https://aiihph.gov.in/recruitment",
+      "group": "Central Govt",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "Central public health institute: MO posts"
+    },
+    {
+      "name": "Barrackpore Cantonment Board",
+      "url": "https://barrackpore.cantt.gov.in/doc_category/careers/",
+      "group": "Central Govt",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "Cantonment hospital: contract MO posts"
+    },
+    {
+      "name": "Chittaranjan Locomotive Works",
+      "url": "https://clw.indianrailways.gov.in/offerings/vacancies",
+      "group": "Central Govt",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "Railway production unit hospital: contract MO"
+    },
+    {
+      "name": "Chittaranjan National Cancer Institute",
+      "url": "https://cnci.ac.in/career",
+      "group": "Central Govt",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "Central cancer institute: MO / resident posts"
+    },
+    {
+      "name": "Eastern Railway",
+      "url": "https://er.indianrailways.gov.in/offerings/vacancies",
+      "group": "Central Govt",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "Railway zone: contract MO / CMP walk-ins"
+    },
+    {
+      "name": "ICMR-NIRBI (NICED) Kolkata",
+      "url": "https://www.niced.org.in/",
+      "group": "Central Govt",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "ICMR institute: project MO / consultant medical posts"
+    },
+    {
+      "name": "IIM Calcutta",
+      "url": "https://www.iimcal.ac.in/jobsiimc",
+      "group": "Central Govt",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "IIM medical centre: Medical Officer posts"
+    },
+    {
+      "name": "IISER Kolkata",
+      "url": "https://www.iiserkol.ac.in/web/advertisements",
+      "group": "Central Govt",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "IISER health centre: Medical Officer posts"
+    },
+    {
+      "name": "IIT Kharagpur",
+      "url": "https://www.iitkgp.ac.in/non-faculty-positions",
+      "group": "Central Govt",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "IIT B.C. Roy hospital: Medical Officer posts"
+    },
+    {
+      "name": "Indian Statistical Institute",
+      "url": "https://www.isical.ac.in/public/jobs",
+      "group": "Central Govt",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "ISI health unit: Medical Officer posts"
+    },
+    {
+      "name": "Metro Railway Kolkata",
+      "url": "https://mtp.indianrailways.gov.in/offerings/vacancies",
+      "group": "Central Govt",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "Railway zone: contract MO / CMP walk-ins"
+    },
+    {
+      "name": "NIT Durgapur",
+      "url": "https://nitdgp.ac.in/p/careers",
+      "group": "Central Govt",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "NIT health centre: Medical Officer posts"
+    },
+    {
+      "name": "South Eastern Railway",
+      "url": "https://ser.indianrailways.gov.in/offerings/vacancies",
+      "group": "Central Govt",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "Railway zone: contract MO / CMP walk-ins"
+    },
+    {
+      "name": "Syama Prasad Mookerjee Port Kolkata",
+      "url": "https://smportkolkata.shipping.gov.in/smpk/en/job-openings/",
+      "group": "Central Govt",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "Port hospital: MO / retainer doctor posts"
+    },
+    {
+      "name": "Visva-Bharati",
+      "url": "https://www.visvabharati.ac.in/Recruitment.html",
+      "group": "Central Govt",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "Central university Pearson hospital: Medical Officer posts"
     },
     {
       "name": "ESIC Recruitment",
@@ -144,6 +2344,14 @@
       "state": "All India",
       "priority": 1,
       "why": "ESIC hospital JR/SR walk-ins, IMO posts"
+    },
+    {
+      "name": "Tata Memorial Centre recruitment",
+      "url": "https://tmc.gov.in",
+      "group": "Central Hospitals",
+      "state": "All India",
+      "priority": 2,
+      "why": "Regular MBBS Medical Officer walk-ins at TMC units across India"
     },
     {
       "name": "AIIMS Mangalagiri",
@@ -224,6 +2432,14 @@
       "state": "Delhi",
       "priority": 1,
       "why": "Large JR (Non-PG) intakes several times a year"
+    },
+    {
+      "name": "IHBAS Delhi",
+      "url": "https://ihbas.delhi.gov.in",
+      "group": "Central Hospitals",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "Regular JR/SR walk-ins"
     },
     {
       "name": "LHMC & Associated Hospitals",
@@ -442,6 +2658,14 @@
       "why": "JR (non-academic) and other posts"
     },
     {
+      "name": "A&N Administration vacancies",
+      "url": "https://andamannicobar.gov.in/vacancy_all",
+      "group": "State Govt",
+      "state": "Andaman and Nicobar Islands",
+      "priority": 2,
+      "why": "DHS A&N MO and health recruitment notices"
+    },
+    {
       "name": "Andhra Pradesh CFW",
       "url": "https://cfw.ap.nic.in",
       "group": "State Govt",
@@ -498,6 +2722,30 @@
       "why": "Medical Officer exams"
     },
     {
+      "name": "Assam State AIDS Control Society",
+      "url": "https://asacs.assam.gov.in",
+      "group": "State Govt",
+      "state": "Assam",
+      "priority": 2,
+      "why": "Regular MBBS MO walk-ins at ART/OST centres; robots-blocked, cover by search"
+    },
+    {
+      "name": "DHS Assam",
+      "url": "https://dhs.assam.gov.in/document/advertisements",
+      "group": "State Govt",
+      "state": "Assam",
+      "priority": 2,
+      "why": "State DHS: MO advertisements"
+    },
+    {
+      "name": "DME Assam",
+      "url": "https://dme.assam.gov.in/",
+      "group": "State Govt",
+      "state": "Assam",
+      "priority": 2,
+      "why": "State DME: tutor / SR / MO notices"
+    },
+    {
       "name": "Bihar PSC",
       "url": "https://bpsc.bihar.gov.in",
       "group": "State Govt",
@@ -512,6 +2760,14 @@
       "state": "Bihar",
       "priority": 2,
       "why": "NHM contract MO posts"
+    },
+    {
+      "name": "Health Department Bihar",
+      "url": "https://state.bihar.gov.in/health/CitizenHome.html",
+      "group": "State Govt",
+      "state": "Bihar",
+      "priority": 2,
+      "why": "State health dept: MO / GDMO notices"
     },
     {
       "name": "Chhattisgarh Health",
@@ -554,6 +2810,14 @@
       "why": "NHM contract posts in Delhi"
     },
     {
+      "name": "Indira Gandhi Hospital Dwarka",
+      "url": "https://igh.delhi.gov.in",
+      "group": "State Govt",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "Recurring ad hoc JR (MBBS) walk-ins"
+    },
+    {
       "name": "Goa Directorate of Health Services",
       "url": "https://dhs.goa.gov.in",
       "group": "State Govt",
@@ -568,6 +2832,14 @@
       "state": "Goa",
       "priority": 2,
       "why": "Medical Officer recruitment"
+    },
+    {
+      "name": "GMERS Gujarat",
+      "url": "https://gmers.gujarat.gov.in/home",
+      "group": "State Govt",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Gujarat medical education society: tutor / MO / SR posts"
     },
     {
       "name": "Gujarat NHM",
@@ -586,6 +2858,14 @@
       "why": "Medical Officer exams"
     },
     {
+      "name": "Health & FW Dept Gujarat",
+      "url": "https://gujhealth.gujarat.gov.in/",
+      "group": "State Govt",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "State health dept: Class-II MO / contract MO advertisements"
+    },
+    {
       "name": "Haryana NHM",
       "url": "https://nhmharyana.gov.in",
       "group": "State Govt",
@@ -600,6 +2880,22 @@
       "state": "Haryana",
       "priority": 2,
       "why": "Medical Officer exams"
+    },
+    {
+      "name": "Health Department Haryana",
+      "url": "https://haryanahealth.gov.in/notice-category/recruitments/",
+      "group": "State Govt",
+      "state": "Haryana",
+      "priority": 2,
+      "why": "State health dept: MO / contract doctor recruitments"
+    },
+    {
+      "name": "DHSR Himachal Pradesh",
+      "url": "https://dhsr.hp.gov.in/",
+      "group": "State Govt",
+      "state": "Himachal Pradesh",
+      "priority": 2,
+      "why": "HP directorate handling ESI: ESI hospital MO EOIs"
     },
     {
       "name": "Himachal NHM",
@@ -632,6 +2928,14 @@
       "state": "Jammu and Kashmir",
       "priority": 2,
       "why": "Medical Officer exams"
+    },
+    {
+      "name": "Health Department Jharkhand",
+      "url": "https://jharkhand.gov.in/health",
+      "group": "State Govt",
+      "state": "Jharkhand",
+      "priority": 2,
+      "why": "State health dept: MO notices"
     },
     {
       "name": "Jharkhand NHM",
@@ -672,6 +2976,14 @@
       "state": "Karnataka",
       "priority": 2,
       "why": "Medical Officer exams"
+    },
+    {
+      "name": "Insurance Medical Services Kerala",
+      "url": "https://ims.kerala.gov.in/",
+      "group": "State Govt",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "State ESI (IMS) directorate: Insurance Medical Officer posts"
     },
     {
       "name": "Kerala DHS",
@@ -722,6 +3034,14 @@
       "why": "Health dept posts"
     },
     {
+      "name": "Health Department Madhya Pradesh",
+      "url": "https://health.mp.gov.in/",
+      "group": "State Govt",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "State health dept: MO notices (site blocks some networks)"
+    },
+    {
       "name": "Madhya Pradesh NHM",
       "url": "https://www.nhmmp.gov.in",
       "group": "State Govt",
@@ -736,6 +3056,14 @@
       "state": "Madhya Pradesh",
       "priority": 2,
       "why": "Medical Officer exams"
+    },
+    {
+      "name": "Brihanmumbai Municipal Corporation",
+      "url": "https://portal.mcgm.gov.in/",
+      "group": "State Govt",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Municipal hospitals: MO / RMO / contract doctor posts"
     },
     {
       "name": "Maharashtra DMER",
@@ -762,6 +3090,22 @@
       "why": "Medical Officer exams"
     },
     {
+      "name": "NHM Manipur",
+      "url": "https://nrhmmanipur.org/",
+      "group": "State Govt",
+      "state": "Manipur",
+      "priority": 2,
+      "why": "State NHM: contract MO posts"
+    },
+    {
+      "name": "Directorate of Health Services Meghalaya",
+      "url": "https://meghealth.gov.in",
+      "group": "State Govt",
+      "state": "Meghalaya",
+      "priority": 2,
+      "why": "Medical & Health Officer walk-ins"
+    },
+    {
       "name": "Meghalaya NHM",
       "url": "https://nhmmeghalaya.nic.in",
       "group": "State Govt",
@@ -784,6 +3128,22 @@
       "state": "Nagaland",
       "priority": 2,
       "why": "NHM contract MO posts"
+    },
+    {
+      "name": "DMET Odisha",
+      "url": "https://dmetodisha.gov.in/",
+      "group": "State Govt",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "State medical education: SR / tutor / JR advertisements"
+    },
+    {
+      "name": "Health & FW Dept Odisha",
+      "url": "https://health.odisha.gov.in/or/tenders-advertisement",
+      "group": "State Govt",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "State health dept: MO advertisements"
     },
     {
       "name": "Odisha NHM",
@@ -818,6 +3178,14 @@
       "why": "Punjab health recruitment and MO posts"
     },
     {
+      "name": "Punjab Health Systems Corporation",
+      "url": "https://phsc.punjab.gov.in/en",
+      "group": "State Govt",
+      "state": "Punjab",
+      "priority": 2,
+      "why": "State health corporation: MO recruitment"
+    },
+    {
       "name": "Punjab NHM",
       "url": "https://nhm.punjab.gov.in",
       "group": "State Govt",
@@ -832,6 +3200,22 @@
       "state": "Punjab",
       "priority": 2,
       "why": "Medical Officer exams"
+    },
+    {
+      "name": "Medical Education Rajasthan",
+      "url": "https://medicaleducation.rajasthan.gov.in/",
+      "group": "State Govt",
+      "state": "Rajasthan",
+      "priority": 2,
+      "why": "State medical education: SR / MO notices"
+    },
+    {
+      "name": "Medical Health & FW Rajasthan",
+      "url": "https://health.rajasthan.gov.in/",
+      "group": "State Govt",
+      "state": "Rajasthan",
+      "priority": 2,
+      "why": "State health dept portal: MO notices"
     },
     {
       "name": "Rajasthan Health Dept",
@@ -864,6 +3248,14 @@
       "state": "Sikkim",
       "priority": 2,
       "why": "MO posts"
+    },
+    {
+      "name": "Health & FW Dept Tamil Nadu",
+      "url": "https://tnhealth.tn.gov.in/",
+      "group": "State Govt",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "State health dept: MO / contract doctor notices"
     },
     {
       "name": "Tamil Nadu MRB",
@@ -938,12 +3330,36 @@
       "why": "UP Medical Officer and lecturer posts"
     },
     {
+      "name": "Budaun district (CMO/NHM notices)",
+      "url": "https://budaun.nic.in/",
+      "group": "State Govt",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "NHM MBBS MO advertisements several times a year"
+    },
+    {
+      "name": "DGMH Uttar Pradesh",
+      "url": "https://dgmhup.gov.in/",
+      "group": "State Govt",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "UP Directorate of Medical Health: MO contract/walk-in notices (site blocks some networks)"
+    },
+    {
       "name": "UP Medical Education (DGME)",
       "url": "https://dgme.up.gov.in",
       "group": "State Govt",
       "state": "Uttar Pradesh",
       "priority": 2,
       "why": "UP govt medical college posts"
+    },
+    {
+      "name": "Medical Health & FW Uttarakhand",
+      "url": "https://health.uk.gov.in/notice-category/recruitments/",
+      "group": "State Govt",
+      "state": "Uttarakhand",
+      "priority": 2,
+      "why": "State health dept: MO recruitment notices"
     },
     {
       "name": "Uttarakhand Medical Service Selection Board",
@@ -962,12 +3378,28 @@
       "why": "NHM contract MO posts"
     },
     {
+      "name": "Birbhum District – Recruitment",
+      "url": "https://birbhum.gov.in/notice_category/recruitment/",
+      "group": "State Govt",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "Direct PDFs of DHFWS Birbhum & Rampurhat NHM MO/GDMO notices; reachable when wbhealth.gov.in fails"
+    },
+    {
       "name": "West Bengal Health",
       "url": "https://www.wbhealth.gov.in",
       "group": "State Govt",
       "state": "West Bengal",
       "priority": 2,
       "why": "Health dept MO posts"
+    },
+    {
+      "name": "West Bengal Health HR portal (district NHM notices)",
+      "url": "https://hr.wbhealth.gov.in",
+      "group": "State Govt",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "District Health & Family Welfare Samiti notices (GDMO/MO under NHM) and online applications"
     },
     {
       "name": "West Bengal Health Recruitment Board",
@@ -986,12 +3418,868 @@
       "why": "Medical Officer exams"
     },
     {
+      "name": "ANIIMS Sri Vijaya Puram",
+      "url": "https://aniims.andamannicobar.gov.in/",
+      "group": "Medical colleges",
+      "state": "Andaman and Nicobar Islands",
+      "priority": 2,
+      "why": "Only A&N medical college; posts MO/LMO/JR contract notices"
+    },
+    {
+      "name": "ACSR Govt Medical College Nellore / GGH Nellore (district portal notices)",
+      "url": "https://spsnellore.ap.gov.in/past-notices/recruitment/",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Alluri Sitarama Raju Academy of Medical Sciences (ASRAM), Eluru",
+      "url": "https://asram.edu.in/",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Andhra Medical College Visakhapatnam (KGH)",
+      "url": "https://amc.edu.in/recruitment/",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "DME Andhra Pradesh (SR/JR notifications)",
+      "url": "https://dme.ap.nic.in/",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Dr NTR University of Health Sciences",
+      "url": "https://drntr.uhsap.in/",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "GITAM Institute of Medical Sciences and Research, Visakhapatnam",
+      "url": "https://www.gitam.edu/gitam-medical-college-visakhapatnam",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Government Medical College Eluru",
+      "url": "https://gmceluru-ap-gov.com/",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Machilipatnam",
+      "url": "https://www.gmcmachilipatnam-ap-gov.com/",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Nandyal",
+      "url": "https://www.gmcnandyal-ap-gov.com/",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Ongole (ex-RIMS)",
+      "url": "https://www.gmcongole.org/notifications/",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Paderu",
+      "url": "https://gmcpaderu.com/careers-vacancies",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Rajamahendravaram",
+      "url": "https://gmcrajamahendravaram.ap.gov.in/",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Srikakulam (ex-RIMS)",
+      "url": "https://gmcsrikakulam.org/",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Vizianagaram",
+      "url": "https://gmcvizianagaram.ap.gov.in/",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Govt Medical College Anantapur / GGH Anantapur (district portal notices)",
+      "url": "https://ananthapuramu.ap.gov.in/past-notices/recruitment/",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Govt Medical College Kadapa / GGH Kadapa (district portal notices)",
+      "url": "https://kadapa.ap.gov.in/past-notices/recruitment/",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Guntur Medical College / GGH Guntur",
+      "url": "https://gunturmedicalcollege.edu.in/",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Katuri Medical College, Guntur",
+      "url": "https://www.katurimedicalcollege.org/",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Konaseema Institute of Medical Sciences, Amalapuram",
+      "url": "https://www.kims.in/",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Kurnool Medical College",
+      "url": "https://kurnoolmedicalcollege.ac.in/",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "NRI Academy of Medical Sciences, Guntur",
+      "url": "https://www.nrias.net/",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Narayana Medical College, Nellore",
+      "url": "https://narayanamedicalcollege.com/",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Rangaraya Medical College Kakinada",
+      "url": "https://www.rmckakinada.com/",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "SVIMS Tirupati",
+      "url": "https://svimstpt.ap.nic.in/",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Siddhartha Medical College Vijayawada",
+      "url": "https://smcvja.org/",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Sri Venkateswara Medical College Tirupati",
+      "url": "https://svmctpt.edu.in/notifications?c=Recruitment",
+      "group": "Medical colleges",
+      "state": "Andhra Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Assam Medical College & Hospital, Dibrugarh",
+      "url": "https://amch-dibrugarh.assam.gov.in",
+      "group": "Medical colleges",
+      "state": "Assam",
+      "priority": 2,
+      "why": "Frequent walk-in PDFs including MO posts for MBBS"
+    },
+    {
+      "name": "Dhubri Medical College & Hospital",
+      "url": "https://dhubri-mch.assam.gov.in/document/career",
+      "group": "Medical colleges",
+      "state": "Assam",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Diphu Medical College & Hospital",
+      "url": "https://diphumch.assam.gov.in/document/career",
+      "group": "Medical colleges",
+      "state": "Assam",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Fakhruddin Ali Ahmed Medical College & Hospital, Barpeta",
+      "url": "https://bmch.assam.gov.in/document/career",
+      "group": "Medical colleges",
+      "state": "Assam",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Gauhati Medical College & Hospital",
+      "url": "https://gmch.assam.gov.in/document/recruitment",
+      "group": "Medical colleges",
+      "state": "Assam",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Jorhat Medical College & Hospital",
+      "url": "https://jorhatmch.assam.gov.in/document/career",
+      "group": "Medical colleges",
+      "state": "Assam",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Kokrajhar Medical College & Hospital",
+      "url": "https://kokrajharmch.assam.gov.in/",
+      "group": "Medical colleges",
+      "state": "Assam",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Lakhimpur Medical College & Hospital",
+      "url": "https://lakhimpur-mch.assam.gov.in/document/career",
+      "group": "Medical colleges",
+      "state": "Assam",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Nagaon Medical College & Hospital",
+      "url": "https://nagaonmch.assam.gov.in/index.php/document/career",
+      "group": "Medical colleges",
+      "state": "Assam",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Nalbari Medical College & Hospital",
+      "url": "https://nalbarimch.assam.gov.in/",
+      "group": "Medical colleges",
+      "state": "Assam",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Pragjyotishpur Medical College & Hospital, Guwahati",
+      "url": "https://pragjyotishpur-mch.assam.gov.in/document/career",
+      "group": "Medical colleges",
+      "state": "Assam",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Silchar Medical College & Hospital",
+      "url": "https://silchar-mch.assam.gov.in/document/career",
+      "group": "Medical colleges",
+      "state": "Assam",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Tezpur Medical College & Hospital",
+      "url": "https://tezpur-mch.assam.gov.in/document/career",
+      "group": "Medical colleges",
+      "state": "Assam",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Tinsukia Medical College & Hospital",
+      "url": "https://tinsukiamch.assam.gov.in/",
+      "group": "Medical colleges",
+      "state": "Assam",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Bhagwan Mahavir Institute of Medical Sciences, Pawapuri",
+      "url": "https://vimspawapuri.org/",
+      "group": "Medical colleges",
+      "state": "Bihar",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College, Purnea",
+      "url": "https://gmchpurnea.com/",
+      "group": "Medical colleges",
+      "state": "Bihar",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Nalanda Medical College, Patna",
+      "url": "https://nmchpatna.ac.in/",
+      "group": "Medical colleges",
+      "state": "Bihar",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Chhattisgarh DME (links new GMCs; notices)",
+      "url": "https://cgdme.in/VACANCY.php",
+      "group": "Medical colleges",
+      "state": "Chhattisgarh",
+      "priority": 2,
+      "why": "State medical education dept: recruitment notices for govt medical colleges (JR/SR/MO)"
+    },
+    {
+      "name": "Chhattisgarh Institute of Medical Sciences (CIMS), Bilaspur",
+      "url": "https://cimsbilaspur.ac.in/news_media.html",
+      "group": "Medical colleges",
+      "state": "Chhattisgarh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College, Mahasamund",
+      "url": "https://gmcmahasamund.ac.in/appointment.php",
+      "group": "Medical colleges",
+      "state": "Chhattisgarh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Late Baliram Kashyap Memorial Govt. Medical College, Jagdalpur",
+      "url": "https://gmcjagdalpur.ac.in/appointment.html",
+      "group": "Medical colleges",
+      "state": "Chhattisgarh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Late Shri Lakhiram Agrawal Memorial Govt. Medical College, Raigarh",
+      "url": "https://gmcraigarh.edu.in/vacancies.php",
+      "group": "Medical colleges",
+      "state": "Chhattisgarh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Pt. JNM Medical College, Raipur",
+      "url": "https://ptjnmcraipur.in/career.htm",
+      "group": "Medical colleges",
+      "state": "Chhattisgarh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Rajmata Shrimati Devendra Kumari Singhdeo Govt. Medical College, Ambikapur",
+      "url": "https://gmcambikapur.co.in/recruitment.php",
+      "group": "Medical colleges",
+      "state": "Chhattisgarh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "NAMO Medical Education & Research Institute, Silvassa",
+      "url": "https://namomeri.in/careers-portal/?advertisementId=1",
+      "group": "Medical colleges",
+      "state": "Dadra and Nagar Haveli and Daman and Diu",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Chacha Nehru Bal Chikitsalaya (Delhi Govt)",
+      "url": "https://cnbc.delhi.gov.in/en/doit-content/career",
+      "group": "Medical colleges",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "Delhi govt hospital/institute: JR / SR / MO posts"
+    },
+    {
+      "name": "Govind Ballabh Pant Hospital / GIPMER (Delhi Govt)",
+      "url": "https://gbpant.delhi.gov.in/recruitment",
+      "group": "Medical colleges",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "Delhi govt hospital/institute: JR / SR / MO posts"
+    },
+    {
+      "name": "Hamdard Institute of Medical Sciences & Research (HIMSR), New Delhi",
+      "url": "https://www.himsr.co.in/careers/",
+      "group": "Medical colleges",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Institute of Liver and Biliary Sciences (Delhi Govt autonomous)",
+      "url": "https://www.ilbs.in/?page=hrjobs_listing",
+      "group": "Medical colleges",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "Delhi govt hospital/institute: JR / SR / MO posts"
+    },
+    {
+      "name": "B.J. Medical College & Civil Hospital, Ahmedabad",
+      "url": "https://bjmcabd.edu.in/category/announcements/",
+      "group": "Medical colleges",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Dr. N.D. Desai Faculty of Medical Science & Research, Nadiad (DDU)",
+      "url": "https://www.ddu.ac.in/",
+      "group": "Medical colleges",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "GMERS (central portal, all GMERS colleges)",
+      "url": "https://gmers.gujarat.gov.in/",
+      "group": "Medical colleges",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "GMERS Medical College, Dharpur-Patan",
+      "url": "https://gmersmchpatan.org/",
+      "group": "Medical colleges",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "GMERS Medical College, Gandhinagar",
+      "url": "https://www.gmersmchgandhinagar.com/News",
+      "group": "Medical colleges",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "GMERS Medical College, Gotri (Vadodara)",
+      "url": "https://gmersmcgv.ac.in/",
+      "group": "Medical colleges",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "GMERS Medical College, Himmatnagar",
+      "url": "https://gmersmedicalcollegehimmatnagar.in/news",
+      "group": "Medical colleges",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "GMERS Medical College, Junagadh",
+      "url": "https://www.gmersmcjunagadh.org/",
+      "group": "Medical colleges",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "GMERS Medical College, Morbi",
+      "url": "http://gmersmorbi.com/",
+      "group": "Medical colleges",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "GMERS Medical College, Panchmahal-Godhra",
+      "url": "https://gmersgodhra.com/",
+      "group": "Medical colleges",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "GMERS Medical College, Porbandar",
+      "url": "http://gmersporbandar.com/",
+      "group": "Medical colleges",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "GMERS Medical College, Sola (Ahmedabad)",
+      "url": "https://www.gmersmchsola.com/News",
+      "group": "Medical colleges",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "GMERS Medical College, Vadnagar",
+      "url": "http://gmersmchvadnagar.com/",
+      "group": "Medical colleges",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "GMERS Medical College, Valsad",
+      "url": "https://www.gmersmcvalsad.com/",
+      "group": "Medical colleges",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College, Bhavnagar",
+      "url": "https://gmcbhavnagar.edu.in/",
+      "group": "Medical colleges",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Gujarat Cancer & Research Institute, Ahmedabad",
+      "url": "https://www.gcriindia.org/",
+      "group": "Medical colleges",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Medical College Baroda & SSG Hospital, Vadodara",
+      "url": "https://www.medicalcollegebaroda.edu.in/",
+      "group": "Medical colleges",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Narendra Modi Medical College (formerly AMC MET), Ahmedabad",
+      "url": "https://www.narendramodimedicalcollege.edu.in/download/advertisement/",
+      "group": "Medical colleges",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "PDU Government Medical College, Rajkot",
+      "url": "https://pdumcrajkot.org/latest-update",
+      "group": "Medical colleges",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Parul Institute of Medical Sciences & Research, Vadodara",
+      "url": "https://pimsr.paruluniversity.ac.in/",
+      "group": "Medical colleges",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Pramukhswami Medical College, Karamsad (Bhaikaka University)",
+      "url": "https://psmc.bhaikakauniv.edu.in/",
+      "group": "Medical colleges",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "SMIMER, Surat",
+      "url": "https://www.suratmunicipal.gov.in/smimer/Home/NewsAndUpdates",
+      "group": "Medical colleges",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Smt. NHL Municipal Medical College, Ahmedabad",
+      "url": "https://www.nhlmmc.edu.in/download/advt/",
+      "group": "Medical colleges",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Sumandeep Vidyapeeth (SBKS MI&RC, Dhiraj Hospital), Vadodara",
+      "url": "https://sumandeepuniversity.co.in/",
+      "group": "Medical colleges",
+      "state": "Gujarat",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Al-Falah School of Medical Sciences & Research Centre, Faridabad",
+      "url": "https://alfalahmedical.org/",
+      "group": "Medical colleges",
+      "state": "Haryana",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "BPS Govt. Medical College for Women, Khanpur Kalan",
+      "url": "http://www.bpsgmckhanpur.ac.in/recruitment.aspx",
+      "group": "Medical colleges",
+      "state": "Haryana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Haryana DMER recruitment (all state GMCs)",
+      "url": "https://dmer.haryana.gov.in/site/Dmer/recruitment",
+      "group": "Medical colleges",
+      "state": "Haryana",
+      "priority": 2,
+      "why": "State medical education dept: recruitment notices for govt medical colleges (JR/SR/MO)"
+    },
+    {
+      "name": "Kalpana Chawla Government Medical College, Karnal",
+      "url": "https://kcgmc.edu.in/Tender/Advertisement",
+      "group": "Medical colleges",
+      "state": "Haryana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "MM Institute of Medical Sciences & Research, Mullana (MMDU)",
+      "url": "https://mmimsr.mmumullana.org/",
+      "group": "Medical colleges",
+      "state": "Haryana",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Pt. B.D. Sharma PGIMS, Rohtak",
+      "url": "http://www.pgimsrohtak.ac.in/",
+      "group": "Medical colleges",
+      "state": "Haryana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Pt. Neki Ram Sharma Govt. Medical College, Bhiwani",
+      "url": "https://gmcbhiwani.in/",
+      "group": "Medical colleges",
+      "state": "Haryana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "SGT Medical College, Hospital & Research Institute, Gurugram",
+      "url": "https://sgtuniversity.ac.in/",
+      "group": "Medical colleges",
+      "state": "Haryana",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "SHKM Government Medical College, Nalhar (Nuh)",
+      "url": "https://gmcmewat.ac.in/Recruitment",
+      "group": "Medical colleges",
+      "state": "Haryana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Shri Atal Bihari Vajpayee Govt. Medical College, Chhainsa (Faridabad)",
+      "url": "https://www.sabvgmcfbd.edu.in/recruitment.html",
+      "group": "Medical colleges",
+      "state": "Haryana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Dr. Rajendra Prasad Govt. Medical College, Tanda",
+      "url": "https://rpgmc.ac.in/recruitments/",
+      "group": "Medical colleges",
+      "state": "Himachal Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Indira Gandhi Medical College, Shimla",
+      "url": "https://www.igmcshimla.edu.in/",
+      "group": "Medical colleges",
+      "state": "Himachal Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "MM Medical College & Hospital, Kumarhatti-Solan",
+      "url": "https://mmmch.mmusolan.org/",
+      "group": "Medical colleges",
+      "state": "Himachal Pradesh",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Pt. Jawahar Lal Nehru Govt. Medical College, Chamba",
+      "url": "https://gmcchamba.edu.in/recruitment/",
+      "group": "Medical colleges",
+      "state": "Himachal Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Government Medical College, Anantnag",
+      "url": "https://gmcanantnag.ac.in/",
+      "group": "Medical colleges",
+      "state": "Jammu and Kashmir",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College, Baramulla",
+      "url": "https://gmcbaramulla.ac.in/careers",
+      "group": "Medical colleges",
+      "state": "Jammu and Kashmir",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Government Medical College, Handwara",
+      "url": "https://gmchandwara.ac.in/",
+      "group": "Medical colleges",
+      "state": "Jammu and Kashmir",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College, Kathua",
+      "url": "https://gmckathua.in/recruitment.php",
+      "group": "Medical colleges",
+      "state": "Jammu and Kashmir",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Government Medical College, Udhampur",
+      "url": "https://gmcudhampur.in/",
+      "group": "Medical colleges",
+      "state": "Jammu and Kashmir",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "SKIMS Medical College & Hospital, Bemina",
+      "url": "https://www.skimsmc.edu.in/index.php?option=com_content&view=category&id=99&Itemid=648",
+      "group": "Medical colleges",
+      "state": "Jammu and Kashmir",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Sher-i-Kashmir Institute of Medical Sciences (SKIMS), Soura",
+      "url": "https://www.skims.ac.in/index.php/careers.html",
+      "group": "Medical colleges",
+      "state": "Jammu and Kashmir",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Medinirai Medical College & Hospital, Palamu",
+      "url": "https://mmchpalamu.org/index.php/recruitment/",
+      "group": "Medical colleges",
+      "state": "Jharkhand",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Phulo Jhano Medical College & Hospital, Dumka",
+      "url": "https://dumkamedicalcollege.org/",
+      "group": "Medical colleges",
+      "state": "Jharkhand",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "A.J. Institute of Medical Sciences, Mangaluru",
+      "url": "https://ajims.edu.in/WebPages/ViewCareers.aspx",
+      "group": "Medical colleges",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Adichunchanagiri Institute of Medical Sciences, B.G. Nagara",
+      "url": "https://bgsaims.edu.in/",
+      "group": "Medical colleges",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Father Muller Medical College, Mangaluru",
+      "url": "https://www.fathermuller.edu.in/career.php",
+      "group": "Medical colleges",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
       "name": "JSS Medical College Mysuru",
       "url": "https://jssuni.edu.in",
       "group": "Medical colleges",
       "state": "Karnataka",
       "priority": 2,
       "why": "JR / MO posts"
+    },
+    {
+      "name": "Jawaharlal Nehru Medical College (KAHER), Belagavi",
+      "url": "https://jnmc.edu/",
+      "group": "Medical colleges",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
     },
     {
       "name": "Kasturba Hospital Manipal (MAHE)",
@@ -1002,6 +4290,70 @@
       "why": "JR / MO posts"
     },
     {
+      "name": "Kempegowda Institute of Medical Sciences, Bengaluru",
+      "url": "https://www.kimsbangalore.edu.in/",
+      "group": "Medical colleges",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "RajaRajeswari Medical College and Hospital, Bengaluru",
+      "url": "https://www.rrmch.org/careers/",
+      "group": "Medical colleges",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Rajiv Gandhi University of Health Sciences (RGUHS)",
+      "url": "https://www.rguhs.ac.in/notification.html",
+      "group": "Medical colleges",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Ramaiah Medical College, Bengaluru",
+      "url": "https://www.msrmc.ac.in/",
+      "group": "Medical colleges",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "SDM College of Medical Sciences and Hospital, Dharwad",
+      "url": "https://sdmucmsh.edu.in/",
+      "group": "Medical colleges",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Shri B.M. Patil Medical College (BLDE), Vijayapura",
+      "url": "https://bldedu.ac.in/",
+      "group": "Medical colleges",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Sri Devaraj Urs Medical College, Kolar",
+      "url": "https://www.sdumc.ac.in/",
+      "group": "Medical colleges",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Sri Siddhartha Medical College, Tumakuru",
+      "url": "https://www.ssmctumkur.org/",
+      "group": "Medical colleges",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
       "name": "St John's Medical College Bengaluru",
       "url": "https://www.stjohns.in",
       "group": "Medical colleges",
@@ -1010,12 +4362,300 @@
       "why": "JR / MO posts"
     },
     {
+      "name": "Vydehi Institute of Medical Sciences and Research Centre, Bengaluru",
+      "url": "https://vims.ac.in/",
+      "group": "Medical colleges",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Yenepoya Medical College, Mangaluru",
+      "url": "https://yenepoya.edu.in/career.php",
+      "group": "Medical colleges",
+      "state": "Karnataka",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Amala Institute of Medical Sciences, Thrissur",
+      "url": "https://www.amalaims.org/",
+      "group": "Medical colleges",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
       "name": "Amrita Institute Kochi",
       "url": "https://www.amrita.edu",
       "group": "Medical colleges",
       "state": "Kerala",
       "priority": 2,
       "why": "JR / MO posts"
+    },
+    {
+      "name": "Believers Church Medical College Hospital, Thiruvalla",
+      "url": "https://www.bcmch.org/career",
+      "group": "Medical colleges",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Govt Medical College Kannur (Pariyaram)",
+      "url": "https://gmckannur.edu.in/jobs.php",
+      "group": "Medical colleges",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Jubilee Mission Medical College and Research Institute, Thrissur",
+      "url": "https://jmmcri.org/careers.html",
+      "group": "Medical colleges",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "KMCT Medical College, Kozhikode",
+      "url": "https://www.kmct.edu.in/careers/",
+      "group": "Medical colleges",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "MES Medical College, Perinthalmanna",
+      "url": "https://www.mesmedicalcollege.edu.in/career/",
+      "group": "Medical colleges",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "MOSC Medical College (Malankara Orthodox Syrian Church), Kolenchery",
+      "url": "https://moscmm.org/careers",
+      "group": "Medical colleges",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Pushpagiri Institute of Medical Sciences, Thiruvalla",
+      "url": "https://pushpagiri.in/",
+      "group": "Medical colleges",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Regional Cancer Centre Thiruvananthapuram",
+      "url": "https://rcctvm.gov.in/recruitments",
+      "group": "Medical colleges",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "SCTIMST Thiruvananthapuram",
+      "url": "https://rect.sctimst.ac.in/activeNotification",
+      "group": "Medical colleges",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Sree Gokulam Medical College and Research Foundation, Venjaramoodu",
+      "url": "https://www.sgmc.in/",
+      "group": "Medical colleges",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Travancore Medical College, Kollam",
+      "url": "https://tmc.ac.in/",
+      "group": "Medical colleges",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Chirayu Medical College & Hospital, Bhopal",
+      "url": "https://cmchbhopal.com/",
+      "group": "Medical colleges",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Dr. Laxminarayan Pandey Govt. Medical College, Ratlam",
+      "url": "https://gmcratlam.org/pages.aspx?list=24&nm=vacancy",
+      "group": "Medical colleges",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Gandhi Medical College, Bhopal",
+      "url": "https://gmcbhopal.net/vacancy-recruitment",
+      "group": "Medical colleges",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Government Medical College, Chhindwara (CIMS)",
+      "url": "https://govtmedicalcollegechhindwara.ac.in/recruitment.php",
+      "group": "Medical colleges",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Government Medical College, Datia",
+      "url": "https://datiamedicalcollege.edu.in/category/notice/",
+      "group": "Medical colleges",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Government Medical College, Seoni",
+      "url": "https://gmcseoni.edu.in/pages.aspx?list=8&nm=Recruitment",
+      "group": "Medical colleges",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Government Medical College, Sheopur",
+      "url": "https://gmcsheopur.edu.in/",
+      "group": "Medical colleges",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College, Singrauli",
+      "url": "https://gmcsingrauli.edu.in/",
+      "group": "Medical colleges",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Index Medical College Hospital & Research Centre, Indore",
+      "url": "https://indexgroup.co.in/",
+      "group": "Medical colleges",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "LN Medical College & Research Centre, Bhopal",
+      "url": "https://lnctu.ac.in/ln-medical-college/",
+      "group": "Medical colleges",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "MGM Medical College, Indore",
+      "url": "https://mgmmcindore.in/pages.aspx?list=4&nm=Notice",
+      "group": "Medical colleges",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "NSCB Medical College, Jabalpur",
+      "url": "https://nscbmc.ac.in/",
+      "group": "Medical colleges",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Nandkumar Singh Chouhan Govt. Medical College, Khandwa",
+      "url": "https://gmckhandwa.org/pages.aspx?list=8&nm=Recruitment",
+      "group": "Medical colleges",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "People's College of Medical Sciences & Research Centre, Bhopal",
+      "url": "https://www.peoplesuniversity.edu.in/medical-college-bhopal/",
+      "group": "Medical colleges",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Shrimant Rajmata Vijayaraje Scindia Govt. Medical College, Shivpuri",
+      "url": "https://srvsgmcshivpuri.edu.in/",
+      "group": "Medical colleges",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Shyam Shah Medical College, Rewa",
+      "url": "https://ssmcrewa.ac.in/",
+      "group": "Medical colleges",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Sri Aurobindo Institute of Medical Sciences, Indore",
+      "url": "https://sriaurobindouniversity.edu.in/",
+      "group": "Medical colleges",
+      "state": "Madhya Pradesh",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Armed Forces Medical College, Pune",
+      "url": "https://afmc.nic.in/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "BJ Government Medical College & Sassoon General Hospitals, Pune",
+      "url": "https://bjgmcpune.com/advertisements/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Bharat Ratna Atal Bihari Vajpayee Medical College (PMC), Pune",
+      "url": "https://www.bavmcpune.edu.in/recruitment/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Bharati Vidyapeeth (DU) Medical College, Pune",
+      "url": "https://mcpune.bharatividyapeeth.edu/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Chhatrapati Sambhaji Maharaj Government Medical College, Satara",
+      "url": "https://gmcsatara.org/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
     },
     {
       "name": "DY Patil Pune",
@@ -1034,12 +4674,484 @@
       "why": "JR / MO posts"
     },
     {
+      "name": "Dr Shankarrao Chavan Government Medical College, Nanded",
+      "url": "https://drscgmcnanded.in/recruitment",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Dr V. M. Government Medical College, Solapur",
+      "url": "https://vmgmc.edu.in/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "ESIC Medical College & Hospital / ESI-PGIMSR, Andheri, Mumbai",
+      "url": "https://mcandheri.esic.gov.in/recruitments/medical_recruitment_list",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College & Hospital, Akola",
+      "url": "https://www.gmcakola.in/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College & Hospital, Alibag",
+      "url": "https://www.gmchalibag.in/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College & Hospital, Nagpur",
+      "url": "https://gmcnagpur.org/recruitments",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College & Hospital, Ratnagiri",
+      "url": "https://gmcratnagiri.in/recruitments/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College, Ambernath",
+      "url": "https://www.gmcambernath.com/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College, Amravati",
+      "url": "https://www.gmcamravati.org/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College, Buldhana",
+      "url": "https://gmcbuldhana.org/advertisements",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College, Chandrapur",
+      "url": "https://gmcchandrapur.org/advertisement.php",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College, Chhatrapati Sambhajinagar (Aurangabad)",
+      "url": "https://www.gmcaurangabad.com/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College, Gadchiroli",
+      "url": "https://gmcgadchiroli.com/pages/news/advertisement.php",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College, Gondia",
+      "url": "https://gmcgondia.in/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College, Hingoli",
+      "url": "https://gmchingoli.in/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College, Jalgaon",
+      "url": "https://gmcjalgaon.org/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College, Jalna",
+      "url": "https://gmcjalna.org/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College, Miraj",
+      "url": "https://www.gmcmiraj.edu.in/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College, Nandurbar",
+      "url": "https://gmcnandurbar.com/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College, Parbhani",
+      "url": "https://www.gmcparbhani.org/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Grant Government Medical College & Sir JJ Group of Hospitals, Mumbai",
+      "url": "https://www.gmcjjh.edu.in/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "HBT Medical College & Dr R.N. Cooper Hospital, Mumbai",
+      "url": "https://hbtmc.edu.in/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
       "name": "KEM Hospital Mumbai",
       "url": "https://www.kem.edu",
       "group": "Medical colleges",
       "state": "Maharashtra",
       "priority": 2,
       "why": "JR / MO posts"
+    },
+    {
+      "name": "Krishna Vishwa Vidyapeeth (KIMS Karad)",
+      "url": "https://kvv.edu.in/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Lokmanya Tilak Municipal Medical College & General Hospital, Sion",
+      "url": "https://ltmgh.com/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "MGM Medical College, Navi Mumbai",
+      "url": "https://mgmmcnm.edu.in/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "MIMER Medical College, Talegaon Dabhade",
+      "url": "https://mimer.edu.in/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Padmashree Dr. D.Y. Patil Medical College, Navi Mumbai",
+      "url": "https://dypatil.edu/schools/school-of-medicine",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Pravara Institute of Medical Sciences, Loni",
+      "url": "https://www.pravara.com/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Punyashlok Ahilyadevi Holkar Government Medical College, Baramati",
+      "url": "https://www.gmcbaramati.org/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Rajarshee Chhatrapati Shahu Maharaj Govt Medical College & CPR Hospital, Kolhapur",
+      "url": "https://www.rcsmgmc.ac.in/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Sant Sevalal Maharaj Government Medical College, Washim",
+      "url": "https://gmcwashim.in/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Shri Bhausaheb Hire Government Medical College, Dhule",
+      "url": "https://sbhgmcdhule.org/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Shri Vasantrao Naik Government Medical College, Yavatmal",
+      "url": "https://vngmcytl.ac.in/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Smt. Kashibai Navale Medical College & General Hospital, Pune",
+      "url": "https://sknmcgh.org/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Swami Ramanand Teerth Rural Government Medical College, Ambajogai",
+      "url": "https://srtrmca.org/Recruitments.html",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Symbiosis Medical College for Women, Pune",
+      "url": "https://smcw.edu.in/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Topiwala National Medical College & BYL Nair Hospital, Mumbai",
+      "url": "https://tnmcnair.edu.in/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Vilasrao Deshmukh Government Medical College, Latur",
+      "url": "https://www.vdgmclatur.org/recruitment/",
+      "group": "Medical colleges",
+      "state": "Maharashtra",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Zoram Medical College, Falkawn",
+      "url": "https://zmc.edu.in/advertisement",
+      "group": "Medical colleges",
+      "state": "Mizoram",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Nagaland Institute of Medical Sciences & Research, Kohima",
+      "url": "https://nimsr.nagaland.gov.in/advertisement/",
+      "group": "Medical colleges",
+      "state": "Nagaland",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Bhima Bhoi Medical College & Hospital, Balangir",
+      "url": "https://bbmchbalangir.odisha.gov.in/",
+      "group": "Medical colleges",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Fakir Mohan Medical College & Hospital, Balasore",
+      "url": "https://fmmch.odisha.gov.in/en/light/subpage/advertisement",
+      "group": "Medical colleges",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Government Medical College & Hospital, Sundargarh",
+      "url": "https://gmchsng.odisha.gov.in/tender_advertisement/",
+      "group": "Medical colleges",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Hi-Tech Medical College & Hospital, Bhubaneswar",
+      "url": "https://hi-techmedical.org/",
+      "group": "Medical colleges",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "IMS & SUM Hospital (SOA), Bhubaneswar",
+      "url": "https://www.ims.ac.in/",
+      "group": "Medical colleges",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Kalinga Institute of Medical Sciences (KIMS), Bhubaneswar",
+      "url": "https://kims.kiit.ac.in/",
+      "group": "Medical colleges",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "MKCG Medical College & Hospital, Berhampur",
+      "url": "https://mkcgmch.odisha.gov.in/notifications/advertisements/",
+      "group": "Medical colleges",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Maharaja Jajati Keshari Medical College & Hospital, Jajpur",
+      "url": "https://jkmchjajpur.odisha.gov.in/en/light/advertisement",
+      "group": "Medical colleges",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Odisha DMET recruitment (state medical colleges)",
+      "url": "https://dmet.odisha.gov.in/en/light/subpage/recruitment",
+      "group": "Medical colleges",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "State medical education dept: recruitment notices for govt medical colleges (JR/SR/MO)"
+    },
+    {
+      "name": "Pandit Raghunath Murmu Medical College & Hospital, Baripada",
+      "url": "https://prmmch.odisha.gov.in/en/light/subpage/advertisement",
+      "group": "Medical colleges",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "SCB Medical College & Hospital, Cuttack",
+      "url": "https://scbmch.odisha.gov.in/",
+      "group": "Medical colleges",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Saheed Laxman Nayak Medical College & Hospital, Koraput",
+      "url": "https://slnmch.odisha.gov.in/en/light/subpage/advertisement",
+      "group": "Medical colleges",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Saheed Rendo Majhi Medical College & Hospital (GMCH), Kalahandi",
+      "url": "https://srmmch.odisha.gov.in/",
+      "group": "Medical colleges",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "VIMSAR, Burla",
+      "url": "https://vimsar.ac.in/pages/recruitment",
+      "group": "Medical colleges",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Aarupadai Veedu Medical College and Hospital, Puducherry",
+      "url": "https://avmc.edu.in/careers",
+      "group": "Medical colleges",
+      "state": "Puducherry",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Mahatma Gandhi Medical College and Research Institute (Sri Balaji Vidyapeeth), Puducherry",
+      "url": "https://sbvu.ac.in/careers/",
+      "group": "Medical colleges",
+      "state": "Puducherry",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Pondicherry Institute of Medical Sciences, Puducherry",
+      "url": "https://www.pimsmmm.com/Career.php",
+      "group": "Medical colleges",
+      "state": "Puducherry",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Sri Venkateshwaraa Medical College Hospital and Research Centre, Puducherry",
+      "url": "https://svmchrc.ac.in/",
+      "group": "Medical colleges",
+      "state": "Puducherry",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Adesh Institute of Medical Sciences & Research, Bathinda",
+      "url": "https://aimsr.adeshuniversity.ac.in/",
+      "group": "Medical colleges",
+      "state": "Punjab",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
     },
     {
       "name": "CMC Ludhiana",
@@ -1050,6 +5162,70 @@
       "why": "JR / MO posts"
     },
     {
+      "name": "Dayanand Medical College & Hospital, Ludhiana",
+      "url": "https://www.dmch.edu/",
+      "group": "Medical colleges",
+      "state": "Punjab",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Government Medical College, Patiala",
+      "url": "https://gmcpatiala.edu.in/recruitments/",
+      "group": "Medical colleges",
+      "state": "Punjab",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Guru Gobind Singh Medical College, Faridkot",
+      "url": "https://ggsmch.org/",
+      "group": "Medical colleges",
+      "state": "Punjab",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Geetanjali Medical College & Hospital, Udaipur",
+      "url": "https://geetanjaliuniversity.com/",
+      "group": "Medical colleges",
+      "state": "Rajasthan",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Mahatma Gandhi Medical College & Hospital, Jaipur (MGUMST)",
+      "url": "https://www.mgumst.org/careers",
+      "group": "Medical colleges",
+      "state": "Rajasthan",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Pacific Medical College & Hospital, Udaipur",
+      "url": "https://www.pacificmedical.ac.in/",
+      "group": "Medical colleges",
+      "state": "Rajasthan",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "RUHS College of Medical Sciences, Jaipur",
+      "url": "https://ruhscms.org/Recruitments.aspx",
+      "group": "Medical colleges",
+      "state": "Rajasthan",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "ACS Medical College and Hospital, Chennai",
+      "url": "https://acsmch.ac.in/",
+      "group": "Medical colleges",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
       "name": "CMC Vellore",
       "url": "https://www.cmch-vellore.edu",
       "group": "Medical colleges",
@@ -1058,12 +5234,444 @@
       "why": "Junior Resident / non-PG posts"
     },
     {
+      "name": "Chengalpattu Medical College",
+      "url": "https://cmccpt.ac.in/",
+      "group": "Medical colleges",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Chettinad Hospital and Research Institute, Kelambakkam",
+      "url": "https://careers.care.edu.in/",
+      "group": "Medical colleges",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Coimbatore Medical College",
+      "url": "https://cmccbe.ac.in/notice/",
+      "group": "Medical colleges",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Govt Kilpauk Medical College Chennai",
+      "url": "https://www.kilpaukmedicalcollege.ac.in/",
+      "group": "Medical colleges",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Govt Medical College Omandurar Chennai",
+      "url": "https://gmcomu.ac.in/careers/",
+      "group": "Medical colleges",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Govt Stanley Medical College Chennai",
+      "url": "https://stanleymedicalcollege.ac.in/page/vacancies",
+      "group": "Medical colleges",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "KMCH Institute of Health Sciences and Research, Coimbatore",
+      "url": "https://kmchihsr.edu.in/kmchishr-career.html",
+      "group": "Medical colleges",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Kanyakumari Govt Medical College Asaripallam",
+      "url": "https://kgmc.ac.in/",
+      "group": "Medical colleges",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Karpaga Vinayaga Institute of Medical Sciences, Maduranthakam",
+      "url": "https://kims.edu.in/",
+      "group": "Medical colleges",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Madras Medical College & Rajiv Gandhi Govt General Hospital",
+      "url": "https://mmc.tn.gov.in/en/",
+      "group": "Medical colleges",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Meenakshi Medical College Hospital and Research Institute (MAHER), Kanchipuram",
+      "url": "https://mmchri.ac.in/",
+      "group": "Medical colleges",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "PSG Institute of Medical Sciences and Research, Coimbatore",
+      "url": "https://psgimsr.ac.in/careers/",
+      "group": "Medical colleges",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "SRM Medical College Hospital and Research Centre, Kattankulathur",
+      "url": "https://medical.srmist.edu.in/",
+      "group": "Medical colleges",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Saveetha Medical College and Hospital, Chennai",
+      "url": "https://smc.saveetha.com/",
+      "group": "Medical colleges",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Sree Balaji Medical College and Hospital, Chennai",
+      "url": "https://sbmch.ac.in/",
+      "group": "Medical colleges",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
       "name": "Sri Ramachandra Chennai",
       "url": "https://www.sriramachandra.edu.in",
       "group": "Medical colleges",
       "state": "Tamil Nadu",
       "priority": 2,
       "why": "JR / MO posts"
+    },
+    {
+      "name": "Tagore Medical College and Hospital, Chennai",
+      "url": "https://tagoremch.edu.in/",
+      "group": "Medical colleges",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Tirunelveli Medical College",
+      "url": "https://tvmc.ac.in/",
+      "group": "Medical colleges",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Vinayaka Mission's Kirupananda Variyar Medical College, Salem",
+      "url": "https://www.vmkvmc.edu.in/Vacancy.php",
+      "group": "Medical colleges",
+      "state": "Tamil Nadu",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Apollo Institute of Medical Sciences and Research, Hyderabad",
+      "url": "https://apolloimsr.edu.in/careers/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Bhaskar Medical College, Hyderabad",
+      "url": "https://www.bhaskarmedicalcollege.edu.in/vacancies",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "DME Telangana",
+      "url": "https://dme.telangana.gov.in/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Deccan College of Medical Sciences, Hyderabad",
+      "url": "https://dcms.ac.in/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Gandhi Hospital Secunderabad",
+      "url": "https://gandhihospital.telangana.gov.in/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Gandhi Medical College Secunderabad",
+      "url": "https://gmcsecunderabad.org/notifications/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Jangaon",
+      "url": "https://gmcjangaon.org/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Kamareddy",
+      "url": "https://gmckamareddy.org/notifications.html",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Khammam",
+      "url": "https://gmckhammam.org/recruitement/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Kothagudem",
+      "url": "https://gmckothagudem.org/recruitment/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Mahabubabad",
+      "url": "https://gmcmahabubabad.org/notifications/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Mancherial",
+      "url": "https://gmcmancherial.org/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Medak",
+      "url": "https://gmcmedak.org/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Mulugu",
+      "url": "https://gmcmulugu.org/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Nagarkurnool",
+      "url": "https://gmcnagarkurnool.org/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Nalgonda",
+      "url": "https://gmcnalgonda.in/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Narayanpet",
+      "url": "https://gmcnarayanpet.org/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Nizamabad",
+      "url": "https://gmcnzb.org/recruitment.html",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Rajanna Sircilla",
+      "url": "https://gmcrajannasircilla.org/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Ramagundam (SIMS)",
+      "url": "https://gmcramagundam.in/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Sangareddy",
+      "url": "https://gmcsangareddy.org/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Siddipet",
+      "url": "https://gmcsiddipet.org/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Suryapet",
+      "url": "https://gmcsuryapet.org/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Vikarabad",
+      "url": "https://gmcvikarabad.ac.in/notifications.php",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Wanaparthy",
+      "url": "https://gmcwanaparthy.org/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College Yadadri",
+      "url": "https://gmcyadadri.org/notifications/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Kakatiya Medical College Warangal",
+      "url": "https://kmcwgl.com/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Kaloji Narayana Rao University of Health Sciences",
+      "url": "https://knruhs.telangana.gov.in/all-notifications/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Kamineni Institute of Medical Sciences, Narketpally",
+      "url": "https://www.kimsmedicalcollege.org/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "MNR Medical College and Hospital, Sangareddy",
+      "url": "https://mnrmch.mnrindia.org/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Malla Reddy Institute of Medical Sciences, Hyderabad",
+      "url": "https://mrims.edu.in/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Mamata Medical College, Khammam",
+      "url": "https://www.mamatamedicalcollege.com/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Prathima Institute of Medical Sciences, Karimnagar",
+      "url": "https://prathimaeducation.org/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "RIMS Adilabad",
+      "url": "https://rimsadilabad.org/notifications/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "SVS Medical College, Mahabubnagar",
+      "url": "https://svsmch.com/",
+      "group": "Medical colleges",
+      "state": "Telangana",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Agartala Government Medical College & GB Pant Hospital",
+      "url": "https://agmc.ac.in/view-emp-tab",
+      "group": "Medical colleges",
+      "state": "Tripura",
+      "priority": 2,
+      "why": "Delhi govt hospital/institute: JR / SR / MO posts"
     },
     {
       "name": "LLRM Medical College, Meerut",
@@ -1082,12 +5690,404 @@
       "why": "Private medical college, Meerut: JR / MO openings"
     },
     {
+      "name": "Amar Shaheed Jodha Singh Ataiya Thakur Dariyao Singh Medical College (ASMC), Fatehpur",
+      "url": "https://asmcfatehpur.in/",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Autonomous State Medical College, Amethi",
+      "url": "https://asmcamethi.in/vacancy.php",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Autonomous State Medical College, Firozabad",
+      "url": "https://www.asmcfirozabad.edu.in/recruitment-news/",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Autonomous State Medical College, Gonda",
+      "url": "https://asmcgonda.org/",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Autonomous State Medical College, Hardoi",
+      "url": "https://asmchardoi.org/recruitment/",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Autonomous State Medical College, Kaushambi",
+      "url": "https://asmckaushambi.in/vacancy/",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Autonomous State Medical College, Kushinagar",
+      "url": "https://asmckushinagar.in/vacancy/",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Autonomous State Medical College, Lakhimpur Kheri",
+      "url": "https://asmclakhimpurkheri.in/vacancy/",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Autonomous State Medical College, Lalitpur",
+      "url": "https://asmclalitpur.edu.in/notice-category/recruitment/",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Baba Raghav Das Medical College, Gorakhpur",
+      "url": "https://brdmc.ac.in/",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Dr. Bhimrao Ambedkar Govt. Medical College, Kannauj",
+      "url": "https://gmckannauj.in/Recruitment.html",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Era's Lucknow Medical College & Hospital",
+      "url": "https://elmcindia.org/",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Government Institute of Medical Sciences (GIMS), Greater Noida",
+      "url": "https://www.gims.ac.in/recruitment.html",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Government Medical College & Super Facility Hospital, Azamgarh",
+      "url": "https://gmcazamgarh.com/recruitments.html",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Government Medical College, Badaun",
+      "url": "https://gmcbadaun.edu.in/recruitments/",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Government Medical College, Jalaun (Orai)",
+      "url": "https://gmcjalaun.com/appointments/",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Hind Institute of Medical Sciences, Barabanki/Lucknow",
+      "url": "https://www.himsup.com/",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Integral Institute of Medical Sciences & Research, Lucknow",
+      "url": "https://iul.ac.in/IIMSR/Default.aspx",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
       "name": "KGMU Lucknow",
       "url": "https://www.kgmu.org",
       "group": "Medical colleges",
       "state": "Uttar Pradesh",
       "priority": 2,
       "why": "JR / MO posts"
+    },
+    {
+      "name": "Madhav Prasad Tripathi Medical College (ASMC), Siddharthnagar",
+      "url": "https://asmcsiddharthnagar.ac.in/",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Mahamaya Rajkiya Allopathic Medical College, Ambedkar Nagar",
+      "url": "https://mramc.ac.in/category/vacancies/",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Maharani Laxmi Bai Medical College, Jhansi",
+      "url": "https://mlbmcj.in/",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Maharshi Vashishtha Autonomous State Medical College, Basti",
+      "url": "https://asmcbasti.edu.in/vacancy.html",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Maharshi Vishwamitra Autonomous State Medical College, Ghazipur",
+      "url": "https://asmcghazipur.ac.in/en/Vacancy",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Muzaffarnagar Medical College",
+      "url": "https://mmcollege.org/",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Rajarshi Dashrath Autonomous State Medical College, Ayodhya",
+      "url": "https://asmcayodhya.ac.in/recruitments",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Rama Medical College Hospital & Research Centre, Kanpur",
+      "url": "https://www.ramamedicalcolleges.com/kanpur/KanpurM.aspx",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Rani Durgavati Medical College, Banda",
+      "url": "https://gmcbanda.ac.in/recruitments",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Santosh Medical College, Ghaziabad",
+      "url": "https://www.santosh.ac.in/",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Saraswathi Institute of Medical Sciences, Hapur",
+      "url": "https://sims.edu.in/",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Sarojini Naidu Medical College, Agra",
+      "url": "https://snmcagra.ac.in/announcements-recruitments.php",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Teerthanker Mahaveer Medical College & Research Centre, Moradabad",
+      "url": "https://www.tmu.ac.in/medical-college-and-research-centre",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Uma Nath Singh Autonomous State Medical College, Jaunpur",
+      "url": "https://asmcjaunpur.edu.in/vacancy/",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Uttar Pradesh University of Medical Sciences, Saifai",
+      "url": "https://upums.ac.in/recruitment",
+      "group": "Medical colleges",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Government Doon Medical College, Dehradun",
+      "url": "https://www.gdmcuk.com/",
+      "group": "Medical colleges",
+      "state": "Uttarakhand",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Government Medical College, Haridwar",
+      "url": "https://gmcharidwar.com/vacancies",
+      "group": "Medical colleges",
+      "state": "Uttarakhand",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Himalayan Institute of Medical Sciences, Dehradun (SRHU)",
+      "url": "https://srhu.edu.in/",
+      "group": "Medical colleges",
+      "state": "Uttarakhand",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Late Jagjivan Ram Government Medical College, Pithoragarh",
+      "url": "https://gmcpithoragarh.org/",
+      "group": "Medical colleges",
+      "state": "Uttarakhand",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Pt. Ram Sumer Shukla Government Medical College, Rudrapur",
+      "url": "https://gmcrudrapur.com/Vacancy.php",
+      "group": "Medical colleges",
+      "state": "Uttarakhand",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "Shri Guru Ram Rai Institute of Medical & Health Sciences, Dehradun",
+      "url": "https://sgrrmc.com/",
+      "group": "Medical colleges",
+      "state": "Uttarakhand",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Soban Singh Jeena Govt. Institute of Medical Science & Research, Almora",
+      "url": "https://www.ssjgimsralmora.org/",
+      "group": "Medical colleges",
+      "state": "Uttarakhand",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Uttarakhand Medical Education Department (JR/SR walk-ins for all state GMCs)",
+      "url": "https://medicaleducation.uk.gov.in/",
+      "group": "Medical colleges",
+      "state": "Uttarakhand",
+      "priority": 2,
+      "why": "State medical education dept: recruitment notices for govt medical colleges (JR/SR/MO)"
+    },
+    {
+      "name": "Veer Chandra Singh Garhwali Govt. Institute of Medical Science & Research, Srinagar",
+      "url": "https://www.vcsgsrinagar.org/",
+      "group": "Medical colleges",
+      "state": "Uttarakhand",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "ICARE Institute of Medical Sciences & Research, Haldia",
+      "url": "https://icaremedicalcollege.in/",
+      "group": "Medical colleges",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "IPGMER & SSKM Hospital, Kolkata",
+      "url": "https://ipgmer.gov.in/",
+      "group": "Medical colleges",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "Jalpaiguri Government Medical College",
+      "url": "https://jalpaigurimedicalcollege.com/",
+      "group": "Medical colleges",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "KPC Medical College & Hospital, Kolkata",
+      "url": "https://www.kpcmedicalcollege.in/",
+      "group": "Medical colleges",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "Private medical college: JR / RMO posts"
+    },
+    {
+      "name": "Medical College Kolkata",
+      "url": "https://www.medicalcollegekolkata.in/main/page/Recruitment_Notice958d34",
+      "group": "Medical colleges",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts (recruitment page)"
+    },
+    {
+      "name": "NRS Medical College, Kolkata",
+      "url": "https://nrsmc.edu.in/",
+      "group": "Medical colleges",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
+    },
+    {
+      "name": "School of Tropical Medicine, Kolkata",
+      "url": "https://www.stmkolkata.org/",
+      "group": "Medical colleges",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "Govt medical college: JR / MO posts"
     },
     {
       "name": "FreeJobAlert – Medical",
@@ -1098,12 +6098,28 @@
       "why": "Medical/hospital jobs table with last dates; fast coverage of govt walk-ins and district NHM posts"
     },
     {
+      "name": "GovtJobsAlert – medical",
+      "url": "https://govtjobsalert.in",
+      "group": "Aggregators",
+      "state": "All India",
+      "priority": 1,
+      "why": "Detailed write-ups of MO/JR notices incl. institute and PSU posts; search with site: (see playbook 1b)"
+    },
+    {
       "name": "Medical Dialogues – Jobs",
       "url": "https://medicaldialogues.in/jobs",
       "group": "Aggregators",
       "state": "All India",
       "priority": 1,
       "why": "Doctor-focused job news"
+    },
+    {
+      "name": "MySarkariNaukri – medical/health",
+      "url": "https://www.mysarkarinaukri.com",
+      "group": "Aggregators",
+      "state": "All India",
+      "priority": 1,
+      "why": "Per-notice pages for district NHM, DMFT, PSU and campus MO posts; search with site: (see playbook 1b)"
     },
     {
       "name": "Sarkari Result",
@@ -1144,6 +6160,14 @@
       "state": "All India",
       "priority": 2,
       "why": "Private hospital RMO / duty doctor jobs"
+    },
+    {
+      "name": "Drlogy Jobs",
+      "url": "https://www.drlogy.com/jobs",
+      "group": "Private",
+      "state": "All India",
+      "priority": 2,
+      "why": "Source of current private RMO/duty MO listings with dated postings"
     },
     {
       "name": "Fortis Careers",
@@ -1194,22 +6218,6 @@
       "why": "Private MBBS doctor jobs across India"
     },
     {
-      "name": "ICMR Recruitment",
-      "url": "https://www.icmr.gov.in",
-      "group": "Research",
-      "state": "All India",
-      "priority": 3,
-      "why": "Research / project scientist posts for MBBS"
-    },
-    {
-      "name": "SAIL Careers (all plants)",
-      "url": "https://sailcareers.com",
-      "group": "Govt Medical Officer",
-      "state": "All India",
-      "priority": 2,
-      "why": "Official SAIL portal hosting plant-level GDMO walk-in PDFs (Salem Nov 2026, Rourkela, Bhilai); robots-blocked, cover by search"
-    },
-    {
       "name": "ICMR Employment Opportunities",
       "url": "https://www.icmr.gov.in/employment-opportunities",
       "group": "Research",
@@ -1218,124 +6226,12 @@
       "why": "Lists ICMR institute Scientist-B (Medical) adverts open to MBBS"
     },
     {
-      "name": "Tata Memorial Centre recruitment",
-      "url": "https://tmc.gov.in",
-      "group": "Central Hospitals",
+      "name": "ICMR Recruitment",
+      "url": "https://www.icmr.gov.in",
+      "group": "Research",
       "state": "All India",
-      "priority": 2,
-      "why": "Regular MBBS Medical Officer walk-ins at TMC units across India"
-    },
-    {
-      "name": "Drlogy Jobs",
-      "url": "https://www.drlogy.com/jobs",
-      "group": "Private",
-      "state": "All India",
-      "priority": 2,
-      "why": "Source of current private RMO/duty MO listings with dated postings"
-    },
-    {
-      "name": "Assam State AIDS Control Society",
-      "url": "https://asacs.assam.gov.in",
-      "group": "State Govt",
-      "state": "Assam",
-      "priority": 2,
-      "why": "Regular MBBS MO walk-ins at ART/OST centres; robots-blocked, cover by search"
-    },
-    {
-      "name": "Assam Medical College & Hospital, Dibrugarh",
-      "url": "https://amch-dibrugarh.assam.gov.in",
-      "group": "Medical colleges",
-      "state": "Assam",
-      "priority": 2,
-      "why": "Frequent walk-in PDFs including MO posts for MBBS"
-    },
-    {
-      "name": "ANIIMS Sri Vijaya Puram",
-      "url": "https://aniims.andamannicobar.gov.in/",
-      "group": "Medical colleges",
-      "state": "Andaman and Nicobar Islands",
-      "priority": 2,
-      "why": "Only A&N medical college; posts MO/LMO/JR contract notices"
-    },
-    {
-      "name": "A&N Administration vacancies",
-      "url": "https://andamannicobar.gov.in/vacancy_all",
-      "group": "State Govt",
-      "state": "Andaman and Nicobar Islands",
-      "priority": 2,
-      "why": "DHS A&N MO and health recruitment notices"
-    },
-    {
-      "name": "Directorate of Health Services Meghalaya",
-      "url": "https://meghealth.gov.in",
-      "group": "State Govt",
-      "state": "Meghalaya",
-      "priority": 2,
-      "why": "Medical & Health Officer walk-ins"
-    },
-    {
-      "name": "Birbhum District – Recruitment",
-      "url": "https://birbhum.gov.in/notice_category/recruitment/",
-      "group": "State Govt",
-      "state": "West Bengal",
-      "priority": 2,
-      "why": "Direct PDFs of DHFWS Birbhum & Rampurhat NHM MO/GDMO notices; reachable when wbhealth.gov.in fails"
-    },
-    {
-      "name": "Budaun district (CMO/NHM notices)",
-      "url": "https://budaun.nic.in/",
-      "group": "State Govt",
-      "state": "Uttar Pradesh",
-      "priority": 2,
-      "why": "NHM MBBS MO advertisements several times a year"
-    },
-    {
-      "name": "THDC India Ltd careers",
-      "url": "https://www.thdc.co.in",
-      "group": "Govt Medical Officer",
-      "state": "Uttarakhand",
-      "priority": 2,
-      "why": "Repeated ad hoc GDMO walk-ins (Apr and Nov 2026)"
-    },
-    {
-      "name": "IHBAS Delhi",
-      "url": "https://ihbas.delhi.gov.in",
-      "group": "Central Hospitals",
-      "state": "Delhi",
-      "priority": 2,
-      "why": "Regular JR/SR walk-ins"
-    },
-    {
-      "name": "Indira Gandhi Hospital Dwarka",
-      "url": "https://igh.delhi.gov.in",
-      "group": "State Govt",
-      "state": "Delhi",
-      "priority": 2,
-      "why": "Recurring ad hoc JR (MBBS) walk-ins"
-    },
-    {
-      "name": "West Bengal Health HR portal (district NHM notices)",
-      "url": "https://hr.wbhealth.gov.in",
-      "group": "State Govt",
-      "state": "West Bengal",
-      "priority": 2,
-      "why": "District Health & Family Welfare Samiti notices (GDMO/MO under NHM) and online applications"
-    },
-    {
-      "name": "MySarkariNaukri – medical/health",
-      "url": "https://www.mysarkarinaukri.com",
-      "group": "Aggregators",
-      "state": "All India",
-      "priority": 1,
-      "why": "Per-notice pages for district NHM, DMFT, PSU and campus MO posts; search with site: (see playbook 1b)"
-    },
-    {
-      "name": "GovtJobsAlert – medical",
-      "url": "https://govtjobsalert.in",
-      "group": "Aggregators",
-      "state": "All India",
-      "priority": 1,
-      "why": "Detailed write-ups of MO/JR notices incl. institute and PSU posts; search with site: (see playbook 1b)"
+      "priority": 3,
+      "why": "Research / project scientist posts for MBBS"
     }
   ]
 }
