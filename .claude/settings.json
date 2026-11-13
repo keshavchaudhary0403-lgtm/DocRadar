@@ -6,7 +6,25 @@
       "Bash(node scripts/scan-sources.mjs)",
       "Bash(node scripts/scan-sources.mjs *)",
       "Bash(node scripts/maintain.mjs)",
-      "Bash(curl *)"
+      "Bash(curl *)",
+      "Bash(pdftotext *)",
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git pull*)",
+      "Bash(git fetch*)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push)",
+      "Bash(git push origin main)",
+      "Bash(ls *)",
+      "Bash(cat *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(wc *)",
+      "Bash(grep *)",
+      "Bash(sed -n *)",
+      "Bash(mkdir *)"
     ]
   }
 }
