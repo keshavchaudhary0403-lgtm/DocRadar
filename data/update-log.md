@@ -1,5 +1,10 @@
 # DocRadar update log
 
+## 2026-11-13 (merge from failed 6:40 AM run)
+- New: 4 verified listings that the 6:40 AM run found but couldn't push: OCPL MO (Odisha), MPKV Nandurbar MO (Maharashtra), NHPC MO 2 posts (Jammu and Kashmir), IIT Gandhinagar resident doctor (Gujarat)
+- Not added: 8 unverified listings from that run (GBPUAT Pantnagar EMO, KSSM Thiruvananthapuram MO walk-in, DMFT Chatra MO 15, ECHS Missamari MO, IOCL Mughalsarai retainer doctor, DH Chandrapur ART MO, DMFT Dhanbad MO 48, NIT Agartala MO); IPGME&R-SSKM house staff skipped (own graduates only, closes today)
+- Sources: FreeJobAlert URL set to its medical/hospital jobs table; added hr.wbhealth.gov.in
+
 ## 2026-11-13
 - New: 10 – Budaun NHM MO/EMO 30 posts (Uttar Pradesh), Birbhum NHM GDMO 15 posts (West Bengal), ANIIMS Lady MO (Andaman and Nicobar Islands), SAIL Salem GDMO walk-in (Tamil Nadu), ICMR-NIE Scientist-B Medical 2 posts (Tamil Nadu), AIIMS Delhi PRS-I Medical OBG project (Delhi), THDC adhoc GDMO walk-in (Uttarakhand, unverified), ESIC Faridabad JR 34 posts (Haryana, unverified, closes today), Tripura ESIS IMO (Tripura, unverified), UMC Navi Mumbai fresher RMO (Maharashtra, unverified)
 - Updated: 4 – IGIMS Patna JR now verified with official PDF; Rampurhat GDMO note/post breakdown from official PDF + internship cut-off; UAS Dharwad corrigendum (salary typo only, date unchanged); AIIMS Bhopal JR internship-within-5-years note

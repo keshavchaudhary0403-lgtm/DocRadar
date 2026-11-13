@@ -1091,11 +1091,11 @@
     },
     {
       "name": "FreeJobAlert – Medical",
-      "url": "https://www.freejobalert.com",
+      "url": "https://www.freejobalert.com/medical-hospital-jobs/",
       "group": "Aggregators",
       "state": "All India",
       "priority": 1,
-      "why": "Fast coverage of govt walk-ins"
+      "why": "Medical/hospital jobs table with last dates; fast coverage of govt walk-ins and district NHM posts"
     },
     {
       "name": "Medical Dialogues – Jobs",
@@ -1312,6 +1312,14 @@
       "state": "Delhi",
       "priority": 2,
       "why": "Recurring ad hoc JR (MBBS) walk-ins"
+    },
+    {
+      "name": "West Bengal Health HR portal (district NHM notices)",
+      "url": "https://hr.wbhealth.gov.in",
+      "group": "State Govt",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "District Health & Family Welfare Samiti notices (GDMO/MO under NHM) and online applications"
     }
   ]
 }
