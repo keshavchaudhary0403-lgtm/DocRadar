@@ -1320,6 +1320,22 @@
       "state": "West Bengal",
       "priority": 2,
       "why": "District Health & Family Welfare Samiti notices (GDMO/MO under NHM) and online applications"
+    },
+    {
+      "name": "MySarkariNaukri – medical/health",
+      "url": "https://www.mysarkarinaukri.com",
+      "group": "Aggregators",
+      "state": "All India",
+      "priority": 1,
+      "why": "Per-notice pages for district NHM, DMFT, PSU and campus MO posts; search with site: (see playbook 1b)"
+    },
+    {
+      "name": "GovtJobsAlert – medical",
+      "url": "https://govtjobsalert.in",
+      "group": "Aggregators",
+      "state": "All India",
+      "priority": 1,
+      "why": "Detailed write-ups of MO/JR notices incl. institute and PSU posts; search with site: (see playbook 1b)"
     }
   ]
 }

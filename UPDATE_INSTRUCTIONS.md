@@ -36,7 +36,33 @@ already closed, and coaching institute ads posing as jobs.
 **No location priority.** A walk-in in Kerala matters as much as one in Delhi. When time is short,
 prioritise by **deadline** (soonest first) and by **size** (more posts first), never by place.
 
-## 2. Web search sweep: the main engine (do this first)
+## 1b. Listing-table sweep (do this FIRST, every day, no exceptions)
+Web search returns only the top results, and the state rotation (2b) reaches each state once a
+week. So a notice posted on Tuesday for a Jharkhand district or an IIT campus can be missed for
+days. Aggregator **listing tables** carry every new notice from every state every day, so read them
+in full first. (Audit, 13 Nov 2026: one run read the FreeJobAlert medical table and found 13 open
+MO posts (DMFT Dhanbad 48, DMFT Chatra 15, NHPC, OCPL, IIT Gandhinagar, NIT Agartala, ECHS,
+IOCL…) that a second run with ~160 searches missed completely.)
+
+Read **every row** of each table below. Not just the top few: go to page 2 (and further) until
+the rows are older than 21 days.
+1. FreeJobAlert medical/hospital jobs: `https://www.freejobalert.com/medical-hospital-jobs/`
+2. MySarkariNaukri medical/health: run `site:mysarkarinaukri.com "medical officer" <M Y>` and
+   `site:mysarkarinaukri.com "junior resident" <M Y>`
+3. GovtJobsAlert: `site:govtjobsalert.in "medical officer" OR "junior resident" <M Y>`
+4. SahiSarkariJobs / CentralStateJobs: `site:sahisarkarijobs.in OR site:centralstatejobs.in "medical officer" <M Y>`
+5. Medical Dialogues jobs: `https://medicaldialogues.in/jobs`
+
+For each row whose last date is today or later (or not yet announced):
+- Keep it if MBBS can apply: JR, MO, GDMO, EMO, RMO, campus doctor, retainer or part-time doctor,
+  CMO-office NHM posts. Skip it only for the reasons in section 1's **Skip** list.
+- Check it against `data/jobs.json`. Match on institute + post + date, not on `id`, because
+  another run may have used a different id.
+- If it's not there, it's a candidate. Verify it (section 4) and add it, even as
+  `"verified": false` if the official notice can't be opened.
+- Record the counts for the run log: rows read, already listed, added, skipped (with reason).
+
+## 2. Web search sweep (after the listing tables)
 Most openings, especially state and district walk-ins, never show up on a fixed list of websites.
 Searching the web is how DocRadar finds them, so this is the most important step. Use your web
 search tool for **every** query below. Use Google-style operators (`"quotes"`, `site:`, `filetype:`,
@@ -83,6 +109,16 @@ If a query returns little or stale results, rerun it once with the more thorough
 27. `MBBS fellowship OR "public health" job apply <M Y>`
 28. `MBBS vacancy "last date" <the next 14 days written as "D Month Y">`
 29. `"walk-in" MBBS doctor <M Y> notification pdf`
+
+**Employers that don't advertise like hospitals** (every day; past runs missed these)
+30. `IIT OR NIT OR IIM OR IISER OR "central university" "medical officer" OR "campus doctor" OR "resident doctor" <M Y>`
+31. `"agricultural university" OR "krishi vidyapeeth" "medical officer" <M Y>`
+32. `ECHS polyclinic "medical officer" recruitment <M Y>`
+33. `"District Mineral Foundation" OR DMFT "medical officer" MBBS <M Y>`
+34. `"retainer doctor" OR "part-time medical officer" OR "doctor in attendance" MBBS <M Y>`
+35. `NHPC OR NTPC OR OCPL OR IOCL OR ONGC OR "Coal India" OR THDC OR SJVN "medical officer" <M Y>`
+36. `"social security mission" OR "ESIS" OR "Sainik School" OR "Kendriya Vidyalaya" "medical officer" <M Y>`
+37. `CMO OR "Chief Medical Officer" office NHM "medical officer" MBBS <M Y> -AYUSH`
 
 ### 2b. State rotation (every state, every week)
 Each day, cover that weekday's group. Run all three queries for **each** state or UT in it:
@@ -243,6 +279,13 @@ Look at today's additions and the open listings together and ask:
 - Did today's state group (2b) produce anything? If a large state produced nothing, run one more
   search for it (`<State> doctor vacancy MBBS <M Y>`).
 - Is any category empty (e.g. no `private` or no `defence`)? Run one more search for it.
+- **Reconciliation (mandatory):** open the FreeJobAlert medical table once more. Every MBBS-eligible
+  row with a last date of today or later must be in `jobs.json` or written in the run log as
+  skipped, with a reason. If any isn't, add it before publishing.
+- **States outside today's group:** run `"medical officer" OR "junior resident" MBBS <State> <M Y>`
+  for every state whose listings in `jobs.json` all close within 3 days or that has no open
+  listing at all. A state with nothing open usually means something was missed, not that nothing
+  exists.
 
 ## 8. Run log
 Append one entry to the top of `data/update-log.md` (create the file if missing):
@@ -251,6 +294,7 @@ Append one entry to the top of `data/update-log.md` (create the file if missing)
 - New: N (titles with state)
 - Updated: N (what changed)
 - State group covered: <weekday> – list of states
+- Listing tables: rows read N · already listed N · added N · skipped N (reasons)
 - Searches run: N · Sources scanned: N (All India: N, today's states: N) · failed: list domains or "none"
 - Notes: anything odd (conflicting dates, sites down, possible upcoming notifications)
 ```

@@ -2,7 +2,9 @@
 
 ## 2026-11-13 (merge from failed 6:40 AM run)
 - New: 4 verified listings that the 6:40 AM run found but couldn't push: OCPL MO (Odisha), MPKV Nandurbar MO (Maharashtra), NHPC MO 2 posts (Jammu and Kashmir), IIT Gandhinagar resident doctor (Gujarat)
-- Not added: 8 unverified listings from that run (GBPUAT Pantnagar EMO, KSSM Thiruvananthapuram MO walk-in, DMFT Chatra MO 15, ECHS Missamari MO, IOCL Mughalsarai retainer doctor, DH Chandrapur ART MO, DMFT Dhanbad MO 48, NIT Agartala MO); IPGME&R-SSKM house staff skipped (own graduates only, closes today)
+- New (unverified, official notice not reachable): 8 – GBPUAT Pantnagar EMO (Uttarakhand), KSSM MO walk-in (Kerala), DMFT Chatra MO 15 + DMFT Dhanbad MO 48 (Jharkhand), ECHS Missamari MO (Assam), IOCL Mughalsarai retainer doctor (Uttar Pradesh), DH Chandrapur ART MO (Maharashtra), NIT Agartala MO (Tripura)
+- Skipped: IPGME&R-SSKM house staff (own graduates only, closes today)
+- Audit: all 13 missed listings came from the FreeJobAlert medical table, which the second run never read row by row; 10 of 13 were in states outside Friday's group and 9 were non-hospital employers (PSUs, IIT/NIT, agri universities, ECHS, DMFT). Playbook now has section 1b (listing-table sweep first), queries 30–37 for those employers, and a reconciliation check in section 7.
 - Sources: FreeJobAlert URL set to its medical/hospital jobs table; added hr.wbhealth.gov.in
 
 ## 2026-11-13

@@ -137,6 +137,30 @@
       }
     },
     {
+      "id": "gbpuat-emo-2026-11-14",
+      "title": "Emergency Medical Officer – 1 post (contract)",
+      "org": "G.B. Pant University of Agriculture & Technology – University Hospital",
+      "category": "mo",
+      "location": "Pantnagar, Uttarakhand",
+      "state": "Uttarakhand",
+      "posts": 1,
+      "salary": "₹56,100/month honorarium",
+      "mode": "Apply offline",
+      "lastDate": "2026-11-14",
+      "eventDate": "2026-11-16",
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS with Uttarakhand Medical Council registration; age below 60. Application (post/hand/courier, advance copy by email) by 2 PM on 14 Nov at the University Hospital office; interview 16 Nov, 11 AM. 11-month contract.",
+      "officialUrl": "https://www.gbpuat.ac.in",
+      "sourceUrl": "https://www.freejobalert.com/articles/gbpuat-emergency-medical-officer-recruitment-2026-apply-offline-3075498",
+      "addedOn": "2026-11-13",
+      "verified": false,
+      "requirements": {
+        "councils": [
+          "Uttarakhand Medical Council"
+        ]
+      }
+    },
+    {
       "id": "cmo-raebareli-nhm-medical-officer-walkin-2026-11-16",
       "title": "Medical Officer (NHM contract) – 18 posts, walk-in",
       "org": "Chief Medical Officer, Raebareli (NHM Uttar Pradesh)",
@@ -332,6 +356,32 @@
       }
     },
     {
+      "id": "kssm-reic-mo-walkin-2026-11-17",
+      "title": "Paediatrician / Medical Officer – walk-in (REIC & Autism Centre)",
+      "org": "Kerala Social Security Mission",
+      "category": "mo",
+      "location": "Thiruvananthapuram, Kerala",
+      "state": "Kerala",
+      "posts": 5,
+      "salary": "₹63,440/month (MBBS Medical Officer)",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-17",
+      "eventDate": "2026-11-17",
+      "eligibility": "after-internship",
+      "eligibilityNote": "5 posts shared between Paediatrician and Medical Officer, posted at REIC & Autism Centre, GMC Thiruvananthapuram. MO: MBBS with Travancore-Cochin Medical Council registration; max age 56 on 1 Jan 2026. Walk-in 17 Nov, 9:30 AM, KSSM Head Office, Poojappura; written test if over 50 candidates.",
+      "officialUrl": "https://socialsecuritymission.gov.in/",
+      "sourceUrl": "https://www.freejobalert.com/articles/kssm-recruitment-2026-medical-officer-clinical-psychologist-3079552",
+      "addedOn": "2026-11-13",
+      "verified": false,
+      "requirements": {
+        "councils": [
+          "Travancore-Cochin Medical Council"
+        ],
+        "maxAge": 56,
+        "ageOn": "2026-01-01"
+      }
+    },
+    {
       "id": "afms-ssc-mo-nov-2026",
       "title": "Medical Officer – Short Service Commission (120 posts)",
       "org": "Armed Forces Medical Services (Indian Army)",
@@ -459,6 +509,28 @@
       }
     },
     {
+      "id": "dmft-chatra-mo-15-2026-11-18",
+      "title": "Medical Officer – 15 posts (DMFT, contract)",
+      "org": "District Mineral Foundation Trust, Chatra",
+      "category": "mo",
+      "location": "Chatra, Jharkhand",
+      "state": "Jharkhand",
+      "posts": 15,
+      "salary": "₹75,000/month consolidated",
+      "mode": "Apply offline",
+      "lastDate": "2026-11-18",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS from an NMC-recognised institution with valid registration; experience not required. Application by hand or registered/speed post must reach the DMFT office, Chatra by 5 PM on 18 Nov; interview date on chatra.nic.in. One-year contract (Memo 1246, 2 Nov 2026).",
+      "officialUrl": "https://chatra.nic.in/",
+      "sourceUrl": "https://www.freejobalert.com/articles/dmft-chatra-medical-officer-recruitment-2026-apply-offline-for-15-posts-3078179",
+      "addedOn": "2026-11-13",
+      "verified": false,
+      "requirements": {
+        "registration": "any"
+      }
+    },
+    {
       "id": "aiims-bhopal-jr-nonacad-2026-11-19",
       "title": "Junior Resident (Non-Academic) – 20 posts, walk-in",
       "org": "AIIMS Bhopal",
@@ -511,6 +583,26 @@
       }
     },
     {
+      "id": "echs-missamari-mo-2026-11-19",
+      "title": "Medical Officer – 1 post, ECHS Polyclinic",
+      "org": "ECHS, Station HQ Missamari",
+      "category": "mo",
+      "location": "Missamari, Assam",
+      "state": "Assam",
+      "posts": 1,
+      "salary": "₹95,000/month fixed",
+      "mode": "Apply offline",
+      "lastDate": "2026-11-19",
+      "eventDate": "2026-12-03",
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS; attach experience testimonials. Application must reach Stn HQ Missamari by 12:00 noon on 19 Nov (one report says 20 Nov; earlier date shown). Interview 3 Dec, report by 10 AM. One-year contract.",
+      "officialUrl": "https://www.echs.gov.in",
+      "sourceUrl": "https://www.freejobalert.com/articles/echs-missamari-recruitment-2026-apply-offline-for-2-medical-officer-nursing-assistant-posts-3078496",
+      "addedOn": "2026-11-13",
+      "verified": false,
+      "requirements": {}
+    },
+    {
       "id": "amch-dibrugarh-mo-dtc-walkin-2026-11-20",
       "title": "Medical Officer (Drug Treatment Clinic) – 1 post, walk-in",
       "org": "Assam Medical College & Hospital, Dibrugarh",
@@ -557,6 +649,71 @@
         "maxAge": 69,
         "ageOn": "2026-10-30"
       }
+    },
+    {
+      "id": "iocl-erpl-mughalsarai-retainer-doctor-2026-11-20",
+      "title": "Retainer Doctor (part-time)",
+      "org": "Indian Oil Corporation – Eastern Region Pipelines, Mughalsarai",
+      "category": "mo",
+      "location": "Mughalsarai (Chandauli), Uttar Pradesh",
+      "state": "Uttar Pradesh",
+      "posts": null,
+      "salary": "MBBS: ₹1,190/hour, up to ₹30,940/month",
+      "mode": "Apply offline",
+      "lastDate": "2026-11-20",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Part-time doctor-in-attendance, 2 hrs/day, max 13 days/month. MD/MS or MBBS (MD/MS preferred) with 2 years as a general practitioner. Sealed cover to DGM, ERPL Mughalsarai within 14 days of publication; the notice has no fixed date, so the 20 Nov date is from FreeJobAlert.",
+      "officialUrl": "https://iocl.com",
+      "noticePdf": "https://iocl.com/admin/img/UploadedFiles/LatestJobOpening/Files/86cf0b3b793747caac9d3b129e737594.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/iocl-retainer-doctor-recruitment-2026-3079990",
+      "addedOn": "2026-11-13",
+      "verified": false,
+      "requirements": {}
+    },
+    {
+      "id": "dh-chandrapur-art-mo-2026-11-20",
+      "title": "ART Medical Officer – 1 post (contract)",
+      "org": "District Hospital, Chandrapur",
+      "category": "mo",
+      "location": "Chandrapur, Maharashtra",
+      "state": "Maharashtra",
+      "posts": 1,
+      "salary": "₹72,000/month consolidated",
+      "mode": "Apply offline",
+      "lastDate": "2026-11-20",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS with State Medical Council/NMC registration and at least 6 months' experience (HIV programme experience, MD/Diploma Medicine preferred). Max age 62 on advertisement date. Post or hand in to the Civil Surgeon, District Hospital, Chandrapur by 5 PM on 20 Nov.",
+      "officialUrl": "https://chanda.nic.in",
+      "sourceUrl": "https://www.freejobalert.com/articles/district-hospital-chandrapur-art-medical-officer-recruitment-2026-3079033",
+      "addedOn": "2026-11-13",
+      "verified": false,
+      "requirements": {
+        "registration": "any",
+        "maxAge": 62,
+        "ageOn": "2026-11-06"
+      }
+    },
+    {
+      "id": "dmft-dhanbad-mo-48-2026-11-21",
+      "title": "Medical Officer – 48 posts (DMFT, NRHM + NUHM)",
+      "org": "District Mineral Foundation Trust, Dhanbad",
+      "category": "mo",
+      "location": "Dhanbad, Jharkhand",
+      "state": "Jharkhand",
+      "posts": 48,
+      "salary": "₹63,000/month",
+      "mode": "Apply online",
+      "lastDate": "2026-11-21",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "48 MBBS Medical Officer posts (UR 21, OBC 16, SC 5, ST 2, EWS 4); also 13 General Physician posts needing MD/DNB. Apply online at doctorrg.egovdhn.in; selection by interview and document check. One-year contract.",
+      "officialUrl": "https://doctorrg.egovdhn.in/",
+      "sourceUrl": "https://www.freejobalert.com/articles/dmft-dhanbad-recruitment-2026-medical-officer-3077230",
+      "addedOn": "2026-11-13",
+      "verified": false,
+      "requirements": {}
     },
     {
       "id": "iit-gandhinagar-resident-doctor-2026-11-25",
@@ -709,6 +866,30 @@
         "maxAge": 40,
         "ageOn": "2026-01-01",
         "ageRelax": true
+      }
+    },
+    {
+      "id": "nit-agartala-mo-campus-doctor-2026-11-28",
+      "title": "Medical Officer / Campus Doctor – 2 posts (contract)",
+      "org": "NIT Agartala",
+      "category": "mo",
+      "location": "Agartala, Tripura",
+      "state": "Tripura",
+      "posts": 2,
+      "salary": "₹70,000/month consolidated",
+      "mode": "Apply online",
+      "lastDate": "2026-11-28",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS with State/Indian Medical Register registration; MD Medicine desirable, experience preferred. Max age 35 on 31 Oct 2026 (retired MOs up to 62 considered). Apply via the Google Form on the notice; interview date by email. One-year contract, renewable up to 3 years.",
+      "officialUrl": "https://www.nita.ac.in",
+      "sourceUrl": "https://www.freejobalert.com/articles/nit-agartala-medical-officer-campus-doctor-recruitment-2026-3080013",
+      "addedOn": "2026-11-13",
+      "verified": false,
+      "requirements": {
+        "registration": "any",
+        "maxAge": 35,
+        "ageOn": "2026-10-31"
       }
     },
     {
@@ -1030,5 +1211,5 @@
       }
     }
   ],
-  "updatedAt": "2026-11-13T04:04:20.365Z"
+  "updatedAt": "2026-11-13T04:29:07.356Z"
 }
