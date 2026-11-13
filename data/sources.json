@@ -1200,6 +1200,118 @@
       "state": "All India",
       "priority": 3,
       "why": "Research / project scientist posts for MBBS"
+    },
+    {
+      "name": "SAIL Careers (all plants)",
+      "url": "https://sailcareers.com",
+      "group": "Govt Medical Officer",
+      "state": "All India",
+      "priority": 2,
+      "why": "Official SAIL portal hosting plant-level GDMO walk-in PDFs (Salem Nov 2026, Rourkela, Bhilai); robots-blocked, cover by search"
+    },
+    {
+      "name": "ICMR Employment Opportunities",
+      "url": "https://www.icmr.gov.in/employment-opportunities",
+      "group": "Research",
+      "state": "All India",
+      "priority": 2,
+      "why": "Lists ICMR institute Scientist-B (Medical) adverts open to MBBS"
+    },
+    {
+      "name": "Tata Memorial Centre recruitment",
+      "url": "https://tmc.gov.in",
+      "group": "Central Hospitals",
+      "state": "All India",
+      "priority": 2,
+      "why": "Regular MBBS Medical Officer walk-ins at TMC units across India"
+    },
+    {
+      "name": "Drlogy Jobs",
+      "url": "https://www.drlogy.com/jobs",
+      "group": "Private",
+      "state": "All India",
+      "priority": 2,
+      "why": "Source of current private RMO/duty MO listings with dated postings"
+    },
+    {
+      "name": "Assam State AIDS Control Society",
+      "url": "https://asacs.assam.gov.in",
+      "group": "State Govt",
+      "state": "Assam",
+      "priority": 2,
+      "why": "Regular MBBS MO walk-ins at ART/OST centres; robots-blocked, cover by search"
+    },
+    {
+      "name": "Assam Medical College & Hospital, Dibrugarh",
+      "url": "https://amch-dibrugarh.assam.gov.in",
+      "group": "Medical colleges",
+      "state": "Assam",
+      "priority": 2,
+      "why": "Frequent walk-in PDFs including MO posts for MBBS"
+    },
+    {
+      "name": "ANIIMS Sri Vijaya Puram",
+      "url": "https://aniims.andamannicobar.gov.in/",
+      "group": "Medical colleges",
+      "state": "Andaman and Nicobar Islands",
+      "priority": 2,
+      "why": "Only A&N medical college; posts MO/LMO/JR contract notices"
+    },
+    {
+      "name": "A&N Administration vacancies",
+      "url": "https://andamannicobar.gov.in/vacancy_all",
+      "group": "State Govt",
+      "state": "Andaman and Nicobar Islands",
+      "priority": 2,
+      "why": "DHS A&N MO and health recruitment notices"
+    },
+    {
+      "name": "Directorate of Health Services Meghalaya",
+      "url": "https://meghealth.gov.in",
+      "group": "State Govt",
+      "state": "Meghalaya",
+      "priority": 2,
+      "why": "Medical & Health Officer walk-ins"
+    },
+    {
+      "name": "Birbhum District – Recruitment",
+      "url": "https://birbhum.gov.in/notice_category/recruitment/",
+      "group": "State Govt",
+      "state": "West Bengal",
+      "priority": 2,
+      "why": "Direct PDFs of DHFWS Birbhum & Rampurhat NHM MO/GDMO notices; reachable when wbhealth.gov.in fails"
+    },
+    {
+      "name": "Budaun district (CMO/NHM notices)",
+      "url": "https://budaun.nic.in/",
+      "group": "State Govt",
+      "state": "Uttar Pradesh",
+      "priority": 2,
+      "why": "NHM MBBS MO advertisements several times a year"
+    },
+    {
+      "name": "THDC India Ltd careers",
+      "url": "https://www.thdc.co.in",
+      "group": "Govt Medical Officer",
+      "state": "Uttarakhand",
+      "priority": 2,
+      "why": "Repeated ad hoc GDMO walk-ins (Apr and Nov 2026)"
+    },
+    {
+      "name": "IHBAS Delhi",
+      "url": "https://ihbas.delhi.gov.in",
+      "group": "Central Hospitals",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "Regular JR/SR walk-ins"
+    },
+    {
+      "name": "Indira Gandhi Hospital Dwarka",
+      "url": "https://igh.delhi.gov.in",
+      "group": "State Govt",
+      "state": "Delhi",
+      "priority": 2,
+      "why": "Recurring ad hoc JR (MBBS) walk-ins"
     }
   ]
 }

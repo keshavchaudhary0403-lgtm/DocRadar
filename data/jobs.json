@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "jobs": [
     {
       "id": "asacs-mo-art-ost-dmch-diphu-walkin-2026-11-13",
@@ -67,6 +67,26 @@
         "ageOn": "2026-11-27",
         "ageRelax": true
       }
+    },
+    {
+      "id": "esic-faridabad-jr-tutor-2026-11-13",
+      "title": "Junior Resident (contract) – 34 posts (plus 32 Tutor/Demonstrator)",
+      "org": "ESIC Medical College & Hospital, Faridabad",
+      "category": "jr",
+      "location": "Faridabad, Haryana",
+      "state": "Haryana",
+      "posts": 34,
+      "salary": "Pay Level 10 (₹56,100–1,77,500) + allowances",
+      "mode": "Apply offline",
+      "lastDate": "2026-11-13",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS; Advt Ad-20/1747/2026/ADMIN dated 02.11.2026. Apply by email or by hand at Room No. 9, Academic Block, ESIC MC&H Faridabad; fee ₹500 (SC/ST/female/ExSM/PH exempt); written test if applicants exceed vacancies. Details from aggregators; official PDF not readable.",
+      "officialUrl": "https://www.esic.gov.in/recruitments",
+      "sourceUrl": "https://www.mysarkarinaukri.com/find/employees-state-insurance-corporation-jobs/167810",
+      "addedOn": "2026-11-13",
+      "verified": false,
+      "requirements": {}
     },
     {
       "id": "gmc-udhampur-junior-resident-2026-11-14",
@@ -146,6 +166,27 @@
       }
     },
     {
+      "id": "tripura-esis-imo-2026-11-16",
+      "title": "Insurance Medical Officer (contract) – 1 post (SC)",
+      "org": "Tripura Employees' State Insurance Society",
+      "category": "mo",
+      "location": "Agartala, Tripura",
+      "state": "Tripura",
+      "posts": 1,
+      "salary": "₹72,000/month",
+      "mode": "Apply offline",
+      "lastDate": "2026-11-16",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS (Allopathy); 1-year contract. Application with API sheet must reach the CEO, Tripura ESI Society, Shram Bhawan, Agartala by hand or post by 16 Nov; shortlisting by API, then DV and interview. Details from aggregator; official PDF not readable.",
+      "officialUrl": "https://labour.tripura.gov.in",
+      "noticePdf": "https://tripura.gov.in/sites/default/files/EOI,2026.pdf",
+      "sourceUrl": "https://www.mysarkarinaukri.com/find/employees-state-insurance-corporation-jobs/168546",
+      "addedOn": "2026-11-13",
+      "verified": false,
+      "requirements": {}
+    },
+    {
       "id": "mvh-delhi-jr-2026-11-17",
       "title": "Junior Resident (MBBS, ad hoc) – 2 posts, walk-in",
       "org": "Maharishi Valmiki Hospital, Pooth Khurd (Delhi Govt)",
@@ -219,6 +260,30 @@
       "sourceUrl": "https://www.freejobalert.com/articles/angrau-medical-officer-recruitment-2026-3079300",
       "addedOn": "2026-11-12",
       "verified": true
+    },
+    {
+      "id": "aiims-delhi-prs1-medical-obg-map-pe-2026-11-17",
+      "title": "Project Research Scientist-I (Medical), ICMR project MAP-PE, Obstetrics & Gynaecology – 1 post",
+      "org": "AIIMS New Delhi",
+      "category": "other",
+      "location": "New Delhi, Delhi",
+      "state": "Delhi",
+      "posts": 1,
+      "salary": "₹67,000 + 30% HRA (₹87,100)",
+      "mode": "Apply online",
+      "lastDate": "2026-11-17",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS, MVSc or BDS; community health or nutrition project experience desirable. Email CV to jobrecruitmentaiims@gmail.com with post name and project code I-2039 in the subject by 5 PM on 17 Nov; interview date by email. Temporary, 3 months initially.",
+      "officialUrl": "https://www.aiims.edu/index.php/en/notices/recruitment/aiims-recruitment?id=25039",
+      "noticePdf": "https://www.aiims.edu/images/pdf/recruitment/advertisement/obs%20&%20gyne-3-11-26.pdf",
+      "sourceUrl": "https://www.aiims.edu/index.php/en/notices/recruitment/aiims-recruitment",
+      "addedOn": "2026-11-13",
+      "verified": true,
+      "requirements": {
+        "maxAge": 35,
+        "ageRelax": true
+      }
     },
     {
       "id": "afms-ssc-mo-nov-2026",
@@ -316,10 +381,11 @@
       "lastDate": "2026-11-18",
       "eventDate": "2026-11-18",
       "eligibility": "after-internship",
-      "eligibilityNote": "MBBS (50% marks) plus at least 3 years' experience in a recognised hospital. Walk-in at 11:00 AM at the Dean (Agri) office, College of Agriculture, Dharwad; the Assistant Lady MO post is ST-reserved.",
+      "eligibilityNote": "MBBS (50% marks) plus at least 3 years' experience in a recognised hospital. Walk-in at 11:00 AM at the Dean (Agri) office, College of Agriculture, Dharwad; the Assistant Lady MO post is ST-reserved. A corrigendum dated 09.11.2026 only fixes the salary typo (₹60,000 for MBBS); the walk-in date is unchanged.",
       "officialUrl": "https://sites.google.com/a/uasd.in/news/temporary-appointment-notification-circulars",
       "addedOn": "2026-11-12",
-      "verified": true
+      "verified": true,
+      "sourceUrl": "https://drive.google.com/file/d/1dqjUmFjU2D4xxSnZZdKG2DoylacaFU_q/view"
     },
     {
       "id": "aiims-bhopal-jr-nonacad-2026-11-19",
@@ -335,7 +401,7 @@
       "lastDate": "2026-11-19",
       "eventDate": "2026-11-19",
       "eligibility": "after-internship",
-      "eligibilityNote": "Needs completed internship and NMC/SMC registration. Age 33 max. Report by 9 AM at 4th Floor, Deanery, Kautilya Bhawan.",
+      "eligibilityNote": "Needs completed internship and NMC/SMC registration. Age 33 max. Report by 9 AM at 4th Floor, Deanery, Kautilya Bhawan. Internship must have been completed within 5 years of the interview date (per aggregator copy of Advt 2026/10).",
       "officialUrl": "https://www.aiimsbhopal.edu.in/AIIMSFiles/career/Download/Advertisement_JR_27102026.pdf",
       "sourceUrl": "https://www.freejobalert.com/articles/aiims-bhopal-junior-resident-recruitment-2026-walkin-for-20-posts-3076186",
       "addedOn": "2026-11-12",
@@ -397,6 +463,31 @@
       }
     },
     {
+      "id": "sail-salem-gdmo-walkin-2026-11-20",
+      "title": "General Duty Medical Officer (contract) – 1 post (OBC), walk-in",
+      "org": "SAIL – Salem Steel Plant",
+      "category": "mo",
+      "location": "Salem, Tamil Nadu",
+      "state": "Tamil Nadu",
+      "posts": 1,
+      "salary": "₹90,000/month consolidated",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-20",
+      "eventDate": "2026-11-20",
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS from an MCI-recognised institute with MCI/NMC/SMC registration; experience preferred, not mandatory. Registration 8–11 AM, interview 11 AM–4 PM at HRDC Building, SSP; bring Annexure-1 form and originals. 1-year contract, extendable to 3 years. Advt SSP/HR-2(15)/2026/(2) dated 30.10.2026.",
+      "officialUrl": "https://sailcareers.com",
+      "noticePdf": "https://aima-web-images.s3.ap-south-1.amazonaws.com/sailcareers.com/Downloads/SSP_News%20&%20Jobs_30102026_103920.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/sail-general-duty-medical-officer-gdmo-recruitment-2026-3077025",
+      "addedOn": "2026-11-13",
+      "verified": true,
+      "requirements": {
+        "registration": "any",
+        "maxAge": 69,
+        "ageOn": "2026-10-30"
+      }
+    },
+    {
       "id": "rampurhat-hd-gdmo-medical-officer-2026-11-26",
       "title": "GDMO / Medical Officer (contract) – 12 posts",
       "org": "District Health & FW Samiti, Rampurhat Health District",
@@ -409,8 +500,8 @@
       "lastDate": "2026-11-26",
       "eventDate": null,
       "eligibility": "after-internship",
-      "eligibilityNote": "MBBS with West Bengal Medical Council registration; must be a permanent resident of West Bengal and know Bengali. Registration and fee close 23 Nov; final form submission closes 26 Nov 2026.",
-      "officialUrl": "https://www.wbhealth.gov.in/",
+      "eligibilityNote": "MBBS with West Bengal Medical Council registration; permanent WB resident who knows Bengali; age 21–40 on 1 Jan 2026. Posts: GDMO-FRU 5, MO XV-FC 4, MO RKSK 1, MO NUHM 2. Register and pay fee (₹100/₹50) on hr.wbhealth.gov.in by 23 Nov; final submission by 26 Nov. Selection: 85 marks MBBS academics + 15 interview.",
+      "officialUrl": "https://birbhum.gov.in/notice_category/recruitment/",
       "noticePdf": "https://cdn.s3waas.gov.in/s3fc3cf452d3da8402bebb765225ce8c0e/uploads/2026/11/17939653056084.pdf",
       "sourceUrl": "https://www.freejobalert.com/articles/rampurhat-health-district-recruitment-2026-medical-officer-and-gdmo-3079508",
       "addedOn": "2026-11-12",
@@ -419,6 +510,106 @@
         "councils": [
           "West Bengal Medical Council"
         ],
+        "maxAge": 40,
+        "ageOn": "2026-01-01",
+        "ageRelax": true,
+        "internshipBy": "lastDate"
+      }
+    },
+    {
+      "id": "icmr-nie-chennai-scientist-b-medical-2026-11-26",
+      "title": "Scientist-B (Medical) – 2 posts (School of Public Health)",
+      "org": "ICMR – National Institute of Epidemiology (NIE)",
+      "category": "other",
+      "location": "Chennai, Tamil Nadu",
+      "state": "Tamil Nadu",
+      "posts": 2,
+      "salary": "Level 10, ₹56,100–1,77,500",
+      "mode": "Apply online",
+      "lastDate": "2026-11-26",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS recognised by MCI/NMC; no essential experience. Apply online at recruitment.icmr.org.in, fee ₹1,500 (SC/ST/women/PwBD/EWS exempt); selection by CBT and/or interview. Official PDF says 26 Nov 2026; an aggregator claims an extension to 6 Dec that isn't on the official page, so the earlier date is used.",
+      "officialUrl": "https://www.icmr.gov.in/employment-opportunities",
+      "noticePdf": "https://www.icmr.gov.in/icmrobject/uploads/Recruitment/1791381044_icmr-ninadvertisementscientist-bcd.pdf",
+      "sourceUrl": "https://www.icmr.gov.in",
+      "addedOn": "2026-11-13",
+      "verified": true,
+      "requirements": {
+        "maxAge": 35,
+        "ageRelax": true
+      }
+    },
+    {
+      "id": "cmo-budaun-nhm-mbbs-mo-2026-11-27",
+      "title": "Medical Officer / EMO / Lady MO (NHM contract) – 30 posts",
+      "org": "Chief Medical Officer, Budaun (District Health Society, NHM Uttar Pradesh)",
+      "category": "mo",
+      "location": "Budaun, Uttar Pradesh",
+      "state": "Uttar Pradesh",
+      "posts": 30,
+      "salary": "₹1,00,000/month (MO Telemedicine, EMO, Lady MO); ₹80,000 + ₹20,000 PBI (NUHM U-AAM MO)",
+      "mode": "Apply offline",
+      "lastDate": "2026-11-27",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS (MCI/NMC-recognised) with State or GoI council registration. Posts: MO Telemedicine 1, EMO 13, Lady MO (CHC Ujhani) 1, NUHM U-AAM MO 10, General Physician 5 (MD Medicine, or MBBS with hospital experience). Applications by registered post only, to reach the CMO office, Budaun by 5 PM on 27 Nov 2026 (separate form per programme); interview dates by call letter. Notice dated 05.11.2026.",
+      "officialUrl": "https://budaun.nic.in/",
+      "noticePdf": "https://cdn.s3waas.gov.in/s36c9882bbac1c7093bd25041881277658/uploads/2026/11/17939559114908.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/chief-medical-officer-budaun-recruitment-2026-medical-officer-3079582",
+      "addedOn": "2026-11-13",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "lastDate",
+        "registration": "any",
+        "maxAge": 65,
+        "ageOn": "2026-11-05"
+      }
+    },
+    {
+      "id": "thdcil-adhoc-gdmo-walkin-2026-11-27",
+      "title": "Adhoc General Duty Medical Officer – 1 post (OBC-NCL), walk-in",
+      "org": "THDC India Limited",
+      "category": "mo",
+      "location": "Rishikesh, Uttarakhand",
+      "state": "Uttarakhand",
+      "posts": 1,
+      "salary": "₹1,23,000/month consolidated",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-27",
+      "eventDate": "2026-11-27",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Advt. No. 08/2026. MBBS with permanent State Medical Council registration and at least 2 years' post-internship experience; post reserved for OBC (NCL). Report 12 noon at Bhagirathi Bhawan, Pragati Puram, Rishikesh; initial posting at VPHEP Pipalkoti. Details from aggregator; official PDF not yet read.",
+      "officialUrl": "https://www.thdc.co.in",
+      "noticePdf": "https://thdc.co.in/sites/default/files/career/ADVT_INTERVIEW_ADHOC_GDMO.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/thdcil-adhoc-general-duty-medical-officer-adhoc-gdmo-recruitment-2026-3080162",
+      "addedOn": "2026-11-13",
+      "verified": false,
+      "requirements": {
+        "registration": "permanent"
+      }
+    },
+    {
+      "id": "dhfws-birbhum-medical-officer-gdmo-2026-11-27",
+      "title": "Medical Officer GDMO (NHM contract) – 15 posts",
+      "org": "District Health & FW Samiti, Birbhum (CMOH Birbhum, NHM)",
+      "category": "mo",
+      "location": "Suri, Birbhum, West Bengal",
+      "state": "West Bengal",
+      "posts": 15,
+      "salary": "₹60,000/month consolidated",
+      "mode": "Apply online",
+      "lastDate": "2026-11-27",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS; permanent West Bengal resident who knows the local language; age 21–40 on 1 Jan 2026. Posts: GDMO-FRU 4, GDMO-RKSK 3, GDMO NUHM/15th FC 8. Register and pay fee (₹100/₹50) by midnight 25 Nov, final submission by midnight 27 Nov on the wbhealth portal; selection 85 MBBS marks + 15 interview (per corrigendum memo 782 dt 06.11.2026).",
+      "officialUrl": "https://birbhum.gov.in/notice_category/recruitment/",
+      "noticePdf": "https://cdn.s3waas.gov.in/s3fc3cf452d3da8402bebb765225ce8c0e/uploads/2026/11/17939677784685.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/district-health-family-welfare-samity-birbhum-recruitment-2026-staff-3079135",
+      "addedOn": "2026-11-13",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "lastDate",
         "maxAge": 40,
         "ageOn": "2026-01-01",
         "ageRelax": true
@@ -437,18 +628,19 @@
       "lastDate": "2026-11-30",
       "eventDate": null,
       "eligibility": "after-internship",
-      "eligibilityNote": "MBBS with internship completed; only for candidates who appeared in NEET-PG 2026 without getting admission, selected on NEET-PG 2026 score. Application with DD (₹1,000; ₹250 EBC/SC/ST) must reach the Director, IGIMS by 4 PM on 30 Nov; reservation only for Bihar domicile.",
+      "eligibilityNote": "MBBS with internship completed; only for candidates who appeared in NEET-PG 2026 without getting admission, selected on NEET-PG 2026 score. Application with DD (₹1,000; ₹250 EBC/SC/ST) must reach the Director, IGIMS by 4 PM on 30 Nov; reservation only for Bihar domicile. Only one JR term allowed; earlier service in armed forces, health services or private nursing homes counts as a term.",
       "officialUrl": "https://www.igims.org",
       "sourceUrl": "https://govtjobsalert.in/igims-patna-junior-resident-recruitment-2026/",
       "addedOn": "2026-11-12",
-      "verified": false,
+      "verified": true,
       "requirements": {
         "internshipBy": "lastDate",
         "registration": "any",
         "neetPg": [
           2026
         ]
-      }
+      },
+      "noticePdf": "https://www.igims.org/resources/uploads/TenderManagement/179421839322.pdf"
     },
     {
       "id": "crpf-gdmo-contract-walkin-2026-12-02",
@@ -501,6 +693,51 @@
         "ageOn": "2026-12-02",
         "ageRelax": true
       }
+    },
+    {
+      "id": "aniims-lady-medical-officer-2026-12-02",
+      "title": "Lady Medical Officer (contract, 1 year) – 1 post",
+      "org": "Andaman & Nicobar Islands Institute of Medical Sciences (ANIIMS)",
+      "category": "mo",
+      "location": "Sri Vijaya Puram (Port Blair), Andaman and Nicobar Islands",
+      "state": "Andaman and Nicobar Islands",
+      "posts": 1,
+      "salary": "₹86,000/month consolidated",
+      "mode": "Apply online",
+      "lastDate": "2026-12-02",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS as per NMC norms. Email the prescribed form with soft copies (incl. internship completion certificate and SMC/MCI registration) to recruitment.aniims@gmail.com by 4 PM on 2 Dec; interview date to be announced.",
+      "officialUrl": "https://aniims.andamannicobar.gov.in/",
+      "noticePdf": "https://aniims.andamannicobar.gov.in/uploads/notices/7f217d33ae144a26aa9ca72b28d7957d.pdf",
+      "sourceUrl": "https://aniims.andamannicobar.gov.in/",
+      "addedOn": "2026-11-13",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "lastDate",
+        "registration": "any",
+        "gender": "female"
+      }
+    },
+    {
+      "id": "umc-navi-mumbai-rmo-dec-2026",
+      "title": "Resident Medical Officer (fresher) – 1 post",
+      "org": "UMC Hospitals, Nerul",
+      "category": "private",
+      "location": "Navi Mumbai, Maharashtra",
+      "state": "Maharashtra",
+      "posts": 1,
+      "salary": null,
+      "mode": "Apply online",
+      "lastDate": "2026-12-05",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS, fresher (0 years) per the hospital's careers page; apply via its online form or info.navimumbai@umchospitals.com. Last date 5 Dec comes from an aggregator; the hospital page shows none.",
+      "officialUrl": "https://navimumbai.umchospitals.com/contact/career/rmo.html",
+      "sourceUrl": "https://meditechnika.org/umc-hospitals-rmo-2026-nerul-navi-mumbai/",
+      "addedOn": "2026-11-13",
+      "verified": false,
+      "requirements": {}
     },
     {
       "id": "apollo-bengaluru-rmo-dec-2026",
@@ -697,5 +934,5 @@
       }
     }
   ],
-  "updatedAt": "2026-11-12T18:28:47.212Z"
+  "updatedAt": "2026-11-13T03:56:54.890Z"
 }
