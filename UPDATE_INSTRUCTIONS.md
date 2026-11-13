@@ -356,12 +356,16 @@ happens in your cloud workspace, which can push.
    `~/Desktop/DocRadar`:
    `node scan/scan-sources.mjs --only-failed --input-dir scan`
    It writes `scan/digest.md` and `scan/catchup.json` (what still fails). About 250 sources
-   take 2–5 minutes; a full scan takes about 5–15.
+   take 2–5 minutes; a full scan takes about 5–15. **If the Mac's shell cuts the command off**,
+   run it in parts instead: add `--batch 1/4`, then `--batch 2/4`, `3/4`, `4/4` (use more parts
+   if one still gets cut off). Each part writes `scan/digest-K.md` and `scan/catchup-K.json`;
+   review every digest part and combine the `stillFailed` lists of all `catchup-K.json` files.
 4. **Review** every section of `scan/digest.md` from the Mac exactly as in section 3, steps 2–3.
    Verify each candidate (section 4) and add or update listings (section 5) **in the cloud copy**.
    Skip anything already in `data/jobs.json`. Don't re-run the section 1b / 2 sweeps; the morning
    run did those. Use web searches only to verify a candidate.
-5. In the cloud copy, add the `catchup` object from the Mac's `scan/catchup.json` to
+5. In the cloud copy, add the `catchup` object from the Mac's `scan/catchup.json` (or the
+   combined parts) to
    `data/scan-failed.json` (keep its other fields). Run `node scripts/maintain.mjs` until it ends
    with ✅.
 6. Add a separate run-log entry at the top of `data/update-log.md`:

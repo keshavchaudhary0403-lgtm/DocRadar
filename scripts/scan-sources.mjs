@@ -7,6 +7,9 @@
 //   node scripts/scan-sources.mjs --limit 50     # first 50 (testing)
 //   node scripts/scan-sources.mjs --only-failed  # catch-up: only the sources listed in
 //                                                # data/scan-failed.json from today's full scan
+//   node scripts/scan-sources.mjs --only-failed --input-dir scan --batch 2/4
+//        --batch k/n scans only the k-th of n equal parts and writes digest-k.md /
+//        catchup-k.json (for shells that cut off long commands; run 1/n … n/n).
 //   node scripts/scan-sources.mjs --only-failed --input-dir scan
 //        same, but reads sources.json and scan-failed.json from scan/ (copied there from a
 //        fresh clone) instead of data/, and writes the catch-up result to scan/catchup.json,
@@ -157,6 +160,13 @@ if (ONLY_FAILED) {
   }
 }
 if (LIMIT) list = list.slice(0, LIMIT);
+const BATCH = opt('--batch', '');
+const SUFFIX = BATCH ? '-' + BATCH.split('/')[0] : '';
+if (BATCH) {
+  const [k, n] = BATCH.split('/').map(Number);
+  const size = Math.ceil(list.length / n);
+  list = list.slice((k - 1) * size, k * size);
+}
 const out = new Array(list.length); let next = 0, done = 0;
 const t0 = Date.now();
 await Promise.all(Array.from({ length: Math.min(CONC, list.length) }, async () => {
@@ -181,7 +191,7 @@ if (retry.length) {
 const ok = out.filter(r => r.ok), failed = out.filter(r => !r.ok);
 const summary = { mode: ONLY_FAILED ? 'only-failed' : 'full', retried: retry.length, date: today(), total: out.length, scanned: out.length, ok: ok.length, failed: failed.length, seconds: Math.round((Date.now() - t0) / 1000) };
 mkdirSync(new URL('../scan/', import.meta.url), { recursive: true });
-writeFileSync(new URL('../scan/scan.json', import.meta.url), JSON.stringify({ summary, results: out }, null, 1));
+writeFileSync(new URL(`../scan/scan${SUFFIX}.json`, import.meta.url), JSON.stringify({ summary, results: out }, null, 1));
 
 let md = `# Source scan ${summary.date}${ONLY_FAILED ? ' (catch-up: sources that failed in the morning scan)' : ''}\nscanned ${summary.scanned} of ${summary.total} · ok ${summary.ok} · failed ${summary.failed}\n★ = mentions MBBS-level medical posts. Review every section; open promising notices to verify.\n`;
 for (const r of out) {
@@ -191,13 +201,13 @@ for (const r of out) {
   for (const s of r.snippets) md += `> …${s}…\n`;
   if (r.ok && !r.links.some(l => l.strong) && !r.snippets.length) md += `(no recruitment links found on the page)\n`;
 }
-writeFileSync(new URL('../scan/digest.md', import.meta.url), md);
+writeFileSync(new URL(`../scan/digest${SUFFIX}.md`, import.meta.url), md);
 
 const brief = r => ({ i: r.i, name: r.name, url: r.url, state: r.state, group: r.group, status: String(r.status) });
 if (INPUT_DIR) {
   // No git on this computer: hand the result to the publishing step via scan/.
-  writeFileSync(new URL('../scan/catchup.json', import.meta.url), JSON.stringify({ morningDate: failedFile?.date ?? null, catchup: { date: summary.date, scanned: summary.scanned, ok: summary.ok, stillFailed: failed.map(brief) } }, null, 1) + '\n');
-} else if (!LIMIT && !ONLY_FAILED) {
+  writeFileSync(new URL(`../scan/catchup${SUFFIX}.json`, import.meta.url), JSON.stringify({ morningDate: failedFile?.date ?? null, catchup: { date: summary.date, scanned: summary.scanned, ok: summary.ok, stillFailed: failed.map(brief) } }, null, 1) + '\n');
+} else if (!LIMIT && !ONLY_FAILED && !BATCH) {
   writeFileSync(FAILED_FILE, JSON.stringify({ date: summary.date, total: summary.total, ok: summary.ok, failed: failed.map(brief) }, null, 1) + '\n');
 } else if (ONLY_FAILED && failedFile && failedFile.date === summary.date) {
   failedFile.catchup = { date: summary.date, scanned: summary.scanned, ok: summary.ok, stillFailed: failed.map(brief) };
@@ -205,7 +215,7 @@ if (INPUT_DIR) {
 }
 console.log(`Failed (${failed.length}):`);
 for (const r of failed) console.log(`  [${r.i}] ${r.name} · ${r.url} · ${r.status}`);
-console.log(`\nDigest: scan/digest.md (${md.split('\n').length} lines) · JSON: scan/scan.json`);
+console.log(`\nDigest: scan/digest${SUFFIX}.md (${md.split('\n').length} lines) · JSON: scan/scan${SUFFIX}.json`);
 console.log(`Sources: scanned ${summary.scanned} of ${summary.total} · ok ${summary.ok} · failed ${summary.failed} · ${summary.seconds}s`);
 // Open keep-alive sockets can keep Node running after the scan; exit explicitly.
 process.exit(0);
