@@ -162,6 +162,9 @@ URLs that only appear in a file. Searching site by site uses up the web-search b
    - `scan/scan.json`: the same data as JSON. `scan/` is git-ignored; never commit it.
    - Its last line is `Sources: scanned N of TOTAL · ok X · failed Y`. Copy those numbers into the
      run log.
+   - `data/scan-failed.json`: the sources that failed this morning. **Commit it** with the data
+     (`git add data` does this). A catch-up run on a computer in India rescans just these later in
+     the day (section 10).
 2. **Review EVERY section of the digest** (about 750 KB). Split it by index range (e.g. [1]–[160], [161]–[320],
    …) and review the ranges in parallel with subagents if available; otherwise read it range by
    range with Read (offset/limit) or grep. Look at every `★` link and every snippet, and any
@@ -334,6 +337,31 @@ If the push is rejected, run `git pull --rebase`, rerun step 6, then push again.
 day with nothing new (the `updated` date and run log still change), so the site shows it was checked.
 
 ---
+
+## 10. Catch-up run (computer in India, later the same day)
+Many Indian state-government and medical-college sites refuse connections from cloud servers, so
+the morning cloud run can't reach them. A second scheduled task runs on a Mac in India and rescans
+only those sources.
+
+1. `git pull --rebase origin main`. Check that `data/scan-failed.json` has today's `date`. If it
+   doesn't, the morning run didn't happen: the scanner then scans every source, and you do the
+   whole of section 3 instead.
+2. `node scripts/scan-sources.mjs --only-failed`. It rescans the sources in `data/scan-failed.json`,
+   writes `scan/digest.md` for them and adds a `catchup` block (what still fails) to
+   `data/scan-failed.json`.
+3. Review every section of the digest exactly as in section 3, steps 2–3. Verify each candidate
+   (section 4) and add or update listings (section 5). Skip anything already in `data/jobs.json`.
+   Don't re-run the section 1b / 2 sweeps; the morning run did those. Use web searches only to
+   verify a candidate.
+4. Run `node scripts/maintain.mjs` until it ends with ✅.
+5. Add a separate run-log entry at the top of `data/update-log.md`:
+   ```
+   ## YYYY-MM-DD (catch-up)
+   - New: N (titles with state) · Updated: N
+   - Sources: rescanned N failed from the morning · ok X · still failing Y: list domains or "none"
+   ```
+6. Commit `Catch-up YYYY-MM-DD: +N new, M updated` and push to main (on conflict: pull --rebase,
+   re-run maintain.mjs, push again; never force-push).
 
 ## Accuracy rules (non-negotiable)
 - **Never invent** a listing, date, salary, post count, URL or requirement. If unsure, leave it out or `null`.

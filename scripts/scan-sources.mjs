@@ -5,11 +5,15 @@
 //
 //   node scripts/scan-sources.mjs                # all sources
 //   node scripts/scan-sources.mjs --limit 50     # first 50 (testing)
+//   node scripts/scan-sources.mjs --only-failed  # catch-up: only the sources listed in
+//                                                # data/scan-failed.json from today's full scan
 //
 // Output (git-ignored):
 //   scan/digest.md   one section per source: [index] name · state · group · status, then links
 //                    ★ = link text/URL mentions MBBS-level medical posts
 //   scan/scan.json   the same data as JSON, plus a summary
+//   data/scan-failed.json  (full scan) the sources that failed, for the catch-up run;
+//                          (--only-failed) adds a "catchup" block with what still fails.
 // Stdout ends with "Sources: scanned N of TOTAL · ok X · failed Y".
 //
 // Sites with certificate errors are reported as failed (status shows the TLS error code);
@@ -20,6 +24,9 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 const args = process.argv.slice(2);
 const opt = (k, d) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : d; };
 const LIMIT = +opt('--limit', 0);
+const ONLY_FAILED = args.includes('--only-failed');
+const today = () => new Date(Date.now() + 5.5 * 3600e3).toISOString().slice(0, 10); // IST date
+const FAILED_FILE = new URL('../data/scan-failed.json', import.meta.url);
 const CONC = +opt('--concurrency', 32);
 const TIMEOUT = +opt('--timeout', 25000);
 const MAX_BYTES = 3_000_000;
@@ -103,7 +110,7 @@ function extract(html, base) {
 }
 
 async function scan(src, i) {
-  const res = { i: i + 1, name: src.name, url: src.url, state: src.state, group: src.group, ok: false, status: null, links: [], snippets: [], followed: [] };
+  const res = { i: src._i ?? i + 1, name: src.name, url: src.url, state: src.state, group: src.group, ok: false, status: null, links: [], snippets: [], followed: [] };
   let r = await get(src.url);
   if (!r.ok && /^https:/.test(src.url)) { const r2 = await get(src.url.replace(/^https:/, 'http:')); if (r2.ok) r = r2; }
   res.status = r.status; res.finalUrl = r.finalUrl;
@@ -132,7 +139,18 @@ async function scan(src, i) {
 }
 
 const data = JSON.parse(readFileSync(new URL('../data/sources.json', import.meta.url)));
-let list = data.sources; if (LIMIT) list = list.slice(0, LIMIT);
+let list = data.sources.map((s, k) => ({ ...s, _i: k + 1 }));
+let failedFile = null;
+if (ONLY_FAILED) {
+  try { failedFile = JSON.parse(readFileSync(FAILED_FILE, 'utf8')); } catch {}
+  if (!failedFile || failedFile.date !== today()) {
+    console.error(`  data/scan-failed.json is missing or not from today (${failedFile?.date ?? 'none'}): today's cloud scan didn't run, so scanning ALL sources.`);
+  } else {
+    const want = new Set(failedFile.failed.map(f => f.url));
+    list = list.filter(s => want.has(s.url));
+  }
+}
+if (LIMIT) list = list.slice(0, LIMIT);
 const out = new Array(list.length); let next = 0, done = 0;
 const t0 = Date.now();
 await Promise.all(Array.from({ length: Math.min(CONC, list.length) }, async () => {
@@ -155,11 +173,11 @@ if (retry.length) {
   }));
 }
 const ok = out.filter(r => r.ok), failed = out.filter(r => !r.ok);
-const summary = { retried: retry.length, date: new Date().toISOString().slice(0, 10), total: out.length, scanned: out.length, ok: ok.length, failed: failed.length, seconds: Math.round((Date.now() - t0) / 1000) };
+const summary = { mode: ONLY_FAILED ? 'only-failed' : 'full', retried: retry.length, date: today(), total: out.length, scanned: out.length, ok: ok.length, failed: failed.length, seconds: Math.round((Date.now() - t0) / 1000) };
 mkdirSync(new URL('../scan/', import.meta.url), { recursive: true });
 writeFileSync(new URL('../scan/scan.json', import.meta.url), JSON.stringify({ summary, results: out }, null, 1));
 
-let md = `# Source scan ${summary.date}\nscanned ${summary.scanned} of ${summary.total} · ok ${summary.ok} · failed ${summary.failed}\n★ = mentions MBBS-level medical posts. Review every section; open promising notices to verify.\n`;
+let md = `# Source scan ${summary.date}${ONLY_FAILED ? ' (catch-up: sources that failed in the morning scan)' : ''}\nscanned ${summary.scanned} of ${summary.total} · ok ${summary.ok} · failed ${summary.failed}\n★ = mentions MBBS-level medical posts. Review every section; open promising notices to verify.\n`;
 for (const r of out) {
   md += `\n### [${r.i}] ${r.name} · ${r.state} · ${r.group} · ${r.ok ? 'ok' : 'FAILED ' + r.status}\n${r.url}${r.finalUrl && r.finalUrl !== r.url ? ' → ' + r.finalUrl : ''}\n`;
   if (r.followed.length) md += `followed: ${r.followed.join(' , ')}\n`;
@@ -169,6 +187,13 @@ for (const r of out) {
 }
 writeFileSync(new URL('../scan/digest.md', import.meta.url), md);
 
+const brief = r => ({ i: r.i, name: r.name, url: r.url, state: r.state, group: r.group, status: String(r.status) });
+if (!LIMIT && !ONLY_FAILED) {
+  writeFileSync(FAILED_FILE, JSON.stringify({ date: summary.date, total: summary.total, ok: summary.ok, failed: failed.map(brief) }, null, 1) + '\n');
+} else if (ONLY_FAILED && failedFile && failedFile.date === summary.date) {
+  failedFile.catchup = { date: summary.date, scanned: summary.scanned, ok: summary.ok, stillFailed: failed.map(brief) };
+  writeFileSync(FAILED_FILE, JSON.stringify(failedFile, null, 1) + '\n');
+}
 console.log(`Failed (${failed.length}):`);
 for (const r of failed) console.log(`  [${r.i}] ${r.name} · ${r.url} · ${r.status}`);
 console.log(`\nDigest: scan/digest.md (${md.split('\n').length} lines) · JSON: scan/scan.json`);
