@@ -460,6 +460,30 @@
       "addedOn": "2026-11-13"
     },
     {
+      "id": "manuu-hyderabad-doctors-walkin-2026-11-17",
+      "title": "Senior Consultant, Junior Consultant & Female Residential Consultant (MBBS) – 3 posts, walk-in",
+      "org": "Maulana Azad National Urdu University (MANUU)",
+      "category": "mo",
+      "location": "Hyderabad (Gachibowli), Telangana",
+      "state": "Telangana",
+      "posts": 3,
+      "salary": "₹60,000–₹1,00,000/month consolidated (by post)",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-17",
+      "eventDate": "2026-11-17",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Short-term contract (89 days, extendable) at the campus health centre. All three posts need MBBS with State Medical Council/IMR registration: Junior Consultant and Female Residential Consultant (women only) need 5+ years' experience after MBBS, preferably under 40; Senior Consultant needs 10+ years, preferably under 50. Register by 10 AM at the University Guest House, Gachibowli; bring originals, photocopies, a photo and two references. Urdu knowledge preferred.",
+      "officialUrl": "https://manuu.edu.in/",
+      "noticePdf": "https://manuu.edu.in/sites/default/files/Notification/2026-11/Doctorser2026.pdf",
+      "sourceUrl": "https://manuu.edu.in/sites/default/files/Notification/2026-11/Doctorser2026.pdf",
+      "addedOn": "2026-11-13",
+      "verified": true,
+      "requirements": {
+        "registration": "any",
+        "internshipBy": "eventDate"
+      }
+    },
+    {
       "id": "afms-ssc-mo-nov-2026",
       "title": "Medical Officer – Short Service Commission (120 posts)",
       "org": "Armed Forces Medical Services (Indian Army)",
@@ -1279,6 +1303,33 @@
       "addedOn": "2026-11-13"
     },
     {
+      "id": "aiims-madurai-jr-nonacad-2026-12-03",
+      "title": "Junior Resident (Non-Academic) – 36 posts",
+      "org": "AIIMS Madurai",
+      "category": "jr",
+      "location": "Madurai, Tamil Nadu",
+      "state": "Tamil Nadu",
+      "posts": 36,
+      "salary": "₹56,100/month (Level 10) + NPA",
+      "mode": "Apply online",
+      "lastDate": "2026-12-03",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Rolling advertisement dated 13.11.2026 for a 1-year term; apply via the Google Form linked in the notice by 5 PM on 3 Dec. MBBS with internship completed by the closing date; MCI/SMC registration needed before joining. Those who have already done three terms of JR anywhere are not eligible. Selection by interview (written test if many applicants); fee via SBI Collect.",
+      "officialUrl": "https://aiimsmadurai.edu.in/vacancy-notices.php",
+      "noticePdf": "https://aiimsmadurai.edu.in/downloads/2026/SRJR/NOV/Advertisement%20NOV-%20JR.pdf",
+      "sourceUrl": "https://aiimsmadurai.edu.in/vacancy-notices.php",
+      "addedOn": "2026-11-13",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "lastDate",
+        "registration": "any",
+        "maxAge": 33,
+        "ageOn": "2026-12-03",
+        "ageRelax": true
+      }
+    },
+    {
       "id": "umc-navi-mumbai-rmo-dec-2026",
       "title": "Resident Medical Officer (fresher) – 1 post",
       "org": "UMC Hospitals, Nerul",
@@ -1556,5 +1607,5 @@
       "addedOn": "2026-11-13"
     }
   ],
-  "updatedAt": "2026-11-13T08:31:30.421Z"
+  "updatedAt": "2026-11-13T11:16:47.243Z"
 }
