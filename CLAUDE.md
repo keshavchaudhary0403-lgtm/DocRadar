@@ -15,5 +15,7 @@ and `data/sources.json`. Deployed on Vercel from `main`; every push redeploys.
 - **Keep the daily task compatible:** if you change the data format, field names or
   `scripts/maintain.mjs`, update `UPDATE_INSTRUCTIONS.md` (and `DAILY_PROMPT.md` if needed) in the
   same commit.
+- `node scripts/scan-sources.mjs` fetches every source and writes `scan/digest.md` (git-ignored)
+  for the daily task to review.
 - `node scripts/maintain.mjs` validates the data and must end with ✅. It also re-stamps
   `updatedAt`, so don't commit that change on its own.

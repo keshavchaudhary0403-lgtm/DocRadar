@@ -149,28 +149,43 @@ Central Govt, Central Hospitals, State Govt, Medical colleges, Aggregators, Priv
 **Scan EVERY source in `sources.json` EVERY day. No rotation, no skipping, no time cutoff.**
 Users must be able to trust that every site listed on the Sources page was checked this morning.
 
-How to get through all of them (750+):
-- **Split the list into batches of about 50–100 sources and scan the batches in parallel** with
-  subagents (the Agent / Task tool) if available. Give each subagent its batch (name, url, group,
-  state), section 1's "what to look for" and section 5's listing format, and have it return
-  candidate listings plus a list of sources it could not load. If subagents aren't available,
-  scan the batches one after another until every source is done.
-- Every source gets at least one WebFetch of its listed URL. If that page is a homepage with no
-  notices on it, follow the single link labelled recruitment / careers / notices / vacancies /
-  walk-in. Groups State Govt, Central Hospitals, Govt Medical Officer, PSUs and every
-  `"All India"` source may follow one more level if notices are a click deeper.
-- The run is not finished until every source has been attempted. A source counts as done when it
-  was scanned, or when it failed to load and was covered by a `site:<domain> recruitment <M Y>`
-  search instead.
+How to get through all of them (750+): **use the scanner script, not one WebFetch per site.**
+Fetching 750+ pages one by one with WebFetch is too slow, and unattended runs may refuse WebFetch on
+URLs that only appear in a file. Searching site by site uses up the web-search budget (~200).
 
-For each source:
-- Use WebFetch on the URL and look for recruitment / careers / walk-in / notices / latest jobs
-  sections (following links as described above).
-- Collect anything matching section 1 with a last date of today or later, or no date yet.
-- If a site fails to load (timeout, 403, captcha), don't retry endlessly. Note it for the run log
-  (step 8) and cover it with a search like `site:<domain> recruitment <M Y>`.
-- If a URL is permanently dead or has moved, fix the `url` in `sources.json` (or remove the entry
-  if the institution no longer posts there) and say so in the run log.
+1. **Run the scanner first:** `node scripts/scan-sources.mjs` (takes about 5–15 minutes; run it in
+   the background if your tools allow, and do sections 1b/2 meanwhile). It fetches every source in
+   parallel, follows up to 2 recruitment/notice pages on homepages, and writes:
+   - `scan/digest.md`: one section per source, `### [index] name · state · group · ok|FAILED`,
+     then the recruitment-related links on the page (`★` = mentions MBBS-level medical posts) and
+     text snippets that mention Medical Officer / Junior Resident / walk-in / MBBS.
+   - `scan/scan.json`: the same data as JSON. `scan/` is git-ignored; never commit it.
+   - Its last line is `Sources: scanned N of TOTAL · ok X · failed Y`. Copy those numbers into the
+     run log.
+2. **Review EVERY section of the digest** (about 750 KB). Split it by index range (e.g. [1]–[160], [161]–[320],
+   …) and review the ranges in parallel with subagents if available; otherwise read it range by
+   range with Read (offset/limit) or grep. Look at every `★` link and every snippet, and any
+   unstarred link whose text suggests a current recruitment notice. Ignore links that are clearly
+   old (a year before last year, or a closed date), tenders, results of past exams, and nursing/
+   paramedical-only posts.
+3. **Open promising notices** to check them (section 4): WebFetch the notice URL. If WebFetch is
+   refused or fails, use `curl -sL --max-time 40 -o <scratch file> "<url>"` and read the file
+   (for a PDF, use `pdftotext` if installed, else WebFetch the PDF URL). Never weaken TLS checks.
+4. **Failed sources** (status `FAILED` in the digest): try WebFetch on the URL once. If that also
+   fails, cover it with `site:<domain> recruitment <M Y>` **only while the search budget lasts**,
+   all-India `★` coverage first (groups National portals, Exams, Defence, Central Hospitals, PSUs,
+   Central Govt), then the rest. List the remaining failed domains in the run log.
+5. If the scanner itself cannot run (no node, no network), fall back to WebFetch per source in
+   batches of 50–100 with subagents, and say so in the run log.
+
+The run is not finished until every source has been attempted: the scanner attempts all of them;
+a failed one counts as done once it was retried with WebFetch or covered by a site: search, or
+listed in the run log as still failing.
+
+For each source, collect anything matching section 1 with a last date of today or later, or no
+date yet. If a URL is permanently dead or has moved (the digest shows `FAILED 404` or a redirect to
+an unrelated page), fix the `url` in `sources.json` (or remove the entry if the institution no
+longer posts there) and say so in the run log.
 
 Aggregators (Sarkari Result `www.sarkariresult.com`, `sarkariresult.com.cm`, FreeJobAlert,
 Medical Dialogues jobs, Employment News, Naukri, Indeed, Docthub) are for **finding** listings.
@@ -304,7 +319,7 @@ Append one entry to the top of `data/update-log.md` (create the file if missing)
 - Updated: N (what changed)
 - State group covered: <weekday> – list of states
 - Listing tables: rows read N · already listed N · added N · skipped N (reasons)
-- Searches run: N · Sources: scanned N of TOTAL (must equal TOTAL with the failed ones) · failed (covered by site: search): list domains or "none"
+- Searches run: N · Sources: scanned N of TOTAL · ok X · failed Y (from the scanner's last line) · failed and still not covered: list domains or "none"
 - Notes: anything odd (conflicting dates, sites down, possible upcoming notifications)
 ```
 Keep only the latest 60 entries.
