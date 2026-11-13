@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch",
+      "WebSearch",
+      "Bash(node scripts/scan-sources.mjs)",
+      "Bash(node scripts/scan-sources.mjs *)",
+      "Bash(node scripts/maintain.mjs)",
+      "Bash(curl *)"
+    ]
+  }
+}
