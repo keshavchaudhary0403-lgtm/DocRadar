@@ -340,43 +340,45 @@ day with nothing new (the `updated` date and run log still change), so the site 
 
 ## 10. Catch-up run (computer in India, later the same day)
 Many Indian state-government and medical-college sites refuse connections from cloud servers, so
-the morning cloud run can't reach them. A second scheduled task rescans only those sources from a
-Mac in India. **The Mac only scans: never run git or delete files there** (its sandbox has no
-GitHub login, and deleting git lock files needs an approval nobody is there to give). All git work
-happens in your cloud workspace, which can push.
+the morning cloud run can't reach them. A second scheduled task ("DocRadar catch-up") runs on a
+Mac in India and rescans only those sources. **Everything happens in `~/Desktop/DocRadar` on the
+Mac, including git.** A task tied to the Mac gets no cloud repo access (`add_repo` isn't
+available there), so don't try to clone or push from a cloud workspace.
 
-1. **Cloud workspace:** get a fresh copy of `main` (clone, or `git pull --rebase origin main`).
-   Check that `data/scan-failed.json` has today's `date`. If it doesn't, the morning run didn't
-   happen; the scan below then covers every source, and you do the whole of section 3.
-2. **Copy the inputs to the Mac** (write files; don't delete anything): from the cloud copy, write
-   `data/sources.json`, `data/scan-failed.json` (if present) and `scripts/scan-sources.mjs` into
-   `~/Desktop/DocRadar/scan/` as `scan/sources.json`, `scan/scan-failed.json` and
-   `scan/scan-sources.mjs`.
-3. **Scan on the Mac**, in the foreground (the Mac's shell stops background jobs), from
-   `~/Desktop/DocRadar`:
-   `node scan/scan-sources.mjs --only-failed --input-dir scan`
-   It writes `scan/digest.md` and `scan/catchup.json` (what still fails). About 250 sources
-   take 2–5 minutes; a full scan takes about 5–15. **If the Mac's shell cuts the command off**,
-   run it in parts instead: add `--batch 1/4`, then `--batch 2/4`, `3/4`, `4/4` (use more parts
+Pushing works through a DocRadar-only GitHub token that the repo's local git config already uses
+(`.git/docradar-cred`). Never print, copy, move or change it, and don't change git's credential
+settings. If a push is refused for lack of access, the token has expired or been revoked: stop and
+say so at the top of the summary.
+
+1. From `~/Desktop/DocRadar`: if a git command fails because of a `.git/*.lock` file (left behind by
+   an interrupted run), remove it with `rm -f .git/*.lock` (pre-approved) and retry. Never delete
+   anything else. Then `git checkout main` and `git pull --rebase origin main`. If there are
+   uncommitted changes, stop and report them instead of discarding them.
+2. Check that `data/scan-failed.json` has today's `date`. If it doesn't, the morning run didn't
+   happen: run the full scan (`node scripts/scan-sources.mjs`) instead and do the whole of
+   section 3.
+3. **Scan** in the foreground (the Mac's shell stops background jobs):
+   `node scripts/scan-sources.mjs --only-failed`
+   It writes `scan/digest.md` and adds a `catchup` block (what still fails) to
+   `data/scan-failed.json`. About 250 sources take 2–5 minutes. **If the shell cuts the command
+   off**, run it in parts instead: `--only-failed --batch 1/4`, then `2/4`, `3/4`, `4/4` (more parts
    if one still gets cut off). Each part writes `scan/digest-K.md` and `scan/catchup-K.json`;
-   review every digest part and combine the `stillFailed` lists of all `catchup-K.json` files.
-4. **Review** every section of `scan/digest.md` from the Mac exactly as in section 3, steps 2–3.
-   Verify each candidate (section 4) and add or update listings (section 5) **in the cloud copy**.
-   Skip anything already in `data/jobs.json`. Don't re-run the section 1b / 2 sweeps; the morning
-   run did those. Use web searches only to verify a candidate.
-5. In the cloud copy, add the `catchup` object from the Mac's `scan/catchup.json` (or the
-   combined parts) to
-   `data/scan-failed.json` (keep its other fields). Run `node scripts/maintain.mjs` until it ends
-   with ✅.
+   review every digest part, then put one combined `catchup` object (scanned and ok added up,
+   `stillFailed` lists joined, today's `date`) into `data/scan-failed.json`, keeping its other fields.
+4. **Review** every section of the digest exactly as in section 3, steps 2–3. Verify each candidate
+   (section 4) and add or update listings (section 5). Skip anything already in `data/jobs.json`.
+   Don't re-run the section 1b / 2 sweeps; the morning run did those. Use web searches only to
+   verify a candidate.
+5. Run `node scripts/maintain.mjs` until it ends with ✅.
 6. Add a separate run-log entry at the top of `data/update-log.md`:
    ```
    ## YYYY-MM-DD (catch-up)
    - New: N (titles with state) · Updated: N
    - Sources: rescanned N failed from the morning · ok X · still failing Y: list domains or "none"
    ```
-7. Commit `Catch-up YYYY-MM-DD: +N new, M updated` and push to main from the cloud copy (on
-   conflict: pull --rebase, re-run maintain.mjs, push again; never force-push). Don't try to sync
-   the Mac's copy; whoever works there next runs `git pull` themselves.
+7. `git add data`, commit `Catch-up YYYY-MM-DD: +N new, M updated` and `git push origin main`
+   (on conflict: `git pull --rebase origin main`, re-run maintain.mjs, push again; never
+   force-push). Never commit `scan/`.
 
 ## Accuracy rules (non-negotiable)
 - **Never invent** a listing, date, salary, post count, URL or requirement. If unsure, leave it out or `null`.

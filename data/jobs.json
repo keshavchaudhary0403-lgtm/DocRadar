@@ -513,6 +513,28 @@
       }
     },
     {
+      "id": "gmers-valsad-jr-sr-tutor-walkin-2026-11-17",
+      "title": "Junior Resident (with SR and Tutor posts) – walk-in",
+      "org": "GMERS Medical College & Hospital, Valsad",
+      "category": "jr",
+      "location": "Valsad, Gujarat",
+      "state": "Gujarat",
+      "posts": null,
+      "salary": null,
+      "mode": "Walk-in",
+      "lastDate": "2026-11-17",
+      "eventDate": "2026-11-17",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Walk-in interview for Senior Resident, Junior Resident and Tutor posts on 17 Nov 2026; all documents must be submitted before 12:00 noon. Only the college website news item (posted 13 Nov) has been seen; departments, post count and pay are not stated there and no notice PDF was found.",
+      "officialUrl": "https://www.gmersmcvalsad.com/",
+      "sourceUrl": "https://www.gmersmcvalsad.com/",
+      "addedOn": "2026-11-14",
+      "verified": false,
+      "requirements": {
+        "internshipBy": "eventDate"
+      }
+    },
+    {
       "id": "afms-ssc-mo-nov-2026",
       "title": "Medical Officer – Short Service Commission (120 posts)",
       "org": "Armed Forces Medical Services (Indian Army)",
@@ -1876,5 +1898,5 @@
       "requirements": {}
     }
   ],
-  "updatedAt": "2026-11-14T01:43:09.019Z"
+  "updatedAt": "2026-11-14T15:40:25.424Z"
 }

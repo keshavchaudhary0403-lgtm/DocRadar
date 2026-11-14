@@ -24,7 +24,9 @@
       "Bash(wc *)",
       "Bash(grep *)",
       "Bash(sed -n *)",
-      "Bash(mkdir *)"
+      "Bash(mkdir *)",
+      "Bash(rm -f .git/*.lock)",
+      "Bash(git checkout main)"
     ]
   }
 }

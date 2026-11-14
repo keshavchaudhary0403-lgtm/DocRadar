@@ -1,5 +1,12 @@
 # DocRadar update log
 
+## 2026-11-14 (catch-up)
+- New: 1 · Updated: 0
+  - GMERS Valsad SR/JR/Tutor walk-in, 17 Nov (Gujarat; unverified: only the college's news item, no notice PDF found)
+- Run by hand from Claude Code on the Mac: the scheduled catch-up failed twice because tasks tied to the Mac get no cloud repo access. From now on the catch-up does git on the Mac (playbook section 10).
+- Checked and left out: Ramgarh Cantonment GDMO (walk-in was 12 Nov), BPCL Kochi doctors (2023 notice), AGMC Agartala VRDL Scientist-B (closed 27 Oct), Goa DHS walk-ins (May–Aug), ESIC Rohini SR against GDMO 25–26 Nov (Senior Resident; MBBS + 2 years only if no PG candidate), Medical College Kolkata psychiatry walk-in (2019), Symbiosis Pune (non-medical scientist). CRPF GDMO, NITRD MO, Birbhum and Rampurhat MO, AIIMS Bhopal JR and AMCH Dibrugarh MO were already listed.
+- Sources: rescanned 256 failed from the morning · ok 195 · still failing 61: natboard.edu.in, join.afms.gov.in, careers.ntpc.co.in, sail.co.in, vizagsteel.com, powergrid.in, bcclweb.in, bel-india.in, nalcoindia.com, nsg.mha.gov.in, vizagport.com, rmrims.org.in, iitbhilai.ac.in, nitrr.ac.in, iitgn.ac.in, newmangaloreport.gov.in, cochinport.gov.in, bmhrc.ac.in, dhsgsu.edu.in, nirwoh.icmr.gov.in, nitpy.ac.in, iitj.ac.in, aiimspatna.edu.in, pgimer.edu.in, rmlh.mohfw.gov.in, jipmer.edu.in, amu.ac.in, bpsc.bihar.gov.in, state.bihar.gov.in, hppsc.hp.gov.in, jkpsc.nic.in, dme.karnataka.gov.in, kpsc.karnataka.gov.in, lakshadweep.gov.in, health.mp.gov.in, health.py.gov.in, phsc.punjab.gov.in, ppsc.gov.in, rajswasthya.nic.in, health.sikkim.gov.in, dgmhup.gov.in, dgme.up.gov.in, birbhum.gov.in, psc.wb.gov.in, gitam.edu, gmcrajamahendravaram.ap.gov.in, pgimsrohtak.ac.in, jnmc.edu, kims.kiit.ac.in, 6 Odisha college/DMET sites (TLS certificate errors), mamatamedicalcollege.com, llrmmedicalcollege.nic.in, iul.ac.in, fortishealthcare.com, in.indeed.com, maxhealthcare.in
+
 ## 2026-11-14
 - New: 11.
   - CMO Ballia MO/EMO/Female MO, 14 posts, walk-in 27 Nov (Uttar Pradesh)

@@ -7,9 +7,10 @@
 //   node scripts/scan-sources.mjs --limit 50     # first 50 (testing)
 //   node scripts/scan-sources.mjs --only-failed  # catch-up: only the sources listed in
 //                                                # data/scan-failed.json from today's full scan
-//   node scripts/scan-sources.mjs --only-failed --input-dir scan --batch 2/4
-//        --batch k/n scans only the k-th of n equal parts and writes digest-k.md /
-//        catchup-k.json (for shells that cut off long commands; run 1/n … n/n).
+//   node scripts/scan-sources.mjs --only-failed --batch 2/4
+//        --batch k/n scans only the k-th of n equal parts and writes scan/digest-k.md and
+//        scan/catchup-k.json (for shells that cut off long commands; run 1/n … n/n, then
+//        combine the catchup-k.json parts into data/scan-failed.json yourself).
 //   node scripts/scan-sources.mjs --only-failed --input-dir scan
 //        same, but reads sources.json and scan-failed.json from scan/ (copied there from a
 //        fresh clone) instead of data/, and writes the catch-up result to scan/catchup.json,
@@ -204,8 +205,8 @@ for (const r of out) {
 writeFileSync(new URL(`../scan/digest${SUFFIX}.md`, import.meta.url), md);
 
 const brief = r => ({ i: r.i, name: r.name, url: r.url, state: r.state, group: r.group, status: String(r.status) });
-if (INPUT_DIR) {
-  // No git on this computer: hand the result to the publishing step via scan/.
+if (INPUT_DIR || BATCH) {
+  // No git on this computer, or one part of several: hand the result over via scan/.
   writeFileSync(new URL(`../scan/catchup${SUFFIX}.json`, import.meta.url), JSON.stringify({ morningDate: failedFile?.date ?? null, catchup: { date: summary.date, scanned: summary.scanned, ok: summary.ok, stillFailed: failed.map(brief) } }, null, 1) + '\n');
 } else if (!LIMIT && !ONLY_FAILED && !BATCH) {
   writeFileSync(FAILED_FILE, JSON.stringify({ date: summary.date, total: summary.total, ok: summary.ok, failed: failed.map(brief) }, null, 1) + '\n');
