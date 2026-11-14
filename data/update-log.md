@@ -1,5 +1,40 @@
 # DocRadar update log
 
+## 2026-11-14
+- New: 11.
+  - CMO Ballia MO/EMO/Female MO, 14 posts, walk-in 27 Nov (Uttar Pradesh)
+  - IIT Roorkee GDMO walk-in 4 Dec (Uttarakhand)
+  - GMC Haldwani VRDL Scientist-B (Medical) walk-in 19 Nov (Uttarakhand)
+  - Shipping Corporation of India Assistant Medical Officer, 4 posts, extended to 19 Nov (Maharashtra)
+  - NID Assam Visiting MO, 29 Nov (Assam, unverified: the official PDF failed the TLS check)
+  - JPCH Shastri Park JR, 2 posts, walk-in 17 Nov (Delhi)
+  - GAIL Khera Factory MO, 26 Nov (Madhya Pradesh; date counted from "30 days of publication")
+  - IIT Indore locum MO, 3 posts, rolling (Madhya Pradesh)
+  - NHM Uttarakhand MO, 16 posts, monthly walk-in (Uttarakhand; next date not yet notified)
+  - GMC Kannauj JR, walk-in every Monday (Uttar Pradesh)
+  - MRAMC Ambedkar Nagar Psychiatry JR, walk-in every Wednesday (Uttar Pradesh)
+- Updated: 0. AFMS SSC (18 Nov), NEET-PG 2027, UPSC CMS 2027, NHPC and ANIIMS were rechecked, with no change needed.
+- State group covered: Saturday (Arunachal Pradesh, Manipur, Mizoram, Nagaland, Tripura). All 15 queries, plus extended reruns and "doctor vacancy" fallbacks. Nothing new: open items were BDS-only (RIMS Imphal JR Dental) or AYUSH-only (SAM Tripura), and the rest had closed.
+- Section 7 gap searches found nothing open in: Rajasthan, Himachal Pradesh, Chhattisgarh, Goa, Sikkim, Puducherry, Chandigarh, DNH&DD, Lakshadweep, Odisha, Kerala.
+- Listing tables:
+  - FreeJobAlert medical table: 211 rows read (a single page back to 10 Oct; page/2 repeats it). 119 were doctor-related: 34 already listed, 5 added, 80 skipped (SR/faculty/PG, AYUSH/BDS/nursing, non-MBBS).
+  - Other tables: MySarkariNaukri ~110 cards, GovtJobsAlert ~50, SahiSarkariJobs 4, CentralStateJobs ~60, Medical Dialogues 11 (all stale). 0 new beyond the FJA set.
+  - Borderline items left out: ESIC Rohini "SR against GDMO" walk-in 25–26 Nov (MBBS + 2 years only if no PG candidate turns up; esic.gov.in PDF wouldn't load); ESIC Tirunelveli SR A&E (MBBS with experience, walk-ins to 16 Dec; PDF wouldn't load); ESIC Kolhapur rolling MO (notice from about March).
+  - Reconciliation: re-read the FJA table before publishing. Every open MBBS row is listed or skipped as above.
+- Searches run: about 205 web searches (the budget ran out during the last digest range), plus about 300 page/PDF fetches via curl.
+- Sources: scanned 782 of 782 · ok 523 · failed 259.
+  - Every digest range ([1]–[196], [197]–[392], [393]–[588], [589]–[782]) was reviewed.
+  - All-India failed sources were covered by site:/topic searches. Most failed *.gov.in / *.nic.in hosts time out from the cloud and are in data/scan-failed.json for the Mac catch-up.
+  - Failed and still not covered: most state health, PSC and NHM portals in AP, Arunachal, Assam (incl. 14 medical college sites), Bihar, Chhattisgarh, Goa, Gujarat, Haryana, HP, J&K, Jharkhand, Karnataka, MP, Mizoram, Odisha (incl. DMET and 9 college sites), Puducherry, Punjab, Rajasthan, Sikkim, TN, Telangana, Tripura, UP, WB; individual cantonment board and railway unit pages; recruitment.icmr.org.in, nidhr.icmr.org.in, rmrims.org.in, sail.co.in, thdc.co.in.
+- Sources.json:
+  - URLs fixed: Delhi Health → /vacancy, IIT Indore → walk-in tab, IOCL → latest-job-opening, DNH&DD → recruitments page, PDU Rajkot → /latest-updates/, WBHRB → hrb.wb.gov.in, AIIMS Raipur → JR/SR vacancies page.
+  - Added: BFUHS university recruitment (Punjab), SJMCH Puri (Odisha).
+- Notes:
+  - DMET Odisha JR 309 posts: pre-registration closed 9 Oct and the walk-in is "to be notified"; dmet.odisha.gov.in 503. Not listed; recheck on the catch-up run.
+  - GMERS Morbi JR/Tutor "till filled" was left out (no further interview dates stated).
+  - BBMB (bbmb.gov.in) redirects to an error page, and RUHS CMS Recruitments.aspx redirects to an error page; neither is fixed yet.
+  - WebFetch was refused for most official URLs, so curl + pdftotext/OCR was used.
+
 ## 2026-11-13 (catch-up)
 - New: 2. AIIMS Madurai Junior Resident (Non-Academic), 36 posts, apply by 3 Dec (Tamil Nadu); MANUU Gachibowli MBBS consultant posts, 3 posts, walk-in 17 Nov (Telangana). Updated: 0.
 - Sources: data/scan-failed.json was missing (this morning's run predates the catch-up step), so all sources were rescanned from India: scanned 782 of 782 · ok 701 · failed 81. The scan ran in 8 batches because the local shell stops background jobs.

@@ -347,7 +347,7 @@
     },
     {
       "name": "Indian Oil (IOCL)",
-      "url": "https://iocl.com",
+      "url": "https://iocl.com/latest-job-opening",
       "group": "PSUs",
       "state": "Maharashtra",
       "priority": 2,
@@ -1363,7 +1363,7 @@
     },
     {
       "name": "IIT Indore",
-      "url": "https://www.iiti.ac.in/careers",
+      "url": "https://www.iiti.ac.in/careers/non_teaching?tab=walk_in",
       "group": "Central Govt",
       "state": "Madhya Pradesh",
       "priority": 2,
@@ -2403,7 +2403,7 @@
     },
     {
       "name": "AIIMS Raipur",
-      "url": "https://www.aiimsraipur.edu.in",
+      "url": "https://www.aiimsraipur.edu.in/user/vacancies-faculty.php?pst=jrsr",
       "group": "Central Hospitals",
       "state": "Chhattisgarh",
       "priority": 2,
@@ -2787,7 +2787,7 @@
     },
     {
       "name": "DNH & Daman Diu Administration",
-      "url": "https://ddd.gov.in",
+      "url": "https://ddd.gov.in/notice-category/recruitments/",
       "group": "State Govt",
       "state": "Dadra and Nagar Haveli and Daman and Diu",
       "priority": 2,
@@ -2795,7 +2795,7 @@
     },
     {
       "name": "Delhi Health Dept – Circulars",
-      "url": "https://health.delhi.gov.in",
+      "url": "https://health.delhi.gov.in/vacancy",
       "group": "State Govt",
       "state": "Delhi",
       "priority": 1,
@@ -3403,7 +3403,7 @@
     },
     {
       "name": "West Bengal Health Recruitment Board",
-      "url": "https://wbhrb.in",
+      "url": "https://hrb.wb.gov.in/",
       "group": "State Govt",
       "state": "West Bengal",
       "priority": 2,
@@ -4011,7 +4011,7 @@
     },
     {
       "name": "PDU Government Medical College, Rajkot",
-      "url": "https://pdumcrajkot.org/latest-update",
+      "url": "https://pdumcrajkot.org/latest-updates/",
       "group": "Medical colleges",
       "state": "Gujarat",
       "priority": 2,
@@ -6256,6 +6256,22 @@
       "state": "Uttar Pradesh",
       "priority": 2,
       "why": "Govt medical college: JR / MRU research posts"
+    },
+    {
+      "name": "BFUHS – University recruitment (Punjab DHS MO/EMO)",
+      "url": "https://bfuhs.ggsmch.org/university-recruitment/",
+      "group": "State Govt",
+      "state": "Punjab",
+      "priority": 2,
+      "why": "BFUHS runs Punjab health dept MO / EMO recruitment here"
+    },
+    {
+      "name": "Sri Jagannath Medical College & Hospital, Puri",
+      "url": "https://sjmch.odisha.gov.in/whats-new/",
+      "group": "Medical colleges",
+      "state": "Odisha",
+      "priority": 2,
+      "why": "Govt medical college: JR / Tutor posts"
     }
   ]
 }

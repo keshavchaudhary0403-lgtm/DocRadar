@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "jobs": [
     {
       "id": "asacs-mo-art-ost-dmch-diphu-walkin-2026-11-13",
@@ -484,6 +484,35 @@
       }
     },
     {
+      "id": "jpch-delhi-jr-mbbs-walkin-2026-11-17",
+      "title": "Junior Resident (MBBS, ad hoc) – 2 posts, walk-in",
+      "org": "Jag Pravesh Chandra Hospital (JPCH), Shastri Park (Delhi Govt)",
+      "category": "jr",
+      "location": "Shastri Park, Delhi",
+      "state": "Delhi",
+      "posts": 2,
+      "salary": "₹56,100–1,77,500 (Level 10) + allowances",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-17",
+      "eventDate": "2026-11-17",
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS with valid Delhi Medical Council registration; rotating internship completed after 16.11.2024 and no completed one-year JR tenure. Age up to 30 (General); application form available 9–10 AM on the day, interview 10:00 AM at Administrative Block (5th floor); 89-day ad hoc tenure, one PwBD horizontal post.",
+      "officialUrl": "https://health.delhi.gov.in/vacancy",
+      "noticePdf": "https://health.delhi.gov.in/sites/default/files/Health/circulars-orders/wjpch_11.pdf",
+      "sourceUrl": "https://health.delhi.gov.in/vacancy",
+      "addedOn": "2026-11-14",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "eventDate",
+        "registration": "any",
+        "councils": [
+          "Delhi Medical Council"
+        ],
+        "maxAge": 30,
+        "ageOn": "2026-11-17"
+      }
+    },
+    {
       "id": "afms-ssc-mo-nov-2026",
       "title": "Medical Officer – Short Service Commission (120 posts)",
       "org": "Armed Forces Medical Services (Indian Army)",
@@ -704,6 +733,55 @@
       "addedOn": "2026-11-13",
       "verified": false,
       "requirements": {}
+    },
+    {
+      "id": "gmc-haldwani-vrdl-scientist-b-medical-2026-11-19",
+      "title": "Scientist-B (Medical/Non-Medical), VRDL – 1 post, walk-in",
+      "org": "Government Medical College, Haldwani – Virus Research & Diagnostic Laboratory (DHR-ICMR)",
+      "category": "other",
+      "location": "Haldwani, Uttarakhand",
+      "state": "Uttarakhand",
+      "posts": 1,
+      "salary": "₹67,000 + HRA/month (Medical); ₹56,000 + HRA (Non-Medical)",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-19",
+      "eventDate": "2026-11-19",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Medical stream: MBBS recognised by MCI/NMC; MD in a related subject and 2 years' R&D/teaching experience desirable. Contract up to 11 months under the DHR VRDL scheme (not a GMC establishment post). Walk-in 19 Nov at the Principal Office, GMC Haldwani; bring 2 filled forms, photos, self-attested copies, NOC if employed and originals. One page of the notice misprints the date as 19.10.2026; the cover page and recruitment notice say 19 Nov 2026.",
+      "officialUrl": "https://medicaleducation.uk.gov.in",
+      "noticePdf": "https://cdnbbsr.s3waas.gov.in/s37e05d6f828574fbc975a896b25bb011e/uploads/2026/11/202611121008285051.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/gmc-haldwani-scientist-b-medical-non-medical-recruitment-2026-3080542",
+      "addedOn": "2026-11-14",
+      "verified": true,
+      "requirements": {
+        "maxAge": 35,
+        "ageOn": "2026-09-21",
+        "ageRelax": false
+      }
+    },
+    {
+      "id": "sci-amo-dgma-2026-11-19",
+      "title": "Assistant Medical Officer (contract, DGMA-approved) – 4 posts",
+      "org": "The Shipping Corporation of India Ltd. (SCI)",
+      "category": "mo",
+      "location": "Mumbai, Maharashtra",
+      "state": "Maharashtra",
+      "posts": 4,
+      "salary": "₹57,150/month (Mumbai HO & MTI); ₹42,920/month (Chennai, Kolkata), consolidated",
+      "mode": "Apply online",
+      "lastDate": "2026-11-19",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Advt HR 06/2026: posts at SCI Head Office and MTI Mumbai (3 hrs/day) and Chennai and Kolkata (2 hrs/day), 5 days a week. MBBS with at least 5 years' post-qualification experience and a valid DG Maritime Administration (DGMA) approval at the time of applying. Apply online and email updated resume; last date extended to 19 Nov 2026 (Corrigendum 2 on SCI site). Two-year contract; interview date to be notified.",
+      "officialUrl": "https://www.shipindia.com/frontcontroller/shore",
+      "noticePdf": "https://www.shipindia.com/upload/Adv/Detailed_ad_HR_062026_final.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/shipping-corporation-of-india-amo-recruitment-2026-apply-online-for-4-assistant-medical-officer-posts-3072123",
+      "addedOn": "2026-11-14",
+      "verified": true,
+      "requirements": {
+        "maxAge": 62,
+        "ageOn": "2026-09-01"
+      }
     },
     {
       "id": "amch-dibrugarh-mo-dtc-walkin-2026-11-20",
@@ -991,6 +1069,30 @@
       }
     },
     {
+      "id": "gail-khera-factory-mo-2026-11-26",
+      "title": "Factory Medical Officer (contract) – 1 post",
+      "org": "GAIL (India) Limited – Khera Compressor Station",
+      "category": "mo",
+      "location": "Ujjain, Madhya Pradesh",
+      "state": "Madhya Pradesh",
+      "posts": 1,
+      "salary": "₹1,04,000 per month (consolidated) + ₹1,000 OPD allowance",
+      "mode": "Apply online",
+      "lastDate": "2026-11-26",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Advt GAIL/KCS/OPEN/HR/MED/2026. MBBS with completed internship and MCI/SMC registration, plus a Certificate of Training in Industrial Health (min. 3 months, e.g. AFIH) or Diploma in Industrial Health. Apply by e-mailing the signed form and documents to hrdeptkhera@gail.co.in within 30 days of publication; the ad was posted on the GAIL site on 27 Oct 2026, so the last date shown is calculated from that and not stated in the notice. Interview in virtual mode.",
+      "officialUrl": "https://www.gailonline.com/vacancies.html",
+      "noticePdf": "https://www.gailonline.com/careers/currentOpnning/DETAILED-ADVERTISEMENT-27-10-2026.pdf",
+      "sourceUrl": "https://www.gailonline.com/vacancies.html",
+      "addedOn": "2026-11-14",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "lastDate",
+        "registration": "any"
+      }
+    },
+    {
       "id": "cmo-budaun-nhm-mbbs-mo-2026-11-27",
       "title": "Medical Officer / EMO / Lady MO (NHM contract) – 30 posts",
       "org": "Chief Medical Officer, Budaun (District Health Society, NHM Uttar Pradesh)",
@@ -1087,6 +1189,33 @@
       "addedOn": "2026-11-13"
     },
     {
+      "id": "cmo-ballia-nhm-mo-walkin-2026-11-27",
+      "title": "Medical Officer / EMO / Female MO (NHM contract) – 14 posts, walk-in",
+      "org": "Chief Medical Officer, Ballia (NHM Uttar Pradesh)",
+      "category": "mo",
+      "location": "Ballia, Uttar Pradesh",
+      "state": "Uttar Pradesh",
+      "posts": 14,
+      "salary": "₹1,00,000/month (NCD, FRU, District Hospital posts); ₹80,000 + ₹20,000 PBI (NUHM posts)",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-27",
+      "eventDate": "2026-11-27",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Advt NHM/MBBS/2026-27: MBBS with UP Medical Council registration (mandatory). EMO (District Hospital, 6 posts) needs 1 year in the emergency ward of a 100-bed hospital; NCD Clinic DH needs 2 years; other posts prefer experience. Walk-in 27 Nov from 10 AM at Vikas Bhawan auditorium, Ballia; bring biodata, originals, registration, 2 photos and self-attested copies. Max age 65 on the date of advertisement. The scanned notice's date is hard to read; 27 Nov matches the notice month and the FreeJobAlert listing.",
+      "officialUrl": "https://ballia.nic.in/",
+      "noticePdf": "https://cdn.s3waas.gov.in/s32b44928ae11fb9384c4cf38708677c48/uploads/2026/11/17945870087835.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/cmo-ballia-recruitment-2026-medical-officer-and-female-medical-officer-3081193",
+      "addedOn": "2026-11-14",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "eventDate",
+        "councils": [
+          "Uttar Pradesh Medical Council"
+        ],
+        "maxAge": 65
+      }
+    },
+    {
       "id": "nit-agartala-mo-campus-doctor-2026-11-28",
       "title": "Medical Officer / Campus Doctor – 2 posts (contract)",
       "org": "NIT Agartala",
@@ -1108,6 +1237,29 @@
         "registration": "any",
         "maxAge": 35,
         "ageOn": "2026-10-31"
+      }
+    },
+    {
+      "id": "nid-assam-visiting-mo-2026-11-29",
+      "title": "Visiting Medical Officer (contract) – 1 post",
+      "org": "National Institute of Design (NID) Assam",
+      "category": "mo",
+      "location": "Jorhat, Assam",
+      "state": "Assam",
+      "posts": 1,
+      "salary": "About ₹2,000–₹3,000 per visit (minimum 12 visits/month)",
+      "mode": "Apply online",
+      "lastDate": "2026-11-29",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Advt NIDJ/2023-24/ADMIN/RECTT_VMO/80/748 (notice dated 12 Nov 2026). MBBS with valid medical council registration and at least 3 years' work at a govt or reputed private hospital; MD (Medicine) desirable. Six-month contract, extendable. Apply by email with CV and documents by 5 PM on 29 Nov. Details from an aggregator; the official PDF could not be opened.",
+      "officialUrl": "https://nidj.ac.in",
+      "sourceUrl": "https://www.freejobalert.com/articles/nid-assam-visiting-medical-officer-recruitment-2026-3081195",
+      "addedOn": "2026-11-14",
+      "verified": false,
+      "requirements": {
+        "registration": "any",
+        "maxAge": 50
       }
     },
     {
@@ -1327,6 +1479,30 @@
         "maxAge": 33,
         "ageOn": "2026-12-03",
         "ageRelax": true
+      }
+    },
+    {
+      "id": "iit-roorkee-gdmo-walkin-2026-12-04",
+      "title": "General Duty Medical Officer (contract) – 1 post, walk-in",
+      "org": "IIT Roorkee – Institute Hospital",
+      "category": "mo",
+      "location": "Roorkee, Uttarakhand",
+      "state": "Uttarakhand",
+      "posts": 1,
+      "salary": "₹80,000/month consolidated",
+      "mode": "Walk-in",
+      "lastDate": "2026-12-04",
+      "eventDate": "2026-12-04",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Advt IITR/Rect Cell/GDMO(C)/E-6571/11396 dated 13 Nov 2026. MBBS with 1-year internship and State/NMC registration, plus at least 1 year's experience in a govt or private hospital. Six-month contract (OPD, emergency, night shifts). Report 3 PM on 4 Dec at Recruitment Cell, James Thomason Building; interaction at 4 PM. Bring CV, originals and self-attested copies.",
+      "officialUrl": "https://www.iitr.ac.in",
+      "noticePdf": "https://iitr.ac.in/Careers/static/Recruitment/2026/Walk_in_Advt_GDMO_13.11.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/iit-roorkee-general-duty-medical-officer-institute-recruitment-2026-3081157",
+      "addedOn": "2026-11-14",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "eventDate",
+        "registration": "any"
       }
     },
     {
@@ -1605,7 +1781,100 @@
       "verified": true,
       "requirements": {},
       "addedOn": "2026-11-13"
+    },
+    {
+      "id": "iit-indore-mo-locum-rolling-2026",
+      "title": "Medical Officer (Locum Duty) – 3 posts, rolling advertisement",
+      "org": "IIT Indore – Health Centre",
+      "category": "mo",
+      "location": "Indore, Madhya Pradesh",
+      "state": "Madhya Pradesh",
+      "posts": 3,
+      "salary": "₹3,000 per visit (MBBS); ₹5,000 per visit (MD/MS/DNB)",
+      "mode": "Apply online",
+      "lastDate": null,
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Rolling advertisement IITI/Engagement/MOLD/2026 dated 13 July 2026, no closing date given. MBBS with at least 2 years' clinical experience in a recognised multispecialty hospital (or MD/MS/DNB in a clinical branch) and NMC registration; upper age 50. Visits of 6–8 hours day duty or 12 hours night duty as required. Apply with CV and 3 references by email to careers@iiti.ac.in or via the institute's online link.",
+      "officialUrl": "https://www.iiti.ac.in/careers/non_teaching?tab=walk_in",
+      "noticePdf": "https://www.iiti.ac.in/uploads/career/2026/Jul/4ee9b018c6d1747524a07ad1fb6f0ec9.pdf",
+      "sourceUrl": "https://www.iiti.ac.in/careers/non_teaching?tab=walk_in",
+      "addedOn": "2026-11-14",
+      "verified": true,
+      "requirements": {
+        "registration": "any",
+        "maxAge": 50
+      }
+    },
+    {
+      "id": "nhm-uttarakhand-mo-monthly-walkin-2026",
+      "title": "Medical Officer (NHM contract) – 16 posts, monthly walk-in",
+      "org": "National Health Mission, Uttarakhand (Mission Director, UKHFWS)",
+      "category": "mo",
+      "location": "Dehradun, Uttarakhand",
+      "state": "Uttarakhand",
+      "posts": 16,
+      "salary": null,
+      "mode": "Walk-in",
+      "lastDate": null,
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "NHM Uttarakhand holds walk-in interviews for Medical Officers and Specialists on the second Friday of each month at the Office of the Mission Director, Danda Lakhond, Sahastradhara Road, Dehradun; the latest was on 13 Nov 2026 and the next date (expected 11 Dec 2026) has not been notified yet. The vacancy list dated 12-11-2026 shows 16 MO posts (SNCU 9, NPCDCS 4, DEIC 1, NUHM 1, Skill Lab 1) in Chamoli, Bageshwar, Nainital, Pauri, Rudraprayag, Uttarkashi, Almora, Haridwar and Pithoragarh; vacancies may change on the interview day. Registration with the Uttarakhand Medical Council is mandatory; the application form is submitted on the day of the interview.",
+      "officialUrl": "https://nhm.uk.gov.in/notice-category/recruitments/",
+      "noticePdf": "https://cdnbbsr.s3waas.gov.in/s37993e11204b215b27694b6f139e34ce8/uploads/2026/11/20261112421897206.pdf",
+      "sourceUrl": "https://nhm.uk.gov.in/notice-category/recruitments/",
+      "addedOn": "2026-11-14",
+      "verified": true,
+      "requirements": {
+        "councils": [
+          "Uttarakhand Medical Council"
+        ]
+      }
+    },
+    {
+      "id": "gmc-kannauj-jr-monday-walkin-rolling-2026",
+      "title": "Junior Resident (contract) – walk-in every Monday until posts are filled",
+      "org": "Dr. Bhimrao Ramji Ambedkar Government Medical College, Kannauj",
+      "category": "jr",
+      "location": "Kannauj, Uttar Pradesh",
+      "state": "Uttar Pradesh",
+      "posts": null,
+      "salary": "₹56,100/month (Level 10) for JR, as stated in the notice",
+      "mode": "Walk-in",
+      "lastDate": null,
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Contract Senior Resident, Junior Resident and Hospital Administration posts. Walk-in every Monday at 10:00 AM at the Principal's office until the posts are filled. Qualifications follow NMC norms, and candidates must be 45 or younger on the interview date. Bring all original certificates and 4 sets of biodata with self-attested copies. JR posts are spread across several clinical departments; the notice is a scanned Hindi PDF, so check the department-wise table. Appointment ends on 'Last Come First Go' when bonded or PG residents join.",
+      "officialUrl": "https://gmckannauj.in/Recruitment.html",
+      "noticePdf": "https://gmckannauj.in/2026/31026.pdf",
+      "sourceUrl": "https://gmckannauj.in/Recruitment.html",
+      "addedOn": "2026-11-14",
+      "verified": true,
+      "requirements": {
+        "maxAge": 45
+      }
+    },
+    {
+      "id": "mramc-ambedkarnagar-psychiatry-jr-wednesday-walkin-rolling-2026",
+      "title": "Junior Resident, Psychiatry (contract) – walk-in every Wednesday",
+      "org": "Mahamaya Rajkiya Allopathic Medical College (MRAMC), Ambedkar Nagar",
+      "category": "jr",
+      "location": "Ambedkar Nagar, Uttar Pradesh",
+      "state": "Uttar Pradesh",
+      "posts": null,
+      "salary": null,
+      "mode": "Walk-in",
+      "lastDate": null,
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "The September 2026 employment notice (re-issue of notice dated 09.04.2026) invites candidates to a walk-in every Wednesday for contract Senior Resident posts in 6 departments and a Junior Resident post in Psychiatry. Qualifications follow NMC norms. The appointment ends on 'Last Come First Go' when bonded residents join. Interview dates and updates are posted on mramc.ac.in. The vacancy table is in a scanned Hindi PDF (it shows about 1 vacant JR post), so confirm with the college before travelling.",
+      "officialUrl": "https://mramc.ac.in/category/vacancies/",
+      "noticePdf": "https://mramc.ac.in/wp-content/uploads/2026/09/New-Doc-09-28-2026-12.58.pdf",
+      "sourceUrl": "https://mramc.ac.in/%e0%a4%b5%e0%a4%bf%e0%a4%ad%e0%a4%bf%e0%a4%a8%e0%a5%8d%e0%a4%a8-%e0%a4%b5%e0%a4%bf%e0%a4%ad%e0%a4%be%e0%a4%97%e0%a5%8b%e0%a4%82-%e0%a4%95%e0%a5%87-jr-sr-%e0%a4%b0%e0%a4%bf%e0%a4%95%e0%a5%8d%e0%a4%a4/",
+      "addedOn": "2026-11-14",
+      "verified": true,
+      "requirements": {}
     }
   ],
-  "updatedAt": "2026-11-13T11:16:47.243Z"
+  "updatedAt": "2026-11-14T01:43:09.019Z"
 }
