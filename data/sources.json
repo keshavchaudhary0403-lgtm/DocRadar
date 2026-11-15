@@ -99,7 +99,7 @@
     },
     {
       "name": "CRPF",
-      "url": "https://crpf.gov.in",
+      "url": "https://crpf.mha.gov.in/",
       "group": "Govt Medical Officer",
       "state": "All India",
       "priority": 2,
@@ -611,7 +611,7 @@
     },
     {
       "name": "National Disaster Response Force",
-      "url": "https://www.ndrf.gov.in/en/job-opportunity.html",
+      "url": "https://ndrf.mha.gov.in/en/job-opportunity.html",
       "group": "Central Govt",
       "state": "All India",
       "priority": 2,
@@ -5211,7 +5211,7 @@
     },
     {
       "name": "RUHS College of Medical Sciences, Jaipur",
-      "url": "https://ruhscms.org/Recruitments.aspx",
+      "url": "https://ruhscms.org/",
       "group": "Medical colleges",
       "state": "Rajasthan",
       "priority": 2,

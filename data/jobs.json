@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14",
+  "updated": "2026-11-15",
   "jobs": [
     {
       "id": "asacs-mo-art-ost-dmch-diphu-walkin-2026-11-13",
@@ -186,6 +186,30 @@
       }
     },
     {
+      "id": "vmmc-sjh-prs1-medical-obg-map-pe-2026-11-15",
+      "title": "Project Research Scientist-I (Medical), ICMR project MAP-PE, Obstetrics & Gynaecology – 1 post",
+      "org": "VMMC & Safdarjung Hospital",
+      "category": "other",
+      "location": "New Delhi, Delhi",
+      "state": "Delhi",
+      "posts": 1,
+      "salary": "₹67,000 + 30% HRA (₹87,100)",
+      "mode": "Apply online",
+      "lastDate": "2026-11-15",
+      "eventDate": "2026-11-23",
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS, MVSc or BDS; experience in data collection, management and field supervision in community health/nutrition projects desirable. Email application with CV to mapobgy2026@gmail.com by 15 Nov 2026; interview 23 Nov 2026, 11 AM–12 noon, Skill Lab, Dept. of Obst & Gynae (shortlisted candidates informed by email/phone). ICMR-funded 2-year project, appointment yearly.",
+      "officialUrl": "https://www.vmmc-sjh.mohfw.gov.in/recruitment-all",
+      "noticePdf": "https://www.vmmc-sjh.mohfw.gov.in/sites/default/files/Notice%20dated%2030.10.2026%20-%20Advertisement%20for%20Various%20Posts%20on%20Contract%20basis%20for%20a%20Project%20in%20the%20Department%20of%20Obst%20%26%20Gynae.pdf",
+      "sourceUrl": "https://www.vmmc-sjh.mohfw.gov.in/recruitment-all",
+      "addedOn": "2026-11-15",
+      "verified": true,
+      "requirements": {
+        "maxAge": 35,
+        "ageRelax": true
+      }
+    },
+    {
       "id": "cmo-raebareli-nhm-medical-officer-walkin-2026-11-16",
       "title": "Medical Officer (NHM contract) – 18 posts, walk-in",
       "org": "Chief Medical Officer, Raebareli (NHM Uttar Pradesh)",
@@ -280,6 +304,33 @@
       "addedOn": "2026-11-13",
       "verified": true,
       "requirements": {}
+    },
+    {
+      "id": "sabvgmc-faridabad-jr-walkin-2026-11-16",
+      "title": "Junior Resident – 3 posts, walk-in",
+      "org": "Shri Atal Bihari Vajpayee Government Medical College, Chhainsa (Faridabad)",
+      "category": "jr",
+      "location": "Faridabad, Haryana",
+      "state": "Haryana",
+      "posts": 3,
+      "salary": "₹56,100 + NPA + DA",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-16",
+      "eventDate": "2026-11-16",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Advt. No. SABVGMC/Rectt./2026/25 dated 14 Nov 2026: 3 JR posts (GEN 2, SC-DSC 1), one-year tenure. MBBS (NMC-recognised; FMGs must have passed FMGE) with valid NMC or Haryana State Medical Council registration; age 22–45 on the closing date (relaxation for Haryana domicile only). Submit the prescribed form with documents and fee (₹1,000 general, ₹250 reserved Haryana domicile; 50% off for women) by 10:00 AM on 16 Nov; scrutiny 11:30 AM–1 PM, interview from 2 PM at the Director's office.",
+      "officialUrl": "https://www.sabvgmcfbd.edu.in/recruitment.html",
+      "noticePdf": "https://www.sabvgmcfbd.edu.in/assets/pdf/DocScanner%2014%20Nov%202026%203-02%E2%80%AFpm.pdf",
+      "sourceUrl": "https://www.sabvgmcfbd.edu.in/recruitment.html",
+      "addedOn": "2026-11-15",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "eventDate",
+        "registration": "any",
+        "maxAge": 45,
+        "ageOn": "2026-11-16",
+        "ageRelax": true
+      }
     },
     {
       "id": "mvh-delhi-jr-2026-11-17",
@@ -525,14 +576,18 @@
       "lastDate": "2026-11-17",
       "eventDate": "2026-11-17",
       "eligibility": "after-internship",
-      "eligibilityNote": "Walk-in interview for Senior Resident, Junior Resident and Tutor posts on 17 Nov 2026; all documents must be submitted before 12:00 noon. Only the college website news item (posted 13 Nov) has been seen; departments, post count and pay are not stated there and no notice PDF was found.",
+      "eligibilityNote": "Official notice (posted 13 Nov 2026): walk-in on 17 Nov 2026 for Senior Resident, Junior Resident and Tutor posts. Fill in the form from the college website and submit it at the college office 10:30 AM–12:00 noon; interview at 12:30 PM. Bring original documents; Gujarat Medical Council registration certificate is mandatory. Post-wise counts are hard to read in the scanned notice.",
       "officialUrl": "https://www.gmersmcvalsad.com/",
       "sourceUrl": "https://www.gmersmcvalsad.com/",
       "addedOn": "2026-11-14",
-      "verified": false,
+      "verified": true,
       "requirements": {
-        "internshipBy": "eventDate"
-      }
+        "internshipBy": "eventDate",
+        "councils": [
+          "Gujarat Medical Council"
+        ]
+      },
+      "noticePdf": "https://www.gmersmcvalsad.com/UploadedDocs/News/New%20Doc%2011-13-2026%2016.57.pdf"
     },
     {
       "id": "afms-ssc-mo-nov-2026",
@@ -806,6 +861,26 @@
       }
     },
     {
+      "id": "esic-ludhiana-tutor-2026-11-19",
+      "title": "Tutor (contract) – 7 posts, rolling monthly email + interview (with faculty & SR posts)",
+      "org": "ESIC Medical College & Hospital, Ludhiana",
+      "category": "other",
+      "location": "Ludhiana, Punjab",
+      "state": "Punjab",
+      "posts": 7,
+      "salary": "₹56,100 basic (Level 10) + allowances",
+      "mode": "Apply offline",
+      "lastDate": "2026-11-19",
+      "eventDate": "2026-11-23",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Rolling advertisement dated 10 Nov 2026: 7 Tutor posts (Community Medicine, FMT, Microbiology, Pathology, Pharmacology, Physiology x2) alongside faculty and SR posts. Qualification as per latest NMC norms; email form, documents and DD as one PDF to the Dean by the 19th of each month, interview on the 23rd (this cycle: 19 Nov / 23 Nov 2026). Fee ₹500 (nil for SC/ST, women, ex-servicemen, PH). Details from FreeJobAlert; official ESIC PDF could not be opened from here.",
+      "officialUrl": "https://www.mcludhiana.esic.gov.in",
+      "sourceUrl": "https://www.freejobalert.com/articles/esic-ludhiana-recruitment-2026-apply-online-for-112-assistant-professor-senior-resident-and-more-posts-3080214",
+      "addedOn": "2026-11-15",
+      "verified": false,
+      "requirements": {}
+    },
+    {
       "id": "amch-dibrugarh-mo-dtc-walkin-2026-11-20",
       "title": "Medical Officer (Drug Treatment Clinic) – 1 post, walk-in",
       "org": "Assam Medical College & Hospital, Dibrugarh",
@@ -1011,6 +1086,29 @@
         "ageRelax": true
       },
       "addedOn": "2026-11-13"
+    },
+    {
+      "id": "jipmer-prs1-medical-india-ems-2026-11-23",
+      "title": "Project Research Scientist-I (Medical), ICMR INDIA-EMS project, Emergency Medicine – 1 post",
+      "org": "JIPMER, Puducherry",
+      "category": "other",
+      "location": "Puducherry, Puducherry",
+      "state": "Puducherry",
+      "posts": 1,
+      "salary": "₹80,400/month consolidated (₹67,000 + 20% HRA)",
+      "mode": "Apply online",
+      "lastDate": "2026-11-23",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Advt. No. JIP/EM&T/F-MA/ICMR-INDIA EMS Project/2026 dated 04 Nov 2026 (ICMR-funded emergency care implementation study, Dept of Emergency Medicine & Trauma). Essential: MBBS and good communication skills in Tamil and English; one year of emergency-care or qualitative research experience is desirable. Email the prescribed application form with CV and documents as one PDF to indiaemsrecruitmentpondicherry@gmail.com by 4:30 PM on 23 Nov; selection by written test and interview. 6 months, extendable to one year; must be willing to travel to health facilities in Puducherry district. Details taken from a copy of the notice on an aggregator; jipmer.edu.in was unreachable from the cloud.",
+      "officialUrl": "https://jipmer.edu.in/announcement/jobs",
+      "sourceUrl": "https://allgovernmentjobs.in/jipmer-notification-2026-apply-for-project-research-scientist-i-posts/45236",
+      "addedOn": "2026-11-15",
+      "verified": false,
+      "requirements": {
+        "maxAge": 35,
+        "ageOn": "2026-11-23"
+      }
     },
     {
       "id": "iit-gandhinagar-resident-doctor-2026-11-25",
@@ -1262,6 +1360,30 @@
       }
     },
     {
+      "id": "bhel-pser-kolkata-ptmc-gdmo-2026-11-28",
+      "title": "Part Time Medical Consultant (GDMO – MBBS), contract – 2 posts of 3 hrs/day or 1 post of 6 hrs/day",
+      "org": "Bharat Heavy Electricals Limited (BHEL) – Power Sector Eastern Region",
+      "category": "mo",
+      "location": "Kolkata, West Bengal",
+      "state": "West Bengal",
+      "posts": null,
+      "salary": "₹500 per hour (paid only for days on duty) + conveyance up to ₹4,500–6,000/month",
+      "mode": "Apply offline",
+      "lastDate": "2026-11-28",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Advt No. BHEL/PSER/PTMC/2026/02 (dated 13.11.2026). MBBS recognised by MCI with at least 1 year post-qualification experience as on 01.11.2026 and membership of MCI or a State Medical Council; upper age 65 years as on 01.11.2026. Duty Mon–Fri, either 3 hrs/day (10 AM–1 PM or 2–5 PM) or 6 hrs/day; one-year engagement renewable up to 3 years. Application form with self-attested documents by post or email, to reach by 28.11.2026, 17:30 hrs; selection by personal interview (date not yet announced). Details from aggregator summaries; the official PDF could not be opened.",
+      "officialUrl": "https://careers.bhel.in/",
+      "sourceUrl": "https://www.freejobalert.com/articles/bhel-recruitment-2026-apply-offline-for-part-time-medical-consultant-gdmo-and-more-posts-3080971",
+      "addedOn": "2026-11-15",
+      "verified": false,
+      "requirements": {
+        "registration": "any",
+        "maxAge": 65,
+        "ageOn": "2026-11-01"
+      }
+    },
+    {
       "id": "nid-assam-visiting-mo-2026-11-29",
       "title": "Visiting Medical Officer (contract) – 1 post",
       "org": "National Institute of Design (NID) Assam",
@@ -1355,6 +1477,26 @@
         "ageRelax": true
       },
       "addedOn": "2026-11-13"
+    },
+    {
+      "id": "pgims-rohtak-house-surgeon-2026-12-01",
+      "title": "Senior / Junior House Surgeon – 153 posts (Jan–Jun 2027 session)",
+      "org": "Pt. B.D. Sharma PGIMS, Rohtak",
+      "category": "jr",
+      "location": "Rohtak, Haryana",
+      "state": "Haryana",
+      "posts": 153,
+      "salary": "₹56,100 + DA (FPL-10, 7th CPC)",
+      "mode": "Apply offline",
+      "lastDate": "2026-12-01",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Six-month house job for the session 01.01.2027 to 30.06.2027 in various departments. Prescribed proforma is collected from the Director's office (Accounts Branch), PGIMS Rohtak, and must reach the Medical Superintendent's office by 01.12.2026, 5:00 PM; form fee ₹500 (SC/BC of Haryana ₹125). Details reported by an aggregator; the official notice could not be opened (uhsr.ac.in / pgimsrohtak.ac.in unreachable or not yet updated).",
+      "officialUrl": "https://www.uhsr.ac.in/detailsleft.aspx?artid=27",
+      "sourceUrl": "https://quicksarkari.com/pgims-rohtak-house-surgeon-recruitment/",
+      "addedOn": "2026-11-15",
+      "verified": false,
+      "requirements": {}
     },
     {
       "id": "crpf-gdmo-contract-walkin-2026-12-02",
@@ -1775,7 +1917,7 @@
       "lastDate": null,
       "eventDate": "2026-11-17",
       "eligibility": "after-internship",
-      "eligibilityNote": "Walk-in with MCQ test every Tuesday, 10 AM–2 PM, until posts are filled (notice 9 Oct 2026). Eligibility as per NMC; NOC needed if employed. Initial 3-month term, extendable.",
+      "eligibilityNote": "Walk-in with MCQ test every Tuesday, 10 AM–2 PM, until posts are filled (notice 9 Oct 2026). Eligibility as per NMC; NOC needed if employed. Initial 3-month term, extendable. A JR notice dated 14 Oct 2026 adds an MCQ-based walk-in from 27 Oct 2026 (10 AM–2 PM) until posts are filled, grade pay ₹5,400.",
       "officialUrl": "https://asmcsiddharthnagar.ac.in/",
       "noticePdf": "https://www.asmcsiddharthnagar.ac.in/Notification_Uploads/8fb760d8eecdf15a4b4667c4a0f6574f.pdf",
       "sourceUrl": "https://asmcsiddharthnagar.ac.in/",
@@ -1896,7 +2038,55 @@
       "addedOn": "2026-11-14",
       "verified": true,
       "requirements": {}
+    },
+    {
+      "id": "cims-chhindwara-jr-walkin-rolling-2026",
+      "title": "Junior Resident (Psychiatry, PMR) – 2 posts, walk-in every Tue & Thu",
+      "org": "Chhindwara Institute of Medical Sciences (Govt. Medical College), Chhindwara",
+      "category": "jr",
+      "location": "Chhindwara, Madhya Pradesh",
+      "state": "Madhya Pradesh",
+      "posts": 2,
+      "salary": null,
+      "mode": "Walk-in",
+      "lastDate": null,
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Walk-in notice no. 13949 dated 17 Oct 2026, posts revised by notice dated 24 Oct 2026: JR in Psychiatry (1) and PMR (1), alongside 29 SR posts. Walk-in every Tuesday and Thursday from 22 Oct 2026 until the posts are filled; applications accepted 10:00 AM–12:30 PM at the Dean's office with original documents and a ₹1,000 fee per post. MP Medical Council or NMC registration is mandatory; the notice gives no separate JR pay or eligibility details.",
+      "officialUrl": "https://govtmedicalcollegechhindwara.ac.in/recruitment.php",
+      "noticePdf": "https://govtmedicalcollegechhindwara.ac.in/upload/Notice%20regarding%20a%20change%20in%20the%20number%20of%20posts%20in%20the%20SR%20JR%20advertisement.pdf",
+      "sourceUrl": "https://govtmedicalcollegechhindwara.ac.in/upload/Walk%20In%20Interview%20SR%20JR%2017-10-2026.pdf",
+      "addedOn": "2026-11-15",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "eventDate",
+        "registration": "any"
+      }
+    },
+    {
+      "id": "gmc-mahasamund-jr-ortho-walkin-rolling-2026",
+      "title": "Junior Resident (Orthopaedics, contract) – walk-in every working day",
+      "org": "Government Medical College, Mahasamund",
+      "category": "jr",
+      "location": "Mahasamund, Chhattisgarh",
+      "state": "Chhattisgarh",
+      "posts": null,
+      "salary": "₹65,000/month consolidated",
+      "mode": "Walk-in",
+      "lastDate": null,
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Walk-in notice (listed on the college site on 14 Oct 2026) for Tutor/Demonstrator and Junior Resident posts; the JR vacancy is in Orthopaedics. Walk-in on every working day from publication at GMC Mahasamund; one-year contract under Chhattisgarh contract rules. Qualification and age as per current NMC norms; NMC/MCI or Chhattisgarh Medical Council registration is mandatory, and serving candidates need an NOC.",
+      "officialUrl": "https://gmcmahasamund.ac.in/appointment.php",
+      "noticePdf": "https://app.gmcmahasamund.ac.in/storage/files/appointment/1791967764_xQgRnAtK.pdf",
+      "sourceUrl": "https://gmcmahasamund.ac.in/appointment.php",
+      "addedOn": "2026-11-15",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "eventDate",
+        "registration": "any"
+      }
     }
   ],
-  "updatedAt": "2026-11-14T15:40:25.424Z"
+  "updatedAt": "2026-11-15T01:56:31.321Z"
 }

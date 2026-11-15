@@ -1,5 +1,30 @@
 # DocRadar update log
 
+## 2026-11-15
+- New: 8.
+  - SABVGMC Chhainsa (Faridabad) JR, 3 posts, walk-in 16 Nov (Haryana)
+  - VMMC & Safdarjung PRS-I (Medical), ICMR MAP-PE, email by 15 Nov, interview 23 Nov (Delhi)
+  - ESIC MCH Ludhiana Tutor, 7 posts, email by 19 Nov, interview 23 Nov (Punjab; unverified: esic.gov.in PDF reset the connection)
+  - JIPMER PRS-I (Medical), ICMR INDIA-EMS, 23 Nov (Puducherry; unverified: jipmer.edu.in unreachable, notice copy read on an aggregator)
+  - BHEL PSER Kolkata Part Time Medical Consultant (GDMO), 28 Nov (West Bengal; unverified: official PDF failed the TLS check)
+  - PGIMS Rohtak Senior/Junior House Surgeon, 153 posts, 1 Dec (Haryana; unverified: uhsr.ac.in / pgimsrohtak.ac.in unreachable, official ad not yet seen)
+  - CIMS Chhindwara JR (Psychiatry, PMR), walk-in every Tue & Thu (Madhya Pradesh)
+  - GMC Mahasamund JR (Orthopaedics), walk-in every working day (Chhattisgarh)
+- Updated: 2. GMERS Valsad walk-in 17 Nov: official notice PDF found, now verified, Gujarat Medical Council registration added. MPTMC Siddharthnagar: added the 14 Oct JR notice details (MCQ walk-in from 27 Oct, grade pay ₹5,400). AFMS SSC (18 Nov), NEET-PG 2027, UPSC CMS 2027, INI-CET and NExT rechecked with no change.
+- State group covered: Sunday (Punjab, Haryana, Himachal Pradesh, Jammu and Kashmir, Ladakh, Chandigarh). All 18 queries plus extended "doctor vacancy" reruns and institute-cluster searches. Found PGIMS Rohtak and (via the digest) SABVGMC Faridabad; everything else closed or PG-only (BFUHS 630 MO, PGIMER 162 closed 13 Nov, GMCH 242 closed 28 Oct, HPPSC 228 MO closed 16 Oct, JKPSC 480, AIIMS Bilaspur JR, IIT Jammu GDMO).
+- Section 7 gap searches (16 states/UTs + defence) found only JIPMER PRS-I. Still nothing open in: Arunachal Pradesh, Goa, Himachal Pradesh, Manipur, Mizoram, Nagaland, Odisha, Rajasthan, Sikkim, Chandigarh, DNH&DD, Lakshadweep.
+- Listing tables:
+  - FreeJobAlert medical table: 215 rows read (single page; /page/2 repeats it), 199 posted since 25 Oct. 45 MBBS-eligible doctor rows: 44 already listed (incl. a duplicate ECHS Leh row), 1 added (ESIC Ludhiana Tutor). About 170 skipped: SR/faculty/PG-required (JIPMER PRS-II, ESIC Rohini/Bhubaneswar SR, BCECEB SR/Tutor 575, NIEPMD, Chennai Port Sr Dy CMO, BBCI MO), AYUSH (NIA Jaipur 24 MO, NEIAH, ESIC AYUSH MO and district AYUSH posts), dental JR (RIMS Imphal, BSAH), closed (GMCH Chandigarh 242, DMHO Medchal/Khammam/Mahabubnagar), health-society notices with no MBBS post, nursing/paramedical/admin.
+  - Other tables: MySarkariNaukri, GovtJobsAlert, SahiSarkariJobs, CentralStateJobs (~60 rows): 0 new. Medical Dialogues /jobs is stale (newest item Feb 2026).
+  - Reconciliation: re-read the FJA table before publishing: still 215 rows, no new rows; every open MBBS row is listed or skipped as above.
+- Searches run: about 150 web searches, plus several hundred page/PDF fetches via curl (OCR for scanned notices). Sources: scanned 784 of 784 · ok 531 · failed 253.
+  - All four digest ranges ([1]–[196], [197]–[392], [393]–[588], [589]–[784]) reviewed. Every failed source was retried once with curl (25 came back, nothing new). All-India failed sources covered by 29 site: searches (AFMS, NBEMS, UPSC, CAPFs, NSG, RPF, railways, cantonment boards, ESIC, CGHS, Navy, central AIIMS/PGIMER/JIPMER/RML/AMU, ~20 PSUs, IIT/IISER/NIT): only closed posts.
+  - Failed and still not covered: most state health/PSC/NHM and medical-college portals in AP, Arunachal, Assam, Bihar, Chhattisgarh, Goa, Gujarat, Haryana, HP, J&K, Jharkhand, Karnataka, MP, Mizoram, Odisha (11 *.odisha.gov.in sites incl. DMET), Puducherry, Punjab, Rajasthan, Sikkim, TN, Telangana (DME, Gandhi Hospital, GMC Nalgonda/Suryapet), Tripura (AGMC), UP (LLRM Meerut), WB (Medical College Kolkata); KIMS KIIT, Mamata, IIMSR, Fortis, Max, Indeed (403). All are in data/scan-failed.json for the Mac catch-up.
+- Sources.json: URLs fixed: CRPF → crpf.mha.gov.in, NDRF → ndrf.mha.gov.in/en/job-opportunity.html, RUHS CMS → ruhscms.org (recruitment page redirects to an error page). BBMB homepage redirects to error.htm and Cochin Port loops on itself: left in place, recheck.
+- Notes:
+  - Recheck on the catch-up run: DMET Odisha JR 309 posts (walk-in still "to be notified"), JIPMER PRS-II REVIVE (27 Nov, MBBS/BDS per aggregator, official notice not opened), AIIMS Bathinda rolling JR (current 18 Nov walk-in is SR only), ASMC Kushinagar 50 non-PG JR (walk-in date pending), BRD Gorakhpur trauma JR (interview postponed), Satna MC JR (advert link with no attachment), and official PDFs for ESIC Ludhiana, BHEL PSER, PGIMS Rohtak, JIPMER, THDC and AIIMS Bhopal JR.
+  - Left out: Jubilee Mission MC Thrissur JR (careers form with no dates), ISRO HSFC MO (MD/DNB), IHBAS JR (interviews cancelled), IIM Calcutta doctors-on-call (withdrawn), RUHS MO 600 (closed 13 Oct, exam date not yet out).
+
 ## 2026-11-14 (catch-up)
 - New: 1 · Updated: 0
   - GMERS Valsad SR/JR/Tutor walk-in, 17 Nov (Gujarat; unverified: only the college's news item, no notice PDF found)
