@@ -753,11 +753,11 @@
       "lastDate": "2026-11-19",
       "eventDate": "2026-11-19",
       "eligibility": "after-internship",
-      "eligibilityNote": "Needs completed internship and NMC/SMC registration. Age 33 max. Report by 9 AM at 4th Floor, Deanery, Kautilya Bhawan. Internship must have been completed within 5 years of the interview date (per aggregator copy of Advt 2026/10).",
-      "officialUrl": "https://www.aiimsbhopal.edu.in/AIIMSFiles/career/Download/Advertisement_JR_27102026.pdf",
+      "eligibilityNote": "Advt. No. AIIMS Bhopal/JR (Non-Acad.)/2026/10 dated 27 Oct 2026: 20 posts (UR 9, OBC 4, EWS 3, SC 2, ST 2; incl. 1 PwBD). MBBS recognised by NMC, internship completed within 5 years of the interview date, valid NMC/State Medical Council registration. Upper age 33 on the interview date (OBC +3, SC/ST +5, PwBD +10). Walk-in 19 Nov 2026 at 4th Floor, Deanery, Kautilya Bhawan; reporting 9:00 AM, no entry after 10:00 AM. Written test if more than 20 candidates. Tenure 6 months, extendable.",
+      "officialUrl": "https://www.aiimsbhopal.edu.in/",
       "sourceUrl": "https://www.freejobalert.com/articles/aiims-bhopal-junior-resident-recruitment-2026-walkin-for-20-posts-3076186",
       "addedOn": "2026-11-12",
-      "verified": false,
+      "verified": true,
       "requirements": {
         "internshipBy": "eventDate",
         "registration": "any",
@@ -2088,5 +2088,5 @@
       }
     }
   ],
-  "updatedAt": "2026-11-15T01:56:31.321Z"
+  "updatedAt": "2026-11-15T14:25:40.386Z"
 }

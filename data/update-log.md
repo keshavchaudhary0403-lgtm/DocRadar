@@ -1,5 +1,13 @@
 # DocRadar update log
 
+## 2026-11-15 (catch-up)
+- New: 0 · Updated: 1
+  - AIIMS Bhopal JR (Non-Academic) walk-in 19 Nov: official Advt 2026/10 PDF read, now verified; note rewritten from the notice (category-wise posts, no entry after 10 AM, written test if over 20 candidates).
+- Sources: rescanned 253 failed from the morning · ok 180 · still failing 73: natboard.edu.in, join.afms.gov.in, careers.ntpc.co.in, sail.co.in, vizagsteel.com, careers.bhel.in, powergrid.in, bcclweb.in, bel-india.in, iocl.com, neepco.co.in, mahanadicoal.in, nalcoindia.com, thdc.co.in, nsg.mha.gov.in, nitandhra.ac.in, vizagport.com, rmrims.org.in, iitbhilai.ac.in, nitrr.ac.in, iitgn.ac.in, newmangaloreport.gov.in, cochinport.gov.in, bmhrc.ac.in, nirwoh.icmr.gov.in, iiserpune.ac.in, jnport.gov.in, nitpy.ac.in, iitj.ac.in, aiimspatna.edu.in, pgimer.edu.in, rmlh.mohfw.gov.in, jipmer.edu.in, amu.ac.in, bpsc.bihar.gov.in, state.bihar.gov.in, hppsc.hp.gov.in, jkpsc.nic.in, dme.karnataka.gov.in, kpsc.karnataka.gov.in, lakshadweep.gov.in, health.mp.gov.in, health.py.gov.in, phsc.punjab.gov.in, ppsc.gov.in, rajswasthya.nic.in, health.sikkim.gov.in, uppsc.up.nic.in, dgmhup.gov.in, dgme.up.gov.in, birbhum.gov.in, wbhealth.gov.in, hr.wbhealth.gov.in, psc.wb.gov.in, gitam.edu, gmcrajamahendravaram.ap.gov.in, pgimsrohtak.ac.in, jnmc.edu, afmc.nic.in, kims.kiit.ac.in, jkmchjajpur.odisha.gov.in, dmet.odisha.gov.in, prmmch.odisha.gov.in, scbmch.odisha.gov.in, slnmch.odisha.gov.in, srmmch.odisha.gov.in, mamatamedicalcollege.com, llrmmedicalcollege.nic.in, iul.ac.in, fortishealthcare.com, in.indeed.com, maxhealthcare.in, sjmch.odisha.gov.in
+- Checked and left out: ESIC Rohini SR / SR-against-GDMO walk-in 25–26 Nov (PG first; MBBS only with 2 years' experience incl. 1 in the specialty, if no PG candidate), GMERS Morbi JR/Tutor walk-in "from 27 Oct till filled" (2 posts, no further dates stated), Ramgarh Cantonment GDMO (12 Nov), Dr RMLIMS non-PG JR (19 Sep), AIIMS Jodhpur/Bibinagar resident walk-ins (closed), Goa DHS walk-ins (specialists, May–Oct), BPCL Kochi doctors (2023), Ferozepur Cantonment lady doctor (Aug), Gandhi Hospital Secunderabad (2024 embryologist), Medical College Kolkata (2019). CRPF GDMO, NITRD MO, Assam SACS ART MOs and AMCH Dibrugarh DTC MO already listed.
+- Morning rechecks: official PDFs for THDC, JIPMER, BHEL PSER, PGIMS Rohtak (uhsr.ac.in) and ESIC Ludhiana still unreachable from the Mac (TLS chain errors, timeouts, DNS), so they stay unverified. GMERS central portal blocks this IP; Gujarat 11-month contract advert (Oct 2026) returned an HTML block page.
+- Git: a stale .git/index.lock blocked the first pull; removed and retried.
+
 ## 2026-11-15
 - New: 8.
   - SABVGMC Chhainsa (Faridabad) JR, 3 posts, walk-in 16 Nov (Haryana)
