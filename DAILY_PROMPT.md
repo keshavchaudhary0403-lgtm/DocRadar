@@ -47,8 +47,10 @@ the macOS keychain, so it uses a token stored inside the repo's `.git/` folder (
    read -s "T?Paste token, then Enter: "; echo
    printf 'https://keshavchaudhari0403-lgtm:%s@github.com\n' "$T" > .git/docradar-cred && chmod 600 .git/docradar-cred && unset T
    git config --local --replace-all credential.helper ""
-   git config --local --add credential.helper "store --file=$HOME/Desktop/DocRadar/.git/docradar-cred"
+   git config --local --add credential.helper '!f() { git credential-store --file="$(git rev-parse --absolute-git-dir)/docradar-cred" "$@"; }; f'
    ```
+   The helper finds the token relative to the repo, because the task's shell sees the folder at a
+   different path than macOS does (an absolute `/Users/...` path fails there).
 
 Prompt:
 

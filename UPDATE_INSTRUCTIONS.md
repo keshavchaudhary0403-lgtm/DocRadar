@@ -346,7 +346,7 @@ Mac, including git.** A task tied to the Mac gets no cloud repo access (`add_rep
 available there), so don't try to clone or push from a cloud workspace.
 
 Pushing works through a DocRadar-only GitHub token that the repo's local git config already uses
-(`.git/docradar-cred`). Never print, copy, move or change it, and don't change git's credential
+(`.git/docradar-cred`, found relative to the repo, so it works from the task's shell too). Never print, copy, move or change it, and don't change git's credential
 settings. If a push is refused for lack of access, the token has expired or been revoked: stop and
 say so at the top of the summary.
 
@@ -376,7 +376,9 @@ say so at the top of the summary.
    - New: N (titles with state) · Updated: N
    - Sources: rescanned N failed from the morning · ok X · still failing Y: list domains or "none"
    ```
-7. `git add data`, commit `Catch-up YYYY-MM-DD: +N new, M updated` and `git push origin main`
+7. `git add data`, then commit as
+   `git -c user.name="Claude" -c user.email="noreply@anthropic.com" commit -m "Catch-up YYYY-MM-DD: +N new, M updated"`
+   (the task's shell has no git identity; don't change git config) and `git push origin main`
    (on conflict: `git pull --rebase origin main`, re-run maintain.mjs, push again; never
    force-push). Never commit `scan/`.
 
