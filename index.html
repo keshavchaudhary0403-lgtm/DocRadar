@@ -1565,19 +1565,59 @@ $("#logo-d").innerHTML = $("#logo-m").innerHTML = ic("steth");
 if (!VIEWS.some(v => v[0] === state.view)) state.view = "radar";
 paintTheme();
 render();
-Promise.all([
-  fetch("data/jobs.json", { cache: "no-store" }).then(r => r.json()),
-  fetch("data/sources.json", { cache: "no-store" }).then(r => r.json()),
-  fetch("data/update-log.md", { cache: "no-store" }).then(r => r.ok ? r.text() : "").catch(() => "")
-]).then(([jobs, src, log]) => {
+function loadAll(cache){
+  return Promise.all([
+    fetch("data/jobs.json", { cache }).then(r => { if (!r.ok) throw r.status; return r.json(); }),
+    fetch("data/sources.json", { cache }).then(r => { if (!r.ok) throw r.status; return r.json(); }),
+    fetch("data/update-log.md", { cache }).then(r => r.ok ? r.text() : "").catch(() => "")
+  ]);
+}
+function applyData([jobs, src, log]){
   JOBS = jobs.jobs; UPDATED = jobs.updated; UPDATED_AT = jobs.updatedAt || null; SOURCES = src.sources; loaded = true;
   RUNLOG = parseLog(log);
-  render();
+}
+loadAll("no-store").then(d => {
+  applyData(d); render();
   store.set("dr-seen", isoToday());
 }).catch(() => {
   loaded = true; render();
   $("#results") && ($("#results").innerHTML = `<div class="empty">${ic("info")}<b>Couldn't load openings</b>Check your connection and refresh.</div>`);
 });
+
+/* ---------- Auto-refresh ----------
+   A tab or home-screen app left open never reloads, so check for new data on our own:
+   every 30 minutes while the page is visible, and whenever it comes back into view
+   (if the last check was 10+ minutes ago). Only jobs.json is checked first; it's
+   revalidated with its ETag, so an unchanged file costs a tiny 304. The page is
+   redrawn in place (no reload), and never while someone is typing or reading a job. */
+let lastCheck = Date.now(), renderedDay = isoToday(), pending = null, checking = false;
+const busy = () => /INPUT|TEXTAREA|SELECT/.test(document.activeElement?.tagName || "")
+  || $("#sheet").classList.contains("open") || $("#pop").classList.contains("show") || placeAdding || dobOpen;
+function applyPending(){
+  if (!pending || busy()) return;
+  const before = new Set(JOBS.map(j => j.id)), d = pending; pending = null;
+  const y = scrollY; applyData(d); renderedDay = isoToday(); render(); scrollTo(0, y);
+  const added = JOBS.filter(j => !before.has(j.id) && isOpen(j)).length;
+  if (added) toast(`${added} new opening${added === 1 ? "" : "s"} added`, "bolt");
+  store.set("dr-seen", isoToday());
+}
+async function checkForUpdates(){
+  if (checking || document.hidden || !loaded) return;
+  checking = true; lastCheck = Date.now();
+  try {
+    const jobs = await fetch("data/jobs.json", { cache: "no-cache" }).then(r => { if (!r.ok) throw r.status; return r.json(); });
+    if ((jobs.updatedAt || jobs.updated) !== (UPDATED_AT || UPDATED)) pending = await loadAll("no-cache");
+    else if (renderedDay !== isoToday() && !busy()) { renderedDay = isoToday(); render(); } // new day: refresh "days left"
+  } catch {} finally { checking = false; }
+  applyPending();
+}
+setInterval(checkForUpdates, 30 * 60 * 1000);
+setInterval(applyPending, 20 * 1000);   // an update found while busy is applied once the person is done
+const maybeCheck = () => { if (!document.hidden && Date.now() - lastCheck > 10 * 60 * 1000) checkForUpdates(); };
+document.addEventListener("visibilitychange", maybeCheck);
+addEventListener("focus", maybeCheck);
+addEventListener("online", () => checkForUpdates());
+addEventListener("pageshow", e => { if (e.persisted) checkForUpdates(); });
 </script>
 </body>
 </html>
