@@ -1488,16 +1488,22 @@
       "location": "New Delhi, Delhi",
       "state": "Delhi",
       "posts": 2,
-      "salary": null,
+      "salary": "Pay Level 10 (7th CPC)",
       "mode": "Apply offline",
       "lastDate": "2026-11-30",
       "eventDate": null,
       "eligibility": "after-internship",
-      "eligibilityNote": "Reported: MBBS with medical council registration; PG in TB/chest or TB-programme experience preferred; age up to 45 on 30 Nov. Application by post to the Director, NITRD, Sri Aurobindo Marg, to reach by 3:30 PM on 30 Nov. Official notice could not be opened — check nitrd.mohfw.gov.in.",
+      "eligibilityNote": "Recruitment Notice No. 01-October 2026 (1 UR, 1 OBC). MBBS with State/Central Medical Council registration; PG diploma/degree in Chest/TB or TB-programme experience desirable. Age up to 40 on the closing date (relaxation as per GoI rules). Application in prescribed proforma with ₹100 DD (no fee for SC/ST/PH/EWS/women) to the Director, NITRD, Sri Aurobindo Marg, New Delhi-110030, to reach by 3:30 PM on 30 Nov.",
       "officialUrl": "https://nitrd.mohfw.gov.in/vacancy/",
+      "noticePdf": "https://nitrd.mohfw.gov.in/wp-content/uploads/2026/10/ADV-SPL-MO.pdf",
       "sourceUrl": "https://centralstatejobs.in/jobs/nitrd-specialist-and-medical-officer-recruitment-2026",
-      "verified": false,
-      "requirements": {},
+      "verified": true,
+      "requirements": {
+        "registration": "any",
+        "maxAge": 40,
+        "ageOn": "2026-11-30",
+        "ageRelax": true
+      },
       "addedOn": "2026-11-13"
     },
     {
@@ -2178,5 +2184,5 @@
       "requirements": {}
     }
   ],
-  "updatedAt": "2026-11-16T01:55:11.168Z"
+  "updatedAt": "2026-11-16T06:09:08.233Z"
 }
