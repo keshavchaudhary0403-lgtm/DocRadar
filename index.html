@@ -1587,7 +1587,7 @@ loadAll("no-store").then(d => {
 /* ---------- Auto-refresh ----------
    A tab or home-screen app left open never reloads, so check for new data on our own:
    every 30 minutes while the page is visible, and whenever it comes back into view
-   (if the last check was 10+ minutes ago). Only jobs.json is checked first; it's
+   (if the last check was 1+ minute ago). Only jobs.json is checked first; it's
    revalidated with its ETag, so an unchanged file costs a tiny 304. The page is
    redrawn in place (no reload), and never while someone is typing or reading a job. */
 let lastCheck = Date.now(), renderedDay = isoToday(), pending = null, checking = false;
@@ -1613,7 +1613,7 @@ async function checkForUpdates(){
 }
 setInterval(checkForUpdates, 30 * 60 * 1000);
 setInterval(applyPending, 20 * 1000);   // an update found while busy is applied once the person is done
-const maybeCheck = () => { if (!document.hidden && Date.now() - lastCheck > 10 * 60 * 1000) checkForUpdates(); };
+const maybeCheck = () => { if (!document.hidden && Date.now() - lastCheck > 60 * 1000) checkForUpdates(); };
 document.addEventListener("visibilitychange", maybeCheck);
 addEventListener("focus", maybeCheck);
 addEventListener("online", () => checkForUpdates());
