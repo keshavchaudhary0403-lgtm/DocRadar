@@ -16,7 +16,7 @@ and `data/sources.json`. Deployed on Vercel from `main`; every push redeploys.
   `scripts/maintain.mjs`, update `UPDATE_INSTRUCTIONS.md` (and `DAILY_PROMPT.md` if needed) in the
   same commit.
 - `node scripts/scan-sources.mjs` fetches every source and writes `scan/digest.md` (git-ignored)
-  for the daily task to review; `--only-failed` rescans `data/scan-failed.json` (catch-up task on
-  the Mac, playbook section 10).
+  for the daily task to review; `--only-failed` rescans `data/scan-failed.json` (the catch-up: Claude Code
+  headless on the Mac at 11:30 IST via a LaunchAgent and `scripts/run-catchup.sh`, playbook section 10).
 - `node scripts/maintain.mjs` validates the data and must end with ✅. It also re-stamps
   `updatedAt`, so don't commit that change on its own.
