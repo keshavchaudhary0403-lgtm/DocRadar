@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "jobs": [
     {
       "id": "asacs-mo-art-ost-dmch-diphu-walkin-2026-11-13",
@@ -333,6 +333,27 @@
       }
     },
     {
+      "id": "mpkv-muktainagar-mo-2026-11-16",
+      "title": "Medical Officer (clock-hour basis) – 1 post",
+      "org": "MPKV – Govt. College of Agriculture, Muktainagar",
+      "category": "mo",
+      "location": "Muktainagar, Maharashtra",
+      "state": "Maharashtra",
+      "posts": 1,
+      "salary": "₹1,500/hour, up to ₹25,000/month",
+      "mode": "Apply offline",
+      "lastDate": "2026-11-16",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Re-notification (No. ACM/ESTT/Contr./Medical Officer/779/2026, dated 02.11.2026): MBBS or BAMS; temporary clock-hour post for up to 6 months for student/staff health care. Application on plain paper in the given proforma, with Rs 500 online fee receipt, must reach the Dean, Govt. College of Agriculture, Muktainagar, Dist. Jalgaon by 16.11.2026 (post or hand); interview with original documents.",
+      "officialUrl": "https://mpkv.ac.in/Adminstration/AdminsRecruitment",
+      "noticePdf": "https://mpkv.ac.in/Uploads/AKMU/20261103_152425_85845cca408c2ffbad4f5600c13b5839.pdf",
+      "sourceUrl": "https://mpkv.ac.in/Adminstration/AdminsRecruitment",
+      "addedOn": "2026-11-16",
+      "verified": true,
+      "requirements": {}
+    },
+    {
       "id": "mvh-delhi-jr-2026-11-17",
       "title": "Junior Resident (MBBS, ad hoc) – 2 posts, walk-in",
       "org": "Maharishi Valmiki Hospital, Pooth Khurd (Delhi Govt)",
@@ -444,18 +465,19 @@
       "lastDate": "2026-11-17",
       "eventDate": "2026-11-17",
       "eligibility": "after-internship",
-      "eligibilityNote": "5 posts shared between Paediatrician and Medical Officer, posted at REIC & Autism Centre, GMC Thiruvananthapuram. MO: MBBS with Travancore-Cochin Medical Council registration; max age 56 on 1 Jan 2026. Walk-in 17 Nov, 9:30 AM, KSSM Head Office, Poojappura; written test if over 50 candidates.",
-      "officialUrl": "https://socialsecuritymission.gov.in/",
+      "eligibilityNote": "Notification KSSM/1462/2025-DEO6 dated 06.11.2026: 5 vacancies shared between Paediatrician and Medical Officer at the REIC / Autism Centres under the Paediatrics departments of GMC Thiruvananthapuram, Kottayam, Kozhikode, Pariyaram and Manjeri. MO: MBBS with Travancore-Cochin Medical Council registration; upper age 56 on 01.01.2026. Walk-in 17 Nov, 9:30 AM, KSSM Head Office, Poojappura, Thiruvananthapuram, with original certificates; on-the-spot written test if more than 50 candidates; late arrivals (over 30 minutes) not admitted.",
+      "officialUrl": "https://socialsecuritymission.gov.in/reic-autism-centre-state-level-walk-in-interview-notification/",
       "sourceUrl": "https://www.freejobalert.com/articles/kssm-recruitment-2026-medical-officer-clinical-psychologist-3079552",
       "addedOn": "2026-11-13",
-      "verified": false,
+      "verified": true,
       "requirements": {
         "councils": [
           "Travancore-Cochin Medical Council"
         ],
         "maxAge": 56,
         "ageOn": "2026-01-01"
-      }
+      },
+      "noticePdf": "https://socialsecuritymission.gov.in/wp-content/uploads/2026/11/REICAutism_Centre_State_level_Walk_in_interview_Notification.pdf"
     },
     {
       "id": "jmc-jamnagar-mo-class2-2026-11-17",
@@ -946,7 +968,7 @@
       "noticePdf": "https://iocl.com/admin/img/UploadedFiles/LatestJobOpening/Files/86cf0b3b793747caac9d3b129e737594.pdf",
       "sourceUrl": "https://www.freejobalert.com/articles/iocl-retainer-doctor-recruitment-2026-3079990",
       "addedOn": "2026-11-13",
-      "verified": false,
+      "verified": true,
       "requirements": {}
     },
     {
@@ -963,15 +985,16 @@
       "eventDate": null,
       "eligibility": "after-internship",
       "eligibilityNote": "MBBS with State Medical Council/NMC registration and at least 6 months' experience (HIV programme experience, MD/Diploma Medicine preferred). Max age 62 on advertisement date. Post or hand in to the Civil Surgeon, District Hospital, Chandrapur by 5 PM on 20 Nov.",
-      "officialUrl": "https://chanda.nic.in",
+      "officialUrl": "https://chanda.nic.in/en/notice_category/recruitment/",
       "sourceUrl": "https://www.freejobalert.com/articles/district-hospital-chandrapur-art-medical-officer-recruitment-2026-3079033",
       "addedOn": "2026-11-13",
-      "verified": false,
+      "verified": true,
       "requirements": {
         "registration": "any",
         "maxAge": 62,
         "ageOn": "2026-11-06"
-      }
+      },
+      "noticePdf": "https://cdn.s3waas.gov.in/s3fc221309746013ac554571fbd180e1c8/uploads/2026/11/17938791468269.pdf"
     },
     {
       "id": "echs-leh-mo-2026-11-20",
@@ -1108,6 +1131,28 @@
       "requirements": {
         "maxAge": 35,
         "ageOn": "2026-11-23"
+      }
+    },
+    {
+      "id": "sjri-bengaluru-prs2-medical-icmr-ascribe-2026-11-23",
+      "title": "Project Research Scientist-II (Medical), ICMR ASCRIBE project – 1 post",
+      "org": "St. John's National Academy of Health Sciences (St. John's Medical College / SJRI)",
+      "category": "other",
+      "location": "Bengaluru, Karnataka",
+      "state": "Karnataka",
+      "posts": 1,
+      "salary": "₹1,04,000/month",
+      "mode": "Apply online",
+      "lastDate": "2026-11-23",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Contract post (posted 12 Nov 2026) on an ICMR-funded multicentre study of an online diagnostic-reasoning course for MBBS students. Preferred qualifications: MBBS, MD, MPH, BDS or BAMS; freshers or experienced; age limit 40 years; English and Kannada preferred. Email a cover letter and CV with 3 references to suneetha.nl@stjohns.in (cc hr@sjri.res.in) by 23 Nov 2026; tentative joining 1 Dec 2026.",
+      "officialUrl": "https://www.stjohns.in/careers/project-research-scientist-ii-medical-icmr-ascribe-project",
+      "sourceUrl": "https://www.stjohns.in/careers",
+      "addedOn": "2026-11-16",
+      "verified": true,
+      "requirements": {
+        "maxAge": 40
       }
     },
     {
@@ -1348,16 +1393,18 @@
       "lastDate": "2026-11-28",
       "eventDate": null,
       "eligibility": "after-internship",
-      "eligibilityNote": "MBBS with State/Indian Medical Register registration; MD Medicine desirable, experience preferred. Max age 35 on 31 Oct 2026 (retired MOs up to 62 considered). Apply via the Google Form on the notice; interview date by email. One-year contract, renewable up to 3 years.",
-      "officialUrl": "https://www.nita.ac.in",
+      "eligibilityNote": "MBBS with State/Indian Medical Register registration; MD (General Medicine) desirable, relevant experience preferred. Max age 35 on 31 Oct 2026 (retired MOs up to 62 may apply). Apply via the Google Form linked in the notice by 28 Nov 2026; bring the hard-copy form, internship completion and registration certificates to the interview (date by email / website). ₹70,000/month consolidated; one-year contract, renewable up to 3 years.",
+      "officialUrl": "https://www.nita.ac.in/UserPanel/Minutes_Others.aspx?file=Recruitment",
       "sourceUrl": "https://www.freejobalert.com/articles/nit-agartala-medical-officer-campus-doctor-recruitment-2026-3080013",
       "addedOn": "2026-11-13",
-      "verified": false,
+      "verified": true,
       "requirements": {
         "registration": "any",
         "maxAge": 35,
-        "ageOn": "2026-10-31"
-      }
+        "ageOn": "2026-10-31",
+        "internshipBy": "eventDate"
+      },
+      "noticePdf": "https://www.nita.ac.in/MO_10-11-2026_CampusDoctor-Nov26_admin.pdf"
     },
     {
       "id": "bhel-pser-kolkata-ptmc-gdmo-2026-11-28",
@@ -2086,7 +2133,50 @@
         "internshipBy": "eventDate",
         "registration": "any"
       }
+    },
+    {
+      "id": "gmers-morbi-jr-tutor-walkin-rolling-2026",
+      "title": "Junior Resident / Tutor (contract) – 2 posts, walk-in until posts are filled",
+      "org": "GMERS Medical College, Morbi",
+      "category": "jr",
+      "location": "Morbi, Gujarat",
+      "state": "Gujarat",
+      "posts": 2,
+      "salary": null,
+      "mode": "Walk-in",
+      "lastDate": null,
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Walk-in notice dated 26 Oct 2026: interviews for Senior Residents and Junior Resident/Tutor (2 posts) from 27 Oct 2026 until all vacant posts are filled; the tentative vacant seats are put up on the notice board on the 2nd and 4th Monday. Submit the filled application form with documents (MBBS mark sheets and attempt certificates, internship completion certificate, registration, ID) 10:00 AM–12:00 noon at Lecture Hall-2, GMERS Medical College, Rajkot–Morbi Highway; be present in person with originals. A JR contract ends if a DNB/diploma candidate joins the department.",
+      "officialUrl": "https://gmersmorbi.com/",
+      "noticePdf": "https://gmersmorbi.com/upload/walkininterview10262026121854711.pdf",
+      "sourceUrl": "https://gmersmorbi.com/",
+      "addedOn": "2026-11-16",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "eventDate"
+      }
+    },
+    {
+      "id": "jmmcri-thrissur-junior-resident-rolling-2026",
+      "title": "Junior Resident (rolling, apply online)",
+      "org": "Jubilee Mission Medical College and Research Institute",
+      "category": "jr",
+      "location": "Thrissur, Kerala",
+      "state": "Kerala",
+      "posts": null,
+      "salary": null,
+      "mode": "Apply online",
+      "lastDate": null,
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Open Junior Resident vacancy on the hospital's careers page; eligibility stated as MBBS. Apply through the online form on the careers page; no closing date, pay or post count is given.",
+      "officialUrl": "https://jmmcri.org/careers.html",
+      "sourceUrl": "https://jmmcri.org/careersapply.html/63",
+      "addedOn": "2026-11-16",
+      "verified": true,
+      "requirements": {}
     }
   ],
-  "updatedAt": "2026-11-15T14:25:40.386Z"
+  "updatedAt": "2026-11-16T01:55:11.168Z"
 }
