@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "jobs": [
     {
       "id": "asacs-mo-art-ost-dmch-diphu-walkin-2026-11-13",
@@ -762,6 +762,28 @@
       "noticePdf": "https://cdn.s3waas.gov.in/s3ff4d5fbbafdf976cfdc032e3bde78de5/uploads/2026/11/17936897891706.pdf"
     },
     {
+      "id": "aiims-jodhpur-prs2-medical-mental-health-2026-11-18",
+      "title": "Project Research Scientist-II (Medical) – 1 post (suicide-risk reduction project)",
+      "org": "AIIMS Jodhpur",
+      "category": "other",
+      "location": "Jodhpur, Rajasthan",
+      "state": "Rajasthan",
+      "posts": 1,
+      "salary": "₹80,000 + 20% HRA",
+      "mode": "Apply online",
+      "lastDate": "2026-11-18",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS/BDS with three years' post-qualification experience, or MBBS/BDS with MD/MDS/MPH, or MBBS/BDS with PhD; maximum age 40. Project on suicide-risk reduction and mental well-being among school and college students; screening test and/or walk-in interview. Unverified: details are from an aggregator because the official PDF could not be opened.",
+      "officialUrl": "https://www.aiimsjodhpur.edu.in",
+      "sourceUrl": "https://www.freejobalert.com/articles/aiims-jodhpur-project-research-scientist-ii-medical-recruitment-2026-3080814",
+      "addedOn": "2026-11-17",
+      "verified": false,
+      "requirements": {
+        "maxAge": 40
+      }
+    },
+    {
       "id": "aiims-bhopal-jr-nonacad-2026-11-19",
       "title": "Junior Resident (Non-Academic) – 20 posts, walk-in",
       "org": "AIIMS Bhopal",
@@ -827,11 +849,12 @@
       "eventDate": "2026-12-03",
       "eligibility": "after-internship",
       "eligibilityNote": "MBBS; attach experience testimonials. Application must reach Stn HQ Missamari by 12:00 noon on 19 Nov (one report says 20 Nov; earlier date shown). Interview 3 Dec, report by 10 AM. One-year contract.",
-      "officialUrl": "https://www.echs.gov.in",
+      "officialUrl": "https://www.echs.gov.in/advertisement.php",
       "sourceUrl": "https://www.freejobalert.com/articles/echs-missamari-recruitment-2026-apply-offline-for-2-medical-officer-nursing-assistant-posts-3078496",
       "addedOn": "2026-11-13",
-      "verified": false,
-      "requirements": {}
+      "verified": true,
+      "requirements": {},
+      "noticePdf": "https://www.echs.gov.in/assets/advertisement/Advt%20of%20Echs%20stn%20hq%20missamari.pdf"
     },
     {
       "id": "gmc-haldwani-vrdl-scientist-b-medical-2026-11-19",
@@ -901,6 +924,32 @@
       "addedOn": "2026-11-15",
       "verified": false,
       "requirements": {}
+    },
+    {
+      "id": "dmho-yadadri-nhm-physician-2026-11-19",
+      "title": "Physician (MBBS), NHM contract – 1 post",
+      "org": "District Medical & Health Officer, Yadadri Bhuvanagiri (NHM Telangana)",
+      "category": "mo",
+      "location": "Bhuvanagiri, Telangana",
+      "state": "Telangana",
+      "posts": 1,
+      "salary": "₹52,000 per month",
+      "mode": "Apply offline",
+      "lastDate": "2026-11-19",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "NHM post of Physician (one of 18 posts in Notification 05/2026): MBBS with registration with the Telangana State Medical Council. Download the form from yadadri.telangana.gov.in and submit at G-17, IDOC, Raigir (O/o DMHO) between 17 Nov 2026, 10:30 AM and 19 Nov 2026, 5:00 PM. Notice states no age limit, fee or selection method.",
+      "officialUrl": "https://yadadri.telangana.gov.in",
+      "noticePdf": "https://cdn.s3waas.gov.in/s3795c7a7a5ec6b460ec00c5841019b9e9/uploads/2026/11/17948240535845.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/district-medical-and-health-officer-yadadri-recruitment-2026-staff-3081497",
+      "addedOn": "2026-11-17",
+      "verified": true,
+      "requirements": {
+        "registration": "any",
+        "councils": [
+          "Telangana State Medical Council"
+        ]
+      }
     },
     {
       "id": "amch-dibrugarh-mo-dtc-walkin-2026-11-20",
@@ -1064,6 +1113,34 @@
       "addedOn": "2026-11-13"
     },
     {
+      "id": "gmc-goa-jr-short-post-walkin-2026-11-20",
+      "title": "Junior Resident (Short Post, 1 year) – 69 posts, walk-in",
+      "org": "Goa Medical College & Hospital, Bambolim",
+      "category": "jr",
+      "location": "Bambolim, Goa",
+      "state": "Goa",
+      "posts": 69,
+      "salary": "₹80,000/month (consolidated)",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-20",
+      "eventDate": "2026-11-20",
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS with one-year rotational internship completed; permanent registration with the Goa State Medical Council; age not above 45. One-year posts in CVTS, Plastic Surgery, Urology, Nephrology, Neurology, Neurosurgery, Medical Oncology, Paediatric Surgery, Endocrinology, Cardiology, Geriatric Medicine, Radio Diagnosis, Transfusion Medicine, Medical Insurance Cell and OPD-13. Report for document verification at 10 AM (no entry after 10:30 AM); interview 3:30 PM at the Conference Hall, Dean's Office. Selected candidates must join within 5–6 days.",
+      "officialUrl": "https://gmcgoa.edu.in/",
+      "noticePdf": "https://gmcgoa.edu.in/wp-content/uploads/2026/11/Walk-in-Interview-Advertisement-Notice-No.09-2026_compressed.pdf",
+      "sourceUrl": "https://digitalgoa.com/gmc-announces-95-vacancies-walk-in-interviews-from-november-16/",
+      "addedOn": "2026-11-17",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "eventDate",
+        "registration": "permanent",
+        "councils": [
+          "Goa Medical Council"
+        ],
+        "maxAge": 45
+      }
+    },
+    {
       "id": "dmft-dhanbad-mo-48-2026-11-21",
       "title": "Medical Officer – 48 posts (DMFT, NRHM + NUHM)",
       "org": "District Mineral Foundation Trust, Dhanbad",
@@ -1109,6 +1186,29 @@
         "ageRelax": true
       },
       "addedOn": "2026-11-13"
+    },
+    {
+      "id": "aiims-bathinda-palliative-care-doctor-2026-11-23",
+      "title": "Palliative Care Doctor (project post) – 1 post, walk-in",
+      "org": "AIIMS Bathinda (Department of Anaesthesiology)",
+      "category": "other",
+      "location": "Bathinda, Punjab",
+      "state": "Punjab",
+      "posts": 1,
+      "salary": "₹1,00,000 per month (consolidated)",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-22",
+      "eventDate": "2026-11-23",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Project post 'Strengthening of Palliative Care Services in Bathinda', tenure till 31 Mar 2027. MBBS with valid state medical council registration and minimum 1–2 years' experience in a health care setup; palliative care experience desirable. Fill the Google form by 22 Nov 2026, 1:00 PM; walk-in 23 Nov 2026, reporting 9:00–10:30 AM, Conference Hall No 2, Auditorium, AIIMS Bathinda. Ref. AB/ANES/1066 dated 16-11-2026.",
+      "officialUrl": "https://www.aiimsbathinda.edu.in",
+      "noticePdf": "https://aiimsbathinda.edu.in/images/Reqruitment/20261116045000.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/aiims-bathinda-palliative-care-doctor-recruitment-2026-3081551",
+      "addedOn": "2026-11-17",
+      "verified": true,
+      "requirements": {
+        "registration": "any"
+      }
     },
     {
       "id": "jipmer-prs1-medical-india-ems-2026-11-23",
@@ -1178,6 +1278,31 @@
         "internshipBy": "lastDate",
         "registration": "any",
         "maxAge": 35
+      }
+    },
+    {
+      "id": "cs-dharashiv-art-mo-walkin-2026-11-27",
+      "title": "Medical Officer – ART Centre, SDH Sastur (MSACS contract) – 1 post, walk-in",
+      "org": "Civil Surgeon, Dharashiv (Maharashtra State AIDS Control Society)",
+      "category": "mo",
+      "location": "Dharashiv, Maharashtra",
+      "state": "Maharashtra",
+      "posts": 1,
+      "salary": "₹72,000/month (consolidated)",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-25",
+      "eventDate": "2026-11-27",
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS with valid State Medical Council/NMC registration and 6 months' experience in the HIV/AIDS programme in a field setting; MD Medicine or Diploma in Medicine preferred. Submit the application by 25 Nov 2026; walk-in interview 27 Nov 2026 at 11 AM at the Civil Surgeon Office, Dharashiv. Upper age limit 60.",
+      "officialUrl": "https://dharashiv.maharashtra.gov.in/",
+      "noticePdf": "https://cdn.s3waas.gov.in/s3642e92efb79421734881b53e1e1b18b6/uploads/2026/11/17948285102542.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/civil-surgeon-dharashiv-medical-officer-art-recruitment-2026-3081615",
+      "addedOn": "2026-11-17",
+      "verified": true,
+      "requirements": {
+        "registration": "any",
+        "maxAge": 60,
+        "ageOn": "2026-11-16"
       }
     },
     {
@@ -1378,6 +1503,28 @@
           "Uttar Pradesh Medical Council"
         ],
         "maxAge": 65
+      }
+    },
+    {
+      "id": "jipmer-prs2-medical-icmr-car-2026-11-27",
+      "title": "Project Research Scientist-II (Medical), ICMR project, Emergency Medicine & Trauma – 1 post",
+      "org": "JIPMER, Puducherry",
+      "category": "other",
+      "location": "Puducherry, Puducherry",
+      "state": "Puducherry",
+      "posts": 1,
+      "salary": "₹96,000 per month (₹80,000 + 20% HRA)",
+      "mode": "Apply online",
+      "lastDate": "2026-11-27",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "ICMR-funded project (Advt JIP/EMSD/ICMR-CAR/2026/01), Dept. of Emergency Medicine & Trauma. Aggregator gives qualification as MBBS/BDS with PG degree (MD/MDS/MPH), or MBBS/BDS with three years' post-qualification experience, or MBBS/BDS with PhD; maximum age 40. Apply by email (form + CV as one PDF) by 5 PM, 27 Nov 2026; shortlisting, written test and interview. Official notice not opened; check the experience requirement there.",
+      "officialUrl": "https://jipmer.edu.in/announcement/recruitment-advertisement-post-project-research-scientist-ii-medical-project-research",
+      "sourceUrl": "https://www.freejobalert.com/articles/jipmer-project-research-scientist-ii-recruitment-2026-apply-online-3081046",
+      "addedOn": "2026-11-17",
+      "verified": false,
+      "requirements": {
+        "maxAge": 40
       }
     },
     {
@@ -1741,6 +1888,30 @@
       "addedOn": "2026-11-13",
       "verified": false,
       "requirements": {}
+    },
+    {
+      "id": "zp-dharashiv-nhm-mo-walkin-2026-12-15",
+      "title": "Medical Officer (MBBS), NHM / 15th FC contract – monthly walk-in (15th of each month)",
+      "org": "District Health Officer, Zilla Parishad Dharashiv (NHM)",
+      "category": "mo",
+      "location": "Dharashiv, Maharashtra",
+      "state": "Maharashtra",
+      "posts": null,
+      "salary": "₹60,000/month (MBBS MO, full time); ₹30,000 for part-time UPHC MO",
+      "mode": "Walk-in",
+      "lastDate": "2026-12-15",
+      "eventDate": "2026-12-15",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Rolling NHM/NUHM/15th Finance Commission walk-in for contract MBBS Medical Officers at DH, women's hospital, SDH, RH, urban AAM, Aapla Dawakhana and UPHC posts. Interviews are held at the DHO office, ZP Dharashiv, at 10 AM on the 15th of each month (next working day if a holiday) while posts stay vacant; the notice is listed as valid until 31 Dec 2026. Application fee by DD (₹150 open, ₹100 reserved). MBBS is preferred; BAMS candidates are considered only for some posts if no MBBS candidate is available.",
+      "officialUrl": "https://zpdharashiv.maharashtra.gov.in/notice-category/%E0%A4%AD%E0%A4%B0%E0%A4%A4%E0%A5%80-mr/",
+      "noticePdf": "https://cdnbbsr.s3waas.gov.in/s3de7092ba6df4276921d27a3704c57998/uploads/2026/06/20260630124873487.pdf",
+      "sourceUrl": "https://centralstatejobs.in/jobs/zp-dharashiv-medical-officer-recruitment-2026",
+      "addedOn": "2026-11-17",
+      "verified": true,
+      "requirements": {
+        "maxAge": 69,
+        "ageOn": "2026-06-30"
+      }
     },
     {
       "id": "apollo-bengaluru-rmo-dec-2026",
@@ -2182,7 +2353,91 @@
       "addedOn": "2026-11-16",
       "verified": true,
       "requirements": {}
+    },
+    {
+      "id": "karnataka-hfws-kabhi-mo-rolling-2026",
+      "title": "Neurologist / Physician / Medical Officer (MBBS), Karnataka Brain Health Initiative – 2 posts, rolling",
+      "org": "Commissionerate of Health & Family Welfare Services, Karnataka (KaBHI programme)",
+      "category": "mo",
+      "location": "Bengaluru, Karnataka",
+      "state": "Karnataka",
+      "posts": 2,
+      "salary": "₹60,000 per month for MBBS (₹1,10,000 MD/DNB Medicine; ₹1,50,000 DM/DNB Neurology)",
+      "mode": "Apply offline",
+      "lastDate": null,
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Temporary contractual posts under the Karnataka Brain Health Initiative; DM/DNB Neurology or MD/DNB General Medicine or MBBS can apply, experience treating neurological disease desirable. Speaking, reading and writing Kannada mandatory; age limit 60. Rolling notice with no closing date: send the prescribed form by post or in person to Mental Health Section, 6th Floor, Arogya Soudha, Magadi Road, Bengaluru 560023. Details from aggregator; official notice could not be opened.",
+      "officialUrl": "https://hfwcom.karnataka.gov.in/",
+      "sourceUrl": "https://www.freejobalert.com/articles/h-fws-neurologist-or-physician-or-medical-officer-recruitment-2026-3081394",
+      "addedOn": "2026-11-17",
+      "verified": false,
+      "requirements": {
+        "maxAge": 60
+      }
+    },
+    {
+      "id": "mhesis-amo-mumbai-mo-walkin-rolling-2026",
+      "title": "Medical Officer (Group A, contract) – 10 posts, walk-in 2nd & 4th Wednesday monthly",
+      "org": "Administrative Medical Officer, Maharashtra State ESI Society (ESIS), Mumbai",
+      "category": "mo",
+      "location": "Mumbai, Maharashtra",
+      "state": "Maharashtra",
+      "posts": 10,
+      "salary": "₹75,000 per month",
+      "mode": "Walk-in",
+      "lastDate": null,
+      "eventDate": "2026-11-25",
+      "eligibility": "after-internship",
+      "eligibilityNote": "11-month contract posts at the AMO office and ESIS dispensaries at Vile Parle, Chembur and Dahisar (Mumbai). MBBS with valid MCI/State Medical Council registration; Marathi and computer knowledge essential; age below 69 on interview day; no private practice. Walk-in on the second and fourth Wednesday of every month at AMO, MH-ESI Society, 3rd floor, ESIS Hospital, Ganpatrao Jadhav Marg, Worli, Mumbai 400018 (vacancies displayed on the notice board on the second Monday). Aggregator says ESIC portal lists the notice until 17 Apr 2027; official notice not opened.",
+      "officialUrl": "https://esic.gov.in",
+      "sourceUrl": "https://centralstatejobs.in/jobs/esic-medical-officer-recruitment-2026",
+      "addedOn": "2026-11-17",
+      "verified": false,
+      "requirements": {
+        "registration": "any",
+        "maxAge": 68
+      }
+    },
+    {
+      "id": "ini-cet-july-2027",
+      "title": "INI-CET July 2027 session – watch for the prospectus",
+      "org": "AIIMS New Delhi (for AIIMS, JIPMER, PGIMER, NIMHANS, SCTIMST)",
+      "category": "exam",
+      "location": "All India",
+      "state": "All India",
+      "posts": null,
+      "salary": null,
+      "mode": "Apply online",
+      "lastDate": null,
+      "eventDate": null,
+      "eligibility": "intern-ok",
+      "eligibilityNote": "Not announced yet. The previous (January 2027) session took registrations 16 Sep–13 Oct 2026 and held the exam on 1 Nov 2026. The internship cut-off date and other eligibility rules will be in the July 2027 prospectus.",
+      "officialUrl": "https://www.aiimsexams.ac.in",
+      "sourceUrl": "https://medicaldialogues.in/news/education/medical-admissions/aiims-invites-applications-for-ini-cet-january-2027-session-exam-on-november-1-179420",
+      "addedOn": "2026-11-17",
+      "verified": false
+    },
+    {
+      "id": "pims-puducherry-jr-tutor-rolling-2026",
+      "title": "Junior Residents & Tutors – rolling, apply by email (ICU, Emergency Medicine, CCU and other departments)",
+      "org": "Pondicherry Institute of Medical Sciences (PIMS)",
+      "category": "jr",
+      "location": "Puducherry, Puducherry",
+      "state": "Puducherry",
+      "posts": null,
+      "salary": null,
+      "mode": "Apply online",
+      "lastDate": null,
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Private medical college. Open positions for Junior Residents and Tutors in Intensive Care Units I & II, Emergency Medicine, Coronary Care Unit, Nephrology, Cardiology, Neuro Medicine, Neuro Surgery, Plastic Surgery, Paediatric Surgery, Urology and Anatomy. Send a resume and copies of certificates to ms@pims-py.edu.in. Posted 11 May 2026 (Ref. PIMS/HR/RECT/2026/19); no closing date given.",
+      "officialUrl": "https://www.pimsmmm.com/Career.php",
+      "sourceUrl": "https://www.pimsmmm.com/Career.php",
+      "addedOn": "2026-11-17",
+      "verified": true,
+      "requirements": {}
     }
   ],
-  "updatedAt": "2026-11-16T06:09:08.233Z"
+  "updatedAt": "2026-11-17T01:59:46.601Z"
 }
