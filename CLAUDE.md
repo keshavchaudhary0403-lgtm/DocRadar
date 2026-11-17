@@ -17,6 +17,6 @@ and `data/sources.json`. Deployed on Vercel from `main`; every push redeploys.
   same commit.
 - `node scripts/scan-sources.mjs` fetches every source and writes `scan/digest.md` (git-ignored)
   for the daily task to review; `--only-failed` rescans `data/scan-failed.json` (the catch-up: Claude Code
-  headless on the Mac at 11:30 IST via a LaunchAgent and `scripts/run-catchup.sh`, playbook section 10).
+  headless on the Mac at 11:30 IST (retries 13:30, 15:30, 18:30) via a LaunchAgent and `scripts/run-catchup.sh`, playbook section 10).
 - `node scripts/maintain.mjs` validates the data and must end with ✅. It also re-stamps
   `updatedAt`, so don't commit that change on its own.

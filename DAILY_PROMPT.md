@@ -29,7 +29,7 @@ You are the daily updater for DocRadar (GitHub repo: keshavchaudhari0403-lgtm/Do
 5. At the end, reply with a short summary: new listings (with state), updated listings, listing-table rows read/added/skipped, sources scanned N of TOTAL (ok/failed), sources that failed, and anything closing within 3 days.
 ```
 
-## Catch-up run (on the Mac in India, 11:30 IST daily)
+## Catch-up run (on the Mac in India, 11:30 IST daily, retries 13:30/15:30/18:30)
 Some state-government and medical-college sites block cloud servers, so the morning run can't
 reach them. A second run rescans only those sources from the Mac, using Claude Code headless
 (playbook section 10). The Claude app's scheduled tasks can't do this: a task tied to the Mac gets
@@ -48,7 +48,8 @@ no cloud repo access, and git in the Mac folder asks for a delete approval on ev
    until 13 Nov 2027. To store a new one: `read -s "T?Token: "; printf 'https://keshavchaudhari0403-lgtm:%s@github.com\n' "$T" > .git/docradar-cred; chmod 600 .git/docradar-cred; unset T`
 2. `~/Library/LaunchAgents/com.docradar.catchup.plist` runs
    `~/DocRadar-catchup/scripts/run-catchup.sh` at 11:30 every day (or on wake if the Mac was
-   asleep). Load it with `launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.docradar.catchup.plist`.
+   asleep), and again at 13:30, 15:30 and 18:30; those do nothing once a catch-up has been pushed that day. The script
+   waits up to 10 minutes for the network after the Mac wakes. Load it with `launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.docradar.catchup.plist`.
 
 **Checking and controlling it:**
 - Log: `tail -50 ~/DocRadar-catchup.log`. Each run ends with `OK: … is on main` or a WARNING.

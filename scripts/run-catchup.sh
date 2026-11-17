@@ -31,7 +31,12 @@ if [[ -n "$(git status --porcelain --untracked-files=no)" ]]; then
   echo "Uncommitted changes from an earlier run; stashing them."
   git stash push -q -m "catch-up autostash $(date +%F-%H%M)"
 fi
-GIT_TERMINAL_PROMPT=0 git pull -q --rebase origin main || { echo "git pull failed"; exit 1; }
+# Right after the Mac wakes, Wi-Fi may not be up yet: retry for up to 10 minutes.
+for i in {1..20}; do
+  GIT_TERMINAL_PROMPT=0 git pull -q --rebase origin main && break
+  (( i == 20 )) && { echo "git pull failed for 10 minutes; giving up (the next scheduled slot will try again)"; exit 1; }
+  echo "git pull failed (attempt $i, network not ready?); retrying in 30s"; sleep 30
+done
 
 if [[ ${1:-} != --force ]] && git log -1 --since="$TODAY 00:00" --grep="^Catch-up $TODAY" --format=%h | grep -q .; then
   echo "Today's catch-up is already on main; nothing to do."; exit 0

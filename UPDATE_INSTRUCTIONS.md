@@ -344,7 +344,8 @@ the morning cloud run can't reach them. A second run rescans only those sources 
 India. It is **Claude Code running headless on the Mac**, started daily at 11:30 IST by a
 LaunchAgent (`~/Library/LaunchAgents/com.docradar.catchup.plist`) that calls
 `scripts/run-catchup.sh` in its own clone, `~/DocRadar-catchup`. If the Mac is asleep at 11:30,
-macOS starts it when the Mac wakes. The script pulls `main` before starting you, skips the day if
+macOS starts it when the Mac wakes; more slots at 13:30, 15:30 and 18:30 retry if no catch-up has been pushed yet that day.
+The script pulls `main` before starting you (retrying for up to 10 minutes while the network comes up), skips the day if
 a `Catch-up <today>` commit is already on main, and logs to `~/DocRadar-catchup.log`.
 
 (The Claude app's scheduled tasks didn't work for this: a task tied to the Mac gets no cloud repo
