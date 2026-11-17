@@ -612,6 +612,31 @@
       "noticePdf": "https://www.gmersmcvalsad.com/UploadedDocs/News/New%20Doc%2011-13-2026%2016.57.pdf"
     },
     {
+      "id": "esis-mulund-mo-contract-walkin-2026-11-18",
+      "title": "Medical Officer (contract) – 3 posts, walk-in",
+      "org": "ESI Society Hospital, Mulund (Maharashtra State ESI Society)",
+      "category": "mo",
+      "location": "Mulund, Mumbai, Maharashtra",
+      "state": "Maharashtra",
+      "posts": 3,
+      "salary": "₹75,000/month",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-18",
+      "eventDate": "2026-11-18",
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS from a recognised university with medical council registration (valid renewal). Posts: 1 UR, 1 OBC, 1 NT. Walk-in 11:00 AM–1:00 PM at the Medical Superintendent's office, ESI Society Hospital, Mulund (W); bring the filled form, originals and two sets of photocopies. Contract up to 364 days; professional indemnity policy required on joining.",
+      "officialUrl": "https://esic.gov.in/recruitments",
+      "noticePdf": "https://esic.gov.in/attachments/recruitmentfile/quot_Walk_in_Interviews_quot_for_appointment_of_Contractual_Part_Time_Specialist_Senior_Resident_and_Medical_Officer_on_Contract_basis_in_ESI_Society_Hospital_Mulund_1794892421.pdf",
+      "sourceUrl": "https://esic.gov.in/recruitments",
+      "addedOn": "2026-11-17",
+      "verified": true,
+      "requirements": {
+        "registration": "any",
+        "maxAge": 69,
+        "ageOn": "2026-11-18"
+      }
+    },
+    {
       "id": "afms-ssc-mo-nov-2026",
       "title": "Medical Officer – Short Service Commission (120 posts)",
       "org": "Armed Forces Medical Services (Indian Army)",
@@ -2439,5 +2464,5 @@
       "requirements": {}
     }
   ],
-  "updatedAt": "2026-11-17T01:59:46.601Z"
+  "updatedAt": "2026-11-17T18:23:31.987Z"
 }
