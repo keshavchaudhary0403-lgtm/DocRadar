@@ -360,7 +360,9 @@ refused for lack of access, the token has expired or been revoked: say so at the
    (`node scripts/scan-sources.mjs`) instead and do the whole of section 3.
 2. **Scan** in the foreground: `node scripts/scan-sources.mjs --only-failed`
    It writes `scan/digest.md` and adds a `catchup` block (what still fails) to
-   `data/scan-failed.json`. About 250 sources take 2–5 minutes. If the command gets cut off, run
+   `data/scan-failed.json`. Sites whose certificate chain Node rejects are retried with the Mac's
+   `curl` (TLS checks stay on), so most state-government sites load here. About 250 sources take
+   2–5 minutes. If the command gets cut off, run
    it in parts instead: `--only-failed --batch 1/4`, then `2/4`, `3/4`, `4/4`. Each part writes
    `scan/digest-K.md` and `scan/catchup-K.json`; review every part, then put one combined `catchup`
    object (scanned and ok added up, `stillFailed` lists joined, today's `date`) into

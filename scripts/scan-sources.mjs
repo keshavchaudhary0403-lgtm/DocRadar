@@ -24,10 +24,14 @@
 //                          (--only-failed) adds a "catchup" block with what still fails.
 // Stdout ends with "Sources: scanned N of TOTAL · ok X · failed Y".
 //
-// Sites with certificate errors are reported as failed (status shows the TLS error code);
-// the daily task covers them with WebFetch or a site: search.
+// Many Indian government sites serve an incomplete certificate chain, which Node rejects
+// (UNABLE_TO_VERIFY_LEAF_SIGNATURE etc.) though browsers accept it. Those are retried with
+// curl, which on macOS completes the chain itself (full TLS verification stays on); on Linux
+// the retry usually fails the same way. Sites that still fail are reported as failed (status
+// shows the error code); the daily task covers them with WebFetch or a site: search.
 
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { execFile } from 'node:child_process';
 
 const args = process.argv.slice(2);
 const opt = (k, d) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : d; };
@@ -60,7 +64,28 @@ const SNIPHIRE = /recruit|vacanc|walk[\s-]*in|interview|advertis|advt|applicatio
 const ent = s => s.replace(/&nbsp;|&#160;/g, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&#(\d+);/g, (_, n) => String.fromCharCode(+n));
 const clean = s => ent(s.replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' ').trim();
 
+const TLSERR = /CERT|SSL|TLS|LEAF|ISSUER|SELF_SIGNED|RENEGOTIATION/;
+function curlGet(url) {
+  const MARK = '\n__DOCRADAR_CURL__';
+  return new Promise(resolve => execFile('curl', ['-sSL', '--compressed', '-m', String(Math.round(TIMEOUT / 1000)), '--max-filesize', String(MAX_BYTES),
+    '-A', UA, '-H', 'accept-language: en-IN,en;q=0.9,hi;q=0.8', '-w', MARK + '%{http_code} %{url_effective} %{content_type}', url],
+    { maxBuffer: MAX_BYTES + 65536, encoding: 'utf8' }, (err, stdout) => {
+      const k = (stdout || '').lastIndexOf(MARK);
+      if (k < 0) return resolve({ ok: false, status: 'curl ' + (err?.code ?? 'error') });
+      const [code, finalUrl, ...type] = stdout.slice(k + MARK.length).split(' '), status = +code;
+      if (!(status >= 200 && status < 300)) return resolve({ ok: false, status: status || 'curl ' + (err?.code ?? 'error'), finalUrl });
+      if (/pdf/i.test(type.join(' '))) return resolve({ ok: true, status, finalUrl, pdf: true, html: '' });
+      resolve({ ok: true, status, finalUrl, html: stdout.slice(0, k) });
+    }));
+}
+
 async function get(url) {
+  const r = await nodeGet(url);
+  if (!r.ok && TLSERR.test(String(r.status))) { const c = await curlGet(url); return c.ok ? c : { ...c, status: `${r.status} (curl: ${c.status})` }; }
+  return r;
+}
+
+async function nodeGet(url) {
   const ctl = new AbortController();
   const t = setTimeout(() => ctl.abort(), TIMEOUT);
   try {
