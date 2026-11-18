@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "jobs": [
     {
       "id": "asacs-mo-art-ost-dmch-diphu-walkin-2026-11-13",
@@ -1213,6 +1213,30 @@
       "addedOn": "2026-11-13"
     },
     {
+      "id": "icar-ivri-bengaluru-mo-contract-2026-11-23",
+      "title": "Medical Officer (contract) – 1 post, campus dispensary",
+      "org": "ICAR – Indian Veterinary Research Institute (IVRI), Bengaluru Campus, Hebbal",
+      "category": "mo",
+      "location": "Bengaluru, Karnataka",
+      "state": "Karnataka",
+      "posts": 1,
+      "salary": "₹60,000/month consolidated",
+      "mode": "Apply offline",
+      "lastDate": "2026-11-21",
+      "eventDate": "2026-11-23",
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS from a recognised university with 1 year's experience as Medical Officer in a recognised hospital and NMC/State Medical Council registration; maximum age 65. Apply by post or email by 21 Nov 2026; walk-in interview 9:30 AM on 23 Nov 2026 at the IVRI Bengaluru campus. Contract 1 year, extendable to 2.",
+      "officialUrl": "https://www.ivri.nic.in/",
+      "noticePdf": "https://www.ivri.nic.in/jobs/bengalurucampus(MO%20on%20contract).pdf",
+      "sourceUrl": "https://meditechnika.org/ivri-medical-officer-bengaluru-2026/",
+      "addedOn": "2026-11-18",
+      "verified": true,
+      "requirements": {
+        "registration": "any",
+        "maxAge": 65
+      }
+    },
+    {
       "id": "aiims-bathinda-palliative-care-doctor-2026-11-23",
       "title": "Palliative Care Doctor (project post) – 1 post, walk-in",
       "org": "AIIMS Bathinda (Department of Anaesthesiology)",
@@ -1281,6 +1305,30 @@
       }
     },
     {
+      "id": "cmo-moradabad-nhm-mo-walkin-2026-11-23",
+      "title": "Medical Officer (MBBS) / Female MO – NHM contract, 29 posts, walk-in",
+      "org": "Office of the Chief Medical Officer, Moradabad (District Health Society, NHM Uttar Pradesh)",
+      "category": "mo",
+      "location": "Moradabad, Uttar Pradesh",
+      "state": "Uttar Pradesh",
+      "posts": 29,
+      "salary": "₹1,00,000/month; NUHM 15th FC and PM-ABHIM UAAM MO posts ₹80,000 + up to ₹20,000 performance incentive",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-23",
+      "eventDate": "2026-11-23",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Posts: TB MO 1, NUHM UPHC MO 2, NUHM 15th FC UAAM MO 15, PM-ABHIM UAAM MO 3, Maternal Health HDU 2, Female MO 2, General Physician (block NCD) 1, SNCU MO 2, Blood Bank MO 1. MBBS with MCI/UP Medical Council registration; the NCD General Physician post needs 2 years' hospital experience and the Blood Bank post prefers DCP or blood-bank experience. Forms accepted in person 9 AM–12 noon on 23 Nov at Vikas Bhawan Sabhagar, Kanth Road, Moradabad.",
+      "officialUrl": "https://moradabad.nic.in/notice_category/recruitment/",
+      "noticePdf": "https://cdn.s3waas.gov.in/s382161242827b703e6acf9c726942a1e4/uploads/2026/11/17949287752160.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/cmo-recruitment-2026-medical-officer-female-medical-officer-3082038",
+      "addedOn": "2026-11-18",
+      "verified": true,
+      "requirements": {
+        "registration": "any",
+        "maxAge": 65
+      }
+    },
+    {
       "id": "iit-gandhinagar-resident-doctor-2026-11-25",
       "title": "Resident Medical Doctor (contract)",
       "org": "IIT Gandhinagar",
@@ -1328,6 +1376,29 @@
         "registration": "any",
         "maxAge": 60,
         "ageOn": "2026-11-16"
+      }
+    },
+    {
+      "id": "dhs-koderma-uaam-mo-walkin-2026-11-25",
+      "title": "Medical Officer, Urban Ayushman Arogya Mandir (15th FC) – 1 post, walk-in",
+      "org": "District Health Society, Koderma (Civil Surgeon office)",
+      "category": "mo",
+      "location": "Koderma, Jharkhand",
+      "state": "Jharkhand",
+      "posts": 1,
+      "salary": "₹63,000/month",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-25",
+      "eventDate": "2026-11-25",
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS from an MCI-recognised institute; maximum age 70. Walk-in at 11 AM on 25 Nov 2026 at the Civil Surgeon Office, Koderma; posting at UAAM Ward 13, Pandetola, Nagar Panchayat Koderma, 9 AM–3 PM. The same notice has hourly specialist posts (PG required).",
+      "officialUrl": "https://koderma.nic.in/notice_category/recruitment/",
+      "noticePdf": "https://cdn.s3waas.gov.in/s3087408522c31eeb1f982bc0eaf81d35f/uploads/2026/11/17949169783904.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/dhs-recruitment-2026-specialist-medical-officer-medical-officer-3081968",
+      "addedOn": "2026-11-18",
+      "verified": true,
+      "requirements": {
+        "maxAge": 70
       }
     },
     {
@@ -1724,6 +1795,27 @@
       "requirements": {}
     },
     {
+      "id": "tezpur-univ-mo-contract-2026-12-01",
+      "title": "Medical Officer (contract) – 2 posts",
+      "org": "Tezpur University (Central University), Health Centre",
+      "category": "mo",
+      "location": "Tezpur, Assam",
+      "state": "Assam",
+      "posts": 2,
+      "salary": "₹80,000/month (fixed)",
+      "mode": "Apply online",
+      "lastDate": "2026-12-01",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Advt No. 31/2026 (17 Nov 2026): minimum qualification MBBS, no age bar; 11-month contract, renewable. Email the filled Annexure-I and self-attested documents to turecruit@tezu.ernet.in by 1 Dec 2026; shortlisting may be done.",
+      "officialUrl": "https://www.tezu.ernet.in/other/jobs.htm",
+      "noticePdf": "https://www.tezu.ernet.in/Admin/Advt_No_31_2026_Medical_Officers_Contractual.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/tezpur-university-medical-officers-on-contract-recruitment-2026-3081974",
+      "addedOn": "2026-11-18",
+      "verified": true,
+      "requirements": {}
+    },
+    {
       "id": "crpf-gdmo-contract-walkin-2026-12-02",
       "title": "General Duty Medical Officer (contractual) – 15 posts, walk-in",
       "org": "Central Reserve Police Force (CRPF)",
@@ -1892,6 +1984,31 @@
       "requirements": {
         "internshipBy": "eventDate",
         "registration": "any"
+      }
+    },
+    {
+      "id": "gmc-miraj-dapcu-sangli-art-mo-2026-12-04",
+      "title": "Medical Officer, ART Centre (MSACS contract) – 1 post",
+      "org": "Government Medical College & Hospital, Miraj (DAPCU Sangli, Maharashtra State AIDS Control Society)",
+      "category": "mo",
+      "location": "Miraj, Sangli, Maharashtra",
+      "state": "Maharashtra",
+      "posts": 1,
+      "salary": "₹72,000/month consolidated",
+      "mode": "Apply offline",
+      "lastDate": "2026-12-04",
+      "eventDate": "2026-12-07",
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS with State Medical Council/NMC registration and 6 months' work experience; MD/Diploma in Medicine preferred; maximum age 60. Submit applications in person at DAPCU, Civil Surgeon Office, PVPGH Sangli, 18 Nov–4 Dec 2026; shortlisted candidates are interviewed on 7 Dec 2026 from 3 PM.",
+      "officialUrl": "https://www.gmcmiraj.edu.in/17-11-2026-walk-interview-medical-officer-dapcu-sangli",
+      "noticePdf": "https://www.gmcmiraj.edu.in/sites/default/files/2026-11/Walk-In-Interview_Medical%20Officer_DAPCU%2C%20Sangli_17%20Nov%202026.pdf",
+      "sourceUrl": "https://www.gmcmiraj.edu.in/",
+      "addedOn": "2026-11-18",
+      "verified": true,
+      "requirements": {
+        "registration": "any",
+        "maxAge": 60,
+        "ageOn": "2026-11-17"
       }
     },
     {
@@ -2464,5 +2581,5 @@
       "requirements": {}
     }
   ],
-  "updatedAt": "2026-11-17T18:23:31.987Z"
+  "updatedAt": "2026-11-18T02:08:37.212Z"
 }

@@ -1667,7 +1667,7 @@
     },
     {
       "name": "IISER Berhampur",
-      "url": "https://www.iiserbpr.ac.in/",
+      "url": "https://www.iiserbpr.ac.in/opportunity/contractual",
       "group": "Central Govt",
       "state": "Odisha",
       "priority": 2,
@@ -2611,7 +2611,7 @@
     },
     {
       "name": "Dr RML Institute (RMLIMS) Lucknow",
-      "url": "https://www.drrmlims.ac.in",
+      "url": "https://www.drrmlims.ac.in/recruitment",
       "group": "Central Hospitals",
       "state": "Uttar Pradesh",
       "priority": 2,
@@ -3291,7 +3291,7 @@
     },
     {
       "name": "Telangana PSC (TGPSC)",
-      "url": "https://www.tgpsc.gov.in",
+      "url": "https://websitenew.tgpsc.gov.in/",
       "group": "State Govt",
       "state": "Telangana",
       "priority": 2,
@@ -4667,7 +4667,7 @@
     },
     {
       "name": "Datta Meghe Wardha",
-      "url": "https://dmiher.edu.in",
+      "url": "https://aiher.edu.in/careers",
       "group": "Medical colleges",
       "state": "Maharashtra",
       "priority": 2,
@@ -6280,6 +6280,30 @@
       "state": "Maharashtra",
       "priority": 2,
       "why": "Agricultural university: clock-hour / contract Medical Officer posts at its colleges (Nandurbar, Muktainagar)"
+    },
+    {
+      "name": "Kerala Social Security Mission (KSSM)",
+      "url": "https://socialsecuritymission.gov.in/",
+      "group": "State Govt",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "MBBS Medical Officer walk-ins (REIC, Mittayi)"
+    },
+    {
+      "name": "NHM Puducherry",
+      "url": "https://nhmpuducherry.org.in/",
+      "group": "State Govt",
+      "state": "Puducherry",
+      "priority": 2,
+      "why": "NHM Medical Officer walk-ins"
+    },
+    {
+      "name": "Government Medical College, Kottayam",
+      "url": "https://kottayammedicalcollege.org/",
+      "group": "Medical colleges",
+      "state": "Kerala",
+      "priority": 2,
+      "why": "JR / MO walk-in notices"
     }
   ]
 }
