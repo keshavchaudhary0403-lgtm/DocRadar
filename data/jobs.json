@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "jobs": [
     {
       "id": "asacs-mo-art-ost-dmch-diphu-walkin-2026-11-13",
@@ -739,31 +739,6 @@
       "sourceUrl": "https://drive.google.com/file/d/1dqjUmFjU2D4xxSnZZdKG2DoylacaFU_q/view"
     },
     {
-      "id": "nhpc-mo-fixed-tenure-2026-11-18",
-      "title": "Medical Officer – 2 posts (fixed tenure)",
-      "org": "NHPC Limited",
-      "category": "mo",
-      "location": "Gurez (Bandipora) & Ramban; interview at Jammu, Jammu and Kashmir",
-      "state": "Jammu and Kashmir",
-      "posts": 2,
-      "salary": "₹1,00,000/month consolidated + allowances",
-      "mode": "Apply online",
-      "lastDate": "2026-11-18",
-      "eventDate": "2026-11-19",
-      "eligibility": "after-internship",
-      "eligibilityNote": "Advt NH/Talent Acquisition/FTB/05/2026. MBBS with registration and 2 years' post-internship experience. Email recttcell2010@nhpc.nic.in by 18 Nov; interview 19 Nov, reporting 8 AM–1 PM at NHPC Regional Office, Narwal, Jammu. Max age 35 on interview date. 3-year tenure.",
-      "officialUrl": "https://www.nhpcindia.com",
-      "noticePdf": "https://www.nhpcindia.com/assests/pzi_public/job/details_1794205368_1148.pdf",
-      "sourceUrl": "https://www.freejobalert.com/articles/nhpc-medical-officer-recruitment-2026-3079742",
-      "addedOn": "2026-11-13",
-      "verified": true,
-      "requirements": {
-        "registration": "any",
-        "maxAge": 35,
-        "ageOn": "2026-11-19"
-      }
-    },
-    {
       "id": "dmft-chatra-mo-15-2026-11-18",
       "title": "Medical Officer – 15 posts (DMFT, contract)",
       "org": "District Mineral Foundation Trust, Chatra",
@@ -806,6 +781,31 @@
       "verified": false,
       "requirements": {
         "maxAge": 40
+      }
+    },
+    {
+      "id": "nhpc-mo-fixed-tenure-2026-11-18",
+      "title": "Medical Officer – 2 posts (fixed tenure)",
+      "org": "NHPC Limited",
+      "category": "mo",
+      "location": "Gurez (Bandipora) & Ramban; interview at Jammu, Jammu and Kashmir",
+      "state": "Jammu and Kashmir",
+      "posts": 2,
+      "salary": "₹1,00,000/month consolidated + allowances",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-19",
+      "eventDate": "2026-11-19",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Advt NH/Talent Acquisition/FTB/05/2026. MBBS with registration and 2 years' post-internship experience (internship/training not counted). Email form to recttcell2010@nhpc.nic.in by 18 Nov, or report directly with the filled form and original documents on 19 Nov (reporting from 8 AM, no entry after 1 PM) at NHPC Regional Office, JDA Commercial Complex, Narwal, Jammu. Max age 35 on interview date. 3-year tenure.",
+      "officialUrl": "https://www.nhpcindia.com",
+      "noticePdf": "https://www.nhpcindia.com/assests/pzi_public/job/details_1794205368_1148.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/nhpc-medical-officer-recruitment-2026-3079742",
+      "addedOn": "2026-11-13",
+      "verified": true,
+      "requirements": {
+        "registration": "any",
+        "maxAge": 35,
+        "ageOn": "2026-11-19"
       }
     },
     {
@@ -973,6 +973,33 @@
         "registration": "any",
         "councils": [
           "Telangana State Medical Council"
+        ]
+      }
+    },
+    {
+      "id": "gmc-kottayam-mo-walkin-2026-11-19",
+      "title": "Medical Officer (contract, NACO criteria) – 1 post, walk-in",
+      "org": "Government Medical College, Kottayam",
+      "category": "mo",
+      "location": "Kottayam, Kerala",
+      "state": "Kerala",
+      "posts": 1,
+      "salary": "₹72,000/month (consolidated)",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-19",
+      "eventDate": "2026-11-19",
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS graduate with valid TCMC/KSMC registration and working knowledge of computers, MS Office, internet and e-mail. Walk-in at 11 am on 19 Nov 2026 at the Principal's Office, Govt. Medical College, Kottayam. Contract runs to 31/03/2027 and can be renewed under NACO criteria. Bring original certificates and a signed biodata with self-attested copies.",
+      "officialUrl": "https://kottayammedicalcollege.org/walk-in-interview-2/",
+      "sourceUrl": "https://kottayammedicalcollege.org/walk-in-interview-2/",
+      "addedOn": "2026-11-19",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "eventDate",
+        "registration": "any",
+        "councils": [
+          "Travancore-Cochin Medical Council",
+          "Kerala State Medical Council"
         ]
       }
     },
@@ -1329,6 +1356,55 @@
       }
     },
     {
+      "id": "aiims-raebareli-jr-nonacad-2026-11-23",
+      "title": "Junior Resident (Non-Academic) – 10 posts, walk-in",
+      "org": "AIIMS Raebareli",
+      "category": "jr",
+      "location": "Raebareli, Uttar Pradesh",
+      "state": "Uttar Pradesh",
+      "posts": 10,
+      "salary": "₹56,100 + NPA (Pay Level 10)",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-23",
+      "eventDate": "2026-11-23",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Ad hoc engagement for 44 days. MBBS including completed internship; State/MCI registration mandatory before joining; age not over 33 on the interview date. Report 10:00 AM at the Medical College Building with bio-data (Annexure A) and documents; document verification 10:15 AM–12:15 PM, interview from 3:00 PM. Number of posts may change on the day. The notice prints no age relaxation.",
+      "officialUrl": "https://aiimsrbl.edu.in/recruitments",
+      "noticePdf": "https://aiimsrbl.edu.in/image?p=spotlights%2Fspotlight_0c9d8e76cbf00b64ecf92270672a0ba9.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/aiims-junior-resident-non-academic-recruitment-2026-3082190",
+      "addedOn": "2026-11-19",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "eventDate",
+        "registration": "any",
+        "maxAge": 33,
+        "ageOn": "2026-11-23",
+        "ageRelax": false
+      }
+    },
+    {
+      "id": "sjri-bengaluru-prs2-medical-icmr-enable2-2026-11-19",
+      "title": "Project Research Scientist-II (Medical), ICMR ENABLE 2 project – 1 post",
+      "org": "St. John's National Academy of Health Sciences (St. John's Medical College / SJRI)",
+      "category": "other",
+      "location": "Bengaluru, Karnataka",
+      "state": "Karnataka",
+      "posts": 1,
+      "salary": "₹1,04,000/month",
+      "mode": "Apply online",
+      "lastDate": "2026-11-23",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Qualification: MBBS/BVSc/BDS with three years' experience, or MBBS/BVSc/BDS with MPH/PhD or a postgraduate degree; two to three years' experience in a recognised institute/hospital; age limit 40. Contract post on an ICMR cardiovascular-care implementation trial; email cover letter and CV with 3 references to sangeetha.p@sjri.res.in (cc hr@sjri.res.in) by 23 Nov 2026; tentative joining 1 Dec 2026.",
+      "officialUrl": "https://www.stjohns.in/careers/project-research-scientist-ii-medical-icmr-enable-2",
+      "sourceUrl": "https://www.stjohns.in/careers",
+      "addedOn": "2026-11-19",
+      "verified": true,
+      "requirements": {
+        "maxAge": 40
+      }
+    },
+    {
       "id": "iit-gandhinagar-resident-doctor-2026-11-25",
       "title": "Resident Medical Doctor (contract)",
       "org": "IIT Gandhinagar",
@@ -1476,6 +1552,32 @@
       "requirements": {
         "internshipBy": "lastDate",
         "registration": "any"
+      }
+    },
+    {
+      "id": "gmc-haldwani-jr-walkin-2026-11-26",
+      "title": "Junior Resident (clinical, contract) – walk-in",
+      "org": "Government Medical College, Haldwani",
+      "category": "jr",
+      "location": "Haldwani, Uttarakhand",
+      "state": "Uttarakhand",
+      "posts": null,
+      "salary": "₹71,257/month (fixed)",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-26",
+      "eventDate": "2026-11-26",
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS as per NMC norms; clinical departments only, number of posts 'as per requirement'. Walk-in at the Office of the Principal, GMC Haldwani on 26 Nov 2026 (Thursday) from 11:00 am. One-year contract; bring originals of High School and Intermediate certificates, MBBS degree and marksheets, MBBS registration, Aadhaar and PAN, and 2 photos. Registration with a State Medical Council or MCI/NMC is required. NOC needed for candidates in govt service.",
+      "officialUrl": "https://medicaleducation.uk.gov.in/notice/walk-in-interview-for-junior-resident-posts-in-govt-medical-college-haldwani-will-be-held-on-26-nov-2026/",
+      "noticePdf": "https://cdnbbsr.s3waas.gov.in/s37e05d6f828574fbc975a896b25bb011e/uploads/2026/11/20261118897081279.pdf",
+      "sourceUrl": "https://medicaleducation.uk.gov.in/",
+      "addedOn": "2026-11-19",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "eventDate",
+        "registration": "any",
+        "maxAge": 44,
+        "ageOn": "2026-07-01"
       }
     },
     {
@@ -1893,6 +1995,28 @@
       }
     },
     {
+      "id": "pgimer-prs1-medical-icmr-cancer-screening-2026-12-02",
+      "title": "Project Research Scientist-I (Medical), ICMR cancer-screening project – 1 post",
+      "org": "PGIMER Chandigarh (Dept. of Community Medicine & School of Public Health)",
+      "category": "other",
+      "location": "Chandigarh, Chandigarh",
+      "state": "Chandigarh",
+      "posts": 1,
+      "salary": "₹67,000 + 20% HRA (₹80,400)",
+      "mode": "Apply online",
+      "lastDate": "2026-12-02",
+      "eventDate": "2026-12-15",
+      "eligibility": "after-internship",
+      "eligibilityNote": "ICMR project on cervical, breast and oral cancer screening uptake (cluster RCT, North India); contract initially up to 6 months. Essential: first-class MBBS/BDS/BVSc; desirable PG in Public Health/Community Medicine and 3 years' research experience or PhD. Upper age 35. Apply via Google Form with CV and documents as one PDF by 2 Dec 2026, 5 PM; interviews 15–16 Dec 2026 at Committee Room, Dept. of Community Medicine. Not confirmed on PGIMER's own site yet.",
+      "officialUrl": "https://pgimer.edu.in/",
+      "sourceUrl": "https://govtjobsalert.in/pgimer-chandigarh-project-recruitment-2026/",
+      "addedOn": "2026-11-19",
+      "verified": false,
+      "requirements": {
+        "maxAge": 35
+      }
+    },
+    {
       "id": "cmo-baghpat-nhm-mo-fmo-2026-12-03",
       "title": "Medical Officer / Female Medical Officer (NHM) – 23 posts",
       "org": "Chief Medical Officer, Baghpat (NHM Uttar Pradesh)",
@@ -2053,6 +2177,31 @@
       "requirements": {
         "maxAge": 69,
         "ageOn": "2026-06-30"
+      }
+    },
+    {
+      "id": "bhu-medical-officer-advt-06-2026-12-15",
+      "title": "Medical Officer – 29 posts (Advt 06/2026-27, Group A)",
+      "org": "Banaras Hindu University (Sir Sunderlal Hospital / Trauma Centre / IMS)",
+      "category": "mo",
+      "location": "Varanasi, Uttar Pradesh",
+      "state": "Uttar Pradesh",
+      "posts": 29,
+      "salary": "Pay Level 10 (₹56,100–1,77,500)",
+      "mode": "Apply online",
+      "lastDate": "2026-12-15",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Posts: Medical Officer 25 (SS Hospital/Trauma Centre/IMS/RGSC Barkachha, Mirzapur), Medical Officer 2 (National Centre of Ageing), Medical Officer (Specialist) 2 (Critical Care & Burns Block). Essential: MBBS with at least two years' clinical experience in a Govt./Corporate/Govt.-recognised hospital after the mandatory internship; MD/MS/DNB in listed specialties preferred. Age limit 40 years, eligibility judged on 15 Dec 2026. Apply on the BHU Samarth portal by 15 Dec 2026, 5 PM; fee ₹1000 (UR/EWS/OBC), none for SC/ST/PwBD/women. A written test may be held for shortlisting. Part of a 601/633-post non-teaching advertisement.",
+      "officialUrl": "https://www.bhu.ac.in/rac/non-teaching",
+      "noticePdf": "https://www.bhu.ac.in/Images/files/Advt%20No_%2006-2026-27%20hospital%20group%20A%20B%20%26%20C%202026.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/bhu-recruitment-2026-apply-online-for-601-group-a-b-and-c-posts-3082050",
+      "addedOn": "2026-11-19",
+      "verified": true,
+      "requirements": {
+        "maxAge": 40,
+        "ageOn": "2026-12-15",
+        "ageRelax": true
       }
     },
     {
@@ -2581,5 +2730,5 @@
       "requirements": {}
     }
   ],
-  "updatedAt": "2026-11-18T06:14:43.223Z"
+  "updatedAt": "2026-11-19T02:01:27.259Z"
 }
