@@ -1581,6 +1581,33 @@
       }
     },
     {
+      "id": "esic-bikaner-sr-jr-gdmo-walkin-2026-11-27",
+      "title": "Senior/Junior Resident against GDMO post (contract, 1 year) – 2 posts, walk-in",
+      "org": "ESIC Hospital, Bikaner",
+      "category": "jr",
+      "location": "Bikaner, Rajasthan",
+      "state": "Rajasthan",
+      "posts": 2,
+      "salary": "₹1,21,048/month consolidated",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-27",
+      "eventDate": "2026-11-27",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Notice dated 18 Nov 2026: 2 posts (1 ST, 1 UR) for 1 year against vacant GDMO posts. PG degree/diploma/DNB preferred; if not available, MBBS candidates with experience or good clinical knowledge will be considered; preference to those who have worked in ESIC (Dhanwantri module). Valid MCI/State Medical Council registration. Upper age 45 on interview day, relaxation as per rules. Report 9:00–11:00 AM at Conference Hall, ESIC Hospital, Jaisalmer Road, Bikaner, with Annexure-A form, originals and one set of attested copies. Same notice also has Specialist and Senior Resident posts.",
+      "officialUrl": "https://esic.gov.in/recruitments",
+      "noticePdf": "https://esic.gov.in/attachments/recruitmentfile/Walk_In_interview_scheduled_at_ESIC_Hospital_Bikaner_Raj_on_27_11_2026_to_engage_Specialists_Senior_Residents_Junior_Residents_on_contract_1794993100.pdf",
+      "sourceUrl": "https://esic.gov.in/recruitments",
+      "addedOn": "2026-11-19",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "eventDate",
+        "registration": "any",
+        "maxAge": 45,
+        "ageOn": "2026-11-27",
+        "ageRelax": true
+      }
+    },
+    {
       "id": "cmo-budaun-nhm-mbbs-mo-2026-11-27",
       "title": "Medical Officer / EMO / Lady MO (NHM contract) – 30 posts",
       "org": "Chief Medical Officer, Budaun (District Health Society, NHM Uttar Pradesh)",
@@ -2730,5 +2757,5 @@
       "requirements": {}
     }
   ],
-  "updatedAt": "2026-11-19T02:01:27.259Z"
+  "updatedAt": "2026-11-19T06:08:42.460Z"
 }

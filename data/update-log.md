@@ -1,5 +1,10 @@
 # DocRadar update log
 
+## 2026-11-19 (catch-up)
+- New: 1 (ESIC Hospital Bikaner – Senior/Junior Resident against GDMO post, 2 posts, walk-in 27 Nov; Rajasthan; official esic.gov.in PDF read here. MBBS considered if PG candidates aren't available, so it is now listed; the morning run had skipped it because the PDF was unreachable) · Updated: 0
+- Sources: rescanned 252 failed from the morning · ok 214 · still failing 38: natboard.edu.in, assamrifles.gov.in, careers.ntpc.co.in, powergrid.in, iocl.com, dvc.gov.in, vizagport.com, rmrims.org.in, iitgn.ac.in, cup.edu.in, aiimspatna.edu.in, rmlh.mohfw.gov.in, aiimsbhopal.edu.in, state.bihar.gov.in, jpsc.gov.in, lakshadweep.gov.in, health.mp.gov.in, rajswasthya.nic.in, health.sikkim.gov.in, dgmhup.gov.in, hrb.wb.gov.in, gitam.edu, gmcrajamahendravaram.ap.gov.in, tezpur-mch.assam.gov.in, tinsukiamch.assam.gov.in, gmers.gujarat.gov.in, gmersmchvadnagar.com, pgimsrohtak.ac.in, gmcbaramulla.ac.in, jnmc.edu, gmcchandrapur.org, kims.kiit.ac.in, smc.saveetha.com, llrmmedicalcollege.nic.in, fortishealthcare.com, in.indeed.com, maxhealthcare.in (careers 404), sjmch.odisha.gov.in
+- Notes: candidates opened and skipped: Ramgarh Cantt GDMO (walk-in was 12 Nov), RMLIMS Lucknow ART MO (apply by 1 Oct, interview 5 Oct) and JR ad hoc (March 2026), BPCL Kochi doctors (2023 advert), HP ESI Parwanoo (specialists only), Goa DHS walk-ins (Jul/Aug, specialists/ICU), Gujarat 11-month contract (medical teachers), Gandhi Hospital (2024 scan), SVIMS MO (closed), SAI MO (deputation, serving govt officers only), NIT Raipur/BBAU/MNIT MO notices (older cycles). Already listed: CRPF 15 GDMO, NITRD MO, ASACS ART MOs, AMCH DTC MO, Rampurhat HD and Birbhum GDMO. hr.wbhealth.gov.in also shows "Medical Officer-RBSK_4160" for Rampurhat HD (open 13–26 Nov), which isn't in the Rampurhat listing's post breakdown; no separate notice PDF was linked, so it wasn't added. Re-check it tomorrow.
+
 ## 2026-11-19
 - New: 6.
   - AIIMS Raebareli – Junior Resident (Non-Academic, 44 days ad hoc), 10 posts, walk-in 23 Nov (Uttar Pradesh; official PDF read)
