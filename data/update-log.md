@@ -1,5 +1,10 @@
 # DocRadar update log
 
+## 2026-11-20 (catch-up)
+- New: 1 (ICMR-NIRWH Mumbai – Project Research Scientist-II (Medical), EndoCare India project, 1 post, apply online by 30 Nov; MBBS + 3 years' experience or PG; Maharashtra; official PDF read) · Updated: 0
+- Sources: rescanned 248 failed from the morning · ok 213 · still failing 35: natboard.edu.in, assamrifles.gov.in, careers.ntpc.co.in, powergrid.in, iocl.com, vizagport.com, rmrims.org.in, iitgn.ac.in, nirth.res.in, aiimspatna.edu.in, rmlh.mohfw.gov.in, aiimsbhopal.edu.in, jipmer.edu.in, aiimsbibinagar.edu.in, state.bihar.gov.in, jpsc.gov.in, lakshadweep.gov.in, health.mp.gov.in, rajswasthya.nic.in, health.sikkim.gov.in, dgmhup.gov.in, hrb.wb.gov.in, gitam.edu, gmcrajamahendravaram.ap.gov.in, pgimsrohtak.ac.in, gmcbaramulla.ac.in, jnmc.edu, kims.kiit.ac.in, smc.saveetha.com, llrmmedicalcollege.nic.in, iul.ac.in, fortishealthcare.com, in.indeed.com, maxhealthcare.in (careers 404), sjmch.odisha.gov.in
+- Notes: candidates opened and skipped: railway CMP pages (CR Bhusawal/Pune, NR Barhi, NWR Jaipur, PLW Patiala: all 2023–2025 cycles), AIIMS Jodhpur residents walk-in (SR Sept 2026; JR notices from 2025), AGMC Agartala VRDL Scientist-B (Medical) (closed 27 Oct), AFMC/RPGMC research posts (older), UP DGME "JR MBBS" (2024 bond-counselling merit list), Odisha GMC walk-in pages (FMMCH, SLNMCH, JKMCH: nothing current), Ramgarh Cantt GDMO (12 Nov), plus the leads already ruled out in earlier catch-ups (BPCL Kochi, RMLIMS ART MO/JR, HP ESI, Goa DHS, Gujarat 11-month, SVIMS, BCECEB SR/Tutor). Already listed: CRPF 15 GDMO, NITRD MO, ESIC Bikaner, AMCH DTC MO, Rampurhat HD/Birbhum GDMO.
+
 ## 2026-11-20
 - New: 6.
   - Civil Surgeon-cum-CMO Garhwa (DHS) – Medical Officer (MBBS), Mother Teresa Advance Health Clinic, 4 posts, walk-in 25 Nov (Jharkhand; official s3waas PDF read)
