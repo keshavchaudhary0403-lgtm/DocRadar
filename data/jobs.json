@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "jobs": [
     {
       "id": "asacs-mo-art-ost-dmch-diphu-walkin-2026-11-13",
@@ -1193,6 +1193,29 @@
       }
     },
     {
+      "id": "ds-dharashiv-adhoc-mo-walkin-2026-11-20",
+      "title": "Ad-hoc Medical Officer (contract), rural/sub-district hospitals – walk-in today",
+      "org": "District Surgeon Office, Dharashiv (Public Health Dept, Maharashtra)",
+      "category": "mo",
+      "location": "Dharashiv, Maharashtra",
+      "state": "Maharashtra",
+      "posts": null,
+      "salary": null,
+      "mode": "Walk-in",
+      "lastDate": "2026-11-20",
+      "eventDate": "2026-11-20",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Notice No. 18984/2026 dated 18 Nov 2026 (Marathi). Contract ad-hoc MO appointments against vacant MO posts in rural/sub-district hospitals for MBBS or PG holders, by counselling on merit. Forms accepted only 10–11 AM on 20 Nov 2026 at the District Surgeon Office, Dharashiv; counselling at 11 AM. Number of posts not stated.",
+      "officialUrl": "https://dharashiv.maharashtra.gov.in/",
+      "noticePdf": "https://cdn.s3waas.gov.in/s3642e92efb79421734881b53e1e1b18b6/uploads/2026/11/17950719241483.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/district-surgeon-office-dharashiv-medical-officer-ad-recruitment-2026-3082790",
+      "addedOn": "2026-11-20",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "eventDate"
+      }
+    },
+    {
       "id": "dmft-dhanbad-mo-48-2026-11-21",
       "title": "Medical Officer – 48 posts (DMFT, NRHM + NUHM)",
       "org": "District Mineral Foundation Trust, Dhanbad",
@@ -1405,6 +1428,30 @@
       }
     },
     {
+      "id": "iim-jammu-visiting-doctor-female-2026-11-23",
+      "title": "Visiting Doctor (Female), part-time – 1 post",
+      "org": "Indian Institute of Management Jammu",
+      "category": "mo",
+      "location": "Jammu, Jammu and Kashmir",
+      "state": "Jammu and Kashmir",
+      "posts": 1,
+      "salary": "₹2,000 per visit (2–3 hours/day)",
+      "mode": "Apply online",
+      "lastDate": "2026-11-23",
+      "eventDate": "2026-11-25",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Advt IIMJ/Advt/Non-Faculty-Rect/2026/05 (19 Nov 2026). MBBS with at least 60% marks and compulsory rotatory internship; registered with an Indian/State medical council; minimum 2 years' experience at a Govt/PSU/private hospital; MD desirable; age 50 or below. Submit the Google form by 23 Nov; walk-in interview 25 Nov 2026 at IIM Jammu Jagti Campus. Details from aggregator summary; iimj.ac.in notice couldn't be opened from here.",
+      "officialUrl": "https://www.iimj.ac.in/iimjrecruitment",
+      "sourceUrl": "https://www.freejobalert.com/articles/iim-jammu-recruitment-2026-visiting-doctor-female-student-counsellor-3082617",
+      "addedOn": "2026-11-20",
+      "verified": false,
+      "requirements": {
+        "maxAge": 50,
+        "gender": "female",
+        "internshipBy": "lastDate"
+      }
+    },
+    {
       "id": "iit-gandhinagar-resident-doctor-2026-11-25",
       "title": "Resident Medical Doctor (contract)",
       "org": "IIT Gandhinagar",
@@ -1475,6 +1522,30 @@
       "verified": true,
       "requirements": {
         "maxAge": 70
+      }
+    },
+    {
+      "id": "cs-garhwa-mo-mtahc-walkin-2026-11-25",
+      "title": "Medical Officer (MBBS), Mother Teresa Advance Health Clinic – 4 posts, walk-in",
+      "org": "Civil Surgeon-cum-CMO Office, Garhwa (District Health Society)",
+      "category": "mo",
+      "location": "Garhwa, Jharkhand",
+      "state": "Jharkhand",
+      "posts": 4,
+      "salary": "₹36,400/month (₹1,400/day × 26 days)",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-25",
+      "eventDate": "2026-11-25",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Advt 01/2026-27. MBBS from an MCI/NMC-recognised institution; maximum age 67 (up to 70 with a Civil Surgeon fitness certificate). Duty 8 AM–12 noon. Walk-in at 11 AM on 25 Nov 2026 at the Civil Surgeon Office, Garhwa, with application in the prescribed format, original certificates and one set of copies. No TA; no claim to regularisation.",
+      "officialUrl": "https://garhwa.nic.in/",
+      "noticePdf": "https://cdn.s3waas.gov.in/s310a7cdd970fe135cf4f7bb55c0e3b59f/uploads/2026/11/17950820494103.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/civil-surgeon-office-garhwa-medical-officer-mbbs-recruitment-2026-3082796",
+      "addedOn": "2026-11-20",
+      "verified": true,
+      "requirements": {
+        "maxAge": 67,
+        "internshipBy": "eventDate"
       }
     },
     {
@@ -1578,6 +1649,30 @@
         "registration": "any",
         "maxAge": 44,
         "ageOn": "2026-07-01"
+      }
+    },
+    {
+      "id": "hbchrc-punjab-mo-transfusion-medicine-walkin-2026-11-26",
+      "title": "Medical Officer (Transfusion Medicine), contract – 1 post, walk-in",
+      "org": "Homi Bhabha Cancer Hospital & Research Centre, New Chandigarh (Tata Memorial Centre)",
+      "category": "mo",
+      "location": "New Chandigarh (SAS Nagar), Punjab",
+      "state": "Punjab",
+      "posts": 1,
+      "salary": "₹99,000–1,14,000/month gross",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-26",
+      "eventDate": "2026-11-26",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Advt TMC/HBCHRC/M/HRD/RECT/37/26. MBBS with completed internship; 1 year's blood-centre experience preferred; age up to 40 with relaxation as per GoI rules; Indian nationals only. Report 9:30–11:30 AM on 26 Nov 2026 at HRD, 6th floor, Wing-C, Plot 1, Medicity, New Chandigarh. Details from aggregator summary; tmc.gov.in notice couldn't be opened from here.",
+      "officialUrl": "https://tmc.gov.in/",
+      "sourceUrl": "https://www.freejobalert.com/articles/hbch-rc-medical-officer-transfusion-medicine-recruitment-2026-3082695",
+      "addedOn": "2026-11-20",
+      "verified": false,
+      "requirements": {
+        "maxAge": 40,
+        "ageRelax": true,
+        "internshipBy": "eventDate"
       }
     },
     {
@@ -1879,6 +1974,30 @@
       "addedOn": "2026-11-13"
     },
     {
+      "id": "dhs-namakkal-uhwc-mo-2026-11-30",
+      "title": "UHWC Medical Officer (NHM, contract) – 1 post",
+      "org": "District Health Society, Namakkal",
+      "category": "mo",
+      "location": "Namakkal, Tamil Nadu",
+      "state": "Tamil Nadu",
+      "posts": 1,
+      "salary": "₹63,000/month",
+      "mode": "Apply offline",
+      "lastDate": "2026-11-30",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS from a UGC-recognised university with an MCI-approved course; age under 40 on 31 Oct 2026. Selection by score card. Send the filled application in person or by post to the District Health Officer / Executive Secretary, DHS, Collectorate Complex, Namakkal-637003 by 5 PM on 30 Nov 2026. Temporary contract post. Other posts in the notice are AYUSH/paramedical.",
+      "officialUrl": "https://namakkal.nic.in/notice_category/recruitment/",
+      "noticePdf": "https://cdn.s3waas.gov.in/s3b9228e0962a78b84f3d5d92f4faa000b/uploads/2026/11/17949198386211.pdf",
+      "sourceUrl": "https://govtjobsalert.in/dhs-namakkal-recruitment-2026/",
+      "addedOn": "2026-11-20",
+      "verified": true,
+      "requirements": {
+        "maxAge": 39,
+        "ageOn": "2026-10-31"
+      }
+    },
+    {
       "id": "ucms-mru-rs1-medical-2026-12-01",
       "title": "Research Scientist-I (Medical/Non-medical), MRU – 1 post",
       "org": "University College of Medical Sciences & GTB Hospital",
@@ -2160,6 +2279,33 @@
         "registration": "any",
         "maxAge": 60,
         "ageOn": "2026-11-17"
+      }
+    },
+    {
+      "id": "icfre-tfri-jabalpur-allopathic-doctor-2026-12-04",
+      "title": "Allopathic Doctor (General Physician), contract – 1 post",
+      "org": "ICFRE – Tropical Forest Research Institute (TFRI), Jabalpur",
+      "category": "mo",
+      "location": "Jabalpur, Madhya Pradesh",
+      "state": "Madhya Pradesh",
+      "posts": 1,
+      "salary": "₹45,000/month consolidated",
+      "mode": "Apply offline",
+      "lastDate": "2026-12-04",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "No. 1-6-3/2026/Estt-Dr. Engagement/TFRI. MBBS or MD; valid Madhya Pradesh Medical Council registration; age not over 70 on 4 Dec 2026. One-year contract, extendable. Submit the application format at TFRI, PO-RFRC, Mandla Road, Jabalpur by 4 Dec 2026; shortlisted candidates get the interview date by email. Doctors in service need an NOC.",
+      "officialUrl": "https://tfrienglish.icfre.gov.in/",
+      "noticePdf": "https://tfrienglish.icfre.gov.in/jobs/vacancy149.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/icfre-tfri-allopathic-doctor-general-physician-recruitment-2026-3082782",
+      "addedOn": "2026-11-20",
+      "verified": true,
+      "requirements": {
+        "maxAge": 70,
+        "ageOn": "2026-12-04",
+        "councils": [
+          "Madhya Pradesh Medical Council"
+        ]
       }
     },
     {
@@ -2757,5 +2903,5 @@
       "requirements": {}
     }
   ],
-  "updatedAt": "2026-11-19T06:08:42.460Z"
+  "updatedAt": "2026-11-20T01:48:17.451Z"
 }
