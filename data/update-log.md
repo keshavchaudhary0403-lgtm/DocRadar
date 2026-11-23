@@ -1,5 +1,35 @@
 # DocRadar update log
 
+## 2026-11-23
+- New: 20.
+  - Guru Gobind Singh Govt Hospital, Delhi – Junior Resident (ad hoc), 21 posts, forms by 25 Nov, test/interview 27 Nov (Delhi; official PDF)
+  - GIPMER (G.B. Pant), Delhi – Junior Resident (ad hoc), 10 posts, apply by 30 Nov, interview 2 Dec (Delhi; official PDF)
+  - Pt. Madan Mohan Malaviya Hospital, Delhi – Junior Resident, 2 posts, walk-in 25 Nov (Delhi; official PDF, OCR)
+  - CMO Shravasti (NHM UP) – MO / Lady MO / EMO / General Physician, 13 posts, walk-in every Friday to December (Uttar Pradesh; official s3waas PDF, OCR)
+  - HBCH/MPMMCC Varanasi (TMC) – Senior Resident / Medical Officer (General Medicine), 2 posts, apply by 30 Nov (Uttar Pradesh; official PDF)
+  - Dr. B.R. Ambedkar GMC Kannauj, MRU – Research Scientist-I, 1 post, walk-in 2 Dec (Uttar Pradesh; official PDF)
+  - HBCH&RC Muzaffarpur for HBCH Darbhanga (TMC) – Medical Officer (project), 1 post, walk-in 8 Dec (Bihar; official PDF)
+  - HBCH&RC Visakhapatnam (TMC) – Chief Medical Officer (palliative project), 1 post, walk-in 25 Nov (Andhra Pradesh; official PDF)
+  - ANGRAU Agricultural College, Naira – Part-time MO, 1 post, walk-in 4 Dec (Andhra Pradesh; unverified: angrau.ac.in PDF unreachable)
+  - CCI Tandur – Medical Officer (FTC), 1 post, walk-in 26 Nov (Telangana; unverified: cciltd.in behind Cloudflare)
+  - CDM&PHO Keonjhar (NHM Odisha) – Medical Officer, 10 posts, walk-in 27 Nov (Odisha; unverified: district site unreachable)
+  - AIIMS Bhubaneswar – Junior Consultant (Epidemiology), NACO project, 1 post, walk-in 2 Dec (Odisha; official PDF)
+  - ICAR-CRRI Cuttack – Consultant Medical Officer, 1 post, walk-in 8 Dec (Odisha; official PDF)
+  - DHFWS Kolar (NHM) – MBBS MO, Mobile Health Unit, 1 post, walk-in 30 Nov (Karnataka; official PDF)
+  - UAS Dharwad, Hanumanamatti campus – Visiting MO (woman), 1 post, walk-in 1 Dec (Karnataka; notice linked from university circulars page)
+  - DHS Vellore (NHM TN) – Medical Officer CEmONC/SNCU/PICU, 3 posts, apply by 4 Dec (Tamil Nadu; official PDF)
+  - NIT Tiruchirappalli – Temporary Medical Officer, up to 7 posts, apply by 4 Dec (Tamil Nadu; official PDF)
+  - GKCIET Malda – Part-time MO, 1 post, apply by 9 Dec (West Bengal; official PDF)
+  - Central University of Jammu – Medical Officer (contract), 1 post, walk-in 11 Dec (Jammu and Kashmir; official PDF)
+  - BMC Borivali hospital, Mumbai – Registrar ICU, 2 posts, walk-in 25 Nov (Maharashtra; official PDF)
+- Updated: 3 (HBCH&RC New Chandigarh MO Transfusion Medicine: official TMC PDF found, now verified; VMMC MAP-PE PRS-I: interview moved to 26 Nov by amendment of 09.11.2026; UPSC CMS 2027: dates confirmed on UPSC's Calendar 2027, now verified). NEET-PG 2027, INI-CET July 2027, AFMS: no change.
+- State group covered: Monday – Uttar Pradesh, Bihar, Jharkhand, Uttarakhand, Delhi (15 searches) plus a catch-up search for each Saturday/Sunday state (no runs on 21–22 Nov). UP: Shravasti (+ Varanasi, Kannauj from sources); Bihar: Muzaffarpur/Darbhanga from TMC careers; Jharkhand: nothing open and new (Koderma, Garhwa listed); Uttarakhand: nothing new; Delhi: GGSGH, GIPMER, Pt MMM JRs. Weekend states: nothing open and new (Punjab Aam Aadmi Clinic walk-ins left out: only an aggregator copy of a July notice).
+- Listing tables: rows read about 380 (FreeJobAlert 249 on one page, pages 2–3 repeat it, 79 rows posted 20–22 Nov; GovtJobsAlert 18; CentralStateJobs 59; MySarkariNaukri ~35, 403/stale; SahiSarkariJobs 5; Medical Dialogues 11, newest Nov 2025) · MBBS-eligible open FJA rows 45: already listed 30 · added 15 · plus Shravasti from GovtJobsAlert · skipped: AIAHL MO (10 years' experience), Canara Bank dispensary doctor Bengaluru (MBBS + 10 years), ICAR-CRRI Sr MO / SAI MO (deputation), RLTRI Gouripur (retired), ESIC Rohini/Tinsukia SR against GDMO (PG first), Cochin/Deendayal Port CMO (experienced/PG), plus SR/faculty/specialist/BDS/AYUSH rows. Reconciliation: FJA table re-read before publishing (~07:20 IST, 249 rows, unchanged): 104 doctor/MBBS rows, 45 in jobs.json, 59 skipped with reason, 0 missing.
+- Searches run: about 170. Sources: scanned 788 of 788 · ok 522 · failed 266 · curl retries recovered 23 (nothing new open); all-India groups covered with grouped site: searches (only closed/listed items) except nidhr.icmr.org.in and nirwoh.icmr.gov.in · failed and still not covered: about 240, mostly *.gov.in / *.nic.in refusing cloud connections: railway zones, cantonment boards, ESIC, PGIMER, JIPMER, AIIMS Guwahati/Rajkot/Bhopal/Jodhpur/Bibinagar, RML, AMU, all Assam and Odisha GMCs, state health/NHM/PSC sites in AP, Arunachal, Assam, Bihar, CG, Delhi, Goa, Gujarat, Haryana, HP, J&K, Jharkhand, Karnataka, MP, Mizoram, Odisha, Puducherry, Punjab, Rajasthan, Sikkim, TN, Telangana, Tripura, UP, WB; 403s from natboard, MySarkariNaukri, Fortis, Max, Indeed, SKIMS, JNMC, KIMS. Full list in data/scan-failed.json for the catch-up.
+- Section 7: gap searches for Goa, Meghalaya, Sikkim, DNH&DD, Lakshadweep, Jharkhand, Punjab and defence: all closed or already listed. Defence still empty (AFMS closed 18 Nov; no Navy/Air Force/Coast Guard/TA MBBS entry).
+- Sources.json: Tata Memorial Centre changed to https://tmc.gov.in/postmaster/Careers (lists every TMC unit's adverts; today's 4 TMC posts came from it); CMC Ludhiana changed to https://www.cmcludhiana.in/positions-vacant/ (old URL 404; site may still block the scanner).
+- Notes: Kurnool Medical College domain no longer resolves (suggested replacement kurnool.ap.gov.in recruitment page, unconfirmed from cloud) and ICMR-NIRTH nirth.res.in no longer resolves (institute renamed ICMR-NITHR, nithr.icmr.org.in) – both left unchanged until a working URL is confirmed. Left out: BRD Gorakhpur VRDL JR (PG/M.Sc required per scanned table), IPGMER house staff (own graduates only), Punjab AAC walk-ins (unverified). Leads for the catch-up: MySarkariNaukri Jharkhand item 167948 (Cloudflare), ESIC Tinsukia SR against GDMO (closes 31 Dec, PDF unreachable). Unverified listings to re-check from India: ANGRAU Naira, CCI Tandur, CDM&PHO Keonjhar.
+
 ## 2026-11-20 (catch-up)
 - New: 1 (ICMR-NIRWH Mumbai – Project Research Scientist-II (Medical), EndoCare India project, 1 post, apply online by 30 Nov; MBBS + 3 years' experience or PG; Maharashtra; official PDF read) · Updated: 0
 - Sources: rescanned 248 failed from the morning · ok 213 · still failing 35: natboard.edu.in, assamrifles.gov.in, careers.ntpc.co.in, powergrid.in, iocl.com, vizagport.com, rmrims.org.in, iitgn.ac.in, nirth.res.in, aiimspatna.edu.in, rmlh.mohfw.gov.in, aiimsbhopal.edu.in, jipmer.edu.in, aiimsbibinagar.edu.in, state.bihar.gov.in, jpsc.gov.in, lakshadweep.gov.in, health.mp.gov.in, rajswasthya.nic.in, health.sikkim.gov.in, dgmhup.gov.in, hrb.wb.gov.in, gitam.edu, gmcrajamahendravaram.ap.gov.in, pgimsrohtak.ac.in, gmcbaramulla.ac.in, jnmc.edu, kims.kiit.ac.in, smc.saveetha.com, llrmmedicalcollege.nic.in, iul.ac.in, fortishealthcare.com, in.indeed.com, maxhealthcare.in (careers 404), sjmch.odisha.gov.in

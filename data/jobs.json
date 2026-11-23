@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20",
+  "updated": "2026-11-23",
   "jobs": [
     {
       "id": "asacs-mo-art-ost-dmch-diphu-walkin-2026-11-13",
@@ -196,9 +196,9 @@
       "salary": "₹67,000 + 30% HRA (₹87,100)",
       "mode": "Apply online",
       "lastDate": "2026-11-15",
-      "eventDate": "2026-11-23",
+      "eventDate": "2026-11-26",
       "eligibility": "after-internship",
-      "eligibilityNote": "MBBS, MVSc or BDS; experience in data collection, management and field supervision in community health/nutrition projects desirable. Email application with CV to mapobgy2026@gmail.com by 15 Nov 2026; interview 23 Nov 2026, 11 AM–12 noon, Skill Lab, Dept. of Obst & Gynae (shortlisted candidates informed by email/phone). ICMR-funded 2-year project, appointment yearly.",
+      "eligibilityNote": "MBBS, MVSc or BDS; experience in data collection, management and field supervision in community health/nutrition projects desirable. Email application with CV to mapobgy2026@gmail.com by 15 Nov 2026; interview rescheduled to 26 Nov 2026, 11 AM–12 noon, Skill Lab, Dept. of Obst & Gynae (amendment notice dated 09.11.2026; shortlisted candidates informed by email/phone). ICMR-funded 2-year project, appointment yearly.",
       "officialUrl": "https://www.vmmc-sjh.mohfw.gov.in/recruitment-all",
       "noticePdf": "https://www.vmmc-sjh.mohfw.gov.in/sites/default/files/Notice%20dated%2030.10.2026%20-%20Advertisement%20for%20Various%20Posts%20on%20Contract%20basis%20for%20a%20Project%20in%20the%20Department%20of%20Obst%20%26%20Gynae.pdf",
       "sourceUrl": "https://www.vmmc-sjh.mohfw.gov.in/recruitment-all",
@@ -1549,6 +1549,112 @@
       }
     },
     {
+      "id": "ggsgh-delhi-jr-adhoc-2026-11-27",
+      "title": "Junior Resident (MBBS, ad hoc 89 days) – 21 posts",
+      "org": "Guru Gobind Singh Govt. Hospital (GGSGH), Raghubir Nagar, Govt. of NCT of Delhi",
+      "category": "jr",
+      "location": "Raghubir Nagar, Delhi",
+      "state": "Delhi",
+      "posts": 21,
+      "salary": null,
+      "mode": "Apply offline",
+      "lastDate": "2026-11-25",
+      "eventDate": "2026-11-27",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Submit the filled application with self-attested copies at Establishment Branch, 8th floor, B Block, GGSGH, 10 AM–3 PM, by 25.11.2026; eligible list on notice board 26.11.2026, 11:30 AM; written & walk-in interview 27.11.2026 (report 9:30–10:30 AM). Internship completed on or after 27.11.2024; must not have completed one year of Junior Residency; valid DMC certificate or DMC-applied slip. Age below 30. Hostel accommodation compulsory for JRs (subject to availability). Vacancies: Gen 10, SC 4, ST 1, OBC 3, EWS 3.",
+      "officialUrl": "https://health.delhi.gov.in/vacancy",
+      "noticePdf": "https://health.delhi.gov.in/sites/default/files/Health/circulars-orders/wggsg_92.pdf",
+      "sourceUrl": "https://health.delhi.gov.in/vacancy",
+      "addedOn": "2026-11-23",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "eventDate",
+        "councils": [
+          "Delhi Medical Council"
+        ],
+        "maxAge": 29,
+        "ageOn": "2026-11-27"
+      }
+    },
+    {
+      "id": "hbchrc-vizag-chief-medical-officer-ihcc-walkin-2026-11-25",
+      "title": "Chief Medical Officer (palliative/home-care project) – 1 post, walk-in",
+      "org": "Homi Bhabha Cancer Hospital & Research Centre, Visakhapatnam (Tata Memorial Centre)",
+      "category": "mo",
+      "location": "Visakhapatnam, Andhra Pradesh",
+      "state": "Andhra Pradesh",
+      "posts": 1,
+      "salary": "₹84,000/month (consolidated)",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-25",
+      "eventDate": "2026-11-25",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Per aggregator summary of Advt TMC/HBCHRCV/AD/67/26 dated 19.11.2026: project post under Integrated Hospital-based Continuity Care (IHCC) of Palliative and Supportive Care / Home Care; MBBS with internship completed; one year post-internship experience desirable. Report 9:30–10:30 AM at HBCH&RC, Aganampudi, Visakhapatnam. Official PDF on tmc.gov.in could not be opened from here.",
+      "officialUrl": "https://tmc.gov.in/postmaster/Careers",
+      "sourceUrl": "https://www.freejobalert.com/articles/hbchrc-visakhapatnam-chief-medical-officer-recruitment-2026-walkin-3083230",
+      "addedOn": "2026-11-23",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "eventDate"
+      },
+      "noticePdf": "https://tmc.gov.in/postmaster/DownloadFile?FileId=2630"
+    },
+    {
+      "id": "pt-mmmh-delhi-jr-walkin-2026-11-25",
+      "title": "Junior Resident (MBBS, ad hoc) – 2 posts, walk-in",
+      "org": "Pt. Madan Mohan Malaviya Hospital (Delhi Govt)",
+      "category": "jr",
+      "location": "Malviya Nagar, New Delhi, Delhi",
+      "state": "Delhi",
+      "posts": 2,
+      "salary": "₹56,100 basic + NPA (Pay Level 10) + allowances",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-25",
+      "eventDate": "2026-11-25",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Advt No. 15/2026. MBBS with Delhi Medical Council registration; internship completed between 25 Nov 2024 and 24 Nov 2026, and not already done one year of Junior Residency; fresh candidates preferred. Age up to 30 (OBC-Delhi 33, SC/ST 35, PwBD +10) on the interview date. Register 9–11 AM at Conference Hall, 3rd Floor; ad hoc for 89 days, extendable up to one year.",
+      "officialUrl": "https://health.delhi.gov.in",
+      "noticePdf": "https://health.delhi.gov.in/sites/default/files/Health/circulars-orders/wptmh_24.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/pt-mmmh-junior-resident-doctors-recruitment-2026-3083257",
+      "addedOn": "2026-11-23",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "2026-11-24",
+        "registration": "any",
+        "councils": [
+          "Delhi Medical Council"
+        ],
+        "maxAge": 30,
+        "ageOn": "2026-11-25",
+        "ageRelax": true
+      }
+    },
+    {
+      "id": "bmc-borivali-icu-registrar-walkin-2026-11-25",
+      "title": "Registrar ICU (6-month tenure) – 2 posts, walk-in",
+      "org": "Shri Harilal Bhagwati Municipal General Hospital, Borivali (Brihanmumbai Municipal Corporation)",
+      "category": "mo",
+      "location": "Mumbai, Maharashtra",
+      "state": "Maharashtra",
+      "posts": 2,
+      "salary": "₹1,10,000/month consolidated (MBBS with 1½ years' ICU experience); ₹1,25,000 (MD/DNB Medicine)",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-25",
+      "eventDate": "2026-11-25",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Notice HO/3639/BH (NTC) dated 11.11.2026. Walk-in at the CMO office, 1st floor; registration 10:30–11 AM, interview 11:30 AM–1 PM on 25.11.2026. MD/DNB Medicine or MD/DA Anaesthesiology, or MBBS with 3 posts in MICU handling ICU procedures independently (pay table: MBBS with 1½ years' ICU experience). Maharashtra Medical Council registration; ₹30,000 security deposit on appointment; tenure 3 Dec 2026 – 31 Jan 2027.",
+      "officialUrl": "https://portal.mcgm.gov.in",
+      "noticePdf": "https://portal.mcgm.gov.in/irj/go/km/docs/documents/MCGM%20Department%20List/Chief%20Personnel%20Officer/Recruitment%20Notice/ICU%20REG%20AD%20nov%2026.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/bmc-registrar-icu-recruitment-2026-3081701",
+      "addedOn": "2026-11-23",
+      "verified": true,
+      "requirements": {
+        "councils": [
+          "Maharashtra Medical Council"
+        ]
+      }
+    },
+    {
       "id": "rampurhat-hd-gdmo-medical-officer-2026-11-26",
       "title": "GDMO / Medical Officer (contract) – 12 posts",
       "org": "District Health & FW Samiti, Rampurhat Health District",
@@ -1665,14 +1771,38 @@
       "eventDate": "2026-11-26",
       "eligibility": "after-internship",
       "eligibilityNote": "Advt TMC/HBCHRC/M/HRD/RECT/37/26. MBBS with completed internship; 1 year's blood-centre experience preferred; age up to 40 with relaxation as per GoI rules; Indian nationals only. Report 9:30–11:30 AM on 26 Nov 2026 at HRD, 6th floor, Wing-C, Plot 1, Medicity, New Chandigarh. Details from aggregator summary; tmc.gov.in notice couldn't be opened from here.",
-      "officialUrl": "https://tmc.gov.in/",
+      "officialUrl": "https://tmc.gov.in/postmaster/Careers",
       "sourceUrl": "https://www.freejobalert.com/articles/hbch-rc-medical-officer-transfusion-medicine-recruitment-2026-3082695",
       "addedOn": "2026-11-20",
-      "verified": false,
+      "verified": true,
       "requirements": {
         "maxAge": 40,
         "ageRelax": true,
         "internshipBy": "eventDate"
+      },
+      "noticePdf": "https://tmc.gov.in/postmaster/DownloadFile?FileId=2619"
+    },
+    {
+      "id": "cci-tandur-mo-ftc-walkin-2026-11-26",
+      "title": "Medical Officer (Fixed Term Contract, full-time) – 1 post, walk-in",
+      "org": "Cement Corporation of India Ltd – Tandur Cement Factory",
+      "category": "mo",
+      "location": "Tandur, Telangana",
+      "state": "Telangana",
+      "posts": 1,
+      "salary": "Negotiable, up to ₹80,000/month",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-26",
+      "eventDate": "2026-11-26",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Per aggregator summary of Advt TCF/02/CONT/ADVT-09/2026 dated 19.11.2026: MBBS with permanent medical council registration and 2 years' post-internship experience; maximum age 65; male or female. Registration 3:00 PM, interview 3:30 PM at CCI Ltd, Tandur Cement Factory, Karankote village, Tandur mandal, Vikarabad district. Official PDF could not be opened from here (Cloudflare block).",
+      "officialUrl": "http://www.cciltd.in/careers",
+      "sourceUrl": "https://www.freejobalert.com/articles/cci-medical-officer-ftc-full-time-recruitment-2026-3083100",
+      "addedOn": "2026-11-23",
+      "verified": false,
+      "requirements": {
+        "registration": "permanent",
+        "maxAge": 65
       }
     },
     {
@@ -1848,6 +1978,26 @@
       }
     },
     {
+      "id": "cdmpho-keonjhar-nhm-mo-walkin-2026-11-27",
+      "title": "Medical Officer (SNCU, DEIC, UPHC, UHWC) – NHM contract, 10 posts, walk-in",
+      "org": "Office of the CDM&PHO, Keonjhar (Zilla Swasthya Samiti, NHM Odisha)",
+      "category": "mo",
+      "location": "Kendujhar, Odisha",
+      "state": "Odisha",
+      "posts": 10,
+      "salary": "₹63,294–₹72,337/month base + performance incentive",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-27",
+      "eventDate": "2026-11-27",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Per aggregator summary of Advt letter 4508 dated 18.11.2026: MO-SNCU 2 (MBBS + 2 years' experience, or MD Paediatrics/DCH), MO-DEIC 1, MO-UPHC 2 (MBBS, internship, state council registration), MO-UHWC 5 (MBBS with Odisha registration). Registration 10:30 AM–12 noon at DTU Conference Hall, DHH Kendujhar. Part-time specialist MO posts in the same notice need PG. Official PDF could not be opened from here.",
+      "officialUrl": "https://kendujhar.odisha.gov.in",
+      "sourceUrl": "https://www.freejobalert.com/articles/cdmpho-keonjhar-recruitment-2026-3082885",
+      "addedOn": "2026-11-23",
+      "verified": false,
+      "requirements": {}
+    },
+    {
       "id": "nit-agartala-mo-campus-doctor-2026-11-28",
       "title": "Medical Officer / Campus Doctor – 2 posts (contract)",
       "org": "NIT Agartala",
@@ -2021,6 +2171,87 @@
       }
     },
     {
+      "id": "dhfws-kolar-mhu-mo-walkin-2026-11-30",
+      "title": "MBBS Medical Officer, Mobile Health Unit (NHM) – 1 post, walk-in",
+      "org": "District Health & Family Welfare Society, Kolar (NHM Karnataka)",
+      "category": "mo",
+      "location": "Kolar, Karnataka",
+      "state": "Karnataka",
+      "posts": 1,
+      "salary": "₹60,000/month",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-30",
+      "eventDate": "2026-11-30",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Mobile Health Unit under NHM, 2026-27. MBBS with compulsory internship, KMC registration and convocation/degree certificate; at least 2 years' service experience; maximum age 65. Walk-in at 10:00 AM (registration 10 AM–2 PM) at the District Health & FW Officer's office, KNTB Sanatorium hospital campus, Bangarpet Road, Kolar, with originals and one set of copies. Roster-cum-merit selection. Notice DHS/NHM/MHU/Ko/Gu.Ne/01/2025-26 dated 16-11-2026.",
+      "officialUrl": "https://kolar.nic.in",
+      "noticePdf": "https://cdn.s3waas.gov.in/s3c0f168ce8900fa56e57789e2a2f2c9d0/uploads/2026/11/17952396642640.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/dhfws-kolar-recruitment-2026-laboratory-technician-3083609",
+      "addedOn": "2026-11-23",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "eventDate",
+        "councils": [
+          "Karnataka Medical Council"
+        ],
+        "maxAge": 65
+      }
+    },
+    {
+      "id": "gipmer-delhi-jr-adhoc-2026-12-02",
+      "title": "Junior Resident (ad hoc, 44 days) – 10 posts (Cardiology, CTVS, GI Surgery, Biochemistry, Psychiatry)",
+      "org": "G.B. Pant Institute of Postgraduate Medical Education & Research (GIPMER), Govt. of NCT of Delhi",
+      "category": "jr",
+      "location": "New Delhi, Delhi",
+      "state": "Delhi",
+      "posts": 10,
+      "salary": "Pay Level 10 (₹56,100–1,77,500) + allowances",
+      "mode": "Apply offline",
+      "lastDate": "2026-11-30",
+      "eventDate": "2026-12-02",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Application (Annexure-I) to Academic Cell, 5th Floor, D-Block, GIPMER by 30.11.2026, 4 PM; interview 02.12.2026 at 12 noon in the concerned department (report 11 AM). Internship must be completed within one year of the last date; valid DMC registration (or DMC acknowledgement) needed. Vacancies: Cardiology 4, CTVS 1, GI Surgery 2, Biochemistry 1, Psychiatry 2. JRs currently working at GIPMER are not eligible.",
+      "officialUrl": "https://health.delhi.gov.in/vacancy",
+      "noticePdf": "https://health.delhi.gov.in/sites/default/files/Health/circulars-orders/wgpim_25.pdf",
+      "sourceUrl": "https://health.delhi.gov.in/vacancy",
+      "addedOn": "2026-11-23",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "lastDate",
+        "councils": [
+          "Delhi Medical Council"
+        ],
+        "maxAge": 30,
+        "ageOn": "2026-11-30",
+        "ageRelax": true
+      }
+    },
+    {
+      "id": "hbch-varanasi-mo-general-medicine-2026-11-30",
+      "title": "Senior Resident / Medical Officer (General Medicine) – 2 posts (MO: MBBS)",
+      "org": "Homi Bhabha Cancer Hospital & Mahamana Pandit Madan Mohan Malaviya Cancer Centre, Varanasi (Tata Memorial Centre)",
+      "category": "mo",
+      "location": "Varanasi, Uttar Pradesh",
+      "state": "Uttar Pradesh",
+      "posts": 2,
+      "salary": "₹1,11,132/month (Medical Officer); ₹1,33,623 (Senior Resident)",
+      "mode": "Apply online",
+      "lastDate": "2026-11-30",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Advt VAR/ACA/50/2026 dated 18.11.2026: 2 posts filled as Senior Resident (MD/DNB General Medicine) or Medical Officer (MBBS recognised by NMC), tenure up to 31.07.2027. Age limit 45 as on 30.11.2026 (SC/ST +5, OBC +3, PwD +10). Fee ₹300 (SC/ST/female/PwD/ex-servicemen exempt); security deposit applies. Selected candidates must register with the UP Medical Council. Apply online by 30.11.2026, 5:30 PM; MCQ test/interview to follow.",
+      "officialUrl": "https://tmc.gov.in/postmaster/Careers",
+      "noticePdf": "https://tmc.gov.in/postmaster/DownloadFile?FileId=2639",
+      "sourceUrl": "https://tmc.gov.in/postmaster/Careers",
+      "addedOn": "2026-11-23",
+      "verified": true,
+      "requirements": {
+        "maxAge": 45,
+        "ageOn": "2026-11-30",
+        "ageRelax": true
+      }
+    },
+    {
       "id": "ucms-mru-rs1-medical-2026-12-01",
       "title": "Research Scientist-I (Medical/Non-medical), MRU – 1 post",
       "org": "University College of Medical Sciences & GTB Hospital",
@@ -2083,6 +2314,26 @@
       "noticePdf": "https://www.tezu.ernet.in/Admin/Advt_No_31_2026_Medical_Officers_Contractual.pdf",
       "sourceUrl": "https://www.freejobalert.com/articles/tezpur-university-medical-officers-on-contract-recruitment-2026-3081974",
       "addedOn": "2026-11-18",
+      "verified": true,
+      "requirements": {}
+    },
+    {
+      "id": "uas-dharwad-hanumanamatti-visiting-mo-walkin-2026-12-01",
+      "title": "Visiting Medical Officer (temporary) – 1 post, walk-in",
+      "org": "University of Agricultural Sciences, Dharwad – College of Agriculture, Hanumanamatti",
+      "category": "mo",
+      "location": "Hanumanamatti, Karnataka",
+      "state": "Karnataka",
+      "posts": 1,
+      "salary": "₹20,000/month (consolidated)",
+      "mode": "Walk-in",
+      "lastDate": "2026-12-01",
+      "eventDate": "2026-12-01",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Temporary, up to 179 days, for students and staff of the Hanumanamatti campus. MBBS (or BAMS) with second class / 50% marks, completed in the minimum period, and at least 3 years' experience in a recognised nursing home/hospital. Post is in the GM(W) category (other categories considered if none available). Walk-in 3:00 PM at the Office of the Dean (Agri), College of Agriculture, Hanumanamatti. Notice dated 16.11.2026 (on the UASD circulars page, hosted on Google Drive).",
+      "officialUrl": "https://sites.google.com/a/uasd.in/news/temporary-appointment-notification-circulars",
+      "sourceUrl": "https://www.freejobalert.com/articles/uas-dharwad-visiting-medical-officer-recruitment-2026-3083273",
+      "addedOn": "2026-11-23",
       "verified": true,
       "requirements": {}
     },
@@ -2181,6 +2432,54 @@
       "sourceUrl": "https://govtjobsalert.in/pgimer-chandigarh-project-recruitment-2026/",
       "addedOn": "2026-11-19",
       "verified": false,
+      "requirements": {
+        "maxAge": 35
+      }
+    },
+    {
+      "id": "aiims-bhubaneswar-jr-consultant-epidemiology-rihse-2026-12-02",
+      "title": "Junior Consultant (Epidemiology), NACO HIV surveillance project – 1 post, walk-in",
+      "org": "AIIMS Bhubaneswar (Dept. of Community Medicine & Family Medicine)",
+      "category": "other",
+      "location": "Bhubaneswar, Odisha",
+      "state": "Odisha",
+      "posts": 1,
+      "salary": "₹1,04,000/month (consolidated)",
+      "mode": "Walk-in",
+      "lastDate": "2026-12-02",
+      "eventDate": "2026-12-02",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Project 'Regional Institute for HIV Surveillance & Epidemiology', 4-month contract (renewable). Essential: MBBS / MPH / M.Sc Epidemiology with at least 3 years' experience in disease surveillance, public health management or public health research; Odia, English and Hindi; must be willing to travel to Odisha, Andhra Pradesh and Chhattisgarh. Interview date is tentative; report 10–11 AM at Room 317, 3rd floor, CM&FM Dept, Academic Building, with filled form and documents. Advt AIIMS/BBSR/CM&FM/RIHSE/NACO/117/01/348.",
+      "officialUrl": "https://aiimsbhubaneswar.nic.in",
+      "noticePdf": "https://aiimsbhubaneswar.nic.in/wp-content/uploads/2026/11/cmfm-6.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/aiims-bhubaneswar-recruitment-2026-junior-consultant-and-research-3083476",
+      "addedOn": "2026-11-23",
+      "verified": true,
+      "requirements": {
+        "maxAge": 35,
+        "ageOn": "2026-12-02",
+        "ageRelax": true
+      }
+    },
+    {
+      "id": "gmc-kannauj-mru-rs1-walkin-2026-12-02",
+      "title": "Research Scientist-I (Scientist 'B'), MRU – 1 post, walk-in",
+      "org": "Dr. Bhimrao Ramji Ambedkar Government Medical College, Kannauj – Multidisciplinary Research Unit (DHR)",
+      "category": "other",
+      "location": "Kannauj, Uttar Pradesh",
+      "state": "Uttar Pradesh",
+      "posts": 1,
+      "salary": "₹56,000 + HRA",
+      "mode": "Walk-in",
+      "lastDate": "2026-12-02",
+      "eventDate": "2026-12-02",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Contract post for one year (extendable by one year) under the DHR Multidisciplinary Research Unit scheme; not on the college establishment. Essential: MBBS/BVSc/BDS, or a first-class Master's in a relevant life science, or a second-class M.Sc with PhD. Report by 9:00 AM on 2 Dec 2026 at the Seminar Room, Administrative Block, for registration and document verification; no entry after 10:00 AM. Bring the filled application form, CV, self-attested copies and originals; serving employees need an NOC. The same walk-in also covers Research Scientist-II, Lab Technician and Lab Assistant/DEO posts.",
+      "officialUrl": "https://gmckannauj.in/Recruitment.html",
+      "noticePdf": "https://gmckannauj.in/2026/201126.pdf",
+      "sourceUrl": "https://gmckannauj.in/Recruitment.html",
+      "addedOn": "2026-11-23",
+      "verified": true,
       "requirements": {
         "maxAge": 35
       }
@@ -2332,6 +2631,77 @@
       }
     },
     {
+      "id": "angrau-naira-part-time-mo-walkin-2026-12-04",
+      "title": "Part-Time Medical Officer, Health Clinic – 1 post, walk-in",
+      "org": "Acharya N.G. Ranga Agricultural University (ANGRAU) – Agricultural College, Naira",
+      "category": "mo",
+      "location": "Srikakulam, Andhra Pradesh",
+      "state": "Andhra Pradesh",
+      "posts": 1,
+      "salary": "₹35,000/month (honorarium)",
+      "mode": "Walk-in",
+      "lastDate": "2026-12-04",
+      "eventDate": "2026-12-04",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Per aggregator summary of Cir. Memo A1/Part Time Doctor/ACN/2026 dated 20.11.2026: temporary 11-month contract at the Health Clinic, Agricultural College, Naira (Srikakulam dist.); qualification MBBS; experience at colleges/hostels preferred. Walk-in at 2:00 PM at the Office of the Associate Dean, Agricultural College, Naira. Official notice could not be opened from here; check it before attending.",
+      "officialUrl": "https://angrau.ac.in/",
+      "sourceUrl": "https://www.freejobalert.com/articles/angrau-part-time-medical-officer-recruitment-2026-3083444",
+      "addedOn": "2026-11-23",
+      "verified": false,
+      "requirements": {}
+    },
+    {
+      "id": "dhs-vellore-cemonc-mo-2026-12-04",
+      "title": "Medical Officer, CEmONC / SNCU / PICU (NHM contract) – 3 posts",
+      "org": "Vellore District Health Society (NHM Tamil Nadu)",
+      "category": "mo",
+      "location": "Vellore, Tamil Nadu",
+      "state": "Tamil Nadu",
+      "posts": 3,
+      "salary": "₹63,000/month",
+      "mode": "Apply offline",
+      "lastDate": "2026-12-04",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Contract posts in CEmONC institutions including SNCUs and PICUs (DMS and DME). MBBS with valid Tamil Nadu Medical Council registration; age up to 50. Filled application with document copies must reach the District Health Officer, 2nd floor, B-Block, District Collectorate Complex, Sathuvachari, Vellore by 5:00 PM on 04.12.2026. Form on vellore.nic.in.",
+      "officialUrl": "https://vellore.nic.in",
+      "noticePdf": "https://cdn.s3waas.gov.in/s31651cf0d2f737d7adeab84d339dbabd3/uploads/2026/11/17951765956720.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/dhs-vellore-recruitment-2026-apply-offline-for-63-medical-officer-urban-health-nurse-and-more-posts-3083417",
+      "addedOn": "2026-11-23",
+      "verified": true,
+      "requirements": {
+        "councils": [
+          "Tamil Nadu Medical Council"
+        ],
+        "maxAge": 50
+      }
+    },
+    {
+      "id": "nit-trichy-temporary-mo-2026-12-04",
+      "title": "Temporary Medical Officer – up to 7 posts",
+      "org": "National Institute of Technology Tiruchirappalli (NIT Trichy)",
+      "category": "mo",
+      "location": "Tiruchirappalli, Tamil Nadu",
+      "state": "Tamil Nadu",
+      "posts": 7,
+      "salary": "Up to ₹70,000/month (<3 yrs experience); ₹75,000 (3+ yrs)",
+      "mode": "Apply offline",
+      "lastDate": "2026-12-04",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Six-month temporary engagement (extendable), round-the-clock shift duty at screening booths / NIT Hospital. MBBS registered in a State Medical Register or the Indian Medical Register; PG (preferably MD General Medicine) desirable; age not over 65 on 04.12.2026. Send the application with documents (incl. CRRI completion certificate) by Speed/Registered Post to the Registrar, NIT Tiruchirappalli – 620015, by 5:00 PM on 04.12.2026. Advt NITT/R/RC/TMO/2026/01 dated 20.11.2026.",
+      "officialUrl": "https://www.nitt.edu",
+      "noticePdf": "https://nitt.edu/home/other/jobs/TMO_2026.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/nitt-temporary-medical-officer-recruitment-2026-3083271",
+      "addedOn": "2026-11-23",
+      "verified": true,
+      "requirements": {
+        "registration": "any",
+        "maxAge": 65,
+        "ageOn": "2026-12-04"
+      }
+    },
+    {
       "id": "umc-navi-mumbai-rmo-dec-2026",
       "title": "Resident Medical Officer (fresher) – 1 post",
       "org": "UMC Hospitals, Nerul",
@@ -2350,6 +2720,100 @@
       "addedOn": "2026-11-13",
       "verified": false,
       "requirements": {}
+    },
+    {
+      "id": "icar-crri-cuttack-consultant-mo-walkin-2026-12-08",
+      "title": "Consultant Medical Officer (full-time, contract) – 1 post, walk-in",
+      "org": "ICAR – Central Rice Research Institute (CRRI)",
+      "category": "mo",
+      "location": "Cuttack, Odisha",
+      "state": "Odisha",
+      "posts": 1,
+      "salary": "₹60,000/month (consolidated)",
+      "mode": "Walk-in",
+      "lastDate": "2026-12-08",
+      "eventDate": "2026-12-08",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Full-time MO for the institute dispensary at Bidyadharpur campus; one-year contract. MBBS recognised by MCI/NMC with active NMC or State Medical Council registration; master's degree desirable; preference for government dispensary/hospital experience. The schedule table says no maximum age (the covering text mentions candidates below 70). Walk-in 11:00 AM at ICAR-CRRI, Cuttack, with originals and NOC if employed. Advt 43/MO/2026-27 dated 20.11.2026.",
+      "officialUrl": "https://icar-crri.in/",
+      "noticePdf": "https://icar-crri.in/wp-content/uploads/2026/11/Medical-Officer.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/icar-crri-consultant-medical-officer-recruitment-2026-3083191",
+      "addedOn": "2026-11-23",
+      "verified": true,
+      "requirements": {
+        "registration": "any"
+      }
+    },
+    {
+      "id": "hbchrc-muzaffarpur-darbhanga-mo-project-walkin-2026-12-08",
+      "title": "Medical Officer (project, head & neck cancer screening) – 1 post, walk-in",
+      "org": "Homi Bhabha Cancer Hospital & Research Centre, Muzaffarpur (Tata Memorial Centre) – for HBCH Darbhanga",
+      "category": "mo",
+      "location": "Darbhanga, Bihar",
+      "state": "Bihar",
+      "posts": 1,
+      "salary": "₹90,000–₹1,00,000/month",
+      "mode": "Walk-in",
+      "lastDate": "2026-12-08",
+      "eventDate": "2026-12-08",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Advt HBCH&RC/PROJECT/2026/P29 dated 21.11.2026: project post for 'Awareness and Screening Services for Head, Mouth and Neck Cancer' at HBCH Darbhanga (funded by Health Dept, Govt of Bihar). MBBS recognised by NMC; oncology experience preferred. Age limit 45 on the interview date. Walk-in Tuesday 08.12.2026, 9–10 AM at HBCH&RC, Umanagar, Muzaffarpur, with bio-data, photo, PAN, Aadhaar, originals and self-attested copies.",
+      "officialUrl": "https://tmc.gov.in/postmaster/Careers",
+      "noticePdf": "https://tmc.gov.in/postmaster/DownloadFile?FileId=2637",
+      "sourceUrl": "https://tmc.gov.in/postmaster/Careers",
+      "addedOn": "2026-11-23",
+      "verified": true,
+      "requirements": {
+        "maxAge": 45,
+        "ageOn": "2026-12-08"
+      }
+    },
+    {
+      "id": "gkciet-malda-mo-2026-12-09",
+      "title": "Medical Officer (part-time contract) – 1 post",
+      "org": "Ghani Khan Choudhury Institute of Engineering & Technology (GKCIET)",
+      "category": "mo",
+      "location": "Malda, West Bengal",
+      "state": "West Bengal",
+      "posts": 1,
+      "salary": "₹1,000/hr up to ₹50,000 or ₹1,200/hr up to ₹60,000, + ₹2,000 conveyance",
+      "mode": "Apply offline",
+      "lastDate": "2026-12-09",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Contract for one year (extendable); 2 hours daily, 3–5 PM, Monday–Saturday, as Authorized Medical Officer for students and staff. MBBS with one year rotating internship, MCI/State Medical Council registration and at least 2 years' experience in a recognised hospital/dispensary; MD/MS/DNB desirable. Age limit 50 (65 for MOs retired from government service). Application to The Director, GKCIET, Malda by 09.12.2026.",
+      "officialUrl": "https://gkciet.ac.in/",
+      "noticePdf": "https://www.gkciet.ac.in/uploads/1/2026-11/advt_merged.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/gkciet-medical-officer-recruitment-2026-3083116",
+      "addedOn": "2026-11-23",
+      "verified": true,
+      "requirements": {
+        "registration": "any",
+        "maxAge": 50
+      }
+    },
+    {
+      "id": "cuj-medical-officer-walkin-2026-12-11",
+      "title": "Medical Officer (contract) – 1 post, walk-in",
+      "org": "Central University of Jammu",
+      "category": "mo",
+      "location": "Samba, Jammu and Kashmir",
+      "state": "Jammu and Kashmir",
+      "posts": 1,
+      "salary": "₹90,000/month (consolidated)",
+      "mode": "Walk-in",
+      "lastDate": "2026-12-11",
+      "eventDate": "2026-12-11",
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS recognised by MCI, registration with MCI/State Medical Council, and 2 years' experience in a hospital attached to a medical college / corporate / private hospital; MD Medicine desirable; retired doctors may also apply. Fee ₹500 by DD (SC/ST/PwBD exempt). Report 9:30 AM at 2nd floor, Establishment Wing, Chanakya Bhawan, CUJ, Rahya-Suchani (Bagla), Samba. Notice CUJ/Admin/EN-Temp/2026/748 dated 19.11.2026.",
+      "officialUrl": "https://www.cujammu.ac.in",
+      "noticePdf": "https://cujammu.ac.in/media/homepage/jobs/UNIV/191126_MO_advt_doc_2125_1795089659.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/cuj-medical-officer-contract-basis-recruitment-2026-3083002",
+      "addedOn": "2026-11-23",
+      "verified": true,
+      "requirements": {
+        "registration": "any"
+      }
     },
     {
       "id": "zp-dharashiv-nhm-mo-walkin-2026-12-15",
@@ -2398,6 +2862,33 @@
         "maxAge": 40,
         "ageOn": "2026-12-15",
         "ageRelax": true
+      }
+    },
+    {
+      "id": "cmo-shravasti-nhm-mo-friday-walkin-2026-12",
+      "title": "Medical Officer / Lady MO / EMO / General Physician (MBBS, NHM contract) – 13 posts, walk-in every Friday",
+      "org": "Office of the Chief Medical Officer, Shravasti (District Health Society, NHM Uttar Pradesh)",
+      "category": "mo",
+      "location": "Shravasti, Uttar Pradesh",
+      "state": "Uttar Pradesh",
+      "posts": 13,
+      "salary": "₹1,00,000/month",
+      "mode": "Walk-in",
+      "lastDate": "2026-12-25",
+      "eventDate": "2026-11-27",
+      "eligibility": "after-internship",
+      "eligibilityNote": "LMO (Maternal Health) 2, MO Child Health (SNCU) 2, General Physician NPCDCS (CHC-NCD clinic) 4, EMO-IPHS 2, EMO-HDU (DHS) 3. MBBS with U.P. Medical Council registration; experience preferred; age not over 65 on the advertisement date. Walk-in every Friday, 10 AM–5 PM, at the District Magistrate's office, Shravasti, through December 2026 or until filled; documents screened the same day. Press note 12576 dated 20.11.2026. eventDate is the next Friday; lastDate is the last Friday in December.",
+      "officialUrl": "https://shravasti.nic.in",
+      "noticePdf": "https://cdn.s3waas.gov.in/s338af86134b65d0f10fe33d30dd76442e/uploads/2026/11/17952530596256.pdf",
+      "sourceUrl": "https://govtjobsalert.in/cmo-shravasti-nhm-medical-officer-recruitment-2026/",
+      "addedOn": "2026-11-23",
+      "verified": true,
+      "requirements": {
+        "councils": [
+          "Uttar Pradesh Medical Council"
+        ],
+        "maxAge": 65,
+        "ageOn": "2026-11-20"
       }
     },
     {
@@ -2540,11 +3031,11 @@
       "lastDate": "2027-03-23",
       "eventDate": "2027-07-18",
       "eligibility": "intern-ok",
-      "eligibilityNote": "Final-year/intern candidates may apply, but the internship must be completed before appointment. Notification expected 3 Mar 2027; exam on 18 Jul 2027 (per the UPSC 2027 calendar).",
+      "eligibilityNote": "Final-year/intern candidates may apply, but the internship must be completed before appointment. Per UPSC's official Calendar 2027: notification 3 Mar 2027, last date 23 Mar 2027, exam on 18 Jul 2027.",
       "officialUrl": "https://upsc.gov.in",
-      "sourceUrl": "https://pwonlyias.com/blog/upsc-calendar-2027/",
+      "sourceUrl": "https://www.upsc.gov.in/uploads/2026/06/Calendar-Year-2027-Engl-200526.pdf",
       "addedOn": "2026-11-12",
-      "verified": false,
+      "verified": true,
       "requirements": {
         "maxAge": 32,
         "ageOn": "2027-08-01",
@@ -2926,5 +3417,5 @@
       "requirements": {}
     }
   ],
-  "updatedAt": "2026-11-20T06:09:50.516Z"
+  "updatedAt": "2026-11-23T01:54:09.604Z"
 }
