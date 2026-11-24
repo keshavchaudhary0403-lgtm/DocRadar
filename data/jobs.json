@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "jobs": [
     {
       "id": "asacs-mo-art-ost-dmch-diphu-walkin-2026-11-13",
@@ -1655,6 +1655,30 @@
       }
     },
     {
+      "id": "esis-thane-mo-contract-walkin-2026-11-25",
+      "title": "Medical Officer (contract) – 9 posts, ESIS dispensaries, walk-in",
+      "org": "Maharashtra State ESI Society – Administrative Medical Officer, Thane",
+      "category": "mo",
+      "location": "Thane, Maharashtra",
+      "state": "Maharashtra",
+      "posts": 9,
+      "salary": "₹75,000/month",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-25",
+      "eventDate": "2026-11-25",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Contract for one year or until a regular officer joins, at ESIS dispensaries including Pen, Patalganga, Mangaon, Kharghar, Wada, Kalyan, Alibag and Bhiwandi. Registration 11:00 AM–5:00 PM on 25.11.2026 at the AMO office, Wagle Estate Road No. 33, Thane, with originals, 2 sets of copies, MMC/MCI registration and 2 photos. Age up to 69 on the interview date. Details from an aggregator copy of the MH-ESIS letter of 23.11.2026; not yet on an official site.",
+      "officialUrl": "https://www.esic.gov.in/recruitments",
+      "sourceUrl": "https://govtjobsalert.in/maharashtra-esis-thane-medical-officer-recruitment-2026/",
+      "addedOn": "2026-11-24",
+      "verified": false,
+      "requirements": {
+        "registration": "any",
+        "maxAge": 69,
+        "ageOn": "2026-11-25"
+      }
+    },
+    {
       "id": "rampurhat-hd-gdmo-medical-officer-2026-11-26",
       "title": "GDMO / Medical Officer (contract) – 12 posts",
       "org": "District Health & FW Samiti, Rampurhat Health District",
@@ -1998,6 +2022,32 @@
       "requirements": {}
     },
     {
+      "id": "dh-parbhani-mo-adhoc-walkin-2026-11-27",
+      "title": "Medical Officer (contract/ad hoc, 11 months) – 9 posts, walk-in",
+      "org": "District Hospital, Parbhani (District Surgeon, Public Health Dept, Maharashtra)",
+      "category": "mo",
+      "location": "Parbhani, Maharashtra",
+      "state": "Maharashtra",
+      "posts": 9,
+      "salary": "₹75,000/month (MBBS); ₹85,000/month with PG degree/diploma",
+      "mode": "Walk-in",
+      "lastDate": "2026-11-27",
+      "eventDate": "2026-11-27",
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS; PG degree/diploma holders get first preference. Report at 10:00 AM at the Collector Office, Parbhani, with mark sheets, degree, internship and experience certificates, Maharashtra Medical Council registration, 10th/12th certificates, TC and 2 photos. A waiting list will be kept, and applications are also accepted on the 2nd Monday of each month at District Hospital Parbhani.",
+      "officialUrl": "https://parbhani.gov.in/",
+      "noticePdf": "https://cdn.s3waas.gov.in/s39cf81d8026a9018052c429cc4e56739b/uploads/2026/11/17954381415781.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/district-hospital-parbhani-medical-officer-recruitment-2026-3083989",
+      "addedOn": "2026-11-24",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "eventDate",
+        "councils": [
+          "Maharashtra Medical Council"
+        ]
+      }
+    },
+    {
       "id": "nit-agartala-mo-campus-doctor-2026-11-28",
       "title": "Medical Officer / Campus Doctor – 2 posts (contract)",
       "org": "NIT Agartala",
@@ -2247,6 +2297,33 @@
       "verified": true,
       "requirements": {
         "maxAge": 45,
+        "ageOn": "2026-11-30",
+        "ageRelax": true
+      }
+    },
+    {
+      "id": "aiims-raipur-jr-nonacad-2026-11-30",
+      "title": "Junior Resident (Non-Academic), 6 months – 15 posts",
+      "org": "AIIMS Raipur",
+      "category": "jr",
+      "location": "Raipur, Chhattisgarh",
+      "state": "Chhattisgarh",
+      "posts": 15,
+      "salary": "₹56,100 (Level 10) + allowances incl. NPA",
+      "mode": "Apply online",
+      "lastDate": "2026-11-30",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Advt Reg.Off./Rec./JR/2026/AIIMS.RPR/3304 dated 23.11.2026. Apply by Google Form by 5 PM on 30.11.2026 with the filled proforma attached. MBBS with internship completed between 01.12.2024 and 30.11.2026. AIIMS Raipur graduates are offered posts first on merit; others are selected by interview. Fee ₹1,000 (Gen/OBC/EWS); nil for women, SC/ST, PwBD, ex-servicemen. Registration with NMC/State council needed before joining.",
+      "officialUrl": "https://www.aiimsraipur.edu.in/user/vacancies-desc.php?descscr=950&desctype=Advrt",
+      "noticePdf": "https://www.aiimsraipur.edu.in/upload/vacancies/6b043ead0498b_Advertisement%20Junior%20Resident%20(Non%20Academic).pdf",
+      "sourceUrl": "https://www.aiimsraipur.edu.in/user/vacancies-faculty.php?pst=jrsr",
+      "addedOn": "2026-11-24",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "2026-11-30",
+        "registration": "any",
+        "maxAge": 30,
         "ageOn": "2026-11-30",
         "ageRelax": true
       }
@@ -2555,6 +2632,50 @@
       }
     },
     {
+      "id": "mcd-mata-gujri-jr-walkin-2026-12-03",
+      "title": "Junior Resident (MBBS, 6 months) – 7 posts, walk-in",
+      "org": "Mata Gujri Hospital, Tilak Nagar (Municipal Corporation of Delhi)",
+      "category": "jr",
+      "location": "Tilak Nagar, New Delhi, Delhi",
+      "state": "Delhi",
+      "posts": 7,
+      "salary": null,
+      "mode": "Walk-in",
+      "lastDate": "2026-12-03",
+      "eventDate": "2026-12-03",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Corrigendum to Public Notice 1361/MS/MGH/2026 adds 7 JR posts (UR 6, ST 1) for MBBS candidates under the JR Recruitment Rules (Annexure-I). Engagement for 6 months, extendable to 1 year. Registration and document verification 9:30–11:00 AM on 03.12.2026; interviews 11 AM–4 PM at the Administration Dept, Block-11, Mata Gujri Hospital, near Tilak Nagar Metro.",
+      "officialUrl": "https://mcdonline.nic.in/",
+      "noticePdf": "https://mcdonline.nic.in/portal/downloadFile/publish_the_corrigendum_for_recruitment_of_srs_&_jrs_at_mata_gujri_hospital_2611230345411141.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/mcd-recruitment-2026-senior-resident-3083034",
+      "addedOn": "2026-11-24",
+      "verified": true,
+      "requirements": {}
+    },
+    {
+      "id": "esic-asansol-jr-walkin-2026-12-03",
+      "title": "Junior Resident (contract) – 2 posts, walk-in",
+      "org": "ESIC Medical College & Hospital, Asansol",
+      "category": "jr",
+      "location": "Asansol, West Bengal",
+      "state": "West Bengal",
+      "posts": 2,
+      "salary": "₹1,24,692/month consolidated",
+      "mode": "Walk-in",
+      "lastDate": "2026-12-03",
+      "eventDate": "2026-12-03",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Advt No. 02 of 2026 (with faculty and SR posts): JR 2 posts (UR 1, OBC 1), interview 03.12.2026, reporting 9:30–10:30 AM at ESIC MCH, Vivekanand Sarani, Asansol. Age as per GoI guidelines; post-MBBS clinical experience preferred; NMC/State council registration needed. Fee ₹500 by DD (SC/ST/women/ExSM/PH exempt). Details from aggregator copies; the official esic.gov.in PDF could not be opened from here.",
+      "officialUrl": "https://www.esic.gov.in/recruitments",
+      "sourceUrl": "https://www.freejobalert.com/articles/esic-asansol-recruitment-2026-walkin-for-110-junior-resident-professor-and-more-posts-3083842",
+      "addedOn": "2026-11-24",
+      "verified": false,
+      "requirements": {
+        "internshipBy": "eventDate",
+        "registration": "any"
+      }
+    },
+    {
       "id": "iit-roorkee-gdmo-walkin-2026-12-04",
       "title": "General Duty Medical Officer (contract) – 1 post, walk-in",
       "org": "IIT Roorkee – Institute Hospital",
@@ -2766,6 +2887,32 @@
       "requirements": {
         "maxAge": 45,
         "ageOn": "2026-12-08"
+      }
+    },
+    {
+      "id": "cmo-ayodhya-nhm-mo-walkin-2026-12-07",
+      "title": "Medical Officer (MBBS), NHM/NUHM contract – 11 posts, walk-in (rescheduled)",
+      "org": "Office of the Chief Medical Officer, Ayodhya (District Health Society, NHM Uttar Pradesh)",
+      "category": "mo",
+      "location": "Ayodhya, Uttar Pradesh",
+      "state": "Uttar Pradesh",
+      "posts": 11,
+      "salary": null,
+      "mode": "Walk-in",
+      "lastDate": "2026-12-08",
+      "eventDate": "2026-12-07",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Revised notice dated 21.11.2026: the walk-in from the advertisement of 11.10.2026 (first set for 22–23 Oct, postponed) is now on 7 and 8 December 2026 from 10:00 AM at the Meeting Hall, Vikas Bhawan, Ayodhya. Bring original certificates, experience certificates, UP Medical Council registration, ID and photos. Pay and age limit are as in the original advertisement on ayodhya.nic.in.",
+      "officialUrl": "https://ayodhya.nic.in/",
+      "noticePdf": "https://cdn.s3waas.gov.in/s3b2eb7349035754953b57a32e2841bda5/uploads/2026/11/17954352673036.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/cmo-ayodhya-medical-officers-m-b-b-s-recruitment-2026-3083985",
+      "addedOn": "2026-11-24",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "eventDate",
+        "councils": [
+          "Uttar Pradesh Medical Council"
+        ]
       }
     },
     {
@@ -3417,5 +3564,5 @@
       "requirements": {}
     }
   ],
-  "updatedAt": "2026-11-23T01:54:09.604Z"
+  "updatedAt": "2026-11-24T01:44:12.646Z"
 }

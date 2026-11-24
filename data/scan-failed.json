@@ -1,7 +1,7 @@
 {
- "date": "2026-11-23",
+ "date": "2026-11-24",
  "total": 788,
- "ok": 522,
+ "ok": 541,
  "failed": [
   {
    "i": 1,
@@ -121,7 +121,7 @@
    "url": "https://careers.bhel.in",
    "state": "Delhi",
    "group": "PSUs",
-   "status": "503"
+   "status": "403"
   },
   {
    "i": 28,
@@ -260,14 +260,6 @@
    "status": "503"
   },
   {
-   "i": 73,
-   "name": "ICMR Recruitment Portal",
-   "url": "https://recruitment.icmr.org.in/",
-   "state": "All India",
-   "group": "Central Govt",
-   "status": "503"
-  },
-  {
    "i": 75,
    "name": "Indo-Tibetan Border Police",
    "url": "https://www.itbp.mha.gov.in/",
@@ -340,6 +332,14 @@
    "status": "403"
   },
   {
+   "i": 105,
+   "name": "Guru Ghasidas Vishwavidyalaya",
+   "url": "https://www.ggu.ac.in/",
+   "state": "Chhattisgarh",
+   "group": "Central Govt",
+   "status": "522"
+  },
+  {
    "i": 106,
    "name": "IIT Bhilai",
    "url": "https://www.iitbhilai.ac.in/",
@@ -367,30 +367,6 @@
    "i": 109,
    "name": "Delhi Cantonment Board",
    "url": "https://delhi.cantt.gov.in/doc_category/careers/",
-   "state": "Delhi",
-   "group": "Central Govt",
-   "status": "503"
-  },
-  {
-   "i": 110,
-   "name": "ICMR-NICHR",
-   "url": "https://nichr.icmr.org.in/career",
-   "state": "Delhi",
-   "group": "Central Govt",
-   "status": "503"
-  },
-  {
-   "i": 111,
-   "name": "ICMR-NIDHR (NIMS) New Delhi",
-   "url": "https://nidhr.icmr.org.in/",
-   "state": "Delhi",
-   "group": "Central Govt",
-   "status": "503"
-  },
-  {
-   "i": 112,
-   "name": "ICMR-NIMR Delhi",
-   "url": "https://nimr.icmr.org.in/notifications/vacancies",
    "state": "Delhi",
    "group": "Central Govt",
    "status": "503"
@@ -444,6 +420,14 @@
    "status": "503"
   },
   {
+   "i": 138,
+   "name": "NIT Hamirpur",
+   "url": "https://nith.ac.in/advertisement-recruitments",
+   "state": "Himachal Pradesh",
+   "group": "Central Govt",
+   "status": "500"
+  },
+  {
    "i": 142,
    "name": "Jammu Cantonment Board",
    "url": "https://jammu.cantt.gov.in/doc_category/careers/",
@@ -495,14 +479,6 @@
    "i": 165,
    "name": "Bhopal Memorial Hospital & Research Centre",
    "url": "https://bmhrc.ac.in/",
-   "state": "Madhya Pradesh",
-   "group": "Central Govt",
-   "status": "503"
-  },
-  {
-   "i": 167,
-   "name": "ICMR-NIREH Bhopal",
-   "url": "https://nireh.icmr.org.in/",
    "state": "Madhya Pradesh",
    "group": "Central Govt",
    "status": "503"
@@ -620,14 +596,6 @@
    "status": "503"
   },
   {
-   "i": 193,
-   "name": "Mumbai Port Authority",
-   "url": "https://www.mumbaiport.gov.in/",
-   "state": "Maharashtra",
-   "group": "Central Govt",
-   "status": "503"
-  },
-  {
    "i": 194,
    "name": "Pune Cantonment Board",
    "url": "https://pune.cantt.gov.in/doc_category/careers/",
@@ -648,22 +616,6 @@
    "name": "Shillong Cantonment Board",
    "url": "https://shillong.cantt.gov.in/doc_category/careers/",
    "state": "Meghalaya",
-   "group": "Central Govt",
-   "status": "503"
-  },
-  {
-   "i": 205,
-   "name": "NIT Nagaland",
-   "url": "https://www.nitnagaland.ac.in/index.php/recruitment",
-   "state": "Nagaland",
-   "group": "Central Govt",
-   "status": "timeout"
-  },
-  {
-   "i": 213,
-   "name": "ICMR-NIVCR (VCRC) Puducherry",
-   "url": "https://vcrc.icmr.org.in/",
-   "state": "Puducherry",
    "group": "Central Govt",
    "status": "503"
   },
@@ -708,14 +660,6 @@
    "status": "503"
   },
   {
-   "i": 225,
-   "name": "ICMR-NIHR Jodhpur (NIIRNCD)",
-   "url": "https://nihrjodhpur.icmr.org.in/recruitment.php",
-   "state": "Rajasthan",
-   "group": "Central Govt",
-   "status": "503"
-  },
-  {
    "i": 226,
    "name": "IIT Jodhpur",
    "url": "https://www.iitj.ac.in/Recruitment/",
@@ -735,14 +679,6 @@
    "i": 232,
    "name": "Chennai Port Authority",
    "url": "https://www.chennaiport.gov.in/career",
-   "state": "Tamil Nadu",
-   "group": "Central Govt",
-   "status": "503"
-  },
-  {
-   "i": 233,
-   "name": "ICMR-NIE Chennai",
-   "url": "https://www.nie.gov.in/pages/careers",
    "state": "Tamil Nadu",
    "group": "Central Govt",
    "status": "503"
@@ -834,14 +770,6 @@
    "state": "Uttar Pradesh",
    "group": "Central Govt",
    "status": "403"
-  },
-  {
-   "i": 257,
-   "name": "ICMR-NIHR Gorakhpur (RMRC)",
-   "url": "https://nihrgkp.icmr.org.in/root/career-page.html",
-   "state": "Uttar Pradesh",
-   "group": "Central Govt",
-   "status": "503"
   },
   {
    "i": 261,
@@ -951,14 +879,6 @@
    "i": 288,
    "name": "Metro Railway Kolkata",
    "url": "https://mtp.indianrailways.gov.in/offerings/vacancies",
-   "state": "West Bengal",
-   "group": "Central Govt",
-   "status": "503"
-  },
-  {
-   "i": 289,
-   "name": "NIT Durgapur",
-   "url": "https://nitdgp.ac.in/p/careers",
    "state": "West Bengal",
    "group": "Central Govt",
    "status": "503"
@@ -1076,20 +996,12 @@
    "status": "503"
   },
   {
-   "i": 335,
-   "name": "Andhra Pradesh HMFW",
-   "url": "https://hmfw.ap.gov.in",
-   "state": "Andhra Pradesh",
-   "group": "State Govt",
-   "status": "503"
-  },
-  {
    "i": 336,
    "name": "Andhra Pradesh PSC",
    "url": "https://psc.ap.gov.in",
    "state": "Andhra Pradesh",
    "group": "State Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 337,
@@ -1274,14 +1186,6 @@
    "state": "Jharkhand",
    "group": "State Govt",
    "status": "503"
-  },
-  {
-   "i": 369,
-   "name": "Jharkhand PSC",
-   "url": "https://www.jpsc.gov.in",
-   "state": "Jharkhand",
-   "group": "State Govt",
-   "status": "EAI_AGAIN"
   },
   {
    "i": 370,
@@ -1561,7 +1465,7 @@
    "url": "https://gmcrajamahendravaram.ap.gov.in/",
    "state": "Andhra Pradesh",
    "group": "Medical colleges",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 442,
@@ -1570,30 +1474,6 @@
    "state": "Andhra Pradesh",
    "group": "Medical colleges",
    "status": "503"
-  },
-  {
-   "i": 443,
-   "name": "Govt Medical College Anantapur / GGH Anantapur (district portal notices)",
-   "url": "https://ananthapuramu.ap.gov.in/past-notices/recruitment/",
-   "state": "Andhra Pradesh",
-   "group": "Medical colleges",
-   "status": "503"
-  },
-  {
-   "i": 444,
-   "name": "Govt Medical College Kadapa / GGH Kadapa (district portal notices)",
-   "url": "https://kadapa.ap.gov.in/past-notices/recruitment/",
-   "state": "Andhra Pradesh",
-   "group": "Medical colleges",
-   "status": "503"
-  },
-  {
-   "i": 448,
-   "name": "Kurnool Medical College",
-   "url": "https://kurnoolmedicalcollege.ac.in/",
-   "state": "Andhra Pradesh",
-   "group": "Medical colleges",
-   "status": "ENOTFOUND"
   },
   {
    "i": 452,
@@ -1724,14 +1604,6 @@
    "status": "503"
   },
   {
-   "i": 492,
-   "name": "GMERS Medical College, Morbi",
-   "url": "http://gmersmorbi.com/",
-   "state": "Gujarat",
-   "group": "Medical colleges",
-   "status": "503"
-  },
-  {
    "i": 496,
    "name": "GMERS Medical College, Vadnagar",
    "url": "http://gmersmchvadnagar.com/",
@@ -1812,14 +1684,6 @@
    "status": "403"
   },
   {
-   "i": 546,
-   "name": "Vydehi Institute of Medical Sciences and Research Centre, Bengaluru",
-   "url": "https://vims.ac.in/",
-   "state": "Karnataka",
-   "group": "Medical colleges",
-   "status": "503"
-  },
-  {
    "i": 557,
    "name": "Regional Cancer Centre Thiruvananthapuram",
    "url": "https://rcctvm.gov.in/recruitments",
@@ -1868,6 +1732,14 @@
    "status": "503"
   },
   {
+   "i": 590,
+   "name": "Government Medical College & Hospital, Nagpur",
+   "url": "https://gmcnagpur.org/recruitments",
+   "state": "Maharashtra",
+   "group": "Medical colleges",
+   "status": "ENOTFOUND"
+  },
+  {
    "i": 595,
    "name": "Government Medical College, Chandrapur",
    "url": "https://gmcchandrapur.org/advertisement.php",
@@ -1884,20 +1756,12 @@
    "status": "503"
   },
   {
-   "i": 600,
-   "name": "Government Medical College, Jalgaon",
-   "url": "https://gmcjalgaon.org/",
-   "state": "Maharashtra",
-   "group": "Medical colleges",
-   "status": "timeout"
-  },
-  {
    "i": 604,
    "name": "Government Medical College, Parbhani",
    "url": "https://www.gmcparbhani.org/",
    "state": "Maharashtra",
    "group": "Medical colleges",
-   "status": "403"
+   "status": "ENOTFOUND"
   },
   {
    "i": 606,
@@ -2002,22 +1866,6 @@
    "state": "Odisha",
    "group": "Medical colleges",
    "status": "503"
-  },
-  {
-   "i": 645,
-   "name": "CMC Ludhiana",
-   "url": "https://www.cmcludhiana.in",
-   "state": "Punjab",
-   "group": "Medical colleges",
-   "status": "404"
-  },
-  {
-   "i": 658,
-   "name": "Govt Kilpauk Medical College Chennai",
-   "url": "https://www.kilpaukmedicalcollege.ac.in/",
-   "state": "Tamil Nadu",
-   "group": "Medical colleges",
-   "status": "403"
   },
   {
    "i": 668,
