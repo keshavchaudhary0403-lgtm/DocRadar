@@ -1680,6 +1680,34 @@
       }
     },
     {
+      "id": "dmho-kamareddy-mo-palle-dawakhana-2026-11-25",
+      "title": "Medical Officer (MBBS), Palle Dawakhana / HWC (NHM contract) – pool of 25 MLHP/MO posts",
+      "org": "District Medical & Health Officer, Kamareddy (NHM Telangana)",
+      "category": "mo",
+      "location": "Kamareddy, Telangana",
+      "state": "Telangana",
+      "posts": 25,
+      "salary": "₹40,000/month (MO)",
+      "mode": "Apply offline",
+      "lastDate": "2026-11-25",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "The 25 MLHP/CHO/MO posts are a shared pool with BAMS MOs and BSc Nursing/GNM MLHPs. MBBS with Telangana Medical Council registration; age 18–44 on 01.07.2026 with relaxations as per rules. Merit-based selection; 1-year contract. Submit the form in person at the DM&HO office, Kamareddy, with ₹500 DD. The notice prints no last date; the district recruitment page lists 19–25 Nov 2026. R.C. No. 679/2026.",
+      "officialUrl": "https://kamareddy.telangana.gov.in/notice_category/recruitment/",
+      "noticePdf": "https://cdn.s3waas.gov.in/s3c2626d850c80ea07e7511bbae4c76f4b/uploads/2026/11/17949866154096.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/dmho-kamareddy-recruitment-2026-apply-offline-for-60-staff-nurse-pharmacist-and-more-posts-3084218",
+      "addedOn": "2026-11-25",
+      "verified": true,
+      "requirements": {
+        "councils": [
+          "Telangana State Medical Council"
+        ],
+        "maxAge": 44,
+        "ageOn": "2026-07-01",
+        "ageRelax": true
+      }
+    },
+    {
       "id": "rampurhat-hd-gdmo-medical-officer-2026-11-26",
       "title": "GDMO / Medical Officer (contract) – 12 posts",
       "org": "District Health & FW Samiti, Rampurhat Health District",
@@ -1828,6 +1856,32 @@
       "requirements": {
         "registration": "permanent",
         "maxAge": 65
+      }
+    },
+    {
+      "id": "dhfws-vijayanagara-nhm-mo-2026-11-26",
+      "title": "Medical Officer (MBBS), NHM contract – 20 posts",
+      "org": "District Health & Family Welfare Society, Vijayanagara (NHM Karnataka)",
+      "category": "mo",
+      "location": "Hosapete, Karnataka",
+      "state": "Karnataka",
+      "posts": 20,
+      "salary": "₹60,000/month",
+      "mode": "Apply online",
+      "lastDate": "2026-11-26",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Posts under NHM/UHC/NUHM/NCD/Namma Clinic (15 Kalyana Karnataka, 5 non-KK). MBBS with compulsory internship, Karnataka Medical Council registration, knowledge of Kannada; age not above 60. Apply online only via the link on vijayanagara.nic.in (Seva Sindhu) by 26.11.2026. Notice dated 07.11.2026; read from an aggregator-hosted copy, as the district site shows no 2026 notice.",
+      "officialUrl": "https://vijayanagara.nic.in",
+      "sourceUrl": "https://www.karnatakacareers.org/dhfws-vijayanagara-recruitment-2026-apply-online-for-61-medical-officer-technician/",
+      "addedOn": "2026-11-25",
+      "verified": false,
+      "requirements": {
+        "internshipBy": "lastDate",
+        "councils": [
+          "Karnataka Medical Council"
+        ],
+        "maxAge": 60
       }
     },
     {
@@ -2350,6 +2404,58 @@
         "maxAge": 30,
         "ageOn": "2026-11-30",
         "ageRelax": true
+      }
+    },
+    {
+      "id": "lnh-delhi-jr-nonpg-adhoc-2026-11-30",
+      "title": "Junior Resident (Non-PG, ad hoc 89 days) – 32 posts",
+      "org": "Lok Nayak Hospital (LNH), Govt of NCT of Delhi",
+      "category": "jr",
+      "location": "New Delhi, Delhi",
+      "state": "Delhi",
+      "posts": 32,
+      "salary": "Pay Level-10 (₹56,100 basic) + allowances",
+      "mode": "Apply offline",
+      "lastDate": "2026-11-30",
+      "eventDate": "2026-12-15",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Tentative 32 posts (UR 15, OBC 8, SC 4, ST 2, EWS 3; 1 PwBD). Hard-copy applications only, by 1:00 PM on 30.11.2026 at E-I Branch, MRD Block, 1st Floor, LNH; interview 15.12.2026 at 10 AM, Room 139, OPD 1st Floor. Internship completed after 30.11.2024 and before 30.11.2026; DMC registration (acknowledgement slip accepted at interview); age not above 30 on 01.11.2026 (SC/ST +5, OBC +3; may be raised to 40 if candidates are short). OBC/EWS certificates must be from GNCTD. Notice F.No.57(4295)/JR/Adhoc/Interview/E-I/LNH/2026/3343 dated 25.11.2026.",
+      "officialUrl": "https://lnjp.delhi.gov.in/",
+      "noticePdf": "https://lnjp.delhi.gov.in/sites/default/files/lnjp/universal/notice_for_interview_post.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/lnh-junior-resident-non-pg-recruitment-2026-3084372",
+      "addedOn": "2026-11-25",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "2026-11-30",
+        "councils": [
+          "Delhi Medical Council"
+        ],
+        "maxAge": 30,
+        "ageOn": "2026-11-01",
+        "ageRelax": true
+      }
+    },
+    {
+      "id": "smimer-surat-mru-rs1-2026-11-30",
+      "title": "Research Scientist-I, Multi-Disciplinary Research Unit – 1 post",
+      "org": "SMIMER (Surat Municipal Corporation), Surat",
+      "category": "other",
+      "location": "Surat, Gujarat",
+      "state": "Gujarat",
+      "posts": 1,
+      "salary": "₹56,000/month + HRA",
+      "mode": "Apply offline",
+      "lastDate": "2026-11-30",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "DHR-ICMR MRU post, 11-month contract (renewable). MBBS from an NMC-recognised institute (or M.Sc + PhD / first-class M.Sc life sciences); upper age 35 per DHR-ICMR norms; in-service candidates need NOC. Send resume, certificates and form by post or in person to The Dean, D-Block, SMIMER, Umarwada, Surat-395010, envelope marked 'Application for the post of Research Scientist-I'. PRO No. 353/2026 dated 20.11.2026.",
+      "officialUrl": "https://www.suratmunicipal.gov.in/smimer/Home/NewsAndUpdates",
+      "noticePdf": "https://www.suratmunicipal.gov.in/smimer/Content/documents/NewsAndUpdates/SMIMER_MRU_ADVERTISEMENT.pdf",
+      "sourceUrl": "https://www.suratmunicipal.gov.in/smimer/Home/NewsAndUpdates",
+      "addedOn": "2026-11-25",
+      "verified": true,
+      "requirements": {
+        "maxAge": 35
       }
     },
     {
@@ -2985,6 +3091,28 @@
       "requirements": {
         "registration": "any",
         "maxAge": 50
+      }
+    },
+    {
+      "id": "iit-kgp-prs1-medical-pragaticar-2026-12-09",
+      "title": "Project Research Scientist-I (Medical), ICMR PRAGATICAR project – 1 post",
+      "org": "IIT Kharagpur (SRIC, Dept. of Mechanical Engineering)",
+      "category": "other",
+      "location": "Kharagpur, West Bengal",
+      "state": "West Bengal",
+      "posts": 1,
+      "salary": "₹67,000/month consolidated",
+      "mode": "Apply online",
+      "lastDate": "2026-12-09",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "ICMR-funded centre for frugal diagnostics, regenerative/personalised healthcare and AI/digital health; one year, extendable up to four. Essential: MBBS/BVSc/BDS or equivalent; experience in clinical/public-health research or medical-device evaluation desirable. Upper age 35. Apply online on the IIT Kharagpur ERP portal; no fee. Advt IIT/SRIC/R/CIH/2026/104 dated 25.11.2026 (PRS-II/III in the same project need experience or PG).",
+      "officialUrl": "https://erp.iitkgp.ac.in/SRICStaffRecruitment/AdvertiseView.jsp?serial_no=6163",
+      "sourceUrl": "https://erp.iitkgp.ac.in/SRICStaffRecruitment/AdvertiseView.jsp?serial_no=6163",
+      "addedOn": "2026-11-25",
+      "verified": true,
+      "requirements": {
+        "maxAge": 35
       }
     },
     {
@@ -3658,5 +3786,5 @@
       "requirements": {}
     }
   ],
-  "updatedAt": "2026-11-25T08:14:50.681Z"
+  "updatedAt": "2026-11-25T08:42:50.465Z"
 }
