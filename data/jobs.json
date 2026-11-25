@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "jobs": [
     {
       "id": "asacs-mo-art-ost-dmch-diphu-walkin-2026-11-13",
@@ -1667,11 +1667,12 @@
       "lastDate": "2026-11-25",
       "eventDate": "2026-11-25",
       "eligibility": "after-internship",
-      "eligibilityNote": "Contract for one year or until a regular officer joins, at ESIS dispensaries including Pen, Patalganga, Mangaon, Kharghar, Wada, Kalyan, Alibag and Bhiwandi. Registration 11:00 AM–5:00 PM on 25.11.2026 at the AMO office, Wagle Estate Road No. 33, Thane, with originals, 2 sets of copies, MMC/MCI registration and 2 photos. Age up to 69 on the interview date. Details from an aggregator copy of the MH-ESIS letter of 23.11.2026; not yet on an official site.",
+      "eligibilityNote": "Contract for one year or until a regular officer joins, at ESIS dispensaries including Pen, Patalganga, Mangaon, Kharghar, Wada, Kalyan, Alibag and Bhiwandi. Registration 11:00 AM–5:00 PM on 25.11.2026 at the AMO office, Wagle Estate Road No. 33, Thane, with originals, 2 sets of copies, MMC/MCI registration and 2 photos. Age up to 69 on the interview date. Official notice (MH-ESIS letter of 23.11.2026) on esic.gov.in.",
       "officialUrl": "https://www.esic.gov.in/recruitments",
-      "sourceUrl": "https://govtjobsalert.in/maharashtra-esis-thane-medical-officer-recruitment-2026/",
+      "noticePdf": "https://esic.gov.in/attachments/recruitmentfile/Walk_In_Interview_for_the_post_of_contractual_Medical_Officer_1795442853.pdf",
+      "sourceUrl": "https://esic.gov.in/recruitments",
       "addedOn": "2026-11-24",
-      "verified": false,
+      "verified": true,
       "requirements": {
         "registration": "any",
         "maxAge": 69,
@@ -2121,6 +2122,29 @@
       }
     },
     {
+      "id": "smc-shillong-tutor-demonstrator-inservice-2026-11-30",
+      "title": "Tutor/Demonstrator (in-service doctors) – 3 posts",
+      "org": "Shillong Medical College (DHS Medical Education & Research, Meghalaya)",
+      "category": "other",
+      "location": "Shillong, Meghalaya",
+      "state": "Meghalaya",
+      "posts": 3,
+      "salary": null,
+      "mode": "Apply offline",
+      "lastDate": "2026-11-30",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Advertisement No. DHSME&R.189/SMC/HR/IV/291/2026/8073 dated 16 Nov 2026, open only to in-service doctors of the Health & Family Welfare Department, Govt of Meghalaya (pay protected). MBBS; 1 post each in Physiology, Pharmacology and Community Medicine; below 45 years at appointment. Send Annexure-I and II with documents and appointment letter copy by post to DME, Shillong, or by email to smcfacultyrecruitment25@gmail.com by 5:00 PM on 30 Nov 2026; walk-in interview follows.",
+      "officialUrl": "https://meghealth.gov.in",
+      "noticePdf": "https://meghealth.gov.in/news/2026-11-16-DHSMER-189-SMC-HR-IV-291-2026-8073Advertisement%20pdf.pdf",
+      "sourceUrl": "https://meghealth.gov.in",
+      "addedOn": "2026-11-25",
+      "verified": true,
+      "requirements": {
+        "maxAge": 44
+      }
+    },
+    {
       "id": "icmr-nirwh-mumbai-prs2-medical-endocare-2026-11-30",
       "title": "Project Research Scientist-II (Medical), ICMR EndoCare India project – 1 post",
       "org": "ICMR-National Institute for Research on Women's Health (NIRWH), Parel",
@@ -2326,6 +2350,29 @@
         "maxAge": 30,
         "ageOn": "2026-11-30",
         "ageRelax": true
+      }
+    },
+    {
+      "id": "kvafsu-vch-hebbal-mo-walkin-2026-12-01",
+      "title": "Medical Officer (full time, contract) – 1 post, walk-in",
+      "org": "Karnataka Veterinary, Animal and Fisheries Sciences University (KVAFSU) – Veterinary College, Hebbal",
+      "category": "mo",
+      "location": "Bengaluru, Karnataka",
+      "state": "Karnataka",
+      "posts": 1,
+      "salary": "₹70,000/month (consolidated)",
+      "mode": "Walk-in",
+      "lastDate": "2026-12-01",
+      "eventDate": "2026-12-01",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Notification No. VCH/AAO/CB-MO/2026-27/517 dated 18.11.2026, subject to University permission. MBBS with at least 3 years' experience in a recognised nursing home, hospital or educational institution dispensary; extra medical qualification desirable. Walk-in at 10:30 AM on 01.12.2026 in the Dean's chamber, Veterinary College, Hebbal, with bio-data in the prescribed format, originals and one set of copies.",
+      "officialUrl": "https://kvafsu.edu.in",
+      "noticePdf": "https://kvafsu.edu.in/notification/2026/recruitment/contract/Medical%20officer.pdf",
+      "sourceUrl": "https://kvafsu.edu.in",
+      "addedOn": "2026-11-25",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "eventDate"
       }
     },
     {
@@ -2665,11 +2712,12 @@
       "lastDate": "2026-12-03",
       "eventDate": "2026-12-03",
       "eligibility": "after-internship",
-      "eligibilityNote": "Advt No. 02 of 2026 (with faculty and SR posts): JR 2 posts (UR 1, OBC 1), interview 03.12.2026, reporting 9:30–10:30 AM at ESIC MCH, Vivekanand Sarani, Asansol. Age as per GoI guidelines; post-MBBS clinical experience preferred; NMC/State council registration needed. Fee ₹500 by DD (SC/ST/women/ExSM/PH exempt). Details from aggregator copies; the official esic.gov.in PDF could not be opened from here.",
+      "eligibilityNote": "Advt No. 02 of 2026 (with faculty and SR posts): JR 2 posts (UR 1, OBC 1), interview 03.12.2026, reporting 9:30–10:30 AM at ESIC MCH, Vivekanand Sarani, Asansol. Age as per GoI guidelines; post-MBBS clinical experience preferred; NMC/State council registration needed. Fee ₹500 by DD (SC/ST/women/ExSM/PH exempt).",
       "officialUrl": "https://www.esic.gov.in/recruitments",
+      "noticePdf": "https://esic.gov.in/attachments/recruitmentfile/Advertisement_No_02_of_2026_Walk_in_interview_for_the_Recruitment_of_Teaching_Faculty_and_SR_amp_JR_on_Contractual_Basis_reg_1795426434.pdf",
       "sourceUrl": "https://www.freejobalert.com/articles/esic-asansol-recruitment-2026-walkin-for-110-junior-resident-professor-and-more-posts-3083842",
       "addedOn": "2026-11-24",
-      "verified": false,
+      "verified": true,
       "requirements": {
         "internshipBy": "eventDate",
         "registration": "any"
@@ -2940,6 +2988,29 @@
       }
     },
     {
+      "id": "icmr-nirwh-mrhru-vani-prs2-medical-2026-12-10",
+      "title": "Project Research Scientist-II (Medical / Non-Medical), Model Rural Health Research Unit – 1 post",
+      "org": "ICMR-National Institute for Research on Women's Health (NIRWH) – MRHRU Vani",
+      "category": "other",
+      "location": "Vani, Dindori, Nashik, Maharashtra",
+      "state": "Maharashtra",
+      "posts": 1,
+      "salary": "₹88,000/month for Medical (₹80,000 + 10% HRA)",
+      "mode": "Apply online",
+      "lastDate": "2026-12-10",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Medical candidates: MBBS with 3 years' post-qualification experience, or MBBS with MD/MPH, or MBBS with PhD. Age limit 40. One post, filled as Medical or Non-Medical; posting at MRHRU Vani, Taluka Dindori, Nashik, with field work in rural/tribal areas. Apply online via the outsourcing agency portal (gad-hrms.frevo.co.in/careers) by 10 Dec 2026; shortlisted candidates are interviewed.",
+      "officialUrl": "https://nirwoh.icmr.gov.in/",
+      "noticePdf": "https://nirwoh.icmr.gov.in/wp-content/uploads/2026/11/Final-Requisition-3-Dr-RG-MRHRU-Vani.pdf",
+      "sourceUrl": "https://nirwoh.icmr.gov.in/",
+      "addedOn": "2026-11-25",
+      "verified": true,
+      "requirements": {
+        "maxAge": 40
+      }
+    },
+    {
       "id": "cuj-medical-officer-walkin-2026-12-11",
       "title": "Medical Officer (contract) – 1 post, walk-in",
       "org": "Central University of Jammu",
@@ -2960,6 +3031,29 @@
       "verified": true,
       "requirements": {
         "registration": "any"
+      }
+    },
+    {
+      "id": "afmc-pune-prs1-medical-icmr-2026-12-12",
+      "title": "Project Research Scientist-I (Medical), ICMR extramural project – 1 post",
+      "org": "Armed Forces Medical College (AFMC) – Department of Medical Research",
+      "category": "other",
+      "location": "Pune, Maharashtra",
+      "state": "Maharashtra",
+      "posts": 1,
+      "salary": "₹67,000 + HRA",
+      "mode": "Apply online",
+      "lastDate": "2026-12-12",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Temporary post under an ICMR extramural project. Essential: BHMS/BDS/MPH/MBBS; desirable 1–3 years' research project experience; age limit 45. Email the application with biodata in the given format to mrcafmc@gmail.com by 12 Dec 2026, 5:00 PM; selection by interview.",
+      "officialUrl": "https://afmc.nic.in/",
+      "noticePdf": "https://afmc.nic.in/profilePhoto?filePath=NmF45AsvkZL9yxV4OqYSDjuNLXSpTPhrbFoRV6Te6TJjElawdfw1fd35VZWKYRa672zkE1K4vBK+RsLodLeQmX2PnctFJ1jto5gnc7vXvIlu+33d6q5Y4uAtigGQtG6C",
+      "sourceUrl": "https://afmc.nic.in/",
+      "addedOn": "2026-11-25",
+      "verified": true,
+      "requirements": {
+        "maxAge": 45
       }
     },
     {
@@ -3369,21 +3463,21 @@
     },
     {
       "id": "mramc-ambedkarnagar-psychiatry-jr-wednesday-walkin-rolling-2026",
-      "title": "Junior Resident, Psychiatry (contract) – walk-in every Wednesday",
+      "title": "Junior Resident (Orthopaedics, Psychiatry, General Surgery) / Tutor (Radiology), contract – walk-in every Wednesday",
       "org": "Mahamaya Rajkiya Allopathic Medical College (MRAMC), Ambedkar Nagar",
       "category": "jr",
       "location": "Ambedkar Nagar, Uttar Pradesh",
       "state": "Uttar Pradesh",
-      "posts": null,
-      "salary": null,
+      "posts": 5,
+      "salary": "₹56,100/month (Level 10) for JR",
       "mode": "Walk-in",
       "lastDate": null,
       "eventDate": null,
       "eligibility": "after-internship",
-      "eligibilityNote": "The September 2026 employment notice (re-issue of notice dated 09.04.2026) invites candidates to a walk-in every Wednesday for contract Senior Resident posts in 6 departments and a Junior Resident post in Psychiatry. Qualifications follow NMC norms. The appointment ends on 'Last Come First Go' when bonded residents join. Interview dates and updates are posted on mramc.ac.in. The vacancy table is in a scanned Hindi PDF (it shows about 1 vacant JR post), so confirm with the college before travelling.",
+      "eligibilityNote": "The November 2026 notice, digitally signed 23.11.2026, invites candidates to a walk-in every Wednesday for contract posts in several departments. Vacant posts: Junior Resident in Orthopaedics (1), Psychiatry (1) and General Surgery (2); Tutor in Radiology (1); plus Senior Resident posts. Qualifications follow NMC norms. The appointment ends on 'Last Come First Go' when bonded residents join. No TA/DA. Updates are posted on mramc.ac.in.",
       "officialUrl": "https://mramc.ac.in/category/vacancies/",
-      "noticePdf": "https://mramc.ac.in/wp-content/uploads/2026/09/New-Doc-09-28-2026-12.58.pdf",
-      "sourceUrl": "https://mramc.ac.in/%e0%a4%b5%e0%a4%bf%e0%a4%ad%e0%a4%bf%e0%a4%a8%e0%a5%8d%e0%a4%a8-%e0%a4%b5%e0%a4%bf%e0%a4%ad%e0%a4%be%e0%a4%97%e0%a5%8b%e0%a4%82-%e0%a4%95%e0%a5%87-jr-sr-%e0%a4%b0%e0%a4%bf%e0%a4%95%e0%a5%8d%e0%a4%a4/",
+      "noticePdf": "https://mramc.ac.in/wp-content/uploads/2026/11/New-Doc-11-23-2026-16.18.pdf",
+      "sourceUrl": "https://mramc.ac.in/%e0%a4%b5%e0%a4%bf%e0%a4%ad%e0%a4%bf%e0%a4%a8%e0%a5%8d%e0%a4%a8-%e0%a4%b5%e0%a4%bf%e0%a4%ad%e0%a4%be%e0%a4%97%e0%a5%8b%e0%a4%82-%e0%a4%95%e0%a5%87-jr-sr-%e0%a4%b0%e0%a4%bf%e0%a4%95%e0%a5%8d%e0%a4%a4-2/",
       "addedOn": "2026-11-14",
       "verified": true,
       "requirements": {}
@@ -3564,5 +3658,5 @@
       "requirements": {}
     }
   ],
-  "updatedAt": "2026-11-24T01:44:12.646Z"
+  "updatedAt": "2026-11-25T08:14:50.681Z"
 }
