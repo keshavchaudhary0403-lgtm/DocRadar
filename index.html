@@ -159,9 +159,10 @@ kbd{font-family:"Geist Mono",monospace;font-size:11px;padding:2px 7px;border-rad
 .switch input:checked::after{transform:translateX(16px)}
 
 /* Section heads */
-.sec{display:flex;align-items:baseline;justify-content:space-between;margin:22px 0 12px}
+.sec{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;justify-content:space-between;margin:22px 0 12px}
 .sec h2{font-size:18px;letter-spacing:-.02em;margin:0;font-weight:650}
 .sec span{color:var(--muted);font-size:13px}
+.sec-r{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}
 
 /* Cards */
 .grid{display:grid;grid-template-columns:1fr;gap:12px}
@@ -686,7 +687,7 @@ const days = d => d ? Math.round((new Date(d + "T00:00:00") - today) / 864e5) : 
 const fmt = (d, o={day:"numeric", month:"short", year:"numeric"}) => d ? new Date(d + "T00:00:00").toLocaleDateString("en-IN", o) : "";
 
 const state = {
-  view: store.get("dr-view", "radar"), cat:"all", region:"all", q:"", quick:null,
+  view: store.get("dr-view", "radar"), cat:"all", region:"all", q:"", quick:null, sort:"latest",
   eligible: false, saved: store.get("dr-saved"), applied: store.get("dr-applied"),
   profile: store.get("dr-profile")
 };
@@ -750,6 +751,7 @@ const isNew = j => days(j.addedOn) !== null && days(j.addedOn) >= -2;
 const isSoon = j => j.lastDate && days(j.lastDate) >= 0 && days(j.lastDate) <= 7;
 const tone = d => d === null ? "var(--faint)" : d <= 3 ? "var(--red)" : d <= 7 ? "var(--amber)" : "var(--green)";
 const byDeadline = (a, b) => (a.lastDate ?? "9999").localeCompare(b.lastDate ?? "9999");
+const byLatest = (a, b) => (b.addedOn || "").localeCompare(a.addedOn || "") || byDeadline(a, b);
 
 /* ---------- Personal eligibility ---------- */
 const RELAX = { UR:0, EWS:0, OBC:3, SC:5, ST:5 };
@@ -1042,10 +1044,10 @@ function viewRadar(){
 
 function resultsHTML(){
   if (!loaded) return `<div class="grid" style="margin-top:20px">${'<div class="sk"></div>'.repeat(4)}</div>`;
-  const list = JOBS.filter(isOpen).filter(matches).sort(byDeadline);
+  const list = JOBS.filter(isOpen).filter(matches).sort(state.sort === "deadline" ? byDeadline : byLatest);
   const closed = JOBS.filter(j => !isOpen(j)).filter(inArea).sort((a, b) => b.lastDate.localeCompare(a.lastDate));
   const title = state.quick === "soon" ? "Closing this week" : state.quick === "new" ? "Fresh in the last 48 hours" : state.cat !== "all" ? CAT[state.cat].label : "All openings";
-  return `<div class="sec"><h2>${title}</h2><span>${list.length} result${list.length === 1 ? "" : "s"}${state.region === "mine" ? " in My locations" : ""} · sorted by deadline</span></div>
+  return `<div class="sec"><h2>${title}</h2><div class="sec-r"><span>${list.length} result${list.length === 1 ? "" : "s"}${state.region === "mine" ? " in My locations" : ""}</span><div class="seg" role="group" aria-label="Sort by">${[["latest","Latest"], ["deadline","Deadline"]].map(([k, l]) => `<button data-sort="${k}" aria-pressed="${state.sort === k}">${l}</button>`).join("")}</div></div></div>
     ${list.length ? `<div class="grid">${list.map(card).join("")}</div>`
       : `<div class="empty">${ic("radar")}<b>Nothing on the radar here yet</b>${state.region === "mine" ? `No openings in your locations right now. <button class="link" data-region="all">Show Anywhere</button> or <button class="link" data-goto-pf="states">add more cities</button>.` : "Try a different filter. New openings land every morning."}</div>`}
     ${closed.length ? `<details class="closed"><summary>${ic("archive")}Recently closed · ${closed.length}${ic("chev")}</summary>
@@ -1494,6 +1496,7 @@ document.addEventListener("click", e => {
   }
   if ((el = t.closest("[data-sv]"))) { savedFilter = el.dataset.sv; return render(); }
   if ((el = t.closest("[data-src-group]"))) { srcGroup = el.dataset.srcGroup; return render(); }
+  if ((el = t.closest("[data-sort]"))) { state.sort = el.dataset.sort; return transition(() => render()); }
   if ((el = t.closest("[data-cat]"))) { state.cat = el.dataset.cat; return transition(() => render()); }
   if ((el = t.closest("[data-region]"))) {
     if (el.dataset.region === "mine" && !hasMyLocs()) { toast("Tick a state or city first", "pin"); return gotoProfileField("states"); }
