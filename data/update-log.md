@@ -1,5 +1,10 @@
 # DocRadar update log
 
+## 2026-11-26 (catch-up)
+- New: 1 (ESIC Hospital Tinsukia – Senior Resident against GDMO (contract, 1 year), 4 posts (A&E 3, Medicine 1), apply by 3 Dec, interview 8 Dec (Assam; official esic.gov.in PDF dated 26.11.2026; MBBS with 2 years' experience accepted if no PG candidates)) · Updated: 2 (NIMS Hyderabad MO Emergency Medicine and BEL Navi Mumbai/Pune MO E-II now verified with their official PDFs from nims.edu.in and bel-india.in; details unchanged, notes completed)
+- Sources: rescanned 249 failed from the morning · ok 215 · still failing 34: employmentnews.gov.in, natboard.edu.in, careers.ntpc.co.in, vizagsteel.com, powergrid.in, iocl.com, vizagport.com, iitgn.ac.in, nirth.res.in, aiimspatna.edu.in, rmlh.mohfw.gov.in, state.bihar.gov.in, health.mp.gov.in, rajswasthya.nic.in, health.sikkim.gov.in, dgmhup.gov.in, hrb.wb.gov.in, gitam.edu, gmcrajamahendravaram.ap.gov.in, pdumcrajkot.org, pgimsrohtak.ac.in, gmcbhiwani.in, jnmc.edu, hbtmc.edu.in, gmchsng.odisha.gov.in, kims.kiit.ac.in, srmmch.odisha.gov.in, smc.saveetha.com, llrmmedicalcollege.nic.in, brdmc.ac.in, fortishealthcare.com, in.indeed.com, maxhealthcare.in (404 redirect to peoplestrong portal), sjmch.odisha.gov.in
+- Notes: checked and not added: BPCL Kochi Refinery MO (2023 advert), Ramgarh Cantt GDMO (walk-in 12 Nov), SCB Cuttack MO DTC/blood van (28 Oct), AMCH Dibrugarh MO notices (Mar/May 2026), SVIMS Community Medicine MO (closed), Goa DHS walk-ins (May–Aug 2026), DSHM walk-in (2024), NHM Birbhum GDMO (registration closed 25 Nov, already listed), HPESI Parwanoo (specialists), Gujarat 11-month contract (faculty, 21 Oct), CPCL/JNPA (no medical posts), ESIC Bhopal/Vapi/Faridabad BIC (SR/specialists, PG). Already listed: CRPF GDMO, NITRD MO, ESIC Asansol, Rampurhat HD, Assam SACS ART/OST, LNH JR.
+
 ## 2026-11-26
 - New: 4
   - UAS Dharwad, College of Agriculture Vijayapura – Assistant Medical Officer (temporary), 1 post, walk-in 11 Dec (Karnataka; notice on the UASD circulars page, Google Drive scan; needs 3 years' experience)

@@ -1995,5 +1995,284 @@
    "group": "Medical colleges",
    "status": "503"
   }
- ]
+ ],
+ "catchup": {
+  "date": "2026-11-26",
+  "scanned": 249,
+  "ok": 215,
+  "stillFailed": [
+   {
+    "i": 1,
+    "name": "Employment News (Govt of India)",
+    "url": "https://employmentnews.gov.in",
+    "state": "All India",
+    "group": "National portals",
+    "status": "UND_ERR_CONNECT_TIMEOUT"
+   },
+   {
+    "i": 4,
+    "name": "NBEMS (NEET-PG, DNB)",
+    "url": "https://natboard.edu.in",
+    "state": "All India",
+    "group": "Exams",
+    "status": "403"
+   },
+   {
+    "i": 16,
+    "name": "NTPC",
+    "url": "https://careers.ntpc.co.in",
+    "state": "All India",
+    "group": "PSUs",
+    "status": "ECONNREFUSED"
+   },
+   {
+    "i": 20,
+    "name": "RINL Vizag Steel",
+    "url": "https://www.vizagsteel.com",
+    "state": "Andhra Pradesh",
+    "group": "PSUs",
+    "status": "UND_ERR_CONNECT_TIMEOUT"
+   },
+   {
+    "i": 30,
+    "name": "Power Grid",
+    "url": "https://www.powergrid.in",
+    "state": "Haryana",
+    "group": "PSUs",
+    "status": "UND_ERR_CONNECT_TIMEOUT"
+   },
+   {
+    "i": 44,
+    "name": "Indian Oil (IOCL)",
+    "url": "https://iocl.com/latest-job-opening",
+    "state": "Maharashtra",
+    "group": "PSUs",
+    "status": "307"
+   },
+   {
+    "i": 89,
+    "name": "Visakhapatnam Port Authority",
+    "url": "https://www.vizagport.com/careers/",
+    "state": "Andhra Pradesh",
+    "group": "Central Govt",
+    "status": "ERR_TLS_CERT_ALTNAME_INVALID (curl: curl 60)"
+   },
+   {
+    "i": 131,
+    "name": "IIT Gandhinagar",
+    "url": "https://iitgn.ac.in/careers",
+    "state": "Gujarat",
+    "group": "Central Govt",
+    "status": "403"
+   },
+   {
+    "i": 168,
+    "name": "ICMR-NITHR (NIRTH) Jabalpur",
+    "url": "https://www.nirth.res.in/vacancies.php",
+    "state": "Madhya Pradesh",
+    "group": "Central Govt",
+    "status": "UND_ERR_CONNECT_TIMEOUT"
+   },
+   {
+    "i": 297,
+    "name": "AIIMS Patna",
+    "url": "https://aiimspatna.edu.in",
+    "state": "Bihar",
+    "group": "Central Hospitals",
+    "status": "307"
+   },
+   {
+    "i": 303,
+    "name": "Dr. RML Hospital, Delhi",
+    "url": "https://rmlh.mohfw.gov.in/",
+    "state": "Delhi",
+    "group": "Central Hospitals",
+    "status": "UNABLE_TO_VERIFY_LEAF_SIGNATURE (curl: curl 28)"
+   },
+   {
+    "i": 346,
+    "name": "Health Department Bihar",
+    "url": "https://state.bihar.gov.in/health/CitizenHome.html",
+    "state": "Bihar",
+    "group": "State Govt",
+    "status": "UNABLE_TO_VERIFY_LEAF_SIGNATURE (curl: 302)"
+   },
+   {
+    "i": 380,
+    "name": "Health Department Madhya Pradesh",
+    "url": "https://health.mp.gov.in/",
+    "state": "Madhya Pradesh",
+    "group": "State Govt",
+    "status": "UNABLE_TO_VERIFY_LEAF_SIGNATURE (curl: curl 60)"
+   },
+   {
+    "i": 403,
+    "name": "Rajasthan Health Dept",
+    "url": "https://rajswasthya.nic.in",
+    "state": "Rajasthan",
+    "group": "State Govt",
+    "status": "UND_ERR_CONNECT_TIMEOUT"
+   },
+   {
+    "i": 406,
+    "name": "Sikkim Health",
+    "url": "https://health.sikkim.gov.in",
+    "state": "Sikkim",
+    "group": "State Govt",
+    "status": "UND_ERR_CONNECT_TIMEOUT"
+   },
+   {
+    "i": 418,
+    "name": "DGMH Uttar Pradesh",
+    "url": "https://dgmhup.gov.in/",
+    "state": "Uttar Pradesh",
+    "group": "State Govt",
+    "status": "ECONNRESET"
+   },
+   {
+    "i": 426,
+    "name": "West Bengal Health Recruitment Board",
+    "url": "https://hrb.wb.gov.in/",
+    "state": "West Bengal",
+    "group": "State Govt",
+    "status": "CERT_HAS_EXPIRED (curl: curl 60)"
+   },
+   {
+    "i": 434,
+    "name": "GITAM Institute of Medical Sciences and Research, Visakhapatnam",
+    "url": "https://www.gitam.edu/gitam-medical-college-visakhapatnam",
+    "state": "Andhra Pradesh",
+    "group": "Medical colleges",
+    "status": "403"
+   },
+   {
+    "i": 440,
+    "name": "Government Medical College Rajamahendravaram",
+    "url": "https://gmcrajamahendravaram.ap.gov.in/",
+    "state": "Andhra Pradesh",
+    "group": "Medical colleges",
+    "status": "fetch failed"
+   },
+   {
+    "i": 502,
+    "name": "PDU Government Medical College, Rajkot",
+    "url": "https://pdumcrajkot.org/latest-updates/",
+    "state": "Gujarat",
+    "group": "Medical colleges",
+    "status": "ERR_TLS_CERT_ALTNAME_INVALID (curl: curl 60)"
+   },
+   {
+    "i": 513,
+    "name": "Pt. B.D. Sharma PGIMS, Rohtak",
+    "url": "http://www.pgimsrohtak.ac.in/",
+    "state": "Haryana",
+    "group": "Medical colleges",
+    "status": "UND_ERR_CONNECT_TIMEOUT"
+   },
+   {
+    "i": 514,
+    "name": "Pt. Neki Ram Sharma Govt. Medical College, Bhiwani",
+    "url": "https://gmcbhiwani.in/",
+    "state": "Haryana",
+    "group": "Medical colleges",
+    "status": "timeout"
+   },
+   {
+    "i": 535,
+    "name": "Jawaharlal Nehru Medical College (KAHER), Belagavi",
+    "url": "https://jnmc.edu/",
+    "state": "Karnataka",
+    "group": "Medical colleges",
+    "status": "403"
+   },
+   {
+    "i": 606,
+    "name": "HBT Medical College & Dr R.N. Cooper Hospital, Mumbai",
+    "url": "https://hbtmc.edu.in/",
+    "state": "Maharashtra",
+    "group": "Medical colleges",
+    "status": "ENOTFOUND"
+   },
+   {
+    "i": 628,
+    "name": "Government Medical College & Hospital, Sundargarh",
+    "url": "https://gmchsng.odisha.gov.in/tender_advertisement/",
+    "state": "Odisha",
+    "group": "Medical colleges",
+    "status": "500"
+   },
+   {
+    "i": 631,
+    "name": "Kalinga Institute of Medical Sciences (KIMS), Bhubaneswar",
+    "url": "https://kims.kiit.ac.in/",
+    "state": "Odisha",
+    "group": "Medical colleges",
+    "status": "403"
+   },
+   {
+    "i": 638,
+    "name": "Saheed Rendo Majhi Medical College & Hospital (GMCH), Kalahandi",
+    "url": "https://srmmch.odisha.gov.in/",
+    "state": "Odisha",
+    "group": "Medical colleges",
+    "status": "ECONNREFUSED"
+   },
+   {
+    "i": 668,
+    "name": "Saveetha Medical College and Hospital, Chennai",
+    "url": "https://smc.saveetha.com/",
+    "state": "Tamil Nadu",
+    "group": "Medical colleges",
+    "status": "ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR (curl: curl 35)"
+   },
+   {
+    "i": 710,
+    "name": "LLRM Medical College, Meerut",
+    "url": "https://llrmmedicalcollege.nic.in",
+    "state": "Uttar Pradesh",
+    "group": "Medical colleges",
+    "status": "UND_ERR_CONNECT_TIMEOUT"
+   },
+   {
+    "i": 721,
+    "name": "Baba Raghav Das Medical College, Gorakhpur",
+    "url": "https://brdmc.ac.in/",
+    "state": "Uttar Pradesh",
+    "group": "Medical colleges",
+    "status": "UND_ERR_CONNECT_TIMEOUT"
+   },
+   {
+    "i": 772,
+    "name": "Fortis Careers",
+    "url": "https://www.fortishealthcare.com/careers",
+    "state": "All India",
+    "group": "Private",
+    "status": "403"
+   },
+   {
+    "i": 773,
+    "name": "Indeed – MBBS doctor jobs",
+    "url": "https://in.indeed.com/q-mbbs-doctor-jobs.html",
+    "state": "All India",
+    "group": "Private",
+    "status": "403"
+   },
+   {
+    "i": 775,
+    "name": "Max Healthcare Careers",
+    "url": "https://www.maxhealthcare.in/careers",
+    "state": "All India",
+    "group": "Private",
+    "status": "404"
+   },
+   {
+    "i": 784,
+    "name": "Sri Jagannath Medical College & Hospital, Puri",
+    "url": "https://sjmch.odisha.gov.in/whats-new/",
+    "state": "Odisha",
+    "group": "Medical colleges",
+    "status": "ERR_SSL_WRONG_VERSION_NUMBER (curl: curl 35)"
+   }
+  ]
+ }
 }

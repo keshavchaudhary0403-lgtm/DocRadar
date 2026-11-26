@@ -2715,6 +2715,32 @@
       }
     },
     {
+      "id": "esic-tinsukia-sr-against-gdmo-2026-12-08",
+      "title": "Senior Resident against GDMO post (contract, 1 year) – 4 posts (Accident & Emergency 3, Medicine 1)",
+      "org": "ESIC Hospital, Tinsukia",
+      "category": "jr",
+      "location": "Tinsukia, Assam",
+      "state": "Assam",
+      "posts": 4,
+      "salary": "₹1,14,955/month consolidated",
+      "mode": "Walk-in",
+      "lastDate": "2026-12-03",
+      "eventDate": "2026-12-08",
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS with PG degree/diploma in the specialty (Casualty: PG in any subject, PG preferred); if no PG candidates, MBBS with at least 2 years' experience in the same discipline, including 1 year at a govt/private hospital (not a clinic). Age not over 45 on the interview date, relaxation as per central govt rules (not for UR vacancies). Vacancies: A&E SC 1, OBC 1, EWS 1; Medicine OBC 1. Apply (online & offline) by 3 Dec; interview 8 Dec 2026, 11:00 AM. Selected candidates pay a ₹30,000 security deposit.",
+      "officialUrl": "https://esic.gov.in/recruitments",
+      "noticePdf": "https://esic.gov.in/attachments/recruitmentfile/WALK_IN_INTERVIEW_FOR_RECRUITMENT_TO_THE_POST_SR_against_GDMO_ON_CONTRACT_BASIS_FOR_ESIC_HOSPITAL_TINSUKIA_ASSAM_1795688351.pdf",
+      "sourceUrl": "https://esic.gov.in/recruitments",
+      "addedOn": "2026-11-26",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "eventDate",
+        "maxAge": 45,
+        "ageOn": "2026-12-08",
+        "ageRelax": true
+      }
+    },
+    {
       "id": "cmo-baghpat-nhm-mo-fmo-2026-12-03",
       "title": "Medical Officer / Female Medical Officer (NHM) – 23 posts",
       "org": "Chief Medical Officer, Baghpat (NHM Uttar Pradesh)",
@@ -2989,13 +3015,17 @@
       "lastDate": "2026-12-04",
       "eventDate": "2026-12-04",
       "eligibility": "after-internship",
-      "eligibilityNote": "MBBS recognised by NMC, for the Department of Emergency Medicine. Report to the HR1 Section by 9:30 AM with the filled application form, proof of the ₹5,000 registration fee paid online and a PowerPoint of up to 5 slides on academic record and experience; enclosures include permanent Telangana medical registration (Rc.No HR1/429/2026/R dated 24.11.2026). Details from aggregators; the official PDF on nims.edu.in could not be opened.",
+      "eligibilityNote": "MBBS recognised by NMC, for the Department of Emergency Medicine. Report to the HR1 Section by 9:30 AM with the filled application form, proof of the ₹5,000 registration fee paid online and a PowerPoint of up to 5 slides on academic record and experience; enclosures include permanent Telangana medical registration (Rc.No HR1/429/2026/R dated 24.11.2026). Interview 11:00 AM–12 noon, Board Room 1st Floor, NIMS.",
       "officialUrl": "https://nims.edu.in",
+      "noticePdf": "https://nims.edu.in/NIMSWP/upload/recruitment_uploads/2026-11-25/walk_in_interview_of_Medical_officer.pdf",
       "sourceUrl": "https://www.freejobalert.com/articles/nims-medical-officer-recruitment-2026-3084441",
       "addedOn": "2026-11-26",
-      "verified": false,
+      "verified": true,
       "requirements": {
-        "registration": "permanent"
+        "registration": "permanent",
+        "councils": [
+          "Telangana State Medical Council"
+        ]
       }
     },
     {
@@ -3311,11 +3341,12 @@
       "lastDate": "2026-12-15",
       "eventDate": null,
       "eligibility": "after-internship",
-      "eligibilityNote": "MBBS with at least 1 year of relevant post-qualification experience as on 01.11.2026 (teaching not counted); AFIH preferred. One post each at Navi Mumbai and Pune; applications by post to Manager (HR&A), BEL Taloja, to reach by 15.12.2026 (Advt 17004/NAMU/2026/MO/FT/01). Details from FreeJobAlert; the official PDF on bel-india.in could not be opened.",
+      "eligibilityNote": "MBBS with at least 1 year of relevant post-qualification experience as on 01.11.2026 (teaching not counted); AFIH preferred. One post each at Navi Mumbai and Pune; applications by post to Manager (HR&A), BEL Taloja, to reach by 15.12.2026 (Advt 17004/NAMU/2026/MO/FT/01 dated 25.11.2026). Age limit 32 on 01.11.2026 (relaxation only for PwBD/ex-servicemen; OBC/SC/ST compete as UR). Fee ₹472 via SBI Collect (PwBD/SC/ST/ExSM exempt). Selection: written test (85%) + interview (15%). CTC about ₹13.63 lakh.",
       "officialUrl": "https://www.bel-india.in",
+      "noticePdf": "https://bel-india.in/wp-content/uploads/2026/11/Medical-Officer-FT-ADV.pdf",
       "sourceUrl": "https://www.freejobalert.com/articles/bel-medical-officer-e-ii-recruitment-2026-3084553",
       "addedOn": "2026-11-26",
-      "verified": false,
+      "verified": true,
       "requirements": {
         "registration": "any",
         "maxAge": 32,
@@ -3875,5 +3906,5 @@
       "requirements": {}
     }
   ],
-  "updatedAt": "2026-11-26T01:45:25.100Z"
+  "updatedAt": "2026-11-26T11:04:11.583Z"
 }
