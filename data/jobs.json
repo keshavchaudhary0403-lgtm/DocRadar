@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "jobs": [
     {
       "id": "asacs-mo-art-ost-dmch-diphu-walkin-2026-11-13",
@@ -1380,18 +1380,18 @@
     },
     {
       "id": "aiims-raebareli-jr-nonacad-2026-11-23",
-      "title": "Junior Resident (Non-Academic) – 10 posts, walk-in",
+      "title": "Junior Resident (Non-Academic) – 15 posts, walk-in",
       "org": "AIIMS Raebareli",
       "category": "jr",
       "location": "Raebareli, Uttar Pradesh",
       "state": "Uttar Pradesh",
-      "posts": 10,
+      "posts": 15,
       "salary": "₹56,100 + NPA (Pay Level 10)",
       "mode": "Walk-in",
       "lastDate": "2026-11-23",
       "eventDate": "2026-11-23",
       "eligibility": "after-internship",
-      "eligibilityNote": "Ad hoc engagement for 44 days. MBBS including completed internship; State/MCI registration mandatory before joining; age not over 33 on the interview date. Report 10:00 AM at the Medical College Building with bio-data (Annexure A) and documents; document verification 10:15 AM–12:15 PM, interview from 3:00 PM. Number of posts may change on the day. The notice prints no age relaxation.",
+      "eligibilityNote": "Ad hoc engagement for 44 days. MBBS including completed internship; State/MCI registration mandatory before joining; age not over 33 on the interview date. Report 10:00 AM at the Medical College Building with bio-data (Annexure A) and documents; document verification 10:15 AM–12:15 PM, interview from 3:00 PM. Number of posts may change on the day. The notice prints no age relaxation. Addendum No. AIIMS/RBL/REC/2026/605 dated 25.11.2026 raised the vacancies from 10 to 15.",
       "officialUrl": "https://aiimsrbl.edu.in/recruitments",
       "noticePdf": "https://aiimsrbl.edu.in/image?p=spotlights%2Fspotlight_0c9d8e76cbf00b64ecf92270672a0ba9.pdf",
       "sourceUrl": "https://www.freejobalert.com/articles/aiims-junior-resident-non-academic-recruitment-2026-3082190",
@@ -2977,6 +2977,28 @@
       }
     },
     {
+      "id": "nims-hyderabad-mo-emergency-walkin-2026-12-04",
+      "title": "Medical Officer (Emergency Medicine) – walk-in",
+      "org": "Nizam's Institute of Medical Sciences (NIMS), Hyderabad",
+      "category": "mo",
+      "location": "Hyderabad, Telangana",
+      "state": "Telangana",
+      "posts": null,
+      "salary": "₹50,000/month consolidated",
+      "mode": "Walk-in",
+      "lastDate": "2026-12-04",
+      "eventDate": "2026-12-04",
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS recognised by NMC, for the Department of Emergency Medicine. Report to the HR1 Section by 9:30 AM with the filled application form, proof of the ₹5,000 registration fee paid online and a PowerPoint of up to 5 slides on academic record and experience; enclosures include permanent Telangana medical registration (Rc.No HR1/429/2026/R dated 24.11.2026). Details from aggregators; the official PDF on nims.edu.in could not be opened.",
+      "officialUrl": "https://nims.edu.in",
+      "sourceUrl": "https://www.freejobalert.com/articles/nims-medical-officer-recruitment-2026-3084441",
+      "addedOn": "2026-11-26",
+      "verified": false,
+      "requirements": {
+        "registration": "permanent"
+      }
+    },
+    {
       "id": "umc-navi-mumbai-rmo-dec-2026",
       "title": "Resident Medical Officer (fresher) – 1 post",
       "org": "UMC Hospitals, Nerul",
@@ -2995,6 +3017,29 @@
       "addedOn": "2026-11-13",
       "verified": false,
       "requirements": {}
+    },
+    {
+      "id": "tmc-mumbai-assistant-research-fellow-medonc-2026-12-07",
+      "title": "Assistant Research Fellow (Medical Oncology project) – 5 posts",
+      "org": "Tata Memorial Hospital (Tata Memorial Centre), Mumbai",
+      "category": "other",
+      "location": "Mumbai, Maharashtra",
+      "state": "Maharashtra",
+      "posts": 5,
+      "salary": "₹40,000 per month",
+      "mode": "Apply online",
+      "lastDate": "2026-12-07",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Project post for a breast & gynaecology study, Department of Medical Oncology, initially six months (Advt TMC/AD/192/2026 dated 23.11.2026). MBBS/BDS/BAMS/BHMS/BUMS/Pharm D; PG Diploma in Clinical Research and 1 year of clinical research experience desirable. Apply online by 7 Dec 2026, 5:30 PM; screening, possible test, then interview.",
+      "officialUrl": "https://tmc.gov.in/postmaster/Details.aspx?adv=2eQFaAy61/KnHu+QqSAqdQ==",
+      "noticePdf": "https://tmc.gov.in/postmaster/DownloadFile.aspx?FileId=2640",
+      "sourceUrl": "https://govtjobsalert.in/tmc-assistant-research-fellow-recruitment-2026/",
+      "addedOn": "2026-11-26",
+      "verified": true,
+      "requirements": {
+        "maxAge": 40
+      }
     },
     {
       "id": "icar-crri-cuttack-consultant-mo-walkin-2026-12-08",
@@ -3162,6 +3207,26 @@
       }
     },
     {
+      "id": "uas-dharwad-vijayapura-amo-walkin-2026-12-11",
+      "title": "Assistant Medical Officer (temporary, up to 179 days) – 1 post, walk-in",
+      "org": "University of Agricultural Sciences, Dharwad – College of Agriculture, Vijayapura",
+      "category": "mo",
+      "location": "Vijayapura, Karnataka",
+      "state": "Karnataka",
+      "posts": 1,
+      "salary": "₹60,000/month consolidated (MBBS)",
+      "mode": "Walk-in",
+      "lastDate": "2026-12-11",
+      "eventDate": "2026-12-11",
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS (or BAMS) with second class / 50% marks, completed in the minimum period, and at least 3 years' experience in a recognised nursing home/hospital. One post (Cat-I). Walk-in 10:00 AM at the Dean (Agri) interview room, College of Agriculture, Vijayapura, with the application form in two copies (Ref. 1116/2026-27 dated 21.11.2026; on the UASD circulars page, hosted on Google Drive).",
+      "officialUrl": "https://sites.google.com/a/uasd.in/news/temporary-appointment-notification-circulars",
+      "sourceUrl": "https://www.freejobalert.com/articles/uas-dharwad-assistant-medical-officer-recruitment-2026-3084609",
+      "addedOn": "2026-11-26",
+      "verified": true,
+      "requirements": {}
+    },
+    {
       "id": "afmc-pune-prs1-medical-icmr-2026-12-12",
       "title": "Project Research Scientist-I (Medical), ICMR extramural project – 1 post",
       "org": "Armed Forces Medical College (AFMC) – Department of Medical Research",
@@ -3231,6 +3296,30 @@
         "maxAge": 40,
         "ageOn": "2026-12-15",
         "ageRelax": true
+      }
+    },
+    {
+      "id": "bel-mo-e2-navi-mumbai-pune-2026-12-15",
+      "title": "Medical Officer (E-II, fixed term 5 years) – 2 posts",
+      "org": "Bharat Electronics Limited (BEL) – Navi Mumbai & Pune Units",
+      "category": "mo",
+      "location": "Navi Mumbai and Pune, Maharashtra",
+      "state": "Maharashtra",
+      "posts": 2,
+      "salary": "₹40,000–3%–1,40,000 (E-II)",
+      "mode": "Apply offline",
+      "lastDate": "2026-12-15",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "MBBS with at least 1 year of relevant post-qualification experience as on 01.11.2026 (teaching not counted); AFIH preferred. One post each at Navi Mumbai and Pune; applications by post to Manager (HR&A), BEL Taloja, to reach by 15.12.2026 (Advt 17004/NAMU/2026/MO/FT/01). Details from FreeJobAlert; the official PDF on bel-india.in could not be opened.",
+      "officialUrl": "https://www.bel-india.in",
+      "sourceUrl": "https://www.freejobalert.com/articles/bel-medical-officer-e-ii-recruitment-2026-3084553",
+      "addedOn": "2026-11-26",
+      "verified": false,
+      "requirements": {
+        "registration": "any",
+        "maxAge": 32,
+        "ageOn": "2026-11-01"
       }
     },
     {
@@ -3786,5 +3875,5 @@
       "requirements": {}
     }
   ],
-  "updatedAt": "2026-11-25T08:42:50.465Z"
+  "updatedAt": "2026-11-26T01:45:25.100Z"
 }

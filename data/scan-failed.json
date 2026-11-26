@@ -1,7 +1,7 @@
 {
- "date": "2026-11-25",
+ "date": "2026-11-26",
  "total": 788,
- "ok": 686,
+ "ok": 539,
  "failed": [
   {
    "i": 1,
@@ -9,15 +9,7 @@
    "url": "https://employmentnews.gov.in",
    "state": "All India",
    "group": "National portals",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
-  },
-  {
-   "i": 2,
-   "name": "National Health Mission",
-   "url": "https://nhm.gov.in",
-   "state": "All India",
-   "group": "National portals",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 4,
@@ -28,12 +20,52 @@
    "status": "403"
   },
   {
+   "i": 6,
+   "name": "AFMS – Army Medical Officer (SSC)",
+   "url": "https://join.afms.gov.in",
+   "state": "All India",
+   "group": "Defence",
+   "status": "503"
+  },
+  {
+   "i": 7,
+   "name": "Indian Navy",
+   "url": "https://www.joinindiannavy.gov.in",
+   "state": "All India",
+   "group": "Defence",
+   "status": "503"
+  },
+  {
+   "i": 8,
+   "name": "CRPF Recruitment",
+   "url": "https://rect.crpf.gov.in",
+   "state": "All India",
+   "group": "Govt Medical Officer",
+   "status": "503"
+  },
+  {
    "i": 10,
    "name": "Assam Rifles",
    "url": "https://assamrifles.gov.in",
    "state": "All India",
    "group": "Govt Medical Officer",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
+  },
+  {
+   "i": 11,
+   "name": "BSF Recruitment",
+   "url": "https://rectt.bsf.gov.in",
+   "state": "All India",
+   "group": "Govt Medical Officer",
+   "status": "403"
+  },
+  {
+   "i": 12,
+   "name": "CISF Recruitment",
+   "url": "https://cisfrectt.cisf.gov.in",
+   "state": "All India",
+   "group": "Govt Medical Officer",
+   "status": "503"
   },
   {
    "i": 14,
@@ -41,7 +73,15 @@
    "url": "https://indianrailways.gov.in/railwayboard/",
    "state": "All India",
    "group": "Govt Medical Officer",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
+  },
+  {
+   "i": 15,
+   "name": "Coal India",
+   "url": "https://www.coalindia.in",
+   "state": "All India",
+   "group": "PSUs",
+   "status": "403"
   },
   {
    "i": 16,
@@ -49,7 +89,7 @@
    "url": "https://careers.ntpc.co.in",
    "state": "All India",
    "group": "PSUs",
-   "status": "ECONNREFUSED"
+   "status": "403"
   },
   {
    "i": 17,
@@ -57,15 +97,39 @@
    "url": "https://www.sail.co.in",
    "state": "All India",
    "group": "PSUs",
-   "status": "ECONNRESET"
+   "status": "503"
   },
   {
-   "i": 19,
-   "name": "Hindustan Shipyard",
-   "url": "https://www.hslvizag.in",
+   "i": 20,
+   "name": "RINL Vizag Steel",
+   "url": "https://www.vizagsteel.com",
    "state": "Andhra Pradesh",
    "group": "PSUs",
-   "status": "UNABLE_TO_VERIFY_LEAF_SIGNATURE (curl: curl 60)"
+   "status": "503"
+  },
+  {
+   "i": 23,
+   "name": "Bhakra Beas Management Board",
+   "url": "https://bbmb.gov.in",
+   "state": "Chandigarh",
+   "group": "PSUs",
+   "status": "503"
+  },
+  {
+   "i": 26,
+   "name": "BHEL",
+   "url": "https://careers.bhel.in",
+   "state": "Delhi",
+   "group": "PSUs",
+   "status": "403"
+  },
+  {
+   "i": 28,
+   "name": "ONGC",
+   "url": "https://ongcindia.com",
+   "state": "Delhi",
+   "group": "PSUs",
+   "status": "503"
   },
   {
    "i": 30,
@@ -73,15 +137,39 @@
    "url": "https://www.powergrid.in",
    "state": "Haryana",
    "group": "PSUs",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
-   "i": 36,
-   "name": "BEML",
-   "url": "https://www.bemlindia.in",
+   "i": 32,
+   "name": "Bharat Coking Coal (BCCL)",
+   "url": "https://www.bcclweb.in",
+   "state": "Jharkhand",
+   "group": "PSUs",
+   "status": "503"
+  },
+  {
+   "i": 35,
+   "name": "BEL",
+   "url": "https://bel-india.in",
    "state": "Karnataka",
    "group": "PSUs",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
+  },
+  {
+   "i": 41,
+   "name": "Northern Coalfields (NCL)",
+   "url": "https://www.nclcil.in",
+   "state": "Madhya Pradesh",
+   "group": "PSUs",
+   "status": "403"
+  },
+  {
+   "i": 42,
+   "name": "BPCL",
+   "url": "https://www.bharatpetroleum.in",
+   "state": "Maharashtra",
+   "group": "PSUs",
+   "status": "403"
   },
   {
    "i": 44,
@@ -92,12 +180,108 @@
    "status": "307"
   },
   {
-   "i": 87,
-   "name": "NIT Andhra Pradesh",
-   "url": "https://nitandhra.ac.in/main/careers.php",
-   "state": "Andhra Pradesh",
+   "i": 48,
+   "name": "NPCIL",
+   "url": "https://www.npcilcareers.co.in",
+   "state": "Maharashtra",
+   "group": "PSUs",
+   "status": "503"
+  },
+  {
+   "i": 52,
+   "name": "Mahanadi Coalfields (MCL)",
+   "url": "https://www.mahanadicoal.in",
+   "state": "Odisha",
+   "group": "PSUs",
+   "status": "403"
+  },
+  {
+   "i": 53,
+   "name": "NALCO",
+   "url": "https://nalcoindia.com",
+   "state": "Odisha",
+   "group": "PSUs",
+   "status": "503"
+  },
+  {
+   "i": 55,
+   "name": "Chennai Petroleum (CPCL)",
+   "url": "https://www.cpcl.co.in",
+   "state": "Tamil Nadu",
+   "group": "PSUs",
+   "status": "503"
+  },
+  {
+   "i": 56,
+   "name": "NLC India",
+   "url": "https://www.nlcindia.in",
+   "state": "Tamil Nadu",
+   "group": "PSUs",
+   "status": "503"
+  },
+  {
+   "i": 60,
+   "name": "NMDC",
+   "url": "https://www.nmdc.co.in",
+   "state": "Telangana",
+   "group": "PSUs",
+   "status": "503"
+  },
+  {
+   "i": 63,
+   "name": "THDC India Ltd careers",
+   "url": "https://www.thdc.co.in",
+   "state": "Uttarakhand",
+   "group": "PSUs",
+   "status": "503"
+  },
+  {
+   "i": 64,
+   "name": "Damodar Valley Corporation",
+   "url": "https://www.dvc.gov.in",
+   "state": "West Bengal",
+   "group": "PSUs",
+   "status": "503"
+  },
+  {
+   "i": 66,
+   "name": "Hindustan Copper",
+   "url": "https://www.hindustancopper.com",
+   "state": "West Bengal",
+   "group": "PSUs",
+   "status": "503"
+  },
+  {
+   "i": 68,
+   "name": "CGHS",
+   "url": "https://cghs.mohfw.gov.in/",
+   "state": "All India",
    "group": "Central Govt",
-   "status": "ECONNRESET"
+   "status": "503"
+  },
+  {
+   "i": 75,
+   "name": "Indo-Tibetan Border Police",
+   "url": "https://www.itbp.mha.gov.in/",
+   "state": "All India",
+   "group": "Central Govt",
+   "status": "503"
+  },
+  {
+   "i": 78,
+   "name": "National Security Guard",
+   "url": "https://nsg.mha.gov.in/document/vacancies",
+   "state": "All India",
+   "group": "Central Govt",
+   "status": "503"
+  },
+  {
+   "i": 79,
+   "name": "Railway Protection Force",
+   "url": "https://rpf.indianrailways.gov.in/RPF/Recruitments/Upcoming.jsp",
+   "state": "All India",
+   "group": "Central Govt",
+   "status": "503"
   },
   {
    "i": 88,
@@ -105,7 +289,7 @@
    "url": "https://scor.indianrailways.gov.in/offerings/vacancies",
    "state": "Andhra Pradesh",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 89,
@@ -113,15 +297,7 @@
    "url": "https://www.vizagport.com/careers/",
    "state": "Andhra Pradesh",
    "group": "Central Govt",
-   "status": "ERR_TLS_CERT_ALTNAME_INVALID (curl: curl 60)"
-  },
-  {
-   "i": 92,
-   "name": "Assam University Silchar",
-   "url": "https://www.aus.ac.in/recruitment-nonteaching/",
-   "state": "Assam",
-   "group": "Central Govt",
-   "status": "ECONNRESET"
+   "status": "503"
   },
   {
    "i": 96,
@@ -129,7 +305,15 @@
    "url": "https://nfr.indianrailways.gov.in/offerings/vacancies",
    "state": "Assam",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
+  },
+  {
+   "i": 98,
+   "name": "Central University of South Bihar",
+   "url": "https://www.cusb.ac.in/",
+   "state": "Bihar",
+   "group": "Central Govt",
+   "status": "503"
   },
   {
    "i": 100,
@@ -137,23 +321,23 @@
    "url": "https://ecr.indianrailways.gov.in/offerings/vacancies",
    "state": "Bihar",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
-   "i": 101,
-   "name": "ICMR-RMRIMS Patna",
-   "url": "https://www.rmrims.org.in/",
-   "state": "Bihar",
+   "i": 106,
+   "name": "IIT Bhilai",
+   "url": "https://www.iitbhilai.ac.in/",
+   "state": "Chhattisgarh",
    "group": "Central Govt",
-   "status": "403"
+   "status": "503"
   },
   {
-   "i": 103,
-   "name": "Mahatma Gandhi Central University",
-   "url": "https://www.mgcub.ac.in/recruitment",
-   "state": "Bihar",
+   "i": 107,
+   "name": "NIT Raipur",
+   "url": "https://www.nitrr.ac.in/advertisement.php",
+   "state": "Chhattisgarh",
    "group": "Central Govt",
-   "status": "ECONNRESET"
+   "status": "503"
   },
   {
    "i": 108,
@@ -161,7 +345,23 @@
    "url": "https://secr.indianrailways.gov.in/offerings/vacancies",
    "state": "Chhattisgarh",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
+  },
+  {
+   "i": 109,
+   "name": "Delhi Cantonment Board",
+   "url": "https://delhi.cantt.gov.in/doc_category/careers/",
+   "state": "Delhi",
+   "group": "Central Govt",
+   "status": "503"
+  },
+  {
+   "i": 119,
+   "name": "NITRD New Delhi",
+   "url": "https://nitrd.mohfw.gov.in/vacancy/",
+   "state": "Delhi",
+   "group": "Central Govt",
+   "status": "503"
   },
   {
    "i": 120,
@@ -169,15 +369,31 @@
    "url": "https://nr.indianrailways.gov.in/offerings/vacancies",
    "state": "Delhi",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
-   "i": 127,
-   "name": "Central University of Gujarat",
-   "url": "https://www.cug.ac.in/career.php",
+   "i": 124,
+   "name": "Mormugao Port Authority",
+   "url": "https://www.mormugaoport.gov.in/master-controller/careers",
+   "state": "Goa",
+   "group": "Central Govt",
+   "status": "503"
+  },
+  {
+   "i": 125,
+   "name": "NIT Goa",
+   "url": "https://www.nitgoa.ac.in/recruitment.html",
+   "state": "Goa",
+   "group": "Central Govt",
+   "status": "timeout"
+  },
+  {
+   "i": 126,
+   "name": "Ahmedabad Cantonment Board",
+   "url": "https://ahmedabad.cantt.gov.in/doc_category/careers/",
    "state": "Gujarat",
    "group": "Central Govt",
-   "status": "ECONNRESET"
+   "status": "503"
   },
   {
    "i": 131,
@@ -188,20 +404,36 @@
    "status": "403"
   },
   {
-   "i": 136,
-   "name": "Central University of Himachal Pradesh",
-   "url": "https://www.cuhimachal.ac.in/",
-   "state": "Himachal Pradesh",
+   "i": 133,
+   "name": "Ambala Cantonment Board",
+   "url": "https://ambala.cantt.gov.in/doc_category/careers/",
+   "state": "Haryana",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
-   "i": 146,
-   "name": "NIT Jamshedpur",
-   "url": "https://www.nitjsr.ac.in/Recruitments",
+   "i": 142,
+   "name": "Jammu Cantonment Board",
+   "url": "https://jammu.cantt.gov.in/doc_category/careers/",
+   "state": "Jammu and Kashmir",
+   "group": "Central Govt",
+   "status": "503"
+  },
+  {
+   "i": 147,
+   "name": "Ramgarh Cantonment Board",
+   "url": "https://ramgarh.cantt.gov.in/doc_category/careers/",
    "state": "Jharkhand",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
+  },
+  {
+   "i": 156,
+   "name": "New Mangalore Port Authority",
+   "url": "https://newmangaloreport.gov.in/vacancy",
+   "state": "Karnataka",
+   "group": "Central Govt",
+   "status": "503"
   },
   {
    "i": 157,
@@ -209,7 +441,7 @@
    "url": "https://rwf.indianrailways.gov.in/offerings/vacancies",
    "state": "Karnataka",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 158,
@@ -217,15 +449,15 @@
    "url": "https://swr.indianrailways.gov.in/offerings/vacancies",
    "state": "Karnataka",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
-   "i": 166,
-   "name": "Dr. Harisingh Gour Vishwavidyalaya",
-   "url": "https://www.dhsgsu.edu.in/index.php/en/recruitment",
+   "i": 165,
+   "name": "Bhopal Memorial Hospital & Research Centre",
+   "url": "https://bmhrc.ac.in/",
    "state": "Madhya Pradesh",
    "group": "Central Govt",
-   "status": "timeout"
+   "status": "503"
   },
   {
    "i": 168,
@@ -233,7 +465,31 @@
    "url": "https://www.nirth.res.in/vacancies.php",
    "state": "Madhya Pradesh",
    "group": "Central Govt",
-   "status": "ENOTFOUND"
+   "status": "EAI_AGAIN"
+  },
+  {
+   "i": 173,
+   "name": "Jabalpur Cantonment Board",
+   "url": "https://jabalpur.cantt.gov.in/doc_category/careers/",
+   "state": "Madhya Pradesh",
+   "group": "Central Govt",
+   "status": "503"
+  },
+  {
+   "i": 175,
+   "name": "Mhow Cantonment Board",
+   "url": "https://mhow.cantt.gov.in/doc_category/careers/",
+   "state": "Madhya Pradesh",
+   "group": "Central Govt",
+   "status": "503"
+  },
+  {
+   "i": 176,
+   "name": "Sagar Cantonment Board",
+   "url": "https://sagar.cantt.gov.in/doc_category/careers/",
+   "state": "Madhya Pradesh",
+   "group": "Central Govt",
+   "status": "503"
   },
   {
    "i": 177,
@@ -241,7 +497,15 @@
    "url": "https://wcr.indianrailways.gov.in/offerings/vacancies",
    "state": "Madhya Pradesh",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
+  },
+  {
+   "i": 179,
+   "name": "Ahilyanagar Cantonment Board",
+   "url": "https://ahmednagar.cantt.gov.in/doc_category/careers/",
+   "state": "Maharashtra",
+   "group": "Central Govt",
+   "status": "503"
   },
   {
    "i": 181,
@@ -249,7 +513,71 @@
    "url": "https://cr.indianrailways.gov.in/offerings/vacancies",
    "state": "Maharashtra",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
+  },
+  {
+   "i": 183,
+   "name": "Deolali Cantonment Board",
+   "url": "https://deolali.cantt.gov.in/doc_category/careers/",
+   "state": "Maharashtra",
+   "group": "Central Govt",
+   "status": "503"
+  },
+  {
+   "i": 184,
+   "name": "ICMR-NIIH Mumbai",
+   "url": "https://www.niih.org.in/advertise-list",
+   "state": "Maharashtra",
+   "group": "Central Govt",
+   "status": "403"
+  },
+  {
+   "i": 185,
+   "name": "ICMR-NIRWH (NIRRCH) Mumbai",
+   "url": "https://nirwoh.icmr.gov.in/",
+   "state": "Maharashtra",
+   "group": "Central Govt",
+   "status": "503"
+  },
+  {
+   "i": 188,
+   "name": "IISER Pune",
+   "url": "https://www.iiserpune.ac.in/",
+   "state": "Maharashtra",
+   "group": "Central Govt",
+   "status": "503"
+  },
+  {
+   "i": 190,
+   "name": "Jawaharlal Nehru Port Authority",
+   "url": "https://www.jnport.gov.in/page/careers/blFJVkdZUThLQzc4ZWdXWk4xMkZ0UT09",
+   "state": "Maharashtra",
+   "group": "Central Govt",
+   "status": "503"
+  },
+  {
+   "i": 191,
+   "name": "Kamptee Cantonment Board",
+   "url": "https://kamptee.cantt.gov.in/doc_category/careers/",
+   "state": "Maharashtra",
+   "group": "Central Govt",
+   "status": "503"
+  },
+  {
+   "i": 192,
+   "name": "Khadki Cantonment Board",
+   "url": "https://kirkee.cantt.gov.in/doc_category/careers/",
+   "state": "Maharashtra",
+   "group": "Central Govt",
+   "status": "503"
+  },
+  {
+   "i": 194,
+   "name": "Pune Cantonment Board",
+   "url": "https://pune.cantt.gov.in/doc_category/careers/",
+   "state": "Maharashtra",
+   "group": "Central Govt",
+   "status": "503"
   },
   {
    "i": 197,
@@ -257,23 +585,47 @@
    "url": "https://wr.indianrailways.gov.in/offerings/vacancies",
    "state": "Maharashtra",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
-   "i": 198,
-   "name": "Central Agricultural University Imphal",
-   "url": "https://cau.ac.in/recruitment-cau-imphal/",
-   "state": "Manipur",
+   "i": 202,
+   "name": "Shillong Cantonment Board",
+   "url": "https://shillong.cantt.gov.in/doc_category/careers/",
+   "state": "Meghalaya",
    "group": "Central Govt",
-   "status": "ECONNRESET"
+   "status": "503"
   },
   {
-   "i": 210,
-   "name": "IIT Bhubaneswar",
-   "url": "https://www.iitbbs.ac.in/index.php/home/jobs/",
-   "state": "Odisha",
+   "i": 205,
+   "name": "NIT Nagaland",
+   "url": "https://www.nitnagaland.ac.in/index.php/recruitment",
+   "state": "Nagaland",
    "group": "Central Govt",
-   "status": "ECONNRESET"
+   "status": "timeout"
+  },
+  {
+   "i": 214,
+   "name": "NIT Puducherry",
+   "url": "https://www.nitpy.ac.in/recruitment",
+   "state": "Puducherry",
+   "group": "Central Govt",
+   "status": "503"
+  },
+  {
+   "i": 217,
+   "name": "Ferozepur Cantonment Board",
+   "url": "https://ferozepur.cantt.gov.in/doc_category/careers/",
+   "state": "Punjab",
+   "group": "Central Govt",
+   "status": "503"
+  },
+  {
+   "i": 220,
+   "name": "Jalandhar Cantonment Board",
+   "url": "https://jalandhar.cantt.gov.in/doc_category/careers/",
+   "state": "Punjab",
+   "group": "Central Govt",
+   "status": "503"
   },
   {
    "i": 222,
@@ -281,7 +633,7 @@
    "url": "https://plw.indianrailways.gov.in/offerings/vacancies",
    "state": "Punjab",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 223,
@@ -289,7 +641,15 @@
    "url": "https://rcf.indianrailways.gov.in/offerings/vacancies",
    "state": "Punjab",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
+  },
+  {
+   "i": 226,
+   "name": "IIT Jodhpur",
+   "url": "https://www.iitj.ac.in/Recruitment/",
+   "state": "Rajasthan",
+   "group": "Central Govt",
+   "status": "503"
   },
   {
    "i": 228,
@@ -297,7 +657,15 @@
    "url": "https://nwr.indianrailways.gov.in/offerings/vacancies",
    "state": "Rajasthan",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
+  },
+  {
+   "i": 232,
+   "name": "Chennai Port Authority",
+   "url": "https://www.chennaiport.gov.in/career",
+   "state": "Tamil Nadu",
+   "group": "Central Govt",
+   "status": "503"
   },
   {
    "i": 236,
@@ -305,7 +673,7 @@
    "url": "https://icf.indianrailways.gov.in/offerings/vacancies",
    "state": "Tamil Nadu",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 239,
@@ -313,15 +681,23 @@
    "url": "https://sr.indianrailways.gov.in/offerings/vacancies",
    "state": "Tamil Nadu",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
-   "i": 240,
-   "name": "V.O. Chidambaranar Port Authority",
-   "url": "https://www.vocport.gov.in/careers",
+   "i": 241,
+   "name": "Wellington Cantonment Board",
+   "url": "https://wellington.cantt.gov.in/doc_category/careers/",
    "state": "Tamil Nadu",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
+  },
+  {
+   "i": 247,
+   "name": "Secunderabad Cantonment Board",
+   "url": "https://secunderabad.cantt.gov.in/doc_category/careers/",
+   "state": "Telangana",
+   "group": "Central Govt",
+   "status": "503"
   },
   {
    "i": 248,
@@ -329,7 +705,31 @@
    "url": "https://scr.indianrailways.gov.in/offerings/vacancies",
    "state": "Telangana",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
+  },
+  {
+   "i": 251,
+   "name": "Agra Cantonment Board",
+   "url": "https://agra.cantt.gov.in/doc_category/careers/",
+   "state": "Uttar Pradesh",
+   "group": "Central Govt",
+   "status": "503"
+  },
+  {
+   "i": 252,
+   "name": "BBAU Lucknow",
+   "url": "https://www.bbau.ac.in/CareerNonTeaching25.aspx",
+   "state": "Uttar Pradesh",
+   "group": "Central Govt",
+   "status": "503"
+  },
+  {
+   "i": 253,
+   "name": "Babina Cantonment Board",
+   "url": "https://babina.cantt.gov.in/doc_category/careers/",
+   "state": "Uttar Pradesh",
+   "group": "Central Govt",
+   "status": "503"
   },
   {
    "i": 254,
@@ -337,7 +737,63 @@
    "url": "https://blw.indianrailways.gov.in/offerings/vacancies",
    "state": "Uttar Pradesh",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
+  },
+  {
+   "i": 255,
+   "name": "Bareilly Cantonment Board",
+   "url": "https://bareilly.cantt.gov.in/doc_category/careers/",
+   "state": "Uttar Pradesh",
+   "group": "Central Govt",
+   "status": "503"
+  },
+  {
+   "i": 256,
+   "name": "ICMR-NICPR Noida",
+   "url": "https://nicpr.org/career/",
+   "state": "Uttar Pradesh",
+   "group": "Central Govt",
+   "status": "403"
+  },
+  {
+   "i": 261,
+   "name": "Jhansi Cantonment Board",
+   "url": "https://jhansi.cantt.gov.in/doc_category/careers/",
+   "state": "Uttar Pradesh",
+   "group": "Central Govt",
+   "status": "503"
+  },
+  {
+   "i": 262,
+   "name": "Kanpur Cantonment Board",
+   "url": "https://kanpur.cantt.gov.in/doc_category/careers/",
+   "state": "Uttar Pradesh",
+   "group": "Central Govt",
+   "status": "503"
+  },
+  {
+   "i": 263,
+   "name": "Lucknow Cantonment Board",
+   "url": "https://lucknow.cantt.gov.in/doc_category/careers/",
+   "state": "Uttar Pradesh",
+   "group": "Central Govt",
+   "status": "503"
+  },
+  {
+   "i": 265,
+   "name": "Mathura Cantonment Board",
+   "url": "https://mathura.cantt.gov.in/doc_category/careers/",
+   "state": "Uttar Pradesh",
+   "group": "Central Govt",
+   "status": "503"
+  },
+  {
+   "i": 266,
+   "name": "Meerut Cantonment Board",
+   "url": "https://meerut.cantt.gov.in/doc_category/careers/",
+   "state": "Uttar Pradesh",
+   "group": "Central Govt",
+   "status": "503"
   },
   {
    "i": 267,
@@ -345,7 +801,7 @@
    "url": "https://mcf.indianrailways.gov.in/offerings/vacancies",
    "state": "Uttar Pradesh",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 268,
@@ -353,7 +809,7 @@
    "url": "https://ncr.indianrailways.gov.in/offerings/vacancies",
    "state": "Uttar Pradesh",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 269,
@@ -361,7 +817,31 @@
    "url": "https://ner.indianrailways.gov.in/offerings/vacancies",
    "state": "Uttar Pradesh",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
+  },
+  {
+   "i": 270,
+   "name": "Prayagraj Cantonment Board",
+   "url": "https://prayagraj.cantt.gov.in/doc_category/careers/",
+   "state": "Uttar Pradesh",
+   "group": "Central Govt",
+   "status": "503"
+  },
+  {
+   "i": 273,
+   "name": "Dehradun Cantonment Board",
+   "url": "https://dehradun.cantt.gov.in/doc_category/careers/",
+   "state": "Uttarakhand",
+   "group": "Central Govt",
+   "status": "503"
+  },
+  {
+   "i": 277,
+   "name": "Roorkee Cantonment Board",
+   "url": "https://roorkee.cantt.gov.in/doc_category/careers/",
+   "state": "Uttarakhand",
+   "group": "Central Govt",
+   "status": "503"
   },
   {
    "i": 280,
@@ -369,7 +849,7 @@
    "url": "https://clw.indianrailways.gov.in/offerings/vacancies",
    "state": "West Bengal",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 282,
@@ -377,7 +857,7 @@
    "url": "https://er.indianrailways.gov.in/offerings/vacancies",
    "state": "West Bengal",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 288,
@@ -385,7 +865,7 @@
    "url": "https://mtp.indianrailways.gov.in/offerings/vacancies",
    "state": "West Bengal",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 290,
@@ -393,7 +873,23 @@
    "url": "https://ser.indianrailways.gov.in/offerings/vacancies",
    "state": "West Bengal",
    "group": "Central Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
+  },
+  {
+   "i": 293,
+   "name": "ESIC Recruitment",
+   "url": "https://www.esic.gov.in/recruitments",
+   "state": "All India",
+   "group": "Central Hospitals",
+   "status": "503"
+  },
+  {
+   "i": 296,
+   "name": "AIIMS Guwahati",
+   "url": "https://aiimsguwahati.ac.in",
+   "state": "Assam",
+   "group": "Central Hospitals",
+   "status": "503"
   },
   {
    "i": 297,
@@ -404,12 +900,20 @@
    "status": "307"
   },
   {
-   "i": 306,
-   "name": "LHMC & Associated Hospitals",
-   "url": "https://lhmc-hosp.gov.in",
+   "i": 300,
+   "name": "PGIMER Chandigarh",
+   "url": "https://pgimer.edu.in",
+   "state": "Chandigarh",
+   "group": "Central Hospitals",
+   "status": "503"
+  },
+  {
+   "i": 303,
+   "name": "Dr. RML Hospital, Delhi",
+   "url": "https://rmlh.mohfw.gov.in/",
    "state": "Delhi",
    "group": "Central Hospitals",
-   "status": "timeout"
+   "status": "503"
   },
   {
    "i": 309,
@@ -417,7 +921,7 @@
    "url": "https://aiimsrajkot.edu.in",
    "state": "Gujarat",
    "group": "Central Hospitals",
-   "status": "ENOTFOUND"
+   "status": "503"
   },
   {
    "i": 315,
@@ -425,7 +929,71 @@
    "url": "https://aiimsbhopal.edu.in",
    "state": "Madhya Pradesh",
    "group": "Central Hospitals",
-   "status": "ECONNRESET"
+   "status": "503"
+  },
+  {
+   "i": 320,
+   "name": "JIPMER Puducherry",
+   "url": "https://jipmer.edu.in",
+   "state": "Puducherry",
+   "group": "Central Hospitals",
+   "status": "503"
+  },
+  {
+   "i": 322,
+   "name": "AIIMS Jodhpur",
+   "url": "https://aiimsjodhpur.edu.in",
+   "state": "Rajasthan",
+   "group": "Central Hospitals",
+   "status": "503"
+  },
+  {
+   "i": 324,
+   "name": "AIIMS Bibinagar",
+   "url": "https://aiimsbibinagar.edu.in",
+   "state": "Telangana",
+   "group": "Central Hospitals",
+   "status": "503"
+  },
+  {
+   "i": 329,
+   "name": "JNMC AMU Aligarh",
+   "url": "https://www.amu.ac.in",
+   "state": "Uttar Pradesh",
+   "group": "Central Hospitals",
+   "status": "503"
+  },
+  {
+   "i": 334,
+   "name": "Andhra Pradesh CFW",
+   "url": "https://cfw.ap.nic.in",
+   "state": "Andhra Pradesh",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 336,
+   "name": "Andhra Pradesh PSC",
+   "url": "https://psc.ap.gov.in",
+   "state": "Andhra Pradesh",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 337,
+   "name": "Arunachal Health Dept",
+   "url": "https://health.arunachal.gov.in",
+   "state": "Arunachal Pradesh",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 338,
+   "name": "Arunachal PSC",
+   "url": "https://appsc.gov.in",
+   "state": "Arunachal Pradesh",
+   "group": "State Govt",
+   "status": "503"
   },
   {
    "i": 339,
@@ -433,7 +1001,7 @@
    "url": "https://nhm.assam.gov.in",
    "state": "Assam",
    "group": "State Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 340,
@@ -441,7 +1009,7 @@
    "url": "https://apsc.nic.in",
    "state": "Assam",
    "group": "State Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 341,
@@ -449,7 +1017,7 @@
    "url": "https://asacs.assam.gov.in",
    "state": "Assam",
    "group": "State Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 342,
@@ -457,7 +1025,7 @@
    "url": "https://dhs.assam.gov.in/document/advertisements",
    "state": "Assam",
    "group": "State Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 343,
@@ -465,7 +1033,7 @@
    "url": "https://dme.assam.gov.in/",
    "state": "Assam",
    "group": "State Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 346,
@@ -473,7 +1041,55 @@
    "url": "https://state.bihar.gov.in/health/CitizenHome.html",
    "state": "Bihar",
    "group": "State Govt",
-   "status": "UNABLE_TO_VERIFY_LEAF_SIGNATURE (curl: 302)"
+   "status": "503"
+  },
+  {
+   "i": 348,
+   "name": "Chhattisgarh PSC",
+   "url": "https://psc.cg.gov.in",
+   "state": "Chhattisgarh",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 351,
+   "name": "Delhi State Health Mission",
+   "url": "https://dshm.delhi.gov.in",
+   "state": "Delhi",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 353,
+   "name": "Goa Directorate of Health Services",
+   "url": "https://dhs.goa.gov.in",
+   "state": "Goa",
+   "group": "State Govt",
+   "status": "403"
+  },
+  {
+   "i": 354,
+   "name": "Goa PSC",
+   "url": "https://gpsc.goa.gov.in",
+   "state": "Goa",
+   "group": "State Govt",
+   "status": "403"
+  },
+  {
+   "i": 355,
+   "name": "GMERS Gujarat",
+   "url": "https://gmers.gujarat.gov.in/home",
+   "state": "Gujarat",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 356,
+   "name": "Gujarat NHM",
+   "url": "https://nhm.gujarat.gov.in",
+   "state": "Gujarat",
+   "group": "State Govt",
+   "status": "503"
   },
   {
    "i": 357,
@@ -481,7 +1097,95 @@
    "url": "https://gpsc.gujarat.gov.in",
    "state": "Gujarat",
    "group": "State Govt",
-   "status": "timeout"
+   "status": "503"
+  },
+  {
+   "i": 358,
+   "name": "Health & FW Dept Gujarat",
+   "url": "https://gujhealth.gujarat.gov.in/",
+   "state": "Gujarat",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 359,
+   "name": "Haryana NHM",
+   "url": "https://nhmharyana.gov.in",
+   "state": "Haryana",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 360,
+   "name": "Haryana PSC",
+   "url": "https://hpsc.gov.in",
+   "state": "Haryana",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 362,
+   "name": "DHSR Himachal Pradesh",
+   "url": "https://dhsr.hp.gov.in/",
+   "state": "Himachal Pradesh",
+   "group": "State Govt",
+   "status": "UND_ERR_CONNECT_TIMEOUT"
+  },
+  {
+   "i": 363,
+   "name": "Himachal NHM",
+   "url": "https://nhm.hp.gov.in",
+   "state": "Himachal Pradesh",
+   "group": "State Govt",
+   "status": "UND_ERR_CONNECT_TIMEOUT"
+  },
+  {
+   "i": 364,
+   "name": "Himachal PSC",
+   "url": "https://hppsc.hp.gov.in",
+   "state": "Himachal Pradesh",
+   "group": "State Govt",
+   "status": "UND_ERR_CONNECT_TIMEOUT"
+  },
+  {
+   "i": 366,
+   "name": "J&K PSC",
+   "url": "https://jkpsc.nic.in",
+   "state": "Jammu and Kashmir",
+   "group": "State Govt",
+   "status": "UND_ERR_CONNECT_TIMEOUT"
+  },
+  {
+   "i": 368,
+   "name": "Jharkhand NHM",
+   "url": "https://jrhms.jharkhand.gov.in",
+   "state": "Jharkhand",
+   "group": "State Govt",
+   "status": "UND_ERR_CONNECT_TIMEOUT"
+  },
+  {
+   "i": 370,
+   "name": "Karnataka DME",
+   "url": "https://dme.karnataka.gov.in",
+   "state": "Karnataka",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 371,
+   "name": "Karnataka NHM",
+   "url": "https://nhm.karnataka.gov.in",
+   "state": "Karnataka",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 372,
+   "name": "Karnataka PSC",
+   "url": "https://kpsc.karnataka.gov.in/",
+   "state": "Karnataka",
+   "group": "State Govt",
+   "status": "503"
   },
   {
    "i": 380,
@@ -489,7 +1193,95 @@
    "url": "https://health.mp.gov.in/",
    "state": "Madhya Pradesh",
    "group": "State Govt",
-   "status": "UNABLE_TO_VERIFY_LEAF_SIGNATURE (curl: curl 60)"
+   "status": "503"
+  },
+  {
+   "i": 381,
+   "name": "Madhya Pradesh NHM",
+   "url": "https://www.nhmmp.gov.in",
+   "state": "Madhya Pradesh",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 382,
+   "name": "Madhya Pradesh PSC",
+   "url": "https://mppsc.mp.gov.in",
+   "state": "Madhya Pradesh",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 390,
+   "name": "Mizoram Health Dept",
+   "url": "https://health.mizoram.gov.in",
+   "state": "Mizoram",
+   "group": "State Govt",
+   "status": "403"
+  },
+  {
+   "i": 393,
+   "name": "Health & FW Dept Odisha",
+   "url": "https://health.odisha.gov.in/or/tenders-advertisement",
+   "state": "Odisha",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 394,
+   "name": "Odisha NHM",
+   "url": "https://nhmodisha.gov.in",
+   "state": "Odisha",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 396,
+   "name": "Puducherry Health Dept",
+   "url": "https://health.py.gov.in",
+   "state": "Puducherry",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 398,
+   "name": "Punjab Health Systems Corporation",
+   "url": "https://phsc.punjab.gov.in/en",
+   "state": "Punjab",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 399,
+   "name": "Punjab NHM",
+   "url": "https://nhm.punjab.gov.in",
+   "state": "Punjab",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 400,
+   "name": "Punjab PSC",
+   "url": "https://ppsc.gov.in",
+   "state": "Punjab",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 401,
+   "name": "Medical Education Rajasthan",
+   "url": "https://medicaleducation.rajasthan.gov.in/",
+   "state": "Rajasthan",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 402,
+   "name": "Medical Health & FW Rajasthan",
+   "url": "https://health.rajasthan.gov.in/",
+   "state": "Rajasthan",
+   "group": "State Govt",
+   "status": "503"
   },
   {
    "i": 403,
@@ -497,7 +1289,23 @@
    "url": "https://rajswasthya.nic.in",
    "state": "Rajasthan",
    "group": "State Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
+  },
+  {
+   "i": 404,
+   "name": "Rajasthan NHM",
+   "url": "https://nhm.rajasthan.gov.in",
+   "state": "Rajasthan",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 405,
+   "name": "Rajasthan PSC",
+   "url": "https://rpsc.rajasthan.gov.in",
+   "state": "Rajasthan",
+   "group": "State Govt",
+   "status": "503"
   },
   {
    "i": 406,
@@ -505,7 +1313,63 @@
    "url": "https://health.sikkim.gov.in",
    "state": "Sikkim",
    "group": "State Govt",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
+  },
+  {
+   "i": 407,
+   "name": "Health & FW Dept Tamil Nadu",
+   "url": "https://tnhealth.tn.gov.in/",
+   "state": "Tamil Nadu",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 408,
+   "name": "Tamil Nadu MRB",
+   "url": "https://www.mrb.tn.gov.in",
+   "state": "Tamil Nadu",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 410,
+   "name": "Telangana Health (CHFW)",
+   "url": "https://chfw.telangana.gov.in",
+   "state": "Telangana",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 412,
+   "name": "Telangana PSC (TGPSC)",
+   "url": "https://websitenew.tgpsc.gov.in/",
+   "state": "Telangana",
+   "group": "State Govt",
+   "status": "403"
+  },
+  {
+   "i": 413,
+   "name": "Tripura Health Dept",
+   "url": "https://health.tripura.gov.in",
+   "state": "Tripura",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 414,
+   "name": "Tripura PSC",
+   "url": "https://tpsc.tripura.gov.in",
+   "state": "Tripura",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 416,
+   "name": "UPPSC",
+   "url": "https://uppsc.up.nic.in",
+   "state": "Uttar Pradesh",
+   "group": "State Govt",
+   "status": "503"
   },
   {
    "i": 418,
@@ -513,7 +1377,31 @@
    "url": "https://dgmhup.gov.in/",
    "state": "Uttar Pradesh",
    "group": "State Govt",
-   "status": "ECONNRESET"
+   "status": "503"
+  },
+  {
+   "i": 419,
+   "name": "UP Medical Education (DGME)",
+   "url": "https://dgme.up.gov.in",
+   "state": "Uttar Pradesh",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 424,
+   "name": "West Bengal Health",
+   "url": "https://www.wbhealth.gov.in",
+   "state": "West Bengal",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 425,
+   "name": "West Bengal Health HR portal (district NHM notices)",
+   "url": "https://hr.wbhealth.gov.in",
+   "state": "West Bengal",
+   "group": "State Govt",
+   "status": "503"
   },
   {
    "i": 426,
@@ -521,7 +1409,23 @@
    "url": "https://hrb.wb.gov.in/",
    "state": "West Bengal",
    "group": "State Govt",
-   "status": "CERT_HAS_EXPIRED (curl: curl 60)"
+   "status": "503"
+  },
+  {
+   "i": 427,
+   "name": "West Bengal PSC",
+   "url": "https://psc.wb.gov.in",
+   "state": "West Bengal",
+   "group": "State Govt",
+   "status": "503"
+  },
+  {
+   "i": 432,
+   "name": "DME Andhra Pradesh (SR/JR notifications)",
+   "url": "https://dme.ap.nic.in/",
+   "state": "Andhra Pradesh",
+   "group": "Medical colleges",
+   "status": "503"
   },
   {
    "i": 434,
@@ -537,7 +1441,31 @@
    "url": "https://gmcrajamahendravaram.ap.gov.in/",
    "state": "Andhra Pradesh",
    "group": "Medical colleges",
-   "status": "fetch failed"
+   "status": "503"
+  },
+  {
+   "i": 442,
+   "name": "Government Medical College Vizianagaram",
+   "url": "https://gmcvizianagaram.ap.gov.in/",
+   "state": "Andhra Pradesh",
+   "group": "Medical colleges",
+   "status": "UND_ERR_CONNECT_TIMEOUT"
+  },
+  {
+   "i": 443,
+   "name": "Govt Medical College Anantapur / GGH Anantapur (district portal notices)",
+   "url": "https://ananthapuramu.ap.gov.in/past-notices/recruitment/",
+   "state": "Andhra Pradesh",
+   "group": "Medical colleges",
+   "status": "503"
+  },
+  {
+   "i": 452,
+   "name": "SVIMS Tirupati",
+   "url": "https://svimstpt.ap.nic.in/",
+   "state": "Andhra Pradesh",
+   "group": "Medical colleges",
+   "status": "503"
   },
   {
    "i": 455,
@@ -545,7 +1473,7 @@
    "url": "https://amch-dibrugarh.assam.gov.in",
    "state": "Assam",
    "group": "Medical colleges",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 456,
@@ -553,7 +1481,7 @@
    "url": "https://dhubri-mch.assam.gov.in/document/career",
    "state": "Assam",
    "group": "Medical colleges",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 457,
@@ -561,7 +1489,7 @@
    "url": "https://diphumch.assam.gov.in/document/career",
    "state": "Assam",
    "group": "Medical colleges",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 458,
@@ -569,7 +1497,7 @@
    "url": "https://bmch.assam.gov.in/document/career",
    "state": "Assam",
    "group": "Medical colleges",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 459,
@@ -577,7 +1505,7 @@
    "url": "https://gmch.assam.gov.in/document/recruitment",
    "state": "Assam",
    "group": "Medical colleges",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 460,
@@ -585,7 +1513,7 @@
    "url": "https://jorhatmch.assam.gov.in/document/career",
    "state": "Assam",
    "group": "Medical colleges",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 461,
@@ -593,7 +1521,7 @@
    "url": "https://kokrajharmch.assam.gov.in/",
    "state": "Assam",
    "group": "Medical colleges",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 462,
@@ -601,7 +1529,7 @@
    "url": "https://lakhimpur-mch.assam.gov.in/document/career",
    "state": "Assam",
    "group": "Medical colleges",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 463,
@@ -609,7 +1537,7 @@
    "url": "https://nagaonmch.assam.gov.in/index.php/document/career",
    "state": "Assam",
    "group": "Medical colleges",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 464,
@@ -617,7 +1545,7 @@
    "url": "https://nalbarimch.assam.gov.in/",
    "state": "Assam",
    "group": "Medical colleges",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 465,
@@ -625,7 +1553,7 @@
    "url": "https://pragjyotishpur-mch.assam.gov.in/document/career",
    "state": "Assam",
    "group": "Medical colleges",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 466,
@@ -633,7 +1561,7 @@
    "url": "https://silchar-mch.assam.gov.in/document/career",
    "state": "Assam",
    "group": "Medical colleges",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 467,
@@ -641,7 +1569,7 @@
    "url": "https://tezpur-mch.assam.gov.in/document/career",
    "state": "Assam",
    "group": "Medical colleges",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 468,
@@ -649,15 +1577,31 @@
    "url": "https://tinsukiamch.assam.gov.in/",
    "state": "Assam",
    "group": "Medical colleges",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
-   "i": 483,
-   "name": "Institute of Liver and Biliary Sciences (Delhi Govt autonomous)",
-   "url": "https://www.ilbs.in/?page=hrjobs_listing",
-   "state": "Delhi",
+   "i": 486,
+   "name": "GMERS (central portal, all GMERS colleges)",
+   "url": "https://gmers.gujarat.gov.in/",
+   "state": "Gujarat",
    "group": "Medical colleges",
-   "status": "ECONNRESET"
+   "status": "503"
+  },
+  {
+   "i": 496,
+   "name": "GMERS Medical College, Vadnagar",
+   "url": "http://gmersmchvadnagar.com/",
+   "state": "Gujarat",
+   "group": "Medical colleges",
+   "status": "503"
+  },
+  {
+   "i": 497,
+   "name": "GMERS Medical College, Valsad",
+   "url": "https://www.gmersmcvalsad.com/",
+   "state": "Gujarat",
+   "group": "Medical colleges",
+   "status": "503"
   },
   {
    "i": 502,
@@ -665,7 +1609,15 @@
    "url": "https://pdumcrajkot.org/latest-updates/",
    "state": "Gujarat",
    "group": "Medical colleges",
-   "status": "ERR_TLS_CERT_ALTNAME_INVALID (curl: curl 60)"
+   "status": "503"
+  },
+  {
+   "i": 510,
+   "name": "Haryana DMER recruitment (all state GMCs)",
+   "url": "https://dmer.haryana.gov.in/site/Dmer/recruitment",
+   "state": "Haryana",
+   "group": "Medical colleges",
+   "status": "503"
   },
   {
    "i": 513,
@@ -673,7 +1625,7 @@
    "url": "http://www.pgimsrohtak.ac.in/",
    "state": "Haryana",
    "group": "Medical colleges",
-   "status": "UND_ERR_CONNECT_TIMEOUT"
+   "status": "503"
   },
   {
    "i": 514,
@@ -684,6 +1636,30 @@
    "status": "timeout"
   },
   {
+   "i": 518,
+   "name": "Dr. Rajendra Prasad Govt. Medical College, Tanda",
+   "url": "https://rpgmc.ac.in/recruitments/",
+   "state": "Himachal Pradesh",
+   "group": "Medical colleges",
+   "status": "403"
+  },
+  {
+   "i": 527,
+   "name": "SKIMS Medical College & Hospital, Bemina",
+   "url": "https://www.skimsmc.edu.in/index.php?option=com_content&view=category&id=99&Itemid=648",
+   "state": "Jammu and Kashmir",
+   "group": "Medical colleges",
+   "status": "403"
+  },
+  {
+   "i": 528,
+   "name": "Sher-i-Kashmir Institute of Medical Sciences (SKIMS), Soura",
+   "url": "https://www.skims.ac.in/index.php/careers.html",
+   "state": "Jammu and Kashmir",
+   "group": "Medical colleges",
+   "status": "403"
+  },
+  {
    "i": 535,
    "name": "Jawaharlal Nehru Medical College (KAHER), Belagavi",
    "url": "https://jnmc.edu/",
@@ -692,12 +1668,84 @@
    "status": "403"
   },
   {
-   "i": 604,
-   "name": "Government Medical College, Parbhani",
-   "url": "https://www.gmcparbhani.org/",
+   "i": 557,
+   "name": "Regional Cancer Centre Thiruvananthapuram",
+   "url": "https://rcctvm.gov.in/recruitments",
+   "state": "Kerala",
+   "group": "Medical colleges",
+   "status": "503"
+  },
+  {
+   "i": 563,
+   "name": "Gandhi Medical College, Bhopal",
+   "url": "https://gmcbhopal.net/vacancy-recruitment",
+   "state": "Madhya Pradesh",
+   "group": "Medical colleges",
+   "status": "503"
+  },
+  {
+   "i": 576,
+   "name": "Shyam Shah Medical College, Rewa",
+   "url": "https://ssmcrewa.ac.in/",
+   "state": "Madhya Pradesh",
+   "group": "Medical colleges",
+   "status": "503"
+  },
+  {
+   "i": 578,
+   "name": "Armed Forces Medical College, Pune",
+   "url": "https://afmc.nic.in/",
    "state": "Maharashtra",
    "group": "Medical colleges",
-   "status": "ENOTFOUND"
+   "status": "503"
+  },
+  {
+   "i": 580,
+   "name": "Bharat Ratna Atal Bihari Vajpayee Medical College (PMC), Pune",
+   "url": "https://www.bavmcpune.edu.in/recruitment/",
+   "state": "Maharashtra",
+   "group": "Medical colleges",
+   "status": "503"
+  },
+  {
+   "i": 581,
+   "name": "Bharati Vidyapeeth (DU) Medical College, Pune",
+   "url": "https://mcpune.bharatividyapeeth.edu/",
+   "state": "Maharashtra",
+   "group": "Medical colleges",
+   "status": "503"
+  },
+  {
+   "i": 585,
+   "name": "Dr Shankarrao Chavan Government Medical College, Nanded",
+   "url": "https://drscgmcnanded.in/recruitment",
+   "state": "Maharashtra",
+   "group": "Medical colleges",
+   "status": "UND_ERR_CONNECT_TIMEOUT"
+  },
+  {
+   "i": 587,
+   "name": "ESIC Medical College & Hospital / ESI-PGIMSR, Andheri, Mumbai",
+   "url": "https://mcandheri.esic.gov.in/recruitments/medical_recruitment_list",
+   "state": "Maharashtra",
+   "group": "Medical colleges",
+   "status": "503"
+  },
+  {
+   "i": 595,
+   "name": "Government Medical College, Chandrapur",
+   "url": "https://gmcchandrapur.org/advertisement.php",
+   "state": "Maharashtra",
+   "group": "Medical colleges",
+   "status": "503"
+  },
+  {
+   "i": 597,
+   "name": "Government Medical College, Gadchiroli",
+   "url": "https://gmcgadchiroli.com/pages/news/advertisement.php",
+   "state": "Maharashtra",
+   "group": "Medical colleges",
+   "status": "503"
   },
   {
    "i": 606,
@@ -708,12 +1756,44 @@
    "status": "ENOTFOUND"
   },
   {
+   "i": 619,
+   "name": "Smt. Kashibai Navale Medical College & General Hospital, Pune",
+   "url": "https://sknmcgh.org/",
+   "state": "Maharashtra",
+   "group": "Medical colleges",
+   "status": "503"
+  },
+  {
+   "i": 621,
+   "name": "Symbiosis Medical College for Women, Pune",
+   "url": "https://smcw.edu.in/",
+   "state": "Maharashtra",
+   "group": "Medical colleges",
+   "status": "503"
+  },
+  {
+   "i": 626,
+   "name": "Bhima Bhoi Medical College & Hospital, Balangir",
+   "url": "https://bbmchbalangir.odisha.gov.in/",
+   "state": "Odisha",
+   "group": "Medical colleges",
+   "status": "503"
+  },
+  {
+   "i": 627,
+   "name": "Fakir Mohan Medical College & Hospital, Balasore",
+   "url": "https://fmmch.odisha.gov.in/en/light/subpage/advertisement",
+   "state": "Odisha",
+   "group": "Medical colleges",
+   "status": "503"
+  },
+  {
    "i": 628,
    "name": "Government Medical College & Hospital, Sundargarh",
    "url": "https://gmchsng.odisha.gov.in/tender_advertisement/",
    "state": "Odisha",
    "group": "Medical colleges",
-   "status": "500"
+   "status": "503"
   },
   {
    "i": 631,
@@ -724,20 +1804,60 @@
    "status": "403"
   },
   {
+   "i": 632,
+   "name": "MKCG Medical College & Hospital, Berhampur",
+   "url": "https://mkcgmch.odisha.gov.in/notifications/advertisements/",
+   "state": "Odisha",
+   "group": "Medical colleges",
+   "status": "503"
+  },
+  {
+   "i": 633,
+   "name": "Maharaja Jajati Keshari Medical College & Hospital, Jajpur",
+   "url": "https://jkmchjajpur.odisha.gov.in/en/light/advertisement",
+   "state": "Odisha",
+   "group": "Medical colleges",
+   "status": "503"
+  },
+  {
+   "i": 634,
+   "name": "Odisha DMET recruitment (state medical colleges)",
+   "url": "https://dmet.odisha.gov.in/en/light/subpage/recruitment",
+   "state": "Odisha",
+   "group": "Medical colleges",
+   "status": "503"
+  },
+  {
+   "i": 635,
+   "name": "Pandit Raghunath Murmu Medical College & Hospital, Baripada",
+   "url": "https://prmmch.odisha.gov.in/en/light/subpage/advertisement",
+   "state": "Odisha",
+   "group": "Medical colleges",
+   "status": "503"
+  },
+  {
+   "i": 636,
+   "name": "SCB Medical College & Hospital, Cuttack",
+   "url": "https://scbmch.odisha.gov.in/",
+   "state": "Odisha",
+   "group": "Medical colleges",
+   "status": "503"
+  },
+  {
+   "i": 637,
+   "name": "Saheed Laxman Nayak Medical College & Hospital, Koraput",
+   "url": "https://slnmch.odisha.gov.in/en/light/subpage/advertisement",
+   "state": "Odisha",
+   "group": "Medical colleges",
+   "status": "503"
+  },
+  {
    "i": 638,
    "name": "Saheed Rendo Majhi Medical College & Hospital (GMCH), Kalahandi",
    "url": "https://srmmch.odisha.gov.in/",
    "state": "Odisha",
    "group": "Medical colleges",
-   "status": "ECONNREFUSED"
-  },
-  {
-   "i": 649,
-   "name": "Geetanjali Medical College & Hospital, Udaipur",
-   "url": "https://geetanjaliuniversity.com/",
-   "state": "Rajasthan",
-   "group": "Medical colleges",
-   "status": "fetch failed"
+   "status": "503"
   },
   {
    "i": 668,
@@ -745,23 +1865,23 @@
    "url": "https://smc.saveetha.com/",
    "state": "Tamil Nadu",
    "group": "Medical colleges",
-   "status": "ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR (curl: curl 35)"
+   "status": "503"
   },
   {
-   "i": 689,
-   "name": "Government Medical College Nalgonda",
-   "url": "https://gmcnalgonda.in/",
+   "i": 676,
+   "name": "DME Telangana",
+   "url": "https://dme.telangana.gov.in/",
    "state": "Telangana",
    "group": "Medical colleges",
-   "status": "502"
+   "status": "503"
   },
   {
-   "i": 696,
-   "name": "Government Medical College Suryapet",
-   "url": "https://gmcsuryapet.org/",
+   "i": 678,
+   "name": "Gandhi Hospital Secunderabad",
+   "url": "https://gandhihospital.telangana.gov.in/",
    "state": "Telangana",
    "group": "Medical colleges",
-   "status": "530"
+   "status": "503"
   },
   {
    "i": 709,
@@ -769,7 +1889,7 @@
    "url": "https://agmc.ac.in/view-emp-tab",
    "state": "Tripura",
    "group": "Medical colleges",
-   "status": "ECONNRESET"
+   "status": "503"
   },
   {
    "i": 710,
@@ -777,7 +1897,23 @@
    "url": "https://llrmmedicalcollege.nic.in",
    "state": "Uttar Pradesh",
    "group": "Medical colleges",
+   "status": "503"
+  },
+  {
+   "i": 712,
+   "name": "Amar Shaheed Jodha Singh Ataiya Thakur Dariyao Singh Medical College (ASMC), Fatehpur",
+   "url": "https://asmcfatehpur.in/",
+   "state": "Uttar Pradesh",
+   "group": "Medical colleges",
    "status": "UND_ERR_CONNECT_TIMEOUT"
+  },
+  {
+   "i": 721,
+   "name": "Baba Raghav Das Medical College, Gorakhpur",
+   "url": "https://brdmc.ac.in/",
+   "state": "Uttar Pradesh",
+   "group": "Medical colleges",
+   "status": "503"
   },
   {
    "i": 729,
@@ -785,7 +1921,39 @@
    "url": "https://iul.ac.in/IIMSR/Default.aspx",
    "state": "Uttar Pradesh",
    "group": "Medical colleges",
-   "status": "timeout"
+   "status": "503"
+  },
+  {
+   "i": 746,
+   "name": "Government Doon Medical College, Dehradun",
+   "url": "https://www.gdmcuk.com/",
+   "state": "Uttarakhand",
+   "group": "Medical colleges",
+   "status": "UND_ERR_CONNECT_TIMEOUT"
+  },
+  {
+   "i": 759,
+   "name": "Medical College Kolkata",
+   "url": "https://www.medicalcollegekolkata.in/main/page/Recruitment_Notice958d34",
+   "state": "West Bengal",
+   "group": "Medical colleges",
+   "status": "403"
+  },
+  {
+   "i": 765,
+   "name": "MySarkariNaukri – medical/health",
+   "url": "https://www.mysarkarinaukri.com",
+   "state": "All India",
+   "group": "Aggregators",
+   "status": "403"
+  },
+  {
+   "i": 766,
+   "name": "Sarkari Result",
+   "url": "https://www.sarkariresult.com",
+   "state": "All India",
+   "group": "Aggregators",
+   "status": "403"
   },
   {
    "i": 772,
@@ -809,7 +1977,15 @@
    "url": "https://www.maxhealthcare.in/careers",
    "state": "All India",
    "group": "Private",
-   "status": "404"
+   "status": "403"
+  },
+  {
+   "i": 780,
+   "name": "Jamnagar Municipal Corporation – recruitment",
+   "url": "https://www.mcjamnagar.com/information/recruitment.aspx",
+   "state": "Gujarat",
+   "group": "State Govt",
+   "status": "503"
   },
   {
    "i": 784,
@@ -817,7 +1993,7 @@
    "url": "https://sjmch.odisha.gov.in/whats-new/",
    "state": "Odisha",
    "group": "Medical colleges",
-   "status": "ERR_SSL_WRONG_VERSION_NUMBER (curl: curl 35)"
+   "status": "503"
   }
  ]
 }
