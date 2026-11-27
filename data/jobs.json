@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "jobs": [
     {
       "id": "asacs-mo-art-ost-dmch-diphu-walkin-2026-11-13",
@@ -2568,6 +2568,32 @@
       "requirements": {}
     },
     {
+      "id": "gmers-valsad-tutor-jr-forensic-walkin-2026-12-01",
+      "title": "Tutor / Junior Resident (Forensic Medicine, against SR posts) – 2 posts, walk-in",
+      "org": "GMERS Medical College & Hospital, Valsad",
+      "category": "jr",
+      "location": "Valsad, Gujarat",
+      "state": "Gujarat",
+      "posts": 2,
+      "salary": null,
+      "mode": "Walk-in",
+      "lastDate": "2026-12-01",
+      "eventDate": "2026-12-01",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Official notice posted 27 Nov 2026: walk-in on Tue 1 Dec 2026 for Senior Resident, Junior Resident and Tutor posts; 2 Tutor/JR posts in Forensic Medicine are filled against SR posts, and a Tutor/JR is relieved if an SR is selected in that department. Download the form from the college website and submit it at the college office 10:30 AM–12:00 noon; interview at 12:30 PM. Bring original documents; GMC registration certificate is mandatory.",
+      "officialUrl": "https://www.gmersmcvalsad.com/",
+      "noticePdf": "https://www.gmersmcvalsad.com/UploadedDocs/News/27-11-26.pdf",
+      "sourceUrl": "https://www.gmersmcvalsad.com/",
+      "addedOn": "2026-11-27",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "eventDate",
+        "councils": [
+          "Gujarat Medical Council"
+        ]
+      }
+    },
+    {
       "id": "crpf-gdmo-contract-walkin-2026-12-02",
       "title": "General Duty Medical Officer (contractual) – 15 posts, walk-in",
       "org": "Central Reserve Police Force (CRPF)",
@@ -2853,6 +2879,36 @@
       "requirements": {
         "internshipBy": "eventDate",
         "registration": "any"
+      }
+    },
+    {
+      "id": "anh-delhi-jr-mbbs-adhoc-walkin-2026-12-03",
+      "title": "Junior Resident (MBBS, ad hoc, against GDMO posts) – 3 posts, walk-in",
+      "org": "Ambedkar Nagar Hospital (ANH), Govt of NCT of Delhi",
+      "category": "jr",
+      "location": "New Delhi, Delhi",
+      "state": "Delhi",
+      "posts": 3,
+      "salary": "Pay Level-10 (7th CPC)",
+      "mode": "Walk-in",
+      "lastDate": "2026-12-03",
+      "eventDate": "2026-12-03",
+      "eligibility": "after-internship",
+      "eligibilityNote": "Notice No. 14/JR/ANH/2026 dated 27.11.2026: 3 UR posts. MBBS recognised by MCI with Delhi Medical Council registration; candidates who have completed one year of Junior Residency, or whose internship was completed more than two years before the advertisement date, are not eligible. Registration 10:00–11:00 AM at the Head of Office chamber, 4th Floor, B-Block, Sector-5, Dakshinpuri, Delhi-110062.",
+      "officialUrl": "https://anh.delhi.gov.in",
+      "noticePdf": "https://anh.delhi.gov.in/sites/default/files/anh/circulars-orders/docscanner_27_nov_2026_12-07_1.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/anh-junior-resident-mbbs-recruitment-2026-3085251",
+      "addedOn": "2026-11-27",
+      "verified": true,
+      "requirements": {
+        "internshipBy": "eventDate",
+        "registration": "any",
+        "councils": [
+          "Delhi Medical Council"
+        ],
+        "maxAge": 30,
+        "ageOn": "2026-12-03",
+        "ageRelax": true
       }
     },
     {
@@ -3453,6 +3509,32 @@
       "verified": false
     },
     {
+      "id": "nfl-bathinda-doctor-contract-2026-12-31",
+      "title": "Doctor (contract, full-time) – 2 posts",
+      "org": "National Fertilizers Limited (NFL) – Bathinda Unit",
+      "category": "mo",
+      "location": "Bathinda, Punjab",
+      "state": "Punjab",
+      "posts": 2,
+      "salary": "₹75,000/month (₹2,884.62 × 26 days)",
+      "mode": "Apply online",
+      "lastDate": "2026-12-31",
+      "eventDate": null,
+      "eligibility": "after-internship",
+      "eligibilityNote": "Advt No. 02(Contractual)/2026/Doctor dated 27.11.2026. MBBS with at least 2 years' post-internship experience in a hospital of repute, or MD/DNB (Medicine/OBG); MCI-recognised degree with valid registration. One-year contract, extendable up to 3 years. Apply by email (vinay.sharma@nfl.co.in) in the prescribed proforma. Age limit 62 years as on 30.11.2026.",
+      "officialUrl": "https://www.nationalfertilizers.com/",
+      "noticePdf": "https://www.nationalfertilizers.com/wp-content/uploads/2026/11/ADVT-02Cont.-2026-Doctor-dated-27.11.2026.pdf",
+      "sourceUrl": "https://www.freejobalert.com/articles/nfl-doctor-recruitment-2026-3085212",
+      "addedOn": "2026-11-27",
+      "verified": true,
+      "requirements": {
+        "registration": "any",
+        "maxAge": 62,
+        "ageOn": "2026-11-30",
+        "ageRelax": false
+      }
+    },
+    {
       "id": "aarogya-delhi-rmo-jan-2027",
       "title": "Resident Medical Officer – 1 post",
       "org": "Aarogya Multi Speciality Hospital, Chitra Vihar",
@@ -3906,5 +3988,5 @@
       "requirements": {}
     }
   ],
-  "updatedAt": "2026-11-26T11:04:11.583Z"
+  "updatedAt": "2026-11-27T08:57:52.563Z"
 }
